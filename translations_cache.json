@@ -2824,5 +2824,617 @@
         "answer": "預驗證需要 3 至 5 天，而正式批准法律文件需要 2 至 3 週。"
       }
     ]
-  }
+  },
+  "faqs_zh-CN": [
+    {
+      "category": "所有权",
+      "question": "外国人可以在马来西亚购买房产吗？",
+      "answer": "是的，外国人可以在马来西亚拥有永久业权和租赁业权房产，但须遵守省级国家指导方针规定的某些最低价格门槛。通常，基准门槛为 RM 1,000,000，但雪兰莪等州将某些交易限制为 RM 2,000,000，而 Medini Johor 有最低限额的特殊豁免。高端公寓完全无障碍。"
+    },
+    {
+      "category": "所有权",
+      "question": "马来西亚的永久业权和租赁业权房产有什么区别？",
+      "answer": "永久业权所有者对土地和建筑物拥有永久的绝对所有权，使财产易于转让。租赁权所有者持有财产的期限是有限的，通常为 99 年。续签需要向州级当局支付保费，这通常会减慢任期后期（例如剩余不到 30 年）的交易流程。"
+    },
+    {
+      "category": "财务",
+      "question": "新加坡人或外国人在购买房产时缴纳高额税款吗？",
+      "answer": "收购涉及转让文书 (MOT) 印花税，其税率根据市场估值从 1% 到 4% 不等。马来西亚不像新加坡那样征收额外买家印花税（ABSD），这使得它对于新加坡二手房业主来说极具竞争力。然而，在处置时，需缴纳不动产收益税 (RPGT)，如果在前 5 年内出售，则为资本收益的 30%。"
+    },
+    {
+      "category": "融资",
+      "question": "外国买家可以轻松获得马来西亚房屋贷款吗？",
+      "answer": "是的。主要本地银行（例如马来亚银行、联昌国际银行）和国际银行（例如汇丰银行、大华银行）为外国人提供住房融资。通常，非居民的财务边际 (LTV) 范围为估值的 50% 至 70%。高净值专业人士、新加坡居民和MM2H签证持有者可以轻松获得高达80%或85%的财务保证金。"
+    },
+    {
+      "category": "签证和入境",
+      "question": "Magic MM2H 计划是什么？当前有哪些选项？",
+      "answer": "马来西亚我的第二家园（MM2H）是一项针对外国人的长期居留计划。于 2024 年修订，分为白金级、黄金级和白银级，要求在马来西亚指定银行内存入不同的计息定期存款（范围从 50 万令吉至 500 万令吉）。每个级别都授予特定的多次入境居民通行证和购买高端房地产的资格。"
+    },
+    {
+      "category": "所有权",
+      "question": "什么是州同意申请流程？",
+      "answer": "外国购买者在马来西亚购买的每笔房地产都需要向相应的土地办公室登记处提出实际申请，称为“州同意”。需支付手续费（约 RM 1,000 至 RM 20,000，具体取决于州）。审批流程通常需要 1 至 3 个月的时间才能完成，然后交易才能取得进展。"
+    },
+    {
+      "category": "财务",
+      "question": "不动产收益税 (RPGT) 的结构是怎样的？",
+      "answer": "产业盈利税是对房地产处置时的净资本收益征收的。对于外国人，如果在购买之日起 1 至 5 年内出售，税率为 30%。第 6 年及以后下降至 10%。对于马来西亚公民来说，住宅资产的 RPGT 在第 5 年之后从 30% 降至 0%，这使得长期持有极其有利可图。"
+    },
+    {
+      "category": "地理",
+      "question": "柔佛-新加坡 RTS Link 对房产价值有何影响？",
+      "answer": "快速交通系统 (RTS) 连接新山（Bukit Chagar 节点）和新加坡（兀兰北节点）。运营后，每小时可在 5 分钟内运送多达 10,000 名乘客。这导致新山紧邻地区（不到 3 公里）的资本大幅增长和高租金收益率。"
+    },
+    {
+      "category": "财务",
+      "question": "什么是开发商利息计划（DIBS）？",
+      "answer": "DIBS 是一项开发商在施工阶段承担贷款利息的计划。 2014 年，马来西亚国家银行禁止该项目以遏制投机性投标。如今，购房者直接按计费方式支付施工进度阶段费用，从而使机构买家的投资保持透明和安全。"
+    },
+    {
+      "category": "所有权",
+      "question": "什么是分层产权与个人产权？",
+      "answer": "个人产权是为土地和建筑物完全属于一位所有者的有地房产（联排别墅、半独立式别墅、平房）颁发的。分层产权是为多层建筑（公寓、公寓、服务式套房）或共享公共设施的封闭式开发项目颁发的。它建立了单位的所有权和共享的公共区域。"
+    },
+    {
+      "category": "财务",
+      "question": "维护费是如何计算的？",
+      "answer": "维护费和偿债基金是根据您的特定财产分配的平方英尺（“份额单位”）计算的。服务费用于支付安保、景观美化、电梯、健身俱乐部和保险费用。偿债基金处理长期资本任务（例如，定期重新粉刷、结构升级）。预计每平方英尺 RM 0.25 至 RM 0.60。"
+    },
+    {
+      "category": "签证和入境",
+      "question": "新加坡人可以在柔佛州购买有地房产吗？",
+      "answer": "是的，新加坡人可以在柔佛州的指定国际区域或私人主要开发项目（例如公主港、美迪尼、森林城）内购买优质有地房产，只要符合国家最低定价下限（通常为 1,000,000 令吉至 2,000,000 令吉，具体取决于位置参数和豁免）。"
+    },
+    {
+      "category": "财务",
+      "question": "在马来西亚购买房产涉及哪些法律费用？",
+      "answer": "法律费用是标准费用，并受《律师报酬令》的监管。费用为房产购买价值的 1% 至 1.25%。如果获得融资，买家还需缴纳印花税、州同意申请费用和专业估价费用，从而使平均成交成本达到约 3% 至 5%。"
+    },
+    {
+      "category": "融资",
+      "question": "马来西亚的标准基本贷款利率（SBR）是多少？",
+      "answer": "标准基本利率 (SBR) 由马来西亚国家银行根据隔夜政策利率 (OPR) 制定。大多数银行抵押贷款利率在 SBR + 1.0% 至 1.5% 附近波动，这意味着平均活跃抵押贷款利率为每年 3.8% 至 4.5%，使得房地产杠杆非常实惠。"
+    },
+    {
+      "category": "所有权",
+      "question": "正在建设与已竣工对买家来说意味着什么？",
+      "answer": "购买已竣工的房产（“二级市场”）可以立即入住、检查和租赁，但需要更快的支付结构。购买在建建筑（“一级市场”或“期房”）可提供较低的首付、进度付款、早鸟开发商折扣和更新的布局。"
+    },
+    {
+      "category": "所有权",
+      "question": "我可以轻松地将财产所有权转让给孩子吗？",
+      "answer": "是的。直系亲属内部（配偶、父母向子女、子女向父母）的转移享有深度税收减免。根据最新联邦法规，父母和子女之间的财产转让可享受 100% 印花税豁免，最高可达 1,000,000 令吉的财产价值，从而使代际资产过渡稳定。"
+    },
+    {
+      "category": "财务",
+      "question": "外国房东在马来西亚的房产租金需要缴税吗？",
+      "answer": "在马来西亚产生的租金收入被视为收入并纳税。对于非居民个人，应税租金净收入（扣除标准维护费、财产税和抵押贷款利息支付后）的统一税率为 30%。与全球标准相比，这仍然具有很强的竞争力。"
+    },
+    {
+      "category": "所有权",
+      "question": "什么是渐进付款计划？",
+      "answer": "这是在建房产的付款时间表，当建筑物达到物理结构基准（例如地基、结构框架、管道、电气）时，付款是分阶段动态支付的。这通过将财务支出与体力劳动完成情况联系起来来保护消费者。"
+    },
+    {
+      "category": "融资",
+      "question": "在马来西亚，抵押贷款必须购买财产保险吗？",
+      "answer": "是的，银行要求买家购买抵押贷款保险，即 MRTA（抵押贷款减少期限保证）或 MLTA（抵押贷款水平定期保证），该保险可以在发生严重紧急情况时解决剩余的住房贷款余额，从而保护买家的家人和银行。"
+    },
+    {
+      "category": "所有权",
+      "question": "如果开发商违约或停止施工会怎样？",
+      "answer": "马来西亚的住房开发受到住房发展法案（HDA）的严格监管。开发商资金被转入由政府委员会监管的安全住房开发账户（HDA）。这确保了开发商资产的结构可以防止违约，让买家安心。"
+    }
+  ],
+  "faqs_zh-TW": [
+    {
+      "category": "所有權",
+      "question": "外國人可以在馬來西亞購買房產嗎？",
+      "answer": "是的，外國人可以在馬來西亞擁有永久業權和租賃業權房產，但須遵守省級國家指導方針規定的某些最低價格門檻。通常，基準門檻為 RM 1,000,000，但雪蘭莪等州將某些交易限制為 RM 2,000,000，而 Medini Johor 有最低限額的特殊豁免。高端公寓完全無障礙。"
+    },
+    {
+      "category": "所有權",
+      "question": "馬來西亞的永久業權和租賃業權房產有什麼不同？",
+      "answer": "永久業權所有者對土地和建築物擁有永久的絕對所有權，使財產易於轉讓。租賃權所有者持有財產的期限是有限的，通常為 99 年。續約需要向州級當局支付保費，這通常會減慢任期後期（例如剩餘不到 30 年）的交易流程。"
+    },
+    {
+      "category": "財務",
+      "question": "新加坡人或外國人在購買房產時繳納高額稅款嗎？",
+      "answer": "收購涉及轉讓文書 (MOT) 印花稅，其稅率根據市場估值從 1% 到 4% 不等。馬來西亞不像新加坡那樣徵收額外買家印花稅（ABSD），這使得它對新加坡二手房業主來說極具競爭力。然而，在處置時，需繳納不動產收益稅 (RPGT)，如果在前 5 年內出售，則為資本利得的 30%。"
+    },
+    {
+      "category": "融資",
+      "question": "外國買家可以輕鬆獲得馬來西亞房屋貸款嗎？",
+      "answer": "是的。主要本地銀行（例如馬來亞銀行、聯昌國際銀行）和國際銀行（例如匯豐銀行、大華銀行）為外國人提供住房融資。通常，非居民的財務邊際 (LTV) 範圍為估值的 50% 至 70%。高淨值專業人士、新加坡居民和MM2H簽證持有者可以輕鬆獲得高達80%或85%的財務保證金。"
+    },
+    {
+      "category": "簽證和入境",
+      "question": "Magic MM2H 計劃是什麼？目前有哪些選項？",
+      "answer": "馬來西亞我的第二家園（MM2H）是一項針對外國人的長期居留計畫。於 2024 年修訂，分為白金級、黃金級和白銀級，要求在馬來西亞指定銀行內存入不同的計息定期存款（範圍從 50 萬令吉至 500 萬令吉）。每個等級都授予特定的多次入境居民通行證和購買高端房地產的資格。"
+    },
+    {
+      "category": "所有權",
+      "question": "什麼是州同意申請流程？",
+      "answer": "外國購買者在馬來西亞購買的每筆房地產都需要向相應的土地辦公室登記處提出實際申請，稱為「州同意」。需支付手續費（約 RM 1,000 至 RM 20,000，視州而定）。審批流程通常需要 1 至 3 個月的時間才能完成，然後交易才能取得進展。"
+    },
+    {
+      "category": "財務",
+      "question": "不動產所得稅 (RPGT) 的結構是怎麼樣的？",
+      "answer": "產業獲利稅是對房地產處置時的淨資本利得徵收的。對於外國人，如果在購買之日起 1 至 5 年內出售，稅率為 30%。第 6 年及以後下降至 10%。對於馬來西亞公民來說，住宅資產的 RPGT 在第 5 年後從 30% 降至 0%，這使得長期持有極為有利可圖。"
+    },
+    {
+      "category": "地理",
+      "question": "柔佛-新加坡 RTS Link 對房產價值有何影響？",
+      "answer": "快速交通系統 (RTS) 連接新山（Bukit Chagar 節點）和新加坡（兀蘭北節點）。營運後，每小時可在 5 分鐘內運送多達 10,000 名乘客。這導致新山緊鄰地區（不到 3 公里）的資本大幅增長和高租金收益率。"
+    },
+    {
+      "category": "財務",
+      "question": "什麼是開發商利息計劃（DIBS）？",
+      "answer": "DIBS 是開發商在施工階段承擔貸款利息的計劃。 2014 年，馬來西亞國家銀行禁止該項目以遏制投機性投標。如今，購屋者直接按計費方式支付施工進度階段費用，使機構買家的投資保持透明和安全。"
+    },
+    {
+      "category": "所有權",
+      "question": "什麼是分層產權與個人產權？",
+      "answer": "個人產權是為土地和建築物完全屬於一位所有者的有地房產（聯排別墅、半獨立式別墅、平房）頒發的。分層產權是為多層建築（公寓、公寓、服務式套房）或共享公共設施的封閉式開發項目頒發的。它建立了單位的所有權和共享的公共區域。"
+    },
+    {
+      "category": "財務",
+      "question": "維護費是如何計算的？",
+      "answer": "維護費和償債基金是根據您的特定財產分配的平方英尺（「份額單位」）計算的。服務費用於支付保全、景觀美化、電梯、健身俱樂部和保險費用。償債基金處理長期資本任務（例如，定期重新粉刷、結構升級）。預計每平方英尺 RM 0.25 至 RM 0.60。"
+    },
+    {
+      "category": "簽證和入境",
+      "question": "新加坡人可以在柔佛州購買有地房產嗎？",
+      "answer": "是的，新加坡人可以在柔佛州的指定國際區域或私人主要開發項目（例如公主港、美迪尼、森林城）內購買優質有地房產，只要符合國家最低定價下限（通常為 1,000,000 令吉至 2,000,000 令吉，具體取決於位置參數和豁免）。"
+    },
+    {
+      "category": "財務",
+      "question": "在馬來西亞購買房產涉及哪些法律費用？",
+      "answer": "法律費用是標準費用，並受《律師報酬令》的監管。費用為房產購買價值的 1% 至 1.25%。如果獲得融資，買家還需繳納印花稅、州同意申請費用和專業估價費用，使平均成交成本達到約 3% 至 5%。"
+    },
+    {
+      "category": "融資",
+      "question": "馬來西亞的標準基本貸款利率（SBR）是多少？",
+      "answer": "標準基本利率 (SBR) 由馬來西亞國家銀行根據隔夜政策利率 (OPR) 制定。大多數銀行抵押貸款利率在 SBR + 1.0% 至 1.5% 附近波動，這意味著平均活躍抵押貸款利率為每年 3.8% 至 4.5%，使得房地產槓桿非常實惠。"
+    },
+    {
+      "category": "所有權",
+      "question": "正在建設與已竣工對買家來說意味著什麼？",
+      "answer": "購買已竣工的房產（「二級市場」）可以立即入住、檢查和租賃，但需要更快的支付結構。購買在建建築（「一級市場」或「期房」）可提供較低的首付、進度付款、早鳥開發商折扣和更新的佈局。"
+    },
+    {
+      "category": "所有權",
+      "question": "我可以輕鬆地將財產所有權轉移給孩子嗎？",
+      "answer": "是的。直系親屬內部（配偶、父母向子女、子女向父母）的轉移享有深度稅務減免。根據最新聯邦法規，父母和子女之間的財產轉讓可享有 100% 印花稅豁免，最高可達 1,000,000 令吉的財產價值，從而使代際資產過渡穩定。"
+    },
+    {
+      "category": "財務",
+      "question": "外國房東在馬來西亞的房產租金需要繳稅嗎？",
+      "answer": "在馬來西亞產生的租金收入被視為收入並納稅。對於非居民個人，應稅租金淨收入（扣除標準維護費、財產稅和抵押貸款利息支付後）的統一稅率為 30%。與全球標準相比，這仍然具有很強的競爭力。"
+    },
+    {
+      "category": "所有權",
+      "question": "什麼是漸進付款計畫？",
+      "answer": "這是正在建造房產的付款時間表，當建築物達到物理結構基準（例如地基、結構框架、管道、電氣）時，付款是分階段動態支付的。這透過將財務支出與體力勞動完成情況連結起來來保護消費者。"
+    },
+    {
+      "category": "融資",
+      "question": "在馬來西亞，抵押貸款必須購買財產保險嗎？",
+      "answer": "是的，銀行要求買家購買抵押貸款保險，即 MRTA（抵押貸款減少期限保證）或 MLTA（抵押貸款水平定期保證），該保險可以在發生嚴重緊急情況時解決剩餘的房屋貸款餘額，從而保護買家的家人和銀行。"
+    },
+    {
+      "category": "所有權",
+      "question": "如果開發商違約或停止施工會怎樣？",
+      "answer": "馬來西亞的住房開發受到住房發展法案（HDA）的嚴格監管。開發商資金被轉入由政府委員會監管的安全住宅開發帳戶（HDA）。這確保了開發商資產的結構可以防止違約，讓買家安心。"
+    }
+  ],
+  "faqs_ja": [
+    {
+      "category": "所有",
+      "question": "外国人はマレーシアの不動産を購入できますか?",
+      "answer": "はい、外国人はマレーシアでフリーホールドおよびリースホールドの不動産を所有できますが、州のガイドラインによって設定された一定の最低価格基準が条件となります。一般に、ベースラインしきい値は RM 1,000,000 ですが、セランゴール州などの州では一部の取引を RM 2,000,000 に制限しており、メディニ ジョホール州では最低制限額が特別に免除されています。高級コンドミニアムは完全にアクセス可能です。"
+    },
+    {
+      "category": "所有",
+      "question": "マレーシアのフリーホールド物件とリースホールド物件の違いは何ですか?",
+      "answer": "フリーホールドの所有者は、土地と建物に対する永続的な絶対的な所有権を永久に保有しているため、不動産を簡単に譲渡できます。借地権の所有者は、制限された保有期間、通常は 99 年間不動産を保有します。更新には州レベルの当局に保険料を支払う必要があり、一般に、在職期間の後期（たとえば、残り 30 年未満）の間は取引プロセスが遅くなります。"
+    },
+    {
+      "category": "財務",
+      "question": "シンガポール人または外国人は不動産を取得するときに高い税金を支払いますか?",
+      "answer": "買収には譲渡証書 (MOT) に対する印紙税がかかり、市場評価に応じて 1% から 4% の範囲になります。マレーシアにはシンガポールのような追加購入者印紙税（ABSD）がないため、シンガポールの二次住宅所有者にとって競争力が非常に高くなります。ただし、処分する場合は不動産利得税 (RPGT) が適用され、最初の 5 年以内に売却した場合、キャピタルゲインに対して 30% が課せられます。"
+    },
+    {
+      "category": "融資",
+      "question": "外国人の購入者はマレーシアの住宅ローンを簡単に確保できますか?",
+      "answer": "はい。主要な地元銀行 (例: Maybank、CIMB) および国際銀行 (例: HSBC、UOB) が外国人向けに住宅融資を提供しています。通常、非居住者の財務利益率 (LTV) は評価額の 50% から 70% の範囲です。富裕層の専門家、シンガポール居住者、MM2H ビザ保有者は、最大 80% または 85% の財務マージンを容易に確保できます。"
+    },
+    {
+      "category": "ビザと入国",
+      "question": "Magic MM2H プログラムとは何ですか?またその現在のオプションは何ですか?",
+      "answer": "マレーシア マイ セカンド ホーム (MM2H) は、外国人のための長期滞在プログラムです。 2024年に改訂され、プラチナ、ゴールド、シルバー層に分割され、指定されたマレーシアの銀行内で異なる有利子の定期預金（RM 500,000からRM 5,000,000の範囲）が必要となります。各段階では、特定の複数エントリーの居住者パスと高級不動産を購入する資格が付与されます。"
+    },
+    {
+      "category": "所有",
+      "question": "国家同意申請プロセスとは何ですか?",
+      "answer": "マレーシアで外国人購入者が不動産を取得する場合は、対応する土地事務所登記簿に国家同意として知られる物理的な承認申請が必要となります。処理手数料がかかります（州に応じて約 RM 1,000 ～ RM 20,000）。承認プロセスが完了してから取引が開始されるまでには、通常 1 ～ 3 か月かかります。"
+    },
+    {
+      "category": "財務",
+      "question": "不動産利得税 (RPGT) の構造とは何ですか?",
+      "answer": "RPGT は、不動産売却時の純キャピタルゲインに対して課税されます。外国人の場合、購入日から1～5年以内に販売した場合の税率は30％となります。 6年目以降は10%に下がります。マレーシア国民の場合、住宅資産に対する RPGT は 5 年目以降 30% から 0% にまで下がり、長期保有が非常に有益になります。"
+    },
+    {
+      "category": "地理",
+      "question": "ジョホール-シンガポール RTS リンクは不動産価値にどのような影響を与えますか?",
+      "answer": "高速交通システム (RTS) リンクは、ジョホールバル (ブキット チャガール ノード) とシンガポール (ウッドランズ ノース ノード) を接続します。運行すると、1 時間あたり最大 10,000 人の乗客を片道 5 分以内に輸送します。これにより、ジョホールバルのすぐ隣接する地域（3km未満）での資本の大幅な増加と高い賃貸利回りが実現しました。"
+    },
+    {
+      "category": "財務",
+      "question": "開発者有利子制度 (DIBS) とは何ですか?",
+      "answer": "DIBS は、建設段階で開発業者がローンの金利を負担する制度でした。マレーシア銀行ネガラは投機入札を抑制する目的で2014年に禁止した。現在、住宅購入者は建設の進行段階に応じて直接請求額を支払い、機関投資家にとって投資の透明性と安全性を維持しています。"
+    },
+    {
+      "category": "所有",
+      "question": "Strata タイトルと個人タイトルとは何ですか?",
+      "answer": "個人所有権は、土地と建物が完全に 1 人の所有者に属する土地付き不動産 (テラス付き、セミ D、バンガロー) に対して発行されます。 Strata タイトルは、高層ビル (アパート、コンドミニアム、サービス スイート) または共用設備を共有するゲート付きの土地開発に対して発行されます。これにより、ユニットの所有権と共有共有エリアが確立されます。"
+    },
+    {
+      "category": "財務",
+      "question": "保守料金はどのように計算されますか?",
+      "answer": "維持費と減債基金は、特定の不動産に割り当てられた平方フィート (「シェア単位」) に基づいて計算されます。サービス料は、セキュリティ、造園、エレベーター、フィットネス クラブ、保険に充当されます。減債基金は長期的な資本タスク（定期的な再塗装、構造のアップグレードなど）を処理します。 1平方フィートあたりRM 0.25からRM 0.60が予想されます。"
+    },
+    {
+      "category": "ビザと入国",
+      "question": "シンガポール人はジョホール州の土地を購入できますか?",
+      "answer": "はい、シンガポール人は、州の最低価格の下限（通常、立地条件と免除に応じて RM 1,000,000 ～ RM 2,000,000）を満たしていれば、ジョホール州の指定された国際ゾーンまたはプライベートマスター開発地（プテリハーバー、メディニ、フォレストシティなど）内の高級土地物件を購入できます。"
+    },
+    {
+      "category": "財務",
+      "question": "マレーシアで不動産を購入する際にかかる弁護士費用はいくらですか?",
+      "answer": "弁護士費用は標準的なもので、弁護士報酬令に基づいて規制されています。手数料は不動産の購入価格の 1% ～ 1.25% です。買い手は印紙税、州の同意申請費用、融資を受ける場合の専門家による評価料も課されるため、平均クロージングコストは約3％から5％になります。"
+    },
+    {
+      "category": "融資",
+      "question": "マレーシアの標準基本貸出金利 (SBR) はいくらですか?",
+      "answer": "標準化基本金利 (SBR) は、翌日物政策金利 (OPR) に基づいてマレーシア銀行によって設定されます。ほとんどの銀行の住宅ローン金利は SBR + 1.0% ～ 1.5% 付近で厳密に変動しており、平均有効住宅ローン金利は年 3.8% ～ 4.5% に相当し、不動産レバレッジを非常に手頃な価格にしています。"
+    },
+    {
+      "category": "所有",
+      "question": "建設中と完成は購入者にとって何を意味しますか?",
+      "answer": "完成した不動産（「流通市場」）を購入すると、即時入居、検査、賃貸の流れが可能になりますが、より迅速な支払い構造が必要になります。建設中の購入（「プライマリーマーケット」または「オフプラン」）では、初期頭金、進捗金の支払い、早期開発者割引、および新しいレイアウトが安くなります。"
+    },
+    {
+      "category": "所有",
+      "question": "不動産の所有権を子供に簡単に譲渡できますか?",
+      "answer": "はい。近親者（配偶者、親から子、子から親）内の送金には大幅な税金免除が受けられます。最新の連邦規制に基づき、親と子の間での譲渡は最初の不動産価格 RM 1,000,000 まで印紙税が 100% 免除されるため、世代間の資産移行が安定します。"
+    },
+    {
+      "category": "財務",
+      "question": "マレーシアでは外国人家主の不動産賃貸に税金がかかりますか?",
+      "answer": "マレーシアで発生した賃貸収入は所得として扱われ、課税されます。非居住者の場合、定額税率は課税対象となる純賃貸収入（標準管理費、固定資産税、および住宅ローン利息の支払いを差し引いた後）に対して 30% です。これは、世界標準と比較して依然として高い競争力を維持します。"
+    },
+    {
+      "category": "所有",
+      "question": "プログレッシブ支払い制度とは何ですか?",
+      "answer": "これは建設中の不動産の支払いスケジュールであり、建物が物理的な構造ベンチマーク (基礎、構造フレームワーク、配管、電気など) に達すると、段階的に支払いが動的に行われます。これにより、肉体労働の完了に金銭的支払いを結び付けることで消費者を保護します。"
+    },
+    {
+      "category": "融資",
+      "question": "マレーシアでは住宅ローンに不動産保険の加入が義務付けられていますか?",
+      "answer": "はい、銀行は買い手に住宅ローン保険、つまりMRTA（住宅ローン削減期間保証）またはMLTA（住宅ローンレベル期間保証）を確保することを要求しています。これは重大な緊急事態の場合に住宅ローンの残高を決済し、購入者の家族と銀行の両方を保護します。"
+    },
+    {
+      "category": "所有",
+      "question": "開発者が建設をデフォルトしたり中止した場合はどうなりますか?",
+      "answer": "マレーシアでは、住宅開発は住宅開発法 (HDA) によって厳格に規制されています。開発者の資金は、政府委員会によって監視される安全な住宅開発口座 (HDA) に送られます。これにより、開発者資産がデフォルトを防止するように構造化され、購入者に安心感を提供します。"
+    }
+  ],
+  "faqs_ko": [
+    {
+      "category": "소유권",
+      "question": "외국인이 말레이시아에서 부동산을 구입할 수 있나요?",
+      "answer": "예, 외국인은 말레이시아에서 주 정부 지침에 따라 설정된 특정 최소 가격 기준에 따라 자유 보유 및 임대 부동산을 소유할 수 있습니다. 일반적으로 기본 임계값은 RM 1,000,000이지만 Selangor와 같은 주에서는 일부 거래를 RM 2,000,000로 제한하는 반면 Medini Johor는 최소 한도에서 특별 면제를 적용합니다. 고급 콘도는 완벽하게 접근 가능합니다."
+    },
+    {
+      "category": "소유권",
+      "question": "말레이시아의 Freehold와 Leasehold 부동산의 차이점은 무엇입니까?",
+      "answer": "자유 보유 소유자는 토지와 건물에 대해 영구적으로 영구적인 절대 소유권을 보유하므로 부동산을 쉽게 양도할 수 있습니다. 임대 소유자는 일반적으로 99년이라는 제한된 임기 동안 부동산을 보유합니다. 갱신하려면 주정부 당국에 보험료를 지불해야 하며, 이로 인해 일반적으로 후기 임기(예: 남은 기간이 30년 미만) 동안 거래 프로세스가 느려집니다."
+    },
+    {
+      "category": "금융",
+      "question": "싱가포르인이나 외국인이 부동산을 취득할 때 높은 세금을 내나요?",
+      "answer": "인수에는 양도 증서(MOT)에 대한 인지세가 포함되며, 이는 시장 가치에 따라 1%에서 4%까지 확장됩니다. 말레이시아에는 싱가포르처럼 추가 구매자 인지세(ABSD)가 없으므로 싱가포르의 2차 주택 소유자에게 경쟁력이 높습니다. 그러나 처분할 때 부동산 이득세(RPGT)가 적용되는데, 이는 처음 5년 이내에 매각하는 경우 자본 이득에 대해 30%입니다."
+    },
+    {
+      "category": "자금조달",
+      "question": "외국인 구매자가 말레이시아 주택대출을 쉽게 확보할 수 있나요?",
+      "answer": "예. 주요 국내 은행(예: Maybank, CIMB)과 국제 은행(예: HSBC, UOB)은 외국인에게 주택 융자를 제공합니다. 일반적으로 LTV(금융마진)은 비거주자 평가액의 50%~70% 범위입니다. 고액 자산가, 싱가포르 거주자, MM2H 비자 소지자는 최대 80% 또는 85%의 재정 마진을 쉽게 확보할 수 있습니다."
+    },
+    {
+      "category": "비자 및 입국",
+      "question": "Magic MM2H 프로그램은 무엇이며 현재 옵션은 무엇입니까?",
+      "answer": "말레이시아 내 두 번째 집(MM2H)은 외국인을 위한 장기 거주 프로그램입니다. 2024년에 개정된 이 규정은 지정된 말레이시아 은행 내에서 다양한 이자부 고정 예금(RM 500,000~RM 5,000,000)을 요구하는 플래티넘, 골드, 실버 등급으로 나뉩니다. 각 계층은 특정 다중 입국 거주자 패스와 고급 부동산을 구입할 수 있는 자격을 부여합니다."
+    },
+    {
+      "category": "소유권",
+      "question": "주정부 동의 신청 절차는 무엇입니까?",
+      "answer": "말레이시아에서 외국인 구매자가 부동산을 취득할 때마다 해당 토지 사무소 등기부로부터 물리적 승인(국가 동의)을 신청해야 합니다. 처리 수수료가 있습니다(주에 따라 ~RM 1,000 ~ RM 20,000). 승인 절차는 일반적으로 거래가 진행되기 전에 해결되는 데 1~3개월 정도 소요됩니다."
+    },
+    {
+      "category": "금융",
+      "question": "부동산 소득세(RPGT) 구조는 무엇입니까?",
+      "answer": "RPGT는 부동산 처분 시 순 자본 이득에 부과됩니다. 외국인의 경우, 구매일로부터 1~5년 이내에 판매하는 경우 세율은 30%입니다. 6년차부터는 10%로 감소합니다. 말레이시아 시민의 경우 RPGT는 주거용 자산에 대해 5년차 이후 30%에서 0%로 축소되어 장기 보유에 매우 수익성이 높습니다."
+    },
+    {
+      "category": "지리학",
+      "question": "조호르-싱가포르 RTS 링크는 부동산 가치에 어떤 영향을 미치나요?",
+      "answer": "RTS(고속교통시스템) 링크는 조호바루(Bukit Chagar Node)와 싱가포르(Woodlands North Node)를 연결합니다. 운행 시 편도 5분 이내에 시간당 최대 10,000명의 승객을 운송합니다. 이로 인해 조호르바루에서 바로 인접한 지역(3km 미만)에서 막대한 자본 성장과 높은 임대 수익률이 나타났습니다."
+    },
+    {
+      "category": "금융",
+      "question": "DIBS(개발자 이익 베어링 제도)란 무엇입니까?",
+      "answer": "DIBS는 건설 단계에서 개발자가 대출에 대한 이자를 부담하는 방식이었습니다. 투기적 입찰을 억제하기 위해 2014년 말레이시아 네가라 은행(Bank Negara Malaysia)에 의해 금지되었습니다. 오늘날 주택 구매자는 건설 진행 단계에 따라 직접 청구된 비용을 지불하여 기관 구매자를 위한 투자를 투명하고 안전하게 유지합니다."
+    },
+    {
+      "category": "소유권",
+      "question": "Strata 타이틀과 개별 타이틀은 무엇입니까?",
+      "answer": "개별 소유권은 토지와 건물이 전적으로 한 소유자에게 속하는 토지 부동산(테라스형, 세미 D형, 방갈로)에 대해 발행됩니다. Strata Title은 다층 건물(아파트, 콘도미니엄, 서비스 스위트) 또는 공동 편의 시설을 공유하는 대지 개발에 대해 발행됩니다. 이는 유닛의 소유권과 공유 공용 공간을 설정합니다."
+    },
+    {
+      "category": "금융",
+      "question": "유지관리비는 어떻게 계산되나요?",
+      "answer": "유지 관리비와 감채 자금은 귀하의 특정 부동산에 할당된 면적('공유 단위')을 기준으로 계산됩니다. 서비스 비용은 보안, 조경, 엘리베이터, 피트니스 클럽 및 보험에 사용됩니다. 침몰 기금은 장기적인 자본 작업(예: 주기적인 재도장, 구조적 업그레이드)을 처리합니다. 평방피트당 RM 0.25~RM 0.60이 예상됩니다."
+    },
+    {
+      "category": "비자 및 입국",
+      "question": "싱가포르인은 조호르에서 토지 부동산을 구입할 수 있습니까?",
+      "answer": "예, 싱가포르인은 지정된 국제 구역 또는 조호르의 민간 마스터 개발(예: Puteri Harbour, Medini, Forest City) 내에서 고급 토지 부동산을 구입할 수 있습니다. 단, 주정부 최소 가격 책정 하한선(위치 매개변수 및 면제 사항에 따라 일반적으로 RM 1,000,000 ~ RM 2,000,000)을 충족해야 합니다."
+    },
+    {
+      "category": "금융",
+      "question": "말레이시아에서 부동산 구입과 관련된 법적 비용은 얼마입니까?",
+      "answer": "변호사 비용은 표준이며 변호사 보상 명령에 따라 규제됩니다. 수수료는 부동산 구입 가치의 1%에서 1.25% 사이입니다. 또한 구매자에게는 인지세, 주정부 동의 신청 비용 및 자금 조달 시 전문 평가 수수료가 부과되므로 평균 마감 비용이 약 3%~5%에 이릅니다."
+    },
+    {
+      "category": "자금조달",
+      "question": "말레이시아의 표준 기본 대출 금리(SBR)는 얼마입니까?",
+      "answer": "표준화된 기본 금리(SBR)는 야간 정책 금리(OPR)를 기준으로 Bank Negara Malaysia에서 설정합니다. 대부분의 은행 모기지 이자율은 SBR + 1.0% ~ 1.5% 정도에서 변동하며 이는 평균 활성 모기지 이자율이 연간 3.8% ~ 4.5%이므로 부동산 레버리지를 매우 저렴하게 만들 수 있습니다."
+    },
+    {
+      "category": "소유권",
+      "question": "건설 중과 완료는 구매자에게 무엇을 의미합니까?",
+      "answer": "완성된 부동산('2차 시장')을 구매하면 즉각적인 입주, 검사 및 임대 흐름이 가능하지만 더 빠른 지불 구조가 요구됩니다. 건설 중인('1차 시장' 또는 '비계획') 구매는 더 낮은 초기 계약금, 진행 지불금, 조기 개발자 할인 및 최신 레이아웃을 제공합니다."
+    },
+    {
+      "category": "소유권",
+      "question": "재산 소유권을 자녀에게 쉽게 양도할 수 있나요?",
+      "answer": "예. 직계 가족(배우자, 부모에서 자녀로, 자녀에서 부모로) 내 이전 시에는 세금 면제 혜택을 누릴 수 있습니다. 부모와 자녀 간의 양도는 최신 연방 규정에 따라 부동산 가치 RM 1,000,000까지 100% 인지세 면제를 받을 수 있어 세대 간 자산 전환이 안정적으로 이루어집니다."
+    },
+    {
+      "category": "금융",
+      "question": "말레이시아에서는 외국인 집주인에 대해 부동산 임대에 세금이 부과되나요?",
+      "answer": "말레이시아에서 발생한 임대 수익은 소득으로 간주되어 과세됩니다. 비거주 개인의 경우 균일 세율은 순 과세 임대 소득(표준 관리비, 재산세 및 모기지 이자 지급액을 공제한 후)에 대해 30%입니다. 이는 글로벌 표준에 비해 여전히 높은 경쟁력을 유지하고 있습니다."
+    },
+    {
+      "category": "소유권",
+      "question": "점진적 지불 방식이란 무엇입니까?",
+      "answer": "이는 건물이 물리적 구조 기준(예: 기초, 구조 프레임워크, 배관, 전기)에 도달하는 단계에서 동적으로 지불이 이루어지는 건설 중인 부동산에 대한 지불 일정입니다. 이는 금전적 지불금을 육체 노동 완료와 연결하여 소비자를 보호합니다."
+    },
+    {
+      "category": "자금조달",
+      "question": "말레이시아에서는 주택담보대출에 대한 재산보험이 필수인가요?",
+      "answer": "예, 은행은 구매자에게 MRTA(Mortgage Reducing Term Assurance) 또는 MLTA(Mortgage Level Term Assurance)라는 모기지 보험을 확보하도록 요구합니다. 이 보험은 긴급 상황 발생 시 남은 주택 대출 잔액을 정산하여 구매자의 가족과 은행을 모두 보호합니다."
+    },
+    {
+      "category": "소유권",
+      "question": "개발자가 공사를 불이행하거나 공사를 중단하면 어떻게 되나요?",
+      "answer": "주택 개발은 말레이시아 주택개발법(HDA)의 엄격한 적용을 받습니다. 개발자 자금은 정부 위원회가 모니터링하는 안전한 주택 개발 계정(HDA)으로 전달됩니다. 이를 통해 개발자 자산이 채무 불이행을 방지하도록 구성되어 구매자에게 마음의 평화를 제공합니다."
+    }
+  ],
+  "faqs_ar": [
+    {
+      "category": "ملكية",
+      "question": "هل يمكن للأجانب شراء العقارات في ماليزيا؟",
+      "answer": "نعم، يمكن للأجانب امتلاك عقارات للتملك الحر أو الإيجار في ماليزيا، مع مراعاة الحد الأدنى المحدد للسعر الذي تحدده إرشادات الولاية الإقليمية. بشكل عام، الحد الأساسي هو 1,000,000 رينجيت ماليزي، لكن ولايات مثل سيلانجور تحدد بعض المعاملات بمبلغ 2,000,000 رينجيت ماليزي، في حين أن مدينة ميديني جوهور لديها استثناءات خاصة من الحدود الدنيا. الشقق الراقية يمكن الوصول إليها بالكامل."
+    },
+    {
+      "category": "ملكية",
+      "question": "ما هو الفرق بين عقارات التملك الحر والمستأجر في ماليزيا؟",
+      "answer": "يمتلك أصحاب التملك الحر حق ملكية مطلق دائم على الأرض والبناء إلى الأبد، مما يجعل الملكية قابلة للتحويل بسهولة. يمتلك أصحاب العقارات المستأجرة الممتلكات لفترة محدودة، عادة 99 سنة. وتتطلب التجديدات دفع أقساط التأمين للسلطات على مستوى الدولة، الأمر الذي يؤدي عموما إلى إبطاء عمليات المعاملات خلال فترات المرحلة المتأخرة (على سبيل المثال، أقل من 30 عاما المتبقية)."
+    },
+    {
+      "category": "المالية",
+      "question": "هل يدفع السنغافوريون أو الأجانب ضرائب عالية عند الحصول على العقارات؟",
+      "answer": "يتضمن الاستحواذ رسوم الدمغة على أداة النقل (MOT)، والتي تتراوح من 1% إلى 4% اعتمادًا على تقييمات السوق. لا توجد رسوم طوابع إضافية على المشتري (ABSD) في ماليزيا كما هو الحال في سنغافورة، مما يجعلها تنافسية للغاية لأصحاب المنازل الثانوية السنغافوريين. ومع ذلك، عند التصرف، يتم تطبيق ضريبة الأرباح العقارية (RPGT)، والتي تبلغ 30٪ على أرباح رأس المال إذا تم بيعها خلال السنوات الخمس الأولى."
+    },
+    {
+      "category": "التمويل",
+      "question": "هل يمكن للمشترين الأجانب تأمين قروض المنازل الماليزية بسهولة؟",
+      "answer": "نعم. تقدم البنوك المحلية الكبرى (مثل Maybank وCIMB) والبنوك الدولية (مثل HSBC وUOB) التمويل العقاري للأجانب. عادةً، يتراوح هامش التمويل (LTV) من 50% إلى 70% من التقييم لغير المقيمين. يمكن للمهنيين ذوي الثروات العالية، والمقيمين في سنغافورة، وحاملي تأشيرة MM2H الحصول بسهولة على هامش مالي يصل إلى 80% أو 85%."
+    },
+    {
+      "category": "التأشيرات والدخول",
+      "question": "ما هو برنامج Magic MM2H وما هي خياراته الحالية؟",
+      "answer": "ماليزيا بيتي الثاني (MM2H) هو برنامج إقامة طويل الأمد للأجانب. تمت مراجعته في عام 2024، وهو ينقسم إلى فئات بلاتينية وذهبية وفضية تتطلب ودائع ثابتة مختلفة بفائدة (تتراوح من 500000 رينجيت ماليزي إلى 5000000 رينجيت ماليزي) داخل البنوك الماليزية المعينة. يمنح كل مستوى تصاريح دخول متعددة للمقيمين وأهلية لشراء العقارات الراقية."
+    },
+    {
+      "category": "ملكية",
+      "question": "ما هي عمليات طلب موافقة الدولة؟",
+      "answer": "تتطلب كل عملية استحواذ على العقارات من قبل مشتر أجنبي في ماليزيا تقديم طلب مادي للحصول على الموافقة، المعروف باسم موافقة الدولة، من سجل مكتب الأراضي المقابل. هناك رسوم معالجة (~ 1000 رينجيت ماليزي إلى 20000 رينجيت ماليزي حسب الولاية). تستغرق عملية الموافقة عادة ما بين 1 إلى 3 أشهر لحلها قبل أن تتمكن المعاملة من التقدم."
+    },
+    {
+      "category": "المالية",
+      "question": "ما هو هيكل ضريبة الأرباح العقارية (RPGT)؟",
+      "answer": "يتم فرض RPGT على صافي أرباح رأس المال عند التصرف في العقارات. بالنسبة للأجانب، تبلغ نسبة الضريبة 30% إذا تم بيعها خلال السنوات من 1 إلى 5 من تاريخ الشراء. وتنخفض إلى 10% في السنة السادسة وما بعدها. بالنسبة للمواطنين الماليزيين، تتراوح نسبة RPGT من 30% إلى 0% بعد السنة الخامسة للأصول السكنية، مما يجعل الاحتفاظ بها على المدى الطويل مربحًا للغاية."
+    },
+    {
+      "category": "الجغرافيا",
+      "question": "كيف يؤثر رابط Johor-Singapore RTS على قيم العقارات؟",
+      "answer": "يربط رابط نظام النقل السريع (RTS) جوهور باهرو (عقدة بوكيت تشاغار) بسنغافورة (عقدة وودلاندز الشمالية). عند التشغيل، فإنه ينقل ما يصل إلى 10000 راكب في الساعة في كل اتجاه في أقل من 5 دقائق. وقد أدى ذلك إلى نمو هائل في رأس المال وعوائد إيجارية مرتفعة في المناطق المجاورة مباشرة (أقل من 3 كيلومترات) في جوهور باهرو."
+    },
+    {
+      "category": "المالية",
+      "question": "ما هو برنامج تحمل فوائد المطور (DIBS)؟",
+      "answer": "كان DIBS عبارة عن مخطط يتحمل فيه المطورون رسوم الفائدة على القروض أثناء مراحل البناء. تم حظره في عام 2014 من قبل بنك نيجارا ماليزيا للحد من العطاءات المضاربة. اليوم، يدفع مشتري المنازل مراحل تقدم البناء كما يتم إصدار فواتيرها مباشرة، مما يحافظ على شفافية الاستثمارات وأمانها للمشترين من المؤسسات."
+    },
+    {
+      "category": "ملكية",
+      "question": "ما هو عنوان الطبقات مقابل العنوان الفردي؟",
+      "answer": "يتم إصدار سندات ملكية فردية لعقارات الأراضي (المدرجات، وشبه D، والأكواخ) حيث تعود ملكية الأرض والمبنى بالكامل إلى مالك واحد. يتم إصدار Strata Title للمباني متعددة الطوابق (الشقق، الوحدات السكنية، الأجنحة المخدومة) أو مشاريع التطوير ذات البوابات التي تتقاسم المرافق العامة. يحدد ملكية الوحدة والمناطق المشتركة."
+    },
+    {
+      "category": "المالية",
+      "question": "كيف يتم احتساب رسوم الصيانة؟",
+      "answer": "يتم احتساب رسوم الصيانة وأموال الغرق بناءً على المساحة المخصصة للقدم المربع (\"وحدات المشاركة\") للممتلكات المحددة الخاصة بك. تمول رسوم الخدمات الأمن والمناظر الطبيعية والمصاعد ونوادي اللياقة البدنية والتأمين. يتعامل صندوق الغرق مع المهام الرأسمالية طويلة الأجل (على سبيل المثال، إعادة الطلاء الدورية، والترقيات الهيكلية). توقع 0.25 رينجيت ماليزي إلى 0.60 رينجيت ماليزي لكل قدم مربع."
+    },
+    {
+      "category": "التأشيرات والدخول",
+      "question": "هل يُسمح للسنغافوريين بشراء عقارات في جوهور؟",
+      "answer": "نعم، يمكن للسنغافوريين شراء عقارات فاخرة داخل مناطق دولية محددة أو مشاريع تطوير رئيسية خاصة (مثل ميناء بوتيري، وميديني، وفورست سيتي) في جوهور، بشرط أن يستوفوا الحد الأدنى من التسعير الحكومي (عادةً ما يتراوح بين 1,000,000 رينجيت ماليزي إلى 2,000,000 رينجيت ماليزي اعتمادًا على معلمات الموقع والإعفاءات)."
+    },
+    {
+      "category": "المالية",
+      "question": "ما هي الرسوم القانونية المترتبة على شراء العقارات في ماليزيا؟",
+      "answer": "الرسوم القانونية قياسية ويتم تنظيمها بموجب أمر أجور المحامين. وتتراوح الرسوم من 1% إلى 1.25% من قيمة شراء العقار. ويخضع المشترون أيضًا لرسوم الطوابع، وتكاليف طلب موافقة الدولة، ورسوم التقييم المهني في حالة الحصول على التمويل، مما يصل متوسط ​​تكاليف الإغلاق إلى حوالي 3% إلى 5%."
+    },
+    {
+      "category": "التمويل",
+      "question": "ما هو معدل الإقراض الأساسي القياسي (SBR) في ماليزيا؟",
+      "answer": "يتم تحديد السعر الأساسي الموحد (SBR) من قبل بنك Negara Malaysia بناءً على سعر الفائدة لليلة واحدة (OPR). تتقلب أسعار الفائدة على الرهن العقاري في معظم البنوك بشكل وثيق حول SBR + 1.0٪ إلى 1.5٪، وهو ما يترجم إلى متوسط ​​معدلات الرهن العقاري النشط من 3.8٪ إلى 4.5٪ سنويًا، مما يجعل الرافعة المالية العقارية ميسورة التكلفة للغاية."
+    },
+    {
+      "category": "ملكية",
+      "question": "ماذا يعني قيد الإنشاء مقابل مكتمل بالنسبة للمشترين؟",
+      "answer": "يسمح شراء العقارات المكتملة (\"السوق الثانوية\") بالإشغال الفوري والتفتيش وتدفقات الإيجار، ولكنه يتطلب هياكل دفع أسرع. يوفر الشراء قيد الإنشاء (\"السوق الأولية\" أو \"على الخارطة\") دفعات أولية أقل، ودفعات تقدم، وخصومات للمطورين المبكرين، وتخطيطات أحدث."
+    },
+    {
+      "category": "ملكية",
+      "question": "هل يمكنني نقل ملكية العقار إلى الأبناء بسهولة؟",
+      "answer": "نعم. تتمتع التحويلات داخل الأسرة المباشرة (الأزواج، والآباء إلى الأطفال، والأطفال إلى الوالدين) بإعفاءات ضريبية كبيرة. التحويلات بين الوالدين والأطفال مؤهلة للحصول على إعفاء من رسوم الدمغة بنسبة 100% حتى أول قيمة عقارية تبلغ 1,000,000 رينجيت ماليزي بموجب أحدث اللوائح الفيدرالية، مما يجعل انتقالات الأصول بين الأجيال مستقرة."
+    },
+    {
+      "category": "المالية",
+      "question": "هل تخضع إيجارات العقارات للضريبة في ماليزيا بالنسبة لأصحاب العقارات الأجانب؟",
+      "answer": "يتم التعامل مع إيرادات الإيجار المتراكمة في ماليزيا على أنها دخل وتخضع للضريبة. بالنسبة للأفراد غير المقيمين، يبلغ معدل الضريبة الثابت 30% على صافي دخل الإيجار الخاضع للضريبة (بعد خصم رسوم الصيانة القياسية، والضرائب العقارية، ومدفوعات فوائد الرهن العقاري). وهذا لا يزال يتمتع بقدرة تنافسية عالية مقارنة بالمعايير العالمية."
+    },
+    {
+      "category": "ملكية",
+      "question": "ما هو نظام الدفع التدريجي؟",
+      "answer": "إنه جدول سداد للعقارات قيد الإنشاء حيث يتم سداد الدفعات ديناميكيًا على مراحل تسمى عندما تصل المباني إلى المعايير الهيكلية المادية (على سبيل المثال، الأساس، والإطار الهيكلي، والسباكة، والكهرباء). وهذا يحمي المستهلك من خلال ربط المدفوعات المالية بإكمال العمل البدني."
+    },
+    {
+      "category": "التمويل",
+      "question": "هل التأمين على الممتلكات إلزامي في ماليزيا بالنسبة للقروض العقارية؟",
+      "answer": "نعم، تطلب البنوك من المشترين تأمين تأمين الرهن العقاري، أي MRTA (ضمان تخفيض مدة الرهن العقاري) أو MLTA (ضمان مدة مستوى الرهن العقاري)، الذي يقوم بتسوية رصيد قرض المنزل المتبقي في حالة الطوارئ الحرجة، مما يحمي عائلة المشتري والبنك."
+    },
+    {
+      "category": "ملكية",
+      "question": "ماذا يحدث إذا تخلف المطور عن السداد أو توقف عن البناء؟",
+      "answer": "تخضع مشاريع تطوير الإسكان بشكل صارم لقانون تطوير الإسكان (HDA) في ماليزيا. يتم توجيه أموال المطورين إلى حسابات تطوير الإسكان الآمنة (HDA) التي تراقبها المجالس الحكومية. ويضمن هذا أن يتم تنظيم أصول المطورين لمنع حالات التخلف عن السداد، مما يوفر للمشترين راحة البال."
+    }
+  ],
+  "faqs_fr": [
+    {
+      "category": "Possession",
+      "question": "Les étrangers peuvent-ils acheter une propriété en Malaisie ?",
+      "answer": "Oui, les étrangers peuvent posséder des propriétés en pleine propriété ou à bail en Malaisie, sous réserve de certains seuils de prix minimum fixés par les directives de l'État provincial. Généralement, le seuil de référence est de 1 000 000 RM, mais des États comme Selangor limitent certaines transactions à 2 000 000 RM, tandis que Medini Johor bénéficie d'exemptions spéciales des limites minimales. Les condos haut de gamme sont entièrement accessibles."
+    },
+    {
+      "category": "Possession",
+      "question": "Quelle est la différence entre les propriétés en pleine propriété et en location en Malaisie ?",
+      "answer": "Les propriétaires en pleine propriété possèdent un titre absolu permanent sur le terrain et le bâtiment à perpétuité, ce qui rend la propriété facilement transférable. Les propriétaires à bail détiennent leurs biens pour une durée d'occupation limitée, généralement de 99 ans. Les renouvellements nécessitent le paiement de primes aux autorités nationales, ce qui ralentit généralement les processus transactionnels à un stade avancé des mandats (par exemple, moins de 30 ans restants)."
+    },
+    {
+      "category": "Données financières",
+      "question": "Les Singapouriens ou les étrangers paient-ils des impôts élevés lors de l’acquisition de propriétés ?",
+      "answer": "L'acquisition implique un droit de timbre sur l'instrument de transfert (MOT), qui varie de 1 % à 4 % en fonction des valorisations du marché. Il n'y a pas de droit de timbre supplémentaire pour l'acheteur (ABSD) en Malaisie comme à Singapour, ce qui le rend très compétitif pour les propriétaires de résidence secondaire singapouriens. Cependant, lors de la cession, l'impôt sur les plus-values ​​immobilières (RPGT) s'applique, qui s'élève à 30 % sur les plus-values ​​en cas de vente dans les 5 premières années."
+    },
+    {
+      "category": "Financement",
+      "question": "Les acheteurs étrangers peuvent-ils facilement obtenir des prêts immobiliers malaisiens ?",
+      "answer": "Oui. Les grandes banques locales (par exemple Maybank, CIMB) et internationales (par exemple HSBC, UOB) proposent des financements immobiliers aux étrangers. Généralement, la marge de financement (LTV) varie de 50 % à 70 % de la valorisation pour les non-résidents. Les professionnels fortunés, les résidents de Singapour et les titulaires de visa MM2H peuvent facilement obtenir une marge de financement allant jusqu'à 80 % ou 85 %."
+    },
+    {
+      "category": "Visas et entrée",
+      "question": "Qu'est-ce que le programme Magic MM2H et quelles sont ses options actuelles ?",
+      "answer": "Le Malaysia My Second Home (MM2H) est un programme de résidence de longue durée pour les étrangers. Révisé en 2024, il est divisé en niveaux Platine, Or et Argent nécessitant différents dépôts à terme portant intérêt (allant de 500 000 RM à 5 000 000 RM) dans des banques malaisiennes désignées. Chaque niveau accorde des laissez-passer spécifiques pour les résidents à entrées multiples et l'éligibilité à l'achat de biens immobiliers haut de gamme."
+    },
+    {
+      "category": "Possession",
+      "question": "Quels sont les processus de demande de consentement de l’État ?",
+      "answer": "Chaque acquisition immobilière par un acheteur étranger en Malaisie nécessite une demande physique d'approbation, connue sous le nom de consentement de l'État, auprès du registre foncier correspondant. Il y a des frais de traitement (~ 1 000 RM à 20 000 RM selon l'État). Le processus d'approbation prend généralement entre 1 et 3 mois avant que la transaction puisse progresser."
+    },
+    {
+      "category": "Données financières",
+      "question": "Quelle est la structure de l’impôt sur les plus-values ​​immobilières (RPGT) ?",
+      "answer": "Le RPGT est prélevé sur les plus-values ​​nettes de cession immobilière. Pour les étrangers, le taux d'imposition est de 30 % en cas de vente dans les années 1 à 5 suivant la date d'achat. Il tombe à 10 % à partir de la 6e année. Pour les citoyens malaisiens, le RPGT passe de 30 % à 0 % après la cinquième année pour les actifs résidentiels, ce qui rend la détention à long terme extrêmement rentable."
+    },
+    {
+      "category": "Géographie",
+      "question": "Quel est l'impact du lien RTS Johor-Singapour sur la valeur des propriétés ?",
+      "answer": "Le lien RTS (Rapid Transit System) relie Johor Bahru (nœud Bukit Chagar) à Singapour (nœud nord de Woodlands). Une fois opérationnel, il transporte jusqu'à 10 000 passagers par heure dans chaque sens en moins de 5 minutes. Cela a conduit à une croissance massive du capital et à des rendements locatifs élevés dans les zones immédiatement adjacentes (moins de 3 km) à Johor Bahru."
+    },
+    {
+      "category": "Données financières",
+      "question": "Qu'est-ce que le Programme d'intérêt des développeurs (DIBS) ?",
+      "answer": "Le DIBS était/est un système dans lequel les promoteurs supportent les intérêts sur les prêts pendant les phases de construction. Elle a été interdite en 2014 par la Bank Negara Malaysia pour freiner les enchères spéculatives. Aujourd’hui, les acheteurs de maison paient directement les étapes de construction telles qu’elles sont facturées, ce qui garantit la transparence et la sécurité des investissements pour les acheteurs institutionnels."
+    },
+    {
+      "category": "Possession",
+      "question": "Qu'est-ce qu'un titre Strata par rapport à un titre individuel ?",
+      "answer": "Le titre individuel est délivré pour les propriétés foncières (mitoyennes, semi-D, bungalows) où le terrain et le bâtiment appartiennent entièrement à un seul propriétaire. Le titre Strata est délivré pour les immeubles à plusieurs étages (appartements, copropriétés, suites avec services hôteliers) ou les lotissements fermés partageant des commodités communes. Il établit la propriété de l'unité et des espaces communs partagés."
+    },
+    {
+      "category": "Données financières",
+      "question": "Comment sont calculés les frais de maintenance ?",
+      "answer": "Les frais d'entretien et les fonds d'amortissement sont calculés en fonction de la superficie allouée (« unités d'actions ») de votre propriété spécifique. Les frais de service financent la sécurité, l'aménagement paysager, les ascenseurs, les clubs de fitness et l'assurance. Le fonds d'amortissement gère les tâches capitales à long terme (par exemple, repeinture périodique, améliorations structurelles). Attendez-vous à 0,25 RM à 0,60 RM par pied carré."
+    },
+    {
+      "category": "Visas et entrée",
+      "question": "Les Singapouriens sont-ils autorisés à acheter des propriétés foncières à Johor ?",
+      "answer": "Oui, les Singapouriens peuvent acheter des propriétés foncières haut de gamme dans des zones internationales désignées ou des développements privés (tels que Puteri Harbour, Medini, Forest City) à Johor, à condition qu'ils respectent le prix plancher minimum de l'État (généralement entre 1 000 000 RM et 2 000 000 RM selon les paramètres de localisation et les exemptions)."
+    },
+    {
+      "category": "Données financières",
+      "question": "Quels sont les frais juridiques liés à l’achat d’une propriété en Malaisie ?",
+      "answer": "Les frais juridiques sont standard et réglementés par l'ordonnance sur la rémunération des avocats. Les frais varient de 1% à 1,25% de la valeur d'achat du bien. Les acheteurs sont également soumis aux droits de timbre, aux frais de demande d'autorisation de l'État et aux frais d'évaluation professionnelle s'ils obtiennent un financement, ce qui porte les frais de clôture moyens à environ 3 % à 5 %."
+    },
+    {
+      "category": "Financement",
+      "question": "Quel est le taux de base standard (SBR) en Malaisie ?",
+      "answer": "Le taux de base standardisé (SBR) est fixé par la Bank Negara Malaysia sur la base du taux directeur au jour le jour (OPR). La plupart des taux d'intérêt hypothécaires bancaires fluctuent étroitement autour du SBR + 1,0 % à 1,5 %, ce qui se traduit par des taux hypothécaires actifs moyens de 3,8 % à 4,5 % par an, ce qui rend l'effet de levier immobilier très abordable."
+    },
+    {
+      "category": "Possession",
+      "question": "Que signifie en construction ou achevé pour les acheteurs ?",
+      "answer": "L'achat de propriétés achevées (« marché secondaire ») permet une occupation, des inspections et des flux de location immédiats, mais exige des structures de paiement plus rapides. L'achat en construction (« marché primaire » ou « sur plan ») offre des acomptes initiaux inférieurs, des paiements progressifs, des remises pour les développeurs précoces et des aménagements plus récents."
+    },
+    {
+      "category": "Possession",
+      "question": "Puis-je transférer facilement la propriété aux enfants ?",
+      "answer": "Oui. Les transferts au sein de la famille immédiate (conjoints, parents vers enfants, enfants vers parents) bénéficient d'exonérations fiscales importantes. Les transferts entre parents et enfants bénéficient d'une exonération de 100 % du droit de timbre jusqu'à la première valeur de propriété de 1 000 000 RM en vertu des dernières réglementations fédérales, ce qui stabilise les transitions générationnelles des actifs."
+    },
+    {
+      "category": "Données financières",
+      "question": "Les locations immobilières sont-elles taxées en Malaisie pour les propriétaires étrangers ?",
+      "answer": "Les revenus de location accumulés en Malaisie sont traités comme des revenus et imposés. Pour les particuliers non-résidents, le taux d'imposition forfaitaire est de 30 % sur les revenus locatifs nets imposables (après déduction des frais d'entretien standards, des taxes foncières et des intérêts hypothécaires). Cela reste très compétitif par rapport aux standards mondiaux."
+    },
+    {
+      "category": "Possession",
+      "question": "Qu'est-ce qu'un système de paiement progressif ?",
+      "answer": "Il s'agit d'un échéancier de paiement pour les propriétés en construction où les paiements sont effectués de manière dynamique par étapes appelées à mesure que les bâtiments atteignent des repères structurels physiques (par exemple, fondations, charpente structurelle, plomberie, électricité). Cela protège le consommateur en liant les paiements financiers à l’achèvement du travail physique."
+    },
+    {
+      "category": "Financement",
+      "question": "L’assurance des biens est-elle obligatoire en Malaisie pour les prêts hypothécaires ?",
+      "answer": "Oui, les banques exigent que les acheteurs souscrivent une assurance hypothécaire, à savoir MRTA (Mortgage Reducing Term Assurance) ou MLTA (Mortgage Level Term Assurance), qui règle le solde restant du prêt immobilier en cas d'urgence critique, protégeant à la fois la famille de l'acheteur et la banque."
+    },
+    {
+      "category": "Possession",
+      "question": "Que se passe-t-il si un développeur fait défaut ou arrête la construction ?",
+      "answer": "Les lotissements sont strictement régis par la loi sur le développement du logement (HDA) en Malaisie. Les fonds des promoteurs sont acheminés vers des comptes de développement de logements sécurisés (HDA) surveillés par les conseils gouvernementaux. Cela garantit que les actifs des développeurs sont structurés pour éviter les défauts de paiement, offrant ainsi une tranquillité d'esprit aux acheteurs."
+    }
+  ]
 }

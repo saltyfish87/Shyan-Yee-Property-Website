@@ -3,6 +3,7 @@ import { BlogArticle } from '../types';
 import { BLOG_DATA } from '../data';
 import { useLanguage } from '../LanguageContext';
 import { API_BASE_URL } from '../utils/api';
+import { PRE_TRANSLATED_BLOGS, PRE_TRANSLATED_BLOG_DETAILS } from '../translations';
 import { Search, Calendar, User, Clock, ArrowLeft, ChevronRight, MessageCircle, Share2, HelpCircle } from 'lucide-react';
 
 interface BlogViewProps {
@@ -121,7 +122,14 @@ export const BlogView: React.FC<BlogViewProps> = ({
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const [articles, setArticles] = useState<BlogArticle[]>(() => {
-    // Attempt local storage cache retrieval for the current language
+    // 1. First preference: pre-translated static compile
+    if (language !== "en") {
+      const staticPreTranslated = PRE_TRANSLATED_BLOGS[language];
+      if (staticPreTranslated && staticPreTranslated.length > 0) {
+        return staticPreTranslated;
+      }
+    }
+    // 2. Second preference: localStorage cache
     if (typeof window !== "undefined" && language !== "en") {
       const cached = localStorage.getItem(`blog_list_${language}`);
       if (cached) {
@@ -144,15 +152,21 @@ export const BlogView: React.FC<BlogViewProps> = ({
       return;
     }
 
-    // Read cached list if any
-    const cached = localStorage.getItem(`blog_list_${language}`);
-    if (cached) {
-      try {
-        setArticles(JSON.parse(cached));
-      } catch (e) {}
+    // 1. Check static pre-translated compile first
+    const staticPre = PRE_TRANSLATED_BLOGS[language];
+    if (staticPre && staticPre.length > 0) {
+      setArticles(staticPre);
     } else {
-      // Set isLoading to true ONLY if we have absolutely zero cached results
-      setIsLoading(true);
+      // 2. Read cached list if any
+      const cached = localStorage.getItem(`blog_list_${language}`);
+      if (cached) {
+        try {
+          setArticles(JSON.parse(cached));
+        } catch (e) {}
+      } else {
+        // Set isLoading to true ONLY if we have absolutely zero static/cached results
+        setIsLoading(true);
+      }
     }
 
     fetch(`${API_BASE_URL}/api/blog?lang=${language}`)
@@ -185,17 +199,24 @@ export const BlogView: React.FC<BlogViewProps> = ({
     const cacheKey = `blog_detail_${activeBlogSlug}_${language}`;
     let hasLoadedFromCache = false;
 
-    // Check localStorage cache first
-    const cachedDetail = localStorage.getItem(cacheKey);
-    if (cachedDetail) {
-      try {
-        setActiveFullArticle(JSON.parse(cachedDetail));
-        hasLoadedFromCache = true;
-      } catch (e) {
+    // 1. Check static pre-translated compile details first
+    const staticDetail = PRE_TRANSLATED_BLOG_DETAILS[language]?.[activeBlogSlug];
+    if (staticDetail) {
+      setActiveFullArticle(staticDetail);
+      hasLoadedFromCache = true;
+    } else {
+      // 2. Check localStorage cache second
+      const cachedDetail = localStorage.getItem(cacheKey);
+      if (cachedDetail) {
+        try {
+          setActiveFullArticle(JSON.parse(cachedDetail));
+          hasLoadedFromCache = true;
+        } catch (e) {
+          setActiveFullArticle(localEnglish);
+        }
+      } else {
         setActiveFullArticle(localEnglish);
       }
-    } else {
-      setActiveFullArticle(localEnglish);
     }
 
     if (language === 'en') {
@@ -203,7 +224,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
       return;
     }
 
-    // Set active loading only if we do not even have cached translation
+    // Set active loading only if we do not even have static/cached translation
     if (!hasLoadedFromCache) {
       // We still DO NOT show a global block shimmer. We let the user see the English layout immediately!
       setIsLoadingActive(false);

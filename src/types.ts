@@ -55,13 +55,13 @@ export interface BlogArticle {
   title: string;
   metaDescription: string;
   summary: string;
-  content: string; // Markdown supported
+  content?: string; // Markdown supported
   readTime: string;
   publishDate: string;
   author: string;
   category: string;
   image: string;
-  faqs: { question: string; answer: string }[];
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface FAQItem {
