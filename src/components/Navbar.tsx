@@ -24,10 +24,12 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const isDevPreview = typeof window !== 'undefined' && (
-    window.location.hostname.includes('ais-dev-') || 
-    window.location.hostname.includes('ais-pre-') || 
     window.location.hostname.includes('localhost') || 
-    window.location.hostname.includes('127.0.0.1')
+    window.location.hostname.includes('127.0.0.1') ||
+    (window.self !== window.top && (
+      window.location.hostname.includes('ais-dev-') || 
+      window.location.hostname.includes('ais-pre-')
+    ))
   );
 
   const languages: { code: SupportedLanguage; label: string }[] = [

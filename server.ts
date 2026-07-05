@@ -1919,9 +1919,12 @@ let translationsCache: Record<string, any> = {};
 const transCachePath = path.join(process.cwd(), "translations_cache.json");
 try {
   if (fs.existsSync(transCachePath)) {
-    fs.unlinkSync(transCachePath);
+    translationsCache = JSON.parse(fs.readFileSync(transCachePath, "utf-8"));
+    console.log("Loaded translations cache from disk:", Object.keys(translationsCache).length, "keys");
   }
-} catch (_) {}
+} catch (e) {
+  console.warn("Could not load translations cache, starting fresh:", e);
+}
 
 function saveTranslationsCache() {
   try {
@@ -1929,6 +1932,168 @@ function saveTranslationsCache() {
   } catch (err) {
     console.error("Could not save translations cache:", err);
   }
+}
+
+// Robust, high-performance fallback translator using free Google Translate endpoint with binary split resilience
+async function translateTextFree(text: string, targetLang: string): Promise<string> {
+  if (!text || !text.trim()) return text;
+  try {
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${targetLang}&dt=t&q=${encodeURIComponent(text)}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+    const data = await res.json();
+    if (data && data[0]) {
+      return data[0].map((x: any) => x[0]).join('');
+    }
+    return text;
+  } catch (err: any) {
+    // If the request fails (e.g. HTTP 500 or length limit) and the text is reasonably long,
+    // we can split it in half and translate each half recursively to ensure reliability.
+    if (text.length > 200) {
+      console.log(`[Free Translate] Warning: Free translation failed for text of length ${text.length} (${err?.message || err}). Attempting binary split fallback.`);
+      const mid = Math.floor(text.length / 2);
+      let splitIdx = text.lastIndexOf(" ", mid);
+      if (splitIdx === -1 || splitIdx < mid - 50) {
+        splitIdx = text.indexOf(" ", mid);
+      }
+      if (splitIdx === -1) {
+        splitIdx = mid;
+      }
+      const part1 = text.substring(0, splitIdx);
+      const part2 = text.substring(splitIdx);
+      try {
+        const trans1 = await translateTextFree(part1, targetLang);
+        const trans2 = await translateTextFree(part2, targetLang);
+        return trans1 + trans2;
+      } catch (splitErr: any) {
+        console.warn(`[Free Translate] Binary split fallback also failed for text:`, splitErr?.message || splitErr);
+      }
+    } else {
+      console.warn(`[Free Translate] Translation failed for short text (length ${text.length}):`, err?.message || err);
+    }
+    return text;
+  }
+}
+
+async function translateLongTextFree(text: string, targetLang: string): Promise<string> {
+  if (!text || text.length < 1000) {
+    return translateTextFree(text, targetLang);
+  }
+  
+  const paragraphs = text.split("\n");
+  const translatedParagraphs: string[] = [];
+  
+  let currentChunk = "";
+  for (const paragraph of paragraphs) {
+    // If a single paragraph is too long (over 1000 chars), split it first
+    if (paragraph.length > 1000) {
+      // Flush current chunk first
+      if (currentChunk.trim()) {
+        const trans = await translateTextFree(currentChunk, targetLang);
+        translatedParagraphs.push(trans);
+        currentChunk = "";
+      }
+      
+      // Split the long paragraph into smaller chunks of max ~800 chars
+      let tempPara = paragraph;
+      while (tempPara.length > 800) {
+        let cutIdx = tempPara.lastIndexOf(". ", 800); // sentence boundary
+        if (cutIdx === -1 || cutIdx < 400) {
+          cutIdx = tempPara.lastIndexOf(" ", 800); // space boundary
+        }
+        if (cutIdx === -1 || cutIdx < 400) {
+          cutIdx = 800; // hard cut
+        }
+        const slice = tempPara.substring(0, cutIdx);
+        const transSlice = await translateTextFree(slice, targetLang);
+        translatedParagraphs.push(transSlice);
+        tempPara = tempPara.substring(cutIdx);
+      }
+      if (tempPara.trim()) {
+        const transSlice = await translateTextFree(tempPara, targetLang);
+        translatedParagraphs.push(transSlice);
+      }
+      continue;
+    }
+
+    if ((currentChunk + "\n" + paragraph).length > 1000) {
+      if (currentChunk.trim()) {
+        const trans = await translateTextFree(currentChunk, targetLang);
+        translatedParagraphs.push(trans);
+      }
+      currentChunk = paragraph;
+    } else {
+      if (currentChunk) {
+        currentChunk += "\n" + paragraph;
+      } else {
+        currentChunk = paragraph;
+      }
+    }
+  }
+  
+  if (currentChunk.trim()) {
+    const trans = await translateTextFree(currentChunk, targetLang);
+    translatedParagraphs.push(trans);
+  }
+  
+  return translatedParagraphs.join("\n");
+}
+
+async function translateFAQDataFree(faqs: any[], targetLang: string): Promise<any[]> {
+  return Promise.all(faqs.map(async (item) => {
+    const [category, question, answer] = await Promise.all([
+      translateTextFree(item.category || "", targetLang),
+      translateTextFree(item.question || "", targetLang),
+      translateTextFree(item.answer || "", targetLang)
+    ]);
+    return { category, question, answer };
+  }));
+}
+
+async function translateBlogPreviewsFree(previews: any[], targetLang: string): Promise<any[]> {
+  return Promise.all(previews.map(async (art) => {
+    const [title, metaDescription, summary, category] = await Promise.all([
+      translateTextFree(art.title || "", targetLang),
+      translateTextFree(art.metaDescription || "", targetLang),
+      translateTextFree(art.summary || "", targetLang),
+      translateTextFree(art.category || "", targetLang)
+    ]);
+    return {
+      ...art,
+      title,
+      metaDescription,
+      summary,
+      category
+    };
+  }));
+}
+
+async function translateBlogArticleFree(article: any, targetLang: string): Promise<any> {
+  const [title, metaDescription, summary, category, content] = await Promise.all([
+    translateTextFree(article.title || "", targetLang),
+    translateTextFree(article.metaDescription || "", targetLang),
+    translateTextFree(article.summary || "", targetLang),
+    translateTextFree(article.category || "", targetLang),
+    translateLongTextFree(article.content || "", targetLang)
+  ]);
+  
+  const faqs = await Promise.all((article.faqs || []).map(async (f: any) => {
+    const [question, answer] = await Promise.all([
+      translateTextFree(f.question || "", targetLang),
+      translateTextFree(f.answer || "", targetLang)
+    ]);
+    return { question, answer };
+  }));
+
+  return {
+    ...article,
+    title,
+    metaDescription,
+    summary,
+    category,
+    content,
+    faqs
+  };
 }
 
 // API: Auto-Generate detailed AI content for a project using Gemini (with localization support)
@@ -2220,8 +2385,16 @@ app.get("/api/faqs", async (req, res) => {
 
   const client = getGeminiClient();
   if (!client) {
-    console.log("No Gemini API client configured for FAQs translation, sending original.");
-    return res.json(FAQ_DATA);
+    console.log("No Gemini API client configured for FAQs translation, translating via free engine.");
+    try {
+      const translated = await translateFAQDataFree(FAQ_DATA, lang);
+      translationsCache[cacheKey] = translated;
+      saveTranslationsCache();
+      return res.json(translated);
+    } catch (fallbackError) {
+      console.warn("Free FAQ translation failed:", fallbackError);
+      return res.json(FAQ_DATA);
+    }
   }
 
   try {
@@ -2266,8 +2439,21 @@ app.get("/api/faqs", async (req, res) => {
     }
     throw new Error("Empty representation parsed");
   } catch (error: any) {
-    console.log(`API Notice: Reverting to English source FAQ database due to temporary translation API capacity limits.`);
-    return res.json(FAQ_DATA);
+    const isQuotaError = error?.status === "RESOURCE_EXHAUSTED" || error?.message?.includes("quota") || error?.message?.includes("429") || String(error).includes("429") || String(error).includes("RESOURCE_EXHAUSTED") || String(error).includes("quota");
+    if (isQuotaError) {
+      console.log(`[Gemini API] Quota limit reached (429). Falling back to free translator for FAQ in "${lang}".`);
+    } else {
+      console.warn("Gemini FAQ Translation failed, falling back to free translator:", error?.message || error);
+    }
+    try {
+      const translated = await translateFAQDataFree(FAQ_DATA, lang);
+      translationsCache[cacheKey] = translated;
+      saveTranslationsCache();
+      return res.json(translated);
+    } catch (fallbackError) {
+      console.warn("Free FAQ translation failed:", fallbackError);
+      return res.json(FAQ_DATA);
+    }
   }
 });
 
@@ -2300,8 +2486,16 @@ app.get("/api/blog", async (req, res) => {
 
   const client = getGeminiClient();
   if (!client) {
-    console.log("No Gemini API client configured for blog previews, sending original.");
-    return res.json(previews);
+    console.log("No Gemini API client configured for blog previews, translating via free engine.");
+    try {
+      const translated = await translateBlogPreviewsFree(previews, lang);
+      translationsCache[cacheKey] = translated;
+      saveTranslationsCache();
+      return res.json(translated);
+    } catch (fallbackError) {
+      console.warn("Free blog previews translation failed:", fallbackError);
+      return res.json(previews);
+    }
   }
 
   try {
@@ -2352,8 +2546,21 @@ app.get("/api/blog", async (req, res) => {
     }
     throw new Error("Empty markdown parsed");
   } catch (error: any) {
-    console.log(`API Notice: Defaulting to standard pre-written blog previews language index due to temporary translation limits.`);
-    return res.json(previews);
+    const isQuotaError = error?.status === "RESOURCE_EXHAUSTED" || error?.message?.includes("quota") || error?.message?.includes("429") || String(error).includes("429") || String(error).includes("RESOURCE_EXHAUSTED") || String(error).includes("quota");
+    if (isQuotaError) {
+      console.log(`[Gemini API] Quota limit reached (429). Falling back to free translator for blog previews in "${lang}".`);
+    } else {
+      console.warn("Gemini Blog Previews translation failed, falling back to free translator:", error?.message || error);
+    }
+    try {
+      const translated = await translateBlogPreviewsFree(previews, lang);
+      translationsCache[cacheKey] = translated;
+      saveTranslationsCache();
+      return res.json(translated);
+    } catch (fallbackError) {
+      console.warn("Free blog previews translation failed:", fallbackError);
+      return res.json(previews);
+    }
   }
 });
 
@@ -2378,8 +2585,16 @@ app.get("/api/blog/:slug", async (req, res) => {
 
   const client = getGeminiClient();
   if (!client) {
-    console.log("No Gemini API client configured for blog detail, sending original.");
-    return res.json(article);
+    console.log("No Gemini API client configured for blog detail, translating via free engine.");
+    try {
+      const translated = await translateBlogArticleFree(article, lang);
+      translationsCache[cacheKey] = translated;
+      saveTranslationsCache();
+      return res.json(translated);
+    } catch (fallbackError) {
+      console.warn("Free blog detail translation failed:", fallbackError);
+      return res.json(article);
+    }
   }
 
   try {
@@ -2449,8 +2664,21 @@ app.get("/api/blog/:slug", async (req, res) => {
     }
     throw new Error("Invalid translation response structure");
   } catch (error: any) {
-    console.log(`API Notice: Defaulting to original blog content layout due to model translation service capacity limits.`);
-    return res.json(article);
+    const isQuotaError = error?.status === "RESOURCE_EXHAUSTED" || error?.message?.includes("quota") || error?.message?.includes("429") || String(error).includes("429") || String(error).includes("RESOURCE_EXHAUSTED") || String(error).includes("quota");
+    if (isQuotaError) {
+      console.log(`[Gemini API] Quota limit reached (429). Falling back to free translator for blog details "${slug}" in "${lang}".`);
+    } else {
+      console.warn("Gemini Blog Detail translation failed, falling back to free translator:", error?.message || error);
+    }
+    try {
+      const translated = await translateBlogArticleFree(article, lang);
+      translationsCache[cacheKey] = translated;
+      saveTranslationsCache();
+      return res.json(translated);
+    } catch (fallbackError) {
+      console.warn("Free blog detail translation failed:", fallbackError);
+      return res.json(article);
+    }
   }
 });
 
