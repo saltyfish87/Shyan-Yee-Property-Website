@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Project } from '../types';
 import { useLanguage } from '../LanguageContext';
 import { useCurrency } from '../CurrencyContext';
+import { API_BASE_URL } from '../utils/api';
 import {
   translateTenure,
   translateCompletionStatus,
@@ -477,7 +478,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
       setIsAiLoading(true);
       setAiData(null);
       try {
-        const response = await fetch(`/api/project/${project.id}/expand?lang=${language}`);
+        const response = await fetch(`${API_BASE_URL}/api/project/${project.id}/expand?lang=${language}`);
         const data = await response.json();
         if (isMounted && data && !data.error) {
           setAiData(data);

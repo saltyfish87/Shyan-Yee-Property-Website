@@ -14,6 +14,17 @@ const PORT = 3000;
 
 app.use(express.json());
 
+// Enable CORS for cross-origin access (e.g. from Vercel deployments like shyanyee.com)
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(200);
+  }
+  next();
+});
+
 // Initialize Gemini SDK with telemetry header
 const aiKey = process.env.GEMINI_API_KEY;
 let aiClient: GoogleGenAI | null = null;

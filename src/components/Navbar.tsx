@@ -25,6 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const isDevPreview = typeof window !== 'undefined' && (
     window.location.hostname.includes('ais-dev-') || 
+    window.location.hostname.includes('ais-pre-') || 
     window.location.hostname.includes('localhost') || 
     window.location.hostname.includes('127.0.0.1')
   );
@@ -137,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             {/* Force Re-sync Google Drive images and Google Sheets database */}
-            {onRefreshClick && (
+            {isDevPreview && onRefreshClick && (
               <button
                 onClick={onRefreshClick}
                 disabled={isSyncing}
@@ -234,7 +235,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {onRefreshClick && (
+          {isDevPreview && onRefreshClick && (
             <div className="pt-1">
               <button
                 onClick={() => {

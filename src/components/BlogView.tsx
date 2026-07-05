@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { BlogArticle } from '../types';
 import { BLOG_DATA } from '../data';
 import { useLanguage } from '../LanguageContext';
+import { API_BASE_URL } from '../utils/api';
 import { Search, Calendar, User, Clock, ArrowLeft, ChevronRight, MessageCircle, Share2, HelpCircle } from 'lucide-react';
 
 interface BlogViewProps {
@@ -154,7 +155,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
       setIsLoading(true);
     }
 
-    fetch(`/api/blog?lang=${language}`)
+    fetch(`${API_BASE_URL}/api/blog?lang=${language}`)
       .then((res) => {
         if (!res.ok) throw new Error("Blog translation failed");
         return res.json();
@@ -208,7 +209,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
       setIsLoadingActive(false);
     }
 
-    fetch(`/api/blog/${activeBlogSlug}?lang=${language}`)
+    fetch(`${API_BASE_URL}/api/blog/${activeBlogSlug}?lang=${language}`)
       .then((res) => {
         if (!res.ok) throw new Error("Article translation failed");
         return res.json();

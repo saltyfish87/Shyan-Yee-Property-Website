@@ -31,6 +31,7 @@ import { AgentCard } from './components/AgentCard';
 import { ProjectDetail } from './components/ProjectDetail';
 import { ProjectSlideshow } from './components/ProjectSlideshow';
 import { useSEO } from './utils/useSEO';
+import { API_BASE_URL } from './utils/api';
 
 // Lucide icons
 import {
@@ -58,7 +59,7 @@ function useDriveImagesPolling(
     let isMounted = true;
     const pollImages = async () => {
       try {
-        const response = await fetch('/api/drive/images?refresh=true');
+        const response = await fetch(`${API_BASE_URL}/api/drive/images?refresh=true`);
         if (!response.ok) {
           throw new Error(`HTTP error ${response.status}`);
         }
@@ -139,7 +140,7 @@ function ClientPortalsOrchestrator() {
     }
 
     setIsLoadingFaqs(true);
-    fetch(`/api/faqs?lang=${language}`)
+    fetch(`${API_BASE_URL}/api/faqs?lang=${language}`)
       .then((res) => {
         if (!res.ok) throw new Error("Translation failed");
         return res.json();
@@ -373,7 +374,7 @@ function ClientPortalsOrchestrator() {
     }
     setLoadingError('');
     try {
-      const response = await fetch(force ? '/api/projects?refresh=true' : '/api/projects');
+      const response = await fetch(force ? `${API_BASE_URL}/api/projects?refresh=true` : `${API_BASE_URL}/api/projects`);
       if (!response.ok) {
         throw new Error('Fallback cache triggered');
       }
@@ -611,7 +612,7 @@ function ClientPortalsOrchestrator() {
 
       // Post lead to contact API
       const notes = `Smart Property Matcher Form Submission:\n- Budget Range: ${matchBudget}\n- Purpose: ${matchPurpose}\n- Area: ${matchArea}`;
-      await fetch('/api/contact', {
+      await fetch(`${API_BASE_URL}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

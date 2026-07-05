@@ -67,6 +67,28 @@ export function useSEO({
     // Update Meta Description
     updateMetaTag('name', 'description', desc);
 
+    // Update Keywords tag dynamically to always include ALL project names and relevant developer/location keywords
+    const baseKeywords = "Shyan Yee, shyanyee, shyanyee.com, Malaysia Property, Kuala Lumpur Property, KL Luxury Condo, Penang Real Estate, Malaysia MM2H Property, Malaysia Luxury Homes, Malaysia Investment Property, Buy Property Malaysia, KLCC Condominiums";
+    let dynamicKeywords = baseKeywords;
+    if (projects && projects.length > 0) {
+      const projectKeywords: string[] = [];
+      projects.forEach(p => {
+        if (p.name) projectKeywords.push(p.name);
+        if (p.name && p.area) projectKeywords.push(`${p.name} ${p.area}`);
+        if (p.name && p.developer) projectKeywords.push(`${p.name} ${p.developer.replace(/\(.*?\)/g, "").trim()}`);
+      });
+      const uniqueKeywordsSet = new Set<string>();
+      baseKeywords.split(",").forEach(k => uniqueKeywordsSet.add(k.trim()));
+      projectKeywords.forEach(k => {
+        const trimmed = k.trim();
+        if (trimmed && trimmed.length > 2) {
+          uniqueKeywordsSet.add(trimmed);
+        }
+      });
+      dynamicKeywords = Array.from(uniqueKeywordsSet).join(", ");
+    }
+    updateMetaTag('name', 'keywords', dynamicKeywords);
+
     // Update OpenGraph
     updateMetaTag('property', 'og:title', title);
     updateMetaTag('property', 'og:description', desc);
