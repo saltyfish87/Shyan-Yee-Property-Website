@@ -1,0 +1,38 @@
+# Robots.txt for shyanyee.com - Optimized for Search Engines, AI Agents, and Generative Search (GEO)
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin
+
+# Optimizing for AI Agents & Generative Engines (AISEO & GEO)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: SearchGPT
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://shyanyee.com/sitemap.xml

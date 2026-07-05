@@ -1,0 +1,6 @@
+{
+  "name": "Malaysia Property Portal",
+  "description": "Premium Malaysian technology-driven real estate platform focusing on elite project showcases, dynamic mortgages calculator tools, interactive maps, multi-currency display, and Gemini-vetted investment outlines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
