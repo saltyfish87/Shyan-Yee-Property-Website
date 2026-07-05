@@ -32,6 +32,7 @@ import { ProjectDetail } from './components/ProjectDetail';
 import { ProjectSlideshow } from './components/ProjectSlideshow';
 import { useSEO } from './utils/useSEO';
 import { API_BASE_URL } from './utils/api';
+import projectsFallback from './projectsFallback.json';
 
 // Lucide icons
 import {
@@ -395,82 +396,8 @@ function ClientPortalsOrchestrator() {
       }
     } catch (err) {
       console.warn('Listing Sync Error. Loading verified local backup profiles: ', err);
-      // Fallback fallback profiles if API gets timed-out or sheet csv is inaccessible
-      const fallbackListings: Project[] = [
-        {
-          id: "prop-subang",
-          name: "Sensory Residence SE",
-          developer: "Sime Darby Property",
-          startingPrice: 480000,
-          location: "Southville City, Bangi, Selangor",
-          area: "Selangor",
-          projectType: "Serviced apartment",
-          completionStatus: "Ready To Move",
-          completionYear: "2024",
-          tenure: "Freehold",
-          builtUpMin: 888,
-          builtUpMax: 914,
-          bedroomsMin: 3,
-          bedroomsMax: 3,
-          isHot: true,
-          images: {
-            overview: ["https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop"],
-            location: [],
-            layout: [],
-            gallery: ["https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"]
-          },
-          syncedAt: "2026-06",
-        },
-        {
-          id: "prop-jb",
-          name: "The Astaka @ One Bukit Senyum",
-          developer: "Astaka Padu Sdn Bhd",
-          startingPrice: 1650000,
-          location: "Jalan Tebrau, Johor Bahru, Johor",
-          area: "Johor Bahru",
-          projectType: "Condominium",
-          completionStatus: "Ready To Move",
-          completionYear: "2018",
-          tenure: "Freehold",
-          builtUpMin: 2207,
-          builtUpMax: 2659,
-          bedroomsMin: 3,
-          bedroomsMax: 4,
-          isHot: true,
-          images: {
-            overview: ["https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop"],
-            location: [],
-            layout: [],
-            gallery: ["https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=800&auto=format&fit=crop"]
-          },
-          syncedAt: "2026-06",
-        },
-        {
-          id: "prop-shashore",
-          name: "M Shorea Park",
-          developer: "Mah Sing Group",
-          startingPrice: 250000,
-          location: "Taman Putra Perdana, Puchong, Selangor",
-          area: "Puchong",
-          projectType: "Serviced residence",
-          completionStatus: "Under Construction",
-          completionYear: "2027",
-          tenure: "Leasehold",
-          builtUpMin: 741,
-          builtUpMax: 1011,
-          bedroomsMin: 2,
-          bedroomsMax: 4,
-          isHot: false,
-          images: {
-            overview: ["https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"],
-            location: [],
-            layout: [],
-            gallery: ["https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=800&auto=format&fit=crop"]
-          },
-          syncedAt: "2026-06",
-        }
-      ];
-      const normalizedFallback = normalizeMaintenanceAndUnits(fallbackListings);
+      // Fallback to pre-scraped Google Sheets properties so that Vercel loads perfectly
+      const normalizedFallback = normalizeMaintenanceAndUnits(projectsFallback as Project[]);
       setProjects(normalizedFallback);
     } finally {
       setIsLoading(false);
