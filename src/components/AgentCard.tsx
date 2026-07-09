@@ -87,7 +87,7 @@ export const AgentCard: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-base font-bold text-slate-900">
-                      @shyanyee-8932 Property Channel
+                      @shyanyee Property Channel
                     </h4>
                     <p className="text-xs text-slate-500">
                       {t('youtubeDesc')}
@@ -96,7 +96,7 @@ export const AgentCard: React.FC = () => {
                 </div>
                 <div className="flex gap-2">
                   <a
-                    href="https://www.youtube.com/@shyanyee-8932"
+                    href="https://www.youtube.com/@shyanyee"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 text-xs font-bold text-white bg-red-600 hover:bg-red-700 rounded-lg transition-colors cursor-pointer text-center whitespace-nowrap"
