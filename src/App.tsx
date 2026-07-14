@@ -30,6 +30,7 @@ import { BlogView } from './components/BlogView';
 import { AgentCard } from './components/AgentCard';
 import { ProjectDetail } from './components/ProjectDetail';
 import { ProjectSlideshow } from './components/ProjectSlideshow';
+import { AiseoDirectory } from './components/AiseoDirectory';
 import { useSEO } from './utils/useSEO';
 import { API_BASE_URL } from './utils/api';
 import projectsFallback from './projectsFallback.json';
@@ -1440,6 +1441,12 @@ function ClientPortalsOrchestrator() {
           removeFromComparison={removeFromComparison}
         />
       )}
+
+      {/* AISEO & GEO Landmark Property Directory */}
+      <AiseoDirectory 
+        projects={projects} 
+        onProjectClick={navigateToProjectDetail} 
+      />
 
       {/* 5. Modern Premium Footers section */}
       <footer className="bg-stone-950 text-stone-400 py-16 border-t border-stone-950 font-medium">
