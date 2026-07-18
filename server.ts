@@ -2736,8 +2736,89 @@ app.get("/robots.txt", (req, res) => {
   res.sendFile(path.join(process.cwd(), "public", "robots.txt"));
 });
 
-app.get("/sitemap.xml", (req, res) => {
-  res.sendFile(path.join(process.cwd(), "public", "sitemap.xml"));
+// Helper to generate dynamic, SEO-optimized XML sitemaps for search engines and AI web crawlers
+function generateSitemapXml(projects: any[], blogs: any[]): string {
+  const baseUrl = "https://shyanyee.com";
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+`;
+
+  // 1. Core Primary Pages
+  const staticPages = [
+    { loc: `${baseUrl}/`, priority: "1.0", changefreq: "daily" },
+    { loc: `${baseUrl}/#/projects`, priority: "0.90", changefreq: "daily" },
+    { loc: `${baseUrl}/#/compare`, priority: "0.80", changefreq: "weekly" },
+    { loc: `${baseUrl}/#/map`, priority: "0.80", changefreq: "weekly" },
+    { loc: `${baseUrl}/#/blog`, priority: "0.80", changefreq: "daily" }
+  ];
+
+  for (const page of staticPages) {
+    xml += `  <url>
+    <loc>${page.loc}</loc>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>\n`;
+  }
+
+  // 2. Dynamic Real Estate Projects (Direct Indexing of every Landmark Condo/Suite)
+  const todayStr = new Date().toISOString().split('T')[0];
+  for (const project of projects) {
+    if (project.id) {
+      const loc = `${baseUrl}/#/projects/${project.id}`;
+      xml += `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${todayStr}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>\n`;
+    }
+  }
+
+  // 3. Dynamic Knowledge Base / Research Blogs
+  for (const post of blogs) {
+    if (post.slug) {
+      const loc = `${baseUrl}/#/blog/${post.slug}`;
+      const lastmod = post.publishDate || todayStr;
+      xml += `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>\n`;
+    }
+  }
+
+  xml += `</urlset>`;
+  return xml;
+}
+
+app.get("/sitemap.xml", async (req, res) => {
+  try {
+    // Fetch live list of properties from Sheets or memory cache
+    const projects = await fetchGoogleSheetsProjects().catch((err) => {
+      console.warn("Sitemap Generator: Fallback used for projects load:", err.message || err);
+      return FALLBACK_PROJECTS;
+    });
+
+    const sitemap = generateSitemapXml(projects, BLOG_DATA);
+
+    // Save/sync sitemap.xml statically to public/ so that static path accessors also see the updated version
+    try {
+      fs.writeFileSync(path.join(process.cwd(), "public", "sitemap.xml"), sitemap, "utf-8");
+    } catch (writeErr) {
+      console.error("Sitemap Sync Error:", writeErr);
+    }
+
+    res.header("Content-Type", "application/xml");
+    return res.send(sitemap);
+  } catch (error: any) {
+    console.error("Sitemap Generator Crash:", error);
+    // Serve fallback static copy of sitemap.xml on error
+    res.sendFile(path.join(process.cwd(), "public", "sitemap.xml"));
+  }
 });
 
 // Vite Middleware & Static Server

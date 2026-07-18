@@ -74,6 +74,15 @@ export function useSEO({
     // Apply document title
     document.title = title;
 
+    // Enforce Canonical URL to prevent duplicate indexing of paginated or filtered views
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', url);
+
     // Helper function to update or create a meta tag
     const updateMetaTag = (attrName: string, attrVal: string, contentVal: string) => {
       let meta = document.querySelector(`meta[${attrName}="${attrVal}"]`);
