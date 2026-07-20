@@ -72,24 +72,108 @@ function useDriveImagesPolling(
           setProjects((prevProjects) => {
             let changed = false;
             const updated = prevProjects.map((proj) => {
-              const newImages = map[proj.id];
-              if (newImages) {
+              const id = proj.id;
+              
+              // Helper to check if a key has valid overview images in Google Drive
+              const hasRealImages = (key: string) => {
+                const img = map[key];
+                return img && img.overview && img.overview.length > 0 && img.overview[0] !== "" && img.overview[0] !== undefined;
+              };
+
+              // Resolve the best matching key in the Google Drive image map using fuzzy matching
+              let bestKey = "";
+              if (hasRealImages(id)) {
+                bestKey = id;
+              } else {
+                // Priority word list for precise matching first (mirroring server.ts)
+                if (id.includes("queenswoodz") || id === "queenswoodz") {
+                  bestKey = Object.keys(map).find(key => (key === "kingswoodz" || key.includes("kingswoodz")) && hasRealImages(key)) || "";
+                } else if (id.includes("axis")) {
+                  bestKey = Object.keys(map).find(key => (key === "axis" || key.includes("axis")) && hasRealImages(key)) || "";
+                } else if (id.includes("brixton")) {
+                  bestKey = Object.keys(map).find(key => (key === "brixton" || key.includes("brixton")) && hasRealImages(key)) || "";
+                } else if (id.includes("dover")) {
+                  bestKey = Object.keys(map).find(key => (key === "dover" || key.includes("dover")) && hasRealImages(key)) || "";
+                }
+
+                if (!bestKey) {
+                  bestKey = Object.keys(map).find(key => (id.includes(key) || key.includes(id)) && hasRealImages(key)) || "";
+                }
+              }
+
+              // Setup resolvedImages base
+              let resolvedImages = bestKey ? { ...map[bestKey] } : null;
+
+              // Special fallback/mapping routing logic for physical towers under Causewayz Square: axis, brixton, dover
+              const isAxis = id === "axis" || id.includes("axis");
+              const isBrixton = id === "brixton" || id.includes("brixton");
+              const isDover = id === "dover" || id.includes("dover");
+
+              if (isAxis || isBrixton || isDover) {
+                const causewayzKey = Object.keys(map).find(key => key === "causeways-square-towers" || (key.includes("causeways") && key.includes("towers")));
+                const causewayzImages = causewayzKey ? map[causewayzKey] : null;
+
+                const axisKey = Object.keys(map).find(key => key === "axis" || key.includes("axis"));
+                const axisImages = axisKey ? map[axisKey] : null;
+
+                // Ensure we have a base object to assign to
+                resolvedImages = {
+                  overview: resolvedImages?.overview ? [...resolvedImages.overview] : [],
+                  location: resolvedImages?.location ? [...resolvedImages.location] : [],
+                  layout: resolvedImages?.layout ? [...resolvedImages.layout] : [],
+                  gallery: resolvedImages?.gallery ? [...resolvedImages.gallery] : [],
+                };
+
+                // Location map all use axis
+                let resolvedLocation: string[] = [];
+                if (axisImages && axisImages.location && axisImages.location.length > 0) {
+                  resolvedLocation = [...axisImages.location];
+                } else if (axisImages && axisImages.overview && axisImages.overview.length > 0) {
+                  resolvedLocation = [axisImages.overview[0]];
+                } else if (causewayzImages && causewayzImages.location && causewayzImages.location.length > 0) {
+                  resolvedLocation = [...causewayzImages.location];
+                }
+
+                if (resolvedLocation.length > 0) {
+                  resolvedImages.location = resolvedLocation;
+                }
+
+                if (isAxis) {
+                  if ((!resolvedImages.overview || resolvedImages.overview.length === 0) && causewayzImages) {
+                    resolvedImages.overview = [...(causewayzImages.overview || [])];
+                  }
+                  if ((!resolvedImages.gallery || resolvedImages.gallery.length === 0) && causewayzImages) {
+                    resolvedImages.gallery = [...(causewayzImages.gallery || [])];
+                  }
+                } else if (isBrixton || isDover) {
+                  if (causewayzImages) {
+                    resolvedImages.overview = [...(causewayzImages.overview || [])];
+                    resolvedImages.gallery = [...(causewayzImages.gallery || [])];
+                    if (!resolvedImages.layout || resolvedImages.layout.length === 0) {
+                      resolvedImages.layout = [...(causewayzImages.layout || [])];
+                    }
+                  }
+                }
+              }
+
+              // Update only if resolvedImages is found and contains elements that differ
+              if (resolvedImages) {
                 const currentImages = proj.images || {};
                 const hasChanged = 
-                  JSON.stringify(currentImages.overview || []) !== JSON.stringify(newImages.overview || []) ||
-                  JSON.stringify(currentImages.location || []) !== JSON.stringify(newImages.location || []) ||
-                  JSON.stringify(currentImages.layout || []) !== JSON.stringify(newImages.layout || []) ||
-                  JSON.stringify(currentImages.gallery || []) !== JSON.stringify(newImages.gallery || []);
+                  JSON.stringify(currentImages.overview || []) !== JSON.stringify(resolvedImages.overview || []) ||
+                  JSON.stringify(currentImages.location || []) !== JSON.stringify(resolvedImages.location || []) ||
+                  JSON.stringify(currentImages.layout || []) !== JSON.stringify(resolvedImages.layout || []) ||
+                  JSON.stringify(currentImages.gallery || []) !== JSON.stringify(resolvedImages.gallery || []);
                 
                 if (hasChanged) {
                   changed = true;
                   return {
                     ...proj,
                     images: {
-                      overview: newImages.overview || [],
-                      location: newImages.location || [],
-                      layout: newImages.layout || [],
-                      gallery: newImages.gallery || []
+                      overview: resolvedImages.overview || [],
+                      location: resolvedImages.location || [],
+                      layout: resolvedImages.layout || [],
+                      gallery: resolvedImages.gallery || []
                     }
                   };
                 }
