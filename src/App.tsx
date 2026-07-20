@@ -32,6 +32,7 @@ import { ProjectDetail } from './components/ProjectDetail';
 import { ProjectSlideshow } from './components/ProjectSlideshow';
 import { AiseoDirectory } from './components/AiseoDirectory';
 import { useSEO } from './utils/useSEO';
+import { Breadcrumbs } from './components/Breadcrumbs';
 import { API_BASE_URL } from './utils/api';
 import projectsFallback from './projectsFallback.json';
 
@@ -588,6 +589,19 @@ function ClientPortalsOrchestrator() {
       {/* 2. Primary Subview Router Content */}
       <main className="flex-grow">
         
+        <Breadcrumbs
+          currentPage={currentPage}
+          selectedProject={selectedProject}
+          activeBlogSlug={activeBlogSlug}
+          onNavigate={(page, project, blogSlug) => {
+            setCurrentPage(page);
+            setSelectedProject(project);
+            setActiveBlogSlug(blogSlug);
+            setHeroSearchFilters(null);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        />
+        
         {selectedProject ? (
           /* Active Detail landing page takes full focus precedence */
           <ProjectDetail
@@ -668,7 +682,7 @@ function ClientPortalsOrchestrator() {
                                 {proj.images?.overview && proj.images.overview.length > 0 && proj.images.overview[0] ? (
                                   <img 
                                     src={proj.images.overview[0]} 
-                                    alt={proj.name} 
+                                    alt={`${proj.name} - Featured Landmark Development Overview Image 1`} 
                                     className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                                     referrerPolicy="no-referrer"
                                   />
@@ -1036,7 +1050,7 @@ function ClientPortalsOrchestrator() {
                                         {p.images?.overview && p.images.overview.length > 0 && p.images.overview[0] ? (
                                           <img 
                                             src={p.images.overview[0]}
-                                            alt={p.name}
+                                            alt={`${p.name} - Matched Real Estate Overview Image 1`}
                                             className="w-12 h-12 rounded-xl object-cover shrink-0"
                                             referrerPolicy="no-referrer"
                                           />

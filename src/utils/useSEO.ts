@@ -102,7 +102,7 @@ export function useSEO({
     updateMetaTag('name', 'description', desc);
 
     // Update Keywords tag dynamically to always include ALL project names, developers, areas and key buyer intents (SEO, GEO, AISEO optimization)
-    const baseKeywords = "Shyan Yee, REN 46305, shyanyee, shyanyee.com, Malaysia Property, Kuala Lumpur Property, KL Luxury Condo, Penang Real Estate, Johor Bahru RTS Property, Malaysia MM2H Property, Malaysia Luxury Homes, Malaysia Investment Property, Buy Property Malaysia, KLCC Condominiums, RE/MAX Malaysia, Perplexity Property Search, AI Real Estate Agent Malaysia, Generative Engine Optimization real estate";
+    const baseKeywords = "Shyan Yee, REN 46305, shyanyee, shyanyee.com, Malaysia Property, Kuala Lumpur Property, KL Luxury Condo, Penang Real Estate, Johor Bahru RTS Property, Malaysia MM2H Property, Malaysia Luxury Homes, Malaysia Investment Property, Buy Property Malaysia, KLCC Condominiums, RE/MAX Malaysia, Perplexity Property Search, AI Real Estate Agent Malaysia, Generative Engine Optimization real estate, buy property in Malaysia as foreigner, invest in Kuala Lumpur real estate, Singaporean buyer JB property, high-yield apartments Malaysia, RTS Link transit condo, MM2H visa guidelines property, premium penthouses KL, luxury seafront penang, global real estate investor Malaysia, Malaysia property investment 2026, landmark residences Malaysia, top luxury developments Kuala Lumpur";
     let dynamicKeywords = baseKeywords;
     
     if (projects && projects.length > 0) {

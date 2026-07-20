@@ -571,7 +571,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 <>
                   <img
                     src={galleryImages[activeImgIdx]}
-                    alt={project.name}
+                    alt={`${project.name} - Gallery Image ${activeImgIdx + 1}`}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-opacity duration-350"
                   />
@@ -914,7 +914,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                       >
                         <img
                           src={img}
-                          alt={`${project.name} location context`}
+                          alt={`${project.name} - Location GIS and Road Connectivity Map ${i + 1}`}
                           className="w-full h-full object-cover group-hover:scale-103 duration-300"
                           referrerPolicy="no-referrer"
                           loading="lazy"
@@ -1078,7 +1078,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                           >
                             <img
                               src={lay.image}
-                              alt={`${project.name} ${lay.typeName} floorplan blueprint`}
+                              alt={`${project.name} - ${lay.typeName} Unit Floorplan Blueprint Diagram (Layout ${activeLayoutIdx + 1})`}
                               className="max-h-full max-w-full object-contain group-hover:scale-102 duration-300 transition-all"
                               referrerPolicy="no-referrer"
                               loading="lazy"
@@ -1200,7 +1200,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                         >
                           <img
                             src={galleryImg}
-                            alt={`${project.name} portfolio slide`}
+                            alt={`${project.name} - Gallery Portfolio Specimen Photo ${i + 1}`}
                             className="w-full h-full object-cover group-hover:scale-104 duration-300"
                             referrerPolicy="no-referrer"
                             loading="lazy"
@@ -1569,7 +1569,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
 
             <img
               src={lightboxImageUrl}
-              alt="Enlarged gallery zoom context"
+              alt={`${project.name} - Enlarged High-Resolution Zoom Media Preview`}
               className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/5 cursor-default transition-all"
               referrerPolicy="no-referrer"
               onClick={(e) => e.stopPropagation()}
@@ -1627,7 +1627,7 @@ export function ProjectListSlider({
             >
               <div className="w-14 h-14 rounded-xl bg-slate-200 overflow-hidden shrink-0 relative border border-slate-100">
                 {overviewImg ? (
-                  <img src={overviewImg} alt={p.name} className="w-full h-full object-cover group-hover/item:scale-105 duration-350 transition-all" referrerPolicy="no-referrer" />
+                  <img src={overviewImg} alt={`${p.name} - Sidebar Navigation Thumbnail`} className="w-full h-full object-cover group-hover/item:scale-105 duration-350 transition-all" referrerPolicy="no-referrer" />
                 ) : (
                   <Building className="h-5 w-5 text-slate-400 absolute inset-0 m-auto animate-pulse" />
                 )}
