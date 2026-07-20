@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background with a subtle luxury gradient -->
+  <defs>
+    <linearGradient id="luxury-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#0c0a09" />
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="30%" stop-color="#d97706" />
+      <stop offset="70%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="silver-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78716c" />
+      <stop offset="100%" stop-color="#d6d3d1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Rounded Container -->
+  <rect x="16" y="16" width="480" height="480" rx="120" fill="url(#luxury-grad)" stroke="url(#gold-grad)" stroke-width="12" />
+  
+  <!-- Stylized Architecture Lines + Monogram SY -->
+  <!-- Left Skyscraper (the S curve) -->
+  <path d="M 160,380 C 160,260 220,240 220,180 C 220,140 190,120 160,140" fill="none" stroke="url(#silver-grad)" stroke-width="24" stroke-linecap="round" />
+  
+  <!-- Right Skyscraper / Tower spire -->
+  <line x1="320" y1="110" x2="320" y2="380" stroke="url(#gold-grad)" stroke-width="28" stroke-linecap="round" />
+  <line x1="280" y1="180" x2="280" y2="380" stroke="url(#gold-grad)" stroke-width="20" stroke-linecap="round" />
+  <line x1="360" y1="230" x2="360" y2="380" stroke="url(#gold-grad)" stroke-width="20" stroke-linecap="round" />
+  
+  <!-- The Y intersection connector -->
+  <path d="M 220,180 C 220,280 320,280 320,380" fill="none" stroke="url(#gold-grad)" stroke-width="24" stroke-linecap="round" />
+  
+  <!-- Horizontal Horizon ground line -->
+  <line x1="120" y1="380" x2="392" y2="380" stroke="url(#gold-grad)" stroke-width="16" stroke-linecap="round" />
+  
+  <!-- Star/Sparkle Accent of luxury -->
+  <path d="M 320,70 L 325,85 L 340,90 L 325,95 L 320,110 L 315,95 L 300,90 L 315,85 Z" fill="url(#gold-grad)" />
+</svg>
