@@ -114,9 +114,17 @@ export function useSEO({
           projectKeywords.push(`${p.name} floor plan`);
           projectKeywords.push(`${p.name} review`);
           projectKeywords.push(`${p.name} starting price`);
+          projectKeywords.push(`${p.name} for sale`);
+          projectKeywords.push(`${p.name} layout`);
+          projectKeywords.push(`${p.name} showroom`);
+          projectKeywords.push(`${p.name} condominium`);
+          projectKeywords.push(`${p.name} investment yield`);
+          projectKeywords.push(`${p.name} location`);
+          projectKeywords.push(`${p.name} Shyan Yee`);
         }
         if (p.name && p.area) {
           projectKeywords.push(`${p.name} ${p.area}`);
+          projectKeywords.push(`${p.name} condo in ${p.area}`);
         }
         if (p.name && p.developer) {
           const cleanDev = p.developer.replace(/\(.*?\)/g, "").trim();
@@ -126,6 +134,7 @@ export function useSEO({
         if (p.area) {
           projectKeywords.push(`luxury property in ${p.area}`);
           projectKeywords.push(`best condo in ${p.area}`);
+          projectKeywords.push(`investment property in ${p.area}`);
         }
       });
       
