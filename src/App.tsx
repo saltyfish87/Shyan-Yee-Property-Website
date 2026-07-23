@@ -47,7 +47,11 @@ import {
   ChevronUp,
   Columns,
   Layers,
-  X
+  X,
+  BedDouble,
+  Bath,
+  Maximize,
+  Calendar
 } from 'lucide-react';
 
 // Custom hook to periodically poll designated Google Drive proxy endpoint to fetch and update project image URLs in the state
@@ -196,6 +200,23 @@ function useDriveImagesPolling(
     };
   }, [projects.length, setProjects, intervalMs]);
 }
+
+const getBathsRange = (proj: any) => {
+  if (proj.layouts && proj.layouts.length > 0) {
+    const baths = proj.layouts.map((l: any) => l.baths).filter((b: any) => typeof b === 'number');
+    if (baths.length > 0) {
+      const min = Math.min(...baths);
+      const max = Math.max(...baths);
+      return min === max ? `${min}` : `${min} - ${max}`;
+    }
+  }
+  // Fallback estimation
+  const minBeds = proj.bedroomsMin || 1;
+  const maxBeds = proj.bedroomsMax || 2;
+  const minBaths = Math.max(1, minBeds <= 2 ? minBeds : minBeds - 1);
+  const maxBaths = Math.max(1, maxBeds <= 2 ? maxBeds : maxBeds - 1);
+  return minBaths === maxBaths ? `${minBaths}` : `${minBaths} - ${maxBaths}`;
+};
 
 function ClientPortalsOrchestrator() {
   const { t, language } = useLanguage();
@@ -796,6 +817,49 @@ function ClientPortalsOrchestrator() {
                                     <span className="inline-block w-1.5 h-1.5 rounded-full bg-orange-500" />
                                     {translateLocation(proj.location, language)}
                                   </p>
+
+                                  {/* Info Matrix Grid */}
+                                  <div className="grid grid-cols-2 gap-y-3.5 gap-x-4 border-t border-slate-100 pt-4 mt-4 text-left">
+                                    <div className="flex items-center gap-2">
+                                      <BedDouble className="h-4 w-4 text-slate-400 shrink-0" />
+                                      <div>
+                                        <span className="block text-[8px] font-bold text-slate-400 uppercase leading-none">{t('rooms') || 'Rooms'}</span>
+                                        <span className="text-xs font-semibold text-slate-700">
+                                          {proj.bedroomsMin} - {proj.bedroomsMax} {language.startsWith('zh') ? '房' : language === 'ja' ? '寝室' : 'Beds'}
+                                        </span>
+                                      </div>
+                                    </div>
+
+                                    <div className="flex items-center gap-2">
+                                      <Bath className="h-4 w-4 text-slate-400 shrink-0" />
+                                      <div>
+                                        <span className="block text-[8px] font-bold text-slate-400 uppercase leading-none">{language.startsWith('zh') ? '卫浴' : language === 'ja' ? '浴室' : 'Baths'}</span>
+                                        <span className="text-xs font-semibold text-slate-700">
+                                          {getBathsRange(proj)} {language.startsWith('zh') ? '卫' : language === 'ja' ? '浴室' : 'Baths'}
+                                        </span>
+                                      </div>
+                                    </div>
+
+                                    <div className="flex items-center gap-2">
+                                      <Maximize className="h-4 w-4 text-slate-400 shrink-0" />
+                                      <div>
+                                        <span className="block text-[8px] font-bold text-slate-400 uppercase leading-none">{t('size') || 'Size'}</span>
+                                        <span className="text-xs font-semibold text-slate-700 truncate block max-w-[100px]">
+                                          {proj.builtUpMin} - {proj.builtUpMax} {language.startsWith('zh') ? '平方尺' : language === 'ja' ? 'sqft' : 'sqft'}
+                                        </span>
+                                      </div>
+                                    </div>
+
+                                    <div className="flex items-center gap-2">
+                                      <Calendar className="h-4 w-4 text-slate-400 shrink-0" />
+                                      <div>
+                                        <span className="block text-[8px] font-bold text-slate-400 uppercase leading-none">{t('completion') || 'Completion'}</span>
+                                        <span className="text-xs font-semibold text-slate-700">
+                                          {proj.completionYear !== "N/A" ? proj.completionYear : (language.startsWith('zh') ? "全新推介" : "Launching")}
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
 
                                 <div className="pt-4 mt-4 border-t border-slate-50 flex items-center justify-between">

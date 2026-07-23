@@ -55,28 +55,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           alt="Kuala Lumpur Skyline"
           className="w-full h-full object-cover object-center opacity-100 scale-100"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,1)_0%,rgba(255,255,255,0.85)_35%,rgba(255,255,255,0.25)_75%,transparent_100%)]" />
+        <div className="absolute inset-0 bg-white/75 backdrop-blur-[1px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col items-start text-left w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col items-center text-center w-full">
         {/* Elite Badge */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-100/50 text-orange-600 text-xs font-bold tracking-widest uppercase mb-6 sm:mb-8 animate-fade-in self-start">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-100/50 text-orange-600 text-xs font-bold tracking-widest uppercase mb-6 sm:mb-8 animate-fade-in self-center">
           <span className="h-2 w-2 rounded-full bg-orange-500 animate-pulse" />
           Malaysian Elite Platform Integration
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-[800] tracking-tight text-slate-900 max-w-3xl leading-[1.1] mb-6 text-left">
+        <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-[800] tracking-tight text-slate-900 max-w-4xl leading-[1.1] mb-6 text-center mx-auto">
           {renderGradientTitle(t('title'))}
         </h1>
 
         {/* Subheadline */}
-        <p className="text-slate-600 text-base sm:text-lg lg:text-[18px] max-w-2xl mb-8 leading-relaxed font-semibold text-left">
+        <p className="text-slate-600 text-base sm:text-lg lg:text-[18px] max-w-2xl mb-8 leading-relaxed font-semibold text-center mx-auto">
           {t('subtitle')}
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center gap-4 mb-16 w-full sm:w-auto self-start">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 w-full sm:w-auto self-center">
           <button
             onClick={onViewProjectsClick}
             className="w-full sm:w-auto px-8 py-4 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-orange-500/15 btn-hover cursor-pointer text-[15px]"
@@ -100,7 +100,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Budget Search Strip Container */}
-        <div className="w-full max-w-5xl bg-white rounded-3xl shadow-2xl p-4 sm:p-5 border border-slate-100 text-slate-900 relative z-10 self-start">
+        <div className="w-full max-w-5xl bg-white rounded-3xl shadow-2xl p-4 sm:p-5 border border-slate-100 text-slate-900 relative z-10 self-center">
           <div className="absolute -top-3.5 left-6 px-4 py-1 rounded-full ig-gradient text-white text-[10px] font-black tracking-widest uppercase">
             {t('budgetSearch')}
           </div>
