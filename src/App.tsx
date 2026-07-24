@@ -33,6 +33,7 @@ import { ProjectSlideshow } from './components/ProjectSlideshow';
 import { AiseoDirectory } from './components/AiseoDirectory';
 import { useSEO } from './utils/useSEO';
 import { Breadcrumbs } from './components/Breadcrumbs';
+import CalculatorHub from './components/CalculatorHub';
 import { API_BASE_URL } from './utils/api';
 import projectsFallback from './projectsFallback.json';
 
@@ -1455,6 +1456,12 @@ function ClientPortalsOrchestrator() {
                   onBlogNavigate={handleBlogNavigate}
                   activeBlogSlug={activeBlogSlug}
                 />
+              </div>
+            )}
+
+            {currentPage === 'calculator' && (
+              <div className="animate-fade-in">
+                <CalculatorHub />
               </div>
             )}
 

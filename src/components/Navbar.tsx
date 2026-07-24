@@ -50,6 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'compare', label: 'Compare' },
     { id: 'map', label: 'Map Explorer' },
     { id: 'blog', label: 'Market Blog' },
+    { id: 'calculator', label: 'Calculator' },
   ];
 
   return (
@@ -86,6 +87,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 {item.id === 'compare'
                   ? t('compareProjects')
+                  : item.id === 'calculator'
+                  ? (language.startsWith('zh') ? '金融计算器' : language === 'ja' ? '計算ツール' : language === 'ko' ? '금융 계산기' : 'Calculator Hub')
                   : t(item.id === 'home' ? 'home' : item.id === 'projects' ? 'viewProjects' : item.id === 'map' ? 'interactiveMap' : 'blogTitle').replace(/Malaysia|Property|Portal|Analyses|&|SEO|Insights|\/|\-|博客|地产智库|不動産の分析|부동산|지식/g, '').trim() || item.label}
               </button>
             ))}
@@ -201,6 +204,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 {item.id === 'compare'
                   ? t('compareProjects')
+                  : item.id === 'calculator'
+                  ? (language.startsWith('zh') ? '金融计算器' : language === 'ja' ? '計算ツール' : language === 'ko' ? '금융 계산기' : 'Calculator Hub')
                   : t(item.id === 'home' ? 'home' : item.id === 'projects' ? 'viewProjects' : item.id === 'map' ? 'interactiveMap' : 'blogTitle').replace(/Malaysia|Property|Portal|Analyses|&|SEO|Insights|\/|\-|博客|地产智库|不動産の分析|부동산|지식/g, '').trim() || item.label}
               </button>
             ))}

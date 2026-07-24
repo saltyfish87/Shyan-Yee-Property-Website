@@ -6,6 +6,7 @@ interface CurrencyContextType {
   setCurrency: (cur: SupportedCurrency) => void;
   convertPrice: (priceInMYR: number) => { value: number; formatted: string };
   formatMYR: (price: number) => string;
+  formatPrice: (priceInMYR: number) => string;
 }
 
 const CurrencyContext = createContext<CurrencyContextType | undefined>(undefined);
@@ -44,8 +45,12 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     return `RM ${price.toLocaleString()}`;
   };
 
+  const formatPrice = (priceInMYR: number): string => {
+    return convertPrice(priceInMYR).formatted;
+  };
+
   return (
-    <CurrencyContext.Provider value={{ currency, setCurrency, convertPrice, formatMYR }}>
+    <CurrencyContext.Provider value={{ currency, setCurrency, convertPrice, formatMYR, formatPrice }}>
       {children}
     </CurrencyContext.Provider>
   );
