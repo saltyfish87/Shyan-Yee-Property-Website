@@ -1652,6 +1652,7 @@ async function fetchGoogleSheetsProjects(forceRefresh = false): Promise<any[]> {
             projectTypeStr = "Garden Condovilla & Landed Parkhome";
           }
 
+
           // Retrieve mapped images from drive or fall back
           let resolvedImages: ProjectImages;
           let layoutFiles: { id: string; name: string }[] = [];

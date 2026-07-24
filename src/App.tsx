@@ -557,7 +557,86 @@ function ClientPortalsOrchestrator() {
     setSelectedProject(proj);
     setHeroSearchFilters(null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (typeof window !== 'undefined' && window.history && window.history.pushState) {
+      window.history.pushState({ projectId: proj.id }, '', `/#/${proj.id}`);
+    }
   };
+
+  const handlePageNavigate = (page: string) => {
+    setCurrentPage(page);
+    setSelectedProject(null);
+    setActiveBlogSlug(null);
+    setHeroSearchFilters(null);
+    window.scrollTo({ top: 0 });
+    if (typeof window !== 'undefined' && window.history && window.history.pushState) {
+      window.history.pushState({ page }, '', page === 'home' ? '/' : `/#/${page}`);
+    }
+  };
+
+  // Sync state with incoming URL path / hash / query params
+  useEffect(() => {
+    if (projects.length === 0) return;
+
+    const handleRouteFromUrl = () => {
+      const pathStr = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+      const hashStr = window.location.hash.replace(/^#\/?/, '').toLowerCase();
+      const params = new URLSearchParams(window.location.search);
+      const projParam = params.get('project') || params.get('p');
+
+      const rawCandidate = projParam || hashStr || pathStr;
+      if (!rawCandidate) return;
+
+      // Strip leading 'projects/' if present
+      const candidate = rawCandidate.startsWith('projects/') ? rawCandidate.replace('projects/', '') : rawCandidate;
+
+      if (['calculator', 'calc'].includes(candidate)) {
+        setCurrentPage('calculator');
+        setSelectedProject(null);
+        return;
+      }
+      if (['projects', 'listings'].includes(candidate)) {
+        setCurrentPage('projects');
+        setSelectedProject(null);
+        return;
+      }
+      if (['map', 'explorer'].includes(candidate)) {
+        setCurrentPage('map');
+        setSelectedProject(null);
+        return;
+      }
+      if (['blog', 'insights'].includes(candidate)) {
+        setCurrentPage('blog');
+        setSelectedProject(null);
+        return;
+      }
+      if (['compare'].includes(candidate)) {
+        setCurrentPage('compare');
+        setSelectedProject(null);
+        return;
+      }
+
+      // Try matching project ID or slug (e.g. queenswoodz)
+      const match = projects.find(
+        (p) =>
+          p.id.toLowerCase() === candidate ||
+          p.name.toLowerCase().replace(/[^a-z0-9]/g, '') === candidate.replace(/[^a-z0-9]/g, '')
+      );
+
+      if (match) {
+        setSelectedProject(match);
+        setHeroSearchFilters(null);
+      }
+    };
+
+    handleRouteFromUrl();
+
+    window.addEventListener('popstate', handleRouteFromUrl);
+    window.addEventListener('hashchange', handleRouteFromUrl);
+    return () => {
+      window.removeEventListener('popstate', handleRouteFromUrl);
+      window.removeEventListener('hashchange', handleRouteFromUrl);
+    };
+  }, [projects]);
 
   const handleManualInjectedProject = (p: Project) => {
     // Dynamic CMS injection in-memory and local storage persisted
@@ -676,13 +755,7 @@ function ClientPortalsOrchestrator() {
       {/* 1. Sticky Navigation Bar */}
       <Navbar
         currentPage={currentPage}
-        setCurrentPage={(page) => {
-          setCurrentPage(page);
-          setSelectedProject(null);
-          setActiveBlogSlug(null);
-          setHeroSearchFilters(null);
-          window.scrollTo({ top: 0 });
-        }}
+        setCurrentPage={handlePageNavigate}
         onSmartMatchClick={() => {
           setIsSmartMatchOpen(true);
           setSmartMatchStep(1);

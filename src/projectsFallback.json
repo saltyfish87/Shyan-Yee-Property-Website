@@ -732,7 +732,7 @@
     "carParksMin": 2,
     "carParksMax": 4,
     "maintenanceFee": 0.27,
-    "maintenanceFeeStr": "RM 0.27 psf (incl. sinking fund)",
+    "maintenanceFeeStr": "N/A",
     "totalUnits": "824 (Block A: 333; Block B: 491)",
     "images": {
       "overview": [
@@ -1666,7 +1666,7 @@
     "longitude": 101.694198
   },
   {
-    "id": "maple-residences",
+    "id": "the-maple-residences",
     "name": "The Maple Residences",
     "developer": "WCT Land Sdn Bhd",
     "location": "Jalan Hujan Rintik, Taman OUG, 58200 Kuala Lumpur",
@@ -1682,127 +1682,11 @@
     "projectType": "Condominium",
     "completionStatus": "Ready To Move",
     "completionYear": "2025",
-    "carParksMin": 1,
-    "carParksMax": 2,
+    "totalUnits": "940 (Tower A: 303; Tower B: 295; Tower C: 342)",
     "maintenanceFee": 1.32,
     "maintenanceFeeStr": "RM 1.32 psf (incl. 10% sinking fund)",
-    "totalUnits": "940 (Tower A: 303; Tower B: 295; Tower C: 342)",
-    "images": {
-      "overview": [
-        "https://lh3.googleusercontent.com/d/1mmEtQAoVol7FBne0TRx03v4sAkItyP9o=w1000",
-        "https://lh3.googleusercontent.com/d/10Y9l_ZCmg7ZzmmVQVzLs0ueMEtli-B3a=w1000"
-      ],
-      "location": [
-        "https://lh3.googleusercontent.com/d/1Z5Se9nK_52yjy827pC1TDH_ugKzZcTQx=w1000"
-      ],
-      "layout": [
-        "https://lh3.googleusercontent.com/d/1asNWKwkH7x2ofLJeuQpIUyvqxGT_CsWR=w1000",
-        "https://lh3.googleusercontent.com/d/151SaOYBiVE0X5EiitKT_xCqKeONiOLHT=w1000",
-        "https://lh3.googleusercontent.com/d/1ixJzNbZpcxUzHv1K6ciDCWhNIxXy_Dq_=w1000",
-        "https://lh3.googleusercontent.com/d/1xlJ9PAUxFWgr5K7k7__DFbzyLv2Wu_B1=w1000",
-        "https://lh3.googleusercontent.com/d/10knF-rZdekIGH6JSN6YDkdnyxzOHc0RW=w1000",
-        "https://lh3.googleusercontent.com/d/1jlcYel4RJpGg10JmOKesc68D4zUgkssn=w1000",
-        "https://lh3.googleusercontent.com/d/1Er8hFdFfKyDpajslfum_1LqpEmJ4Bc8X=w1000",
-        "https://lh3.googleusercontent.com/d/1XxXjUUdXtf-Rty2ItHMdKaXdnlo2BnHp=w1000"
-      ],
-      "gallery": [
-        "https://lh3.googleusercontent.com/d/1zXIHtxSCIRzs6I560FxG-b7p6xkAxJbT=w1000",
-        "https://lh3.googleusercontent.com/d/1XxJOHIUc2YqOxuw0issdd2jSsk1EYYXk=w1000",
-        "https://lh3.googleusercontent.com/d/1_uGRA4bHvEWL7_5Hc9KnFJsy6cBW5rdV=w1000",
-        "https://lh3.googleusercontent.com/d/1c6RooJW3hNpDXokQZlVfO781NRnDui_2=w1000",
-        "https://lh3.googleusercontent.com/d/1sHlnlpauxIPAI5_wZ2o4JqR1B5xzeWiM=w1000",
-        "https://lh3.googleusercontent.com/d/1hgSnl_mlZ7VJJ702MHca9eSMgC2lhtXH=w1000",
-        "https://lh3.googleusercontent.com/d/1m1P8nvIk6B2V5ldXSKAw7xD1XY3-Bz10=w1000",
-        "https://lh3.googleusercontent.com/d/1jV2HYixPhDBS0TuvVVA_7iAoKdBAqpoe=w1000",
-        "https://lh3.googleusercontent.com/d/1iMRfH55hR6GxHyEnvW6wOYydlpcDD0TM=w1000",
-        "https://lh3.googleusercontent.com/d/1u65pCxezEUdjb0cHBAFUOILoWovb9Fcv=w1000",
-        "https://lh3.googleusercontent.com/d/1ODc_GvjnNaM6cAkvx8zLTg3xapA-O9hS=w1000"
-      ]
-    },
-    "layouts": [
-      {
-        "image": "https://lh3.googleusercontent.com/d/1asNWKwkH7x2ofLJeuQpIUyvqxGT_CsWR=w1000",
-        "typeName": "Type A1",
-        "size": 808,
-        "beds": 2,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 580000,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/151SaOYBiVE0X5EiitKT_xCqKeONiOLHT=w1000",
-        "typeName": "Type A2",
-        "size": 889,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 638144,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1ixJzNbZpcxUzHv1K6ciDCWhNIxXy_Dq_=w1000",
-        "typeName": "Type B1",
-        "size": 971,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 632652,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1xlJ9PAUxFWgr5K7k7__DFbzyLv2Wu_B1=w1000",
-        "typeName": "Type B2A",
-        "size": 1052,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 658817,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/10knF-rZdekIGH6JSN6YDkdnyxzOHc0RW=w1000",
-        "typeName": "Type B2B",
-        "size": 1134,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 2,
-        "estPrice": 685304,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1jlcYel4RJpGg10JmOKesc68D4zUgkssn=w1000",
-        "typeName": "Type C1",
-        "size": 1215,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 2,
-        "estPrice": 711469,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1Er8hFdFfKyDpajslfum_1LqpEmJ4Bc8X=w1000",
-        "typeName": "Type C2",
-        "size": 1297,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 737957,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1XxXjUUdXtf-Rty2ItHMdKaXdnlo2BnHp=w1000",
-        "typeName": "Type D1",
-        "size": 1378,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 764121,
-        "isEnriched": false
-      }
-    ],
-    "latitude": 3.064906,
-    "longitude": 101.682231
+    "carParksMin": 1,
+    "carParksMax": 2
   },
   {
     "id": "oaka-residences",
@@ -2979,15 +2863,15 @@
     "developer": "Park City",
     "location": "Jalan Kwasa Sentral, Kwasa Damansara, Shah Alam, Selangor",
     "area": "Kwasa Damansara, Shah Alam",
-    "startingPrice": 1300000,
-    "startingPriceFormatted": "RM 1,300,000",
-    "priceRange": "RM 1.3M - RM 4.2M+",
+    "startingPrice": 13000002500000,
+    "startingPriceFormatted": "RM 13,000,002,500,000",
+    "priceRange": "Condovilla from RM 1.3M; ParkHome from RM 2.5M",
     "builtUpMin": 1691,
-    "builtUpMax": 4247,
+    "builtUpMax": 2053,
     "bedroomsMin": 4,
     "bedroomsMax": 5,
     "tenure": "Leasehold",
-    "projectType": "Garden Condovilla & Landed Parkhome",
+    "projectType": "Township",
     "completionStatus": "New Launch",
     "completionYear": "2030",
     "carParksMin": 2,
@@ -3429,7 +3313,7 @@
     "longitude": 101.679399
   },
   {
-    "id": "vividz",
+    "id": "the-vividz",
     "name": "The Vividz",
     "developer": "Exsim Bukit Jalil City Sdn Bhd",
     "location": "Jalan Klang Lama, 58000 Kuala Lumpur",
@@ -3445,85 +3329,11 @@
     "projectType": "Serviced Apartment",
     "completionStatus": "New Launch",
     "completionYear": "2030",
-    "carParksMin": 1,
-    "carParksMax": 2,
+    "totalUnits": "1,138 res + 7 retail (Block A: 569; Block B: 569)",
     "maintenanceFee": 0.4,
     "maintenanceFeeStr": "Est RM 0.40 psf (incl. sinking fund)",
-    "totalUnits": "1,138 res + 7 retail (Block A: 569; Block B: 569)",
-    "images": {
-      "overview": [
-        "https://lh3.googleusercontent.com/d/197OEl8DtpOE3BmlMVFsplHGPVmiVnSQ3=w1000",
-        "https://lh3.googleusercontent.com/d/1py192g_GxuSATwaXEkiWjKD2QtxY2v0e=w1000"
-      ],
-      "location": [
-        "https://lh3.googleusercontent.com/d/1CThPcVRZZWuEYL231bh5yZTofcXiSIuU=w1000"
-      ],
-      "layout": [
-        "https://lh3.googleusercontent.com/d/12WjBS1973CkrISA0tVEwuxU00SPt5vy1=w1000",
-        "https://lh3.googleusercontent.com/d/1O-Qze-rnS9iuSN2itQZSO6mPS2psrwsZ=w1000",
-        "https://lh3.googleusercontent.com/d/1VwwzdyqO2lIucdZGl9hNBIC5rVadK88b=w1000",
-        "https://lh3.googleusercontent.com/d/1jTpr5bHXVY5GD89pqJ8Di2wL8WT0z9N8=w1000"
-      ],
-      "gallery": [
-        "https://lh3.googleusercontent.com/d/1X4uECRgeO05-78ip0SSOd9NUvbnSakPB=w1000",
-        "https://lh3.googleusercontent.com/d/1eE8vhkrkvxrMR_o3YwnXcJ21ExHZlB-M=w1000",
-        "https://lh3.googleusercontent.com/d/1hz64rMVhaHF1Hb9axUDbvX_zFy5Jv5MK=w1000",
-        "https://lh3.googleusercontent.com/d/1jyaZJA0OiYt_Z6QNp_by3L77SEU1rxqE=w1000",
-        "https://lh3.googleusercontent.com/d/1Ibn-gsRenEGXobOqBfpBesl_GhVz_TPl=w1000",
-        "https://lh3.googleusercontent.com/d/1odN_iPwJD377o425aPnTO5xvrP5dpRAT=w1000",
-        "https://lh3.googleusercontent.com/d/1RmAerHq-9ZASnNq1nRivWumgbZyKiEFM=w1000",
-        "https://lh3.googleusercontent.com/d/1rvx5DSWrdLDkcWmugPJg8tfrg4l-Zz5u=w1000",
-        "https://lh3.googleusercontent.com/d/1-81lVcJp7WpFV6xhEsKy_E5uHsPfxqZv=w1000",
-        "https://lh3.googleusercontent.com/d/1kJpg97P36w7yX0tUDOv-9V-qiBcu90tn=w1000",
-        "https://lh3.googleusercontent.com/d/1G3ilpERzJeTvaYcdDo_9s7m4K0M5gjv6=w1000",
-        "https://lh3.googleusercontent.com/d/1VLj5dkhTcaC0F108glQe1YbvmcacpdU3=w1000",
-        "https://lh3.googleusercontent.com/d/1zqjidqD5ngiPYl7-AFjxhS42GJxoA22L=w1000"
-      ]
-    },
-    "layouts": [
-      {
-        "image": "https://lh3.googleusercontent.com/d/12WjBS1973CkrISA0tVEwuxU00SPt5vy1=w1000",
-        "typeName": "Type A1",
-        "size": 484,
-        "beds": 1,
-        "baths": 1,
-        "carParks": 1,
-        "estPrice": 446400,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1O-Qze-rnS9iuSN2itQZSO6mPS2psrwsZ=w1000",
-        "typeName": "Type B1",
-        "size": 628,
-        "beds": 1,
-        "baths": 1,
-        "carParks": 1,
-        "estPrice": 506166,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1VwwzdyqO2lIucdZGl9hNBIC5rVadK88b=w1000",
-        "typeName": "Type C1",
-        "size": 771,
-        "beds": 2,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 565517,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1jTpr5bHXVY5GD89pqJ8Di2wL8WT0z9N8=w1000",
-        "typeName": "Type C2",
-        "size": 915,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 625283,
-        "isEnriched": false
-      }
-    ],
-    "latitude": 3.04592273332899,
-    "longitude": 101.666245410469
+    "carParksMin": 1,
+    "carParksMax": 2
   },
   {
     "id": "khaya-residence",
@@ -4081,7 +3891,7 @@
     "longitude": 101.61115
   },
   {
-    "id": "aldenz",
+    "id": "the-aldenz",
     "name": "The Aldenz",
     "developer": "Exsim",
     "location": "Damansara, Petaling Jaya",
@@ -4097,106 +3907,12 @@
     "projectType": "Serviced Apartment",
     "completionStatus": "Under Construction",
     "completionYear": "2029",
-    "maintenanceFee": 0.42,
-    "maintenanceFeeStr": "RM0.42 psf",
     "totalUnits": "662 units, 49 storeys",
-    "images": {
-      "overview": [
-        "https://lh3.googleusercontent.com/d/1YylvCgMPUlLoC1pzaHKu00DZTCvzCIJ4=w1000",
-        "https://lh3.googleusercontent.com/d/11TTRW9TTpf1NVX_DpIrGzD0rbtICQ7kS=w1000",
-        "https://lh3.googleusercontent.com/d/1FVea5FYBZD2LqGAZEwMO87D9WVHZdPfY=w1000"
-      ],
-      "location": [
-        "https://lh3.googleusercontent.com/d/1xvarCt6LDpiIOBeK6Y8EGZMDYRceVaRD=w1000"
-      ],
-      "layout": [
-        "https://lh3.googleusercontent.com/d/1yIAMBggznXmrwtOe_uXJNHVZFDWotOD6=w1000",
-        "https://lh3.googleusercontent.com/d/1kM8H8w76lJG1I0HkRw_NdT6GQx3Sp5dZ=w1000",
-        "https://lh3.googleusercontent.com/d/1pMq4OUqnrXNg5HNgR-sbnemJt_KDTZ34=w1000",
-        "https://lh3.googleusercontent.com/d/1jrbZSBPl4178MIOEHWceHAi6UX__CEZS=w1000",
-        "https://lh3.googleusercontent.com/d/1oS9PYkZebhCoPEUWLWi8GTD_ZWWUzC10=w1000"
-      ],
-      "gallery": [
-        "https://lh3.googleusercontent.com/d/1-tfPupq2HNg8pbN2sOrHffjHaCJqSjT4=w1000",
-        "https://lh3.googleusercontent.com/d/1hcdypnhHNQ6GeDBv7TMW__aXFuF6PB29=w1000",
-        "https://lh3.googleusercontent.com/d/1zbGOWZ9-sivM3xg4MUqtFVTdKVjKSOEe=w1000",
-        "https://lh3.googleusercontent.com/d/11FIWPsJO9eCxji_btbn24dti22twg-Aq=w1000",
-        "https://lh3.googleusercontent.com/d/1n1gdpr7rXj28t5lnQ-pKTzwD0zQTMZ5F=w1000",
-        "https://lh3.googleusercontent.com/d/1mJ1wtIkvzcrx7RKcCcQDNtdDOsYji4Vq=w1000",
-        "https://lh3.googleusercontent.com/d/1jOMGBGcnbEmrApYWJafclNh8Oa_eJ5Tx=w1000",
-        "https://lh3.googleusercontent.com/d/1bK_uf1r6DmtjyJfuEvXQPWfqD9RO4kOF=w1000",
-        "https://lh3.googleusercontent.com/d/17Okctz-9jXeUMnKaxFpl7YyI9DGmAO3i=w1000",
-        "https://lh3.googleusercontent.com/d/1F4fvQz-ZrYFOXLQoT3Dg1vuEwBsb_hRc=w1000",
-        "https://lh3.googleusercontent.com/d/1r6AEKIOt2ciqTFMwYKesaC7jokQVVAOy=w1000",
-        "https://lh3.googleusercontent.com/d/11p1n6YGbUVYdyW1oeMD48Ty15DqWCDDb=w1000",
-        "https://lh3.googleusercontent.com/d/1GJ2kU5ryZ1SDE6FLLnAD71jPo5Fbovim=w1000",
-        "https://lh3.googleusercontent.com/d/1gxNWY45PL1M_0KWeSKZhxH3xusc0BslH=w1000",
-        "https://lh3.googleusercontent.com/d/1KeOf0wvla5HIGu1Yjotq4mbdHLjMtVi8=w1000",
-        "https://lh3.googleusercontent.com/d/1N_XQe9UxzxEdplm5faPUpo21BtzxeWPW=w1000",
-        "https://lh3.googleusercontent.com/d/10fD4nKagh_XckBB-2aHLwc2OD6GtW7a4=w1000",
-        "https://lh3.googleusercontent.com/d/13Y-vS23lvBaRPfRqXLE7Oj3dZHJqbOV6=w1000",
-        "https://lh3.googleusercontent.com/d/1diORSTwelBRj6UoEkcW08oyYp9Olj-VX=w1000",
-        "https://lh3.googleusercontent.com/d/15wZTbQa9uuSjnGJET8QuHyVtt0LnIMMm=w1000",
-        "https://lh3.googleusercontent.com/d/1YV_wDALQ248SLgYbKt08LfR0MitIw1Zx=w1000"
-      ]
-    },
-    "layouts": [
-      {
-        "image": "https://lh3.googleusercontent.com/d/1yIAMBggznXmrwtOe_uXJNHVZFDWotOD6=w1000",
-        "typeName": "Type A2",
-        "size": 775,
-        "beds": 2,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 650000,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1kM8H8w76lJG1I0HkRw_NdT6GQx3Sp5dZ=w1000",
-        "typeName": "Type B2",
-        "size": 813,
-        "beds": 2,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 681871,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1pMq4OUqnrXNg5HNgR-sbnemJt_KDTZ34=w1000",
-        "typeName": "Type C1",
-        "size": 851,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 713742,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1jrbZSBPl4178MIOEHWceHAi6UX__CEZS=w1000",
-        "typeName": "Type C3",
-        "size": 888,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 744774,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1oS9PYkZebhCoPEUWLWi8GTD_ZWWUzC10=w1000",
-        "typeName": "Type D2",
-        "size": 926,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 776645,
-        "isEnriched": false
-      }
-    ],
-    "latitude": 3.17375430580668,
-    "longitude": 101.616371821163
+    "maintenanceFee": 0.42,
+    "maintenanceFeeStr": "RM0.42 psf"
   },
   {
-    "id": "d-evia",
+    "id": "devia",
     "name": "D'Evia",
     "developer": "Exsim",
     "location": "Kwasa Damansara, Petaling Jaya",
@@ -4212,87 +3928,9 @@
     "projectType": "Condominium",
     "completionStatus": "Under Construction",
     "completionYear": "2029",
-    "maintenanceFee": 0.46,
-    "maintenanceFeeStr": "RM0.46 psf",
     "totalUnits": "440 units, 32 storeys",
-    "images": {
-      "overview": [
-        "https://lh3.googleusercontent.com/d/11pDZXqECPinFGW0MZse3BBXhDX5V_KrS=w1000"
-      ],
-      "location": [
-        "https://lh3.googleusercontent.com/d/10eSc1KlRlJ5pWMu3hH2fKKEepiBtZmRe=w1000"
-      ],
-      "layout": [
-        "https://lh3.googleusercontent.com/d/1Fsz9vpUih5ITYJ-gWCwq1y7Og41ZcnaC=w1000",
-        "https://lh3.googleusercontent.com/d/1SyrjvBhBDMyaDluUUm4pQJhD-FF_Q5rk=w1000",
-        "https://lh3.googleusercontent.com/d/10C_MUfl3nwnBsqWzMtMNkAC3d6rmQFhM=w1000",
-        "https://lh3.googleusercontent.com/d/19k4HCSATzeyH0tmX-RLd11dHtjDbXYVS=w1000",
-        "https://lh3.googleusercontent.com/d/1lHrmoZcfxLxJKVgzEubhNuszabuOydwL=w1000"
-      ],
-      "gallery": [
-        "https://lh3.googleusercontent.com/d/1177XqC-vQcYEazrJw_j0eiCXI6yo6UtL=w1000",
-        "https://lh3.googleusercontent.com/d/1Z4MfkG6cqQnFUlemQxGXB76g7oudMITl=w1000",
-        "https://lh3.googleusercontent.com/d/1OYHClw8GpxiiDnl9pY0AQA8ufnmj6KoU=w1000",
-        "https://lh3.googleusercontent.com/d/1v6-__BgTrZWWalrC-LfizDVOyJd9ssFh=w1000",
-        "https://lh3.googleusercontent.com/d/1vWN2zGiUe-3vvK2S47v2r8Qs49h_Ulxr=w1000",
-        "https://lh3.googleusercontent.com/d/1TiQGrR3EQk37nPZgu2tm1JOiLfa60FUG=w1000",
-        "https://lh3.googleusercontent.com/d/1_fv6INJLh-Iz9FffkCWeu6HMYXhoygP-=w1000"
-      ]
-    },
-    "layouts": [
-      {
-        "image": "https://lh3.googleusercontent.com/d/1Fsz9vpUih5ITYJ-gWCwq1y7Og41ZcnaC=w1000",
-        "typeName": "Type A",
-        "size": 657,
-        "beds": 2,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 450000,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1SyrjvBhBDMyaDluUUm4pQJhD-FF_Q5rk=w1000",
-        "typeName": "Type A",
-        "size": 768,
-        "beds": 2,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 526027,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/10C_MUfl3nwnBsqWzMtMNkAC3d6rmQFhM=w1000",
-        "typeName": "Type B1",
-        "size": 879,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 518425,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/19k4HCSATzeyH0tmX-RLd11dHtjDbXYVS=w1000",
-        "typeName": "Type B3",
-        "size": 989,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 552329,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1lHrmoZcfxLxJKVgzEubhNuszabuOydwL=w1000",
-        "typeName": "Type C",
-        "size": 1100,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 586541,
-        "isEnriched": false
-      }
-    ],
-    "latitude": 3.16683239249079,
-    "longitude": 101.565713911443
+    "maintenanceFee": 0.46,
+    "maintenanceFeeStr": "RM0.46 psf"
   },
   {
     "id": "arra",
@@ -4363,7 +4001,7 @@
     "longitude": 101.58380853143
   },
   {
-    "id": "atera",
+    "id": "the-atera",
     "name": "The Atera",
     "developer": "Paramount Property",
     "location": "PJ Seksyen 14, Petaling Jaya",
@@ -4379,78 +4017,9 @@
     "projectType": "Serviced Apartment",
     "completionStatus": "Under Construction",
     "completionYear": "2026",
-    "maintenanceFee": 0.32,
-    "maintenanceFeeStr": "RM0.32 psf",
     "totalUnits": "756 units",
-    "images": {
-      "overview": [
-        "https://lh3.googleusercontent.com/d/1b2TPOESZJEURP13VNKc1WeOsasRo8zJ9=w1000"
-      ],
-      "location": [
-        "https://lh3.googleusercontent.com/d/18r0RBIT0jLL1QfMiObc8QzEMeXvUMyVz=w1000"
-      ],
-      "layout": [
-        "https://lh3.googleusercontent.com/d/1XGGhmvtHQtakAZd_l81dam92CJt4gjar=w1000",
-        "https://lh3.googleusercontent.com/d/1BNO4zWukRE_7-0xpUQPLPryD15XolOCy=w1000",
-        "https://lh3.googleusercontent.com/d/1PYSG6PSKly8HOw61GUwz3hlD1hKy91rS=w1000"
-      ],
-      "gallery": [
-        "https://lh3.googleusercontent.com/d/1PKZoJLui_bfknHgIIdPEA5FfdqC9AEJo=w1000",
-        "https://lh3.googleusercontent.com/d/1q5BcWmFACTYC5lY2LfdfZHP41zmTbrlK=w1000",
-        "https://lh3.googleusercontent.com/d/1UWEIeM9bxXnnzLPSUe_4RoegSfyTxflk=w1000",
-        "https://lh3.googleusercontent.com/d/1SN3yo-BLmFZREnT_qSyibr5DCicvb8EO=w1000",
-        "https://lh3.googleusercontent.com/d/19VfdJFdo5PL16hwWZZxvefGgUYdWXYg1=w1000",
-        "https://lh3.googleusercontent.com/d/1X1tdheJ8tVYRt8wcA2lRpyykP22XQkp3=w1000",
-        "https://lh3.googleusercontent.com/d/1pR5iRPGMaWRhY429PoJQBdyX_IprPb-S=w1000",
-        "https://lh3.googleusercontent.com/d/12LWbWacUlIql9FRGNzOlBwvj3Ko7Jfd1=w1000",
-        "https://lh3.googleusercontent.com/d/1SaaAyf_1YZza4baCPiHznCSgEyFOJr4j=w1000",
-        "https://lh3.googleusercontent.com/d/1mA03AHvAGSOZ7R5c3JxO1_-hqd_hk_jN=w1000",
-        "https://lh3.googleusercontent.com/d/1m-OyF7ZAcrm_JqSKUqsEOQJg-gx43jyU=w1000",
-        "https://lh3.googleusercontent.com/d/1C0B7q3QFrIMwU28weglUuH0MAStFOm83=w1000",
-        "https://lh3.googleusercontent.com/d/1E8Cp3AF1rSG_uf6x2kPg3m2OPjpNnJ_f=w1000",
-        "https://lh3.googleusercontent.com/d/155zViMwiTNFfxuZ3WSxw0rMKQsR9Rf8q=w1000",
-        "https://lh3.googleusercontent.com/d/1kJsBJksIIfhX59F1LswQR0QdleNSqDbM=w1000",
-        "https://lh3.googleusercontent.com/d/1I4sgZE1yXnbRMXQUOKI-55-2wMvUMx59=w1000",
-        "https://lh3.googleusercontent.com/d/1jEHVsPObQzUIMUyC6h_3dkHx78aKoCFM=w1000",
-        "https://lh3.googleusercontent.com/d/1DtKxqG-AE1GF2BbbxAalgNYDyuAMfpZ3=w1000",
-        "https://lh3.googleusercontent.com/d/1F6Vgqwvy7C-RLQftbx8xsh2rwF_cL7Ab=w1000",
-        "https://lh3.googleusercontent.com/d/1KkDQPKvMCEhvVTnUyH73c0-_UdIQze7N=w1000"
-      ]
-    },
-    "layouts": [
-      {
-        "image": "https://lh3.googleusercontent.com/d/1XGGhmvtHQtakAZd_l81dam92CJt4gjar=w1000",
-        "typeName": "Type B",
-        "size": 775,
-        "beds": 2,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 580000,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1BNO4zWukRE_7-0xpUQPLPryD15XolOCy=w1000",
-        "typeName": "Type C",
-        "size": 1088,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 685410,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1PYSG6PSKly8HOw61GUwz3hlD1hKy91rS=w1000",
-        "typeName": "Type D",
-        "size": 1400,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 790484,
-        "isEnriched": false
-      }
-    ],
-    "latitude": 3.103103741,
-    "longitude": 101.6350234
+    "maintenanceFee": 0.32,
+    "maintenanceFeeStr": "RM0.32 psf"
   },
   {
     "id": "amara",
@@ -5117,7 +4686,8 @@
       }
     ],
     "latitude": 3.13220944920006,
-    "longitude": 101.615793443322
+    "longitude": 101.615793443322,
+    "maintenanceFee": 0.35
   },
   {
     "id": "daya-residence",
@@ -5190,7 +4760,7 @@
     "longitude": 101.5645
   },
   {
-    "id": "d-tessera",
+    "id": "dtessera",
     "name": "D'Tessera",
     "developer": "Exsim",
     "location": "Damansara, Petaling Jaya",
@@ -5206,124 +4776,9 @@
     "projectType": "Serviced Apartment",
     "completionStatus": "Under Construction",
     "completionYear": "2026",
-    "maintenanceFeeStr": "N/A",
-    "totalUnits": "1,167 units, 3 towers (43 storeys)",
-    "images": {
-      "overview": [
-        "https://lh3.googleusercontent.com/d/1jD9Cxd_RQy5sHHxEAi62mFWEmc4SAmq5=w1000"
-      ],
-      "location": [
-        "https://lh3.googleusercontent.com/d/18n4eBM3UlzfFhlc2SwVK7V04lZGDi2Nj=w1000"
-      ],
-      "layout": [
-        "https://lh3.googleusercontent.com/d/1zXUB3lZ8Erdh6rSBt7h7Ll16rL7lvTdX=w1000",
-        "https://lh3.googleusercontent.com/d/1z25thxY2ED_KIpz5nwwZjXlKOjT8jtT4=w1000",
-        "https://lh3.googleusercontent.com/d/1nbaVq8X42Zcu_ml64Yzuno5jp1pFXzsO=w1000",
-        "https://lh3.googleusercontent.com/d/1B9rj1RMCb1gLdsA2DUSbJMl4enoGI1xZ=w1000",
-        "https://lh3.googleusercontent.com/d/14a1kfjmGXPc0HnAhpwwjnCYpUpSThpXN=w1000",
-        "https://lh3.googleusercontent.com/d/1LWgAglQJAWshg3qV4XOW1WGLfAPtJw6O=w1000",
-        "https://lh3.googleusercontent.com/d/1IutbfTwRH6QUT8S39WYjsTnCO7UJvFOK=w1000",
-        "https://lh3.googleusercontent.com/d/1iJn4HsrAT7UTdedq03drU86l1VNQoclp=w1000"
-      ],
-      "gallery": [
-        "https://lh3.googleusercontent.com/d/1WbAukf3auHQgoDfWK_gmpifI8j7z6MxH=w1000",
-        "https://lh3.googleusercontent.com/d/15mYMJ0zu4-BU8m91vAzuwGRsMzU2DA-4=w1000",
-        "https://lh3.googleusercontent.com/d/1lvx6Iy2VeLWIlsWuq7tz1oZ6pDyP-mv8=w1000",
-        "https://lh3.googleusercontent.com/d/1DZL-FDd4ttUUpjq52ISX_INlzDNBKiOe=w1000",
-        "https://lh3.googleusercontent.com/d/1YFDo0rKJastu18RP4A29EXY8GwlJN8nM=w1000",
-        "https://lh3.googleusercontent.com/d/1ZIYMgNiu8J7qfbgMsUNcEiFGAW-npa3v=w1000",
-        "https://lh3.googleusercontent.com/d/1BLBO_j1Dx5lVmV6NfB7bZYRe6GjVxNvJ=w1000",
-        "https://lh3.googleusercontent.com/d/1FwDtr2nKtfjCJRLf-bQ3qdrE2TR8e51q=w1000",
-        "https://lh3.googleusercontent.com/d/1MZjkd4DL1uU1kK4CUvYObEHflj4CHDcq=w1000",
-        "https://lh3.googleusercontent.com/d/19xV2pw_chK6vipQnvBzG7kokg70L9VQR=w1000",
-        "https://lh3.googleusercontent.com/d/1E04G9XCOj5EjMHB4-AytFD4-CwhrSfCX=w1000",
-        "https://lh3.googleusercontent.com/d/1mu3wP0KH5vcZJo6l4lqwJEhFGxAfBx1Q=w1000"
-      ]
-    },
-    "layouts": [
-      {
-        "image": "https://lh3.googleusercontent.com/d/1zXUB3lZ8Erdh6rSBt7h7Ll16rL7lvTdX=w1000",
-        "typeName": "Type A",
-        "size": 1100,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 837000,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1z25thxY2ED_KIpz5nwwZjXlKOjT8jtT4=w1000",
-        "typeName": "Type A1",
-        "size": 1129,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 2,
-        "estPrice": 859066,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1nbaVq8X42Zcu_ml64Yzuno5jp1pFXzsO=w1000",
-        "typeName": "Type A3",
-        "size": 1157,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 2,
-        "estPrice": 880372,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1B9rj1RMCb1gLdsA2DUSbJMl4enoGI1xZ=w1000",
-        "typeName": "Type A5",
-        "size": 1186,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 2,
-        "estPrice": 902438,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/14a1kfjmGXPc0HnAhpwwjnCYpUpSThpXN=w1000",
-        "typeName": "Type B1",
-        "size": 1214,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 2,
-        "estPrice": 923744,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1LWgAglQJAWshg3qV4XOW1WGLfAPtJw6O=w1000",
-        "typeName": "Type B3",
-        "size": 1243,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 2,
-        "estPrice": 945810,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1IutbfTwRH6QUT8S39WYjsTnCO7UJvFOK=w1000",
-        "typeName": "Type C1",
-        "size": 1271,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 967115,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1iJn4HsrAT7UTdedq03drU86l1VNQoclp=w1000",
-        "typeName": "Type D1",
-        "size": 1300,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 989182,
-        "isEnriched": false
-      }
-    ],
-    "latitude": 3.17190488570198,
-    "longitude": 101.614839141209
+    "totalUnits": "671 units",
+    "maintenanceFee": 0.35,
+    "maintenanceFeeStr": "RM0.35 psf"
   },
   {
     "id": "veridian",
@@ -5344,7 +4799,7 @@
     "completionYear": "2025",
     "maintenanceFee": 0.35,
     "maintenanceFeeStr": "RM0.35 psf",
-    "totalUnits": "700 units",
+    "totalUnits": "1,167 units, 3 towers (43 storeys)",
     "images": {
       "overview": [
         "https://lh3.googleusercontent.com/d/17OokN-jQAdfG_JCxCI5P4wJAzjmASxTm=w1000"
@@ -5460,9 +4915,9 @@
     "projectType": "Serviced Apartment",
     "completionStatus": "Under Construction",
     "completionYear": "2026",
-    "maintenanceFee": 0.42,
-    "maintenanceFeeStr": "RM0.42 psf",
-    "totalUnits": "1,004 units",
+    "maintenanceFee": 0.35,
+    "maintenanceFeeStr": "RM0.35 psf",
+    "totalUnits": "700 units",
     "images": {
       "overview": [
         "https://lh3.googleusercontent.com/d/1oj17w9E4pfL0hqrl8QtPs77QKLlqYdy7=w1000"
@@ -5545,9 +5000,9 @@
     "projectType": "Serviced Apartment",
     "completionStatus": "New Launch",
     "completionYear": "2029",
-    "maintenanceFee": 0.95,
-    "maintenanceFeeStr": "RM0.95-1.00 psf",
-    "totalUnits": "111 units, 23 storeys",
+    "maintenanceFee": 0.42,
+    "maintenanceFeeStr": "RM0.42 psf",
+    "totalUnits": "1,004 units",
     "images": {
       "overview": [
         "https://lh3.googleusercontent.com/d/1FnnOQ6sJlosq3nA9pksNcyylBlpNqGut=w1000",
@@ -5623,7 +5078,7 @@
     "longitude": 101.672877856883
   },
   {
-    "id": "menerung",
+    "id": "111-menerung",
     "name": "111 Menerung",
     "developer": "BRDB",
     "location": "Bangsar, Bangsar",
@@ -5639,106 +5094,9 @@
     "projectType": "Condominium",
     "completionStatus": "Under Construction",
     "completionYear": "2027",
-    "maintenanceFee": 0.38,
-    "maintenanceFeeStr": "RM0.38 psf",
-    "totalUnits": "1,332 units",
-    "images": {
-      "overview": [
-        "https://lh3.googleusercontent.com/d/1Hwyh3qjurVFa4zvyYPX_w2z1kGCFIyuO=w1000"
-      ],
-      "location": [
-        "https://lh3.googleusercontent.com/d/1pJexstZWn4Jm9_QKc7Wx04dLHZFpOVxn=w1000"
-      ],
-      "layout": [
-        "https://lh3.googleusercontent.com/d/183pONAzHrJi7kcnzMO-znlQbRUhllw2O=w1000",
-        "https://lh3.googleusercontent.com/d/1xnl_OBUc6qVbU-820Idy9zzMA5GCDx2H=w1000",
-        "https://lh3.googleusercontent.com/d/1IxjSAfRFohtNzhFsHsMgCcptKlUZnNoo=w1000",
-        "https://lh3.googleusercontent.com/d/19PHOjryKNB9guwg6nsdjB--tP9jn9Gdh=w1000",
-        "https://lh3.googleusercontent.com/d/1DgopV_0cpxK5yypuKyX_nQsae4jUDfBR=w1000",
-        "https://lh3.googleusercontent.com/d/1DBY_BrvrzxiLO4iPpIzvfKkHjgN3Ylms=w1000",
-        "https://lh3.googleusercontent.com/d/1yA-VSklxG89J8j23MGKe_GWIpviSIao-=w1000"
-      ],
-      "gallery": [
-        "https://lh3.googleusercontent.com/d/17FQh_6a7bGNBaCnhe7DWwC8vlak--t8Q=w1000",
-        "https://lh3.googleusercontent.com/d/1xkbwRxPJyi_6a6KJvAG6oVdKCWHWtwEa=w1000",
-        "https://lh3.googleusercontent.com/d/1FOEXzr_lCuJgFfTcDNKL4JvpHhl4pihN=w1000",
-        "https://lh3.googleusercontent.com/d/1yjub8fzbFZfeYsDv1QX4t79ejzaH4dDR=w1000"
-      ]
-    },
-    "layouts": [
-      {
-        "image": "https://lh3.googleusercontent.com/d/183pONAzHrJi7kcnzMO-znlQbRUhllw2O=w1000",
-        "typeName": "Type A",
-        "size": 1001,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 1700000,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1xnl_OBUc6qVbU-820Idy9zzMA5GCDx2H=w1000",
-        "typeName": "Type L",
-        "size": 1453,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 2045435,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1IxjSAfRFohtNzhFsHsMgCcptKlUZnNoo=w1000",
-        "typeName": "Type M1-A",
-        "size": 1905,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 2390869,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/19PHOjryKNB9guwg6nsdjB--tP9jn9Gdh=w1000",
-        "typeName": "Type M1-B",
-        "size": 2358,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 2737068,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1DgopV_0cpxK5yypuKyX_nQsae4jUDfBR=w1000",
-        "typeName": "Type M1",
-        "size": 2810,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 3082502,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1DBY_BrvrzxiLO4iPpIzvfKkHjgN3Ylms=w1000",
-        "typeName": "Type M2",
-        "size": 3262,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 3427937,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1yA-VSklxG89J8j23MGKe_GWIpviSIao-=w1000",
-        "typeName": "Type M3",
-        "size": 3714,
-        "beds": 4,
-        "baths": 3,
-        "carParks": 2,
-        "estPrice": 3773372,
-        "isEnriched": false
-      }
-    ],
-    "latitude": 3.1432,
-    "longitude": 101.6631
+    "totalUnits": "111 units, 23 storeys",
+    "maintenanceFee": 0.95,
+    "maintenanceFeeStr": "RM0.95-1.00 psf"
   },
   {
     "id": "river-park",
@@ -5757,9 +5115,9 @@
     "projectType": "Condominium",
     "completionStatus": "Under Construction",
     "completionYear": "2026",
-    "maintenanceFee": 0.48,
-    "maintenanceFeeStr": "RM0.48-0.94 psf",
-    "totalUnits": "493 units, 2 towers (21 storeys)",
+    "maintenanceFee": 0.38,
+    "maintenanceFeeStr": "RM0.38 psf",
+    "totalUnits": "1,332 units",
     "images": {
       "overview": [
         "https://lh3.googleusercontent.com/d/1g5LBGZn2wLwxGY3N1ZwWdYN_HeM7Mp9d=w1000",
@@ -5853,9 +5211,9 @@
     "projectType": "Township",
     "completionStatus": "New Launch",
     "completionYear": "2029",
-    "maintenanceFee": 0.94,
-    "maintenanceFeeStr": "RM0.94 psf",
-    "totalUnits": "671 units, 1 tower (56-57 storeys)",
+    "maintenanceFee": 0.48,
+    "maintenanceFeeStr": "RM0.48-0.94 psf",
+    "totalUnits": "493 units, 2 towers (21 storeys)",
     "images": {
       "overview": [
         "https://lh3.googleusercontent.com/d/1DIWVg-kMw4oWHjzI-aj6qtiUSo2yJS3V=w1000",
@@ -5985,9 +5343,9 @@
     "projectType": "Serviced Apartment",
     "completionStatus": "New Launch",
     "completionYear": "2029",
-    "maintenanceFee": 0.48,
-    "maintenanceFeeStr": "RM0.48-0.94 psf",
-    "totalUnits": "493 units, 2 towers (21 storeys)",
+    "maintenanceFee": 0.94,
+    "maintenanceFeeStr": "RM0.94 psf",
+    "totalUnits": "671 units, 1 tower (56-57 storeys)",
     "images": {
       "overview": [
         "https://lh3.googleusercontent.com/d/1cn69KFTFPZr8e_HjHSQR5_3vHT6yMim3=w1000",
@@ -7421,7 +6779,7 @@
     "longitude": 103.76913
   },
   {
-    "id": "asteriaz",
+    "id": "the-asteriaz",
     "name": "The Asteriaz",
     "developer": "Exsim",
     "location": "Kebun Teh, JB, Johor Bahru",
@@ -7437,61 +6795,9 @@
     "projectType": "Serviced Apartment",
     "completionStatus": "New Launch",
     "completionYear": "2029",
-    "maintenanceFee": 0.51,
-    "maintenanceFeeStr": "RM0.51 psf",
     "totalUnits": "848 units",
-    "images": {
-      "overview": [
-        "https://lh3.googleusercontent.com/d/1ojbWRSV6Jkni-MhDLVZc6EpCbEkxwPAx=w1000"
-      ],
-      "location": [
-        "https://lh3.googleusercontent.com/d/1qKKT5eK4rDmxRkk_m8KPmuq29YF1Ne1L=w1000"
-      ],
-      "layout": [
-        "https://lh3.googleusercontent.com/d/13GuyNejLGKlDwid3Rq7wecn0OjuL__Jl=w1000",
-        "https://lh3.googleusercontent.com/d/1-9rkcwBtWb9rZxzScuN6NJLZ5JwCesC8=w1000",
-        "https://lh3.googleusercontent.com/d/13VdWqnQNs0wB2osfzkWW80LLJNk4fmGu=w1000"
-      ],
-      "gallery": [
-        "https://lh3.googleusercontent.com/d/1uaYmGCxL9RdxCRO_mxN2LYgxj2D9Nmf9=w1000",
-        "https://lh3.googleusercontent.com/d/1vLNPTx3zm87VjbesNBec44bcfYA7xPmF=w1000",
-        "https://lh3.googleusercontent.com/d/17m8BbKrIMg-4dzjxtroVQYeLS4nxzXqh=w1000"
-      ]
-    },
-    "layouts": [
-      {
-        "image": "https://lh3.googleusercontent.com/d/13GuyNejLGKlDwid3Rq7wecn0OjuL__Jl=w1000",
-        "typeName": "Type A",
-        "size": 560,
-        "beds": 1,
-        "baths": 1,
-        "carParks": 1,
-        "estPrice": 474000,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1-9rkcwBtWb9rZxzScuN6NJLZ5JwCesC8=w1000",
-        "typeName": "Type B1",
-        "size": 915,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 609217,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/13VdWqnQNs0wB2osfzkWW80LLJNk4fmGu=w1000",
-        "typeName": "Type B2",
-        "size": 915,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 609217,
-        "isEnriched": false
-      }
-    ],
-    "latitude": 1.489718749,
-    "longitude": 103.7561323
+    "maintenanceFee": 0.51,
+    "maintenanceFeeStr": "RM0.51 psf"
   },
   {
     "id": "mosaic",
