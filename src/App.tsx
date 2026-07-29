@@ -831,7 +831,7 @@ function ClientPortalsOrchestrator() {
                   }}
                 />
 
-                {/* Featured Projects Section (display 3 featured projects only: queenswoodz, pavilion-square-residences, parkside) */}
+                {/* Featured Projects Section (display 6 featured projects: queenswoodz, pavilion-square-residences, parkside, amika, vividz, quaver) */}
                 <section className="py-16 bg-white border-t border-slate-100">
                   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto mb-12">
@@ -844,11 +844,14 @@ function ClientPortalsOrchestrator() {
                       </p>
                     </div>
 
-                    {/* 3 Featured Projects Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                      {projects
-                        .filter(p => ['queenswoodz', 'pavilion-square-residences', 'parkside-residence'].includes(p.id))
-                        .map((proj) => {
+                    {/* 6 Featured Projects Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {(() => {
+                        const featuredIds = ['queenswoodz', 'pavilion-square-residences', 'parkside-residence', 'amika-residence', 'vividz', 'quaver-residence'];
+                        const matched = projects.filter(p => featuredIds.includes(p.id));
+                        const remaining = projects.filter(p => !featuredIds.includes(p.id));
+                        return [...matched, ...remaining].slice(0, 6);
+                      })().map((proj) => {
                           const { label: priceLabel } = convertPrice(proj.startingPrice);
                           return (
                             <div 
@@ -856,8 +859,8 @@ function ClientPortalsOrchestrator() {
                               onClick={() => navigateToProjectDetail(proj)}
                               className="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-305 cursor-pointer group flex flex-col h-full hover:-translate-y-1"
                             >
-                              {/* Overview Image */}
-                              <div className="h-56 relative overflow-hidden bg-slate-100 flex items-center justify-center">
+                              {/* Square Overview Image */}
+                              <div className="w-full aspect-square relative overflow-hidden bg-slate-100 flex items-center justify-center">
                                 {proj.images?.overview && proj.images.overview.length > 0 && proj.images.overview[0] ? (
                                   <img 
                                     src={proj.images.overview[0]} 
