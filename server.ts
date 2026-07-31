@@ -6,6 +6,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
 import { BLOG_DATA, FAQ_DATA } from "./src/data.js";
 import { FAQ_TRANSLATIONS } from "./src/faqTranslations.js";
+import projectsFallbackData from "./src/projectsFallback.json";
 
 dotenv.config();
 
@@ -258,6 +259,41 @@ interface ProjectImages {
   location: string[];
   layout: string[];
   gallery: string[];
+}
+
+function getFallbackJsonImages(id: string, name: string): ProjectImages | null {
+  if (!projectsFallbackData || !Array.isArray(projectsFallbackData)) return null;
+
+  const normId = cleanProjectSlug(id).replace(/^the-/, "");
+  const normName = cleanProjectSlug(name).replace(/^the-/, "");
+
+  // 1. Direct match by id or name
+  let found = (projectsFallbackData as any[]).find(p => p.id === id || p.name === name);
+
+  // 2. Direct match by cleaned slug
+  if (!found) {
+    found = (projectsFallbackData as any[]).find(p => {
+      const pNormId = cleanProjectSlug(p.id).replace(/^the-/, "");
+      const pNormName = cleanProjectSlug(p.name).replace(/^the-/, "");
+      return normId === pNormId || normName === pNormName;
+    });
+  }
+
+  // 3. Substring match
+  if (!found) {
+    found = (projectsFallbackData as any[]).find(p => {
+      if (!p.images || !p.images.overview || !p.images.overview[0]) return false;
+      const pNormId = cleanProjectSlug(p.id).replace(/^the-/, "");
+      const pNormName = cleanProjectSlug(p.name).replace(/^the-/, "");
+      return (normId && (pNormId.includes(normId) || normId.includes(pNormId))) ||
+             (normName && (pNormName.includes(normName) || normName.includes(pNormName)));
+    });
+  }
+
+  if (found && found.images && found.images.overview && found.images.overview.length > 0 && found.images.overview[0]) {
+    return found.images;
+  }
+  return null;
 }
 
 function getStableFallbackImages(id: string, name: string): ProjectImages {
@@ -1686,9 +1722,15 @@ async function fetchGoogleSheetsProjects(forceRefresh = false): Promise<any[]> {
               resolvedImages = imagesMap[bestKey];
               layoutFiles = driveLayoutsMap[bestKey] || [];
             } else {
-              // Populate beautiful, high-quality, stable fallbacks so they always load instantly and look premium
-              resolvedImages = getStableFallbackImages(id, name);
-              layoutFiles = [];
+              // Try curated Google Drive fallback images from projectsFallback.json before AI fallbacks
+              const fallbackJsonImgs = getFallbackJsonImages(id, name);
+              if (fallbackJsonImgs) {
+                resolvedImages = fallbackJsonImgs;
+                layoutFiles = [];
+              } else {
+                resolvedImages = getStableFallbackImages(id, name);
+                layoutFiles = [];
+              }
             }
           }
 
