@@ -558,7 +558,7 @@ function ClientPortalsOrchestrator() {
     setHeroSearchFilters(null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (typeof window !== 'undefined' && window.history && window.history.pushState) {
-      window.history.pushState({ projectId: proj.id }, '', `/#/${proj.id}`);
+      window.history.pushState({ projectId: proj.id }, '', `/projects/${proj.id}`);
     }
   };
 
@@ -569,7 +569,7 @@ function ClientPortalsOrchestrator() {
     setHeroSearchFilters(null);
     window.scrollTo({ top: 0 });
     if (typeof window !== 'undefined' && window.history && window.history.pushState) {
-      window.history.pushState({ page }, '', page === 'home' ? '/' : `/#/${page}`);
+      window.history.pushState({ page }, '', page === 'home' ? '/' : `/${page}`);
     }
   };
 

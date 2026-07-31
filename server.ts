@@ -26,6 +26,22 @@ app.use((req, res, next) => {
   next();
 });
 
+// Canonical 301 Permanent Redirect Middleware (Enforce HTTPS & non-www domain)
+app.use((req, res, next) => {
+  const host = req.headers.host || "";
+  const forwardedProto = req.headers["x-forwarded-proto"];
+
+  // 1. Redirect www.shyanyee.com to shyanyee.com
+  // 2. Redirect http to https for production domain shyanyee.com
+  if (host.startsWith("www.shyanyee.com")) {
+    return res.redirect(301, `https://shyanyee.com${req.url}`);
+  }
+  if (forwardedProto === "http" && host.includes("shyanyee.com")) {
+    return res.redirect(301, `https://shyanyee.com${req.url}`);
+  }
+  next();
+});
+
 // Initialize Gemini SDK with telemetry header
 const aiKey = process.env.GEMINI_API_KEY;
 let aiClient: GoogleGenAI | null = null;
@@ -2800,13 +2816,15 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
       .replace(/'/g, '&apos;');
   };
 
-  // 1. Core Primary Pages
+  // 1. Core Primary Pages (Clean canonical URLs without hash fragments)
   const staticPages = [
     { loc: `${baseUrl}/`, priority: "1.0", changefreq: "daily" },
-    { loc: `${baseUrl}/#/projects`, priority: "0.90", changefreq: "daily" },
-    { loc: `${baseUrl}/#/compare`, priority: "0.80", changefreq: "weekly" },
-    { loc: `${baseUrl}/#/map`, priority: "0.80", changefreq: "weekly" },
-    { loc: `${baseUrl}/#/blog`, priority: "0.80", changefreq: "daily" }
+    { loc: `${baseUrl}/projects`, priority: "0.95", changefreq: "daily" },
+    { loc: `${baseUrl}/compare`, priority: "0.85", changefreq: "weekly" },
+    { loc: `${baseUrl}/map`, priority: "0.85", changefreq: "weekly" },
+    { loc: `${baseUrl}/blog`, priority: "0.85", changefreq: "daily" },
+    { loc: `${baseUrl}/calculator`, priority: "0.80", changefreq: "monthly" },
+    { loc: `${baseUrl}/faq`, priority: "0.80", changefreq: "monthly" }
   ];
 
   for (const page of staticPages) {
@@ -2824,44 +2842,40 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
       const cleanDev = (project.developer || '').replace(/\(.*?\)/g, "").trim();
       const priceStr = project.startingPrice ? `RM ${project.startingPrice.toLocaleString()}` : '';
 
-      // Primary Hash route URL
-      const hashLoc = `${baseUrl}/#/projects/${project.id}`;
-      // Clean path URL
+      // Clean canonical path URL
       const cleanLoc = `${baseUrl}/projects/${project.id}`;
 
-      [hashLoc, cleanLoc].forEach(loc => {
-        xml += `  <url>
-    <loc>${loc}</loc>
+      xml += `  <url>
+    <loc>${cleanLoc}</loc>
     <lastmod>${todayStr}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>\n`;
 
-        // Add Google Image Sitemap entries if available
-        const imageList: string[] = [];
-        if (project.images) {
-          if (Array.isArray(project.images.overview)) imageList.push(...project.images.overview);
-          if (Array.isArray(project.images.gallery)) imageList.push(...project.images.gallery);
-          if (Array.isArray(project.images.layout)) imageList.push(...project.images.layout);
-        }
+      // Add Google Image Sitemap entries if available
+      const imageList: string[] = [];
+      if (project.images) {
+        if (Array.isArray(project.images.overview)) imageList.push(...project.images.overview);
+        if (Array.isArray(project.images.gallery)) imageList.push(...project.images.gallery);
+        if (Array.isArray(project.images.layout)) imageList.push(...project.images.layout);
+      }
 
-        const validImages = Array.from(new Set(imageList)).filter(img => img && img.startsWith('http')).slice(0, 5);
-        for (const imgUrl of validImages) {
-          xml += `    <image:image>
+      const validImages = Array.from(new Set(imageList)).filter(img => img && img.startsWith('http')).slice(0, 5);
+      for (const imgUrl of validImages) {
+        xml += `    <image:image>
       <image:loc>${escapeXml(imgUrl)}</image:loc>
       <image:title>${escapeXml(project.name)} ${escapeXml(project.area)} Malaysia Property</image:title>
       <image:caption>${escapeXml(project.name)} luxury residence by ${escapeXml(cleanDev)} in ${escapeXml(project.location)}. Starting price from ${priceStr}</image:caption>
     </image:image>\n`;
-        }
+      }
 
-        xml += `  </url>\n`;
-      });
+      xml += `  </url>\n`;
     }
   }
 
   // 3. Dynamic Knowledge Base / Research Blogs
   for (const post of blogs) {
     if (post.slug) {
-      const loc = `${baseUrl}/#/blog/${post.slug}`;
+      const loc = `${baseUrl}/blog/${post.slug}`;
       const lastmod = post.publishDate || todayStr;
       xml += `  <url>
     <loc>${loc}</loc>
