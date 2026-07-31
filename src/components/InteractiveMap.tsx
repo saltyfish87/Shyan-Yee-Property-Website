@@ -136,35 +136,72 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({ projects, onProj
       // Clean existing markers
       markersRef.current = {};
 
-      // Draw all interactive project markers
-      filteredProjectsWithCoords.forEach((proj) => {
+      // Helper function to build custom Leaflet marker icon with smooth zoom-in, hover-fade, and hover fill
+      const createMarkerIcon = (proj: Project, isActive: boolean) => {
         const { formatted: displayPrice } = convertPrice(proj.startingPrice);
 
-        // Customize marker styling using Leaflet DivIcon
-        const customIcon = L.divIcon({
+        return L.divIcon({
           html: `
-            <div class="relative group flex flex-col items-center transition-all duration-300">
-              <div class="cursor-pointer pointer-events-auto filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.15)]">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#dc2743" class="w-10 h-12 transition-all duration-300">
+            <div class="relative group flex flex-col items-center cursor-pointer transition-all duration-300 ease-out ${
+              isActive ? 'scale-125 -translate-y-2.5 z-[100]' : 'scale-100 group-hover:scale-125 group-hover:-translate-y-2.5 z-10'
+            }">
+              <div class="pointer-events-auto filter transition-all duration-300 ease-out ${
+                isActive 
+                  ? 'drop-shadow-[0_10px_20px_rgba(37,99,235,0.5)]' 
+                  : 'drop-shadow-[0_3px_6px_rgba(0,0,0,0.18)] group-hover:drop-shadow-[0_10px_22px_rgba(220,39,67,0.5)]'
+              }">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                  class="w-10 h-12 transition-all duration-300 ease-out ${
+                    isActive
+                      ? 'fill-[#2563eb] stroke-[#1d4ed8]'
+                      : 'fill-white stroke-[#dc2743] group-hover:fill-[#dc2743]'
+                  }"
+                  stroke-width="1.8"
+                >
                   <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742z" clip-rule="evenodd" />
-                  <circle cx="12" cy="10" r="3" fill="#fef08a" />
+                  <circle cx="12" cy="10" r="3.2" class="transition-colors duration-300 ease-out ${
+                    isActive ? 'fill-white' : 'fill-[#dc2743] group-hover:fill-white'
+                  }" />
                 </svg>
               </div>
-              <div class="absolute bottom-13 left-1/2 -translate-x-1/2 bg-slate-900 text-white font-bold text-[10px] px-2.5 py-1.5 rounded-xl shadow-lg border border-slate-800 pointer-events-none opacity-0 scale-95 translate-y-1 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 transition-all duration-200 whitespace-nowrap flex flex-col items-center z-50">
-                <span class="font-extrabold text-[#60a5fa] text-[9px] uppercase tracking-wide leading-none mb-0.5">${displayPrice || 'Price Pending'}</span>
-                <span class="leading-normal">${proj.name}</span>
+              <!-- Hover-fade and slide-up tooltip badge -->
+              <div class="absolute bottom-13 left-1/2 -translate-x-1/2 bg-slate-900/95 backdrop-blur-md text-white font-bold text-[10px] px-3 py-1.5 rounded-xl shadow-xl border border-slate-700/80 pointer-events-none transition-all duration-300 ease-out whitespace-nowrap flex flex-col items-center ${
+                isActive 
+                  ? 'opacity-100 scale-100 translate-y-0 z-50' 
+                  : 'opacity-0 scale-90 translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 z-50'
+              }">
+                <span class="font-extrabold text-[#60a5fa] text-[9.5px] uppercase tracking-wide leading-none mb-0.5">${displayPrice || 'Price Pending'}</span>
+                <span class="leading-normal text-slate-100">${proj.name}</span>
               </div>
             </div>
           `,
-          className: 'custom-leaflet-marker',
+          className: `custom-leaflet-marker ${isActive ? 'active-marker' : ''}`,
           iconSize: [40, 48],
           iconAnchor: [20, 48],
         });
+      };
+
+      // Draw all interactive project markers
+      filteredProjectsWithCoords.forEach((proj) => {
+        const isActive = activeProject?.id === proj.id;
+        const customIcon = createMarkerIcon(proj, isActive);
 
         const marker = L.marker(proj.coords, { icon: customIcon }).addTo(mapInstance);
         markersRef.current[proj.id] = marker;
 
-        // Custom marker popup
+        // Mouse hover z-index boost for smooth overlapping
+        marker.on('mouseover', () => {
+          if (marker.setZIndexOffset && activeProject?.id !== proj.id) {
+            marker.setZIndexOffset(900);
+          }
+        });
+        marker.on('mouseout', () => {
+          if (marker.setZIndexOffset && activeProject?.id !== proj.id) {
+            marker.setZIndexOffset(0);
+          }
+        });
+
+        // Custom marker click popup
         marker.on('click', () => {
           setActiveProject(proj);
           mapInstance.setView(proj.coords, 14, { animate: true, duration: 1 });
@@ -217,39 +254,51 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({ projects, onProj
       if (!marker) return;
 
       const isActive = activeProject?.id === proj.id;
-      const { formatted: displayPrice } = convertPrice(proj.startingPrice);
+      
+      const createMarkerIcon = (p: Project, active: boolean) => {
+        const { formatted: displayPrice } = convertPrice(p.startingPrice);
 
-      // Standard visible pin: Crimson Red (#dc2743)
-      // Selected visible pin: Vivid Royal Blue (#2563eb)
-      const pinColor = isActive ? '#2563eb' : '#dc2743';
-      const pinScale = isActive ? 'scale-125 z-[100]' : 'scale-100 z-10';
-      const innerDotColor = isActive ? '#ffffff' : '#fef08a';
-
-      const customIcon = L.divIcon({
-        html: `
-          <div class="relative group flex flex-col items-center transition-all duration-300 ${pinScale}">
-            <div class="cursor-pointer pointer-events-auto filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.25)]">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="${pinColor}" class="w-10 h-12 transition-colors duration-300">
-                <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742z" clip-rule="evenodd" />
-                <circle cx="12" cy="10" r="3" fill="${innerDotColor}" />
-              </svg>
-            </div>
-            <!-- Tooltip is fully visible when active, or on hover when inactive -->
-            <div class="absolute bottom-13 left-1/2 -translate-x-1/2 bg-slate-900 text-white font-bold text-[10px] px-2.5 py-1.5 rounded-xl shadow-lg border border-slate-800 pointer-events-none transition-all duration-200 whitespace-nowrap flex flex-col items-center ${
-              isActive 
-                ? 'opacity-100 scale-105 translate-y-0 z-50' 
-                : 'opacity-0 scale-95 translate-y-1 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0'
+        return L.divIcon({
+          html: `
+            <div class="relative group flex flex-col items-center cursor-pointer transition-all duration-300 ease-out ${
+              active ? 'scale-125 -translate-y-2.5 z-[100]' : 'scale-100 group-hover:scale-125 group-hover:-translate-y-2.5 z-10'
             }">
-              <span class="font-extrabold text-[#60a5fa] text-[9px] uppercase tracking-wide leading-none mb-0.5">${displayPrice || 'Price Pending'}</span>
-              <span class="leading-normal">${proj.name}</span>
+              <div class="pointer-events-auto filter transition-all duration-300 ease-out ${
+                active 
+                  ? 'drop-shadow-[0_10px_20px_rgba(37,99,235,0.5)]' 
+                  : 'drop-shadow-[0_3px_6px_rgba(0,0,0,0.18)] group-hover:drop-shadow-[0_10px_22px_rgba(220,39,67,0.5)]'
+              }">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                  class="w-10 h-12 transition-all duration-300 ease-out ${
+                    active
+                      ? 'fill-[#2563eb] stroke-[#1d4ed8]'
+                      : 'fill-white stroke-[#dc2743] group-hover:fill-[#dc2743]'
+                  }"
+                  stroke-width="1.8"
+                >
+                  <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742z" clip-rule="evenodd" />
+                  <circle cx="12" cy="10" r="3.2" class="transition-colors duration-300 ease-out ${
+                    active ? 'fill-white' : 'fill-[#dc2743] group-hover:fill-white'
+                  }" />
+                </svg>
+              </div>
+              <div class="absolute bottom-13 left-1/2 -translate-x-1/2 bg-slate-900/95 backdrop-blur-md text-white font-bold text-[10px] px-3 py-1.5 rounded-xl shadow-xl border border-slate-700/80 pointer-events-none transition-all duration-300 ease-out whitespace-nowrap flex flex-col items-center ${
+                active 
+                  ? 'opacity-100 scale-100 translate-y-0 z-50' 
+                  : 'opacity-0 scale-90 translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 z-50'
+              }">
+                <span class="font-extrabold text-[#60a5fa] text-[9.5px] uppercase tracking-wide leading-none mb-0.5">${displayPrice || 'Price Pending'}</span>
+                <span class="leading-normal text-slate-100">${p.name}</span>
+              </div>
             </div>
-          </div>
-        `,
-        className: `custom-leaflet-marker ${isActive ? 'active-marker' : ''}`,
-        iconSize: [40, 48],
-        iconAnchor: [20, 48],
-      });
+          `,
+          className: `custom-leaflet-marker ${active ? 'active-marker' : ''}`,
+          iconSize: [40, 48],
+          iconAnchor: [20, 48],
+        });
+      };
 
+      const customIcon = createMarkerIcon(proj, isActive);
       marker.setIcon(customIcon);
       
       // Bring active marker to front

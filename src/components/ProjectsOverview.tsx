@@ -218,6 +218,104 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
     sortBy
   ]);
 
+  // Dynamic real-time counter for filter options
+  const getOptionCount = (filterKey: string, value: string) => {
+    return projects.filter((project) => {
+      // Hero project name search match
+      if (filterDefaults?.projectName && filterDefaults.projectName.trim() !== '') {
+        const query = filterDefaults.projectName.toLowerCase();
+        if (!project.name.toLowerCase().includes(query)) return false;
+      }
+
+      // Area
+      const areaVal = filterKey === 'area' ? value : selectedArea;
+      if (areaVal !== 'all' && project.area !== areaVal && !project.location.includes(areaVal)) {
+        return false;
+      }
+
+      // Type
+      const typeVal = filterKey === 'type' ? value : selectedType;
+      if (typeVal !== 'all' && project.projectType !== typeVal) {
+        return false;
+      }
+
+      // Tenure
+      const tenureVal = filterKey === 'tenure' ? value : selectedTenure;
+      if (tenureVal !== 'all' && project.tenure !== tenureVal) {
+        return false;
+      }
+
+      // Status
+      const statusVal = filterKey === 'status' ? value : selectedStatus;
+      if (statusVal !== 'all' && project.completionStatus !== statusVal) {
+        return false;
+      }
+
+      // Rooms
+      const roomsVal = filterKey === 'rooms' ? value : selectedRooms;
+      if (roomsVal !== 'all') {
+        const minRoomsReq = parseInt(roomsVal);
+        if (project.bedroomsMax < minRoomsReq) return false;
+      }
+
+      // Size
+      const sizeVal = filterKey === 'size' ? value : selectedSize;
+      if (sizeVal !== 'all') {
+        if (sizeVal === 'under800' && project.builtUpMin > 800) return false;
+        if (sizeVal === '800to1200' && (project.builtUpMax < 800 || project.builtUpMin > 1200)) return false;
+        if (sizeVal === 'above1200' && project.builtUpMax < 1200) return false;
+      }
+
+      // Location keyword
+      if (locationKeyword) {
+        const keyword = locationKeyword.toLowerCase();
+        const matchesLocation = project.location.toLowerCase().includes(keyword);
+        const matchesName = project.name.toLowerCase().includes(keyword);
+        if (!matchesLocation && !matchesName) return false;
+      }
+
+      // Car Parks
+      const cpVal = filterKey === 'carParks' ? value : selectedCarParks;
+      if (cpVal !== 'all') {
+        const reqCarParks = parseInt(cpVal);
+        const maxParks = project.carParksMax ?? 1;
+        if (maxParks < reqCarParks) return false;
+      }
+
+      // Maintenance Fee
+      const mfVal = filterKey === 'maintenanceFee' ? value : selectedMaintenanceFee;
+      if (mfVal !== 'all') {
+        const maxFeeReq = parseFloat(mfVal);
+        const fee = project.maintenanceFee ?? 0.35;
+        if (fee > maxFeeReq) return false;
+      }
+
+      // Project Category
+      const catVal = filterKey === 'category' ? value : selectedProjectCategory;
+      if (catVal !== 'all' && project.projectType !== catVal) {
+        return false;
+      }
+
+      // Developer
+      const devVal = filterKey === 'dev' ? value : selectedDeveloper;
+      if (devVal !== 'all') {
+        if (!project.developer.toLowerCase().includes(devVal.toLowerCase())) return false;
+      }
+
+      // Price
+      const priceVal = filterKey === 'price' ? value : selectedPriceBracket;
+      if (priceVal !== 'all') {
+        const { value: convertedPrice } = convertPrice(project.startingPrice);
+        if (priceVal === 'under500' && convertedPrice >= 500000) return false;
+        if (priceVal === '500to1000' && (convertedPrice < 500000 || convertedPrice > 1000000)) return false;
+        if (priceVal === '1Mto2M' && (convertedPrice < 1000000 || convertedPrice > 2000000)) return false;
+        if (priceVal === 'above2M' && convertedPrice <= 2000000) return false;
+      }
+
+      return true;
+    }).length;
+  };
+
   // Toggle selection for property comparison
   const toggleCompare = (project: Project, e: React.MouseEvent) => {
     e.stopPropagation();
@@ -306,6 +404,41 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
             </span>
           </div>
 
+          {/* Quick Interactive Checkbox Filter Pills with real-time counters */}
+          <div className="pt-1 pb-3 border-b border-slate-50 flex flex-wrap items-center gap-2">
+            <span className="text-[11px] font-black uppercase text-slate-400 tracking-wider mr-1">
+              {language.startsWith('zh') ? '热门区域筛选:' : language === 'ja' ? '人気エリア:' : 'Quick Region Filters:'}
+            </span>
+            {areas.map((loc) => {
+              const isChecked = selectedArea === loc;
+              const count = getOptionCount('area', loc);
+              return (
+                <button
+                  key={loc}
+                  type="button"
+                  onClick={() => setSelectedArea(isChecked ? 'all' : loc)}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer select-none border ${
+                    isChecked
+                      ? 'bg-[#dc2743] text-white border-[#dc2743] shadow-xs scale-[1.03]'
+                      : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:border-slate-300'
+                  }`}
+                >
+                  <span className={`w-3.5 h-3.5 rounded flex items-center justify-center text-[10px] border transition-colors ${
+                    isChecked ? 'bg-white text-[#dc2743] border-white' : 'border-slate-300 bg-white'
+                  }`}>
+                    {isChecked && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                  </span>
+                  <span>{loc}</span>
+                  <span className={`text-[10px] font-extrabold px-1.5 py-0.2 rounded-full ${
+                    isChecked ? 'bg-white/20 text-white' : 'bg-slate-200/80 text-slate-600'
+                  }`}>
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
             {/* 1. Project or Location (Text Search) */}
             <div>
@@ -331,9 +464,9 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedArea(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
+                <option value="all">{t('all')} ({getOptionCount('area', 'all')})</option>
                 {areas.map((loc) => (
-                  <option key={loc} value={loc}>{loc}</option>
+                  <option key={loc} value={loc}>{loc} ({getOptionCount('area', loc)})</option>
                 ))}
               </select>
             </div>
@@ -348,11 +481,11 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedPriceBracket(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
-                <option value="under500">{language.startsWith('zh') ? '50万令吉以下' : language === 'ja' ? '50万RM未満' : 'Under 500k'}</option>
-                <option value="500to1000">{language.startsWith('zh') ? '50万-100万吉' : language === 'ja' ? '50万-100万RM' : '500k - 1M'}</option>
-                <option value="1Mto2M">{language.startsWith('zh') ? '100万-200万吉' : language === 'ja' ? '100万-200万RM' : '1M - 2M'}</option>
-                <option value="above2M">{language.startsWith('zh') ? '200万令吉以上' : language === 'ja' ? '200万RM以上' : 'Above 2M'}</option>
+                <option value="all">{t('all')} ({getOptionCount('price', 'all')})</option>
+                <option value="under500">{language.startsWith('zh') ? '50万令吉以下' : language === 'ja' ? '50万RM未満' : 'Under 500k'} ({getOptionCount('price', 'under500')})</option>
+                <option value="500to1000">{language.startsWith('zh') ? '50万-100万吉' : language === 'ja' ? '50万-100万RM' : '500k - 1M'} ({getOptionCount('price', '500to1000')})</option>
+                <option value="1Mto2M">{language.startsWith('zh') ? '100万-200万吉' : language === 'ja' ? '100万-200万RM' : '1M - 2M'} ({getOptionCount('price', '1Mto2M')})</option>
+                <option value="above2M">{language.startsWith('zh') ? '200万令吉以上' : language === 'ja' ? '200万RM以上' : 'Above 2M'} ({getOptionCount('price', 'above2M')})</option>
               </select>
             </div>
 
@@ -366,11 +499,11 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedRooms(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
-                <option value="1">{language.startsWith('zh') ? '1 房以上' : language === 'ja' ? '1寝室以上' : '1+ Bedrooms'}</option>
-                <option value="2">{language.startsWith('zh') ? '2 房以上' : language === 'ja' ? '2寝室以上' : '2+ Bedrooms'}</option>
-                <option value="3">{language.startsWith('zh') ? '3 房以上' : language === 'ja' ? '3寝室以上' : '3+ Bedrooms'}</option>
-                <option value="4">{language.startsWith('zh') ? '4 房以上' : language === 'ja' ? '4寝室以上' : '4+ Bedrooms'}</option>
+                <option value="all">{t('all')} ({getOptionCount('rooms', 'all')})</option>
+                <option value="1">{language.startsWith('zh') ? '1 房以上' : language === 'ja' ? '1寝室以上' : '1+ Bedrooms'} ({getOptionCount('rooms', '1')})</option>
+                <option value="2">{language.startsWith('zh') ? '2 房以上' : language === 'ja' ? '2寝室以上' : '2+ Bedrooms'} ({getOptionCount('rooms', '2')})</option>
+                <option value="3">{language.startsWith('zh') ? '3 房以上' : language === 'ja' ? '3寝室以上' : '3+ Bedrooms'} ({getOptionCount('rooms', '3')})</option>
+                <option value="4">{language.startsWith('zh') ? '4 房以上' : language === 'ja' ? '4寝室以上' : '4+ Bedrooms'} ({getOptionCount('rooms', '4')})</option>
               </select>
             </div>
 
@@ -384,10 +517,10 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedSize(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
-                <option value="under800">{language.startsWith('zh') ? '800 平方尺以下' : language === 'ja' ? '800 sqft 未満' : 'Under 800 sqft'}</option>
-                <option value="800to1200">{language.startsWith('zh') ? '800 - 1,200 平方尺' : language === 'ja' ? '800 - 1,200 sqft' : '800 - 1,200 sqft'}</option>
-                <option value="above1200">{language.startsWith('zh') ? '1,200 平方尺以上' : language === 'ja' ? '1,200 sqft 以上' : 'Above 1,200 sqft'}</option>
+                <option value="all">{t('all')} ({getOptionCount('size', 'all')})</option>
+                <option value="under800">{language.startsWith('zh') ? '800 平方尺以下' : language === 'ja' ? '800 sqft 未満' : 'Under 800 sqft'} ({getOptionCount('size', 'under800')})</option>
+                <option value="800to1200">{language.startsWith('zh') ? '800 - 1,200 平方尺' : language === 'ja' ? '800 - 1,200 sqft' : '800 - 1,200 sqft'} ({getOptionCount('size', '800to1200')})</option>
+                <option value="above1200">{language.startsWith('zh') ? '1,200 平方尺以上' : language === 'ja' ? '1,200 sqft 以上' : 'Above 1,200 sqft'} ({getOptionCount('size', 'above1200')})</option>
               </select>
             </div>
 
@@ -399,9 +532,9 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedType(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
+                <option value="all">{t('all')} ({getOptionCount('type', 'all')})</option>
                 {types.map((ty) => (
-                  <option key={ty} value={ty}>{ty}</option>
+                  <option key={ty} value={ty}>{ty} ({getOptionCount('type', ty)})</option>
                 ))}
               </select>
             </div>
@@ -416,10 +549,10 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedCarParks(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
-                <option value="1">{language.startsWith('zh') ? '1 个车位以上' : language === 'ja' ? '1台分以上' : '1+ Spaces'}</option>
-                <option value="2">{language.startsWith('zh') ? '2 个车位以上' : language === 'ja' ? '2台分以上' : '2+ Spaces'}</option>
-                <option value="3">{language.startsWith('zh') ? '3 个车位以上' : language === 'ja' ? '3台分以上' : '3+ Spaces'}</option>
+                <option value="all">{t('all')} ({getOptionCount('carParks', 'all')})</option>
+                <option value="1">{language.startsWith('zh') ? '1 个车位以上' : language === 'ja' ? '1台分以上' : '1+ Spaces'} ({getOptionCount('carParks', '1')})</option>
+                <option value="2">{language.startsWith('zh') ? '2 个车位以上' : language === 'ja' ? '2台分以上' : '2+ Spaces'} ({getOptionCount('carParks', '2')})</option>
+                <option value="3">{language.startsWith('zh') ? '3 个车位以上' : language === 'ja' ? '3台分以上' : '3+ Spaces'} ({getOptionCount('carParks', '3')})</option>
               </select>
             </div>
 
@@ -433,10 +566,10 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedMaintenanceFee(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
-                <option value="0.30">≤ RM 0.30 / sqft</option>
-                <option value="0.35">≤ RM 0.35 / sqft</option>
-                <option value="0.40">≤ RM 0.40 / sqft</option>
+                <option value="all">{t('all')} ({getOptionCount('maintenanceFee', 'all')})</option>
+                <option value="0.30">≤ RM 0.30 / sqft ({getOptionCount('maintenanceFee', '0.30')})</option>
+                <option value="0.35">≤ RM 0.35 / sqft ({getOptionCount('maintenanceFee', '0.35')})</option>
+                <option value="0.40">≤ RM 0.40 / sqft ({getOptionCount('maintenanceFee', '0.40')})</option>
               </select>
             </div>
 
@@ -448,9 +581,9 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedTenure(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
-                <option value="Freehold">{language.startsWith('zh') ? '永久产权 (Freehold)' : language === 'ja' ? '所有権 (Freehold)' : 'Freehold'}</option>
-                <option value="Leasehold">{language.startsWith('zh') ? '租赁产权 (Leasehold)' : language === 'ja' ? '借地権 (Leasehold)' : 'Leasehold'}</option>
+                <option value="all">{t('all')} ({getOptionCount('tenure', 'all')})</option>
+                <option value="Freehold">{language.startsWith('zh') ? '永久产权 (Freehold)' : language === 'ja' ? '所有権 (Freehold)' : 'Freehold'} ({getOptionCount('tenure', 'Freehold')})</option>
+                <option value="Leasehold">{language.startsWith('zh') ? '租赁产权 (Leasehold)' : language === 'ja' ? '借地権 (Leasehold)' : 'Leasehold'} ({getOptionCount('tenure', 'Leasehold')})</option>
               </select>
             </div>
 
@@ -464,9 +597,9 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedProjectCategory(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
+                <option value="all">{t('all')} ({getOptionCount('category', 'all')})</option>
                 {types.map((ty) => (
-                  <option key={ty} value={ty}>{ty}</option>
+                  <option key={ty} value={ty}>{ty} ({getOptionCount('category', ty)})</option>
                 ))}
               </select>
             </div>
@@ -481,9 +614,9 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedDeveloper(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
+                <option value="all">{t('all')} ({getOptionCount('dev', 'all')})</option>
                 {developers.map((dev) => (
-                  <option key={dev} value={dev}>{dev}</option>
+                  <option key={dev} value={dev}>{dev} ({getOptionCount('dev', dev)})</option>
                 ))}
               </select>
             </div>
@@ -498,10 +631,10 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                 onChange={(e) => setSelectedStatus(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-xl p-2.5 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer"
               >
-                <option value="all">{t('all')}</option>
-                <option value="Under Construction">{language.startsWith('zh') ? '在建中 (Under Construction)' : language === 'ja' ? '建設中 (Under Construction)' : 'Under Construction'}</option>
-                <option value="Ready To Move">{language.startsWith('zh') ? '现房交付 (Ready To Move)' : language === 'ja' ? '即入居可能 (Ready To Move)' : 'Ready To Move'}</option>
-                <option value="New Launch">{language.startsWith('zh') ? '首发推介 (New Launch)' : language === 'ja' ? '新規立ち上げ (New Launch)' : 'New Launch'}</option>
+                <option value="all">{t('all')} ({getOptionCount('status', 'all')})</option>
+                <option value="Under Construction">{language.startsWith('zh') ? '在建中 (Under Construction)' : language === 'ja' ? '建設中 (Under Construction)' : 'Under Construction'} ({getOptionCount('status', 'Under Construction')})</option>
+                <option value="Ready To Move">{language.startsWith('zh') ? '现房交付 (Ready To Move)' : language === 'ja' ? '即入居可能 (Ready To Move)' : 'Ready To Move'} ({getOptionCount('status', 'Ready To Move')})</option>
+                <option value="New Launch">{language.startsWith('zh') ? '首发推介 (New Launch)' : language === 'ja' ? '新規立ち上げ (New Launch)' : 'New Launch'} ({getOptionCount('status', 'New Launch')})</option>
               </select>
             </div>
           </div>

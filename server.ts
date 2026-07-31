@@ -2784,10 +2784,21 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
   const baseUrl = "https://shyanyee.com";
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 `;
+
+  const escapeXml = (str: string) => {
+    if (!str) return '';
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&apos;');
+  };
 
   // 1. Core Primary Pages
   const staticPages = [
@@ -2806,17 +2817,44 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
   </url>\n`;
   }
 
-  // 2. Dynamic Real Estate Projects (Direct Indexing of every Landmark Condo/Suite)
+  // 2. Dynamic Real Estate Projects (Direct Indexing + Google Image Sitemap for every landmark property)
   const todayStr = new Date().toISOString().split('T')[0];
   for (const project of projects) {
     if (project.id) {
-      const loc = `${baseUrl}/#/projects/${project.id}`;
-      xml += `  <url>
+      const cleanDev = (project.developer || '').replace(/\(.*?\)/g, "").trim();
+      const priceStr = project.startingPrice ? `RM ${project.startingPrice.toLocaleString()}` : '';
+
+      // Primary Hash route URL
+      const hashLoc = `${baseUrl}/#/projects/${project.id}`;
+      // Clean path URL
+      const cleanLoc = `${baseUrl}/projects/${project.id}`;
+
+      [hashLoc, cleanLoc].forEach(loc => {
+        xml += `  <url>
     <loc>${loc}</loc>
     <lastmod>${todayStr}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>\n`;
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>\n`;
+
+        // Add Google Image Sitemap entries if available
+        const imageList: string[] = [];
+        if (project.images) {
+          if (Array.isArray(project.images.overview)) imageList.push(...project.images.overview);
+          if (Array.isArray(project.images.gallery)) imageList.push(...project.images.gallery);
+          if (Array.isArray(project.images.layout)) imageList.push(...project.images.layout);
+        }
+
+        const validImages = Array.from(new Set(imageList)).filter(img => img && img.startsWith('http')).slice(0, 5);
+        for (const imgUrl of validImages) {
+          xml += `    <image:image>
+      <image:loc>${escapeXml(imgUrl)}</image:loc>
+      <image:title>${escapeXml(project.name)} ${escapeXml(project.area)} Malaysia Property</image:title>
+      <image:caption>${escapeXml(project.name)} luxury residence by ${escapeXml(cleanDev)} in ${escapeXml(project.location)}. Starting price from ${priceStr}</image:caption>
+    </image:image>\n`;
+        }
+
+        xml += `  </url>\n`;
+      });
     }
   }
 
@@ -2828,14 +2866,172 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
       xml += `  <url>
     <loc>${loc}</loc>
     <lastmod>${lastmod}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>\n`;
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>\n`;
+      if (post.image && post.image.startsWith('http')) {
+        xml += `    <image:image>
+      <image:loc>${escapeXml(post.image)}</image:loc>
+      <image:title>${escapeXml(post.title)}</image:title>
+      <image:caption>${escapeXml(post.summary || post.title)}</image:caption>
+    </image:image>\n`;
+      }
+      xml += `  </url>\n`;
     }
   }
 
   xml += `</urlset>`;
   return xml;
+}
+
+// Helper to inject dynamic SEO meta tags and structured JSON-LD into server-served HTML
+function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], blogs: any[]): string {
+  try {
+    // 1. Check if request URL identifies a specific project
+    let targetProject: any = null;
+    const lowerUrl = reqUrl.toLowerCase();
+
+    // Check query params: ?project=queenswoodz or ?p=queenswoodz or ?id=queenswoodz
+    const urlObj = new URL(reqUrl, "https://shyanyee.com");
+    const pParam = urlObj.searchParams.get("project") || urlObj.searchParams.get("p") || urlObj.searchParams.get("id");
+
+    if (pParam) {
+      targetProject = projects.find(p => 
+        p.id.toLowerCase() === pParam.toLowerCase() || 
+        p.name.toLowerCase().replace(/[^a-z0-9]/g, "") === pParam.toLowerCase().replace(/[^a-z0-9]/g, "")
+      );
+    }
+
+    if (!targetProject) {
+      // Check path: /projects/queenswoodz or /project/queenswoodz
+      const pathMatch = lowerUrl.match(/\/(?:projects|project)\/([a-z0-9_-]+)/);
+      if (pathMatch && pathMatch[1]) {
+        const candidate = pathMatch[1];
+        targetProject = projects.find(p => 
+          p.id.toLowerCase() === candidate || 
+          p.name.toLowerCase().replace(/[^a-z0-9]/g, "") === candidate.replace(/[^a-z0-9]/g, "")
+        );
+      }
+    }
+
+    let title = "Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal";
+    let desc = "Discover 69+ premier Malaysian luxury properties, landmark condominiums, and investment real estate in Kuala Lumpur, Penang & Johor Bahru. Curated by Shyan Yee (REN 46305).";
+    let canonical = "https://shyanyee.com";
+    let ogImage = "https://images.unsplash.com/photo-1596422846543-75c6fc18a523?q=80&w=1200&auto=format&fit=crop";
+
+    let jsonLdGraph: any[] = [
+      {
+        "@type": "RealEstateAgent",
+        "@id": "https://shyanyee.com/#agent",
+        "name": "Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal",
+        "url": "https://shyanyee.com",
+        "logo": "https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY",
+        "image": "https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY",
+        "telephone": "+60195598932",
+        "email": "shyanyeews@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kuala Lumpur",
+          "addressRegion": "Wilayah Persekutuan",
+          "addressCountry": "MY"
+        },
+        "sameAs": [
+          "https://www.youtube.com/@shyanyee",
+          "https://wa.me/60195598932"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://shyanyee.com/#website",
+        "url": "https://shyanyee.com",
+        "name": "Shyan Yee Real Estate Portal",
+        "description": "Comprehensive index and comparison portal for Malaysian luxury properties and landmark residences.",
+        "publisher": { "@id": "https://shyanyee.com/#agent" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://shyanyee.com/#/projects?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ];
+
+    if (targetProject) {
+      const cleanDev = (targetProject.developer || '').replace(/\(.*?\)/g, "").trim();
+      const priceStr = targetProject.startingPrice ? `RM ${targetProject.startingPrice.toLocaleString()}` : '';
+
+      title = `${targetProject.name} ${targetProject.area} | Price, Floor Plan, Review & Sales - Shyan Yee`;
+      desc = `${targetProject.name} is a landmark ${targetProject.projectType || 'luxury'} residence by ${cleanDev} in ${targetProject.location}, ${targetProject.area}. Layouts range from ${targetProject.bedroomsMin}-${targetProject.bedroomsMax} bedrooms (${targetProject.builtUpMin}-${targetProject.builtUpMax} sqft). Prices start from ${priceStr}. Explore official floor plans, dynamic mortgage calculations, and showroom appointments with Shyan Yee.`;
+      canonical = `https://shyanyee.com/projects/${targetProject.id}`;
+
+      if (targetProject.images) {
+        if (Array.isArray(targetProject.images.overview) && targetProject.images.overview[0]) {
+          ogImage = targetProject.images.overview[0];
+        } else if (Array.isArray(targetProject.images.gallery) && targetProject.images.gallery[0]) {
+          ogImage = targetProject.images.gallery[0];
+        }
+      }
+
+      // Add detailed RealEstateListing schema
+      jsonLdGraph.push({
+        "@type": "RealEstateListing",
+        "@id": canonical,
+        "name": `${targetProject.name} by ${cleanDev} at ${targetProject.area}`,
+        "description": desc,
+        "url": canonical,
+        "priceRange": targetProject.priceRange || priceStr,
+        "offers": {
+          "@type": "Offer",
+          "price": targetProject.startingPrice ? targetProject.startingPrice.toString() : "0",
+          "priceCurrency": "MYR",
+          "url": canonical
+        },
+        "about": {
+          "@type": "SingleFamilyResidence",
+          "name": targetProject.name,
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": targetProject.area,
+            "addressRegion": targetProject.location,
+            "addressCountry": "MY"
+          }
+        }
+      });
+    } else {
+      // Add ItemList containing all 69 projects for Google / AI crawler carousel indexing
+      const listItems = projects.map((p, idx) => ({
+        "@type": "ListItem",
+        "position": idx + 1,
+        "url": `https://shyanyee.com/#/projects/${p.id}`,
+        "name": p.name,
+        "description": `${p.name} by ${(p.developer || '').replace(/\(.*?\)/g, "").trim()} in ${p.area}. Starts from RM ${p.startingPrice ? p.startingPrice.toLocaleString() : '0'}.`
+      }));
+
+      jsonLdGraph.push({
+        "@type": "ItemList",
+        "@id": "https://shyanyee.com/#projects-catalog",
+        "name": "Malaysia Landmark Property Portfolio | Shyan Yee",
+        "numberOfItems": projects.length,
+        "itemListElement": listItems
+      });
+    }
+
+    // Replace tags in index.html template
+    let seoHtml = html;
+    seoHtml = seoHtml.replace(/<title>.*?<\/title>/s, `<title>${title}</title>`);
+    seoHtml = seoHtml.replace(/<meta name="description" content=".*?" \/>/s, `<meta name="description" content="${desc.replace(/"/g, '&quot;')}" />`);
+    seoHtml = seoHtml.replace(/<link rel="canonical" href=".*?" \/>/s, `<link rel="canonical" href="${canonical}" />`);
+    seoHtml = seoHtml.replace(/<meta property="og:title" content=".*?" \/>/s, `<meta property="og:title" content="${title.replace(/"/g, '&quot;')}" />`);
+    seoHtml = seoHtml.replace(/<meta property="og:description" content=".*?" \/>/s, `<meta property="og:description" content="${desc.replace(/"/g, '&quot;')}" />`);
+    seoHtml = seoHtml.replace(/<meta property="og:image" content=".*?" \/>/s, `<meta property="og:image" content="${ogImage}" />`);
+    seoHtml = seoHtml.replace(/<meta property="og:url" content=".*?" \/>/s, `<meta property="og:url" content="${canonical}" />`);
+
+    const jsonLdScript = `<script id="seo-json-ld" type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": jsonLdGraph })}</script>`;
+    seoHtml = seoHtml.replace(/<script id="seo-json-ld" type="application\/ld\+json">.*?<\/script>/s, jsonLdScript);
+
+    return seoHtml;
+  } catch (err) {
+    console.error("injectDynamicSeoToHtml error:", err);
+    return html;
+  }
 }
 
 app.get("/sitemap.xml", async (req, res) => {
@@ -2875,9 +3071,18 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
+    app.use(express.static(distPath, { index: false }));
+    app.get("*", async (req, res) => {
+      try {
+        const indexPath = path.join(distPath, "index.html");
+        const rawHtml = fs.readFileSync(indexPath, "utf-8");
+        const projects = await fetchGoogleSheetsProjects().catch(() => FALLBACK_PROJECTS);
+        const seoHtml = injectDynamicSeoToHtml(rawHtml, req.originalUrl, projects, BLOG_DATA);
+        res.setHeader("Content-Type", "text/html");
+        return res.send(seoHtml);
+      } catch (err) {
+        return res.sendFile(path.join(distPath, "index.html"));
+      }
     });
   }
 

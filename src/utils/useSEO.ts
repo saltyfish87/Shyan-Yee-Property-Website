@@ -57,8 +57,9 @@ export function useSEO({
     // 3. Individual selected project override
     if (selectedProject) {
       const priceStr = convertPrice ? convertPrice(selectedProject.startingPrice).formatted : `RM ${selectedProject.startingPrice.toLocaleString()}`;
-      title = `${selectedProject.name} | Premium Property in ${selectedProject.area} - Shyan Yee`;
-      desc = `${selectedProject.name} is a landmark ${selectedProject.projectType || 'luxury'} development by ${selectedProject.developer} located in ${selectedProject.location}, ${selectedProject.area}. Features modern layouts ranging from ${selectedProject.bedroomsMin}-${selectedProject.bedroomsMax} bedrooms, sizes ${selectedProject.builtUpMin.toLocaleString()}-${selectedProject.builtUpMax.toLocaleString()} sqft, and is a premier ${selectedProject.tenure} residence. Prices start from ${priceStr}. Explore dynamic mortgage calculators, GIS mapping, and high-fidelity project plans.`;
+      const cleanDev = (selectedProject.developer || '').replace(/\(.*?\)/g, "").trim();
+      title = `${selectedProject.name} ${selectedProject.area} | Price, Floor Plan, Review & Sales - Shyan Yee`;
+      desc = `${selectedProject.name} is a landmark ${selectedProject.projectType || 'luxury'} development by ${cleanDev} in ${selectedProject.location}, ${selectedProject.area}. Features modern layouts ranging from ${selectedProject.bedroomsMin}-${selectedProject.bedroomsMax} bedrooms, sizes ${selectedProject.builtUpMin.toLocaleString()}-${selectedProject.builtUpMax.toLocaleString()} sqft, and is a premier ${selectedProject.tenure} residence. Prices start from ${priceStr}. Official floor plans, layout specs, and showroom appointments with Shyan Yee (REN 46305).`;
       url = `https://shyanyee.com/#/projects/${selectedProject.id}`;
       
       // Select primary project image if available
