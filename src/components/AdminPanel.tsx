@@ -327,7 +327,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
 
               <button
                 type="submit"
-                className="w-full py-4 ig-gradient text-white font-extrabold text-xs tracking-widest uppercase rounded-full shadow-lg shadow-orange-500/10 hover:opacity-95 transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer btn-hover font-sans"
+                className="w-full py-4 ig-gradient text-white font-extrabold text-xs tracking-widest uppercase rounded-full shadow-lg shadow-purple-500/10 hover:opacity-95 transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer btn-hover font-sans"
               >
                 <Plus className="h-4 w-4" />
                 <span>Inject CMS Project Entry</span>

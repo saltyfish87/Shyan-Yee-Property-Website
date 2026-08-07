@@ -79,7 +79,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 w-full sm:w-auto self-center">
           <button
             onClick={onViewProjectsClick}
-            className="w-full sm:w-auto px-8 py-4 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-orange-500/15 btn-hover cursor-pointer text-[15px]"
+            className="w-full sm:w-auto px-8 py-4 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-purple-500/15 btn-hover cursor-pointer text-[15px]"
           >
             {t('viewProjects')}
           </button>
@@ -182,7 +182,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Spark Button */}
             <button
               type="submit"
-              className="w-full py-3.5 px-6 rounded-xl ig-gradient text-white font-extrabold flex items-center justify-center gap-2 hover:opacity-95 shadow-lg shadow-orange-500/10 active:scale-[0.98] transition-all cursor-pointer text-sm btn-hover"
+              className="w-full py-3.5 px-6 rounded-xl ig-gradient text-white font-extrabold flex items-center justify-center gap-2 hover:opacity-95 shadow-lg shadow-purple-500/10 active:scale-[0.98] transition-all cursor-pointer text-sm btn-hover"
             >
               <Search className="h-4 w-4" />
               <span>{t('search')}</span>

@@ -423,7 +423,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3.5 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-orange-500/10 text-xs flex items-center justify-center gap-1.5 cursor-pointer btn-hover font-sans text-center shrink-0"
+                className="px-6 py-3.5 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-purple-500/10 text-xs flex items-center justify-center gap-1.5 cursor-pointer btn-hover font-sans text-center shrink-0"
               >
                 <MessageCircle className="h-4 w-4 fill-white animate-bounce" />
                 {language.startsWith('zh') ? '与顾问沟通 (WhatsApp)' : language === 'ja' ? 'WhatsAppで相談する' : 'Discuss on WhatsApp'}
@@ -490,7 +490,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2.5 rounded-full text-xs font-black transition-all cursor-pointer btn-hover ${
                   selectedCategory === cat
-                    ? 'ig-gradient text-white shadow-md shadow-orange-500/10'
+                    ? 'ig-gradient text-white shadow-md shadow-purple-500/10'
                     : 'bg-slate-50 text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-100/50'
                 }`}
               >

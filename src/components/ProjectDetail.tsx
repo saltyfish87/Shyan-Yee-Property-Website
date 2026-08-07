@@ -641,7 +641,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
 
                 <div className="text-left sm:text-right">
                   <span className="block text-[10px] font-bold uppercase text-slate-400">{t('startingPrice')}</span>
-                  <span className="text-2xl sm:text-3xl font-black bg-gradient-to-r from-orange-500 via-rose-500 to-pink-600 text-transparent bg-clip-text">
+                  <span className="text-2xl sm:text-3xl font-black ig-text">
                     {displayPrice}
                   </span>
                 </div>
@@ -1519,7 +1519,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   {/* Output 1: Monthly Instalment */}
                   <div className="p-3.5 bg-slate-50 rounded-2xl border border-slate-100 flex flex-col items-center text-center justify-center space-y-0.5">
                     <span className="text-[10px] font-black uppercase text-slate-400 tracking-wide">Monthly Instalment</span>
-                    <span className="text-xl sm:text-2xl font-black bg-gradient-to-r from-orange-500 via-rose-500 to-pink-600 text-transparent bg-clip-text">
+                    <span className="text-xl sm:text-2xl font-black ig-text">
                       {loanResults.dispInstallment} / mo
                     </span>
                   </div>

@@ -28,11 +28,11 @@ body {
 
 /* Custom classes extracted from Immersive UI theme design sheet */
 .ig-gradient {
-  background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 25%, #be123c 55%, #9f1239 75%, #86198f 100%);
 }
 
 .ig-text {
-  background: linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 25%, #be123c 55%, #9f1239 75%, #86198f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

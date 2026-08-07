@@ -3014,9 +3014,9 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
       const listItems = projects.map((p, idx) => ({
         "@type": "ListItem",
         "position": idx + 1,
-        "url": `https://shyanyee.com/#/projects/${p.id}`,
+        "url": `https://shyanyee.com/projects/${p.id}`,
         "name": p.name,
-        "description": `${p.name} by ${(p.developer || '').replace(/\(.*?\)/g, "").trim()} in ${p.area}. Starts from RM ${p.startingPrice ? p.startingPrice.toLocaleString() : '0'}.`
+        "description": `${p.name} by ${(p.developer || '').replace(/\(.*?\)/g, "").trim()} in ${p.area || p.location}. Starts from RM ${p.startingPrice ? p.startingPrice.toLocaleString() : '0'}.`
       }));
 
       jsonLdGraph.push({
@@ -3028,6 +3028,117 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
       });
     }
 
+    // Pre-render static crawlable HTML structure for Googlebot & AI search crawlers
+    let preRenderedBody = "";
+    if (targetProject) {
+      const cleanDev = (targetProject.developer || '').replace(/\(.*?\)/g, "").trim();
+      const priceStr = targetProject.startingPrice ? `RM ${targetProject.startingPrice.toLocaleString()}` : '';
+
+      preRenderedBody = `
+        <div style="max-width: 1200px; margin: 0 auto; padding: 24px; font-family: system-ui, -apple-system, sans-serif;">
+          <header style="margin-bottom: 32px; border-bottom: 2px solid #f1f5f9; padding-bottom: 20px;">
+            <p style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #dc2626; margin-bottom: 8px;">
+              Shyan Yee Real Estate Portal | REN 46305
+            </p>
+            <h1 style="font-size: 32px; font-weight: 900; color: #0f172a; margin: 0 0 12px 0; line-height: 1.2;">
+              ${targetProject.name} ${targetProject.area} - Price, Floor Plan, Review & Sales
+            </h1>
+            <p style="font-size: 16px; color: #334155; line-height: 1.6; max-width: 900px; margin: 0;">
+              ${desc}
+            </p>
+          </header>
+
+          <section style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; margin-bottom: 32px;">
+            <h2 style="font-size: 22px; font-weight: 800; color: #0f172a; margin-top: 0; margin-bottom: 16px;">
+              ${targetProject.name} Project Specifications & Pricing
+            </h2>
+            <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; list-style: none; padding: 0; margin: 0; color: #334155; font-size: 15px;">
+              <li><strong>Developer:</strong> ${cleanDev}</li>
+              <li><strong>Location:</strong> ${targetProject.location}, ${targetProject.area}</li>
+              <li><strong>Starting Price:</strong> ${priceStr || 'Contact Agent for Pricing'}</li>
+              <li><strong>Property Type:</strong> ${targetProject.projectType || 'Serviced Residence'}</li>
+              <li><strong>Tenure:</strong> ${targetProject.tenure || 'Freehold'}</li>
+              <li><strong>Unit Built-up:</strong> ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} - ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft</li>
+              <li><strong>Bedrooms:</strong> ${targetProject.bedroomsMin} - ${targetProject.bedroomsMax} Beds</li>
+              <li><strong>Completion:</strong> ${targetProject.completionStatus || 'Under Construction'} (${targetProject.completionYear || ''})</li>
+              <li><strong>Agent Contact:</strong> Shyan Yee (REN 46305) | +60 19-559 8932</li>
+            </ul>
+          </section>
+
+          ${targetProject.layouts && targetProject.layouts.length > 0 ? `
+          <section style="margin-bottom: 32px;">
+            <h2 style="font-size: 22px; font-weight: 800; color: #0f172a; margin-bottom: 16px;">
+              ${targetProject.name} Floor Plans & Layout Options
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px;">
+              ${targetProject.layouts.map((ly: any) => `
+              <div style="border: 1px solid #cbd5e1; border-radius: 12px; padding: 16px; background: #ffffff;">
+                <h3 style="font-size: 16px; font-weight: 800; margin: 0 0 6px 0; color: #0f172a;">${ly.typeName || 'Standard Unit'}</h3>
+                <p style="font-size: 14px; color: #475569; margin: 0 0 6px 0;">${ly.size} sqft | ${ly.beds} Bedrooms | ${ly.baths} Bathrooms</p>
+                ${ly.estPrice ? `<p style="font-size: 15px; font-weight: 800; color: #dc2626; margin: 0;">Est. Price: RM ${ly.estPrice.toLocaleString()}</p>` : ''}
+              </div>
+              `).join('')}
+            </div>
+          </section>
+          ` : ''}
+
+          <section style="margin-bottom: 32px;">
+            <h2 style="font-size: 20px; font-weight: 800; color: #0f172a; margin-bottom: 16px;">
+              Related Malaysia Luxury Properties
+            </h2>
+            <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; padding: 0; list-style: none;">
+              ${projects.slice(0, 32).map((p: any) => `
+              <li><a href="/projects/${p.id}" style="color: #2563eb; text-decoration: underline; font-size: 14px; font-weight: 600;">${p.name} (${p.area})</a></li>
+              `).join('')}
+            </ul>
+          </section>
+        </div>
+      `;
+    } else {
+      preRenderedBody = `
+        <div style="max-width: 1200px; margin: 0 auto; padding: 24px; font-family: system-ui, -apple-system, sans-serif;">
+          <header style="margin-bottom: 32px; border-bottom: 2px solid #f1f5f9; padding-bottom: 20px;">
+            <p style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #dc2626; margin-bottom: 8px;">
+              Shyan Yee Real Estate Portal | REN 46305
+            </p>
+            <h1 style="font-size: 32px; font-weight: 900; color: #0f172a; margin: 0 0 12px 0;">
+              Malaysia Luxury Properties & Landmark Residences Index
+            </h1>
+            <p style="font-size: 16px; color: #334155; line-height: 1.6; max-width: 900px; margin: 0;">
+              Discover premier Malaysian luxury properties, landmark condominiums, and high-yield real estate investments in Kuala Lumpur, Selangor, Penang & Johor Bahru. Managed by Shyan Yee (REN 46305).
+            </p>
+          </header>
+
+          <section>
+            <h2 style="font-size: 22px; font-weight: 800; color: #0f172a; margin-bottom: 20px;">
+              Complete Catalogue of Landmark Malaysian Real Estate Projects
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+              ${projects.map((p: any) => {
+                const dev = (p.developer || '').replace(/\(.*?\)/g, "").trim();
+                const pStr = p.startingPrice ? `RM ${p.startingPrice.toLocaleString()}` : '';
+                return `
+                <article style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; background: #ffffff;">
+                  <h3 style="font-size: 18px; font-weight: 800; margin: 0 0 6px 0;">
+                    <a href="/projects/${p.id}" style="color: #0f172a; text-decoration: none;">${p.name}</a>
+                  </h3>
+                  <p style="font-size: 13px; color: #64748b; margin: 0 0 8px 0; font-weight: 600;">${dev} | ${p.area || p.location}</p>
+                  <p style="font-size: 15px; font-weight: 800; color: #dc2626; margin: 0 0 8px 0;">${pStr ? `Starting from ${pStr}` : 'Contact Agent for Price'}</p>
+                  <p style="font-size: 13px; color: #334155; margin: 0 0 12px 0; line-height: 1.4;">
+                    ${p.projectType || 'Serviced Apartment'} | ${p.tenure || 'Freehold'} | ${p.bedroomsMin}-${p.bedroomsMax} Beds (${p.builtUpMin ? p.builtUpMin.toLocaleString() : ''}-${p.builtUpMax ? p.builtUpMax.toLocaleString() : ''} sqft)
+                  </p>
+                  <a href="/projects/${p.id}" style="display: inline-block; font-size: 13px; font-weight: 700; color: #2563eb; text-decoration: underline;">
+                    View ${p.name} Floor Plans & Sales Info &rarr;
+                  </a>
+                </article>
+                `;
+              }).join('')}
+            </div>
+          </section>
+        </div>
+      `;
+    }
+
     // Replace tags in index.html template
     let seoHtml = html;
     seoHtml = seoHtml.replace(/<title>.*?<\/title>/s, `<title>${title}</title>`);
@@ -3037,6 +3148,9 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
     seoHtml = seoHtml.replace(/<meta property="og:description" content=".*?" \/>/s, `<meta property="og:description" content="${desc.replace(/"/g, '&quot;')}" />`);
     seoHtml = seoHtml.replace(/<meta property="og:image" content=".*?" \/>/s, `<meta property="og:image" content="${ogImage}" />`);
     seoHtml = seoHtml.replace(/<meta property="og:url" content=".*?" \/>/s, `<meta property="og:url" content="${canonical}" />`);
+
+    // Inject pre-rendered body into <div id="root"></div>
+    seoHtml = seoHtml.replace('<div id="root"></div>', `<div id="root">${preRenderedBody}</div>`);
 
     const jsonLdScript = `<script id="seo-json-ld" type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": jsonLdGraph })}</script>`;
     seoHtml = seoHtml.replace(/<script id="seo-json-ld" type="application\/ld\+json">.*?<\/script>/s, jsonLdScript);

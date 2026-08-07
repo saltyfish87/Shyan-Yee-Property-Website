@@ -128,7 +128,7 @@ export const AgentCard: React.FC = () => {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto px-6 py-3.5 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-orange-500/10 hover:opacity-95 transition-all text-center flex items-center justify-center gap-2 cursor-pointer text-[14px]"
+                  className="w-full sm:w-auto px-6 py-3.5 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-purple-500/10 hover:opacity-95 transition-all text-center flex items-center justify-center gap-2 cursor-pointer text-[14px]"
                 >
                   <MessageCircle className="h-5 w-5 fill-white" />
                   <span>{t('whatsAppCTA')}</span>

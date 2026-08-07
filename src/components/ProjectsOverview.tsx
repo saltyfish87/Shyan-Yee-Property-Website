@@ -787,7 +787,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                     <div className="border-t border-slate-50 pt-4 mt-auto flex items-center justify-between">
                       <div>
                         <span className="block text-[9px] font-bold text-slate-400 uppercase leading-none mb-1 select-none">{t('startingPrice')}</span>
-                        <span className="text-lg font-extrabold bg-gradient-to-r from-orange-500 to-pink-600 text-transparent bg-clip-text">
+                        <span className="text-lg font-extrabold ig-text">
                           {displayPrice}
                         </span>
                       </div>

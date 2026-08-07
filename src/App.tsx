@@ -1038,7 +1038,7 @@ function ClientPortalsOrchestrator() {
                         </span>
                         {!smartMatchSubmitted && (
                           <div className="w-32 bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                            <div className="bg-gradient-to-r from-orange-500 to-rose-500 h-full transition-all duration-300" style={{ width: `${(smartMatchStep / 4) * 100}%` }} />
+                            <div className="bg-gradient-to-r from-red-600 via-rose-600 to-purple-600 h-full transition-all duration-300" style={{ width: `${(smartMatchStep / 4) * 100}%` }} />
                           </div>
                         )}
                       </div>
@@ -1641,7 +1641,7 @@ function ClientPortalsOrchestrator() {
             </button>
             <button
               onClick={() => setIsCompareOpen(true)}
-              className="px-5 py-2.5 bg-gradient-to-r from-orange-400 to-rose-500 hover:opacity-95 text-white text-xs font-extrabold rounded-full shadow-md cursor-pointer whitespace-nowrap"
+              className="px-5 py-2.5 ig-gradient hover:opacity-95 text-white text-xs font-extrabold rounded-full shadow-md cursor-pointer whitespace-nowrap"
             >
               Compare Matrix
             </button>
@@ -1661,9 +1661,9 @@ function ClientPortalsOrchestrator() {
         target="_blank"
         rel="noopener noreferrer"
         title="Chat direct with Shyan Yee on WhatsApp"
-        className="fixed bottom-6 right-6 z-45 h-14 w-14 rounded-full bg-gradient-to-tr from-orange-500 via-rose-500 to-pink-600 text-white flex items-center justify-center shadow-xl cursor-pointer hover:scale-110 active:scale-95 duration-200 group border-2 border-white/20 select-none"
+        className="fixed bottom-6 right-6 z-45 h-14 w-14 rounded-full ig-gradient text-white flex items-center justify-center shadow-xl cursor-pointer hover:scale-110 active:scale-95 duration-200 group border-2 border-white/20 select-none"
       >
-        <span className="absolute -inset-1 rounded-full bg-rose-500/30 blur-sm group-hover:blur-md animate-pulse pointer-events-none" />
+        <span className="absolute -inset-1 rounded-full bg-purple-500/30 blur-sm group-hover:blur-md animate-pulse pointer-events-none" />
         <MessageCircle className="h-7 w-7 text-white fill-white relative z-10" />
       </a>
 
@@ -1700,10 +1700,10 @@ function ClientPortalsOrchestrator() {
           {/* Logo & Agent credentials */}
           <div className="md:col-span-5 space-y-4 text-left">
             <div className="flex items-center gap-3">
-              <div className="p-2.5 bg-gradient-to-tr from-orange-500 via-rose-500 to-pink-600 rounded-xl text-white">
+              <div className="p-2.5 ig-gradient rounded-xl text-white">
                 <Building className="h-5 w-5" />
               </div>
-              <span className="text-lg font-black tracking-tight bg-gradient-to-r from-orange-500 via-rose-500 to-pink-600 text-transparent bg-clip-text uppercase">
+              <span className="text-lg font-black tracking-tight ig-text uppercase">
                 {language.startsWith('zh') ? '马来西亚房产门户' : language === 'ja' ? 'マレーシア不動産ポータル' : 'MALAYSIA PROPERTY PORTAL'}
               </span>
             </div>

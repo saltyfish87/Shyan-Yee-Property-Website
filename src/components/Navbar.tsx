@@ -60,7 +60,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => setCurrentPage('home')}>
-            <div className="w-9 h-9 ig-gradient rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-500/25">
+            <div className="w-9 h-9 ig-gradient rounded-xl flex items-center justify-center text-white shadow-lg shadow-purple-500/25">
               <Building2 className="h-5 w-5" />
             </div>
             <div>
@@ -166,7 +166,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="ig-gradient text-white px-5 py-2 rounded-full text-xs font-black shadow-md shadow-orange-500/15 hover:shadow-orange-500/25 btn-hover no-underline inline-block whitespace-nowrap select-none"
+              className="ig-gradient text-white px-5 py-2 rounded-full text-xs font-black shadow-md shadow-purple-500/15 hover:shadow-purple-500/25 btn-hover no-underline inline-block whitespace-nowrap select-none"
             >
               {language.startsWith('zh') ? '咨询顾问 (WhatsApp)' : language === 'ja' ? '相談する' : 'WhatsApp Agent'}
             </a>
