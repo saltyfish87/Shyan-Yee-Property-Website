@@ -219,13 +219,50 @@ const getBathsRange = (proj: any) => {
   return minBaths === maxBaths ? `${minBaths}` : `${minBaths} - ${maxBaths}`;
 };
 
+// Synchronously derive initial route and project from current URL path
+const getInitialRouteState = () => {
+  if (typeof window === 'undefined') {
+    return { page: 'home', project: null };
+  }
+  const pathStr = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+  const hashStr = window.location.hash.replace(/^#\/?/, '').toLowerCase();
+  const params = new URLSearchParams(window.location.search);
+  const projParam = params.get('project') || params.get('p') || params.get('id');
+
+  const rawCandidate = projParam || hashStr || pathStr;
+  if (!rawCandidate) return { page: 'home', project: null };
+
+  const candidate = rawCandidate.startsWith('projects/') ? rawCandidate.replace('projects/', '') : rawCandidate;
+
+  if (['calculator', 'calc'].includes(candidate)) return { page: 'calculator', project: null };
+  if (['projects', 'listings'].includes(candidate)) return { page: 'projects', project: null };
+  if (['map', 'explorer'].includes(candidate)) return { page: 'map', project: null };
+  if (['blog', 'insights'].includes(candidate)) return { page: 'blog', project: null };
+  if (['compare'].includes(candidate)) return { page: 'compare', project: null };
+
+  const fallbackList = projectsFallback as Project[];
+  const match = fallbackList.find(
+    (p) =>
+      p.id.toLowerCase() === candidate ||
+      p.name.toLowerCase().replace(/[^a-z0-9]/g, '') === candidate.replace(/[^a-z0-9]/g, '')
+  );
+
+  if (match) {
+    return { page: 'projects', project: match };
+  }
+
+  return { page: 'home', project: null };
+};
+
 function ClientPortalsOrchestrator() {
   const { t, language } = useLanguage();
   const { convertPrice } = useCurrency();
 
-  // Navigation Routing States
-  const [currentPage, setCurrentPage] = useState<string>('home'); // home, projects, map, blog
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const initialRoute = useMemo(() => getInitialRouteState(), []);
+
+  // Navigation Routing States - initialized synchronously to avoid Googlebot hydration content flash
+  const [currentPage, setCurrentPage] = useState<string>(initialRoute.page);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(initialRoute.project);
   const [activeBlogSlug, setActiveBlogSlug] = useState<string | null>(null);
 
   // FAQ Section Toggles
@@ -290,8 +327,8 @@ function ClientPortalsOrchestrator() {
     projectName?: string;
   } | null>(null);
 
-  // Project Lists
-  const [projects, setProjects] = useState<Project[]>([]);
+  // Project Lists - pre-populate with local fallback so Googlebot sees instant layout hydration
+  const [projects, setProjects] = useState<Project[]>(projectsFallback as Project[]);
   const [isLoading, setIsLoading] = useState(true);
   const [isSyncing, setIsSyncing] = useState(false);
   const [loadingError, setLoadingError] = useState('');
