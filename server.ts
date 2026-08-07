@@ -2962,11 +2962,17 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
         "publisher": { "@id": "https://shyanyee.com/#agent" },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://shyanyee.com/#/projects?search={search_term_string}",
+          "target": "https://shyanyee.com/projects?search={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }
     ];
+
+    if (!targetProject && (lowerUrl.includes("/projects") || lowerUrl.includes("/project"))) {
+      canonical = "https://shyanyee.com/projects";
+      title = "Malaysia Landmark Property Projects Catalogue | Floor Plans & Pricing - Shyan Yee";
+      desc = "Explore 69+ premier Malaysian property developments including Pavilion Square, Queenswoodz, Amika Residence, Core Residence TRX, Aetas Seputeh & Bangsar Hill Park. View floor plans, developer specs, and pricing.";
+    }
 
     if (targetProject) {
       const cleanDev = (targetProject.developer || '').replace(/\(.*?\)/g, "").trim();
@@ -3008,6 +3014,72 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
             "addressCountry": "MY"
           }
         }
+      });
+
+      // Add BreadcrumbList schema
+      jsonLdGraph.push({
+        "@type": "BreadcrumbList",
+        "@id": `${canonical}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://shyanyee.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://shyanyee.com/projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": targetProject.name,
+            "item": canonical
+          }
+        ]
+      });
+
+      // Add FAQPage schema (Google Rich Snippets for Property Q&A)
+      jsonLdGraph.push({
+        "@type": "FAQPage",
+        "@id": `${canonical}#faq`,
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": `What is the starting price for ${targetProject.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Starting price for ${targetProject.name} is ${priceStr || 'available upon inquiry'}, located in ${targetProject.area}, ${targetProject.location}.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `Who is the developer of ${targetProject.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `${targetProject.name} is developed by ${cleanDev}.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `What layouts and sizes are available at ${targetProject.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `${targetProject.name} offers unit sizes from ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} sqft to ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft, with ${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `How can I get floor plans or book a private showroom viewing for ${targetProject.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `You can view floor plans and request a private viewing with licensed agent Shyan Yee (REN 46305) via WhatsApp at +60 19-559 8932 or on shyanyee.com.`
+            }
+          }
+        ]
       });
     } else {
       // Add ItemList containing all 69 projects for Google / AI crawler carousel indexing
@@ -3162,6 +3234,16 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
   }
 }
 
+app.get("/robots.txt", (req, res) => {
+  res.type("text/plain");
+  res.send(`User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://shyanyee.com/sitemap.xml
+`);
+});
+
 app.get("/sitemap.xml", async (req, res) => {
   try {
     // Fetch live list of properties from Sheets or memory cache
@@ -3193,10 +3275,25 @@ async function startServer() {
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
       server: { middlewareMode: true },
-      appType: "spa",
+      appType: "custom",
     });
     // Mount Vite middlewares
     app.use(vite.middlewares);
+    app.use("*", async (req, res, next) => {
+      if (req.originalUrl.startsWith("/api")) return next();
+      try {
+        const indexPath = path.join(process.cwd(), "index.html");
+        let rawHtml = fs.readFileSync(indexPath, "utf-8");
+        rawHtml = await vite.transformIndexHtml(req.originalUrl, rawHtml);
+        const projects = await fetchGoogleSheetsProjects().catch(() => FALLBACK_PROJECTS);
+        const seoHtml = injectDynamicSeoToHtml(rawHtml, req.originalUrl, projects, BLOG_DATA);
+        res.setHeader("Content-Type", "text/html");
+        return res.send(seoHtml);
+      } catch (err: any) {
+        vite.ssrFixStacktrace(err);
+        return res.status(500).end(err.message);
+      }
+    });
   } else {
     const distPath = path.join(process.cwd(), "dist");
     app.use(express.static(distPath, { index: false }));
