@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /
+Allow: /projects
+Allow: /projects/*
+Allow: /blog
+Allow: /blog/*
+Allow: /map
+Allow: /compare
+Allow: /calculator
+Allow: /sitemap.xml
 
 # Sitemaps
 Sitemap: https://shyanyee.com/sitemap.xml

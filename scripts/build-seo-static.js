@@ -53,7 +53,7 @@ function renderSeoHtml(html, reqUrl, targetProject = null) {
   try {
     let title = "Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal";
     let desc = "Discover 69+ premier Malaysian luxury properties, landmark condominiums, and investment real estate in Kuala Lumpur, Penang & Johor Bahru. Curated by Shyan Yee (REN 46305).";
-    let canonical = "https://shyanyee.com";
+    let canonical = "https://shyanyee.com/";
     let ogImage = "https://images.unsplash.com/photo-1596422846543-75c6fc18a523?q=80&w=1200&auto=format&fit=crop";
 
     let jsonLdGraph = [
@@ -109,6 +109,46 @@ function renderSeoHtml(html, reqUrl, targetProject = null) {
         ogImage = targetProject.images.overview[0];
       }
 
+      // Add Product Schema
+      jsonLdGraph.push({
+        "@type": "Product",
+        "@id": `${canonical}#product`,
+        "name": `${targetProject.name} (${targetProject.area}, ${targetProject.location})`,
+        "description": desc,
+        "image": [ogImage],
+        "category": "Real Estate > Residential Property",
+        "brand": {
+          "@type": "Brand",
+          "name": cleanDev || "Malaysia Premier Developers"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": (targetProject.startingPrice || 500000).toString(),
+          "priceCurrency": "MYR",
+          "priceValidUntil": "2027-12-31",
+          "itemCondition": "https://schema.org/NewCondition",
+          "availability": "https://schema.org/InStock",
+          "url": canonical
+        }
+      });
+
+      // Add Accommodation Schema
+      jsonLdGraph.push({
+        "@type": ["Accommodation", "ApartmentComplex"],
+        "@id": `${canonical}#accommodation`,
+        "name": targetProject.name,
+        "description": desc,
+        "url": canonical,
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": targetProject.area,
+          "addressRegion": targetProject.location,
+          "addressCountry": "MY"
+        },
+        "numberOfRooms": `${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms`
+      });
+
+      // Add RealEstateListing Schema
       jsonLdGraph.push({
         "@type": "RealEstateListing",
         "@id": `${canonical}#listing`,
@@ -275,4 +315,28 @@ for (const p of projects) {
   }
 }
 
-console.log(`Successfully pre-rendered SEO static pages for ${count} property projects, 404 fallback & static routes in dist!`);
+// 7. Generate sitemap.xml in public/ and dist/
+const todayStr = new Date().toISOString().split('T')[0];
+let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
+xml += `  <url><loc>https://shyanyee.com/</loc><lastmod>${todayStr}</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>\n`;
+for (const r of staticRoutes) {
+  xml += `  <url><loc>https://shyanyee.com/${r}</loc><lastmod>${todayStr}</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>\n`;
+}
+for (const p of projects) {
+  if (p.id) {
+    xml += `  <url><loc>https://shyanyee.com/projects/${p.id}</loc><lastmod>${todayStr}</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>\n`;
+  }
+}
+for (const b of BLOG_DATA) {
+  if (b.slug) {
+    xml += `  <url><loc>https://shyanyee.com/blog/${b.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>\n`;
+  }
+}
+xml += `</urlset>`;
+
+fs.writeFileSync(path.join(distPath, 'sitemap.xml'), xml, 'utf-8');
+const publicDir = path.join(process.cwd(), 'public');
+if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
+fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), xml, 'utf-8');
+
+console.log(`Successfully pre-rendered SEO static pages for ${count} property projects, sitemap.xml, 404 fallback & static routes in dist!`);

@@ -1,0 +1,200 @@
+import fs from 'fs';
+import path from 'path';
+
+export interface SitemapProject {
+  id: string;
+  name?: string;
+  area?: string;
+  location?: string;
+  developer?: string;
+  startingPrice?: number;
+  syncedAt?: string;
+  images?: {
+    overview?: string[];
+    gallery?: string[];
+    layout?: string[];
+  };
+}
+
+export interface SitemapBlog {
+  slug: string;
+  title: string;
+  summary?: string;
+  publishDate?: string;
+  image?: string;
+}
+
+// Utility to escape XML special characters
+function escapeXml(str: string | undefined): string {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+/**
+ * Generate a full compliant XML Sitemap string with image extensions
+ */
+export function generateSitemapXml(
+  projects: SitemapProject[] = [],
+  blogs: SitemapBlog[] = [],
+  baseUrl: string = 'https://shyanyee.com'
+): string {
+  const todayStr = new Date().toISOString().split('T')[0];
+
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
+  xml += `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"\n`;
+  xml += `        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n`;
+  xml += `        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9\n`;
+  xml += `                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\n`;
+  xml += `                            http://www.google.com/schemas/sitemap-image/1.1\n`;
+  xml += `                            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">\n\n`;
+
+  // 1. Static Key Navigation Pages
+  const staticPages = [
+    { path: '', priority: '1.00', changefreq: 'daily' },
+    { path: 'projects', priority: '0.95', changefreq: 'daily' },
+    { path: 'compare', priority: '0.85', changefreq: 'weekly' },
+    { path: 'map', priority: '0.85', changefreq: 'weekly' },
+    { path: 'blog', priority: '0.85', changefreq: 'daily' },
+    { path: 'calculator', priority: '0.80', changefreq: 'monthly' },
+    { path: 'faq', priority: '0.75', changefreq: 'monthly' },
+  ];
+
+  for (const page of staticPages) {
+    const loc = page.path ? `${baseUrl}/${page.path}` : `${baseUrl}/`;
+    xml += `  <url>\n`;
+    xml += `    <loc>${loc}</loc>\n`;
+    xml += `    <lastmod>${todayStr}</lastmod>\n`;
+    xml += `    <changefreq>${page.changefreq}</changefreq>\n`;
+    xml += `    <priority>${page.priority}</priority>\n`;
+    xml += `  </url>\n`;
+  }
+
+  // 2. Individual Property Detail Pages
+  for (const project of projects) {
+    if (project && project.id) {
+      const cleanDev = (project.developer || '').replace(/\(.*?\)/g, '').trim();
+      const priceStr = project.startingPrice ? `RM ${project.startingPrice.toLocaleString()}` : '';
+      const cleanLoc = `${baseUrl}/projects/${project.id}`;
+      const lastmod = project.syncedAt ? project.syncedAt.substring(0, 10) : todayStr;
+
+      xml += `  <url>\n`;
+      xml += `    <loc>${cleanLoc}</loc>\n`;
+      xml += `    <lastmod>${lastmod}</lastmod>\n`;
+      xml += `    <changefreq>daily</changefreq>\n`;
+      xml += `    <priority>0.90</priority>\n`;
+
+      // Aggregate high-res image assets
+      const imageList: string[] = [];
+      if (project.images) {
+        if (Array.isArray(project.images.overview)) imageList.push(...project.images.overview);
+        if (Array.isArray(project.images.gallery)) imageList.push(...project.images.gallery);
+        if (Array.isArray(project.images.layout)) imageList.push(...project.images.layout);
+      }
+
+      const validImages = Array.from(new Set(imageList))
+        .filter((img) => img && typeof img === 'string' && img.startsWith('http'))
+        .slice(0, 5);
+
+      for (const imgUrl of validImages) {
+        xml += `    <image:image>\n`;
+        xml += `      <image:loc>${escapeXml(imgUrl)}</image:loc>\n`;
+        xml += `      <image:title>${escapeXml(project.name)} ${escapeXml(project.area)} Malaysia Property</image:title>\n`;
+        xml += `      <image:caption>${escapeXml(project.name)} luxury residence by ${escapeXml(cleanDev)} in ${escapeXml(project.location || project.area)}. Starting price from ${priceStr}</image:caption>\n`;
+        xml += `    </image:image>\n`;
+      }
+
+      xml += `  </url>\n`;
+    }
+  }
+
+  // 3. Blog & Market Insight Articles
+  for (const post of blogs) {
+    if (post && post.slug) {
+      const loc = `${baseUrl}/blog/${post.slug}`;
+      const lastmod = post.publishDate || todayStr;
+
+      xml += `  <url>\n`;
+      xml += `    <loc>${loc}</loc>\n`;
+      xml += `    <lastmod>${lastmod}</lastmod>\n`;
+      xml += `    <changefreq>weekly</changefreq>\n`;
+      xml += `    <priority>0.80</priority>\n`;
+
+      if (post.image && post.image.startsWith('http')) {
+        xml += `    <image:image>\n`;
+        xml += `      <image:loc>${escapeXml(post.image)}</image:loc>\n`;
+        xml += `      <image:title>${escapeXml(post.title)}</image:title>\n`;
+        xml += `      <image:caption>${escapeXml(post.summary || post.title)}</image:caption>\n`;
+        xml += `    </image:image>\n`;
+      }
+
+      xml += `  </url>\n`;
+    }
+  }
+
+  xml += `</urlset>\n`;
+  return xml;
+}
+
+/**
+ * Node environment helper script to trigger generation and write to filesystem (public/sitemap.xml and dist/sitemap.xml)
+ */
+export async function generateAndSaveSitemap(): Promise<boolean> {
+  try {
+    const cwd = process.cwd();
+    const fallbackProjectsPath = path.join(cwd, 'src', 'projectsFallback.json');
+
+    let projects: SitemapProject[] = [];
+    if (fs.existsSync(fallbackProjectsPath)) {
+      const raw = fs.readFileSync(fallbackProjectsPath, 'utf-8');
+      projects = JSON.parse(raw);
+    }
+
+    const blogs: SitemapBlog[] = [
+      {
+        slug: 'kl-luxury-condos-2026-guide',
+        title: 'Kuala Lumpur Luxury Condominium Buyer Guide 2026',
+        summary: 'Comprehensive legal, financial and location framework for purchasing ultra-luxury residential towers in KLCC, Mont Kiara and Bukit Bintang.',
+        publishDate: '2026-02-01',
+        image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop',
+      },
+      {
+        slug: 'foreign-buyer-malaysia-property-laws-2026',
+        title: 'Foreigner Property Ownership Rules & Minimum Thresholds in Malaysia',
+        summary: 'State-by-state breakdown of minimum price thresholds for foreign buyers in KL, Selangor, Penang & Johor in 2026.',
+        publishDate: '2026-01-15',
+        image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop',
+      },
+    ];
+
+    const xmlContent = generateSitemapXml(projects, blogs);
+
+    const targetDirs = [
+      path.join(cwd, 'public'),
+      path.join(cwd, 'dist'),
+    ];
+
+    for (const dir of targetDirs) {
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+      fs.writeFileSync(path.join(dir, 'sitemap.xml'), xmlContent, 'utf-8');
+    }
+
+    console.log(`[sitemap] Successfully generated sitemap.xml for ${projects.length} projects and ${blogs.length} articles.`);
+    return true;
+  } catch (err) {
+    console.error('[sitemap] Failed to generate sitemap:', err);
+    return false;
+  }
+}
+
+// Self-executable check if run directly with Node
+if (typeof process !== 'undefined' && process.argv && process.argv[1]?.includes('sitemap')) {
+  generateAndSaveSitemap();
+}

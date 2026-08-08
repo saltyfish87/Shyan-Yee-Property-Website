@@ -2792,6 +2792,7 @@ app.post("/api/admin/update-agent", (req, res) => {
 
 // Explicit SEO route handlers for Node.js production container deployment
 app.get("/robots.txt", (req, res) => {
+  res.type("text/plain");
   res.sendFile(path.join(process.cwd(), "public", "robots.txt"));
 });
 
