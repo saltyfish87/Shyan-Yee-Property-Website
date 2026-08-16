@@ -2991,10 +2991,49 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
         }
       }
 
+      // Add Product Schema
+      jsonLdGraph.push({
+        "@type": "Product",
+        "@id": `${canonical}#product`,
+        "name": `${targetProject.name} (${targetProject.area}, ${targetProject.location})`,
+        "description": desc,
+        "image": [ogImage],
+        "category": "Real Estate > Residential Property",
+        "brand": {
+          "@type": "Brand",
+          "name": cleanDev || "Malaysia Premier Developers"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": (targetProject.startingPrice || 500000).toString(),
+          "priceCurrency": "MYR",
+          "priceValidUntil": "2027-12-31",
+          "itemCondition": "https://schema.org/NewCondition",
+          "availability": "https://schema.org/InStock",
+          "url": canonical
+        }
+      });
+
+      // Add Accommodation Schema
+      jsonLdGraph.push({
+        "@type": ["Accommodation", "ApartmentComplex"],
+        "@id": `${canonical}#accommodation`,
+        "name": targetProject.name,
+        "description": desc,
+        "url": canonical,
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": targetProject.area,
+          "addressRegion": targetProject.location,
+          "addressCountry": "MY"
+        },
+        "numberOfRooms": `${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms`
+      });
+
       // Add detailed RealEstateListing schema
       jsonLdGraph.push({
         "@type": "RealEstateListing",
-        "@id": canonical,
+        "@id": `${canonical}#listing`,
         "name": `${targetProject.name} by ${cleanDev} at ${targetProject.area}`,
         "description": desc,
         "url": canonical,
@@ -3234,16 +3273,6 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
     return html;
   }
 }
-
-app.get("/robots.txt", (req, res) => {
-  res.type("text/plain");
-  res.send(`User-agent: *
-Allow: /
-
-# Sitemaps
-Sitemap: https://shyanyee.com/sitemap.xml
-`);
-});
 
 app.get("/sitemap.xml", async (req, res) => {
   try {

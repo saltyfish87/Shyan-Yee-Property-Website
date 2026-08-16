@@ -1,5 +1,4 @@
-import fs from 'fs';
-import path from 'path';
+import { Project } from '../types';
 
 export interface SitemapProject {
   id: string;
@@ -24,6 +23,24 @@ export interface SitemapBlog {
   image?: string;
 }
 
+// Default blog articles to include in sitemap
+export const DEFAULT_SITEMAP_BLOGS: SitemapBlog[] = [
+  {
+    slug: 'kl-luxury-condos-2026-guide',
+    title: 'Kuala Lumpur Luxury Condominium Buyer Guide 2026',
+    summary: 'Comprehensive legal, financial and location framework for purchasing ultra-luxury residential towers in KLCC, Mont Kiara and Bukit Bintang.',
+    publishDate: '2026-02-01',
+    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    slug: 'foreign-buyer-malaysia-property-laws-2026',
+    title: 'Foreigner Property Ownership Rules & Minimum Thresholds in Malaysia',
+    summary: 'State-by-state breakdown of minimum price thresholds for foreign buyers in KL, Selangor, Penang & Johor in 2026.',
+    publishDate: '2026-01-15',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop',
+  },
+];
+
 // Utility to escape XML special characters
 function escapeXml(str: string | undefined): string {
   if (!str) return '';
@@ -36,11 +53,11 @@ function escapeXml(str: string | undefined): string {
 }
 
 /**
- * Generate a full compliant XML Sitemap string with image extensions
+ * Generate a full compliant XML Sitemap string with image extensions for Google Search Console
  */
 export function generateSitemapXml(
-  projects: SitemapProject[] = [],
-  blogs: SitemapBlog[] = [],
+  projects: Array<Project | SitemapProject> = [],
+  blogs: SitemapBlog[] = DEFAULT_SITEMAP_BLOGS,
   baseUrl: string = 'https://shyanyee.com'
 ): string {
   const todayStr = new Date().toISOString().split('T')[0];
@@ -142,10 +159,38 @@ export function generateSitemapXml(
 }
 
 /**
+ * Browser helper to trigger instant download of the current sitemap.xml file
+ */
+export function downloadSitemapFile(
+  projects: Array<Project | SitemapProject> = [],
+  blogs: SitemapBlog[] = DEFAULT_SITEMAP_BLOGS,
+  filename: string = 'sitemap.xml'
+): void {
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
+
+  const xmlContent = generateSitemapXml(projects, blogs);
+  const blob = new Blob([xmlContent], { type: 'application/xml;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.setAttribute('download', filename);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+
+/**
  * Node environment helper script to trigger generation and write to filesystem (public/sitemap.xml and dist/sitemap.xml)
  */
 export async function generateAndSaveSitemap(): Promise<boolean> {
   try {
+    if (typeof process === 'undefined') return false;
+
+    // Dynamically import fs & path to avoid bundling issues in frontend-only environments
+    const fs = await import('fs');
+    const path = await import('path');
+
     const cwd = process.cwd();
     const fallbackProjectsPath = path.join(cwd, 'src', 'projectsFallback.json');
 
@@ -155,24 +200,7 @@ export async function generateAndSaveSitemap(): Promise<boolean> {
       projects = JSON.parse(raw);
     }
 
-    const blogs: SitemapBlog[] = [
-      {
-        slug: 'kl-luxury-condos-2026-guide',
-        title: 'Kuala Lumpur Luxury Condominium Buyer Guide 2026',
-        summary: 'Comprehensive legal, financial and location framework for purchasing ultra-luxury residential towers in KLCC, Mont Kiara and Bukit Bintang.',
-        publishDate: '2026-02-01',
-        image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop',
-      },
-      {
-        slug: 'foreign-buyer-malaysia-property-laws-2026',
-        title: 'Foreigner Property Ownership Rules & Minimum Thresholds in Malaysia',
-        summary: 'State-by-state breakdown of minimum price thresholds for foreign buyers in KL, Selangor, Penang & Johor in 2026.',
-        publishDate: '2026-01-15',
-        image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop',
-      },
-    ];
-
-    const xmlContent = generateSitemapXml(projects, blogs);
+    const xmlContent = generateSitemapXml(projects, DEFAULT_SITEMAP_BLOGS);
 
     const targetDirs = [
       path.join(cwd, 'public'),
@@ -186,15 +214,10 @@ export async function generateAndSaveSitemap(): Promise<boolean> {
       fs.writeFileSync(path.join(dir, 'sitemap.xml'), xmlContent, 'utf-8');
     }
 
-    console.log(`[sitemap] Successfully generated sitemap.xml for ${projects.length} projects and ${blogs.length} articles.`);
+    console.log(`[sitemap] Successfully generated sitemap.xml for ${projects.length} projects and ${DEFAULT_SITEMAP_BLOGS.length} articles.`);
     return true;
   } catch (err) {
     console.error('[sitemap] Failed to generate sitemap:', err);
     return false;
   }
-}
-
-// Self-executable check if run directly with Node
-if (typeof process !== 'undefined' && process.argv && process.argv[1]?.includes('sitemap')) {
-  generateAndSaveSitemap();
 }

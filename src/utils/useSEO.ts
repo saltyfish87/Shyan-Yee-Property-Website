@@ -41,7 +41,7 @@ export function useSEO({
     
     const activeArticle = activeBlogSlug ? BLOG_DATA.find(a => a.slug === activeBlogSlug) : null;
 
-    // 1. Page-wise basic SEO definition (Using clean canonical paths without # hashes to prevent crawler duplicate flags)
+    // 1. Page-wise canonical and meta definition
     if (currentPage === 'projects') {
       title = "Malaysia Landmark Property Projects Catalogue | Floor Plans & Pricing - Shyan Yee";
       desc = "Explore handpicked signature residential developments, luxury condominiums, and elite suites across Kuala Lumpur, Penang, Johor, and top Malaysian markets.";
@@ -58,6 +58,14 @@ export function useSEO({
       title = "Malaysia Property Insights, Market Analysis & Investment Blogs | Shyan Yee";
       desc = "In-depth research on Malaysia MM2H, real estate pricing trends, luxury residential analysis, and expert advice for global buyers.";
       url = "https://shyanyee.com/blog";
+    } else if (currentPage === 'calculator') {
+      title = "Malaysia Property Loan & Stamp Duty Calculator | Shyan Yee";
+      desc = "Calculate monthly home loan repayments, progressive interest, legal fees and stamp duty for property in Malaysia.";
+      url = "https://shyanyee.com/calculator";
+    } else if (currentPage === 'faq') {
+      title = "Malaysia Real Estate Buyer FAQ & Foreign Ownership Guidelines | Shyan Yee";
+      desc = "Frequently asked questions for buying property in Malaysia as a local, Singaporean, or foreign investor.";
+      url = "https://shyanyee.com/faq";
     }
 
     // 2. Individual selected blog article override
@@ -68,12 +76,14 @@ export function useSEO({
       imageUrl = activeArticle.image || imageUrl;
     }
 
-    // 3. Individual selected project override
+    // 3. Individual selected project override - programmatically target specific /projects/{id}
     if (selectedProject) {
       const priceStr = convertPrice ? convertPrice(selectedProject.startingPrice).formatted : `RM ${selectedProject.startingPrice.toLocaleString()}`;
       const cleanDev = (selectedProject.developer || '').replace(/\(.*?\)/g, "").trim();
       title = `${selectedProject.name} ${selectedProject.area} | Price, Floor Plan, Review & Sales - Shyan Yee`;
       desc = `${selectedProject.name} is a landmark ${selectedProject.projectType || 'luxury'} development by ${cleanDev} in ${selectedProject.location}, ${selectedProject.area}. Features modern layouts ranging from ${selectedProject.bedroomsMin}-${selectedProject.bedroomsMax} bedrooms, sizes ${selectedProject.builtUpMin.toLocaleString()}-${selectedProject.builtUpMax.toLocaleString()} sqft, and is a premier ${selectedProject.tenure} residence. Prices start from ${priceStr}. Official floor plans, layout specs, and showroom appointments with Shyan Yee (REN 46305).`;
+      
+      // Strict canonical URL format targeting /projects/{id}
       url = `https://shyanyee.com/projects/${selectedProject.id}`;
       
       // Select primary project image if available
@@ -108,7 +118,7 @@ export function useSEO({
     updateMetaTag('name', 'robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     updateMetaTag('name', 'googlebot', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
-    // Enforce Clean Canonical URL to prevent duplicate indexing
+    // Programmatically enforce and update canonical link tag in document head
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -334,7 +344,7 @@ export function useSEO({
         validImages.push(imageUrl);
       }
 
-      // 4a. Specific "Product" Schema object for maximum E-commerce / Search Snippet exposure
+      // 4a. Specific "Product" Schema object
       const productSchema = {
         "@type": "Product",
         "@id": `${projUrl}#product`,

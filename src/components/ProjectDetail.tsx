@@ -3,6 +3,7 @@ import { Project } from '../types';
 import { useLanguage } from '../LanguageContext';
 import { useCurrency } from '../CurrencyContext';
 import { API_BASE_URL } from '../utils/api';
+import { injectRealEstateListingSchema, removeRealEstateListingSchema } from '../utils/schemaGenerator';
 import {
   translateTenure,
   translateCompletionStatus,
@@ -92,6 +93,14 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
   useEffect(() => {
     setActiveLayoutIdx(0);
   }, [zeniaSubtype, project.id]);
+
+  // Inject RealEstateListing JSON-LD Schema on mount / project change and clean up on unmount
+  useEffect(() => {
+    injectRealEstateListingSchema(project);
+    return () => {
+      removeRealEstateListingSchema();
+    };
+  }, [project]);
 
   const locHash = React.useMemo(() => {
     let hash = 0;
