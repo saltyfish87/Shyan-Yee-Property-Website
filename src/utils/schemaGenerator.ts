@@ -143,7 +143,7 @@ export function generateRealEstateListingSchema(
       seller: {
         '@type': 'RealEstateAgent',
         name: 'Shyan Yee (REN 46305)',
-        telephone: '+60195598932',
+        telephone: '+60108278932',
         email: 'shyanyeews@gmail.com',
         url: baseUrl,
       },
@@ -176,7 +176,7 @@ export function generateRealEstateListingSchema(
       '@type': 'RealEstateAgent',
       name: 'Shyan Yee (REN 46305)',
       jobTitle: 'Senior Real Estate Negotiator & Luxury Property Specialist',
-      telephone: '+60195598932',
+      telephone: '+60108278932',
       email: 'shyanyeews@gmail.com',
       url: baseUrl,
       knowsAbout: [

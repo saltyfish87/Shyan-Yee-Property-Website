@@ -210,7 +210,7 @@ export function useSEO({
         "url": "https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY"
       },
       "image": "https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY",
-      "telephone": "+60195598932",
+      "telephone": "+60108278932",
       "email": "shyanyeews@gmail.com",
       "address": {
         "@type": "PostalAddress",
@@ -220,7 +220,7 @@ export function useSEO({
       },
       "sameAs": [
         "https://www.youtube.com/@shyanyee",
-        "https://wa.me/60195598932"
+        "https://wa.me/60108278932"
       ],
       "knowsAbout": [
         "Malaysian Real Estate Market",
@@ -467,7 +467,7 @@ export function useSEO({
             "name": `How can I view floor plans or schedule a showroom tour for ${selectedProject.name}?`,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": `You can view official floor plans and request a private showroom viewing with licensed real estate agent Shyan Yee (REN 46305) directly on shyanyee.com or via WhatsApp at +60 19-559 8932.`
+              "text": `You can view official floor plans and request a private showroom viewing with licensed real estate agent Shyan Yee (REN 46305) directly on shyanyee.com or via WhatsApp at +60 10-827 8932.`
             }
           }
         ]

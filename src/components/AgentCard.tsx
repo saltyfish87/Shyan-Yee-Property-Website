@@ -119,7 +119,7 @@ export const AgentCard: React.FC = () => {
               {/* Call-to-actions buttons */}
               <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
                 <a
-                  href={`https://wa.me/60195598932?text=${encodeURIComponent(
+                  href={`https://wa.me/60108278932?text=${encodeURIComponent(
                     language.startsWith('zh')
                       ? "您好 Shyan Yee，我在房产顾问板块关注了您的介绍，希望能进一步向您咨询马来西亚的各类精品楼盘和专享置业方案。谢谢！"
                       : language === 'ja'

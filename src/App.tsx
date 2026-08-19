@@ -520,7 +520,10 @@ function ClientPortalsOrchestrator() {
     }
     setLoadingError('');
     try {
-      const response = await fetch(force ? `${API_BASE_URL}/api/projects?refresh=true` : `${API_BASE_URL}/api/projects`);
+      const url = force 
+        ? `${API_BASE_URL}/api/projects?refresh=true&t=${Date.now()}` 
+        : `${API_BASE_URL}/api/projects?t=${Date.now()}`;
+      const response = await fetch(url, { cache: 'no-store' });
       if (!response.ok) {
         throw new Error('Fallback cache triggered');
       }
@@ -1218,7 +1221,7 @@ function ClientPortalsOrchestrator() {
                                     <input 
                                       type="tel" 
                                       required
-                                      placeholder="e.g. +65 9123 4567 or +60 19-559 8932"
+                                      placeholder="e.g. +65 9123 4567 or +60 10-827 8932"
                                       value={matchPhone}
                                       onChange={(e) => setMatchPhone(e.target.value)}
                                       className="w-full bg-slate-900/50 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white font-bold focus:bg-slate-900 focus:ring-1 focus:ring-orange-500 focus:outline-none"
@@ -1343,7 +1346,7 @@ function ClientPortalsOrchestrator() {
 
                             <div className="pt-2 flex flex-col sm:flex-row gap-2.5">
                               <a
-                                href={`https://wa.me/60195598932?text=Hi%20Shyan%20Yee%2C%20I%20just%20completed%20the%20Smart%20Matcher%20Questionnaire%20on%20your%20portal%21%20My%20name%20is%20${encodeURIComponent(matchName)}%20and%20my%20budget%20is%20${encodeURIComponent(matchBudget)}.%20Let%27s%20connect%21`}
+                                href={`https://wa.me/60108278932?text=Hi%20Shyan%20Yee%2C%20I%20just%20completed%20the%20Smart%20Matcher%20Questionnaire%20on%20your%20portal%21%20My%20name%20is%20${encodeURIComponent(matchName)}%20and%20my%20budget%20is%20${encodeURIComponent(matchBudget)}.%20Let%27s%20connect%21`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex-1 text-center py-3 rounded-xl ig-gradient text-white text-xs font-black uppercase tracking-wider btn-hover shadow-lg shadow-orange-500/10 no-underline block"
@@ -1688,7 +1691,7 @@ function ClientPortalsOrchestrator() {
 
       {/* 4. SIDE STICKY WHATSAPP CTA BUBBLE (glowing, premium, direct link to Shyan Yee) */}
       <a
-        href={`https://wa.me/60195598932?text=${encodeURIComponent(
+        href={`https://wa.me/60108278932?text=${encodeURIComponent(
           language.startsWith('zh')
             ? "您好 Shyan Yee，我刚浏览了您的马来西亚优质置业网站，想向您咨询一些关于热门在售楼盘的详情与最新优惠。谢谢！"
             : language === 'ja'
@@ -1791,9 +1794,9 @@ function ClientPortalsOrchestrator() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-stone-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-600 font-semibold select-none">
           <span>&copy; {new Date().getFullYear()} {t('footerCopyright')}</span>
           <div className="flex gap-4 mt-4 sm:mt-0">
-            <a href="https://wa.me/60195598932" target="_blank" rel="noopener noreferrer" className="hover:text-stone-400">{t('footerTerms')}</a>
+            <a href="https://wa.me/60108278932" target="_blank" rel="noopener noreferrer" className="hover:text-stone-400">{t('footerTerms')}</a>
             <span>•</span>
-            <a href="https://wa.me/60195598932" target="_blank" rel="noopener noreferrer" className="hover:text-stone-400">{t('footerPrivacy')}</a>
+            <a href="https://wa.me/60108278932" target="_blank" rel="noopener noreferrer" className="hover:text-stone-400">{t('footerPrivacy')}</a>
           </div>
         </div>
 

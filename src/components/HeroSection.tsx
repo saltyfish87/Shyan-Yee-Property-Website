@@ -84,7 +84,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {t('viewProjects')}
           </button>
           <a
-            href={`https://wa.me/60195598932?text=${encodeURIComponent(
+            href={`https://wa.me/60108278932?text=${encodeURIComponent(
               language.startsWith('zh') 
                 ? "你好 Shyan Yee，我浏览了您的马来西亚房产综合信息平台，希望能咨询当前的优质楼盘项目并获取最新详情。谢谢！"
                 : language === 'ja'

@@ -157,7 +157,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Immersive UI WhatsApp CTA Agent Button */}
             <a
-              href={`https://wa.me/60195598932?text=${encodeURIComponent(
+              href={`https://wa.me/60108278932?text=${encodeURIComponent(
                 language.startsWith('zh') 
                   ? "您好 Shyan Yee，我正在浏览您的马来西亚房产门户，希望能咨询当前在售的热门楼盘项目与其最新优惠。谢谢！"
                   : language === 'ja'

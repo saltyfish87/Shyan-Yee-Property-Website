@@ -414,7 +414,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                 </p>
               </div>
               <a
-                href={`https://wa.me/60195598932?text=${encodeURIComponent(
+                href={`https://wa.me/60108278932?text=${encodeURIComponent(
                   language.startsWith('zh')
                     ? `您好 Shyan Yee，我刚阅读了您的房产研究门户，想针对文章《${activeFullArticle.title}》中提及的项目详情、法律规范和置业优惠进行具体咨询。谢谢！`
                     : language === 'ja'

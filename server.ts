@@ -79,8 +79,8 @@ const cache: Cache = {
   lastProjectsFetch: 0,
 };
 
-// CACHE EXPIRY (10 minutes)
-const CACHE_DURATION = 10 * 60 * 1000;
+// CACHE EXPIRY (1 minute for near real-time Google Sheet sync)
+const CACHE_DURATION = 60 * 1000;
 
 // Persistent AI generation cache file
 const AI_CACHE_FILE = path.join(process.cwd(), "ai_generation_cache.json");
@@ -1945,6 +1945,9 @@ async function fetchGoogleSheetsProjects(forceRefresh = false): Promise<any[]> {
 
 // API: Get properties
 app.get("/api/projects", async (req, res) => {
+  res.set("Cache-Control", "no-cache, no-store, must-revalidate, proxy-revalidate");
+  res.set("Pragma", "no-cache");
+  res.set("Expires", "0");
   const force = req.query.refresh === "true" || req.query.bypass_cache === "true" || req.query.force === "true";
   const p = await fetchGoogleSheetsProjects(force);
   res.json(p);
@@ -2941,7 +2944,7 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
         "url": "https://shyanyee.com",
         "logo": "https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY",
         "image": "https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY",
-        "telephone": "+60195598932",
+        "telephone": "+60108278932",
         "email": "shyanyeews@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -2951,7 +2954,7 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
         },
         "sameAs": [
           "https://www.youtube.com/@shyanyee",
-          "https://wa.me/60195598932"
+          "https://wa.me/60108278932"
         ]
       },
       {
@@ -3116,7 +3119,7 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
             "name": `How can I get floor plans or book a private showroom viewing for ${targetProject.name}?`,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": `You can view floor plans and request a private viewing with licensed agent Shyan Yee (REN 46305) via WhatsApp at +60 19-559 8932 or on shyanyee.com.`
+              "text": `You can view floor plans and request a private viewing with licensed agent Shyan Yee (REN 46305) via WhatsApp at +60 10-827 8932 or on shyanyee.com.`
             }
           }
         ]
@@ -3173,7 +3176,7 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
               <li><strong>Unit Built-up:</strong> ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} - ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft</li>
               <li><strong>Bedrooms:</strong> ${targetProject.bedroomsMin} - ${targetProject.bedroomsMax} Beds</li>
               <li><strong>Completion:</strong> ${targetProject.completionStatus || 'Under Construction'} (${targetProject.completionYear || ''})</li>
-              <li><strong>Agent Contact:</strong> Shyan Yee (REN 46305) | +60 19-559 8932</li>
+              <li><strong>Agent Contact:</strong> Shyan Yee (REN 46305) | +60 10-827 8932</li>
             </ul>
           </section>
 

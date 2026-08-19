@@ -703,7 +703,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               <div className="border-t border-slate-50 pt-6 select-none">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <a
-                    href={`https://wa.me/60195598932?text=${encodeURIComponent(
+                    href={`https://wa.me/60108278932?text=${encodeURIComponent(
                       language.startsWith('zh')
                         ? `你好 Shyan Yee，我对《${project.name}》项目非常感兴趣。可以请您分享该项目的专属特别折扣和最新的官方宣传册（PDF）吗？谢谢！`
                         : language === 'ja'
@@ -1363,7 +1363,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                     <input
                       required
                       type="tel"
-                      placeholder="e.g. +60 19-559 8932"
+                      placeholder="e.g. +60 10-827 8932"
                       value={leadPhone}
                       onChange={(e) => setLeadPhone(e.target.value)}
                       className="w-full bg-slate-55 border border-slate-100 rounded-xl p-3 text-xs font-bold text-slate-800 focus:outline-hidden focus:ring-1 focus:ring-orange-400"
@@ -1389,7 +1389,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               {/* Direct Call representation */}
               <div className="border-t border-slate-50 pt-5 mt-6 flex justify-between items-center text-xs">
                 <a
-                  href={`https://wa.me/60195598932?text=${encodeURIComponent(
+                  href={`https://wa.me/60108278932?text=${encodeURIComponent(
                     language.startsWith('zh')
                       ? `您好 Shyan Yee，我对您的《${project.name}》项目非常感兴趣，希望能向您咨询当前该房源的可用返现、优惠和最新的认购流程。谢谢！`
                       : language === 'ja'
