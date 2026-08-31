@@ -4,9 +4,10 @@ Allow: /projects
 Allow: /projects/*
 Allow: /blog
 Allow: /blog/*
-Allow: /map
-Allow: /compare
+Allow: /faq
 Allow: /calculator
+Allow: /compare
+Allow: /map
 Allow: /sitemap.xml
 
 # Sitemaps

@@ -11,6 +11,217 @@ interface UseSEOProps {
   projects: Project[];
 }
 
+export interface BreadcrumbListItem {
+  "@type": "ListItem";
+  position: number;
+  name: string;
+  item: string;
+  "@id"?: string;
+}
+
+export interface BreadcrumbListSchema {
+  "@type": "BreadcrumbList";
+  "@id"?: string;
+  itemListElement: BreadcrumbListItem[];
+}
+
+export interface BreadcrumbValidationResult {
+  isValid: boolean;
+  errors: string[];
+  itemCount: number;
+  uniqueItems: number;
+}
+
+/**
+ * Calculates authoritative canonical URL for active page, project or blog slug
+ */
+export function calculateCanonicalUrl({
+  currentPage,
+  selectedProject,
+  activeBlogSlug,
+  baseUrl = 'https://shyanyee.com'
+}: {
+  currentPage: string;
+  selectedProject?: Project | null;
+  activeBlogSlug?: string | null;
+  baseUrl?: string;
+}): string {
+  const cleanBase = (baseUrl || 'https://shyanyee.com').replace(/\/+$/, '');
+  
+  if (selectedProject?.id) {
+    return `${cleanBase}/projects/${selectedProject.id}`;
+  }
+  if (activeBlogSlug) {
+    return `${cleanBase}/blog/${activeBlogSlug}`;
+  }
+  if (currentPage === 'projects') {
+    return `${cleanBase}/projects`;
+  }
+  if (currentPage === 'blog') {
+    return `${cleanBase}/blog`;
+  }
+  if (currentPage === 'compare') {
+    return `${cleanBase}/compare`;
+  }
+  if (currentPage === 'map') {
+    return `${cleanBase}/map`;
+  }
+  if (currentPage === 'calculator') {
+    return `${cleanBase}/calculator`;
+  }
+  if (currentPage === 'faq') {
+    return `${cleanBase}/faq`;
+  }
+  return cleanBase;
+}
+
+/**
+ * Validates and verifies that BreadcrumbList items adhere strictly to Google Search Console / Schema.org rules:
+ * - Has valid @type: "BreadcrumbList"
+ * - All elements have @type: "ListItem"
+ * - Positions are 1-based, sequential integers with no duplicates or gaps
+ * - Every item contains a valid, absolute URL starting with http:// or https://
+ * - Item names are non-empty strings
+ * - Every item has a unique item URL and position
+ */
+export function verifyBreadcrumbListSchema(breadcrumbSchema: any): BreadcrumbValidationResult {
+  const errors: string[] = [];
+  if (!breadcrumbSchema || typeof breadcrumbSchema !== 'object') {
+    return { isValid: false, errors: ['BreadcrumbList schema is null or invalid object'], itemCount: 0, uniqueItems: 0 };
+  }
+
+  if (breadcrumbSchema['@type'] !== 'BreadcrumbList') {
+    errors.push(`Invalid @type: expected "BreadcrumbList", received "${breadcrumbSchema['@type']}"`);
+  }
+
+  const items: any[] = breadcrumbSchema.itemListElement;
+  if (!Array.isArray(items) || items.length === 0) {
+    errors.push('BreadcrumbList must contain a non-empty itemListElement array');
+    return { isValid: false, errors, itemCount: 0, uniqueItems: 0 };
+  }
+
+  const seenPositions = new Set<number>();
+  const seenUrls = new Set<string>();
+
+  items.forEach((item, idx) => {
+    const expectedPos = idx + 1;
+    if (!item || typeof item !== 'object') {
+      errors.push(`Item at index ${idx} is not a valid object`);
+      return;
+    }
+
+    if (item['@type'] !== 'ListItem') {
+      errors.push(`Item at index ${idx} has invalid @type: "${item['@type']}" (expected "ListItem")`);
+    }
+
+    if (typeof item.position !== 'number' || item.position !== expectedPos) {
+      errors.push(`Item "${item.name || idx}" has position ${item.position}; expected sequential 1-based index ${expectedPos}`);
+    }
+
+    if (seenPositions.has(item.position)) {
+      errors.push(`Duplicate position ${item.position} found in BreadcrumbList`);
+    }
+    seenPositions.add(item.position);
+
+    if (!item.name || typeof item.name !== 'string' || item.name.trim() === '') {
+      errors.push(`Item at position ${item.position} is missing a valid non-empty name`);
+    }
+
+    if (!item.item || typeof item.item !== 'string' || !/^https?:\/\//i.test(item.item)) {
+      errors.push(`Item at position ${item.position} (${item.name}) has invalid item URL: "${item.item}". Must be an absolute URL.`);
+    } else {
+      if (seenUrls.has(item.item)) {
+        errors.push(`Duplicate item URL detected: "${item.item}"`);
+      }
+      seenUrls.add(item.item);
+    }
+  });
+
+  return {
+    isValid: errors.length === 0,
+    errors,
+    itemCount: items.length,
+    uniqueItems: seenUrls.size
+  };
+}
+
+/**
+ * Validation test function that checks if the BreadcrumbList schema exists in document head/DOM and contains valid unique IDs
+ */
+export function validateHeadBreadcrumbListSchema(): {
+  exists: boolean;
+  isValid: boolean;
+  errors: string[];
+  breadcrumbSchema?: any;
+  stepsTested?: number;
+} {
+  if (typeof document === 'undefined') {
+    return { exists: false, isValid: false, errors: ['Document is undefined (SSR environment)'] };
+  }
+
+  const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'));
+  let foundBreadcrumbs: any = null;
+
+  for (const script of scripts) {
+    try {
+      const parsed = JSON.parse(script.innerHTML);
+      if (parsed['@type'] === 'BreadcrumbList') {
+        foundBreadcrumbs = parsed;
+        break;
+      }
+      if (Array.isArray(parsed['@graph'])) {
+        const breadcrumbInGraph = parsed['@graph'].find((item: any) => item['@type'] === 'BreadcrumbList');
+        if (breadcrumbInGraph) {
+          foundBreadcrumbs = breadcrumbInGraph;
+          break;
+        }
+      }
+    } catch {
+      // continue searching
+    }
+  }
+
+  if (!foundBreadcrumbs) {
+    return {
+      exists: false,
+      isValid: false,
+      errors: ['No BreadcrumbList schema found in document head or DOM']
+    };
+  }
+
+  const validation = verifyBreadcrumbListSchema(foundBreadcrumbs);
+  return {
+    exists: true,
+    isValid: validation.isValid,
+    errors: validation.errors,
+    breadcrumbSchema: foundBreadcrumbs,
+    stepsTested: validation.itemCount
+  };
+}
+
+/**
+ * Dedicated hook to dynamically inject and synchronize <link rel="canonical"> in the document head
+ */
+export function useCanonicalTag(canonicalUrl: string) {
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+
+    // Remove any duplicate or extraneous canonical tags
+    const existingCanonicals = document.querySelectorAll('link[rel="canonical"]');
+    existingCanonicals.forEach((tag, idx) => {
+      if (idx > 0) tag.remove();
+    });
+
+    let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', canonicalUrl);
+  }, [canonicalUrl]);
+}
+
 // Helper to generate a stable, deterministic project rating based on ID hash
 const getProjectRating = (id: string) => {
   let hash = 0;
@@ -41,50 +252,43 @@ export function useSEO({
     
     const activeArticle = activeBlogSlug ? BLOG_DATA.find(a => a.slug === activeBlogSlug) : null;
 
-    // 1. Page-wise canonical and meta definition
+    // 1. Calculate authoritative canonical URL
+    url = calculateCanonicalUrl({ currentPage, selectedProject, activeBlogSlug });
+
+    // 2. Page-wise canonical and meta definition
     if (currentPage === 'projects') {
       title = "Malaysia Landmark Property Projects Catalogue | Floor Plans & Pricing - Shyan Yee";
       desc = "Explore handpicked signature residential developments, luxury condominiums, and elite suites across Kuala Lumpur, Penang, Johor, and top Malaysian markets.";
-      url = "https://shyanyee.com/projects";
     } else if (currentPage === 'compare') {
       title = "Compare Landmark Properties in Malaysia | Side-by-Side Spec Matrix";
       desc = "Compare prices, developer credentials, maintenance fees, car park allocations, and completion years side-by-side for Malaysian luxury properties.";
-      url = "https://shyanyee.com/compare";
     } else if (currentPage === 'map') {
       title = "Interactive Real Estate Map of Malaysia | Pinpoint Luxury Homes";
       desc = "Pinpoint luxury residences across Kuala Lumpur, Johor Bahru and Penang on our interactive GIS map, detailing proximity to transit, malls, and premium landmarks.";
-      url = "https://shyanyee.com/map";
     } else if (currentPage === 'blog') {
       title = "Malaysia Property Insights, Market Analysis & Investment Blogs | Shyan Yee";
       desc = "In-depth research on Malaysia MM2H, real estate pricing trends, luxury residential analysis, and expert advice for global buyers.";
-      url = "https://shyanyee.com/blog";
     } else if (currentPage === 'calculator') {
       title = "Malaysia Property Loan & Stamp Duty Calculator | Shyan Yee";
       desc = "Calculate monthly home loan repayments, progressive interest, legal fees and stamp duty for property in Malaysia.";
-      url = "https://shyanyee.com/calculator";
     } else if (currentPage === 'faq') {
       title = "Malaysia Real Estate Buyer FAQ & Foreign Ownership Guidelines | Shyan Yee";
       desc = "Frequently asked questions for buying property in Malaysia as a local, Singaporean, or foreign investor.";
-      url = "https://shyanyee.com/faq";
     }
 
-    // 2. Individual selected blog article override
+    // 3. Individual selected blog article override
     if (activeArticle) {
       title = `${activeArticle.title} | Shyan Yee Property Insights`;
       desc = activeArticle.metaDescription || activeArticle.summary || desc;
-      url = `https://shyanyee.com/blog/${activeArticle.slug}`;
       imageUrl = activeArticle.image || imageUrl;
     }
 
-    // 3. Individual selected project override - programmatically target specific /projects/{id}
+    // 4. Individual selected project override - programmatically target specific /projects/{id}
     if (selectedProject) {
       const priceStr = convertPrice ? convertPrice(selectedProject.startingPrice).formatted : `RM ${selectedProject.startingPrice.toLocaleString()}`;
       const cleanDev = (selectedProject.developer || '').replace(/\(.*?\)/g, "").trim();
       title = `${selectedProject.name} ${selectedProject.area} | Price, Floor Plan, Review & Sales - Shyan Yee`;
       desc = `${selectedProject.name} is a landmark ${selectedProject.projectType || 'luxury'} development by ${cleanDev} in ${selectedProject.location}, ${selectedProject.area}. Features modern layouts ranging from ${selectedProject.bedroomsMin}-${selectedProject.bedroomsMax} bedrooms, sizes ${selectedProject.builtUpMin.toLocaleString()}-${selectedProject.builtUpMax.toLocaleString()} sqft, and is a premier ${selectedProject.tenure} residence. Prices start from ${priceStr}. Official floor plans, layout specs, and showroom appointments with Shyan Yee (REN 46305).`;
-      
-      // Strict canonical URL format targeting /projects/{id}
-      url = `https://shyanyee.com/projects/${selectedProject.id}`;
       
       // Select primary project image if available
       if (selectedProject.images) {
@@ -118,7 +322,11 @@ export function useSEO({
     updateMetaTag('name', 'robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     updateMetaTag('name', 'googlebot', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
-    // Programmatically enforce and update canonical link tag in document head
+    // Programmatically enforce and update canonical link tag in document head (clean duplicates)
+    const existingCanonicals = document.querySelectorAll('link[rel="canonical"]');
+    existingCanonicals.forEach((tag, idx) => {
+      if (idx > 0) tag.remove();
+    });
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -233,73 +441,109 @@ export function useSEO({
     graph.push(agentProfile);
 
     // 2. Breadcrumb Navigation Schema
-    const breadcrumbItems = [
+    const breadcrumbItems: BreadcrumbListItem[] = [
       {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://shyanyee.com"
+        "item": "https://shyanyee.com",
+        "@id": "https://shyanyee.com#breadcrumb-step-1"
       }
     ];
-
-    if (currentPage === 'projects') {
-      breadcrumbItems.push({
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Landmark Projects Portfolio",
-        "item": "https://shyanyee.com/projects"
-      });
-    } else if (currentPage === 'compare') {
-      breadcrumbItems.push({
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Side-by-Side Property Comparison",
-        "item": "https://shyanyee.com/compare"
-      });
-    } else if (currentPage === 'map') {
-      breadcrumbItems.push({
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Interactive GIS Property Map",
-        "item": "https://shyanyee.com/map"
-      });
-    } else if (currentPage === 'blog' || activeArticle) {
-      breadcrumbItems.push({
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Market Advisory Blogs",
-        "item": "https://shyanyee.com/blog"
-      });
-      if (activeArticle) {
-        breadcrumbItems.push({
-          "@type": "ListItem",
-          "position": 3,
-          "name": activeArticle.title,
-          "item": `https://shyanyee.com/blog/${activeArticle.slug}`
-        });
-      }
-    }
 
     if (selectedProject) {
       breadcrumbItems.push({
         "@type": "ListItem",
         "position": 2,
         "name": "Landmark Projects Portfolio",
-        "item": "https://shyanyee.com/projects"
+        "item": "https://shyanyee.com/projects",
+        "@id": "https://shyanyee.com/projects#breadcrumb-step-2"
       });
       breadcrumbItems.push({
         "@type": "ListItem",
         "position": 3,
         "name": selectedProject.name,
-        "item": `https://shyanyee.com/projects/${selectedProject.id}`
+        "item": `https://shyanyee.com/projects/${selectedProject.id}`,
+        "@id": `https://shyanyee.com/projects/${selectedProject.id}#breadcrumb-step-3`
+      });
+    } else if (activeArticle) {
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Market Advisory Blogs",
+        "item": "https://shyanyee.com/blog",
+        "@id": "https://shyanyee.com/blog#breadcrumb-step-2"
+      });
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": 3,
+        "name": activeArticle.title,
+        "item": `https://shyanyee.com/blog/${activeArticle.slug}`,
+        "@id": `https://shyanyee.com/blog/${activeArticle.slug}#breadcrumb-step-3`
+      });
+    } else if (currentPage === 'projects') {
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Landmark Projects Portfolio",
+        "item": "https://shyanyee.com/projects",
+        "@id": "https://shyanyee.com/projects#breadcrumb-step-2"
+      });
+    } else if (currentPage === 'blog') {
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Market Advisory Blogs",
+        "item": "https://shyanyee.com/blog",
+        "@id": "https://shyanyee.com/blog#breadcrumb-step-2"
+      });
+    } else if (currentPage === 'faq') {
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Buyer FAQ & MM2H Guidelines",
+        "item": "https://shyanyee.com/faq",
+        "@id": "https://shyanyee.com/faq#breadcrumb-step-2"
+      });
+    } else if (currentPage === 'compare') {
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Side-by-Side Property Comparison",
+        "item": "https://shyanyee.com/compare",
+        "@id": "https://shyanyee.com/compare#breadcrumb-step-2"
+      });
+    } else if (currentPage === 'map') {
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Interactive GIS Property Map",
+        "item": "https://shyanyee.com/map",
+        "@id": "https://shyanyee.com/map#breadcrumb-step-2"
+      });
+    } else if (currentPage === 'calculator') {
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Property Loan & Stamp Duty Calculator",
+        "item": "https://shyanyee.com/calculator",
+        "@id": "https://shyanyee.com/calculator#breadcrumb-step-2"
       });
     }
 
-    graph.push({
+    const breadcrumbSchema: BreadcrumbListSchema = {
       "@type": "BreadcrumbList",
       "@id": `${url}#breadcrumb`,
       "itemListElement": breadcrumbItems
-    });
+    };
+
+    // Run verification check in development/testing mode
+    const validationResult = verifyBreadcrumbListSchema(breadcrumbSchema);
+    if (!validationResult.isValid && process.env.NODE_ENV !== 'production') {
+      console.warn('[SEO] BreadcrumbList validation warnings:', validationResult.errors);
+    }
+
+    graph.push(breadcrumbSchema);
 
     // 3. Carousel Portfolio List Schema
     if (projects && projects.length > 0) {

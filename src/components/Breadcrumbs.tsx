@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Home, Building, FileText, Map, Columns } from 'lucide-react';
+import { ChevronRight, Home, Building, FileText, Map, Columns, HelpCircle, Calculator } from 'lucide-react';
 import { Project } from '../types';
 import { BLOG_DATA } from '../data';
 import { useLanguage } from '../LanguageContext';
@@ -17,54 +17,70 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
   activeBlogSlug,
   onNavigate
 }) => {
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
+  const baseUrl = "https://shyanyee.com";
 
   // Find active blog article title
   const activeArticle = activeBlogSlug ? BLOG_DATA.find(a => a.slug === activeBlogSlug) : null;
 
   // Build breadcrumb steps
-  const steps = [];
+  interface BreadcrumbStep {
+    id: string;
+    label: string;
+    url: string;
+    icon?: React.ReactNode;
+    isCurrent?: boolean;
+    onClick?: () => void;
+  }
 
-  // Home is always the root
+  const steps: BreadcrumbStep[] = [];
+
+  // 1. Home is always the root
   steps.push({
     id: 'home',
     label: language.startsWith('zh') ? '主页' : 'Home',
+    url: baseUrl,
     icon: <Home className="h-3.5 w-3.5 shrink-0" />,
     onClick: () => onNavigate('home', null, null)
   });
 
   if (selectedProject) {
-    // If viewing a project, we can offer to go to Projects first
+    // If viewing a project, include Projects then Project Name
     steps.push({
       id: 'projects',
       label: language.startsWith('zh') ? '楼盘组合' : 'Landmark Projects',
+      url: `${baseUrl}/projects`,
       icon: <Building className="h-3.5 w-3.5 shrink-0" />,
       onClick: () => onNavigate('projects', null, null)
     });
     steps.push({
-      id: 'project-detail',
+      id: `project-${selectedProject.id}`,
       label: selectedProject.name,
+      url: `${baseUrl}/projects/${selectedProject.id}`,
       isCurrent: true
     });
   } else if (activeBlogSlug) {
-    // If viewing a blog article, we can offer to go to Blog index first
+    // If viewing a blog article, include Blog index then Article Title
     steps.push({
       id: 'blog',
-      label: language.startsWith('zh') ? '市场指南' : 'Guides & Blog',
+      label: language.startsWith('zh') ? '置业指南与博客' : 'Guides & Blog',
+      url: `${baseUrl}/blog`,
       icon: <FileText className="h-3.5 w-3.5 shrink-0" />,
       onClick: () => onNavigate('blog', null, null)
     });
     steps.push({
-      id: 'blog-detail',
+      id: `blog-${activeBlogSlug}`,
       label: activeArticle ? activeArticle.title : activeBlogSlug,
+      url: `${baseUrl}/blog/${activeBlogSlug}`,
       isCurrent: true
     });
   } else {
-    // Static page breadcrumbs
+    // Top-level static page breadcrumbs
     if (currentPage === 'projects') {
       steps.push({
         id: 'projects',
         label: language.startsWith('zh') ? '所有楼盘' : 'Landmark Projects',
+        url: `${baseUrl}/projects`,
         icon: <Building className="h-3.5 w-3.5 shrink-0" />,
         isCurrent: true
       });
@@ -72,30 +88,64 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
       steps.push({
         id: 'blog',
         label: language.startsWith('zh') ? '置业指南与博客' : 'Guides & Insights',
+        url: `${baseUrl}/blog`,
         icon: <FileText className="h-3.5 w-3.5 shrink-0" />,
+        isCurrent: true
+      });
+    } else if (currentPage === 'faq') {
+      steps.push({
+        id: 'faq',
+        label: language.startsWith('zh') ? '买家常见问题与MM2H' : 'Buyer FAQ & Guidelines',
+        url: `${baseUrl}/faq`,
+        icon: <HelpCircle className="h-3.5 w-3.5 shrink-0" />,
         isCurrent: true
       });
     } else if (currentPage === 'map') {
       steps.push({
         id: 'map',
         label: language.startsWith('zh') ? '交互式地图' : 'Interactive GIS Map',
+        url: `${baseUrl}/map`,
         icon: <Map className="h-3.5 w-3.5 shrink-0" />,
         isCurrent: true
       });
     } else if (currentPage === 'compare') {
       steps.push({
         id: 'compare',
-        label: language.startsWith('zh') ? '侧对侧对比' : 'Property Spec Matrix',
+        label: language.startsWith('zh') ? '楼盘规格对比' : 'Property Spec Matrix',
+        url: `${baseUrl}/compare`,
         icon: <Columns className="h-3.5 w-3.5 shrink-0" />,
+        isCurrent: true
+      });
+    } else if (currentPage === 'calculator') {
+      steps.push({
+        id: 'calculator',
+        label: language.startsWith('zh') ? '房贷与印花税计算器' : 'Loan & Stamp Duty Calculator',
+        url: `${baseUrl}/calculator`,
+        icon: <Calculator className="h-3.5 w-3.5 shrink-0" />,
         isCurrent: true
       });
     }
   }
 
-  // If we are on home page, we can hide or show simple root breadcrumb
+  // If on home page with no project/article selected, hide redundant breadcrumb
   if (currentPage === 'home' && !selectedProject && !activeBlogSlug) {
-    return null; // Don't clutter the landing page hero section with a lone home link
+    return null;
   }
+
+  // Construct BreadcrumbList JSON-LD object
+  const currentCanonicalUrl = steps.length > 0 ? steps[steps.length - 1].url : baseUrl;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${currentCanonicalUrl}#breadcrumbs`,
+    "itemListElement": steps.map((step, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "name": step.label,
+      "item": step.url,
+      "@id": `${step.url}#breadcrumb-step-${idx + 1}`
+    }))
+  };
 
   return (
     <nav 
@@ -103,16 +153,22 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
       aria-label="Breadcrumb"
       className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-4 pb-2"
     >
+      {/* Component-level JSON-LD BreadcrumbList Schema for Google Search Console */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       <ol 
         className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold text-stone-500"
         itemScope 
         itemType="https://schema.org/BreadcrumbList"
       >
         {steps.map((step, idx) => {
-          const isLast = idx === steps.length - 1;
           return (
             <li 
               key={step.id} 
+              id={`breadcrumb-item-${idx + 1}`}
               className="flex items-center"
               itemProp="itemListElement" 
               itemScope 
@@ -125,21 +181,29 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
               <meta itemProp="position" content={(idx + 1).toString()} />
               
               {step.isCurrent || !step.onClick ? (
-                <span 
-                  className="text-stone-800 font-extrabold truncate max-w-[180px] sm:max-w-xs md:max-w-md lg:max-w-lg cursor-default"
-                  itemProp="name"
-                >
-                  {step.label}
-                </span>
-              ) : (
-                <button
-                  onClick={step.onClick}
-                  className="flex items-center gap-1 text-stone-500 hover:text-orange-500 transition-colors cursor-pointer"
+                <a 
+                  href={step.url}
                   itemProp="item"
+                  id={`breadcrumb-link-${step.id}`}
+                  onClick={(e) => e.preventDefault()}
+                  className="text-stone-800 font-extrabold truncate max-w-[180px] sm:max-w-xs md:max-w-md lg:max-w-lg cursor-default hover:text-stone-900"
+                >
+                  <span itemProp="name">{step.label}</span>
+                </a>
+              ) : (
+                <a
+                  href={step.url}
+                  itemProp="item"
+                  id={`breadcrumb-link-${step.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    step.onClick?.();
+                  }}
+                  className="flex items-center gap-1 text-stone-500 hover:text-orange-500 transition-colors cursor-pointer"
                 >
                   {step.icon}
                   <span itemProp="name">{step.label}</span>
-                </button>
+                </a>
               )}
             </li>
           );

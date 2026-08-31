@@ -33,9 +33,11 @@ import { ProjectSlideshow } from './components/ProjectSlideshow';
 import { AiseoDirectory } from './components/AiseoDirectory';
 import { useSEO } from './utils/useSEO';
 import { Breadcrumbs } from './components/Breadcrumbs';
+import { RouterRedirect } from './components/RouterRedirect';
 import CalculatorHub from './components/CalculatorHub';
 import { API_BASE_URL } from './utils/api';
 import projectsFallback from './projectsFallback.json';
+import { getInitialRouteState } from './utils/router';
 
 // Lucide icons
 import {
@@ -219,50 +221,6 @@ const getBathsRange = (proj: any) => {
   return minBaths === maxBaths ? `${minBaths}` : `${minBaths} - ${maxBaths}`;
 };
 
-// Synchronously derive initial route and project from current URL path
-const getInitialRouteState = () => {
-  if (typeof window === 'undefined') {
-    return { page: 'home', project: null, blogSlug: null as string | null };
-  }
-  const pathStr = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
-  const hashStr = window.location.hash.replace(/^#\/?/, '').toLowerCase();
-  const params = new URLSearchParams(window.location.search);
-  const projParam = params.get('project') || params.get('p') || params.get('id');
-
-  const rawCandidate = projParam || hashStr || pathStr;
-  if (!rawCandidate) return { page: 'home', project: null, blogSlug: null };
-
-  if (rawCandidate.startsWith('blog/')) {
-    let bSlug = rawCandidate.replace(/^blog\//, '');
-    if (bSlug === 'foreign-buyer-malaysia-property-laws-2026') bSlug = 'foreigner-buying-property-in-malaysia';
-    if (bSlug === 'kl-luxury-condos-2026-guide') bSlug = 'best-areas-to-buy-property-in-malaysia';
-    return { page: 'blog', project: null, blogSlug: bSlug };
-  }
-
-  const candidate = rawCandidate.startsWith('projects/') ? rawCandidate.replace('projects/', '') : rawCandidate;
-
-  if (['calculator', 'calc'].includes(candidate)) return { page: 'calculator', project: null, blogSlug: null };
-  if (['projects', 'listings'].includes(candidate)) return { page: 'projects', project: null, blogSlug: null };
-  if (['map', 'explorer'].includes(candidate)) return { page: 'map', project: null, blogSlug: null };
-  if (['blog', 'insights'].includes(candidate)) return { page: 'blog', project: null, blogSlug: null };
-  if (['compare'].includes(candidate)) return { page: 'compare', project: null, blogSlug: null };
-  if (['faq', 'faqs'].includes(candidate)) return { page: 'faq', project: null, blogSlug: null };
-  if (candidate === 'youthcity') return { page: 'projects', project: null, blogSlug: null };
-
-  const fallbackList = projectsFallback as Project[];
-  const match = fallbackList.find(
-    (p) =>
-      p.id.toLowerCase() === candidate ||
-      p.name.toLowerCase().replace(/[^a-z0-9]/g, '') === candidate.replace(/[^a-z0-9]/g, '')
-  );
-
-  if (match) {
-    return { page: 'projects', project: match, blogSlug: null };
-  }
-
-  return { page: 'home', project: null, blogSlug: null };
-};
-
 function ClientPortalsOrchestrator() {
   const { t, language } = useLanguage();
   const { convertPrice } = useCurrency();
@@ -273,6 +231,7 @@ function ClientPortalsOrchestrator() {
   const [currentPage, setCurrentPage] = useState<string>(initialRoute.page);
   const [selectedProject, setSelectedProject] = useState<Project | null>(initialRoute.project);
   const [activeBlogSlug, setActiveBlogSlug] = useState<string | null>(initialRoute.blogSlug);
+  const [attemptedRedirectPath, setAttemptedRedirectPath] = useState<string>(initialRoute.attemptedPath || '');
 
   // FAQ Section Toggles
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -1686,6 +1645,76 @@ function ClientPortalsOrchestrator() {
                     </p>
                   </div>
                 )}
+              </div>
+            )}
+
+            {currentPage === 'faq' && (
+              <div className="animate-fade-in max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div className="text-center max-w-3xl mx-auto mb-12">
+                  <span className="block text-xs font-black uppercase tracking-widest ig-text mb-2">
+                    {language.startsWith('zh') ? '置业指南与买家常识' : 'Advisory & Buyer Knowledge'}
+                  </span>
+                  <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    {language.startsWith('zh') ? '马来西亚房产常见问答' : 'Malaysia Real Estate Buyer FAQ'}
+                  </h1>
+                  <p className="text-slate-500 text-sm mt-3 font-semibold">
+                    {language.startsWith('zh') 
+                      ? '针对本地及海外买家、MM2H第二家园签证、印花税政策以及购房贷款的权威指引。' 
+                      : 'Comprehensive answers regarding Malaysian property acquisition laws, foreigner thresholds, MM2H visa guidelines, and financing.'}
+                  </p>
+                </div>
+
+                <div className="space-y-4 max-w-4xl mx-auto mb-16">
+                  {translatedFaqs.map((faq, idx) => {
+                    const isFaqOpen = openFaqIdxs.includes(idx);
+                    return (
+                      <div 
+                        key={idx}
+                        id={`faq-item-${idx + 1}`}
+                        className="border border-slate-100 rounded-2xl bg-white shadow-xs overflow-hidden transition-all duration-200"
+                      >
+                        <button
+                          onClick={() => {
+                            if (isFaqOpen) {
+                              setOpenFaqIdxs(openFaqIdxs.filter(i => i !== idx));
+                            } else {
+                              setOpenFaqIdxs([...openFaqIdxs, idx]);
+                            }
+                          }}
+                          className="w-full text-left px-6 py-4.5 flex items-center justify-between font-bold text-sm text-slate-800 hover:bg-slate-50/60 transition-colors cursor-pointer select-none"
+                        >
+                          <span className="pr-4">{faq.question}</span>
+                          <span className={`text-orange-500 font-extrabold text-xs duration-150 transition-transform ${isFaqOpen ? 'rotate-180' : ''}`}>
+                            ▼
+                          </span>
+                        </button>
+                        {isFaqOpen && (
+                          <div className="px-6 pb-5 pt-1.5 text-xs sm:text-sm text-slate-600 leading-relaxed font-normal border-t border-slate-50 bg-[#FAF9F6]/50">
+                            {faq.answer}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Meet representative card */}
+                <AgentCard />
+              </div>
+            )}
+
+            {currentPage === 'redirect' && (
+              <div className="animate-fade-in">
+                <RouterRedirect
+                  attemptedPath={attemptedRedirectPath}
+                  onNavigate={(page, project, blogSlug) => {
+                    setCurrentPage(page);
+                    setSelectedProject(project);
+                    setActiveBlogSlug(blogSlug);
+                    setAttemptedRedirectPath('');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                />
               </div>
             )}
           </>

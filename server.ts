@@ -3328,6 +3328,24 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
         desc = "Pinpoint luxury residences across Kuala Lumpur, Johor Bahru and Penang on our interactive GIS map, detailing proximity to transit, malls, and premium landmarks.";
       }
 
+      if (canonical !== baseUrl) {
+        let pageName = "Projects";
+        if (canonical.endsWith('/blog')) pageName = "Blog";
+        else if (canonical.endsWith('/faq')) pageName = "Buyer FAQ";
+        else if (canonical.endsWith('/compare')) pageName = "Property Comparison";
+        else if (canonical.endsWith('/calculator')) pageName = "Calculator";
+        else if (canonical.endsWith('/map')) pageName = "Map";
+
+        jsonLdGraph.push({
+          "@type": "BreadcrumbList",
+          "@id": `${canonical}#breadcrumb`,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+            { "@type": "ListItem", "position": 2, "name": pageName, "item": canonical }
+          ]
+        });
+      }
+
       // Add ItemList containing all 69 projects for Google / AI crawler carousel indexing
       const listItems = projects.map((p, idx) => ({
         "@type": "ListItem",
@@ -3412,7 +3430,7 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
   }
 }
 
-app.get("/sitemap.xml", async (req, res) => {
+const handleSitemapRequest = async (req: express.Request, res: express.Response) => {
   try {
     // Fetch live list of properties from Sheets or memory cache
     const projects = await fetchGoogleSheetsProjects().catch((err) => {
@@ -3422,21 +3440,29 @@ app.get("/sitemap.xml", async (req, res) => {
 
     const sitemap = generateSitemapXml(projects, BLOG_DATA);
 
-    // Save/sync sitemap.xml statically to public/ so that static path accessors also see the updated version
+    // Save/sync sitemap.xml statically to public/ and dist/ so that static path accessors also see the updated version
     try {
       fs.writeFileSync(path.join(process.cwd(), "public", "sitemap.xml"), sitemap, "utf-8");
+      const distDir = path.join(process.cwd(), "dist");
+      if (fs.existsSync(distDir)) {
+        fs.writeFileSync(path.join(distDir, "sitemap.xml"), sitemap, "utf-8");
+      }
     } catch (writeErr) {
       console.error("Sitemap Sync Error:", writeErr);
     }
 
-    res.header("Content-Type", "application/xml");
+    res.header("Content-Type", "application/xml; charset=utf-8");
+    res.header("Cache-Control", "public, max-age=3600, s-maxage=3600");
     return res.send(sitemap);
   } catch (error: any) {
     console.error("Sitemap Generator Crash:", error);
     // Serve fallback static copy of sitemap.xml on error
     res.sendFile(path.join(process.cwd(), "public", "sitemap.xml"));
   }
-});
+};
+
+app.get("/sitemap.xml", handleSitemapRequest);
+app.get("/api/sitemap.xml", handleSitemapRequest);
 
 // Vite Middleware & Static Server
 async function startServer() {
