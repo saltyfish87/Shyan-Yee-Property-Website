@@ -244,6 +244,21 @@ function renderSeoHtml(html, reqUrl, targetProject = null) {
                 </a>
               </div>
             </section>
+
+            ${targetProject.images ? (() => {
+              const galleryUrls = [
+                ...(Array.isArray(targetProject.images.overview) ? targetProject.images.overview : []),
+                ...(Array.isArray(targetProject.images.gallery) ? targetProject.images.gallery : []),
+                ...(Array.isArray(targetProject.images.location) ? targetProject.images.location : [])
+              ].filter(Boolean);
+              if (galleryUrls.length === 0) return '';
+              const alt = escapeXml(`${targetProject.name} — ${targetProject.area}`);
+              return `
+            <section style="margin-bottom: 40px;">
+              <h2>Gallery</h2>
+              ${galleryUrls.map(url => `<img src="${url}" alt="${alt}" loading="lazy" width="800" style="max-width:100%;height:auto;border-radius:8px;margin-bottom:12px;">`).join('\n              ')}
+            </section>`;
+            })() : ''}
           </main>
         </div>
       `;
