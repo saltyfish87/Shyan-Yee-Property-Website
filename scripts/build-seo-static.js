@@ -185,31 +185,36 @@ function renderSeoHtml(html, reqUrl, targetProject = null) {
         ]
       });
 
+      const faqs = [
+        {
+          q: `What is the starting price for ${targetProject.name}?`,
+          a: `Starting price for ${targetProject.name} is ${priceStr || 'available upon inquiry'}, located in ${targetProject.area}, ${targetProject.location}.`
+        },
+        {
+          q: `Who is the developer of ${targetProject.name}?`,
+          a: `${targetProject.name} is developed by ${cleanDev}.`
+        },
+        {
+          q: `What layouts and sizes are available at ${targetProject.name}?`,
+          a: `${targetProject.name} offers unit sizes from ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} sqft to ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft, with ${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms.`
+        },
+        {
+          q: `How can I get floor plans or book a private showroom viewing for ${targetProject.name}?`,
+          a: `You can view floor plans and request a private viewing with licensed agent Shyan Yee (REN 46305) via WhatsApp at +60 10-827 8932 or on shyanyee.com.`
+        }
+      ];
+
       jsonLdGraph.push({
         "@type": "FAQPage",
         "@id": `${canonical}#faq`,
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": `What is the starting price for ${targetProject.name}?`,
-            "acceptedAnswer": { "@type": "Answer", "text": `Starting price for ${targetProject.name} is ${priceStr || 'available upon inquiry'}, located in ${targetProject.area}, ${targetProject.location}.` }
-          },
-          {
-            "@type": "Question",
-            "name": `Who is the developer of ${targetProject.name}?`,
-            "acceptedAnswer": { "@type": "Answer", "text": `${targetProject.name} is developed by ${cleanDev}.` }
-          },
-          {
-            "@type": "Question",
-            "name": `What layouts and sizes are available at ${targetProject.name}?`,
-            "acceptedAnswer": { "@type": "Answer", "text": `${targetProject.name} offers unit sizes from ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} sqft to ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft, with ${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms.` }
-          },
-          {
-            "@type": "Question",
-            "name": `How can I get floor plans or book a private showroom viewing for ${targetProject.name}?`,
-            "acceptedAnswer": { "@type": "Answer", "text": `You can view floor plans and request a private viewing with licensed agent Shyan Yee (REN 46305) via WhatsApp at +60 10-827 8932 or on shyanyee.com.` }
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
           }
-        ]
+        }))
       });
 
       preRenderedBody = `
@@ -237,7 +242,7 @@ function renderSeoHtml(html, reqUrl, targetProject = null) {
 
               <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 20px;">
                 <h2 style="font-size: 20px; font-weight: 700; color: #166534; margin-bottom: 12px;">Agent Private VIP Sales Inquiry</h2>
-                <p style="color: #15803d; margin-bottom: 16px;">Contact licensed property agent <strong>Shyan Yee (REN 46305)</strong> for private showroom viewings, direct developer rebates, and official floor plan PDFs.</p>
+                <p style="color: #15803d; margin-bottom: 16px;">Contact licensed property agent <strong>Shyan Yee (REN 46305)</strong> for private showroom viewings, unit availability, and official floor plan PDFs.</p>
                 <a href="https://wa.me/60108278932?text=Hi%20Shyan%20Yee,%20I%20am%20interested%20in%20${encodeURIComponent(targetProject.name)}" 
                    style="display: inline-block; background: #16a34a; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 700; text-decoration: none;">
                    WhatsApp Agent Shyan Yee (+60 10-827 8932)
@@ -310,6 +315,13 @@ function renderSeoHtml(html, reqUrl, targetProject = null) {
               ${layoutImages}
             </section>`;
             })() : ''}
+
+            <section style="margin-bottom: 40px;">
+              <h2>Frequently Asked Questions</h2>
+              ${faqs.map(faq => `
+              <h3>${escapeXml(faq.q)}</h3>
+              <p>${escapeXml(faq.a)}</p>`).join('')}
+            </section>
           </main>
         </div>
       `;
