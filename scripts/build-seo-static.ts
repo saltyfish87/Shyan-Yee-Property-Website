@@ -331,32 +331,37 @@ function renderSeoHtml(
         ]
       });
 
+      const faqs = [
+        {
+          q: `What is the starting price for ${targetProject.name}?`,
+          a: `Starting price for ${targetProject.name} is ${priceStr || 'available upon inquiry'}, located in ${targetProject.area}, ${targetProject.location}.`
+        },
+        {
+          q: `Who is the developer of ${targetProject.name}?`,
+          a: `${targetProject.name} is developed by ${cleanDev}.`
+        },
+        {
+          q: `What layouts and sizes are available at ${targetProject.name}?`,
+          a: `${targetProject.name} offers unit sizes from ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} sqft to ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft, with ${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms.`
+        },
+        {
+          q: `How can I get floor plans or book a private showroom viewing for ${targetProject.name}?`,
+          a: `You can view floor plans and request a private viewing with licensed agent Shyan Yee (REN 46305) via WhatsApp at +60 10-827 8932 or on shyanyee.com.`
+        }
+      ];
+
       // Add FAQPage Schema
       jsonLdGraph.push({
         "@type": "FAQPage",
         "@id": `${canonical}#faq`,
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": `What is the starting price for ${targetProject.name}?`,
-            "acceptedAnswer": { "@type": "Answer", "text": `Starting price for ${targetProject.name} is ${priceStr || 'available upon inquiry'}, located in ${targetProject.area}, ${targetProject.location}.` }
-          },
-          {
-            "@type": "Question",
-            "name": `Who is the developer of ${targetProject.name}?`,
-            "acceptedAnswer": { "@type": "Answer", "text": `${targetProject.name} is developed by ${cleanDev}.` }
-          },
-          {
-            "@type": "Question",
-            "name": `What layouts and sizes are available at ${targetProject.name}?`,
-            "acceptedAnswer": { "@type": "Answer", "text": `${targetProject.name} offers unit sizes from ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} sqft to ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft, with ${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms.` }
-          },
-          {
-            "@type": "Question",
-            "name": `How can I get floor plans or book a private showroom viewing for ${targetProject.name}?`,
-            "acceptedAnswer": { "@type": "Answer", "text": `You can view floor plans and request a private viewing with licensed agent Shyan Yee (REN 46305) via WhatsApp at +60 10-827 8932 or on shyanyee.com.` }
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
           }
-        ]
+        }))
       });
 
       preRenderedBody = `
@@ -396,7 +401,7 @@ function renderSeoHtml(
                 <div>
                   <h2 style="font-size: 20px; font-weight: 700; color: #166534; margin-top: 0; margin-bottom: 12px;">Agent Private VIP Sales Inquiry</h2>
                   <p style="color: #15803d; margin-bottom: 20px; line-height: 1.6; font-size: 15px;">
-                    Connect directly with licensed real estate negotiator <strong>Shyan Yee (REN 46305)</strong> for official floor plans, direct developer rebates, dynamic loan calculations, and private showroom appointments.
+                    Connect directly with licensed real estate negotiator <strong>Shyan Yee (REN 46305)</strong> for official floor plans, unit availability, dynamic loan calculations, and private showroom appointments.
                   </p>
                 </div>
                 <a href="https://wa.me/60108278932?text=Hi%20Shyan%20Yee,%20I%20am%20interested%20in%20${encodeURIComponent(targetProject.name)}" 
@@ -404,6 +409,79 @@ function renderSeoHtml(
                    WhatsApp Agent Shyan Yee (+60 10-827 8932)
                 </a>
               </div>
+            </section>
+
+            ${targetProject.images ? (() => {
+              const galleryUrls = [
+                ...(Array.isArray(targetProject.images.overview) ? targetProject.images.overview : []),
+                ...(Array.isArray(targetProject.images.gallery) ? targetProject.images.gallery : []),
+                ...(Array.isArray(targetProject.images.location) ? targetProject.images.location : [])
+              ].filter(Boolean);
+              if (galleryUrls.length === 0) return '';
+              const alt = escapeXml(`${targetProject.name} — ${targetProject.area}`);
+              return `
+            <section style="margin-bottom: 40px;">
+              <h2>Gallery</h2>
+              ${galleryUrls.map(url => `<img src="${url}" alt="${alt}" loading="lazy" width="800" style="max-width:100%;height:auto;border-radius:8px;margin-bottom:12px;">`).join('\n              ')}
+            </section>`;
+            })() : ''}
+
+            ${Array.isArray(targetProject.layouts) && targetProject.layouts.length > 0 ? (() => {
+              const rows = targetProject.layouts.map(layout => {
+                const typeName = escapeXml(layout.typeName || '-');
+                const size = escapeXml(layout.size != null ? `${layout.size}` : '-');
+                const beds = escapeXml(layout.beds != null ? `${layout.beds}` : '-');
+                const baths = escapeXml(layout.baths != null ? `${layout.baths}` : '-');
+                const carParks = escapeXml(layout.carParks != null ? `${layout.carParks}` : '-');
+                const priceFormatted = layout.estPrice != null && layout.estPrice !== 0 && (layout.estPrice as any) !== ''
+                  ? `RM ${layout.estPrice.toLocaleString()}`
+                  : 'Contact agent';
+                const estPrice = escapeXml(priceFormatted);
+
+                return `
+                <tr>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${typeName}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${size}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${beds}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${baths}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${carParks}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${estPrice}</td>
+                </tr>`;
+              }).join('');
+
+              const layoutImages = targetProject.layouts
+                .filter(l => l.image)
+                .map(layout => {
+                  const alt = escapeXml(`${targetProject.name} ${layout.typeName || ''} floor plan — ${layout.size || ''} sq ft, ${layout.beds || ''} bedrooms`);
+                  return `<img src="${layout.image}" alt="${alt}" loading="lazy" width="800" style="max-width:100%;height:auto;">`;
+                }).join('\n              ');
+
+              return `
+            <section style="margin-bottom: 40px;">
+              <h2>Unit Types and Layouts</h2>
+              <table style="width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; margin-bottom: 16px;">
+                <thead>
+                  <tr style="background-color: #f9fafb;">
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Type</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Size (sq ft)</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Bedrooms</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Bathrooms</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Car Parks</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Indicative Price</th>
+                  </tr>
+                </thead>
+                <tbody>${rows}
+                </tbody>
+              </table>
+              ${layoutImages}
+            </section>`;
+            })() : ''}
+
+            <section style="margin-bottom: 40px;">
+              <h2>Frequently Asked Questions</h2>
+              ${faqs.map(faq => `
+              <h3>${escapeXml(faq.q)}</h3>
+              <p>${escapeXml(faq.a)}</p>`).join('')}
             </section>
           </main>
         </div>
