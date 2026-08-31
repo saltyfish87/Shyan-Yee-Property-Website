@@ -36,7 +36,7 @@ export function useSEO({
   useEffect(() => {
     let title = "Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal";
     let desc = "Discover premier Malaysian luxury properties, landmark condominiums, and investment real estate in Kuala Lumpur & Penang. Curated by Shyan Yee, featuring dynamic mortgage tools, interactive maps, and real-time comparative metrics.";
-    let url = "https://shyanyee.com/";
+    let url = "https://shyanyee.com";
     let imageUrl = "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop";
     
     const activeArticle = activeBlogSlug ? BLOG_DATA.find(a => a.slug === activeBlogSlug) : null;

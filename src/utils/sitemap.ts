@@ -1,4 +1,5 @@
 import { Project } from '../types';
+import { BLOG_DATA } from '../data';
 
 export interface SitemapProject {
   id: string;
@@ -23,23 +24,14 @@ export interface SitemapBlog {
   image?: string;
 }
 
-// Default blog articles to include in sitemap
-export const DEFAULT_SITEMAP_BLOGS: SitemapBlog[] = [
-  {
-    slug: 'kl-luxury-condos-2026-guide',
-    title: 'Kuala Lumpur Luxury Condominium Buyer Guide 2026',
-    summary: 'Comprehensive legal, financial and location framework for purchasing ultra-luxury residential towers in KLCC, Mont Kiara and Bukit Bintang.',
-    publishDate: '2026-02-01',
-    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    slug: 'foreign-buyer-malaysia-property-laws-2026',
-    title: 'Foreigner Property Ownership Rules & Minimum Thresholds in Malaysia',
-    summary: 'State-by-state breakdown of minimum price thresholds for foreign buyers in KL, Selangor, Penang & Johor in 2026.',
-    publishDate: '2026-01-15',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop',
-  },
-];
+// Full live blog articles to include in sitemap
+export const DEFAULT_SITEMAP_BLOGS: SitemapBlog[] = BLOG_DATA.map(b => ({
+  slug: b.slug,
+  title: b.title,
+  summary: b.summary || b.metaDescription,
+  publishDate: b.publishDate,
+  image: b.image
+}));
 
 // Utility to escape XML special characters
 function escapeXml(str: string | undefined): string {
@@ -77,13 +69,13 @@ export function generateSitemapXml(
     { path: 'projects', priority: '0.95', changefreq: 'daily' },
     { path: 'compare', priority: '0.85', changefreq: 'weekly' },
     { path: 'map', priority: '0.85', changefreq: 'weekly' },
-    { path: 'blog', priority: '0.85', changefreq: 'daily' },
+    { path: 'blog', priority: '0.90', changefreq: 'daily' },
     { path: 'calculator', priority: '0.80', changefreq: 'monthly' },
-    { path: 'faq', priority: '0.75', changefreq: 'monthly' },
+    { path: 'faq', priority: '0.80', changefreq: 'monthly' },
   ];
 
   for (const page of staticPages) {
-    const loc = page.path ? `${baseUrl}/${page.path}` : `${baseUrl}/`;
+    const loc = page.path ? `${baseUrl}/${page.path}` : `${baseUrl}`;
     xml += `  <url>\n`;
     xml += `    <loc>${loc}</loc>\n`;
     xml += `    <lastmod>${todayStr}</lastmod>\n`;

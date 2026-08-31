@@ -26,19 +26,39 @@ app.use((req, res, next) => {
   next();
 });
 
-// Canonical 301 Permanent Redirect Middleware (Enforce HTTPS & non-www domain)
+// Canonical 301 Permanent Redirect Middleware (Enforce HTTPS, non-www domain, no trailing slashes & resolve legacy URLs)
 app.use((req, res, next) => {
   const host = req.headers.host || "";
   const forwardedProto = req.headers["x-forwarded-proto"];
 
   // 1. Redirect www.shyanyee.com to shyanyee.com
-  // 2. Redirect http to https for production domain shyanyee.com
   if (host.startsWith("www.shyanyee.com")) {
     return res.redirect(301, `https://shyanyee.com${req.url}`);
   }
+  // 2. Redirect http to https for production domain shyanyee.com
   if (forwardedProto === "http" && host.includes("shyanyee.com")) {
     return res.redirect(301, `https://shyanyee.com${req.url}`);
   }
+
+  // 3. Normalize duplicate trailing slashes (e.g. /projects/d-tessera/ -> /projects/d-tessera)
+  if (req.path.length > 1 && req.path.endsWith("/")) {
+    const query = req.url.slice(req.path.length);
+    const cleanPath = req.path.slice(0, -1);
+    return res.redirect(301, cleanPath + query);
+  }
+
+  // 4. Redirect legacy crawled URLs to their current canonical versions
+  const lowerPath = req.path.toLowerCase();
+  if (lowerPath === "/blog/kl-luxury-condos-2026-guide") {
+    return res.redirect(301, "/blog/best-areas-to-buy-property-in-malaysia");
+  }
+  if (lowerPath === "/blog/foreign-buyer-malaysia-property-laws-2026") {
+    return res.redirect(301, "/blog/foreigner-buying-property-in-malaysia");
+  }
+  if (lowerPath === "/youthcity" || lowerPath === "/projects/youthcity") {
+    return res.redirect(301, "/projects");
+  }
+
   next();
 });
 
@@ -2820,9 +2840,9 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
       .replace(/'/g, '&apos;');
   };
 
-  // 1. Core Primary Pages (Clean canonical URLs without hash fragments)
+  // 1. Core Primary Pages (Clean canonical URLs without trailing slash)
   const staticPages = [
-    { loc: `${baseUrl}/`, priority: "1.0", changefreq: "daily" },
+    { loc: baseUrl, priority: "1.00", changefreq: "daily" },
     { loc: `${baseUrl}/projects`, priority: "0.95", changefreq: "daily" },
     { loc: `${baseUrl}/compare`, priority: "0.85", changefreq: "weekly" },
     { loc: `${baseUrl}/map`, priority: "0.85", changefreq: "weekly" },
@@ -2885,7 +2905,7 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
     <loc>${loc}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>\n`;
+    <priority>0.85</priority>\n`;
       if (post.image && post.image.startsWith('http')) {
         xml += `    <image:image>
       <image:loc>${escapeXml(post.image)}</image:loc>
@@ -2904,12 +2924,12 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
 // Helper to inject dynamic SEO meta tags and structured JSON-LD into server-served HTML
 function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], blogs: any[]): string {
   try {
-    // 1. Check if request URL identifies a specific project
-    let targetProject: any = null;
+    const baseUrl = "https://shyanyee.com";
     const lowerUrl = reqUrl.toLowerCase();
 
-    // Check query params: ?project=queenswoodz or ?p=queenswoodz or ?id=queenswoodz
-    const urlObj = new URL(reqUrl, "https://shyanyee.com");
+    // 1. Check if request URL identifies a specific project
+    let targetProject: any = null;
+    const urlObj = new URL(reqUrl, baseUrl);
     const pParam = urlObj.searchParams.get("project") || urlObj.searchParams.get("p") || urlObj.searchParams.get("id");
 
     if (pParam) {
@@ -2920,7 +2940,6 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
     }
 
     if (!targetProject) {
-      // Check path: /projects/queenswoodz or /project/queenswoodz
       const pathMatch = lowerUrl.match(/\/(?:projects|project)\/([a-z0-9_-]+)/);
       if (pathMatch && pathMatch[1]) {
         const candidate = pathMatch[1];
@@ -2931,17 +2950,35 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
       }
     }
 
+    // 2. Check if request URL identifies a specific blog article
+    let targetBlog: any = null;
+    if (!targetProject) {
+      const bParam = urlObj.searchParams.get("slug") || urlObj.searchParams.get("article") || urlObj.searchParams.get("blog");
+      if (bParam) {
+        targetBlog = blogs.find(b => b.slug.toLowerCase() === bParam.toLowerCase() || b.id.toLowerCase() === bParam.toLowerCase());
+      }
+      if (!targetBlog) {
+        const blogMatch = lowerUrl.match(/\/blog\/([a-z0-9_-]+)/);
+        if (blogMatch && blogMatch[1]) {
+          let candidate = blogMatch[1];
+          if (candidate === "kl-luxury-condos-2026-guide") candidate = "best-areas-to-buy-property-in-malaysia";
+          if (candidate === "foreign-buyer-malaysia-property-laws-2026") candidate = "foreigner-buying-property-in-malaysia";
+          targetBlog = blogs.find(b => b.slug.toLowerCase() === candidate || b.id.toLowerCase() === candidate);
+        }
+      }
+    }
+
     let title = "Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal";
     let desc = "Discover 69+ premier Malaysian luxury properties, landmark condominiums, and investment real estate in Kuala Lumpur, Penang & Johor Bahru. Curated by Shyan Yee (REN 46305).";
-    let canonical = "https://shyanyee.com";
+    let canonical = baseUrl;
     let ogImage = "https://images.unsplash.com/photo-1596422846543-75c6fc18a523?q=80&w=1200&auto=format&fit=crop";
 
-    let jsonLdGraph: any[] = [
+    const jsonLdGraph: any[] = [
       {
         "@type": "RealEstateAgent",
-        "@id": "https://shyanyee.com/#agent",
+        "@id": `${baseUrl}/#agent`,
         "name": "Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal",
-        "url": "https://shyanyee.com",
+        "url": baseUrl,
         "logo": "https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY",
         "image": "https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY",
         "telephone": "+60108278932",
@@ -2959,32 +2996,28 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
       },
       {
         "@type": "WebSite",
-        "@id": "https://shyanyee.com/#website",
-        "url": "https://shyanyee.com",
+        "@id": `${baseUrl}/#website`,
+        "url": baseUrl,
         "name": "Shyan Yee Real Estate Portal",
         "description": "Comprehensive index and comparison portal for Malaysian luxury properties and landmark residences.",
-        "publisher": { "@id": "https://shyanyee.com/#agent" },
+        "publisher": { "@id": `${baseUrl}/#agent` },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://shyanyee.com/projects?search={search_term_string}",
+          "target": `${baseUrl}/projects?search={search_term_string}`,
           "query-input": "required name=search_term_string"
         }
       }
     ];
 
-    if (!targetProject && (lowerUrl.includes("/projects") || lowerUrl.includes("/project"))) {
-      canonical = "https://shyanyee.com/projects";
-      title = "Malaysia Landmark Property Projects Catalogue | Floor Plans & Pricing - Shyan Yee";
-      desc = "Explore 69+ premier Malaysian property developments including Pavilion Square, Queenswoodz, Amika Residence, Core Residence TRX, Aetas Seputeh & Bangsar Hill Park. View floor plans, developer specs, and pricing.";
-    }
+    let preRenderedBody = "";
 
     if (targetProject) {
       const cleanDev = (targetProject.developer || '').replace(/\(.*?\)/g, "").trim();
       const priceStr = targetProject.startingPrice ? `RM ${targetProject.startingPrice.toLocaleString()}` : '';
 
       title = `${targetProject.name} ${targetProject.area} | Price, Floor Plan, Review & Sales - Shyan Yee`;
-      desc = `${targetProject.name} is a landmark ${targetProject.projectType || 'luxury'} residence by ${cleanDev} in ${targetProject.location}, ${targetProject.area}. Layouts range from ${targetProject.bedroomsMin}-${targetProject.bedroomsMax} bedrooms (${targetProject.builtUpMin}-${targetProject.builtUpMax} sqft). Prices start from ${priceStr}. Explore official floor plans, dynamic mortgage calculations, and showroom appointments with Shyan Yee.`;
-      canonical = `https://shyanyee.com/projects/${targetProject.id}`;
+      desc = `${targetProject.name} is a landmark ${targetProject.projectType || 'luxury'} residence by ${cleanDev} in ${targetProject.location}, ${targetProject.area}. Layouts range from ${targetProject.bedroomsMin}-${targetProject.bedroomsMax} bedrooms (${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''}-${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft). Prices start from ${priceStr}. Explore official floor plans, dynamic mortgage calculations, and showroom appointments with Shyan Yee (REN 46305).`;
+      canonical = `${baseUrl}/projects/${targetProject.id}`;
 
       if (targetProject.images) {
         if (Array.isArray(targetProject.images.overview) && targetProject.images.overview[0]) {
@@ -3068,13 +3101,13 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://shyanyee.com"
+            "item": baseUrl
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Projects",
-            "item": "https://shyanyee.com/projects"
+            "item": `${baseUrl}/projects`
           },
           {
             "@type": "ListItem",
@@ -3085,7 +3118,7 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
         ]
       });
 
-      // Add FAQPage schema (Google Rich Snippets for Property Q&A)
+      // Add FAQPage schema
       jsonLdGraph.push({
         "@type": "FAQPage",
         "@id": `${canonical}#faq`,
@@ -3124,33 +3157,15 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
           }
         ]
       });
-    } else {
-      // Add ItemList containing all 69 projects for Google / AI crawler carousel indexing
-      const listItems = projects.map((p, idx) => ({
-        "@type": "ListItem",
-        "position": idx + 1,
-        "url": `https://shyanyee.com/projects/${p.id}`,
-        "name": p.name,
-        "description": `${p.name} by ${(p.developer || '').replace(/\(.*?\)/g, "").trim()} in ${p.area || p.location}. Starts from RM ${p.startingPrice ? p.startingPrice.toLocaleString() : '0'}.`
-      }));
-
-      jsonLdGraph.push({
-        "@type": "ItemList",
-        "@id": "https://shyanyee.com/#projects-catalog",
-        "name": "Malaysia Landmark Property Portfolio | Shyan Yee",
-        "numberOfItems": projects.length,
-        "itemListElement": listItems
-      });
-    }
-
-    // Pre-render static crawlable HTML structure for Googlebot & AI search crawlers
-    let preRenderedBody = "";
-    if (targetProject) {
-      const cleanDev = (targetProject.developer || '').replace(/\(.*?\)/g, "").trim();
-      const priceStr = targetProject.startingPrice ? `RM ${targetProject.startingPrice.toLocaleString()}` : '';
 
       preRenderedBody = `
         <div style="max-width: 1200px; margin: 0 auto; padding: 24px; font-family: system-ui, -apple-system, sans-serif;">
+          <nav style="margin-bottom: 24px; font-size: 14px; color: #64748b;">
+            <a href="${baseUrl}" style="color: #2563eb; text-decoration: none;">Home</a> &gt; 
+            <a href="${baseUrl}/projects" style="color: #2563eb; text-decoration: none;">Projects</a> &gt; 
+            <span>${targetProject.name}</span>
+          </nav>
+
           <header style="margin-bottom: 32px; border-bottom: 2px solid #f1f5f9; padding-bottom: 20px;">
             <p style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #dc2626; margin-bottom: 8px;">
               Shyan Yee Real Estate Portal | REN 46305
@@ -3170,46 +3185,166 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
             <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; list-style: none; padding: 0; margin: 0; color: #334155; font-size: 15px;">
               <li><strong>Developer:</strong> ${cleanDev}</li>
               <li><strong>Location:</strong> ${targetProject.location}, ${targetProject.area}</li>
-              <li><strong>Starting Price:</strong> ${priceStr || 'Contact Agent for Pricing'}</li>
+              <li><strong>Starting Price:</strong> <span style="color: #16a34a; font-weight: 700;">${priceStr || 'Contact Agent for Pricing'}</span></li>
               <li><strong>Property Type:</strong> ${targetProject.projectType || 'Serviced Residence'}</li>
               <li><strong>Tenure:</strong> ${targetProject.tenure || 'Freehold'}</li>
               <li><strong>Unit Built-up:</strong> ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} - ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft</li>
               <li><strong>Bedrooms:</strong> ${targetProject.bedroomsMin} - ${targetProject.bedroomsMax} Beds</li>
+              <li><strong>Maintenance Fee:</strong> ${targetProject.maintenanceFee ? 'RM ' + targetProject.maintenanceFee + ' / sqft' : 'Standard'}</li>
               <li><strong>Completion:</strong> ${targetProject.completionStatus || 'Under Construction'} (${targetProject.completionYear || ''})</li>
               <li><strong>Agent Contact:</strong> Shyan Yee (REN 46305) | +60 10-827 8932</li>
             </ul>
           </section>
 
-          ${targetProject.layouts && targetProject.layouts.length > 0 ? `
-          <section style="margin-bottom: 32px;">
-            <h2 style="font-size: 22px; font-weight: 800; color: #0f172a; margin-bottom: 16px;">
-              ${targetProject.name} Floor Plans & Layout Options
-            </h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px;">
-              ${targetProject.layouts.map((ly: any) => `
-              <div style="border: 1px solid #cbd5e1; border-radius: 12px; padding: 16px; background: #ffffff;">
-                <h3 style="font-size: 16px; font-weight: 800; margin: 0 0 6px 0; color: #0f172a;">${ly.typeName || 'Standard Unit'}</h3>
-                <p style="font-size: 14px; color: #475569; margin: 0 0 6px 0;">${ly.size} sqft | ${ly.beds} Bedrooms | ${ly.baths} Bathrooms</p>
-                ${ly.estPrice ? `<p style="font-size: 15px; font-weight: 800; color: #dc2626; margin: 0;">Est. Price: RM ${ly.estPrice.toLocaleString()}</p>` : ''}
-              </div>
-              `).join('')}
+          <section style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 16px; padding: 24px; margin-bottom: 32px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h2 style="font-size: 20px; font-weight: 700; color: #166534; margin-top: 0; margin-bottom: 12px;">Agent Private VIP Sales Inquiry</h2>
+              <p style="color: #15803d; margin-bottom: 20px; line-height: 1.6; font-size: 15px;">
+                Connect directly with licensed real estate negotiator <strong>Shyan Yee (REN 46305)</strong> for official floor plans, direct developer rebates, dynamic loan calculations, and private showroom appointments.
+              </p>
             </div>
-          </section>
-          ` : ''}
-
-          <section style="margin-bottom: 32px;">
-            <h2 style="font-size: 20px; font-weight: 800; color: #0f172a; margin-bottom: 16px;">
-              Related Malaysia Luxury Properties
-            </h2>
-            <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; padding: 0; list-style: none;">
-              ${projects.slice(0, 32).map((p: any) => `
-              <li><a href="/projects/${p.id}" style="color: #2563eb; text-decoration: underline; font-size: 14px; font-weight: 600;">${p.name} (${p.area})</a></li>
-              `).join('')}
-            </ul>
+            <a href="https://wa.me/60108278932?text=Hi%20Shyan%20Yee,%20I%20am%20interested%20in%20${encodeURIComponent(targetProject.name)}" 
+               style="display: inline-block; background: #16a34a; color: white; padding: 14px 24px; border-radius: 8px; font-weight: 700; text-decoration: none; text-align: center; font-size: 16px;">
+               WhatsApp Agent Shyan Yee (+60 10-827 8932)
+            </a>
           </section>
         </div>
       `;
+    } else if (targetBlog) {
+      canonical = `${baseUrl}/blog/${targetBlog.slug}`;
+      title = `${targetBlog.title} | Shyan Yee Property Insights`;
+      desc = targetBlog.metaDescription || targetBlog.summary;
+
+      if (targetBlog.image) {
+        ogImage = targetBlog.image;
+      }
+
+      // Add Article / BlogPosting Schema
+      jsonLdGraph.push({
+        "@type": "BlogPosting",
+        "@id": `${canonical}#article`,
+        "headline": targetBlog.title,
+        "description": desc,
+        "image": [ogImage],
+        "datePublished": targetBlog.publishDate ? `${targetBlog.publishDate}-01` : "2026-01-01",
+        "dateModified": new Date().toISOString().split('T')[0],
+        "author": {
+          "@type": "Person",
+          "name": targetBlog.author || "Shyan Yee (REN 46305)",
+          "url": baseUrl
+        },
+        "publisher": { "@id": `${baseUrl}/#agent` },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": canonical
+        }
+      });
+
+      // Add BreadcrumbList Schema
+      jsonLdGraph.push({
+        "@type": "BreadcrumbList",
+        "@id": `${canonical}#breadcrumb`,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": `${baseUrl}/blog` },
+          { "@type": "ListItem", "position": 3, "name": targetBlog.title, "item": canonical }
+        ]
+      });
+
+      if (targetBlog.faqs && targetBlog.faqs.length > 0) {
+        jsonLdGraph.push({
+          "@type": "FAQPage",
+          "@id": `${canonical}#faq`,
+          "mainEntity": targetBlog.faqs.map((f: any) => ({
+            "@type": "Question",
+            "name": f.question,
+            "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+          }))
+        });
+      }
+
+      preRenderedBody = `
+        <div style="font-family: system-ui, -apple-system, sans-serif; max-width: 900px; margin: 0 auto; padding: 24px; color: #111827; line-height: 1.8;">
+          <nav style="margin-bottom: 24px; font-size: 14px; color: #64748b;">
+            <a href="${baseUrl}" style="color: #2563eb; text-decoration: none;">Home</a> &gt; 
+            <a href="${baseUrl}/blog" style="color: #2563eb; text-decoration: none;">Blog</a> &gt; 
+            <span>${targetBlog.title}</span>
+          </nav>
+
+          <header style="margin-bottom: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 24px;">
+            <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; font-size: 14px; color: #64748b;">
+              <span style="background: #eff6ff; color: #2563eb; padding: 2px 8px; border-radius: 4px; font-weight: 700;">${targetBlog.category || 'Property Guide'}</span>
+              <span>&bull;</span>
+              <span>${targetBlog.publishDate || '2026'}</span>
+            </div>
+            <h1 style="font-size: 32px; font-weight: 800; line-height: 1.3; margin: 0 0 16px 0;">${targetBlog.title}</h1>
+            <p style="font-size: 18px; color: #4b5563; line-height: 1.6; margin: 0;">${desc}</p>
+          </header>
+
+          ${targetBlog.image ? `<img src="${targetBlog.image}" alt="${targetBlog.title}" style="width: 100%; max-height: 440px; object-fit: cover; border-radius: 12px; margin-bottom: 32px;" />` : ''}
+
+          <main style="font-size: 16px; color: #334155;">
+            <div style="margin-bottom: 40px; white-space: pre-line;">
+              ${targetBlog.content ? targetBlog.content.replace(/#+\s+(.*?)\n/g, '<h2 style="font-size: 22px; font-weight: 700; color: #0f172a; margin-top: 32px; margin-bottom: 12px;">$1</h2>\n') : desc}
+            </div>
+
+            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px; margin-top: 40px; text-align: center;">
+              <h3 style="font-size: 20px; font-weight: 700; color: #166534; margin: 0 0 8px 0;">Need Personalized Advice on Malaysian Real Estate?</h3>
+              <p style="color: #15803d; margin: 0 0 16px 0; font-size: 15px;">
+                Speak with licensed senior agent <strong>Shyan Yee (REN 46305)</strong> for MM2H property consultations, state consent processing, and curated project shortlist.
+              </p>
+              <a href="https://wa.me/60108278932?text=Hi%20Shyan%20Yee,%20I%20read%20your%20article%20on%20${encodeURIComponent(targetBlog.title)}" 
+                 style="display: inline-block; background: #16a34a; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 700; text-decoration: none;">
+                 WhatsApp Shyan Yee (+60 10-827 8932)
+              </a>
+            </div>
+          </main>
+        </div>
+      `;
     } else {
+      if (lowerUrl.includes("/projects") || lowerUrl.includes("/project")) {
+        canonical = `${baseUrl}/projects`;
+        title = "Malaysia Landmark Property Projects Catalogue | Floor Plans & Pricing - Shyan Yee";
+        desc = "Explore 69+ premier Malaysian property developments including Pavilion Square, Queenswoodz, Amika Residence, Core Residence TRX, Aetas Seputeh & Bangsar Hill Park. View floor plans, developer specs, and pricing.";
+      } else if (lowerUrl.includes("/blog")) {
+        canonical = `${baseUrl}/blog`;
+        title = "Malaysia Property Insights, Market Analysis & Investment Blogs | Shyan Yee";
+        desc = "In-depth research on Malaysia MM2H, real estate pricing trends, luxury residential analysis, foreign buyer guidelines, and expert advice by Shyan Yee (REN 46305).";
+      } else if (lowerUrl.includes("/faq")) {
+        canonical = `${baseUrl}/faq`;
+        title = "Malaysia Real Estate Buyer FAQ & Foreign Ownership Guidelines | Shyan Yee";
+        desc = "Frequently asked questions for buying property in Malaysia as a local, Singaporean, or foreign investor. MM2H requirements, State Consent rules, taxes, and bank loans.";
+      } else if (lowerUrl.includes("/compare")) {
+        canonical = `${baseUrl}/compare`;
+        title = "Compare Landmark Properties in Malaysia | Side-by-Side Spec Matrix";
+        desc = "Compare prices, developer credentials, maintenance fees, car park allocations, and completion years side-by-side for Malaysian luxury properties.";
+      } else if (lowerUrl.includes("/calculator")) {
+        canonical = `${baseUrl}/calculator`;
+        title = "Malaysia Property Loan & Stamp Duty Calculator | Shyan Yee";
+        desc = "Calculate monthly home loan repayments, progressive interest, legal fees and stamp duty (MOT) for properties in Malaysia.";
+      } else if (lowerUrl.includes("/map")) {
+        canonical = `${baseUrl}/map`;
+        title = "Interactive Real Estate Map of Malaysia | Pinpoint Luxury Homes";
+        desc = "Pinpoint luxury residences across Kuala Lumpur, Johor Bahru and Penang on our interactive GIS map, detailing proximity to transit, malls, and premium landmarks.";
+      }
+
+      // Add ItemList containing all 69 projects for Google / AI crawler carousel indexing
+      const listItems = projects.map((p, idx) => ({
+        "@type": "ListItem",
+        "position": idx + 1,
+        "url": `${baseUrl}/projects/${p.id}`,
+        "name": p.name,
+        "description": `${p.name} by ${(p.developer || '').replace(/\(.*?\)/g, "").trim()} in ${p.area || p.location}. Starts from RM ${p.startingPrice ? p.startingPrice.toLocaleString() : '0'}.`
+      }));
+
+      jsonLdGraph.push({
+        "@type": "ItemList",
+        "@id": `${baseUrl}/#projects-catalog`,
+        "name": "Malaysia Landmark Property Portfolio | Shyan Yee",
+        "numberOfItems": projects.length,
+        "itemListElement": listItems
+      });
+
       preRenderedBody = `
         <div style="max-width: 1200px; margin: 0 auto; padding: 24px; font-family: system-ui, -apple-system, sans-serif;">
           <header style="margin-bottom: 32px; border-bottom: 2px solid #f1f5f9; padding-bottom: 20px;">

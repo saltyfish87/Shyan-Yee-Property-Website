@@ -222,7 +222,7 @@ const getBathsRange = (proj: any) => {
 // Synchronously derive initial route and project from current URL path
 const getInitialRouteState = () => {
   if (typeof window === 'undefined') {
-    return { page: 'home', project: null };
+    return { page: 'home', project: null, blogSlug: null as string | null };
   }
   const pathStr = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
   const hashStr = window.location.hash.replace(/^#\/?/, '').toLowerCase();
@@ -230,15 +230,24 @@ const getInitialRouteState = () => {
   const projParam = params.get('project') || params.get('p') || params.get('id');
 
   const rawCandidate = projParam || hashStr || pathStr;
-  if (!rawCandidate) return { page: 'home', project: null };
+  if (!rawCandidate) return { page: 'home', project: null, blogSlug: null };
+
+  if (rawCandidate.startsWith('blog/')) {
+    let bSlug = rawCandidate.replace(/^blog\//, '');
+    if (bSlug === 'foreign-buyer-malaysia-property-laws-2026') bSlug = 'foreigner-buying-property-in-malaysia';
+    if (bSlug === 'kl-luxury-condos-2026-guide') bSlug = 'best-areas-to-buy-property-in-malaysia';
+    return { page: 'blog', project: null, blogSlug: bSlug };
+  }
 
   const candidate = rawCandidate.startsWith('projects/') ? rawCandidate.replace('projects/', '') : rawCandidate;
 
-  if (['calculator', 'calc'].includes(candidate)) return { page: 'calculator', project: null };
-  if (['projects', 'listings'].includes(candidate)) return { page: 'projects', project: null };
-  if (['map', 'explorer'].includes(candidate)) return { page: 'map', project: null };
-  if (['blog', 'insights'].includes(candidate)) return { page: 'blog', project: null };
-  if (['compare'].includes(candidate)) return { page: 'compare', project: null };
+  if (['calculator', 'calc'].includes(candidate)) return { page: 'calculator', project: null, blogSlug: null };
+  if (['projects', 'listings'].includes(candidate)) return { page: 'projects', project: null, blogSlug: null };
+  if (['map', 'explorer'].includes(candidate)) return { page: 'map', project: null, blogSlug: null };
+  if (['blog', 'insights'].includes(candidate)) return { page: 'blog', project: null, blogSlug: null };
+  if (['compare'].includes(candidate)) return { page: 'compare', project: null, blogSlug: null };
+  if (['faq', 'faqs'].includes(candidate)) return { page: 'faq', project: null, blogSlug: null };
+  if (candidate === 'youthcity') return { page: 'projects', project: null, blogSlug: null };
 
   const fallbackList = projectsFallback as Project[];
   const match = fallbackList.find(
@@ -248,10 +257,10 @@ const getInitialRouteState = () => {
   );
 
   if (match) {
-    return { page: 'projects', project: match };
+    return { page: 'projects', project: match, blogSlug: null };
   }
 
-  return { page: 'home', project: null };
+  return { page: 'home', project: null, blogSlug: null };
 };
 
 function ClientPortalsOrchestrator() {
@@ -263,7 +272,7 @@ function ClientPortalsOrchestrator() {
   // Navigation Routing States - initialized synchronously to avoid Googlebot hydration content flash
   const [currentPage, setCurrentPage] = useState<string>(initialRoute.page);
   const [selectedProject, setSelectedProject] = useState<Project | null>(initialRoute.project);
-  const [activeBlogSlug, setActiveBlogSlug] = useState<string | null>(null);
+  const [activeBlogSlug, setActiveBlogSlug] = useState<string | null>(initialRoute.blogSlug);
 
   // FAQ Section Toggles
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -598,7 +607,10 @@ function ClientPortalsOrchestrator() {
     setHeroSearchFilters(null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (typeof window !== 'undefined' && window.history && window.history.pushState) {
-      window.history.pushState({ projectId: proj.id }, '', `/projects/${proj.id}`);
+      const targetUrl = `/projects/${proj.id}`;
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ projectId: proj.id }, '', targetUrl);
+      }
     }
   };
 
@@ -609,7 +621,10 @@ function ClientPortalsOrchestrator() {
     setHeroSearchFilters(null);
     window.scrollTo({ top: 0 });
     if (typeof window !== 'undefined' && window.history && window.history.pushState) {
-      window.history.pushState({ page }, '', page === 'home' ? '/' : `/${page}`);
+      const targetUrl = page === 'home' ? '/' : `/${page}`;
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ page }, '', targetUrl);
+      }
     }
   };
 
@@ -621,10 +636,20 @@ function ClientPortalsOrchestrator() {
       const pathStr = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
       const hashStr = window.location.hash.replace(/^#\/?/, '').toLowerCase();
       const params = new URLSearchParams(window.location.search);
-      const projParam = params.get('project') || params.get('p');
+      const projParam = params.get('project') || params.get('p') || params.get('id');
 
       const rawCandidate = projParam || hashStr || pathStr;
       if (!rawCandidate) return;
+
+      if (rawCandidate.startsWith('blog/')) {
+        let bSlug = rawCandidate.replace(/^blog\//, '');
+        if (bSlug === 'foreign-buyer-malaysia-property-laws-2026') bSlug = 'foreigner-buying-property-in-malaysia';
+        if (bSlug === 'kl-luxury-condos-2026-guide') bSlug = 'best-areas-to-buy-property-in-malaysia';
+        setCurrentPage('blog');
+        setSelectedProject(null);
+        setActiveBlogSlug(bSlug);
+        return;
+      }
 
       // Strip leading 'projects/' if present
       const candidate = rawCandidate.startsWith('projects/') ? rawCandidate.replace('projects/', '') : rawCandidate;
@@ -632,30 +657,47 @@ function ClientPortalsOrchestrator() {
       if (['calculator', 'calc'].includes(candidate)) {
         setCurrentPage('calculator');
         setSelectedProject(null);
+        setActiveBlogSlug(null);
         return;
       }
       if (['projects', 'listings'].includes(candidate)) {
         setCurrentPage('projects');
         setSelectedProject(null);
+        setActiveBlogSlug(null);
         return;
       }
       if (['map', 'explorer'].includes(candidate)) {
         setCurrentPage('map');
         setSelectedProject(null);
+        setActiveBlogSlug(null);
         return;
       }
       if (['blog', 'insights'].includes(candidate)) {
         setCurrentPage('blog');
         setSelectedProject(null);
+        setActiveBlogSlug(null);
         return;
       }
       if (['compare'].includes(candidate)) {
         setCurrentPage('compare');
         setSelectedProject(null);
+        setActiveBlogSlug(null);
+        return;
+      }
+      if (['faq', 'faqs'].includes(candidate)) {
+        setCurrentPage('faq');
+        setSelectedProject(null);
+        setActiveBlogSlug(null);
+        return;
+      }
+      if (candidate === 'youthcity') {
+        setCurrentPage('projects');
+        setSelectedProject(null);
+        setActiveBlogSlug(null);
         return;
       }
 
-      // Try matching project ID or slug (e.g. queenswoodz)
+      // Try matching project ID or slug (e.g. queenswoodz, d-tessera)
       const match = projects.find(
         (p) =>
           p.id.toLowerCase() === candidate ||
@@ -664,6 +706,7 @@ function ClientPortalsOrchestrator() {
 
       if (match) {
         setSelectedProject(match);
+        setActiveBlogSlug(null);
         setHeroSearchFilters(null);
       }
     };
@@ -703,6 +746,12 @@ function ClientPortalsOrchestrator() {
     setSelectedProject(null);
     setCurrentPage('blog');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (typeof window !== 'undefined' && window.history && window.history.pushState) {
+      const targetUrl = slug ? `/blog/${slug}` : '/blog';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ blogSlug: slug }, '', targetUrl);
+      }
+    }
   };
 
   const removeFromComparison = (id: string) => {
