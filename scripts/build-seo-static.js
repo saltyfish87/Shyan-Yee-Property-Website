@@ -259,6 +259,57 @@ function renderSeoHtml(html, reqUrl, targetProject = null) {
               ${galleryUrls.map(url => `<img src="${url}" alt="${alt}" loading="lazy" width="800" style="max-width:100%;height:auto;border-radius:8px;margin-bottom:12px;">`).join('\n              ')}
             </section>`;
             })() : ''}
+
+            ${Array.isArray(targetProject.layouts) && targetProject.layouts.length > 0 ? (() => {
+              const rows = targetProject.layouts.map(layout => {
+                const typeName = escapeXml(layout.typeName || '-');
+                const size = escapeXml(layout.size != null ? `${layout.size}` : '-');
+                const beds = escapeXml(layout.beds != null ? `${layout.beds}` : '-');
+                const baths = escapeXml(layout.baths != null ? `${layout.baths}` : '-');
+                const carParks = escapeXml(layout.carParks != null ? `${layout.carParks}` : '-');
+                const priceFormatted = layout.estPrice != null && layout.estPrice !== ''
+                  ? (typeof layout.estPrice === 'number' ? `RM ${layout.estPrice.toLocaleString()}` : escapeXml(`RM ${Number(layout.estPrice).toLocaleString()}`))
+                  : 'Contact agent';
+                const estPrice = escapeXml(priceFormatted);
+
+                return `
+                <tr>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${typeName}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${size}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${beds}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${baths}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${carParks}</td>
+                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${estPrice}</td>
+                </tr>`;
+              }).join('');
+
+              const layoutImages = targetProject.layouts
+                .filter(l => l.image)
+                .map(layout => {
+                  const alt = escapeXml(`${targetProject.name} ${layout.typeName || ''} floor plan — ${layout.size || ''} sq ft, ${layout.beds || ''} bedrooms`);
+                  return `<img src="${layout.image}" alt="${alt}" loading="lazy" width="800" style="max-width:100%;height:auto;">`;
+                }).join('\n              ');
+
+              return `
+            <section style="margin-bottom: 40px;">
+              <h2>Unit Types and Layouts</h2>
+              <table style="width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; margin-bottom: 16px;">
+                <thead>
+                  <tr style="background-color: #f9fafb;">
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Type</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Size (sq ft)</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Bedrooms</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Bathrooms</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Car Parks</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Indicative Price</th>
+                  </tr>
+                </thead>
+                <tbody>${rows}
+                </tbody>
+              </table>
+              ${layoutImages}
+            </section>`;
+            })() : ''}
           </main>
         </div>
       `;
