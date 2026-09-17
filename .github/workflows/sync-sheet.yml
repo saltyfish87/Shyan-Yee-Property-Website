@@ -1,0 +1,35 @@
+name: Sync projects from Google Sheet
+
+# Runs daily at 03:00 Malaysia time (19:00 UTC) and on demand.
+# If the sheet changed, commits the refreshed catalogue, sitemap and llms.txt;
+# that commit triggers the normal Vercel deployment.
+on:
+  schedule:
+    - cron: '0 19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run sync
+      - name: Commit if anything changed
+        run: |
+          git config user.name "shyanyee-sync-bot"
+          git config user.email "shyanyeews@gmail.com"
+          git add src/projectsFallback.json public/sitemap.xml public/llms.txt
+          if git diff --cached --quiet; then
+            echo "No changes in the sheet today."
+          else
+            git commit -m "Sync projects from Google Sheet ($(date -u +%Y-%m-%d))"
+            git push
+          fi

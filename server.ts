@@ -3555,4 +3555,9 @@ async function startServer() {
   });
 }
 
-startServer();
+// When imported by scripts/sync-sheet.ts (SYNC_ONLY=1) we only want the data helpers, not a listening server.
+if (process.env.SYNC_ONLY !== "1") {
+  startServer();
+}
+
+export { fetchGoogleSheetsProjects, generateSitemapXml, generateLlmsTxt, FALLBACK_PROJECTS };
