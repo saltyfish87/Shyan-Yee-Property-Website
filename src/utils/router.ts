@@ -17,6 +17,26 @@ export interface RouteState {
   };
 }
 
+/** Chinese (Simplified) pages live under /zh/... ; English pages keep their original URLs. */
+export const ZH_PREFIX = 'zh';
+
+/** True when the path is the Chinese version of the site (/zh or /zh/...). */
+export function isZhPath(pathname: string): boolean {
+  return /^\/zh(\/|$)/i.test(pathname || '');
+}
+
+/** Removes a leading "zh" segment from an already-trimmed, lower-cased path string. */
+export function stripZhPrefix(trimmedPath: string): string {
+  return trimmedPath.replace(/^zh(\/|$)/, '');
+}
+
+/** Adds or removes the /zh prefix on an app URL such as "/projects/abc". */
+export function localizeUrl(url: string, language: string): string {
+  const bare = url.replace(/^\/zh(?=\/|$)/i, '') || '/';
+  if (language === 'zh-CN') return bare === '/' ? '/zh' : `/zh${bare}`;
+  return bare;
+}
+
 export const VALID_STATIC_PAGES = ['home', 'projects', 'compare', 'map', 'blog', 'calculator', 'faq'] as const;
 
 export const LEGACY_BLOG_MAPPINGS: Record<string, string> = {
@@ -85,9 +105,9 @@ export function getInitialRouteState(customPath?: string): RouteState {
   let searchStr = '';
 
   if (customPath !== undefined) {
-    pathStr = customPath.replace(/^\/+|\/+$/g, '').toLowerCase();
+    pathStr = stripZhPrefix(customPath.replace(/^\/+|\/+$/g, '').toLowerCase());
   } else if (typeof window !== 'undefined') {
-    pathStr = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+    pathStr = stripZhPrefix(window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase());
     hashStr = window.location.hash.replace(/^#\/?/, '').toLowerCase();
     searchStr = window.location.search;
   }

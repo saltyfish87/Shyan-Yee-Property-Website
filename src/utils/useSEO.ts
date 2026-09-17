@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Project } from '../types';
 import { BLOG_DATA } from '../data';
+import { PRE_TRANSLATED_BLOG_DETAILS } from '../translations';
 
 interface UseSEOProps {
   currentPage: string;
@@ -39,14 +40,17 @@ export function calculateCanonicalUrl({
   currentPage,
   selectedProject,
   activeBlogSlug,
-  baseUrl = 'https://shyanyee.com'
+  baseUrl = 'https://shyanyee.com',
+  language = 'en'
 }: {
   currentPage: string;
   selectedProject?: Project | null;
   activeBlogSlug?: string | null;
   baseUrl?: string;
+  language?: string;
 }): string {
-  const cleanBase = (baseUrl || 'https://shyanyee.com').replace(/\/+$/, '');
+  // Simplified Chinese pages live under /zh; every other language shares the English URLs.
+  const cleanBase = (baseUrl || 'https://shyanyee.com').replace(/\/+$/, '') + (language === 'zh-CN' ? '/zh' : '');
   
   if (selectedProject?.id) {
     return `${cleanBase}/projects/${selectedProject.id}`;
@@ -253,7 +257,7 @@ export function useSEO({
     const activeArticle = activeBlogSlug ? BLOG_DATA.find(a => a.slug === activeBlogSlug) : null;
 
     // 1. Calculate authoritative canonical URL
-    url = calculateCanonicalUrl({ currentPage, selectedProject, activeBlogSlug });
+    url = calculateCanonicalUrl({ currentPage, selectedProject, activeBlogSlug, language });
 
     // 2. Page-wise canonical and meta definition
     if (currentPage === 'projects') {
@@ -297,6 +301,34 @@ export function useSEO({
         } else if (selectedProject.images.gallery && selectedProject.images.gallery.length > 0) {
           imageUrl = selectedProject.images.gallery[0];
         }
+      }
+    }
+
+    // Simplified Chinese pages (/zh/...) get Chinese titles and descriptions, matching the pre-rendered HTML.
+    if (language === 'zh-CN') {
+      const zhStatic: Record<string, [string, string]> = {
+        home: ['Shyan Yee | 马来西亚高端房产与地标豪宅平台（吉隆坡、槟城、新山新楼盘）', '寻找您在马来西亚的理想房产。对比最新项目、查阅户型图、深度评估地理位置，由持牌房产经纪 Shyan Yee（REN 46305，IQI Realty Sdn Bhd）为您服务。'],
+        projects: ['马来西亚地标楼盘目录 | 户型图与价格 - Shyan Yee', '浏览马来西亚精选楼盘：吉隆坡、雪兰莪、槟城与新山的公寓、服务式公寓与有地住宅。查看起价、户型面积、产权与完工年份。'],
+        compare: ['马来西亚楼盘对比 | 价格、产权、面积并列比较 - Shyan Yee', '横向对比楼盘的价格、产权、配套与面积。'],
+        map: ['马来西亚楼盘地图 | 吉隆坡、新山、槟城新盘定位 - Shyan Yee', '在地图上查看各楼盘的位置与周边交通。'],
+        blog: ['马来西亚房产资讯与投资指南（中文）| Shyan Yee', '马来西亚置业、MM2H、RTS 捷运、税务与贷款的中文深度指南。'],
+        calculator: ['马来西亚房贷与印花税计算器 | Shyan Yee', '计算马来西亚房产的每月供款、利息总额、律师费与产权转让（MOT）印花税。'],
+        faq: ['马来西亚买房常见问题（中文）| 外国人购房、贷款、税务 - Shyan Yee', '关于产权、银行贷款、税务与工程进度付款的常见问题解答。']
+      };
+      const st = zhStatic[currentPage] || zhStatic.home;
+      title = st[0];
+      desc = st[1];
+      if (activeArticle) {
+        const zb = PRE_TRANSLATED_BLOG_DETAILS['zh-CN']?.[activeArticle.slug];
+        title = `${zb?.title || activeArticle.title} | Shyan Yee 马来西亚房产资讯`;
+        desc = zb?.metaDescription || zb?.summary || desc;
+      }
+      if (selectedProject) {
+        const p = selectedProject;
+        const dev = (p.developer || '').replace(/\(.*?\)/g, '').trim() || '发展商';
+        const fmt = (n?: number) => (n ? n.toLocaleString() : '');
+        title = `${p.name} ${p.area} | 价格、户型图、评测与看房预约 - Shyan Yee`;
+        desc = `${p.name} 是 ${dev} 在 ${p.location}${p.area ? ` ${p.area}` : ''} 打造的项目，户型 ${fmt(p.builtUpMin)}–${fmt(p.builtUpMax)} 平方尺，${p.bedroomsMin}–${p.bedroomsMax} 房${p.startingPrice ? `，起价 RM ${fmt(p.startingPrice)}` : ''}。查看户型图、价格与周边配套，或联系持牌房产经纪 Shyan Yee（REN 46305）预约看房。`;
       }
     }
 

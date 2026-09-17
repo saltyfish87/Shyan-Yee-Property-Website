@@ -37,7 +37,7 @@ import { RouterRedirect } from './components/RouterRedirect';
 import CalculatorHub from './components/CalculatorHub';
 import { API_BASE_URL } from './utils/api';
 import projectsFallback from './projectsFallback.json';
-import { getInitialRouteState } from './utils/router';
+import { getInitialRouteState, localizeUrl, stripZhPrefix } from './utils/router';
 
 // Lucide icons
 import {
@@ -566,7 +566,7 @@ function ClientPortalsOrchestrator() {
     setHeroSearchFilters(null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (typeof window !== 'undefined' && window.history && window.history.pushState) {
-      const targetUrl = `/projects/${proj.id}`;
+      const targetUrl = localizeUrl(`/projects/${proj.id}`, language);
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ projectId: proj.id }, '', targetUrl);
       }
@@ -580,19 +580,29 @@ function ClientPortalsOrchestrator() {
     setHeroSearchFilters(null);
     window.scrollTo({ top: 0 });
     if (typeof window !== 'undefined' && window.history && window.history.pushState) {
-      const targetUrl = page === 'home' ? '/' : `/${page}`;
+      const targetUrl = localizeUrl(page === 'home' ? '/' : `/${page}`, language);
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ page }, '', targetUrl);
       }
     }
   };
 
+  // Keep the URL prefix in step with the language: Simplified Chinese lives under /zh, everything else at the root.
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.history || !window.history.replaceState) return;
+    const current = window.location.pathname;
+    const target = localizeUrl(current, language);
+    if (target !== current) {
+      window.history.replaceState(window.history.state, '', target + window.location.search + window.location.hash);
+    }
+  }, [language]);
+
   // Sync state with incoming URL path / hash / query params
   useEffect(() => {
     if (projects.length === 0) return;
 
     const handleRouteFromUrl = () => {
-      const pathStr = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+      const pathStr = stripZhPrefix(window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase());
       const hashStr = window.location.hash.replace(/^#\/?/, '').toLowerCase();
       const params = new URLSearchParams(window.location.search);
       const projParam = params.get('project') || params.get('p') || params.get('id');
@@ -706,7 +716,7 @@ function ClientPortalsOrchestrator() {
     setCurrentPage('blog');
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (typeof window !== 'undefined' && window.history && window.history.pushState) {
-      const targetUrl = slug ? `/blog/${slug}` : '/blog';
+      const targetUrl = localizeUrl(slug ? `/blog/${slug}` : '/blog', language);
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ blogSlug: slug }, '', targetUrl);
       }
