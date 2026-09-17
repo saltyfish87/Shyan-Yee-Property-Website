@@ -66,6 +66,8 @@ function renderSeoHtml(
         },
         "sameAs": [
           "https://www.youtube.com/@shyanyee",
+          "https://www.instagram.com/shyanyee/",
+          "https://www.facebook.com/shyanyeeconsultant/",
           "https://wa.me/60108278932"
         ],
         "priceRange": "$$$$"
@@ -700,7 +702,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
         "telephone": "+60108278932", "email": "shyanyeews@gmail.com",
         "parentOrganization": { "@type": "Organization", "name": "IQI Realty Sdn Bhd" },
         "address": { "@type": "PostalAddress", "addressLocality": "Kuala Lumpur", "addressRegion": "Wilayah Persekutuan", "addressCountry": "MY" },
-        "sameAs": ["https://www.youtube.com/@shyanyee", "https://wa.me/60108278932"], "priceRange": "$$$$"
+        "sameAs": ["https://www.youtube.com/@shyanyee", "https://www.instagram.com/shyanyee/", "https://www.facebook.com/shyanyeeconsultant/", "https://wa.me/60108278932"], "priceRange": "$$$$"
       },
       { "@type": "WebSite", "@id": `${SITE}/#website`, "url": SITE, "name": "Shyan Yee 马来西亚房产平台", "inLanguage": ["en", "zh-CN"], "publisher": { "@id": `${SITE}/#agent` } },
       { "@type": "WebPage", "@id": canonical, "url": canonical, "inLanguage": "zh-CN", "isPartOf": { "@id": `${SITE}/#website` } }

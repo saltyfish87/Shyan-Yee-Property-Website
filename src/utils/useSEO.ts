@@ -460,6 +460,8 @@ export function useSEO({
       },
       "sameAs": [
         "https://www.youtube.com/@shyanyee",
+        "https://www.instagram.com/shyanyee/",
+        "https://www.facebook.com/shyanyeeconsultant/",
         "https://wa.me/60108278932"
       ],
       "knowsAbout": [
