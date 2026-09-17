@@ -186,7 +186,13 @@ export const translations: Record<string, Record<string, string>> = {
     "footerTrending": "Trending Guides & Analytics",
     "footerCopyright": "Malaysia Property Portal. Engineered for direct Realtor Broker consultations. All titles synchronized.",
     "footerTerms": "Terms of Use",
-    "footerPrivacy": "Privacy & Title Disclaimers"
+    "footerPrivacy": "Privacy & Title Disclaimers",
+    "videoSub": "Video Walkthroughs",
+    "videoTitle": "Watch the Projects Before You Visit",
+    "videoDesc": "Site walkthroughs, drone views and honest pricing talk from the @shyanyee YouTube channel.",
+    "videoPlay": "Play video",
+    "videoViewProject": "View this project",
+    "videoChannel": "More videos on YouTube"
   },
   "zh-CN": {
     "title": "寻找您在马来西亚的理想房产",
@@ -371,7 +377,13 @@ export const translations: Record<string, Record<string, string>> = {
     "footerTrending": "热门指南与市场分析",
     "footerCopyright": "马来西亚房产门户。专为经纪人直接咨询而设计。所有产权信息已同步。",
     "footerTerms": "使用条款",
-    "footerPrivacy": "隐私与产权免责声明"
+    "footerPrivacy": "隐私与产权免责声明",
+    "videoSub": "视频看盘",
+    "videoTitle": "看房前先看视频",
+    "videoDesc": "来自 @shyanyee YouTube 频道的实地看房、航拍与价格分析。",
+    "videoPlay": "播放视频",
+    "videoViewProject": "查看这个楼盘",
+    "videoChannel": "YouTube 上看更多视频"
   },
   "zh-TW": {
     "title": "尋找您在馬來西亞的理想房產",
@@ -556,7 +568,13 @@ export const translations: Record<string, Record<string, string>> = {
     "footerTrending": "熱門指南與市場分析",
     "footerCopyright": "馬來西亞房產門戶。專為經紀人直接諮詢而設計。所有產權信息已同步。",
     "footerTerms": "使用條款",
-    "footerPrivacy": "隱私與產權免責聲明"
+    "footerPrivacy": "隱私與產權免責聲明",
+    "videoSub": "影片看盤",
+    "videoTitle": "看房前先看影片",
+    "videoDesc": "來自 @shyanyee YouTube 頻道的實地看房、空拍與價格分析。",
+    "videoPlay": "播放影片",
+    "videoViewProject": "查看這個樓盤",
+    "videoChannel": "YouTube 上看更多影片"
   },
   "ja": {
     "title": "マレーシアで理想の不動産を見つける",

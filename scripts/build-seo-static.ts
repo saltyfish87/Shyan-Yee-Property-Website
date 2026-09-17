@@ -3,6 +3,7 @@ import path from 'path';
 import { BLOG_DATA, FAQ_DATA } from '../src/data';
 import { translations, PRE_TRANSLATED_BLOGS, PRE_TRANSLATED_BLOG_DETAILS } from '../src/translations';
 import { FAQ_TRANSLATIONS } from '../src/faqTranslations';
+import { HOME_VIDEOS } from '../src/videos';
 import { Project } from '../src/types';
 
 const cwd = process.cwd();
@@ -22,6 +23,24 @@ if (!fs.existsSync(indexPath)) {
 
 const rawHtml = fs.readFileSync(indexPath, 'utf-8');
 const projects: Project[] = JSON.parse(fs.readFileSync(projectsFile, 'utf-8'));
+
+
+// Featured YouTube walkthroughs on the home page → VideoObject cards for Google
+function videoObjects(lang: 'en' | 'zh'): any[] {
+  return HOME_VIDEOS.map(v => ({
+    "@type": "VideoObject",
+    "@id": `https://www.youtube.com/watch?v=${v.youtubeId}`,
+    "name": lang === 'zh' ? v.titleZh : v.title,
+    "description": lang === 'zh' ? `${v.titleZh}（Shyan Yee 实地看房视频）` : `${v.title} — site walkthrough by Shyan Yee (REN 46305).`,
+    "thumbnailUrl": [`https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`],
+    "uploadDate": v.uploadDate,
+    "duration": `PT${Math.floor(v.durationSeconds / 60)}M${v.durationSeconds % 60}S`,
+    "embedUrl": `https://www.youtube-nocookie.com/embed/${v.youtubeId}`,
+    "contentUrl": `https://www.youtube.com/watch?v=${v.youtubeId}`,
+    "inLanguage": "zh",
+    "publisher": { "@id": "https://shyanyee.com/#agent" }
+  }));
+}
 
 // Helper to escape XML
 function escapeXml(str?: string): string {
@@ -88,6 +107,8 @@ function renderSeoHtml(
     ];
 
     let preRenderedBody = '';
+
+    if (reqUrl === '/') jsonLdGraph.push(...videoObjects('en'));
 
     // Page-specific configurations
     if (reqUrl === '/projects') {
@@ -714,6 +735,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
     const home = `${SITE}/zh`;
 
     if (reqUrl === '/') {
+      graph.push(...videoObjects('zh'));
       title = 'Shyan Yee | 马来西亚高端房产与地标豪宅平台（吉隆坡、槟城、新山新楼盘）';
       const featured = projects.slice(0, 12);
       body = `<div style="max-width: 1200px; margin: 0 auto; padding: 32px 20px; font-family: system-ui, -apple-system, sans-serif; color: #0f172a;">

@@ -38,6 +38,7 @@ import CalculatorHub from './components/CalculatorHub';
 import { API_BASE_URL } from './utils/api';
 import projectsFallback from './projectsFallback.json';
 import { getInitialRouteState, localizeUrl, stripZhPrefix } from './utils/router';
+import VideoShowcase from './components/VideoShowcase';
 
 // Lucide icons
 import {
@@ -1027,6 +1028,9 @@ function ClientPortalsOrchestrator() {
                     </div>
                   </div>
                 </section>
+
+                {/* Featured YouTube walkthroughs */}
+                <VideoShowcase projects={projects} onProjectClick={navigateToProjectDetail} />
 
                 {/* Project Journey Step by Step */}
                 <section className="py-20 bg-slate-50/50 border-t border-b border-slate-100">
