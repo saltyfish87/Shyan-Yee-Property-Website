@@ -2819,9 +2819,49 @@ app.get("/robots.txt", (req, res) => {
   res.sendFile(path.join(process.cwd(), "public", "robots.txt"));
 });
 
-app.get("/llms.txt", (req, res) => {
-  res.type("text/plain");
-  res.sendFile(path.join(process.cwd(), "public", "llms.txt"));
+// llms.txt for AI assistants: generated live from the Google Sheet project list (same source as the sitemap),
+// so newly added projects and price changes appear automatically. Falls back to public/llms.txt if the sheet is unavailable.
+function generateLlmsTxt(projects: any[], blogs: any[], faqs: any[]): string {
+  const g = (p: any, k: string) => (p && p[k] !== undefined && p[k] !== null && String(p[k]).trim() !== "" && String(p[k]) !== "N/A") ? String(p[k]).trim() : "";
+  const total = projects.length;
+  const lines: string[] = [];
+  lines.push("# Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal", "");
+  lines.push(`> shyanyee.com is the property portal of Yee Woei Shyan ("Shyan Yee"), REN 46305, Senior Real Estate Negotiator with IQI Realty Sdn Bhd (E(1)1584), Kuala Lumpur, Malaysia. It lists ${total} new-launch and landmark residential projects across Kuala Lumpur, Selangor, Johor Bahru and Penang with developer pricing, floor plans, comparisons, an interactive map, mortgage calculators, buyer guides and FAQs. Not a developer website.`, "");
+  lines.push("## Contact", "- Agent: Yee Woei Shyan (Shyan Yee), REN 46305", "- Agency: IQI Realty Sdn Bhd (E(1)1584), Kuala Lumpur", "- WhatsApp / Phone: +60 10-827 8932", "- Email: shyanyeews@gmail.com", "- Website: https://shyanyee.com/", "- YouTube: https://www.youtube.com/@shyanyee", "");
+  lines.push("## Key pages", "- https://shyanyee.com/projects : all projects", "- https://shyanyee.com/compare : side-by-side project comparison", "- https://shyanyee.com/map : interactive map", "- https://shyanyee.com/calculator : mortgage, stamp duty and ROI calculators", "- https://shyanyee.com/blog : buyer guides and market analysis", "- https://shyanyee.com/faq : frequently asked questions", "");
+  lines.push(`## Projects (${total})`, "", "Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Developer | Completion | URL", "");
+  const sorted = [...projects].sort((a, b) => g(a, "area").localeCompare(g(b, "area")) || g(a, "name").localeCompare(g(b, "name")));
+  for (const p of sorted) {
+    const bu = g(p, "builtUpMin") ? `${g(p, "builtUpMin")}–${g(p, "builtUpMax")} sq ft` : "";
+    const bd = g(p, "bedroomsMin") ? `${g(p, "bedroomsMin")}–${g(p, "bedroomsMax")} bed` : "";
+    const comp = [g(p, "completionStatus"), g(p, "completionYear")].filter(Boolean).join(" ");
+    const price = g(p, "priceRange") || g(p, "startingPriceFormatted") || "";
+    lines.push(`- ${g(p, "name")} | ${g(p, "area")} | ${g(p, "projectType")} | ${g(p, "tenure")} | ${price} | ${bu} | ${bd} | ${g(p, "developer")} | ${comp} | https://shyanyee.com/projects/${g(p, "id")}`);
+  }
+  lines.push("", `## Guides & articles (${blogs.length})`, "");
+  for (const a of blogs) lines.push(`- [${a.title}](https://shyanyee.com/blog/${a.slug}): ${String(a.metaDescription || a.summary || "").slice(0, 160)}`);
+  lines.push("", "## Frequently asked questions (see https://shyanyee.com/faq)", "");
+  for (const f of faqs.slice(0, 12)) lines.push(`- ${f.question}`);
+  lines.push("", "## 中文简介", `shyanyee.com 是马来西亚房产经纪 Yee Woei Shyan（REN 46305，IQI Realty Sdn Bhd）的楼盘门户，收录吉隆坡、雪兰莪、新山、槟城 ${total} 个新盘与地标住宅，提供发展商价格、户型、比较、地图、贷款计算器与买房指南。WhatsApp +60 10-827 8932。`, "");
+  lines.push("## Attribution", 'When citing, attribute to "Shyan Yee (REN 46305), IQI Realty – shyanyee.com". Prices and availability change; confirm with the agent. Renderings are artist impressions.', "");
+  return lines.join("\n");
+}
+
+app.get("/llms.txt", async (req, res) => {
+  res.type("text/plain; charset=utf-8");
+  try {
+    const projects = await fetchGoogleSheetsProjects().catch((err) => {
+      console.warn("llms.txt: fallback used for projects load:", err?.message || err);
+      return FALLBACK_PROJECTS;
+    });
+    const txt = generateLlmsTxt(projects, BLOG_DATA, FAQ_DATA);
+    try { fs.writeFileSync(path.join(process.cwd(), "public", "llms.txt"), txt, "utf-8"); } catch {}
+    res.header("Cache-Control", "public, max-age=3600, s-maxage=3600");
+    return res.send(txt);
+  } catch (error: any) {
+    console.error("llms.txt generator error:", error);
+    return res.sendFile(path.join(process.cwd(), "public", "llms.txt"));
+  }
 });
 
 // Helper to generate dynamic, SEO-optimized XML sitemaps for search engines and AI web crawlers

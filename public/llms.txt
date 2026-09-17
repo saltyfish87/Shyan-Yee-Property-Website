@@ -22,74 +22,74 @@
 
 Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Developer | Completion | URL
 
+- 111 Menerung | Bangsar | Condominium | Freehold | RM 1.7Mil to RM 6.7Mil | 1001–3714 sq ft | 2–4 bed | BRDB | Under Construction 2027 | https://shyanyee.com/projects/menerung
 - Bangsar Hill Park – Tower B and C | Bangsar | Condominium | Leasehold | RM 1,123,000 – RM 1,742,000 | 917–1478 sq ft | 2–3 bed | Sun Suria | Under Construction 2028 | https://shyanyee.com/projects/bangsar-hill-park-tower-b-and-c
 - Bangsar Hill Park – Verdura (Tower D and E) | Bangsar | Condominium | Leasehold | RM1,120,000 - RM 1,800,000 | 917–1478 sq ft | 2–3 bed | Bangsar Hill Park Development Sdn Bhd | New Launch | https://shyanyee.com/projects/bangsar-hill-park-verdura-tower-d-and-e
 - Khaya Residence | Bangsar | Serviced Apartment | Leasehold | RM 893,000 – RM 1,694,000 (Gross) | 630–1321 sq ft | 1–3 bed | Bayu Mantap Sdn Bhd | Under Construction 2029 | https://shyanyee.com/projects/khaya-residence
 - Parkside Residence | Bangsar | Serviced Apartment | Leasehold | RM 600K | 485–1300 sq ft | 1–3 bed | SP Setia & Mitsui Fudosan | Under Construction 2029 | https://shyanyee.com/projects/parkside-residence
-- 111 Menerung | Bangsar | Condominium | Freehold | RM 1.7Mil to RM 6.7Mil | 1001–3714 sq ft | 2–4 bed | BRDB | Under Construction 2027 | https://shyanyee.com/projects/menerung
 - River Park | Bangsar | Condominium | Leasehold | RM 604K | 812–1180 sq ft | 2–3 bed | Malton | Under Construction 2026 | https://shyanyee.com/projects/river-park
 - Orion Residence | Bukit Bintang / KLCC | Serviced Apartment | Freehold | RM 1.58M – RM 4.2M | 491–1329 sq ft | 1–3 bed | Orion Tower Sdn Bhd | Ready To Move 2025 | https://shyanyee.com/projects/orion-residence
 - Avantro Residences | Bukit Jalil | Mixed Development | Freehold | From RM 664,000 | 550–1389 sq ft | 1–4 bed | Chin Hin Group | Under Construction 2028 | https://shyanyee.com/projects/avantro-residences
 - Ayanna | Bukit Jalil | Condominium | Freehold | RM 753,000 – RM 911,000 | 1155–2453 sq ft | 3–4 bed | BKSP Autoworld Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/ayanna
 - OAKA Residences | Bukit Jalil | Condominium | Freehold | RM 836,000 – RM 1,503,000 | 882–1423 sq ft | 2–3 bed | Berjaya Hartanah Berhad | Under Construction 2028 | https://shyanyee.com/projects/oaka-residences
 - Park Green Pavilion Bukit Jalil | Bukit Jalil | Condominium | Freehold | From RM 1,209,100 | 1201–1905 sq ft | 3–4 bed | Malton Berhad | Under Construction 2029 | https://shyanyee.com/projects/park-green-pavilion-bukit-jalil
-- Ren Residence | Bukit Jalil | Condominium | Leasehold | Tower B: RM 537,000 – RM 1,148,000 (Gross) | 920–1680 sq ft | 3–4 bed | Gaya Kuasa Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/ren-residence
 - Queenswoodz | Bukit Jalil | Serviced Apartment | Leasehold | RM 723K to RM 1.2Mil | 807–1410 sq ft | 2–4 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/queenswoodz
+- Ren Residence | Bukit Jalil | Condominium | Leasehold | Tower B: RM 537,000 – RM 1,148,000 (Gross) | 920–1680 sq ft | 3–4 bed | Gaya Kuasa Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/ren-residence
 - Luminar Residence (Federal Avenue) | Federal Avenue, Subang Jaya | Serviced Apartment | Freehold | RM 356,000 – RM 1,027,000 | 549–1389 sq ft | 1–3 bed | BRDB | New Launch 2029 | https://shyanyee.com/projects/luminar-residence-federal-avenue
 - Axis, Causewayz Square | Johor Bahru | Mixed Development | Freehold | RM 580K to RM 954K | 366–592 sq ft | 1–2 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/axis-causewayz-square
 - Brixton, Causewayz Square | Johor Bahru | Mixed Development | Freehold | RM 691K to RM 1.2Mil | 474–850 sq ft | 1–3 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/brixton-causewayz-square
 - Dover, Causewayz Square | Johor Bahru | Mixed Development | Freehold | RM 727K to RM 1.2Mil | 474–850 sq ft | 1–3 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/dover-causewayz-square
 - The Asteriaz | Johor Bahru | Serviced Apartment | Leasehold | RM 474K to RM 769K | 560–915 sq ft | 1–3 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/asteriaz
 - CloutHaus | KLCC | Serviced Apartment | Freehold | RM 1,548,800 – RM 4,694,800 | 549–1216 sq ft | 1–3 bed | TA Global | Under Construction 2029 | https://shyanyee.com/projects/clouthaus
-- Phoeniz Suites @ KL City Centre | KLCC / Bukit Bintang | Serviced Apartment | Freehold | RM 1,016,400 – RM 1,421,600 (Gross) | 484–678 sq ft | 1–2 bed | Exsim | New Launch 2031 | https://shyanyee.com/projects/phoeniz-suites-kl-city-centre
 - Branniganz | KLCC / Bukit Bintang | Serviced Apartment | Leasehold | From RM 803,500 (Gross) | 344–678 sq ft | 1–2 bed | Exsim (Lembaran Beruntung Sdn Bhd) | New Launch 2028 | https://shyanyee.com/projects/branniganz
-- Pavilion Square Residences | KLCC / Bukit Bintang | Serviced Apartment | Leasehold | RM 1.7Mil to RM 3.3Mil | 504–1272 sq ft | 1–3 bed | Pavilion Group | New Launch 2029 | https://shyanyee.com/projects/pavilion-square-residences
-- Pavilion Square Office | KLCC / Bukit Bintang | Commercial Office | Leasehold | RM 12.8Mil to RM 22Mil | 1093–9770 sq ft | 1–5 bed | Pavilion Group | New Launch 2028 | https://shyanyee.com/projects/pavilion-square-office
-- Golden Crown | KLCC / Bukit Bintang | Serviced Apartment | Leasehold | RM 1.2Mil to RM 3Mil | 624–1023 sq ft | 1–3 bed | Golden Eagle | Under Construction 2026 | https://shyanyee.com/projects/golden-crown
 - Centrix | KLCC / Bukit Bintang | Serviced Apartment | Leasehold | From RM 907K | 571–1187 sq ft | 1–3 bed | Intan Sekitar Sdn Bhd | Under Construction 2029 | https://shyanyee.com/projects/centrix
+- Golden Crown | KLCC / Bukit Bintang | Serviced Apartment | Leasehold | RM 1.2Mil to RM 3Mil | 624–1023 sq ft | 1–3 bed | Golden Eagle | Under Construction 2026 | https://shyanyee.com/projects/golden-crown
+- Pavilion Square Office | KLCC / Bukit Bintang | Commercial Office | Leasehold | RM 12.8Mil to RM 22Mil | 1093–9770 sq ft | 1–5 bed | Pavilion Group | New Launch 2028 | https://shyanyee.com/projects/pavilion-square-office
+- Pavilion Square Residences | KLCC / Bukit Bintang | Serviced Apartment | Leasehold | RM 1.7Mil to RM 3.3Mil | 504–1272 sq ft | 1–3 bed | Pavilion Group | New Launch 2029 | https://shyanyee.com/projects/pavilion-square-residences
+- Phoeniz Suites @ KL City Centre | KLCC / Bukit Bintang | Serviced Apartment | Freehold | RM 1,016,400 – RM 1,421,600 (Gross) | 484–678 sq ft | 1–2 bed | Exsim | New Launch 2031 | https://shyanyee.com/projects/phoeniz-suites-kl-city-centre
 - Aetas Seputeh | Kuala Lumpur | Condominium | Freehold | RM 3mil | 3500–4000 sq ft | 4–4 bed | Avaland | Under Construction 2028 | https://shyanyee.com/projects/aetas-seputeh
-- Papyrus | Kuala Lumpur | Condominium | Freehold | RM 1Mil | 1141–2304 sq ft | 3–5 bed | Kerjaya Prospek | Under Construction 2027 | https://shyanyee.com/projects/papyrus
 - BambooHill | Kuala Lumpur | Serviced Apartment | Freehold | RM 486K | 603–904 sq ft | 2–3 bed | UOA | Under Construction 2029 | https://shyanyee.com/projects/bamboohill
-- Tangen Residence | Kuala Lumpur | Condominium | Freehold | RM 709K to RM 1.1Mil | 1033–1582 sq ft | 3–4 bed | EH Developer | Under Construction 2027 | https://shyanyee.com/projects/tangen-residence
+- Papyrus | Kuala Lumpur | Condominium | Freehold | RM 1Mil | 1141–2304 sq ft | 3–5 bed | Kerjaya Prospek | Under Construction 2027 | https://shyanyee.com/projects/papyrus
 - Stellaris Riana Dutamas | Kuala Lumpur | Serviced Apartment | Freehold | RM 519K to RM 944K | 766–1206 sq ft | 2–4 bed | IJM | Under Construction 2029 | https://shyanyee.com/projects/stellaris-riana-dutamas
+- Tangen Residence | Kuala Lumpur | Condominium | Freehold | RM 709K to RM 1.1Mil | 1033–1582 sq ft | 3–4 bed | EH Developer | Under Construction 2027 | https://shyanyee.com/projects/tangen-residence
 - Quaver Residence | Kuchai Lama | Serviced Apartment | Leasehold | From RM 555,000 | 1017–1850 sq ft | 2–4 bed | Quaver Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/quaver-residence
 - Tujuh Residences | Kwasa Damansara, Shah Alam | Serviced Apartment | Leasehold | RM 501,000 – RM 839,000 | 550–909 sq ft | 1–3 bed | Kwasa Sentral Sdn Bhd (MRCB) | Under Construction 2026 | https://shyanyee.com/projects/tujuh-residences
 - Zenia Damansara | Kwasa Damansara, Shah Alam | Garden Condovilla & Landed Parkhome | Leasehold | RM 1.3M - RM 4.2M+ | 1691–4247 sq ft | 4–5 bed | Park City | New Launch 2030 | https://shyanyee.com/projects/zenia-damansara
-- The Maple Residences | OUG / Kuchai Lama | Condominium | Freehold |  (contact for pricing) | 808–1378 sq ft | 2–4 bed | WCT Land Sdn Bhd | Ready To Move 2025 | https://shyanyee.com/projects/maple-residences
-- Aras Residence | OUG / Kuchai Lama | Serviced Apartment | Freehold | RM 666,000 – RM 950,000 (Gross) | 850–1062 sq ft | 2–3 bed | WCT OUG Development Sdn Bhd | Under Construction 2029 | https://shyanyee.com/projects/aras-residence
 - GenStarz | Old Klang Road | Serviced Apartment | Freehold | RM 593,000 – RM 867,000 | 650–874 sq ft | 1–3 bed | Majestic Gen Sdn Bhd | Under Construction 2028 | https://shyanyee.com/projects/genstarz
 - Radium Arena | Old Klang Road | Serviced Apartment | Freehold | From 390,000 - RM 650,000 | 658–920 sq ft | 2–3 bed | Radium Development Berhad | Under Construction 2028 | https://shyanyee.com/projects/radium-arena
 - Riverville Residences 2 | Old Klang Road | Serviced Apartment | Freehold | RM 430,000 – RM 625,000 | 803–915 sq ft | 3–3 bed | Alzac Development Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/riverville-residences-2
 - The Vividz | Old Klang Road | Serviced Apartment | Leasehold | From RM 446,400 (Gross) | 484–915 sq ft | 1–3 bed | Exsim Bukit Jalil City Sdn Bhd | New Launch 2030 | https://shyanyee.com/projects/vividz
-- Lighthauz | Penang | Township | Freehold | RM 864K | 732–1001 sq ft | 2–3 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/lighthauz
+- Aras Residence | OUG / Kuchai Lama | Serviced Apartment | Freehold | RM 666,000 – RM 950,000 (Gross) | 850–1062 sq ft | 2–3 bed | WCT OUG Development Sdn Bhd | Under Construction 2029 | https://shyanyee.com/projects/aras-residence
+- The Maple Residences | OUG / Kuchai Lama | Condominium | Freehold | N/A (contact for pricing) | 808–1378 sq ft | 2–4 bed | WCT Land Sdn Bhd | Ready To Move 2025 | https://shyanyee.com/projects/maple-residences
 - Keeperz Suites | Penang | Serviced Apartment | Freehold | RM 820K to RM 1Mil | 484–581 sq ft | 1–2 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/keeperz-suites
-- Atera Phase 2 | Petaling Jaya | Serviced Apartment | Leasehold | From RM 691,400 (residential); From RM 1.29M (retail) | 775–1420 sq ft | 2–4 bed | Paramount Property (Aneka Sepakat Sdn Bhd) | Under Construction 2028 | https://shyanyee.com/projects/atera-phase-2
-- The Aldenz | Petaling Jaya | Serviced Apartment | Leasehold | RM 650k | 775–926 sq ft | 2–3 bed | Exsim | Under Construction 2029 | https://shyanyee.com/projects/aldenz
-- D'Evia | Petaling Jaya | Condominium | Leasehold | RM 450K | 657–1100 sq ft | 2–3 bed | Exsim | Under Construction 2029 | https://shyanyee.com/projects/d-evia
-- ARRA | Petaling Jaya | Serviced Apartment | Freehold | RM 554K | 721–1285 sq ft | 2–2 bed | Puncak Dana | New Launch 2030 | https://shyanyee.com/projects/arra
-- The Atera | Petaling Jaya | Serviced Apartment | Leasehold | RM 580K | 775–1400 sq ft | 2–4 bed | Paramount Property | Under Construction 2026 | https://shyanyee.com/projects/atera
+- Lighthauz | Penang | Township | Freehold | RM 864K | 732–1001 sq ft | 2–3 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/lighthauz
 - Amara | Petaling Jaya | Serviced Apartment | Freehold | RM 574K to RM 1Mil | 630–1230 sq ft | 2–3 bed | Puncak Dana | Under Construction 2028 | https://shyanyee.com/projects/amara
 - Amaya | Petaling Jaya | Serviced Apartment | Freehold | RM 561K to RM 1.2Mil | 554–1230 sq ft | 1–3 bed | TA Global | Under Construction 2028 | https://shyanyee.com/projects/amaya
-- Forest Hill | Petaling Jaya | Condominium | Leasehold | RM 643K to RM 1.1Mil | 953–1527 sq ft | 3–4 bed | Ehsan Bina | Under Construction 2027 | https://shyanyee.com/projects/forest-hill
-- Dwi Aurora | Petaling Jaya | Township | Leasehold | RM 631K to RM 979K | 900–1284 sq ft | 2–3 bed | Asiapac | Under Construction 2030 | https://shyanyee.com/projects/dwi-aurora
-- Stellar Damansara | Petaling Jaya | Condominium | Leasehold | RM 1.8Mil | 2028–2530 sq ft | 4–5 bed | OCR | Under Construction 2026 | https://shyanyee.com/projects/stellar-damansara
-- Daya Residence | Petaling Jaya | Township | Freehold | RM 632K to RM 1Mil | 947–1572 sq ft | 3–4 bed | TSR | New Launch Information Pending Verification | https://shyanyee.com/projects/daya-residence
+- ARRA | Petaling Jaya | Serviced Apartment | Freehold | RM 554K | 721–1285 sq ft | 2–2 bed | Puncak Dana | New Launch 2030 | https://shyanyee.com/projects/arra
+- Atera Phase 2 | Petaling Jaya | Serviced Apartment | Leasehold | From RM 691,400 (residential); From RM 1.29M (retail) | 775–1420 sq ft | 2–4 bed | Paramount Property (Aneka Sepakat Sdn Bhd) | Under Construction 2028 | https://shyanyee.com/projects/atera-phase-2
+- D'Evia | Petaling Jaya | Condominium | Leasehold | RM 450K | 657–1100 sq ft | 2–3 bed | Exsim | Under Construction 2029 | https://shyanyee.com/projects/d-evia
 - D'Tessera | Petaling Jaya | Serviced Apartment | Leasehold | RM 837K to RM 1Mil | 1100–1300 sq ft | 3–4 bed | Exsim | Under Construction 2026 | https://shyanyee.com/projects/d-tessera
-- Veridian | Petaling Jaya | Serviced Apartment | Leasehold | RM 661K to RM 933K | 947–1302 sq ft | 3–4 bed | Masteron | Under Construction 2025 | https://shyanyee.com/projects/veridian
+- Daya Residence | Petaling Jaya | Township | Freehold | RM 632K to RM 1Mil | 947–1572 sq ft | 3–4 bed | TSR | New Launch Information Pending Verification | https://shyanyee.com/projects/daya-residence
+- Dwi Aurora | Petaling Jaya | Township | Leasehold | RM 631K to RM 979K | 900–1284 sq ft | 2–3 bed | Asiapac | Under Construction 2030 | https://shyanyee.com/projects/dwi-aurora
+- Forest Hill | Petaling Jaya | Condominium | Leasehold | RM 643K to RM 1.1Mil | 953–1527 sq ft | 3–4 bed | Ehsan Bina | Under Construction 2027 | https://shyanyee.com/projects/forest-hill
 - Livista | Petaling Jaya | Serviced Apartment | Freehold | RM 515K to RM 869K | 694–1039 sq ft | 2–3 bed | Land and General | Under Construction 2026 | https://shyanyee.com/projects/livista
+- Stellar Damansara | Petaling Jaya | Condominium | Leasehold | RM 1.8Mil | 2028–2530 sq ft | 4–5 bed | OCR | Under Construction 2026 | https://shyanyee.com/projects/stellar-damansara
+- The Aldenz | Petaling Jaya | Serviced Apartment | Leasehold | RM 650k | 775–926 sq ft | 2–3 bed | Exsim | Under Construction 2029 | https://shyanyee.com/projects/aldenz
+- The Atera | Petaling Jaya | Serviced Apartment | Leasehold | RM 580K | 775–1400 sq ft | 2–4 bed | Paramount Property | Under Construction 2026 | https://shyanyee.com/projects/atera
+- Veridian | Petaling Jaya | Serviced Apartment | Leasehold | RM 661K to RM 933K | 947–1302 sq ft | 3–4 bed | Masteron | Under Construction 2025 | https://shyanyee.com/projects/veridian
 - Anya | Puchong | Serviced Apartment | Freehold | RM 504,000 – RM 748,000 | 560–1389 sq ft | 1–4 bed | OSK Property (Aspect Potential Sdn Bhd) | Ready To Move 2026 | https://shyanyee.com/projects/anya
-- Wyn | Puchong | Serviced Apartment | Leasehold | RM 516,700 – RM 708,900 | 700–850 sq ft | 2–3 bed | Forward Victory Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/wyn
 - Loop City @ Puchong | Puchong | Serviced Apartment | Leasehold | RM 365,610 – RM 612,317 (Gross) | 450–750 sq ft | 1–3 bed | Glomac (Glomac Albatha Sdn Bhd) | Under Construction 2028 | https://shyanyee.com/projects/loop-city-puchong
+- Wyn | Puchong | Serviced Apartment | Leasehold | RM 516,700 – RM 708,900 | 700–850 sq ft | 2–3 bed | Forward Victory Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/wyn
 - Vox | Sentul | Serviced Apartment | Freehold | RM 523,200 – RM 782,300 | 667–947 sq ft | 2–3 bed | Kerjaya Property Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/vox
 - One Seputeh | Seputeh / Old Klang Road | Serviced Apartment | Freehold | From RM 1,100 psf (contact for exact pricing) | 657–1611 sq ft | 2–3 bed | Seputeh Resources Sdn Bhd | Under Construction 2029 | https://shyanyee.com/projects/one-seputeh
 - Tria Seputeh | Seputeh / Old Klang Road | Condominium | Leasehold | RM 736,800 – RM 3,547,800 | 764–4575 sq ft | 2–5 bed | MRCB (MRCB Seputeh Land Sdn Bhd) | Ready To Move 2023 | https://shyanyee.com/projects/tria-seputeh
 - Aster Hill Sri Petaling | Sri Petaling | Serviced Apartment | Freehold | Phase 1: RM 569,000 – RM 843,300; Phase 2: RM 573,000 – RM 828,300 | 846–1077 sq ft | 3–3 bed | UOA Development Bhd (Cosmo Housing Development Sdn Bhd) | Under Construction 2027 | https://shyanyee.com/projects/aster-hill-sri-petaling
 - Aurum Business Centre (Suites) | Sri Petaling | Serviced Apartment | Freehold | From RM 417,545 | 527–679 sq ft | 1–2 bed | Amber Home (Sdn Bhd) | Under Construction 2029 | https://shyanyee.com/projects/aurum-business-centre-suites
 - Aricia | Sungai Besi / Chan Sow Lin | Serviced Apartment | Freehold | RM 461,000 – RM 1,137,000 | 550–1420 sq ft | 2–4 bed | Chin Hin Group | Under Construction 2029 | https://shyanyee.com/projects/aricia
-- Core Residence @ TRX | TRX / Bukit Bintang | Serviced Apartment | Freehold | Tower 1&2: RM 1.5M–1.75M; Tower 3: RM 2.01M–4.66M | 622–1572 sq ft | 1–3 bed | Core Precious Development Sdn Bhd | Ready To Move 2025 | https://shyanyee.com/projects/core-residence-trx
 - M Aspira | Taman Desa / Old Klang Road | Serviced Apartment | Leasehold | Tower A from RM 438,800; Tower B from RM 566,800 | 706–1006 sq ft | 1–3 bed | Mah Sing Group | Under Construction 2029 | https://shyanyee.com/projects/m-aspira
-- Amika Residence | USJ / Subang Jaya | Serviced Apartment | Freehold | RM 697,800 – RM 960,800 | 883–1227 sq ft | 3–4 bed | Avaland (Next Delta Sdn Bhd) | Under Construction 2027 | https://shyanyee.com/projects/amika-residence
+- Core Residence @ TRX | TRX / Bukit Bintang | Serviced Apartment | Freehold | Tower 1&2: RM 1.5M–1.75M; Tower 3: RM 2.01M–4.66M | 622–1572 sq ft | 1–3 bed | Core Precious Development Sdn Bhd | Ready To Move 2025 | https://shyanyee.com/projects/core-residence-trx
 - Alora Residence | USJ / Subang Jaya | Serviced Apartment | Freehold | RM 470,800 – RM 995,800 (Gross) | 568–1457 sq ft | 1–4 bed | Avaland (USJ Citypoint Sdn Bhd) | Under Construction 2027 | https://shyanyee.com/projects/alora-residence
+- Amika Residence | USJ / Subang Jaya | Serviced Apartment | Freehold | RM 697,800 – RM 960,800 | 883–1227 sq ft | 3–4 bed | Avaland (Next Delta Sdn Bhd) | Under Construction 2027 | https://shyanyee.com/projects/amika-residence
 - Mosaic | USJ / Subang Jaya | Serviced Apartment | Freehold | RM 577K to RM 1.2Mil | 557–1509 sq ft | 1–3 bed | SCP | Under Construction 2029 | https://shyanyee.com/projects/mosaic
 
 ## Guides & articles (15)
