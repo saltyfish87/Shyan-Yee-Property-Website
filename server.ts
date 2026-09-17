@@ -2819,6 +2819,11 @@ app.get("/robots.txt", (req, res) => {
   res.sendFile(path.join(process.cwd(), "public", "robots.txt"));
 });
 
+app.get("/llms.txt", (req, res) => {
+  res.type("text/plain");
+  res.sendFile(path.join(process.cwd(), "public", "llms.txt"));
+});
+
 // Helper to generate dynamic, SEO-optimized XML sitemaps for search engines and AI web crawlers
 function generateSitemapXml(projects: any[], blogs: any[]): string {
   const baseUrl = "https://shyanyee.com";
