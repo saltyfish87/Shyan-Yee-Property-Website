@@ -8,6 +8,8 @@ Allow: /faq
 Allow: /calculator
 Allow: /compare
 Allow: /map
+Allow: /zh
+Allow: /zh/*
 Allow: /sitemap.xml
 
 # Sitemaps

@@ -4135,7 +4135,7 @@
     },
     "layouts": [
       {
-        "image": "https://lh3.googleusercontent.com/d/1Fsz9vpUih5ITYJ-gWCwq1y7Og41ZcnaC=w1000",
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
         "typeName": "Type A",
         "size": 657,
         "beds": 2,
@@ -4145,18 +4145,8 @@
         "isEnriched": false
       },
       {
-        "image": "https://lh3.googleusercontent.com/d/1SyrjvBhBDMyaDluUUm4pQJhD-FF_Q5rk=w1000",
-        "typeName": "Type A",
-        "size": 768,
-        "beds": 2,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 526027,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/10C_MUfl3nwnBsqWzMtMNkAC3d6rmQFhM=w1000",
-        "typeName": "Type B1",
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
         "size": 879,
         "beds": 3,
         "baths": 2,
@@ -4165,17 +4155,7 @@
         "isEnriched": false
       },
       {
-        "image": "https://lh3.googleusercontent.com/d/19k4HCSATzeyH0tmX-RLd11dHtjDbXYVS=w1000",
-        "typeName": "Type B3",
-        "size": 989,
-        "beds": 3,
-        "baths": 2,
-        "carParks": 1,
-        "estPrice": 552329,
-        "isEnriched": false
-      },
-      {
-        "image": "https://lh3.googleusercontent.com/d/1lHrmoZcfxLxJKVgzEubhNuszabuOydwL=w1000",
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
         "typeName": "Type C",
         "size": 1100,
         "beds": 3,
@@ -7432,5 +7412,819 @@
     ],
     "latitude": 3.0494,
     "longitude": 101.5978
+  },
+  {
+    "id": "kingswoodz-bukit-jalil",
+    "name": "The Kingswoodz @ Bukit Jalil",
+    "developer": "EXSIM Jalil Link Sdn Bhd",
+    "location": "Jalan Jalil Perkasa 1, Bukit Jalil, Kuala Lumpur",
+    "area": "Bukit Jalil",
+    "startingPrice": 422500,
+    "startingPriceFormatted": "RM 422,500",
+    "priceRange": "RM 422,500 – RM 766,800",
+    "builtUpMin": 474,
+    "builtUpMax": 904,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "tenure": "Leasehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "New Launch",
+    "completionYear": "2028",
+    "maintenanceFee": 0.42,
+    "maintenanceFeeStr": "RM 0.42 psf (incl. sinking fund)",
+    "totalUnits": "1,558 (Tower A, B & C)",
+    "images": {
+      "overview": [
+        "https://lh3.googleusercontent.com/d/1FnnOQ6sJlosq3nA9pksNcyylBlpNqGut=w1000",
+        "https://lh3.googleusercontent.com/d/1b2w3wss5365AM_l66TWcXOjRnDSFLXzc=w1000",
+        "https://lh3.googleusercontent.com/d/1nTRaBrO1obirsbyinGftgvoh--_ULir7=w1000",
+        "https://lh3.googleusercontent.com/d/1R1NMbYxR1B7hepykALkJ-cmT6w1nl4ys=w1000"
+      ],
+      "location": [
+        "https://lh3.googleusercontent.com/d/10fm22qKXNacc05GdH7neugI1NnQV0-3g=w1000"
+      ],
+      "layout": [
+        "https://lh3.googleusercontent.com/d/1mxcsOGVzqwQUPuTczP0oAGcRjM9L9euB=w1000",
+        "https://lh3.googleusercontent.com/d/1wjKFcYHPh37cqH9jWlLdX1axQu2AYhWF=w1000",
+        "https://lh3.googleusercontent.com/d/1y-mdwEsASfhaPHb-CJ_6JzFbqbkYeXAP=w1000",
+        "https://lh3.googleusercontent.com/d/1GoQkum76DQR-pJ9P9cBmLdB-jnpwOM9w=w1000"
+      ],
+      "gallery": [
+        "https://lh3.googleusercontent.com/d/1X2Th68_wKOuaqb7CGaZs7cFGA8AacVoY=w1000",
+        "https://lh3.googleusercontent.com/d/1I3SZNKkrnLV2zeWBcb52z0uAthnUriBd=w1000",
+        "https://lh3.googleusercontent.com/d/1p_CtmWEBJoGuMbXaX8vvBFtKFvLtZT5C=w1000",
+        "https://lh3.googleusercontent.com/d/1Z1jcM54iaFKj50-rdB8FKuhYMuh0_gZ7=w1000",
+        "https://lh3.googleusercontent.com/d/1Wpy5VSGPlyHCr8bHPZL4GohPLoCgBeOY=w1000",
+        "https://lh3.googleusercontent.com/d/13DvnOcQS__kCpLbfxltMfZtqHSL__QiO=w1000",
+        "https://lh3.googleusercontent.com/d/1GordPnvWzzs6VzHIVkwoDIgZlQBnvx0z=w1000",
+        "https://lh3.googleusercontent.com/d/1yjDezKAHQ22rvrkopg3cWjFBmbW-9Ayp=w1000",
+        "https://lh3.googleusercontent.com/d/1l26WvkLC-mmLPTHtY5sVn6uCQk3nNeHT=w1000",
+        "https://lh3.googleusercontent.com/d/1_bzmF7X2yw5y11iLn1L2-79H9pYVhkPV=w1000"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1mxcsOGVzqwQUPuTczP0oAGcRjM9L9euB=w1000",
+        "typeName": "Type A1",
+        "size": 474,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 422500,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1wjKFcYHPh37cqH9jWlLdX1axQu2AYhWF=w1000",
+        "typeName": "Type B1",
+        "size": 617,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 479858,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1y-mdwEsASfhaPHb-CJ_6JzFbqbkYeXAP=w1000",
+        "typeName": "Type C1",
+        "size": 761,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 537618,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1GoQkum76DQR-pJ9P9cBmLdB-jnpwOM9w=w1000",
+        "typeName": "Type C2",
+        "size": 904,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 594976,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.0587357,
+    "longitude": 101.672585
+  },
+  {
+    "id": "gen-sphere",
+    "name": "Gen Sphere",
+    "developer": "Majestic Gen Sdn Bhd",
+    "location": "Jalan Serampang, Taman Sri Tebrau, Johor Bahru",
+    "area": "Johor Bahru",
+    "startingPrice": 550000,
+    "startingPriceFormatted": "RM 550,000",
+    "priceRange": "RM 550,000 – RM 1,000,000",
+    "builtUpMin": 459,
+    "builtUpMax": 755,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "tenure": "Freehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "Under Construction",
+    "completionYear": "2029",
+    "maintenanceFee": 0.35,
+    "maintenanceFeeStr": "RM 0.35 psf",
+    "totalUnits": "996",
+    "images": {
+      "overview": [
+        "https://lh3.googleusercontent.com/d/1IKd_70pU4RmUgRY-IOxsKKP3ss8iqUdQ=w1000"
+      ],
+      "location": [
+        "https://lh3.googleusercontent.com/d/1j7iBQzMRwodw2DWHfZLq2Ru1N9xImu3X=w1000"
+      ],
+      "layout": [
+        "https://lh3.googleusercontent.com/d/1GBjoHcBIjdGjIt83BI4h9M8JhB21c9Hv=w1000",
+        "https://lh3.googleusercontent.com/d/1rs2YKcKk7NGJsHo9hfhVa5AeMzo13rFL=w1000",
+        "https://lh3.googleusercontent.com/d/1OJ0E6-fUafLNqgk9CDcwqFhEbmv5F8dI=w1000",
+        "https://lh3.googleusercontent.com/d/1x9Xhz72ExeezMjphI-sX47msPYv3W5am=w1000",
+        "https://lh3.googleusercontent.com/d/1-KcEeO2kvSwq2c1d3Y-OWpEw7ubQyLpL=w1000"
+      ],
+      "gallery": [
+        "https://lh3.googleusercontent.com/d/1MUmp-6JARGUUbUPs5Fp-mD3_toDAmEv_=w1000",
+        "https://lh3.googleusercontent.com/d/1hI_iq7AjvdWAQ0HREreOKm4ZMe6pVDDZ=w1000",
+        "https://lh3.googleusercontent.com/d/11NJHvs-M7clvPap24TQy1dUQqQbzpVEl=w1000"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1GBjoHcBIjdGjIt83BI4h9M8JhB21c9Hv=w1000",
+        "typeName": "Type A",
+        "size": 495,
+        "beds": 1,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 593137,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1rs2YKcKk7NGJsHo9hfhVa5AeMzo13rFL=w1000",
+        "typeName": "Type B",
+        "size": 551,
+        "beds": 1,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 599608,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1OJ0E6-fUafLNqgk9CDcwqFhEbmv5F8dI=w1000",
+        "typeName": "Type C",
+        "size": 652,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 654069,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1-KcEeO2kvSwq2c1d3Y-OWpEw7ubQyLpL=w1000",
+        "typeName": "Type E",
+        "size": 700,
+        "beds": 1,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 679951,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1x9Xhz72ExeezMjphI-sX47msPYv3W5am=w1000",
+        "typeName": "Type D",
+        "size": 755,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 709608,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 1.461163,
+    "longitude": 103.767715
+  },
+  {
+    "id": "m-grand-minori",
+    "name": "M Grand Minori",
+    "developer": "Mah Sing Group Bhd",
+    "location": "Jalan Austin Perdana, Taman Austin Perdana, Johor Bahru",
+    "area": "Johor Bahru",
+    "startingPrice": 300000,
+    "startingPriceFormatted": "RM 300,000",
+    "priceRange": "RM 300,000 – RM 800,000",
+    "builtUpMin": 403,
+    "builtUpMax": 835,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "tenure": "Freehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "Under Construction",
+    "completionYear": "2030",
+    "maintenanceFee": 0.4,
+    "maintenanceFeeStr": "RM 0.40 psf (excl. sinking fund)",
+    "totalUnits": "1,733",
+    "images": {
+      "overview": [
+        "https://lh3.googleusercontent.com/d/1ZnsexyKQpEmg0x45RsMuBJYfIiz340ON=w1000"
+      ],
+      "location": [
+        "https://lh3.googleusercontent.com/d/1Jc0MjcvOPTThaQqgPndGKwx_c6BCxb45=w1000"
+      ],
+      "layout": [
+        "https://lh3.googleusercontent.com/d/1yr5vhlvrJo23fkhucEwipEVMB5GinXxO=w1000",
+        "https://lh3.googleusercontent.com/d/1hFQ5l7nSOIHR1TyOzAMn7uME3aLBTENM=w1000",
+        "https://lh3.googleusercontent.com/d/1g47_DEIuJhj-_C4304Wxpkpl-wWoAwQO=w1000",
+        "https://lh3.googleusercontent.com/d/1wSqI_mHPUt8KRTHt0uZD-jG9iAyNDEUN=w1000",
+        "https://lh3.googleusercontent.com/d/1fDeM_bNVgE-3RRNB21LCtVy5tV_ZgCMX=w1000",
+        "https://lh3.googleusercontent.com/d/1SKPNHYaOxwPN6qoaf-QLY32cZXCiFVvF=w1000"
+      ],
+      "gallery": [
+        "https://lh3.googleusercontent.com/d/1yENhncoHGZDKPjBJfUGroGPJiLOKcZZT=w1000",
+        "https://lh3.googleusercontent.com/d/1bwO3z4fQK2ogcPN8fyDJzbOqGS3OScqM=w1000",
+        "https://lh3.googleusercontent.com/d/1bwvRffSaVFia0OxteEtWY6qkTVo7alpq=w1000",
+        "https://lh3.googleusercontent.com/d/1WZ4uIz4xJEkh6PNS-8Z64bgyS-9br_63=w1000",
+        "https://lh3.googleusercontent.com/d/1YTqy6-zJm0EgCGoSfeXuHFifndedlsSm=w1000",
+        "https://lh3.googleusercontent.com/d/1DOBwhvbWCPM83iHhdK7XFFmOldSGXXBn=w1000",
+        "https://lh3.googleusercontent.com/d/1PM15_CgrK3bC9Un37vx9GUnv4VarYwFI=w1000",
+        "https://lh3.googleusercontent.com/d/1wJ4M_Uhoj2gZClVdsi2dg0MfJkshpddX=w1000",
+        "https://lh3.googleusercontent.com/d/10IFmMt2QDyz-x59oK7ET5_5b4eCzUvGG=w1000",
+        "https://lh3.googleusercontent.com/d/1bq8Qlfp14GM-RgAVrMXvGinYQA5jbhOZ=w1000"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1yr5vhlvrJo23fkhucEwipEVMB5GinXxO=w1000",
+        "typeName": "Type A",
+        "size": 403,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 300000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1hFQ5l7nSOIHR1TyOzAMn7uME3aLBTENM=w1000",
+        "typeName": "Type B",
+        "size": 489,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 328809,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g47_DEIuJhj-_C4304Wxpkpl-wWoAwQO=w1000",
+        "typeName": "Type C",
+        "size": 576,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 357953,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1wSqI_mHPUt8KRTHt0uZD-jG9iAyNDEUN=w1000",
+        "typeName": "Type D",
+        "size": 662,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 386762,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1fDeM_bNVgE-3RRNB21LCtVy5tV_ZgCMX=w1000",
+        "typeName": "Type D1",
+        "size": 749,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 415906,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1SKPNHYaOxwPN6qoaf-QLY32cZXCiFVvF=w1000",
+        "typeName": "Type E",
+        "size": 835,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 444715,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 1.478763,
+    "longitude": 103.773228
+  },
+  {
+    "id": "princess-cove-rnf-phase-2",
+    "name": "Princess Cove RNF Phase 2",
+    "developer": "R&F Development Sdn Bhd",
+    "location": "Jalan Tanjung Puteri 1, R&F Tanjung Puteri, Johor Bahru",
+    "area": "Johor Bahru",
+    "startingPrice": 690000,
+    "startingPriceFormatted": "RM 690,000",
+    "priceRange": "RM 690,000 – RM 3,400,000",
+    "builtUpMin": 471,
+    "builtUpMax": 1471,
+    "bedroomsMin": 1,
+    "bedroomsMax": 4,
+    "tenure": "Freehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "Ready To Move",
+    "completionYear": "2023",
+    "maintenanceFee": 0.42,
+    "maintenanceFeeStr": "RM 0.42 psf (incl. sinking fund)",
+    "totalUnits": "3,724",
+    "images": {
+      "overview": [
+        "https://lh3.googleusercontent.com/d/1jZxjEJT5dO2l1iWeVVkNN8x_ysYOBB3D=w1000"
+      ],
+      "location": [
+        "https://lh3.googleusercontent.com/d/1DM0rt04AJ5QYmkQEJg04P_5QDEd8CaLu=w1000"
+      ],
+      "layout": [
+        "https://lh3.googleusercontent.com/d/1B3Rp-z3i-aC_Sq10tYLHBqCfntWVxGhZ=w1000",
+        "https://lh3.googleusercontent.com/d/1tInFGIpDAkMvGWrG4kqz7K_-ZaHADdi3=w1000",
+        "https://lh3.googleusercontent.com/d/1w_qIALtmqPTnT16sZjtyGLKgkF6raxdf=w1000",
+        "https://lh3.googleusercontent.com/d/1PaOcxunYGGiEQQrv6yLOdhF02_iWiz6B=w1000",
+        "https://lh3.googleusercontent.com/d/1eYTOAStCGjb0mXD247gvFVSADPRvpOKN=w1000",
+        "https://lh3.googleusercontent.com/d/1f9AeGgLdbYRcB2ldacD__EkL8BcUbaJI=w1000",
+        "https://lh3.googleusercontent.com/d/11ZrEPpgkudpd2-TOiEsXoH-1Nx3VcKg5=w1000",
+        "https://lh3.googleusercontent.com/d/1Ov0i3B4IJVa_S0ryTG-imcrgFHkMyfNp=w1000",
+        "https://lh3.googleusercontent.com/d/10UffmJdmpM6KNi3ce0_HVudR9Zt85M9Z=w1000",
+        "https://lh3.googleusercontent.com/d/1e6dHDFHIcKUqpCX5ZLCKndvOsmeOxg6l=w1000",
+        "https://lh3.googleusercontent.com/d/1Fk5ChTgJ6O0Tg95wUAF0XAllMd1yNnV_=w1000",
+        "https://lh3.googleusercontent.com/d/178icqHZHEoEwI5A7-6pCwuXlbIaCSNP-=w1000",
+        "https://lh3.googleusercontent.com/d/1mNs1Bnfr2PzBduwEFsfudfAEf2iwdrXW=w1000",
+        "https://lh3.googleusercontent.com/d/1zwoUWCm2rkzalJW5GAwOE_uTYZfBT-zI=w1000"
+      ],
+      "gallery": [
+        "https://lh3.googleusercontent.com/d/1F2fBfoaKc68Szx4tYLnf6LiXO_yJl-pK=w1000",
+        "https://lh3.googleusercontent.com/d/1xQ5Afu4voBu6NMcFjzFfwhzsvJj87ZwL=w1000",
+        "https://lh3.googleusercontent.com/d/1EtZixYbvT-34KYucTMDakQeiqh5JdEDo=w1000",
+        "https://lh3.googleusercontent.com/d/1DQ2vijh9lJxxHtQ1-SiqZy7hwo1j_vZf=w1000",
+        "https://lh3.googleusercontent.com/d/1HFXQ1Q4nI4xnQ-LCXDwN49rtWobn9Fr0=w1000",
+        "https://lh3.googleusercontent.com/d/13gM7cGXP_U9wAc7qfrYgC1-OkoVQnKgB=w1000",
+        "https://lh3.googleusercontent.com/d/1Dn292u0cFowdA_esZcQ78-wL-TMTytWP=w1000",
+        "https://lh3.googleusercontent.com/d/1PceoajfSn4UEtvMFGyZPFDVvyI0jU6-a=w1000",
+        "https://lh3.googleusercontent.com/d/1I3XUXBSB4JEVi9HqBNenasD3dWZYBreF=w1000",
+        "https://lh3.googleusercontent.com/d/1Oqpy7wL61a1Hb50X-XTmmUfdWj5BQsGU=w1000",
+        "https://lh3.googleusercontent.com/d/1vpdfv9w43B27gefn7zeiiSMq4La_AItS=w1000",
+        "https://lh3.googleusercontent.com/d/1pIRdRpmIpW3OqN3IyTYeBXqiZWusH-6z=w1000"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1B3Rp-z3i-aC_Sq10tYLHBqCfntWVxGhZ=w1000",
+        "typeName": "Type A",
+        "size": 471,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 690000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1w_qIALtmqPTnT16sZjtyGLKgkF6raxdf=w1000",
+        "typeName": "Type D",
+        "size": 471,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 690000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/178icqHZHEoEwI5A7-6pCwuXlbIaCSNP-=w1000",
+        "typeName": "Type V6",
+        "size": 544,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 796943,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1zwoUWCm2rkzalJW5GAwOE_uTYZfBT-zI=w1000",
+        "typeName": "Type V7M",
+        "size": 767,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 885134,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1mNs1Bnfr2PzBduwEFsfudfAEf2iwdrXW=w1000",
+        "typeName": "Type V7",
+        "size": 798,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 905570,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1Fk5ChTgJ6O0Tg95wUAF0XAllMd1yNnV_=w1000",
+        "typeName": "Type V5",
+        "size": 828,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 925347,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/10UffmJdmpM6KNi3ce0_HVudR9Zt85M9Z=w1000",
+        "typeName": "Type N",
+        "size": 834,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 929303,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1e6dHDFHIcKUqpCX5ZLCKndvOsmeOxg6l=w1000",
+        "typeName": "Type U1",
+        "size": 838,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 931939,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1eYTOAStCGjb0mXD247gvFVSADPRvpOKN=w1000",
+        "typeName": "Type G",
+        "size": 933,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 994567,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/11ZrEPpgkudpd2-TOiEsXoH-1Nx3VcKg5=w1000",
+        "typeName": "Type M1",
+        "size": 1105,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 2,
+        "estPrice": 1107955,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1Ov0i3B4IJVa_S0ryTG-imcrgFHkMyfNp=w1000",
+        "typeName": "Type M1",
+        "size": 1135,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 2,
+        "estPrice": 1127732,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1tInFGIpDAkMvGWrG4kqz7K_-ZaHADdi3=w1000",
+        "typeName": "Type A",
+        "size": 1180,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 2,
+        "estPrice": 1157398,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1PaOcxunYGGiEQQrv6yLOdhF02_iWiz6B=w1000",
+        "typeName": "Type E",
+        "size": 1317,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1247713,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1f9AeGgLdbYRcB2ldacD__EkL8BcUbaJI=w1000",
+        "typeName": "Type H1",
+        "size": 1471,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1349236,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 1.458005,
+    "longitude": 103.771117
+  },
+  {
+    "id": "princess-cove-rnf-phase-3",
+    "name": "Princess Cove RNF Phase 3",
+    "developer": "R&F Development Sdn Bhd",
+    "location": "Jalan Tanjung Puteri 1, R&F Tanjung Puteri, Johor Bahru",
+    "area": "Johor Bahru",
+    "startingPrice": 720000,
+    "startingPriceFormatted": "RM 720,000",
+    "priceRange": "RM 720,000 – RM 3,100,000",
+    "builtUpMin": 314,
+    "builtUpMax": 1556,
+    "bedroomsMin": 1,
+    "bedroomsMax": 5,
+    "tenure": "Freehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "Under Construction",
+    "completionYear": "2027",
+    "maintenanceFee": 0.42,
+    "maintenanceFeeStr": "RM 0.42 psf (incl. sinking fund)",
+    "totalUnits": "4,385",
+    "images": {
+      "overview": [
+        "https://lh3.googleusercontent.com/d/15ZHwJA3I2W-xZyek1wxWYazE226ox9mK=w1000",
+        "https://lh3.googleusercontent.com/d/1LGQNJd0leDzUWEkZ8WJ1TjrWwnbu2QlV=w1000"
+      ],
+      "location": [
+        "https://lh3.googleusercontent.com/d/1SD1wiXzHmXr2McXJKkzV9tzj-EkjS1rj=w1000"
+      ],
+      "layout": [
+        "https://lh3.googleusercontent.com/d/1emvXigql078jHii1X-WpONk0ON_1ylm4=w1000",
+        "https://lh3.googleusercontent.com/d/13ks26wJJ0fkQ7uIveW16xKFFrwBlWqO8=w1000",
+        "https://lh3.googleusercontent.com/d/1iGwCD-r28w-lGrFTu2MDGreAh7P_y6kN=w1000",
+        "https://lh3.googleusercontent.com/d/1WqBrnA3F9plYRKxgSNhiOMyAxqNTGkP-=w1000",
+        "https://lh3.googleusercontent.com/d/1aaUceVc1-kXO9vgjFG2Lhuodap5nOoDz=w1000",
+        "https://lh3.googleusercontent.com/d/156xmA-X_fyFHGfpWaN5311SC4G2qfrFR=w1000",
+        "https://lh3.googleusercontent.com/d/1PcENX_L-872rfoCpkDm0ZVNMqt1pxdvS=w1000",
+        "https://lh3.googleusercontent.com/d/1moK1wP18G_hg0JWFcQFkOkQ0T9d3lWug=w1000",
+        "https://lh3.googleusercontent.com/d/1MVqOqR1z-S9oNuTWOS0ca2cpoyZsy-JH=w1000",
+        "https://lh3.googleusercontent.com/d/1pHMCQREJnEm12VM_FZBZ-ggeKn9eZdlE=w1000",
+        "https://lh3.googleusercontent.com/d/1P9bYiJowJ7yA5A00lzSE-i4sTdoIk0al=w1000",
+        "https://lh3.googleusercontent.com/d/1jtKMyYr4RCZ2BqaDVQRE902d1o8kRzUa=w1000",
+        "https://lh3.googleusercontent.com/d/1hgspzZC1ibOHeszjJhKrn8aDuMMAnm-H=w1000",
+        "https://lh3.googleusercontent.com/d/1VgNyUtEDwryVLGjWl1hGqqxgJMKcywIX=w1000",
+        "https://lh3.googleusercontent.com/d/1Wx45C5gzJLj_0KgebDX1Zd5CRROk4IQu=w1000",
+        "https://lh3.googleusercontent.com/d/1pig_azJwTxOILOTC3KObGrcDW5KKIpUZ=w1000",
+        "https://lh3.googleusercontent.com/d/1SSadZocrQjwOs9We7aien4wux1L3a7On=w1000",
+        "https://lh3.googleusercontent.com/d/1bPF54f2M9NLRK73YObODh1sroOGgys3K=w1000",
+        "https://lh3.googleusercontent.com/d/1sfon8PWE35CIg-D_YntH1U5tTAm4-JBS=w1000",
+        "https://lh3.googleusercontent.com/d/1N1tcLdOJrIPLAyF218uZm6Ywr0MuFtxj=w1000",
+        "https://lh3.googleusercontent.com/d/1TlQbPi6RGt3fNd0y9waNK6GUYAaRurd4=w1000",
+        "https://lh3.googleusercontent.com/d/18OQvXFCF19k7yOePmPlVETCdQZOW_DnA=w1000",
+        "https://lh3.googleusercontent.com/d/1ZNEGDfh1mal2m_ZvqV9eophEWTiTNOmo=w1000",
+        "https://lh3.googleusercontent.com/d/1KiHp6tKgQS6Z_bub0EE8HwlK-RZOMnb5=w1000"
+      ],
+      "gallery": [
+        "https://lh3.googleusercontent.com/d/1SmCIdmvOEyWAbis0rmW3Y8sr6FO3iyxC=w1000",
+        "https://lh3.googleusercontent.com/d/1Hoo2nbPtGiLPtnSDxZsOe-4HDTl7upnb=w1000",
+        "https://lh3.googleusercontent.com/d/1oxoeKHcYKv_zylr6663BcGKrrq-kFLJF=w1000",
+        "https://lh3.googleusercontent.com/d/1deM0QwAWaWBK_vRwcPKHCqOhNYkKo-f1=w1000",
+        "https://lh3.googleusercontent.com/d/1s4geKND8rkVK0mgcEGolwvHvRPNnKBeJ=w1000",
+        "https://lh3.googleusercontent.com/d/1PbT2YkFcB6A2G1vKzSIUaIi_UArdAdNq=w1000",
+        "https://lh3.googleusercontent.com/d/1jDJSyywuy-CaLgta1GyOYyVrxr63sAmq=w1000"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1emvXigql078jHii1X-WpONk0ON_1ylm4=w1000",
+        "typeName": "Type A",
+        "size": 314,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 720000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/13ks26wJJ0fkQ7uIveW16xKFFrwBlWqO8=w1000",
+        "typeName": "Type B1",
+        "size": 368,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 843822,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1iGwCD-r28w-lGrFTu2MDGreAh7P_y6kN=w1000",
+        "typeName": "Type B1A",
+        "size": 422,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 831439,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1WqBrnA3F9plYRKxgSNhiOMyAxqNTGkP-=w1000",
+        "typeName": "Type B1B",
+        "size": 476,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 887159,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1aaUceVc1-kXO9vgjFG2Lhuodap5nOoDz=w1000",
+        "typeName": "Type B2",
+        "size": 530,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 942879,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/156xmA-X_fyFHGfpWaN5311SC4G2qfrFR=w1000",
+        "typeName": "Type B3",
+        "size": 584,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 998599,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1PcENX_L-872rfoCpkDm0ZVNMqt1pxdvS=w1000",
+        "typeName": "Type B3A",
+        "size": 638,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 1054318,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1moK1wP18G_hg0JWFcQFkOkQ0T9d3lWug=w1000",
+        "typeName": "Type B3B",
+        "size": 692,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1110038,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1MVqOqR1z-S9oNuTWOS0ca2cpoyZsy-JH=w1000",
+        "typeName": "Type B3C",
+        "size": 746,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 3,
+        "estPrice": 1165758,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1pHMCQREJnEm12VM_FZBZ-ggeKn9eZdlE=w1000",
+        "typeName": "Type C",
+        "size": 800,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1221478,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1P9bYiJowJ7yA5A00lzSE-i4sTdoIk0al=w1000",
+        "typeName": "Type C1",
+        "size": 854,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1277197,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1jtKMyYr4RCZ2BqaDVQRE902d1o8kRzUa=w1000",
+        "typeName": "Type C3",
+        "size": 908,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1332917,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1hgspzZC1ibOHeszjJhKrn8aDuMMAnm-H=w1000",
+        "typeName": "Type C3A",
+        "size": 962,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1388637,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1VgNyUtEDwryVLGjWl1hGqqxgJMKcywIX=w1000",
+        "typeName": "Type C3B",
+        "size": 1016,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1444357,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1Wx45C5gzJLj_0KgebDX1Zd5CRROk4IQu=w1000",
+        "typeName": "Type C4",
+        "size": 1070,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1500076,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1pig_azJwTxOILOTC3KObGrcDW5KKIpUZ=w1000",
+        "typeName": "Type C4A",
+        "size": 1124,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 2,
+        "estPrice": 1555796,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1SSadZocrQjwOs9We7aien4wux1L3a7On=w1000",
+        "typeName": "Type C4B",
+        "size": 1178,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 2,
+        "estPrice": 1611516,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1bPF54f2M9NLRK73YObODh1sroOGgys3K=w1000",
+        "typeName": "Type C4C",
+        "size": 1232,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 4,
+        "estPrice": 1667236,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1sfon8PWE35CIg-D_YntH1U5tTAm4-JBS=w1000",
+        "typeName": "Type C5",
+        "size": 1286,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1722955,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1N1tcLdOJrIPLAyF218uZm6Ywr0MuFtxj=w1000",
+        "typeName": "Type D1",
+        "size": 1340,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1778675,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1TlQbPi6RGt3fNd0y9waNK6GUYAaRurd4=w1000",
+        "typeName": "Type D2",
+        "size": 1394,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1834395,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/18OQvXFCF19k7yOePmPlVETCdQZOW_DnA=w1000",
+        "typeName": "Type D3",
+        "size": 1448,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1890115,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1ZNEGDfh1mal2m_ZvqV9eophEWTiTNOmo=w1000",
+        "typeName": "Type D3A",
+        "size": 1502,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1945834,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1KiHp6tKgQS6Z_bub0EE8HwlK-RZOMnb5=w1000",
+        "typeName": "Type E",
+        "size": 1556,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 2001554,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 1.461113,
+    "longitude": 103.770557
   }
 ]

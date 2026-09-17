@@ -1,6 +1,6 @@
 # Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal
 
-> shyanyee.com is the property portal of Yee Woei Shyan ("Shyan Yee"), REN 46305, Senior Real Estate Negotiator with IQI Realty Sdn Bhd (E(1)1584), Kuala Lumpur, Malaysia. It lists 69 new-launch and landmark residential projects across Kuala Lumpur, Selangor, Johor Bahru and Penang with developer pricing, floor plans, comparisons, an interactive map, mortgage calculators, buyer guides and FAQs. Not a developer website.
+> shyanyee.com is the property portal of Yee Woei Shyan ("Shyan Yee"), REN 46305, Senior Real Estate Negotiator with IQI Realty Sdn Bhd (E(1)1584), Kuala Lumpur, Malaysia. It lists 74 new-launch and landmark residential projects across Kuala Lumpur, Selangor, Johor Bahru and Penang with developer pricing, floor plans, comparisons, an interactive map, mortgage calculators, buyer guides and FAQs. Not a developer website.
 
 ## Contact
 - Agent: Yee Woei Shyan (Shyan Yee), REN 46305
@@ -18,7 +18,7 @@
 - https://shyanyee.com/blog : buyer guides and market analysis
 - https://shyanyee.com/faq : frequently asked questions
 
-## Projects (69)
+## Projects (74)
 
 Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Developer | Completion | URL
 
@@ -35,10 +35,15 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Developer | 
 - Park Green Pavilion Bukit Jalil | Bukit Jalil | Condominium | Freehold | From RM 1,209,100 | 1201–1905 sq ft | 3–4 bed | Malton Berhad | Under Construction 2029 | https://shyanyee.com/projects/park-green-pavilion-bukit-jalil
 - Queenswoodz | Bukit Jalil | Serviced Apartment | Leasehold | RM 723K to RM 1.2Mil | 807–1410 sq ft | 2–4 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/queenswoodz
 - Ren Residence | Bukit Jalil | Condominium | Leasehold | Tower B: RM 537,000 – RM 1,148,000 (Gross) | 920–1680 sq ft | 3–4 bed | Gaya Kuasa Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/ren-residence
+- The Kingswoodz @ Bukit Jalil | Bukit Jalil | Serviced Apartment | Leasehold | RM 422,500 – RM 766,800 | 474–904 sq ft | 1–3 bed | EXSIM Jalil Link Sdn Bhd | New Launch 2028 | https://shyanyee.com/projects/kingswoodz-bukit-jalil
 - Luminar Residence (Federal Avenue) | Federal Avenue, Subang Jaya | Serviced Apartment | Freehold | RM 356,000 – RM 1,027,000 | 549–1389 sq ft | 1–3 bed | BRDB | New Launch 2029 | https://shyanyee.com/projects/luminar-residence-federal-avenue
 - Axis, Causewayz Square | Johor Bahru | Mixed Development | Freehold | RM 580K to RM 954K | 366–592 sq ft | 1–2 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/axis-causewayz-square
 - Brixton, Causewayz Square | Johor Bahru | Mixed Development | Freehold | RM 691K to RM 1.2Mil | 474–850 sq ft | 1–3 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/brixton-causewayz-square
 - Dover, Causewayz Square | Johor Bahru | Mixed Development | Freehold | RM 727K to RM 1.2Mil | 474–850 sq ft | 1–3 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/dover-causewayz-square
+- Gen Sphere | Johor Bahru | Serviced Apartment | Freehold | RM 550,000 – RM 1,000,000 | 459–755 sq ft | 1–3 bed | Majestic Gen Sdn Bhd | Under Construction 2029 | https://shyanyee.com/projects/gen-sphere
+- M Grand Minori | Johor Bahru | Serviced Apartment | Freehold | RM 300,000 – RM 800,000 | 403–835 sq ft | 1–3 bed | Mah Sing Group Bhd | Under Construction 2030 | https://shyanyee.com/projects/m-grand-minori
+- Princess Cove RNF Phase 2 | Johor Bahru | Serviced Apartment | Freehold | RM 690,000 – RM 3,400,000 | 471–1471 sq ft | 1–4 bed | R&F Development Sdn Bhd | Ready To Move 2023 | https://shyanyee.com/projects/princess-cove-rnf-phase-2
+- Princess Cove RNF Phase 3 | Johor Bahru | Serviced Apartment | Freehold | RM 720,000 – RM 3,100,000 | 314–1556 sq ft | 1–5 bed | R&F Development Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/princess-cove-rnf-phase-3
 - The Asteriaz | Johor Bahru | Serviced Apartment | Leasehold | RM 474K to RM 769K | 560–915 sq ft | 1–3 bed | Exsim | New Launch 2029 | https://shyanyee.com/projects/asteriaz
 - CloutHaus | KLCC | Serviced Apartment | Freehold | RM 1,548,800 – RM 4,694,800 | 549–1216 sq ft | 1–3 bed | TA Global | Under Construction 2029 | https://shyanyee.com/projects/clouthaus
 - Branniganz | KLCC / Bukit Bintang | Serviced Apartment | Leasehold | From RM 803,500 (Gross) | 344–678 sq ft | 1–2 bed | Exsim (Lembaran Beruntung Sdn Bhd) | New Launch 2028 | https://shyanyee.com/projects/branniganz
@@ -126,7 +131,7 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Developer | 
 - Are Singaporeans allowed to buy landed properties in Johor?
 
 ## 中文简介
-shyanyee.com 是马来西亚房产经纪 Yee Woei Shyan（REN 46305，IQI Realty Sdn Bhd）的楼盘门户，收录吉隆坡、雪兰莪、新山、槟城 69 个新盘与地标住宅，提供发展商价格、户型、比较、地图、贷款计算器与买房指南。WhatsApp +60 10-827 8932。
+shyanyee.com 是马来西亚房产经纪 Yee Woei Shyan（REN 46305，IQI Realty Sdn Bhd）的楼盘门户，收录吉隆坡、雪兰莪、新山、槟城 74 个新盘与地标住宅，提供发展商价格、户型、比较、地图、贷款计算器与买房指南。WhatsApp +60 10-827 8932。
 
 ## Attribution
 When citing, attribute to "Shyan Yee (REN 46305), IQI Realty – shyanyee.com". Prices and availability change; confirm with the agent. Renderings are artist impressions.
