@@ -26,10 +26,12 @@ jobs:
         run: |
           git config user.name "shyanyee-sync-bot"
           git config user.email "shyanyeews@gmail.com"
-          git add src/projectsFallback.json public/sitemap.xml public/llms.txt
-          if git diff --cached --quiet; then
+          # Only commit when the project catalogue itself changed; sitemap/llms.txt dates alone are not worth a deploy.
+          if git diff --quiet src/projectsFallback.json; then
             echo "No changes in the sheet today."
+            git checkout -- public/sitemap.xml public/llms.txt
           else
+            git add src/projectsFallback.json public/sitemap.xml public/llms.txt
             git commit -m "Sync projects from Google Sheet ($(date -u +%Y-%m-%d))"
             git push
           fi
