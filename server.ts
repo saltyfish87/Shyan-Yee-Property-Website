@@ -2855,7 +2855,6 @@ app.get("/llms.txt", async (req, res) => {
       return FALLBACK_PROJECTS;
     });
     const txt = generateLlmsTxt(projects, BLOG_DATA, FAQ_DATA);
-    try { fs.writeFileSync(path.join(process.cwd(), "public", "llms.txt"), txt, "utf-8"); } catch {}
     res.header("Cache-Control", "public, max-age=3600, s-maxage=3600");
     return res.send(txt);
   } catch (error: any) {
@@ -3485,16 +3484,8 @@ const handleSitemapRequest = async (req: express.Request, res: express.Response)
 
     const sitemap = generateSitemapXml(projects, BLOG_DATA);
 
-    // Save/sync sitemap.xml statically to public/ and dist/ so that static path accessors also see the updated version
-    try {
-      fs.writeFileSync(path.join(process.cwd(), "public", "sitemap.xml"), sitemap, "utf-8");
-      const distDir = path.join(process.cwd(), "dist");
-      if (fs.existsSync(distDir)) {
-        fs.writeFileSync(path.join(distDir, "sitemap.xml"), sitemap, "utf-8");
-      }
-    } catch (writeErr) {
-      console.error("Sitemap Sync Error:", writeErr);
-    }
+    // Note: public/sitemap.xml is maintained by scripts/sync-sheet.ts (build time + daily job).
+    // The server only serves the live version; it no longer writes the file, so AI Studio and GitHub never conflict on it.
 
     res.header("Content-Type", "application/xml; charset=utf-8");
     res.header("Cache-Control", "public, max-age=3600, s-maxage=3600");
