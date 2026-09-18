@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../LanguageContext';
 import { Youtube, MessageCircle, Mail, Award, CheckCircle2, Star } from 'lucide-react';
+import { VideoGrid } from './VideoShowcase';
+import { Project } from '../types';
 
-export const AgentCard: React.FC = () => {
+interface AgentCardProps {
+  projects?: Project[];
+  onProjectClick?: (project: Project) => void;
+}
+
+export const AgentCard: React.FC<AgentCardProps> = ({ projects, onProjectClick }) => {
   const { t, language } = useLanguage();
   const [subscribed, setSubscribed] = useState(false);
 
@@ -192,6 +199,9 @@ export const AgentCard: React.FC = () => {
             </div>
 
           </div>
+
+          {/* Featured YouTube walkthroughs (Pavilion Square, CloutHaus, Orion) */}
+          <VideoGrid projects={projects} onProjectClick={onProjectClick} />
         </div>
       </div>
     </section>

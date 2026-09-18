@@ -38,7 +38,6 @@ import CalculatorHub from './components/CalculatorHub';
 import { API_BASE_URL } from './utils/api';
 import projectsFallback from './projectsFallback.json';
 import { getInitialRouteState, localizeUrl, stripZhPrefix } from './utils/router';
-import VideoShowcase from './components/VideoShowcase';
 
 // Lucide icons
 import {
@@ -1029,9 +1028,6 @@ function ClientPortalsOrchestrator() {
                   </div>
                 </section>
 
-                {/* Featured YouTube walkthroughs */}
-                <VideoShowcase projects={projects} onProjectClick={navigateToProjectDetail} />
-
                 {/* Project Journey Step by Step */}
                 <section className="py-20 bg-slate-50/50 border-t border-b border-slate-100">
                   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1554,8 +1550,8 @@ function ClientPortalsOrchestrator() {
                   </div>
                 </section>
 
-                {/* Meet representative card */}
-                <AgentCard />
+                {/* Meet representative card (with the three featured YouTube walkthroughs) */}
+                <AgentCard projects={projects} onProjectClick={navigateToProjectDetail} />
 
                 {/* Rotating Project Showcase Slideshow */}
                 <ProjectSlideshow projects={projects} onProjectClick={navigateToProjectDetail} />
