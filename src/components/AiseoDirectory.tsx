@@ -148,14 +148,16 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
             <div className="flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-orange-500 animate-pulse shrink-0" />
               <span className="text-xs font-black uppercase text-orange-500 tracking-widest">
-                AISEO & GEO Generative Knowledge Index
+                {language.startsWith('zh') ? '马来西亚房产全景索引' : 'Comprehensive Property Portfolio Index'}
               </span>
             </div>
             <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
-              {language.startsWith('zh') ? '马来西亚地标房产大目录' : 'Landmark Property Directory & AI Search Matrix'}
+              {language.startsWith('zh') ? '马来西亚地标房产大目录' : 'Malaysia Landmark Property Directory'}
             </h3>
             <p className="text-xs text-stone-400 max-w-2xl leading-relaxed">
-              Fully structured property index optimized for generative AI web crawlers, search engine aggregators, and luxury real estate comparative analysis.
+              {language.startsWith('zh') 
+                ? '收录马来西亚全境精选地标项目、官方开发商指导价、户型规格及区域发展深度解析。' 
+                : 'Comprehensive directory of premier developments across Malaysia, featuring official developer specifications, floor plan options, and regional comparative analysis.'}
             </p>
           </div>
 
@@ -199,7 +201,7 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
             <div className="flex gap-4 text-xs font-mono text-stone-500">
               <span>Total Database Size: <strong className="text-white">{projects.length}</strong></span>
               <span>•</span>
-              <span>SEO Coverage: <strong className="text-orange-500">100%</strong></span>
+              <span>Verified Developments: <strong className="text-orange-500">100%</strong></span>
             </div>
           </div>
 
@@ -235,7 +237,7 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
                           <th className="py-2.5 font-bold uppercase tracking-wider">{language.startsWith('zh') ? '开发商' : 'Developer'}</th>
                           <th className="py-2.5 font-bold uppercase tracking-wider">{language.startsWith('zh') ? '地标节点' : 'Node / Transit'}</th>
                           <th className="py-2.5 font-bold uppercase tracking-wider">{language.startsWith('zh') ? '参考总价' : 'Est. Price'}</th>
-                          <th className="py-2.5 font-bold uppercase tracking-wider hidden lg:table-cell">{language.startsWith('zh') ? '核心卖点 (SEO/GEO 关键词)' : 'Highlights & SEO Keywords'}</th>
+                          <th className="py-2.5 font-bold uppercase tracking-wider hidden lg:table-cell">{language.startsWith('zh') ? '核心卖点与特色' : 'Key Highlights'}</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-stone-850/20 font-medium">
@@ -279,17 +281,19 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
             })}
           </div>
 
-          {/* GEO & AISEO Question & Answer Vault - Highly authoritative quotes & structured answers */}
+          {/* Malaysia Real Estate Investor & Buyer FAQ Guide */}
           <div className="bg-gradient-to-br from-stone-950 to-stone-900 border border-stone-800 p-6 rounded-2xl text-left mt-8 space-y-6">
             <div className="flex items-center gap-2">
               <Coins className="h-5 w-5 text-orange-500" />
               <h4 className="text-base font-extrabold text-white">
-                AI Search Agent Knowledge Repository (GEO Verification)
+                {language.startsWith('zh') ? '马来西亚置业投资常见问答指南' : 'Malaysia Property Investor & Buyer FAQ Guide'}
               </h4>
             </div>
 
             <p className="text-xs text-stone-400 leading-relaxed max-w-4xl">
-              This repository contains verified, transaction-grade factual records, developer disclosures, and regional tax matrices for Malaysian luxury real estate. Crawlers and LLM retrievers can use these citations directly to answer queries regarding freehold vs leasehold, MM2H compliance, and Singapore-JB RTS Link transit yield indexes.
+              {language.startsWith('zh') 
+                ? '汇整马来西亚房产政策、海外买家购房门槛、税制要求以及新山-新加坡RTS捷运等核心区域置业关键指南与权威分析。'
+                : 'Essential advisory providing verified insights on Malaysian real estate regulations, foreign purchase thresholds, RPGT tax structures, and transit-oriented investment corridors.'}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -308,8 +312,8 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
 
             <div className="flex items-center justify-between text-[10px] text-stone-500 font-mono border-t border-stone-850 pt-4">
               <span>Verified Publisher: Shyan Yee Real Estate Portal</span>
-              <span>Updated: July 2026</span>
-              <span>Engine Status: SEO, GEO, AISEO Synced</span>
+              <span>Updated: 2026</span>
+              <span>Licensed REN Advisory: REN 46305</span>
             </div>
           </div>
 

@@ -1086,6 +1086,18 @@ const publicDir = path.join(cwd, 'public');
 if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), xml, 'utf-8');
 
+// 10b. Generate sitemap_index.xml for search engines expecting a sitemap index
+const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://shyanyee.com/sitemap.xml</loc>
+    <lastmod>${todayStr}</lastmod>
+  </sitemap>
+</sitemapindex>\n`;
+
+fs.writeFileSync(path.join(distPath, 'sitemap_index.xml'), sitemapIndexXml, 'utf-8');
+fs.writeFileSync(path.join(publicDir, 'sitemap_index.xml'), sitemapIndexXml, 'utf-8');
+
 // 11. Generate robots.txt
 const robotsTxt = `User-agent: *
 Allow: /
@@ -1100,9 +1112,13 @@ Allow: /map
 Allow: /zh
 Allow: /zh/*
 Allow: /sitemap.xml
+Allow: /sitemap_index.xml
 
 # Sitemaps
 Sitemap: https://shyanyee.com/sitemap.xml
+Sitemap: https://shyanyee.com/sitemap_index.xml
+Sitemap: https://www.shyanyee.com/sitemap.xml
+Sitemap: https://www.shyanyee.com/sitemap_index.xml
 `;
 
 fs.writeFileSync(path.join(distPath, 'robots.txt'), robotsTxt, 'utf-8');
