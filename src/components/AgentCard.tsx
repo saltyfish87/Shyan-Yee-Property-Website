@@ -38,7 +38,7 @@ export const AgentCard: React.FC<AgentCardProps> = ({ projects, onProjectClick }
                       Shyan Yee
                     </span>
                     <span className="block text-[10px] text-orange-600 font-extrabold uppercase tracking-wider">
-                      REN 46305 • RE/MAX Malaysia Partner
+                      REN 46305 • IQI Realty Sdn Bhd
                     </span>
                   </div>
                 </div>
