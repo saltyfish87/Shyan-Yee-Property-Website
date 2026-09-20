@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { articleDates } from '../lib/markdown';
 import { Project } from '../types';
 import { BLOG_DATA } from '../data';
 import { PRE_TRANSLATED_BLOG_DETAILS } from '../translations';
@@ -762,8 +763,8 @@ export function useSEO({
         "headline": activeArticle.title,
         "description": activeArticle.metaDescription || activeArticle.summary,
         "image": activeArticle.image || "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
-        "datePublished": activeArticle.publishDate || "2026-07-01",
-        "dateModified": activeArticle.publishDate || "2026-07-01",
+        "datePublished": articleDates(activeArticle).published,
+        "dateModified": articleDates(activeArticle).updated,
         "author": {
           "@type": "Person",
           "name": activeArticle.author || "Shyan Yee",

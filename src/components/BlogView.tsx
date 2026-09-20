@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { BlogArticle } from '../types';
 import { BLOG_DATA } from '../data';
+import { renderMarkdown, articleDates, dateLabel, youtubeEmbed, DEFAULT_AUTO_LINKS } from '../lib/markdown';
 import { useLanguage } from '../LanguageContext';
 import { API_BASE_URL } from '../utils/api';
 import { PRE_TRANSLATED_BLOGS, PRE_TRANSLATED_BLOG_DETAILS } from '../translations';
@@ -39,78 +40,6 @@ const ShimmerArticle = () => (
     </div>
   </section>
 );
-
-const renderTextWithFormatting = (text: string, onBlogNavigate: (slug: string) => void) => {
-  const parts = text.split(/\*\*([^\*]+)\*\*/g);
-  return parts.map((part, index) => {
-    if (index % 2 !== 0) {
-      return (
-        <strong key={index} className="font-extrabold text-slate-900 bg-orange-100/50 px-1 py-0.5 rounded leading-none inline">
-          {part}
-        </strong>
-      );
-    }
-    return part.split(' ').map((word, wIdx) => {
-      const cleanWord = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"']/g, "").toLowerCase();
-      if (cleanWord === 'singaporean' || cleanWord === 'singaporeans') {
-        return (
-          <button
-            key={`${index}-${wIdx}`}
-            onClick={() => onBlogNavigate('singaporean-buying-property-in-malaysia')}
-            className="text-[#dc2743] font-extrabold hover:underline cursor-pointer inline"
-          >
-            {word}{' '}
-          </button>
-        );
-      }
-      if (cleanWord === 'foreigner' || cleanWord === 'foreigners') {
-        return (
-          <button
-            key={`${index}-${wIdx}`}
-            onClick={() => onBlogNavigate('foreigner-buying-property-in-malaysia')}
-            className="text-[#dc2743] font-extrabold hover:underline cursor-pointer inline"
-          >
-            {word}{' '}
-          </button>
-        );
-      }
-      if (cleanWord === 'rts') {
-        return (
-          <button
-            key={`${index}-${wIdx}`}
-            onClick={() => onBlogNavigate('rts-johor-bahru-guide')}
-            className="text-[#dc2743] font-extrabold hover:underline cursor-pointer inline"
-          >
-            {word}{' '}
-          </button>
-        );
-      }
-      if (cleanWord === 'johor') {
-        return (
-          <button
-            key={`${index}-${wIdx}`}
-            onClick={() => onBlogNavigate('johor-property-market-outlook')}
-            className="text-[#dc2743] font-extrabold hover:underline cursor-pointer inline"
-          >
-            {word}{' '}
-          </button>
-        );
-      }
-      if (cleanWord === 'tax' || cleanWord === 'taxes' || cleanWord === 'rpgt') {
-        return (
-          <button
-            key={`${index}-${wIdx}`}
-            onClick={() => onBlogNavigate('malaysia-property-taxes-explained')}
-            className="text-[#dc2743] font-extrabold hover:underline cursor-pointer inline"
-          >
-            {word}{' '}
-          </button>
-        );
-      }
-      return word + ' ';
-    });
-  });
-};
 
 export const BlogView: React.FC<BlogViewProps> = ({
   onProjectNavigate,
@@ -270,6 +199,24 @@ export const BlogView: React.FC<BlogViewProps> = ({
   }, [articles, searchQuery, selectedCategory]);
 
   if (activeBlogSlug) {
+    const handleBodyClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+      const target = e.target as HTMLElement;
+      const video = target.closest('.md-video') as HTMLElement | null;
+      if (video && video.dataset.youtube) {
+        e.preventDefault();
+        video.innerHTML = `<iframe src="${youtubeEmbed(video.dataset.youtube)}" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+        return;
+      }
+      const link = target.closest('a') as HTMLAnchorElement | null;
+      if (!link) return;
+      const href = link.getAttribute('href') || '';
+      const path = href.replace(/^https?:\/\/(www\.)?shyanyee\.com/i, '').replace(/^\/zh(?=\/)/, '');
+      const blog = path.match(/^\/blog\/([^/?#]+)/);
+      const proj = path.match(/^\/projects\/([^/?#]+)/);
+      if (blog) { e.preventDefault(); onBlogNavigate(blog[1]); }
+      else if (proj) { e.preventDefault(); onProjectNavigate(proj[1]); }
+    }, [onBlogNavigate, onProjectNavigate]);
+
     if (isLoadingActive || !activeFullArticle) {
       return <ShimmerArticle />;
     }
@@ -298,6 +245,12 @@ export const BlogView: React.FC<BlogViewProps> = ({
                 <Calendar className="h-3.5 w-3.5" />
                 <span>{activeFullArticle.publishDate}</span>
               </div>
+              {activeFullArticle.updatedOn && articleDates(activeFullArticle).updated !== articleDates(activeFullArticle).published && (
+                <div className="flex items-center gap-1" title={articleDates(activeFullArticle).updated}>
+                  <Clock className="h-3.5 w-3.5" />
+                  <span>{language.startsWith('zh') ? '更新于' : 'Updated'} {dateLabel(articleDates(activeFullArticle).updated, language.startsWith('zh') ? 'zh' : 'en')}</span>
+                </div>
+              )}
               <div className="flex items-center gap-1">
                 <Clock className="h-3.5 w-3.5" />
                 <span>{activeFullArticle.readTime}</span>
@@ -327,57 +280,12 @@ export const BlogView: React.FC<BlogViewProps> = ({
               &ldquo;{activeFullArticle.summary}&rdquo;
             </div>
 
-            {/* Markdown styled Content Body */}
-            <div className="space-y-6 text-slate-800 text-[16px] sm:text-[17px] leading-relaxed text-left">
-              {activeFullArticle.content.split('\n\n').map((para, pIdx) => {
-                const trimmed = para.trim();
-                if (!trimmed) return null;
-
-                // Handle Markdown Headers h1, h2, h3 (Strips any double asterisks for headers)
-                if (trimmed.startsWith('# ')) {
-                  return (
-                    <h2 key={pIdx} className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight pt-5 mt-4 border-b border-slate-100 pb-2">
-                      {trimmed.replace('# ', '').replaceAll('**', '')}
-                    </h2>
-                  );
-                }
-                if (trimmed.startsWith('## ')) {
-                  return (
-                    <h3 key={pIdx} className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight pt-4 mt-4">
-                      {trimmed.replace('## ', '').replaceAll('**', '')}
-                    </h3>
-                  );
-                }
-                if (trimmed.startsWith('### ')) {
-                  return (
-                    <h4 key={pIdx} className="text-md sm:text-lg font-black text-[#dc2743] tracking-tight mt-3">
-                      {trimmed.replace('### ', '').replaceAll('**', '')}
-                    </h4>
-                  );
-                }
-
-                // Handle bullet items
-                if (trimmed.startsWith('* ') || trimmed.startsWith('- ')) {
-                  const items = trimmed.split('\n');
-                  return (
-                    <ul key={pIdx} className="list-disc pl-5 space-y-2 text-slate-700 italic">
-                      {items.map((it, itIdx) => (
-                        <li key={itIdx}>
-                          {renderTextWithFormatting(it.replace(/^[\*\-]\s+/, ''), onBlogNavigate)}
-                        </li>
-                      ))}
-                    </ul>
-                  );
-                }
-
-                // Normal Paragraph with beautiful inline formatting & linked highlights
-                return (
-                  <p key={pIdx}>
-                    {renderTextWithFormatting(trimmed, onBlogNavigate)}
-                  </p>
-                );
-              })}
-            </div>
+            {/* Article body: shared markdown renderer (same HTML the prerender ships). Internal links stay in-app. */}
+            <div
+              className="md-body text-slate-800 text-[16px] sm:text-[17px] leading-relaxed text-left"
+              onClick={handleBodyClick}
+              dangerouslySetInnerHTML={{ __html: renderMarkdown(activeFullArticle.content || '', { langPrefix: language.startsWith('zh') ? '/zh' : '', playLabel: language.startsWith('zh') ? '播放视频' : 'Play video', autoLinks: Object.fromEntries(Object.entries(DEFAULT_AUTO_LINKS).filter(([, path]) => !path.endsWith(`/${activeFullArticle.slug}`))) }) }}
+            />
 
             {/* SEO Article Accordion FAQ widgets */}
             {activeFullArticle.faqs && activeFullArticle.faqs.length > 0 && (

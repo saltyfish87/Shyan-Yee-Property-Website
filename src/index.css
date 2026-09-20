@@ -54,3 +54,30 @@ body {
   transform: translateY(-2px);
 }
 
+/* Article bodies rendered by src/lib/markdown.ts (app view and prerendered HTML) */
+.md-body { line-height: 1.8; }
+.md-body > * + * { margin-top: 1.1em; }
+.md-body h2 { font-size: 1.6rem; font-weight: 800; color: #0f172a; letter-spacing: -0.01em; margin-top: 2em; padding-bottom: .4em; border-bottom: 1px solid #f1f5f9; }
+.md-body h3 { font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-top: 1.8em; }
+.md-body h4 { font-size: 1.05rem; font-weight: 800; color: #dc2743; margin-top: 1.4em; }
+.md-body p { margin-top: 1.1em; }
+.md-body strong { font-weight: 800; color: #0f172a; }
+.md-body a { color: #2563eb; text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+.md-body a:hover { color: #1d4ed8; }
+.md-body ul, .md-body ol { padding-left: 1.4em; }
+.md-body ul { list-style: disc; }
+.md-body ol { list-style: decimal; }
+.md-body li { margin-top: .4em; }
+.md-body blockquote { border-left: 4px solid #f97316; background: #fff7ed; padding: .8em 1.2em; border-radius: 0 .75rem .75rem 0; color: #7c2d12; }
+.md-body hr { border: 0; border-top: 1px solid #e2e8f0; margin: 2em 0; }
+.md-body img { max-width: 100%; height: auto; border-radius: .75rem; }
+.md-body code { font-family: 'JetBrains Mono', monospace; font-size: .9em; background: #f1f5f9; padding: .1em .35em; border-radius: .3rem; }
+.md-body .md-table { overflow-x: auto; margin-top: 1.2em; border: 1px solid #e2e8f0; border-radius: .75rem; }
+.md-body table { width: 100%; border-collapse: collapse; font-size: .95em; }
+.md-body th { background: #f8fafc; font-weight: 800; color: #0f172a; padding: .65em .9em; border-bottom: 1px solid #e2e8f0; white-space: nowrap; }
+.md-body td { padding: .65em .9em; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.md-body tr:last-child td { border-bottom: 0; }
+.md-body .md-video { position: relative; aspect-ratio: 16 / 9; background: #000; border-radius: 1rem; overflow: hidden; margin-top: 1.4em; }
+.md-body .md-video img, .md-body .md-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; }
+.md-body .md-video-link { display: block; width: 100%; height: 100%; }
+.md-body .md-video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(220, 39, 67, .95); color: #fff; font-weight: 800; padding: .6em 1.2em; border-radius: 999px; font-size: .95rem; box-shadow: 0 10px 30px rgba(0,0,0,.35); }

@@ -4,6 +4,7 @@ import { BLOG_DATA, FAQ_DATA } from '../src/data';
 import { translations, PRE_TRANSLATED_BLOGS, PRE_TRANSLATED_BLOG_DETAILS } from '../src/translations';
 import { FAQ_TRANSLATIONS } from '../src/faqTranslations';
 import { HOME_VIDEOS } from '../src/videos';
+import { renderMarkdown, extractYoutubeIds, articleDates, dateLabel, DEFAULT_AUTO_LINKS } from '../src/lib/markdown';
 import { Project } from '../src/types';
 
 const cwd = process.cwd();
@@ -40,6 +41,25 @@ function videoObjects(lang: 'en' | 'zh'): any[] {
     "inLanguage": "zh",
     "publisher": { "@id": "https://shyanyee.com/#agent" }
   }));
+}
+
+// VideoObject entries for {{youtube:ID}} embeds inside an article (known home videos keep their real title/date)
+function embeddedVideoObjects(md: string, articleTitle: string, publishedIso: string, lang: 'en' | 'zh'): any[] {
+  return extractYoutubeIds(md).map(id => {
+    const known = HOME_VIDEOS.find(v => v.youtubeId === id);
+    if (known) return videoObjects(lang).find(v => v['@id'].endsWith(id));
+    return {
+      "@type": "VideoObject",
+      "@id": `https://www.youtube.com/watch?v=${id}`,
+      "name": lang === 'zh' ? `${articleTitle}（视频）` : `${articleTitle} (video)`,
+      "description": lang === 'zh' ? `${articleTitle} — Shyan Yee（REN 46305）实地看房视频。` : `${articleTitle} — walkthrough video by Shyan Yee (REN 46305).`,
+      "thumbnailUrl": [`https://i.ytimg.com/vi/${id}/hqdefault.jpg`],
+      "uploadDate": publishedIso,
+      "embedUrl": `https://www.youtube-nocookie.com/embed/${id}`,
+      "contentUrl": `https://www.youtube.com/watch?v=${id}`,
+      "publisher": { "@id": "https://shyanyee.com/#agent" }
+    };
+  }).filter(Boolean);
 }
 
 // Helper to escape XML
@@ -549,8 +569,8 @@ function renderSeoHtml(
         "headline": targetBlog.title,
         "description": desc,
         "image": [ogImage],
-        "datePublished": targetBlog.publishDate ? `${targetBlog.publishDate}-01` : "2026-01-01",
-        "dateModified": new Date().toISOString().split('T')[0],
+        "datePublished": articleDates(targetBlog).published,
+        "dateModified": articleDates(targetBlog).updated,
         "author": {
           "@type": "Person",
           "name": targetBlog.author || "Shyan Yee (REN 46305)",
@@ -587,6 +607,8 @@ function renderSeoHtml(
         });
       }
 
+      jsonLdGraph.push(...embeddedVideoObjects(targetBlog.content || '', targetBlog.title, articleDates(targetBlog).published, 'en'));
+
       preRenderedBody = `
         <div style="font-family: system-ui, -apple-system, sans-serif; max-width: 900px; margin: 0 auto; padding: 24px; color: #111827; line-height: 1.8;">
           <nav style="margin-bottom: 24px; font-size: 14px; color: #64748b;">
@@ -598,6 +620,7 @@ function renderSeoHtml(
           <header style="margin-bottom: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 24px;">
             <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; font-size: 14px; color: #64748b;">
               <span style="background: #eff6ff; color: #2563eb; padding: 2px 8px; border-radius: 4px; font-weight: 700;">${targetBlog.category || 'Property Guide'}</span>
+              <span>Published ${dateLabel(articleDates(targetBlog).published)}</span>${articleDates(targetBlog).updated !== articleDates(targetBlog).published ? `<span>&middot; Updated ${dateLabel(articleDates(targetBlog).updated)}</span>` : ''}
               <span>&bull;</span>
               <span>${targetBlog.publishDate || '2026'}</span>
               <span>&bull;</span>
@@ -610,8 +633,8 @@ function renderSeoHtml(
           ${targetBlog.image ? `<img src="${targetBlog.image}" alt="${targetBlog.title}" style="width: 100%; max-height: 440px; object-fit: cover; border-radius: 12px; margin-bottom: 32px;" />` : ''}
 
           <main style="font-size: 16px; color: #334155;">
-            <div style="margin-bottom: 40px; white-space: pre-line;">
-              ${targetBlog.content ? targetBlog.content.replace(/#+\s+(.*?)\n/g, '<h2 style="font-size: 22px; font-weight: 700; color: #0f172a; margin-top: 32px; margin-bottom: 12px;">$1</h2>\n') : desc}
+            <div class="md-body" style="margin-bottom: 40px;">
+              ${targetBlog.content ? renderMarkdown(targetBlog.content, { baseUrl, autoLinks: Object.fromEntries(Object.entries(DEFAULT_AUTO_LINKS).filter(([, p]) => !p.endsWith(`/${targetBlog.slug}`))) }) : desc}
             </div>
 
             ${targetBlog.faqs && targetBlog.faqs.length > 0 ? `
@@ -898,21 +921,22 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
       if (zb.image || targetBlog.image) ogImage = zb.image || targetBlog.image;
       crumbs([['首页', home], ['置业指南', `${SITE}/zh/blog`], [zb.title, canonical]]);
       graph.push({ "@type": "BlogPosting", "@id": `${canonical}#article`, "headline": zb.title, "description": desc, "image": [ogImage], "inLanguage": "zh-CN",
-        "datePublished": targetBlog.publishDate ? `${targetBlog.publishDate}-01` : "2026-01-01", "dateModified": new Date().toISOString().split('T')[0],
+        "datePublished": articleDates(targetBlog).published, "dateModified": articleDates(targetBlog).updated,
         "author": { "@type": "Person", "name": "Shyan Yee (REN 46305)", "url": SITE }, "publisher": { "@id": `${SITE}/#agent` },
         "mainEntityOfPage": { "@type": "WebPage", "@id": canonical } });
       if (zb.faqs && zb.faqs.length) graph.push({ "@type": "FAQPage", "@id": `${canonical}#faq`,
         "mainEntity": zb.faqs.map((f: any) => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) });
-      const content = (zb.content || '').replace(/#+\s+(.*?)\n/g, '<h2 style="font-size: 22px; font-weight: 700; color: #0f172a; margin: 32px 0 12px;">$1</h2>\n');
+      graph.push(...embeddedVideoObjects(zb.content || targetBlog.content || '', zb.title, articleDates(targetBlog).published, 'zh'));
+      const content = renderMarkdown(zb.content || '', { baseUrl: SITE, langPrefix: '/zh', playLabel: '播放视频' });
       body = `<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 900px; margin: 0 auto; padding: 24px; color: #111827; line-height: 1.8;">
         ${zhNav([['首页', home], ['置业指南', `${SITE}/zh/blog`], [zb.title, '']])}
         <header style="margin-bottom: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 24px;">
-          <p style="font-size: 14px; color: #64748b;">${zb.category || '指南'} &bull; ${zb.publishDate || targetBlog.publishDate || '2026'}</p>
+          <p style="font-size: 14px; color: #64748b;">${zb.category || '指南'} &bull; 发布于 ${dateLabel(articleDates(targetBlog).published, 'zh')}${articleDates(targetBlog).updated !== articleDates(targetBlog).published ? ` &bull; 更新于 ${dateLabel(articleDates(targetBlog).updated, 'zh')}` : ''}</p>
           <h1 style="font-size: 32px; font-weight: 800; line-height: 1.3; margin: 0 0 16px 0;">${zb.title}</h1>
           <p style="font-size: 18px; color: #4b5563; line-height: 1.6; margin: 0;">${desc}</p>
         </header>
         ${ogImage ? `<img src="${ogImage}" alt="${escapeXml(zb.title)}" style="width: 100%; max-height: 440px; object-fit: cover; border-radius: 12px; margin-bottom: 32px;" />` : ''}
-        <main style="font-size: 16px; color: #334155;"><div style="white-space: pre-line;">${content}</div>
+        <main style="font-size: 16px; color: #334155;"><div class="md-body">${content}</div>
         ${zb.faqs && zb.faqs.length ? `<section style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-top: 40px;"><h3 style="font-size: 20px; font-weight: 700; margin: 0 0 16px 0;">常见问题</h3>${zb.faqs.map((f: any) => `<h4 style="font-size: 16px; font-weight: 700; margin: 12px 0 4px;">${f.question}</h4><p style="font-size: 15px; color: #475569; margin: 0;">${f.answer}</p>`).join('')}</section>` : ''}
         <section style="margin-top: 40px;"><h3 style="font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">更多指南</h3>
           <ul style="line-height: 1.9; font-size: 15px; padding-left: 20px;">${ZH_BLOG_LIST.filter(b => b.slug !== targetBlog.slug).slice(0, 6).map(b => `<li><a href="${SITE}/zh/blog/${b.slug}" style="color: #2563eb; text-decoration: none;">${b.title}</a></li>`).join('')}</ul>
@@ -1087,7 +1111,7 @@ for (const b of BLOG_DATA) {
   if (b && b.slug) {
     xml += `  <url>\n`;
     xml += `    <loc>https://shyanyee.com/blog/${b.slug}</loc>\n`;
-    xml += `    <lastmod>${todayStr}</lastmod>\n`;
+    xml += `    <lastmod>${articleDates(b).updated}</lastmod>\n`;
     xml += `    <changefreq>weekly</changefreq>\n`;
     xml += `    <priority>0.85</priority>\n`;
     if (b.image) {
@@ -1108,7 +1132,7 @@ for (const p of projects) {
   if (p && p.id) xml += `  <url><loc>https://shyanyee.com/zh/projects/${p.id}</loc><lastmod>${p.syncedAt ? p.syncedAt.substring(0, 10) : todayStr}</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>\n`;
 }
 for (const b of BLOG_DATA) {
-  if (b && b.slug) xml += `  <url><loc>https://shyanyee.com/zh/blog/${b.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
+  if (b && b.slug) xml += `  <url><loc>https://shyanyee.com/zh/blog/${b.slug}</loc><lastmod>${articleDates(b).updated}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
 }
 xml += `</urlset>\n`;
 

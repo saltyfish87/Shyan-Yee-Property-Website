@@ -57,7 +57,9 @@ export interface BlogArticle {
   summary: string;
   content?: string; // Markdown supported
   readTime: string;
-  publishDate: string;
+  publishDate: string; // display label, e.g. "June 2026"
+  publishedOn?: string; // ISO day (YYYY-MM-DD); derived from publishDate when absent
+  updatedOn?: string;   // ISO day of the last real content update; defaults to publishedOn
   author: string;
   category: string;
   image: string;

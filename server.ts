@@ -1,4 +1,5 @@
 import express from "express";
+import { articleDates } from './src/lib/markdown';
 import path from "path";
 import fs from "fs";
 import { createServer as createViteServer } from "vite";
@@ -2944,7 +2945,7 @@ function generateSitemapXml(projects: any[], blogs: any[]): string {
   for (const post of blogs) {
     if (post.slug) {
       const loc = `${baseUrl}/blog/${post.slug}`;
-      const lastmod = post.publishDate || todayStr;
+      const lastmod = articleDates(post).updated || todayStr;
       xml += `  <url>
     <loc>${loc}</loc>
     <lastmod>${lastmod}</lastmod>
