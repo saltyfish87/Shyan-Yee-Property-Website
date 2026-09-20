@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { BLOG_DATA, FAQ_DATA } from '../src/data';
+import { GENERATED_ZH_ARTICLES } from '../src/data/articles.generated';
 import { translations, PRE_TRANSLATED_BLOGS, PRE_TRANSLATED_BLOG_DETAILS } from '../src/translations';
 import { FAQ_TRANSLATIONS } from '../src/faqTranslations';
 import { HOME_VIDEOS } from '../src/videos';
@@ -25,6 +26,58 @@ if (!fs.existsSync(indexPath)) {
 const rawHtml = fs.readFileSync(indexPath, 'utf-8');
 const projects: Project[] = JSON.parse(fs.readFileSync(projectsFile, 'utf-8'));
 
+
+const PERSON_ID = 'https://shyanyee.com/#person';
+const AGENT_PHOTO = 'https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY=w300';
+const SOCIAL = ['https://www.youtube.com/@shyanyee', 'https://www.instagram.com/shyanyee/', 'https://www.facebook.com/shyanyeeconsultant/'];
+// The person behind the articles (E-E-A-T): referenced as author from every BlogPosting.
+function personNode() {
+  return {
+    "@type": "Person", "@id": PERSON_ID, "name": "Yee Woei Shyan", "alternateName": "Shyan Yee",
+    "jobTitle": "Real Estate Negotiator (REN 46305)", "image": AGENT_PHOTO, "url": "https://shyanyee.com",
+    "worksFor": { "@type": "Organization", "name": "IQI Realty Sdn Bhd" }, "telephone": "+60108278932",
+    "knowsAbout": ["Malaysia new launch property", "Kuala Lumpur condominiums", "Johor Bahru property", "MM2H property purchase"],
+    "sameAs": ["https://shyanyee.com", "https://wa.me/60108278932", ...SOCIAL]
+  };
+}
+function authorBoxHtml(lang: 'en' | 'zh'): string {
+  const blurb = lang === 'zh'
+    ? '持牌房产经纪，专注吉隆坡、雪兰莪与新山的新楼盘。文章内容来自发展商资料与实地看房经验；价格与政策会变动，购买前请以最新资料为准。'
+    : 'Licensed real estate negotiator focused on new launches in Kuala Lumpur, Selangor and Johor Bahru. Articles draw on developer material and site visits; prices and rules change, so confirm the latest before you buy.';
+  return `<section style="margin-top: 40px; border-top: 1px solid #e5e7eb; padding-top: 24px;">
+    <div style="display: flex; gap: 20px; align-items: flex-start; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 20px;">
+      <img src="${AGENT_PHOTO}" alt="Shyan Yee (Yee Woei Shyan), REN 46305" width="80" height="80" loading="lazy" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" />
+      <div>
+        <p style="margin: 0; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #f97316; font-weight: 800;">${lang === 'zh' ? '作者' : 'Written by'}</p>
+        <p style="margin: 2px 0 0; font-size: 16px; font-weight: 800; color: #0f172a;">Shyan Yee (Yee Woei Shyan)</p>
+        <p style="margin: 2px 0 0; font-size: 13px; color: #64748b; font-weight: 700;">REN 46305 · IQI Realty Sdn Bhd · Kuala Lumpur</p>
+        <p style="margin: 10px 0 0; font-size: 14px; color: #475569; line-height: 1.6;">${blurb}</p>
+        <p style="margin: 10px 0 0; font-size: 13px; font-weight: 700;"><a href="https://wa.me/60108278932" style="color: #15803d;">WhatsApp +60 10-827 8932</a> &middot; <a href="${SOCIAL[0]}" style="color: #475569;">YouTube</a> &middot; <a href="${SOCIAL[1]}" style="color: #475569;">Instagram</a> &middot; <a href="${SOCIAL[2]}" style="color: #475569;">Facebook</a></p>
+      </div>
+    </div>
+  </section>`;
+}
+function relatedProjectsHtml(article: any, projects: Project[], lang: 'en' | 'zh'): string {
+  const ids: string[] = article.relatedProjectIds || [];
+  const rows = ids.map(id => projects.find(p => p.id === id)).filter(Boolean) as Project[];
+  if (!rows.length) return '';
+  const base = lang === 'zh' ? 'https://shyanyee.com/zh/projects/' : 'https://shyanyee.com/projects/';
+  return `<section style="margin-top: 32px;"><h3 style="font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">${lang === 'zh' ? '文中提到的楼盘' : 'Projects in this article'}</h3>
+    <ul style="line-height: 1.9; font-size: 15px; padding-left: 20px;">${rows.map(p => `<li><a href="${base}${p.id}" style="color: #2563eb; text-decoration: none; font-weight: 700;">${p.name}</a> — ${p.area || p.location}${p.tenure ? `, ${p.tenure}` : ''}${p.startingPrice ? `, ${lang === 'zh' ? '起价' : 'from'} RM ${p.startingPrice.toLocaleString()}` : ''}</li>`).join('')}</ul></section>`;
+}
+function relatedArticles(article: any, pool: any[]): any[] {
+  const others = pool.filter(b => b.slug !== article.slug);
+  const picked = (article.relatedSlugs || []).map((sl: string) => others.find(b => b.slug === sl)).filter(Boolean);
+  const sameCat = others.filter(b => b.category === article.category && !picked.includes(b));
+  const rest = others.filter(b => !picked.includes(b) && !sameCat.includes(b));
+  return [...picked, ...sameCat, ...rest].slice(0, 6);
+}
+function projectGuidesHtml(projectId: string, lang: 'en' | 'zh'): string {
+  const arts = BLOG_DATA.filter(b => (b.relatedProjectIds || []).includes(projectId));
+  if (!arts.length) return '';
+  const base = lang === 'zh' ? 'https://shyanyee.com/zh/blog/' : 'https://shyanyee.com/blog/';
+  return `<section style="margin-bottom: 40px;"><h2>${lang === 'zh' ? '这个楼盘的评测与指南' : 'Reviews and guides about this project'}</h2><ul>${arts.map(b => { const z = lang === 'zh' ? (GENERATED_ZH_ARTICLES[b.slug] || b) : b; return `<li><a href="${base}${b.slug}" style="color: #2563eb; font-weight: 700;">${escapeXml(z.title)}</a> — ${escapeXml(z.summary || '')}</li>`; }).join('')}</ul></section>`;
+}
 
 // Featured YouTube walkthroughs on the home page → VideoObject cards for Google
 function videoObjects(lang: 'en' | 'zh'): any[] {
@@ -125,6 +178,7 @@ function renderSeoHtml(
         }
       }
     ];
+    jsonLdGraph.push(personNode());
 
     let preRenderedBody = '';
 
@@ -541,6 +595,7 @@ function renderSeoHtml(
             </section>`;
             })() : ''}
 
+            ${projectGuidesHtml(targetProject.id, 'en')}
             <section style="margin-bottom: 40px;">
               <h2>Frequently Asked Questions</h2>
               ${faqs.map(faq => `
@@ -571,11 +626,7 @@ function renderSeoHtml(
         "image": [ogImage],
         "datePublished": articleDates(targetBlog).published,
         "dateModified": articleDates(targetBlog).updated,
-        "author": {
-          "@type": "Person",
-          "name": targetBlog.author || "Shyan Yee (REN 46305)",
-          "url": baseUrl
-        },
+        "author": { "@id": PERSON_ID },
         "publisher": { "@id": `${baseUrl}/#agent` },
         "mainEntityOfPage": {
           "@type": "WebPage",
@@ -649,10 +700,12 @@ function renderSeoHtml(
               </section>
             ` : ''}
 
+            ${authorBoxHtml('en')}
+            ${relatedProjectsHtml(targetBlog, projects, 'en')}
             <section style="margin-top: 40px;">
-              <h3 style="font-size: 20px; font-weight: 700; color: #0f172a; margin: 0 0 12px 0;">More guides</h3>
+              <h3 style="font-size: 20px; font-weight: 700; color: #0f172a; margin: 0 0 12px 0;">Related articles</h3>
               <ul style="line-height: 1.9; font-size: 15px; padding-left: 20px;">
-                ${BLOG_DATA.filter(b => b.slug !== targetBlog.slug).slice(0, 6).map(b => `<li><a href="${baseUrl}/blog/${b.slug}" style="color: #2563eb; text-decoration: none;">${b.title}</a></li>`).join('')}
+                ${relatedArticles(targetBlog, BLOG_DATA).map(b => `<li><a href="${baseUrl}/blog/${b.slug}" style="color: #2563eb; text-decoration: none;">${b.title}</a></li>`).join('')}
               </ul>
               <p style="font-size: 15px;"><a href="${baseUrl}/blog" style="color: #2563eb;">All guides</a> &middot; <a href="${baseUrl}/projects" style="color: #2563eb;">Browse ${projects.length} new launch projects</a> &middot; <a href="${baseUrl}/faq" style="color: #2563eb;">Buyer FAQ</a></p>
             </section>
@@ -704,8 +757,8 @@ function renderSeoHtml(
 // =====================================================================
 const SITE = "https://shyanyee.com";
 const ZH = translations['zh-CN'] || {};
-const ZH_BLOG_LIST = PRE_TRANSLATED_BLOGS['zh-CN'] || [];
-const ZH_BLOG_DETAIL = PRE_TRANSLATED_BLOG_DETAILS['zh-CN'] || {};
+const ZH_BLOG_LIST: any[] = [...Object.values(GENERATED_ZH_ARTICLES), ...(PRE_TRANSLATED_BLOGS['zh-CN'] || []).filter((b: any) => !GENERATED_ZH_ARTICLES[b.slug])];
+const ZH_BLOG_DETAIL: Record<string, any> = { ...(PRE_TRANSLATED_BLOG_DETAILS['zh-CN'] || {}), ...GENERATED_ZH_ARTICLES };
 const ZH_FAQS = FAQ_TRANSLATIONS['zh-CN'] || [];
 
 function zhUrlFor(reqUrl: string): string {
@@ -782,6 +835,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
       "@type": "BreadcrumbList", "@id": `${canonical}#breadcrumb`,
       "itemListElement": items.map(([name, item], i) => ({ "@type": "ListItem", "position": i + 1, "name": name, ...(item ? { item } : {}) }))
     });
+    graph.push(personNode());
     const home = `${SITE}/zh`;
 
     if (reqUrl === '/') {
@@ -909,6 +963,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
         ${gallery.length ? `<section style="margin-bottom: 32px;"><h2>${ZH.visualGallery || '实景图库'}</h2>${gallery.map(u => `<img src="${u}" alt="${escapeXml(`${p.name} ${p.area}`)}" loading="lazy" width="800" style="max-width:100%;height:auto;border-radius:8px;margin-bottom:12px;">`).join('')}</section>` : ''}
         ${Array.isArray(p.layouts) && p.layouts.length ? `<section style="margin-bottom: 32px;"><h2>${ZH.floorPlans || '户型图'}</h2><table style="width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb;"><thead><tr style="background:#f9fafb;"><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">户型</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">面积（平方尺）</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">房</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">浴室</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">车位</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">参考价</th></tr></thead><tbody>${p.layouts.map(l => `<tr><td style="border:1px solid #e5e7eb;padding:8px;">${escapeXml(l.typeName || '-')}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.size ?? '-'}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.beds ?? '-'}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.baths ?? '-'}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.carParks ?? '-'}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.estPrice ? 'RM ' + Number(l.estPrice).toLocaleString() : '洽询'}</td></tr>`).join('')}</tbody></table>
           ${p.layouts.filter(l => l.image).map(l => `<img src="${l.image}" alt="${escapeXml(`${p.name} ${l.typeName || ''} 户型图`)}" loading="lazy" width="800" style="max-width:100%;height:auto;margin-top:12px;">`).join('')}</section>` : ''}
+        ${projectGuidesHtml(p.id, 'zh')}
         <section style="margin-bottom: 32px;"><h2>${ZH.faqSectionTitle || '常见问题'}</h2>${faqs.map(f => `<h3>${escapeXml(f.q)}</h3><p>${escapeXml(f.a)}</p>`).join('')}</section>
         ${zhCta(`联系持牌房产经纪 Shyan Yee（REN 46305）索取 ${p.name} 的官方户型图、价单与贷款方案，并预约私人看房。`, `你好 Shyan Yee，我对 ${p.name} 有兴趣。`)}
       </div>`;
@@ -922,7 +977,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
       crumbs([['首页', home], ['置业指南', `${SITE}/zh/blog`], [zb.title, canonical]]);
       graph.push({ "@type": "BlogPosting", "@id": `${canonical}#article`, "headline": zb.title, "description": desc, "image": [ogImage], "inLanguage": "zh-CN",
         "datePublished": articleDates(targetBlog).published, "dateModified": articleDates(targetBlog).updated,
-        "author": { "@type": "Person", "name": "Shyan Yee (REN 46305)", "url": SITE }, "publisher": { "@id": `${SITE}/#agent` },
+        "author": { "@id": PERSON_ID }, "publisher": { "@id": `${SITE}/#agent` },
         "mainEntityOfPage": { "@type": "WebPage", "@id": canonical } });
       if (zb.faqs && zb.faqs.length) graph.push({ "@type": "FAQPage", "@id": `${canonical}#faq`,
         "mainEntity": zb.faqs.map((f: any) => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) });
@@ -938,8 +993,10 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
         ${ogImage ? `<img src="${ogImage}" alt="${escapeXml(zb.title)}" style="width: 100%; max-height: 440px; object-fit: cover; border-radius: 12px; margin-bottom: 32px;" />` : ''}
         <main style="font-size: 16px; color: #334155;"><div class="md-body">${content}</div>
         ${zb.faqs && zb.faqs.length ? `<section style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-top: 40px;"><h3 style="font-size: 20px; font-weight: 700; margin: 0 0 16px 0;">常见问题</h3>${zb.faqs.map((f: any) => `<h4 style="font-size: 16px; font-weight: 700; margin: 12px 0 4px;">${f.question}</h4><p style="font-size: 15px; color: #475569; margin: 0;">${f.answer}</p>`).join('')}</section>` : ''}
-        <section style="margin-top: 40px;"><h3 style="font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">更多指南</h3>
-          <ul style="line-height: 1.9; font-size: 15px; padding-left: 20px;">${ZH_BLOG_LIST.filter(b => b.slug !== targetBlog.slug).slice(0, 6).map(b => `<li><a href="${SITE}/zh/blog/${b.slug}" style="color: #2563eb; text-decoration: none;">${b.title}</a></li>`).join('')}</ul>
+        ${authorBoxHtml('zh')}
+        ${relatedProjectsHtml(targetBlog, projects, 'zh')}
+        <section style="margin-top: 40px;"><h3 style="font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">相关文章</h3>
+          <ul style="line-height: 1.9; font-size: 15px; padding-left: 20px;">${relatedArticles(targetBlog, BLOG_DATA).map(b => { const z = ZH_BLOG_LIST.find(x => x.slug === b.slug) || b; return `<li><a href="${SITE}/zh/blog/${b.slug}" style="color: #2563eb; text-decoration: none;">${z.title}</a></li>`; }).join('')}</ul>
           <p style="font-size: 15px;"><a href="${SITE}/zh/blog" style="color: #2563eb;">全部指南</a> &middot; <a href="${SITE}/zh/projects" style="color: #2563eb;">浏览 ${projects.length} 个新楼盘</a> &middot; <a href="${SITE}/zh/faq" style="color: #2563eb;">买家常见问题</a></p>
         </section>
         ${zhCta('想了解 MM2H、州政府批准或适合你的楼盘？直接联系持牌房产经纪 Shyan Yee（REN 46305）。', `你好 Shyan Yee，我读了你的文章《${zb.title}》。`)}

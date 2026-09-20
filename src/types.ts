@@ -64,6 +64,9 @@ export interface BlogArticle {
   category: string;
   image: string;
   faqs?: { question: string; answer: string }[];
+  relatedSlugs?: string[];       // other articles to show under "Related"
+  relatedProjectIds?: string[];  // projects this article is about (shown under the article; the project page links back)
+  tags?: string[];
 }
 
 export interface FAQItem {

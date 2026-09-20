@@ -1,11 +1,13 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { BlogArticle } from '../types';
 import { BLOG_DATA } from '../data';
+import { GENERATED_ZH_ARTICLES } from '../data/articles.generated';
+import projectsFallback from '../projectsFallback.json';
 import { renderMarkdown, articleDates, dateLabel, youtubeEmbed, DEFAULT_AUTO_LINKS } from '../lib/markdown';
 import { useLanguage } from '../LanguageContext';
 import { API_BASE_URL } from '../utils/api';
 import { PRE_TRANSLATED_BLOGS, PRE_TRANSLATED_BLOG_DETAILS } from '../translations';
-import { Search, Calendar, User, Clock, ArrowLeft, ChevronRight, MessageCircle, Share2, HelpCircle } from 'lucide-react';
+import { Search, Calendar, User, Clock, ArrowLeft, ChevronRight, MessageCircle, Share2, HelpCircle, Youtube, Instagram, Facebook, Building2 } from 'lucide-react';
 
 interface BlogViewProps {
   onProjectNavigate: (id: string) => void;
@@ -53,7 +55,9 @@ export const BlogView: React.FC<BlogViewProps> = ({
   const [articles, setArticles] = useState<BlogArticle[]>(() => {
     // 1. First preference: pre-translated static compile
     if (language !== "en") {
-      const staticPreTranslated = PRE_TRANSLATED_BLOGS[language];
+      const staticPreTranslated = language === 'zh-CN' && PRE_TRANSLATED_BLOGS[language]
+        ? [...Object.values(GENERATED_ZH_ARTICLES), ...PRE_TRANSLATED_BLOGS[language].filter(b => !GENERATED_ZH_ARTICLES[b.slug])]
+        : PRE_TRANSLATED_BLOGS[language];
       if (staticPreTranslated && staticPreTranslated.length > 0) {
         return staticPreTranslated;
       }
@@ -129,7 +133,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
     let hasLoadedFromCache = false;
 
     // 1. Check static pre-translated compile details first
-    const staticDetail = PRE_TRANSLATED_BLOG_DETAILS[language]?.[activeBlogSlug];
+    const staticDetail = PRE_TRANSLATED_BLOG_DETAILS[language]?.[activeBlogSlug] || (language === 'zh-CN' ? GENERATED_ZH_ARTICLES[activeBlogSlug] : undefined);
     if (staticDetail) {
       setActiveFullArticle(staticDetail);
       hasLoadedFromCache = true;
@@ -179,7 +183,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
   }, [activeBlogSlug, language]);
 
   // Categories list
-  const categories = ['all', 'Guides', 'Investment', 'Market Outlook', 'Financials'];
+  const categories = ['all', 'Reviews', 'Guides', 'Investment', 'Market Outlook', 'Financials', 'Financing'];
 
   // Filter regular lists
   const filteredArticles = useMemo(() => {
@@ -311,13 +315,66 @@ export const BlogView: React.FC<BlogViewProps> = ({
               </div>
             )}
 
-            {/* More guides: real links between articles (search engines and readers both need them) */}
+            {/* Author box: who wrote this (licence number, agency, channels) */}
             <section className="border-t border-slate-100 mt-12 pt-8">
+              <div className="flex flex-col sm:flex-row gap-5 items-start rounded-2xl border border-slate-100 bg-slate-50/60 p-5">
+                <img src="https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY=w300" alt="Shyan Yee (Yee Woei Shyan), REN 46305" className="h-20 w-20 rounded-full object-cover shrink-0 border-2 border-white shadow" loading="lazy" />
+                <div className="text-left">
+                  <p className="text-[10px] font-extrabold uppercase tracking-widest text-orange-500">{language.startsWith('zh') ? '作者' : language === 'ja' ? '執筆者' : 'Written by'}</p>
+                  <h4 className="text-base font-black text-slate-950 font-sans mt-0.5">Shyan Yee (Yee Woei Shyan)</h4>
+                  <p className="text-xs font-bold text-slate-500 mt-0.5">REN 46305 · IQI Realty Sdn Bhd · Kuala Lumpur</p>
+                  <p className="text-sm text-slate-600 mt-2 leading-relaxed font-medium">
+                    {language.startsWith('zh') ? '持牌房产经纪，专注吉隆坡、雪兰莪与新山的新楼盘。文章内容来自发展商资料与实地看房经验；价格与政策会变动，购买前请以最新资料为准。' : language === 'ja' ? 'クアラルンプール、セランゴール、ジョホールバルの新築物件を専門とする登録不動産エージェント。記事はデベロッパー資料と現地視察に基づきます。' : 'Licensed real estate negotiator focused on new launches in Kuala Lumpur, Selangor and Johor Bahru. Articles draw on developer material and site visits; prices and rules change, so confirm the latest before you buy.'}
+                  </p>
+                  <div className="flex flex-wrap gap-3 mt-3 text-xs font-bold">
+                    <a href="https://wa.me/60108278932" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-emerald-700 hover:underline"><MessageCircle className="h-3.5 w-3.5" />WhatsApp +60 10-827 8932</a>
+                    <a href="https://www.youtube.com/@shyanyee" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-slate-600 hover:underline"><Youtube className="h-3.5 w-3.5" />YouTube</a>
+                    <a href="https://www.instagram.com/shyanyee/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-slate-600 hover:underline"><Instagram className="h-3.5 w-3.5" />Instagram</a>
+                    <a href="https://www.facebook.com/shyanyeeconsultant/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-slate-600 hover:underline"><Facebook className="h-3.5 w-3.5" />Facebook</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Projects this article is about */}
+            {activeFullArticle.relatedProjectIds && activeFullArticle.relatedProjectIds.length > 0 && (
+              <section className="border-t border-slate-100 mt-10 pt-8">
+                <h4 className="text-base font-bold text-slate-950 font-sans mb-3">
+                  {language.startsWith('zh') ? '文中提到的楼盘' : language === 'ja' ? '記事内の物件' : 'Projects in this article'}
+                </h4>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {activeFullArticle.relatedProjectIds.map((pid) => {
+                    const pr = (projectsFallback as any[]).find((x) => x.id === pid);
+                    if (!pr) return null;
+                    return (
+                      <li key={pid}>
+                        <a href={`/projects/${pid}`} onClick={(e) => { e.preventDefault(); onProjectNavigate(pid); }} className="flex items-start gap-3 rounded-xl border border-slate-100 bg-white p-3 hover:border-orange-200 hover:shadow-sm transition">
+                          <Building2 className="h-5 w-5 text-orange-500 shrink-0 mt-0.5" />
+                          <span>
+                            <span className="block text-sm font-black text-slate-900">{pr.name}</span>
+                            <span className="block text-xs text-slate-500 font-semibold">{pr.area || pr.location}{pr.tenure ? ` · ${pr.tenure}` : ''}{pr.startingPrice ? ` · from RM ${Number(pr.startingPrice).toLocaleString()}` : ''}</span>
+                          </span>
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            )}
+
+            {/* Related articles: hand-picked first, then the same category, then the rest */}
+            <section className="border-t border-slate-100 mt-10 pt-8">
               <h4 className="text-base font-bold text-slate-950 font-sans mb-3">
-                {language.startsWith('zh') ? '更多指南' : language === 'ja' ? 'その他のガイド' : 'More guides'}
+                {language.startsWith('zh') ? '相关文章' : language === 'ja' ? '関連記事' : 'Related articles'}
               </h4>
               <ul className="space-y-2 text-sm">
-                {articles.filter((a) => a.slug !== activeFullArticle.slug).slice(0, 6).map((a) => (
+                {(() => {
+                  const others = articles.filter((a) => a.slug !== activeFullArticle.slug);
+                  const picked = (activeFullArticle.relatedSlugs || []).map((sl) => others.find((a) => a.slug === sl)).filter(Boolean) as BlogArticle[];
+                  const sameCat = others.filter((a) => a.category === activeFullArticle.category && !picked.includes(a));
+                  const rest = others.filter((a) => !picked.includes(a) && !sameCat.includes(a));
+                  return [...picked, ...sameCat, ...rest].slice(0, 6);
+                })().map((a) => (
                   <li key={a.slug}>
                     <a
                       href={`/blog/${a.slug}`}
@@ -423,7 +480,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                 }`}
               >
                 {cat === 'all' ? t('all') : (
-                  language.startsWith('zh') ? (cat === 'Guides' ? '置业指南' : cat === 'Investment' ? '投资前瞻' : cat === 'Market Outlook' ? '市场分析' : cat === 'Financials' ? '资金税务' : cat) :
+                  language.startsWith('zh') ? (cat === 'Reviews' ? '楼盘评测' : cat === 'Financing' ? '贷款融资' : cat === 'Guides' ? '置业指南' : cat === 'Investment' ? '投资前瞻' : cat === 'Market Outlook' ? '市场分析' : cat === 'Financials' ? '资金税务' : cat) :
                   language === 'ja' ? (cat === 'Guides' ? '購入ガイド' : cat === 'Investment' ? '投資アドバイス' : cat === 'Market Outlook' ? 'マーケット洞察' : cat === 'Financials' ? '資金・税金' : cat) : cat
                 )}
               </button>
@@ -461,7 +518,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                   />
                   {/* Category tag */}
                   <span className="absolute top-4 left-4 bg-slate-950/85 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
-                    {language.startsWith('zh') ? (art.category === 'Guides' ? '置业指南' : art.category === 'Investment' ? '投资前瞻' : art.category === 'Market Outlook' ? '市场分析' : art.category === 'Financials' ? '资金税务' : art.category) :
+                    {language.startsWith('zh') ? (art.category === 'Reviews' ? '楼盘评测' : art.category === 'Financing' ? '贷款融资' : art.category === 'Guides' ? '置业指南' : art.category === 'Investment' ? '投资前瞻' : art.category === 'Market Outlook' ? '市场分析' : art.category === 'Financials' ? '资金税务' : art.category) :
                     language === 'ja' ? (art.category === 'Guides' ? '購入ガイド' : art.category === 'Investment' ? '投資アドバイス' : art.category === 'Market Outlook' ? 'マーケット洞察' : art.category === 'Financials' ? '資金・税金' : art.category) : art.category}
                   </span>
                 </div>

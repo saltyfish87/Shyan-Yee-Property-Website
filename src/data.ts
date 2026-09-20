@@ -103,7 +103,10 @@ export const FAQ_DATA: FAQItem[] = [
   }
 ];
 
-export const BLOG_DATA: BlogArticle[] = [
+import { GENERATED_ARTICLES } from './data/articles.generated';
+
+// Articles written as markdown files (content/articles/*.md) come first, then the original inline ones.
+export const INLINE_BLOG_DATA: BlogArticle[] = [
   {
     "id": "foreigner-buying-malaysia",
     "slug": "foreigner-buying-property-in-malaysia",
@@ -394,3 +397,5 @@ export const BLOG_DATA: BlogArticle[] = [
     ]
   }
 ];
+
+export const BLOG_DATA: BlogArticle[] = [...GENERATED_ARTICLES, ...INLINE_BLOG_DATA];

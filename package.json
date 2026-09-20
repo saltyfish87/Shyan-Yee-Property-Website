@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "tsx scripts/sync-sheet.ts && vite build && tsx scripts/build-seo-static.ts && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+    "build": "tsx scripts/build-articles.ts && tsx scripts/sync-sheet.ts && vite build && tsx scripts/build-seo-static.ts && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
     "start": "node dist/server.cjs",
     "sync": "tsx scripts/sync-sheet.ts",
     "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "articles": "tsx scripts/build-articles.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

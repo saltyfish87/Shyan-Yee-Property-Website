@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Project } from '../types';
+import { BLOG_DATA } from '../data';
 import { useLanguage } from '../LanguageContext';
 import { useCurrency } from '../CurrencyContext';
 import { API_BASE_URL } from '../utils/api';
@@ -1266,6 +1267,26 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 {/* Facility Images Rendering removed as requested */}
               </div>
             </div>
+
+            {/* Guides and reviews that cover this project (articles declare relatedProjectIds) */}
+            {BLOG_DATA.some(b => (b.relatedProjectIds || []).includes(project.id)) && (
+              <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-4">
+                <div className="flex items-center gap-2 pb-3 border-b border-slate-100">
+                  <span className="text-lg">📝</span>
+                  <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
+                    {language.startsWith('zh') ? '这个楼盘的评测与指南' : 'Reviews & guides about this project'}
+                  </h3>
+                </div>
+                <ul className="space-y-2">
+                  {BLOG_DATA.filter(b => (b.relatedProjectIds || []).includes(project.id)).map(b => (
+                    <li key={b.slug}>
+                      <a href={`/blog/${b.slug}`} onClick={(e) => { e.preventDefault(); onBlogLinkNavigate(b.slug); }} className="text-sm font-bold text-blue-700 hover:underline">{b.title}</a>
+                      <span className="block text-xs text-slate-500 font-semibold">{b.summary}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Smooth-rolling Ticker Slideshow of all projects, scrolling right-to-left every 3 seconds */}
             {allProjects && allProjects.length > 0 && (
