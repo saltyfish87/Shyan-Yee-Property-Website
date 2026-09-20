@@ -403,6 +403,26 @@ export const BlogView: React.FC<BlogViewProps> = ({
               </div>
             )}
 
+            {/* More guides: real links between articles (search engines and readers both need them) */}
+            <section className="border-t border-slate-100 mt-12 pt-8">
+              <h4 className="text-base font-bold text-slate-950 font-sans mb-3">
+                {language.startsWith('zh') ? '更多指南' : language === 'ja' ? 'その他のガイド' : 'More guides'}
+              </h4>
+              <ul className="space-y-2 text-sm">
+                {articles.filter((a) => a.slug !== activeFullArticle.slug).slice(0, 6).map((a) => (
+                  <li key={a.slug}>
+                    <a
+                      href={`/blog/${a.slug}`}
+                      onClick={(e) => { e.preventDefault(); onBlogNavigate(a.slug); }}
+                      className="text-blue-700 hover:underline font-semibold"
+                    >
+                      {a.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
             {/* Article Footer CTA consult card */}
             <div className="border-t border-slate-100 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-6 select-none">
               <div className="text-left">

@@ -108,7 +108,26 @@ function renderSeoHtml(
 
     let preRenderedBody = '';
 
-    if (reqUrl === '/') jsonLdGraph.push(...videoObjects('en'));
+    if (reqUrl === '/') {
+      jsonLdGraph.push(...videoObjects('en'));
+      const EN = translations['en'] || {};
+      const featured = projects.slice(0, 12);
+      const guides = BLOG_DATA.slice(0, 8);
+      // Crawlable home page: heading, intro and real links (React replaces this on mount).
+      preRenderedBody = `<div style="max-width: 1200px; margin: 0 auto; padding: 32px 20px; font-family: system-ui, -apple-system, sans-serif; color: #0f172a;">
+        <nav style="margin-bottom: 20px; font-size: 14px;"><a href="${baseUrl}/projects" style="color:#2563eb;text-decoration:none;">Projects</a> &middot; <a href="${baseUrl}/blog" style="color:#2563eb;text-decoration:none;">Guides</a> &middot; <a href="${baseUrl}/faq" style="color:#2563eb;text-decoration:none;">FAQ</a> &middot; <a href="${baseUrl}/calculator" style="color:#2563eb;text-decoration:none;">Loan calculator</a> &middot; <a href="${baseUrl}/compare" style="color:#2563eb;text-decoration:none;">Compare</a> &middot; <a href="${baseUrl}/zh" style="color:#2563eb;text-decoration:none;">中文</a></nav>
+        <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 12px;">${EN.title || 'Find Your Perfect Property in Malaysia'}</h1>
+        <p style="font-size: 16px; color: #475569; margin-bottom: 24px; line-height: 1.6;">${EN.subtitle || ''}</p>
+        <p style="font-size: 15px; color: #334155; margin-bottom: 32px;">${EN.agentIntro || ''} Licensed real estate negotiator Shyan Yee (Yee Woei Shyan, REN 46305), IQI Realty Sdn Bhd.</p>
+        <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">${EN.featuredProjects || 'Featured Projects'}</h2>
+        <ul style="line-height: 2; font-size: 15px;">${featured.map(p => `<li><a href="${baseUrl}/projects/${p.id}" style="color: #2563eb; text-decoration: none;">${p.name}</a> — ${p.area || p.location}, ${p.tenure || 'Freehold'}, from RM ${fmt(p.startingPrice) || 'contact for price'}</li>`).join('')}</ul>
+        <p><a href="${baseUrl}/projects" style="color: #2563eb;">View all ${projects.length} projects &rarr;</a></p>
+        <h2 style="font-size: 24px; font-weight: 700; margin: 32px 0 16px;">${EN.blogTitle || 'Malaysia Property Guides'}</h2>
+        <ul style="line-height: 2; font-size: 15px;">${guides.map(b => `<li><a href="${baseUrl}/blog/${b.slug}" style="color: #2563eb; text-decoration: none;">${b.title}</a></li>`).join('')}</ul>
+        <p><a href="${baseUrl}/blog" style="color: #2563eb;">All guides &rarr;</a> &middot; <a href="${baseUrl}/faq" style="color: #2563eb;">Buyer FAQ &rarr;</a></p>
+        <p style="margin-top: 32px;"><a href="https://wa.me/60108278932?text=${encodeURIComponent('Hi Shyan Yee, I would like to enquire about properties in Malaysia.')}" style="display:inline-block;background:#16a34a;color:#fff;padding:12px 24px;border-radius:8px;font-weight:700;text-decoration:none;">WhatsApp Shyan Yee (+60 10-827 8932)</a></p>
+      </div>`;
+    }
 
     // Page-specific configurations
     if (reqUrl === '/projects') {
@@ -607,6 +626,14 @@ function renderSeoHtml(
               </section>
             ` : ''}
 
+            <section style="margin-top: 40px;">
+              <h3 style="font-size: 20px; font-weight: 700; color: #0f172a; margin: 0 0 12px 0;">More guides</h3>
+              <ul style="line-height: 1.9; font-size: 15px; padding-left: 20px;">
+                ${BLOG_DATA.filter(b => b.slug !== targetBlog.slug).slice(0, 6).map(b => `<li><a href="${baseUrl}/blog/${b.slug}" style="color: #2563eb; text-decoration: none;">${b.title}</a></li>`).join('')}
+              </ul>
+              <p style="font-size: 15px;"><a href="${baseUrl}/blog" style="color: #2563eb;">All guides</a> &middot; <a href="${baseUrl}/projects" style="color: #2563eb;">Browse ${projects.length} new launch projects</a> &middot; <a href="${baseUrl}/faq" style="color: #2563eb;">Buyer FAQ</a></p>
+            </section>
+
             <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px; margin-top: 40px; text-align: center;">
               <h3 style="font-size: 20px; font-weight: 700; color: #166534; margin: 0 0 8px 0;">Need Personalized Advice on Malaysian Real Estate?</h3>
               <p style="color: #15803d; margin: 0 0 16px 0; font-size: 15px;">
@@ -887,6 +914,10 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
         ${ogImage ? `<img src="${ogImage}" alt="${escapeXml(zb.title)}" style="width: 100%; max-height: 440px; object-fit: cover; border-radius: 12px; margin-bottom: 32px;" />` : ''}
         <main style="font-size: 16px; color: #334155;"><div style="white-space: pre-line;">${content}</div>
         ${zb.faqs && zb.faqs.length ? `<section style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-top: 40px;"><h3 style="font-size: 20px; font-weight: 700; margin: 0 0 16px 0;">常见问题</h3>${zb.faqs.map((f: any) => `<h4 style="font-size: 16px; font-weight: 700; margin: 12px 0 4px;">${f.question}</h4><p style="font-size: 15px; color: #475569; margin: 0;">${f.answer}</p>`).join('')}</section>` : ''}
+        <section style="margin-top: 40px;"><h3 style="font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">更多指南</h3>
+          <ul style="line-height: 1.9; font-size: 15px; padding-left: 20px;">${ZH_BLOG_LIST.filter(b => b.slug !== targetBlog.slug).slice(0, 6).map(b => `<li><a href="${SITE}/zh/blog/${b.slug}" style="color: #2563eb; text-decoration: none;">${b.title}</a></li>`).join('')}</ul>
+          <p style="font-size: 15px;"><a href="${SITE}/zh/blog" style="color: #2563eb;">全部指南</a> &middot; <a href="${SITE}/zh/projects" style="color: #2563eb;">浏览 ${projects.length} 个新楼盘</a> &middot; <a href="${SITE}/zh/faq" style="color: #2563eb;">买家常见问题</a></p>
+        </section>
         ${zhCta('想了解 MM2H、州政府批准或适合你的楼盘？直接联系持牌房产经纪 Shyan Yee（REN 46305）。', `你好 Shyan Yee，我读了你的文章《${zb.title}》。`)}
         </main></div>`;
     }
@@ -1117,8 +1148,6 @@ Allow: /sitemap_index.xml
 # Sitemaps
 Sitemap: https://shyanyee.com/sitemap.xml
 Sitemap: https://shyanyee.com/sitemap_index.xml
-Sitemap: https://www.shyanyee.com/sitemap.xml
-Sitemap: https://www.shyanyee.com/sitemap_index.xml
 `;
 
 fs.writeFileSync(path.join(distPath, 'robots.txt'), robotsTxt, 'utf-8');
