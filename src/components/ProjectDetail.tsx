@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Project } from '../types';
 import { BLOG_DATA } from '../data';
+import { PROJECT_FACTS } from '../data/projectFacts.generated';
 import { useLanguage } from '../LanguageContext';
 import { useCurrency } from '../CurrencyContext';
 import { API_BASE_URL } from '../utils/api';
@@ -60,6 +61,9 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
   const [activeImgIdx, setActiveImgIdx] = useState(0);
   const [activeLayoutIdx, setActiveLayoutIdx] = useState(0);
   const [lightboxImageUrl, setLightboxImageUrl] = useState<string | null>(null);
+  // Real developer facts for this project (sales kits, via scripts/gen-project-facts.ts).
+  // When a project has none, the page hides these blocks rather than showing invented text.
+  const realFacts = PROJECT_FACTS[project.id];
 
   // Detect if project is Zenia
   const isZenia = React.useMemo(() => {
@@ -845,8 +849,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                       <div className="h-3 bg-slate-50 rounded w-5/6"></div>
                     </div>
                   ))
-                ) : aiData?.aiKeySellingPoints && aiData.aiKeySellingPoints.length > 0 ? (
-                  aiData.aiKeySellingPoints.map((pointStr, id) => {
+                ) : (realFacts?.keyFeatures?.length || aiData?.aiKeySellingPoints?.length) ? (
+                  (realFacts?.keyFeatures?.length ? realFacts.keyFeatures : aiData!.aiKeySellingPoints!).map((pointStr, id) => {
                     let title = pointStr;
                     let desc = "";
                     const colonIdx = pointStr.indexOf(':');
@@ -868,24 +872,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                       </div>
                     );
                   })
-                ) : (
-                  [
-                    { title: t('feature1Title') || "Elite Transit Alignment", desc: t('feature1Desc') || "Sits immediately adjacent to transit lines, reducing carbon footprint and metropolitan commute times." },
-                    { title: t('feature2Title') || "Passive Green Sentry", desc: t('feature2Desc') || "Energy-saving passive lighting orientation designed to optimize structural light filtering." },
-                    { title: t('feature3Title') || "Secured Physical Network", desc: t('feature3Desc') || "Multi-layered dynamic token cards, door intercom arrays, and physical on-site guards." },
-                    { title: t('feature4Title') || "Sinking Fund Balances", desc: t('feature4Desc') || "Highly structured developer reserves guaranteeing low amortization rates on common upkeep." },
-                    { title: t('feature5Title') || "Modular Layouts", desc: t('feature5Desc') || "Optimized unit spaces allowing comprehensive interior customized cabinetry setups." },
-                    { title: t('feature6Title') || "Premium Hardware Fits", desc: t('feature6Desc') || "Porcelain tiles, luxury sanitaryware, and premium timber wood flooring in private quarters." }
-                  ].map((item, id) => (
-                    <div key={id} className="p-3 rounded-2xl border border-slate-50 hover:bg-slate-50/40 transition-all space-y-1">
-                      <div className="flex items-center gap-1.5">
-                        <CheckCircle className="h-4 w-4 text-rose-500 shrink-0" />
-                        <h4 className="text-xs font-extrabold text-slate-900 leading-tight">{item.title}</h4>
-                      </div>
-                      <p className="text-[10px] text-slate-500 leading-normal font-semibold">{item.desc}</p>
-                    </div>
-                  ))
-                )}
+                ) : null}
               </div>
             </div>
 
@@ -1235,7 +1222,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               })()}
             </div>
 
-            {/* 7. Facilities / Resort Amenities & Facility Images */}
+            {/* 7. Facilities — from the developer sales kit only; hidden when we have no real list. */}
+            {realFacts?.facilities?.length ? (
             <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-5">
               <div className="flex items-center gap-2 pb-3 border-b border-slate-55">
                 <CheckCircle className="h-5 w-5 text-rose-500 shrink-0" />
@@ -1246,27 +1234,48 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
 
               <div className="space-y-5">
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-slate-600 font-semibold text-[11px]">
-                  {[
-                    "Panoramic Infinity Pool",
-                    "Glazed Multi-level Gym",
-                    "Scenic Bamboo Pods",
-                    "EV Amperage Chargers",
-                    "My-Smart Parcel Sentry",
-                    "Botanical Reflexology",
-                    "Executive Co-working Lounge",
-                    "Scented Steam Cabinets",
-                    "Barbecue Terrace Row"
-                  ].map((fac, i) => (
+                  {realFacts.facilities.map((fac, i) => (
                     <div key={i} className="flex items-center gap-1.5">
                       <CheckCircle className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
                       <span>{fac}</span>
                     </div>
                   ))}
                 </div>
-
-                {/* Facility Images Rendering removed as requested */}
+                <p className="text-[10px] text-slate-400 font-semibold">
+                  {language.startsWith('zh')
+                    ? '设施清单来自发展商售楼资料，实际交付以买卖合约为准。'
+                    : 'Facilities as listed in the developer sales kit; the sale and purchase agreement governs what is delivered.'}
+                </p>
               </div>
             </div>
+            ) : null}
+
+            {/* 7b. Nearby places from the developer sales kit. */}
+            {realFacts?.nearby?.length ? (
+            <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-5">
+              <div className="flex items-center gap-2 pb-3 border-b border-slate-55">
+                <MapPin className="h-5 w-5 text-rose-500 shrink-0" />
+                <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
+                  {language.startsWith('zh') ? '交通与周边' : 'Nearby and connectivity'}
+                </h3>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {Object.entries(realFacts.nearby.reduce((acc, n) => {
+                  (acc[n.category] ||= []).push(n);
+                  return acc;
+                }, {} as Record<string, typeof realFacts.nearby>)).map(([cat, items]) => (
+                  <div key={cat} className="rounded-2xl border border-slate-100 bg-slate-50/50 p-4">
+                    <div className="text-[9px] font-black uppercase tracking-wider text-slate-400 mb-2">{cat}</div>
+                    <ul className="space-y-1 text-[11px] font-semibold text-slate-600">
+                      {items.map((n, i) => (
+                        <li key={i}>{n.name}{n.distance ? <span className="text-slate-400 font-medium"> · {n.distance}</span> : null}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+            ) : null}
 
             {/* Guides and reviews that cover this project (articles declare relatedProjectIds) */}
             {BLOG_DATA.some(b => (b.relatedProjectIds || []).includes(project.id)) && (
