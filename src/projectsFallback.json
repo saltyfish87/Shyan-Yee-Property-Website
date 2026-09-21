@@ -4051,7 +4051,7 @@
     },
     "layouts": [
       {
-        "image": "https://lh3.googleusercontent.com/d/1EQgRJEih4bNx9HFCwZ1zi_kOwpJj4aaO=w1000",
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
         "typeName": "Type A",
         "size": 450,
         "beds": 1,
@@ -4061,8 +4061,8 @@
         "isEnriched": false
       },
       {
-        "image": "https://lh3.googleusercontent.com/d/1vTuc_ZbV8tiaMzVZxLv0Y4_n9YnGT5ZI=w1000",
-        "typeName": "Type A",
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
         "size": 600,
         "beds": 1,
         "baths": 1,
@@ -4071,8 +4071,8 @@
         "isEnriched": false
       },
       {
-        "image": "https://lh3.googleusercontent.com/d/1kEW2tE2TsIcGSP1IZZhWkb79GWtKkAXg=w1000",
-        "typeName": "Type B",
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
         "size": 750,
         "beds": 2,
         "baths": 2,
