@@ -1296,7 +1296,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "summary": "在底蕴深厚的首都吉隆坡与高速发展的柔佛新山走廊之间犹豫不决？我们为您权衡两地的交易现状、投资回报率和人口结构。",
       "category": "投资",
       "author": "Shyan Yee",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop",
       "publishDate": "2026年6月",
       "readTime": "10 分钟阅读"
     },
@@ -1344,7 +1344,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "summary": "您应该将房产租给稳定长期的企业租客，还是在 Airbnb 上运营高回报的短期度假租赁？我们为您横向对比最终的净利润。",
       "category": "财务",
       "author": "Shyan Yee",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
       "publishDate": "2026年1月",
       "readTime": "8 分钟阅读"
     }
@@ -1478,7 +1478,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "summary": "在繁華的首都吉隆坡與高速發展的新山增長廊道之間猶豫不決？我們將為您權衡兩者的實際交易現狀、收益率與人口結構。",
       "category": "投資",
       "author": "Shyan Yee",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop",
       "publishDate": "2026年6月",
       "readTime": "閱讀時間 10 分鐘"
     },
@@ -1526,7 +1526,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "summary": "您應該將物業租給穩定的長期企業租客，還是經營高收益的 Airbnb 短租度假屋？我們將為您並排對比最終的淨利潤。",
       "category": "財務資訊",
       "author": "Shyan Yee",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
       "publishDate": "2026年1月",
       "readTime": "閱讀時間 8 分鐘"
     }
@@ -1662,7 +1662,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "投資",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop"
     },
     {
       "id": "js-sez-impact",
@@ -1710,7 +1710,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "財務",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
     }
   ],
   "ko": [
@@ -1844,7 +1844,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "투자",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop"
     },
     {
       "id": "js-sez-impact",
@@ -1892,7 +1892,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "금융",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
     }
   ],
   "ar": [
@@ -2026,7 +2026,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "استثمار",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop"
     },
     {
       "id": "js-sez-impact",
@@ -2074,7 +2074,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "المالية",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
     }
   ],
   "fr": [
@@ -2208,7 +2208,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "Investissement",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop"
     },
     {
       "id": "js-sez-impact",
@@ -2256,7 +2256,7 @@ export const PRE_TRANSLATED_BLOGS: Record<string, BlogArticle[]> = {
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "Données financières",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop"
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
     }
   ]
 };
@@ -2466,7 +2466,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "投资",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop",
       "summary": "在宏伟的首都吉隆坡与高增长的新山走廊之间犹豫不决？我们为您权衡两者的交易现状、收益率及租客群体。",
       "content": "\n# 吉隆坡 vs. 新山：哪个市场更适合您的投资组合？\n\n关注马来西亚的投资者经常面临一个经典的抉择：是投资享誉盛名的首都**吉隆坡（KL）**，还是选择紧邻新加坡、快速发展的高增长走廊**新山（JB）**？\n\n这两个市场拥有截然不同的经济驱动力、目标租客群和入场门槛。在本文中，我们将进行全方位对比，帮助您根据自身的风险承受能力和投资目标做出最佳选择。\n\n---\n\n## 1. 吉隆坡（KL）：至尊资产类别\n\n吉隆坡，尤其是大吉隆坡和巴生谷地区，是马来西亚的经济与金融中心。\n\n### 核心优势：\n- **租客稳定性：** 聚集了企业总部、跨国公司高管、 embassies（大使馆）以及高收入的本地专业人士。\n- **高流动性：** 作为国际大都市，吉隆坡的房产拥有庞大的本地和国际二手买家群。\n- **城市基础设施：** 拥有三条完全整合的捷运（MRT）线路、顶尖国际学校和一流的医疗设施。\n\n### 租赁概况：\n吉隆坡主要是一个**长期租赁市场**。像满家乐（Mont Kiara）和孟沙（Bangsar）等外籍人士热门聚居区，可带来稳定、长达数年的租约，净租金收益率可靠地维持在 **4.5% 至 5.5%**。\n\n---\n\n## 2. 新山（JB）：高收益的轨道交通走廊\n\n新山的房地产市场正受到即将开通的**柔新捷运系统（RTS Link）**以及**柔佛-新加坡特别经济区（JS-SEZ）**的强力催化。\n\n### 核心优势：\n- **新加坡溢出效应：** 对于新加坡人以及赚取强劲新加坡元（SGD）的马来西亚员工而言，新山是一个性价比极高的居住选择。\n- **令人惊叹的租金收益率：** 在短期 Airbnb 民宿和跨境通勤者的推动下，距离武吉查卡（Bukit Chagar）捷运站3公里范围内的房产，其租金收益率可轻松达到 **6% 至 8%**。\n- **更低的入场成本：** 新山的高端豪华公寓价格仅为吉隆坡的一小部分（新山通常为每平方英尺 800 至 1,200 令吉，而吉隆坡的豪华公寓通常在每平方英尺 1,200 至 2,000+ 令吉）。\n\n### 租赁概况：\n新山在**短期游客出租（Airbnb）**和**通勤者长期租赁**之间蓬勃发展，能够提供更高的即时现金流，但需要更积极的物业管理。\n\n---\n\n## 3. 全方位对比矩阵\n\n| 投资维度 | 吉隆坡 (KL) | 新山 (JB) |\n| :--- | :--- | :--- |\n| **平均入场价格** | 较高（外国人最低门槛为 1,000,000 令吉） | 极具竞争力（Medini 享有豁免 / 其他地区起步价为 1,000,000 令吉） |\n| **主要租金收益率** | **4.5% - 5.5%**（稳定，长期） | **6.0% - 8.0%**（高现金流，轨道交通带动） |\n| **资本增长催化剂** | 金融中心扩张、MRT3 线路、企业增长 | RTS 捷运、JS-SEZ 特区税收优惠、新加坡元（SGD）汇率优势 |\n| **对外国买家的友好度** | 吉隆坡门槛为 100 万令吉 / 雪兰莪门槛为 200 万令吉 | 普遍门槛为 100 万令吉，Medini 区域最低门槛限制为 0 |\n\n---\n\n## 总结建议：\n\n- **如果出现以下情况，请选择吉隆坡：** 您是保守型投资者，寻求**资本保值**、世代资产安全、极其稳定的企业租客，以及较低的管理成本。\n- **如果出现以下情况，请选择新山：** 您希望最大化**即时租金现金流**，乘着新加坡经济一体化的历史浪潮，并在未来 3 到 5 年内获得更高的资本增值。\n\n如需获取两地的定制规划对比和收益率电子表格，请立即通过 WhatsApp 联系 Shyan Yee。\n    ",
       "faqs": [
@@ -2542,7 +2542,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "财务",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
       "summary": "您应该将房产出租给稳定的长期企业租户，还是在爱彼迎（Airbnb）上经营高回报的短期度假屋？我们为您逐项对比最终的净利润。",
       "content": "\n# 租金回报率大师课：长期租户 vs 爱彼迎（Airbnb）短租\n\n在马来西亚购买投资型房产时，选择正确的出租策略与选择绝佳的地段同样重要。\n\n如今数字旅游业的蓬勃发展使**爱彼迎/短租（Airbnb/Short-Term renting）**变得极具人气，但在扣除清洁费、管理费、水电费和空置率之后，它真的能超越传统的**长期企业租赁（Long-Term corporate lease）**吗？\n\n让我们来算一笔明白账。\n\n---\n\n## 1. 长期租赁（稳定的被动收益路线）\n\n这是传统的出租模式，租户通常签署1年或2年的合同。\n\n### 优势：\n- **真正的被动收入：** 每月准时收到租金。管理精力极低。\n- **无水电账单压力：** 租户自行支付电费、水费、网费和空调费。\n- **免受突发损耗折旧影响：** 稳定的居住者在长期内对房产会爱护有加。\n\n### 数据示例：\n- **公寓购买价格：** 600,000 令吉\n- **月租金收入：** 2,500 令吉\n- **年租金：** 30,000 令吉\n- **扣除：物业管理费（每月 350 令吉）：** 4,200 令吉\n- **年净利润：** 25,800 令吉\n- **净租金回报率：** **4.3%**\n\n---\n\n## 2. 爱彼迎/短租（高回报的积极运营路线）\n\n此模式将房产按晚租给游客、商务旅客和度假者。\n\n### 优势：\n- **更高的单价：** 相比于固定且较低的月租，每晚可收取 200 至 350 令吉。\n- **可观的现金流：** 在旅游热点地区（如新山市中心、吉隆坡城中城和马六甲）拥有极佳的回报。\n\n### 运营开销与隐性成本：\n虽然总收入较高，但爱彼迎（Airbnb）有大量的每月支出：\n- **房产托管服务费：** 专业托管公司收取总收入的 **20% 至 30%**，负责处理住客入住、消息回复和布草清洗。\n- **公用事业费用：** 您必须支付高速无线网络、电费以及持续使用的水费。\n- **清洁费与平台佣金：** 爱彼迎（Airbnb）会从中抽成，且每次退房后都必须安排清洁。\n\n### 数据示例：\n- **公寓购买价格：** 600,000 令吉\n- **平均每晚房价：** 250 令吉\n- **入住率（65% / 入住 20 天）：** 每月总收入 5,000 令吉\n- **年总收入：** 60,000 令吉\n- **扣除：托管公司服务费（25%）：** 15,000 令吉\n- **扣除：公用事业费（无线网络、水费、空调电费）：** 6,000 令吉\n- **扣除：物业管理费（每月 350 令吉）：** 4,200 令吉\n- **年净利润：** 34,800 令吉\n- **净租金回报率：** **5.8%**\n\n---\n\n## 3. 策略对比决策表\n\n| 特性 | 长期租赁 | 爱彼迎 / 短租 |\n| :--- | :--- | :--- |\n| **潜在总回报率** | 中等 (**5% - 6%**) | 极高 (**8% - 12%**) |\n| **潜在净回报率** | 稳定 (**4% - 5%**) | 浮动 (**5.5% - 8%**) |\n| **每月现金流可预测性** | 极佳 | 随旅游季节波动 |\n| **损耗与折旧** | 较低 | 较高，需要定期翻新 |\n| **最佳黄金地段** | 满家乐、赛城、孟沙 | 吉隆坡城中城、靠近新柔捷运（RTS）的新山市中心、槟城葛尼 |\n\n## 结论：哪种模式适合您？\n\n- 如果您追求零压力、可预测的现金流，且身处海外而没有合作的托管公司，请**选择长期租赁**。\n- 如果您的房产位于高需求的交通枢纽、拥有可靠的托管公司，且您的首要任务是实现年净回报率最大化，请**选择短期租赁**。\n\n欲获取针对特定开发项目的定制化租赁市场预测，请立即通过 WhatsApp 联系 Shyan Yee。让我们携手优化您的投资回报！\n    ",
       "faqs": [
@@ -2662,7 +2662,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "投資",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop",
       "summary": "在吉隆坡的首都威嚴和新山的高辛烷值增長走廊之間做出選擇嗎？我們權衡兩者的交易現實、收益率和人口統計。",
       "content": "# 吉隆坡 vs. 新山：哪個市場更適合您的投資組合？\n\n關注馬來西亞的投資者經常面臨一個典型的困境：您是投資於享有盛譽的首都吉隆坡（KL），還是選擇緊鄰新加坡的快節奏增長走廊新山（JB）？\n\n這兩個市場都有不同的經濟驅動因素、目標人口結構和切入點。在本文中，我們進行了並排比較，以幫助您根據您的風險承受能力和投資目標選擇合適的市場。\n\n---\n\n## 1. 吉隆坡（KL）：主權資產類別\n\n吉隆坡，特別是大吉隆坡和巴生谷地區，是馬來西亞的經濟和金融首都。\n\n### 主要優勢：\n- **租戶穩定性：** 以公司總部、跨國公司主管、大使館和高收入國內專業人士為主。\n- **高流動性：** 作為全球首都，吉隆坡房產擁有大量本地和國際轉售買家。\n- **城市基礎設施：** 以三條完全一體化的捷運線路、國際學校和頂級醫療設施為後盾。\n\n### 租賃簡介：\n吉隆坡主要是一個**長期租賃市場**。 Mont Kiara 和 Bangsar 等外籍人士熱點地區擁有穩定的多年租戶，可帶來可靠的 **4.5% 至 5.5%** 淨租金回報。\n\n---\n\n## 2. 新山 (JB)：高產量交通走廊\n即將到來的**柔佛-新加坡捷運系統（RTS）連接**和**柔佛-新加坡經濟特區（JS-SEZ）**推動了新山房地產市場的發展。\n\n### 主要優勢：\n- **新加坡外溢效應：** 對於賺取強勁新加坡元 (SGD) 的新加坡人和馬來西亞工人來說，新山 (JB) 是一個非常實惠的住宅選擇。\n- **令人難以置信的租金收益率：** 在短期 Airbnb 住宿和跨境通勤者的推動下，位於 RTS Bukit Chagar 節點 3 公里範圍內的房產可以輕鬆獲得 **6% 至 8%** 的租金收益率。\n- **較低的入門成本：** 新山的高級豪華公寓價格只是吉隆坡價格的一小部分（通常為每平方英尺 RM 800 至 RM 1,200，而吉隆坡的豪華公寓每平方英尺為 RM 1,200 至 RM 2,000+）。\n\n### 租賃簡介：\n新山的**短期旅遊出租（Airbnb）**和**通勤長期租賃**之間存在著蓬勃發展，提供更高的直接現金流，但需要更積極的物業管理。\n\n---\n\n## 3. 並排比較矩陣\n\n|投資因素|吉隆坡 (KL) |新山 (JB) |\n| :--- | :--- | :--- |\n| **平均入場價格** |更高（外國人最低門檻為 RM 1,000,000） |競爭激烈（Medini 豁免/其他地方起價 RM 100 萬）|\n| **主要租金收益率** | **4.5% - 5.5%**（穩定，長期）| **6.0% - 8.0%**（高現金流，交通支持）|\n| **資本成長催化劑** |金融中心擴建、MRT3 線、企業成長 | RTS Link、JS-SEZ 稅收優惠、新加坡新元匯率 |\n| **外國買家友善度** |吉隆坡 RM 100 萬門檻 / 雪蘭莪 RM 200 萬門檻 |一般門檻為 RM 100 萬，Medini 區限額為 RM 0 |\n\n---\n\n## 總結推薦：\n\n- **選擇吉隆坡如果：** 您是一位保守的投資者，尋求**資本保值**、多代資產安全、高度穩定的企業租戶和較低的管理費用。\n- **如果滿足以下條件，請選擇新山：** 您希望最大化**即時租金現金流**，駕馭歷史性的新加坡經濟一體化浪潮，並在未來 3 至 5 年內獲得更高的資本收益。\n\n如需兩個州的自訂佈局比較和產量電子表格，請立即透過 WhatsApp 聯絡 Shyan Yee。",
       "faqs": [
@@ -2738,7 +2738,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "財務",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
       "summary": "您應該將房產出租給安全的長期企業租戶，還是應該在 Airbnb 上經營高收益的短期度假租賃？我們並排比較最終淨利。",
       "content": "# 租金收益率大師班：長期租戶與 Airbnb 短期住宿\n\n在馬來西亞購買投資房產時，選擇正確的租賃策略與選擇正確的地點同樣重要。 \n\n當今的數位旅遊熱潮使得**愛彼迎/短期租賃**非常受歡迎，但如果考慮到清潔費、管理費、水電費和空置率，它的表現真的優於傳統的**長期企業租賃**嗎？\n\n讓我們分解一下精確的數學。\n\n---\n\n## 1. 長期租賃（穩定的被動路線）\n\n這是傳統的租賃模式，租戶簽訂一年或兩年的合約。\n\n### 優點：\n- **真正的被動收入：** 每月一致支付租金。管理工作量非常低。\n- **無水電費：** 租戶自行支付電費、水費、網路費和空調費。\n- **無磨損衝擊：**穩定的居住者會長期小心地對待房產。\n\n### 數學範例：\n- **公寓購買價格：** RM 600,000\n- **收到的每月租金：** RM 2,500\n- **年租金：** RM 30,000\n- **減：維護費（RM 350/月）：** RM 4,200\n- **年淨利：** RM 25,800\n- **淨租金收益率：** **4.3%**\n\n---\n\n## 2. Airbnb/短期住宿（高收益活躍路線）\n\n這種模式每晚將房產出租給遊客、商務旅客和居家度假者。\n\n### 優點：\n- **較高的價格點：** 與較低的固定月費相比，每晚收費 RM 200 至 RM 350。\n- **有利的現金流：** 旅遊熱點（如新山中心、吉隆坡城中城和馬六甲）的豐厚回報。\n\n### 管理費用與隱性成本：\n雖然總收入較高，但 Airbnb 每個月的開支卻很大：\n- **物業管理費：** 專業機構收取總收入的 **20% 至 30%** 來處理客人入住、留言和洗衣服務。\n- **公用事業：** 您必須支付高速 Wi-Fi、電費和連續用水費。\n- **清潔和平台費用：** Airbnb 會收取一定費用，並且每次入住後都必須安排清潔工作。\n\n### 數學範例：\n- **公寓購買價格：** RM 600,000\n- **平均每晚價格：** RM 250\n- **入住率（65% / 入住 20 天）：** 每月總 RM 5,000\n- **年總收入：** RM 60,000\n- **減：代理費 (25%)：** RM 15,000\n- **減：公用事業（Wi-Fi、水、交流電）：** RM 6,000\n- **減：維護費（RM 350/月）：** RM 4,200\n- **年淨利：** RM 34,800\n- **淨租金收益率：** **5.8%**\n\n---\n\n## 3. 平行策略決策表\n\n|特色|長期租賃 | Airbnb / 短期住宿 |\n| :--- | :--- | :--- |\n| **總產量潛力** |中 (**5% - 6%**) |非常高 (**8% - 12%**) |\n| **淨收益潛力** |穩定 (**4% - 5%**) |可變 (**5.5% - 8%**) |\n| **每月現金流量可預測性** |完美|隨旅遊季節波動 |\n| **磨損** |降低|更高，需要修飾|\n| **最佳地點** | Mont Kiara、賽城、孟沙 |吉隆坡城中城 (KLCC)、新山市中心 (RTS) 附近、檳城合您 (Gurney) |\n\n## 結論：哪一個適合您？\n\n- **如果您想要零壓力、可預測的現金流並且在沒有代理合作夥伴的情況下居住在海外，請選擇長期**。\n- **選擇短期**如果您的房產位於高需求的交通節點，您有可靠的管理機構，並且您的首要任務是最大化您的年淨收益。\n\n如需取得特定開發專案的客製化租賃市場預測，請立即透過 WhatsApp 聯絡 Shyan Yee。讓我們一起優化您的產量！",
       "faqs": [
@@ -3029,7 +3029,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "投資",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop",
       "summary": "威厳のある首都クアラルンプールと、成長著しいジョホールバルのどちらを選ぶべきですか?私たちは両方の取引の現実、利回り、人口動態を比較検討します。",
       "content": "# クアラルンプール対ジョホールバル: あなたのポートフォリオを勝ち取るのはどの市場ですか?\n\nマレーシアに注目している投資家は、典型的なジレンマに直面することがよくあります。名門首都 **クアラルンプール (KL)** に投資しますか、それともシンガポールに隣接するペースの速い成長回廊である **ジョホールバル (JB)** を選択しますか?\n\nどちらの市場にも、明確な経済推進力、ターゲット層、参入ポイントがあります。この記事では、リスク許容度と投資目標に基づいて適切な市場を選択できるように、比較を行っています。\n\n---\n\n## 1. クアラルンプール (KL): ソブリン資産クラス\n\nクアラルンプール、特にクアラルンプール都市圏とクランバレー地域は、マレーシアの経済および金融の中心地です。\n\n### 主な強み:\n- **テナントの安定性:** 本社、多国籍企業幹部、大使館、国内の高収入専門家が多数を占めています。\n- **高い流動性:** 世界的な首都として、クアラルンプールの不動産は国内外の再販バイヤーを多数抱えています。\n- **都市インフラ:** 完全に統合された 3 つの MRT 路線、インターナショナル スクール、一流の医療施設によって支えられています。\n\n### レンタルプロフィール:\nKL は主に **長期賃貸市場**です。モント キアラやバンサーのような外国人居住者が集まるスポットでは、安定した複数年のテナントにより、信頼性の高い **4.5% ～ 5.5%** の純賃貸収益が得られます。\n\n---\n\n## 2. ジョホールバル (JB): 高利回りの交通回廊\nジョホールバルの不動産市場は、間もなく建設される **ジョホール-シンガポール高速交通システム (RTS) リンク** と **ジョホール-シンガポール経済特別区 (JS-SEZ)** によって大幅に活性化されています。\n\n### 主な強み:\n- **シンガポールの波及効果:** JB は、高額なシンガポール ドル (SGD) を稼ぐシンガポール人およびマレーシア人労働者にとって、非常に手頃な価格の住宅の代替手段として機能します。\n- **驚異的な賃貸利回り:** RTS ブキット チャガール ノードから 3 km 以内にある物件では、Airbnb の短期滞在や国境を越えた通勤者によって、**6% ～ 8%** の賃貸利回りが容易に得られます。\n- **より低い入場コスト:** JB のプレミアム高級コンドミニアムの価格は、クアラルンプールの価格の数分の一です (通常、クアラルンプールの高級セグメントの 1 平方フィートあたり RM 1,200 ～ RM 2,000+ と比較して、1 平方フィートあたり RM 800 ～ RM 1,200)。\n\n### レンタルプロフィール:\nJB は **短期滞在の観光客向け賃貸物件 (Airbnb)** と **通勤者向けの長期賃貸物件 ** の分割が盛んで、即時キャッシュ フローは高くなりますが、より積極的な不動産管理が必要です。\n\n---\n\n## 3. 並べて比較したマトリックス\n\n|投資要素 |クアラルンプール (KL) |ジョホールバル (JB) |\n| :--- | :--- | :--- |\n| **平均入場価格** |より高い (外国人の最低基準額 RM 1,000,000) |競争力が高い (メディニでは免除 / その他の地域では RM 1M からエントリー可能) |\n| **主な賃貸利回り** | **4.5% - 5.5%** (安定、長期) | **6.0% - 8.0%** (高いキャッシュフロー、交通支援) |\n| **資本成長促進剤** |金融センターの拡張、MRT3号線、企業の成長 | RTS リンク、JS-SEZ 税制優遇措置、シンガポール SGD 為替レート |\n| **外国人バイヤーへのフレンドリーさ** | KL の RM 1M 閾値 / セランゴール州の RM 2M |一般に RM 1M しきい値、メディニ ゾーンでは RM 0 制限 |\n\n---\n\n## 推奨事項の概要:\n\n- **次の場合はクアラルンプールをお選びください:** あなたは、**資本保全**、複数世代にわたる資産の安全性、安定性の高いテナント企業、および管理諸経費の削減を求める保守的な投資家です。\n- **次の場合はジョホールバルを選択してください:** **当面の賃貸キャッシュフロー**を最大化し、歴史的なシンガポール経済統合の波に乗り、今後 3 ～ 5 年間でより高いキャピタルゲインを確保したい場合。\n\nカスタム レイアウトの比較と両州の収益スプレッドシートについては、今すぐ WhatsApp で Shyan Yee にお問い合わせください。",
       "faqs": [
@@ -3105,7 +3105,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "財務",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
       "summary": "あなたの不動産を安全で長期的な法人テナントに貸すべきでしょうか、それともAirbnbで高収益の短期バケーションレンタルを運営すべきでしょうか?最終的な純利益を並べて比較します。",
       "content": "# 賃貸利回りマスタークラス: 長期テナント vs. Airbnb 短期滞在\n\nマレーシアで投資用不動産を購入する場合、適切な賃貸戦略を選択することは、適切な場所を選択することと同じくらい重要です。 \n\n今日のデジタル観光ブームにより、**Airbnb/短期賃貸**は非常に人気になっていますが、清掃費、管理費、光熱費、空室率を考慮すると、本当に従来の**長期法人リース**を上回るパフォーマンスを発揮できるでしょうか?\n\n正確な数学を分解してみましょう。\n\n---\n\n## 1. 長期テナント（安定したパッシブルート）\n\nこれは、テナントが 1 年または 2 年契約を結ぶ従来のリース モデルです。\n\n### 利点:\n- **真の不労所得:** 家賃は毎月安定して支払われます。管理労力が非常に低い。\n- **公共料金なし:** 電気、水道、インターネット、エアコンの使用料はテナント自身で支払います。\n- **摩耗による衝撃がありません:** 安定した居住者は、長期間にわたって物件を注意深く扱います。\n\n### 数学的な例:\n- **コンドミニアム購入価格:** RM 600,000\n- **受け取った月額家賃:** RM 2,500\n- **年間家賃:** RM 30,000\n- **以下: メンテナンス料金 (RM 350/月):** RM 4,200\n- **年間純利益:** RM 25,800\n- **純レンタル利回り:** **4.3%**\n\n---\n\n## 2. Airbnb/ショートステイ（高利回りアクティブルート）\n\nこのモデルは、観光客、ビジネス旅行者、ステイケーション利用者に宿泊施設を 1 泊ごとに貸し出すものです。\n\n### 利点:\n- **高価格ポイント:** 低額の定額月額料金と比較して、1 泊あたり RM 200 ～ RM 350 の料金がかかります。\n- **良好なキャッシュ フロー:** 観光スポット (JB セントラル、KLCC、マラッカなど) での優れた収益。\n\n### 諸経費と隠れたコスト:\nAirbnb の総収益は高くなりますが、毎月多額の費用がかかります。\n- **不動産管理手数料:** 専門代理店は、ゲストのチェックイン、メッセージ、ランドリーの処理にあたり、総収益の **20% ～ 30%** を請求します。\n- **光熱費:** 高速 Wi-Fi、電気、継続的な水道使用料を支払う必要があります。\n- **清掃料金とプラットフォーム料金:** Airbnb が負担するため、滞在後は毎回清掃を行う必要があります。\n\n### 数学的な例:\n- **コンドミニアム購入価格:** RM 600,000\n- **平均一泊料金:** RM 250\n- **稼働率 (65% / 20 日間稼働):** 総額 RM 5,000/月\n- **年間総収益:** RM 60,000\n- **以下: 代理店手数料 (25%):** RM 15,000\n- **以下: 公共料金 (Wi-Fi、水道、AC 電気):** RM 6,000\n- **以下: メンテナンス料金 (RM 350/月):** RM 4,200\n- **年間純利益:** RM 34,800\n- **純レンタル利回り:** **5.8%**\n\n---\n\n## 3. 並列戦略決定表\n\n|特集 |長期賃貸 | Airbnb / ショートステイ |\n| :--- | :--- | :--- |\n| **総利回りの可能性** |中程度 (**5% - 6%**) |非常に高い (**8% - 12%**) |\n| **純利回りの可能性** |安定 (**4% - 5%**) |変動 (**5.5% - 8%**) |\n| **毎月のキャッシュフローの予測可能性** |完璧 |観光シーズンにより変動 |\n| **摩耗と損傷** |下 |高い場合はタッチアップが必要です |\n| **最高のロケーション** |モントキアラ、サイバージャヤ、バンサー | KLCC、JB シティ センター、RTS 近く、ペナン ガーニー |\n\n## 結論: どちらがあなたに適していますか?\n\n- ストレスゼロ、予測可能なキャッシュフローを希望し、代理店パートナーなしで海外に居住したい場合は、**長期**を選択してください。\n- **短期を選択**するのは、不動産が需要の高い中継ノードにあり、信頼できる管理機関があり、純年間利回りを最大化することが優先事項である場合です。\n\n特定の開発についてカスタマイズされたレンタル市場予測を受け取るには、今すぐ WhatsApp で Shyan Yee に連絡してください。一緒に収益を最適化しましょう!",
       "faqs": [
@@ -3339,7 +3339,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "투자",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop",
       "summary": "수도의 위대함을 자랑하는 쿠알라룸푸르와 폭발적인 성장을 자랑하는 조호바루 사이에서 고민하시나요? 우리는 두 가지 모두의 거래 현실, 수익률 및 인구 통계를 평가합니다.",
       "content": "# 쿠알라룸푸르 vs. 조호바루: 어느 시장이 귀하의 포트폴리오에서 승리합니까?\n\n말레이시아를 바라보는 투자자들은 종종 고전적인 딜레마에 직면합니다. 명문 수도인 **쿠알라룸푸르(KL)**에 투자하시겠습니까, 아니면 빠르게 진행되는 싱가포르에 인접한 성장 통로인 **조호바루(JB)**에 투자하시겠습니까?\n\n두 시장 모두 뚜렷한 경제적 동인, 대상 인구통계 및 진입점이 있습니다. 이 기사에서는 귀하의 위험 허용 범위와 투자 목표에 따라 올바른 시장을 선택하는 데 도움이 되도록 단계별 비교를 실행합니다.\n\n---\n\n## 1. 쿠알라룸푸르(KL): 국가 자산 클래스\n\n쿠알라룸푸르, 특히 Greater KL 및 Klang Valley 지역은 말레이시아의 경제 및 금융 중심지입니다.\n\n### 주요 강점:\n- **임차인 안정성:** 기업 본사, 다국적 임원, 대사관 및 고소득 국내 전문가가 지배합니다.\n- **높은 유동성:** 글로벌 수도인 KL 부동산은 대규모 국내외 재판매 구매자 풀을 보유하고 있습니다.\n- **도시 인프라:** 완전히 통합된 3개의 MRT 노선, 국제 학교 및 최고 수준의 의료 시설이 뒷받침됩니다.\n\n### 임대 프로필:\nKL은 주로 **장기 임대 시장**입니다. Mont Kiara 및 Bangsar와 같은 외국인 핫스팟은 안정적인 다년간 임차인을 통해 안정적인 **4.5%~5.5%** 순 임대 수익을 제공합니다.\n\n---\n\n## 2. 조호바루(JB): 수확량이 많은 대중교통 통로\n조호르바루의 부동산 시장은 다가오는 **조호르-싱가포르 고속철도 시스템(RTS) 링크** 및 **조호르-싱가포르 특별 경제 구역(JS-SEZ)**으로 인해 더욱 강력해졌습니다.\n\n### 주요 강점:\n- **싱가포르 파급효과:** JB는 강력한 싱가포르 달러(SGD)를 버는 싱가포르인과 말레이시아 근로자를 위한 매우 저렴한 주거 대안 역할을 합니다.\n- **놀라운 임대 수익률:** RTS Bukit Chagar 노드에서 3km 이내에 위치한 부동산은 단기 에어비앤비 숙박 및 국경 간 통근에 힘입어 **6~8%** 임대 수익률을 쉽게 얻을 수 있습니다.\n- **낮은 진입 비용:** JB의 프리미엄 럭셔리 콘도는 KL 가격의 일부에 불과합니다(일반적으로 평방피트당 RM 800~RM 1,200, KL의 럭셔리 부문은 평방피트당 RM 1,200~RM 2,000+).\n\n### 임대 프로필:\nJB는 **단기 여행자 임대(에어비앤비)**와 **통근 장기 임대**를 성공적으로 분할하여 즉각적인 현금 흐름을 제공하지만 보다 적극적인 자산 관리가 필요합니다.\n\n---\n\n## 3. 병렬 비교 매트릭스\n\n| 투자요소 | 쿠알라룸푸르 (KL) | 조호바루 (JB) |\n| :--- | :--- | :--- |\n| **평균 입장료** | 더 높음(외국인의 경우 최소 기준액 RM 1,000,000) | 경쟁력이 높음(Medini에서는 면제 / 다른 곳에서는 RM 1M부터 시작) |\n| **1차 임대수익률** | **4.5% - 5.5%** (안정적, 장기적) | **6.0% - 8.0%** (높은 현금흐름, 대중교통 지원) |\n| **자본 성장 촉매제** | 금융센터 확장, 지하철 3호선, 기업성장 | RTS Link, JS-SEZ 세금 인센티브, 싱가포르 SGD 환율 |\n| **외국 바이어 친화성** | KL의 RM 1M 임계값/Selangor의 RM 2M | 일반적으로 RM 1M 임계값, Medini Zone에서는 RM 0 제한 |\n\n---\n\n## 요약 권장 사항:\n\n- **다음의 경우 쿠알라룸푸르를 선택하세요** 귀하는 **자본 보존**, 다세대 자산 안전, 매우 안정적인 기업 임차 및 낮은 관리 간접비를 추구하는 보수적인 투자자입니다.\n- **다음의 경우 조호바루를 선택하세요.** **즉각적인 임대 현금 흐름**을 극대화하고, 역사적인 싱가포르 경제 통합의 물결을 타고, 향후 3~5년 동안 더 높은 자본 이득을 확보하고 싶습니다.\n\n두 주 모두에서 사용자 정의 레이아웃 비교 및 ​​산출량 스프레드시트를 보려면 지금 WhatsApp에서 Shyan Yee에게 문의하세요.",
       "faqs": [
@@ -3415,7 +3415,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "금융",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
       "summary": "안전한 장기 기업 임차인에게 부동산을 임대해야 할까요, 아니면 에어비앤비에서 고수익 단기 휴가용 임대 숙소를 운영해야 할까요? 최종 순이익을 나란히 비교합니다.",
       "content": "# 임대수익률 마스터클래스: 장기 임차인과 에어비앤비 단기 체류\n\n말레이시아에서 투자 부동산을 구입할 때 올바른 임대 전략을 선택하는 것은 올바른 위치를 선택하는 것만큼 중요합니다. \n\n오늘날의 디지털 관광 붐으로 인해 **에어비앤비/단기 임대**가 매우 인기를 얻었습니다. 하지만 청소, 관리비, 공과금, 공실률을 고려하면 과연 전통적인 **장기 기업 임대**보다 뛰어난 성능을 발휘할 수 있을까요?\n\n정확한 수학을 분석해 보겠습니다.\n\n---\n\n## 1. 장기 임대(안정적인 패시브 경로)\n\n이는 임차인이 1년 또는 2년 계약을 체결하는 전통적인 임대 모델입니다.\n\n### 장점:\n- **실제 수동 소득:** 임대료는 매달 지속적으로 지불됩니다. 관리 노력이 매우 적습니다.\n- **공과금 없음:** 세입자가 전기, 수도, 인터넷 및 에어컨 사용량을 직접 지불합니다.\n- **마모 충격 없음:** 안정된 거주자는 장기간에 걸쳐 부동산을 주의 깊게 취급합니다.\n\n### 수학적 예:\n- **콘도 구입 가격:** RM 600,000\n- **월 임대료 수령:** RM 2,500\n- **연간 임대료:** RM 30,000\n- **적음: 유지관리비(RM 350/월):** RM 4,200\n- **연간 순이익:** RM 25,800\n- **순임대수익률:** **4.3%**\n\n---\n\n## 2. 에어비앤비/단기 숙박(수익률이 높은 활성 경로)\n\n이 모델은 관광객, 비즈니스 여행객, 호캉스 여행객에게 1박당 숙소를 임대합니다.\n\n### 장점:\n- **더 높은 가격대:** 저렴한 월정액 요금에 비해 1박당 RM 200~RM 350를 청구합니다.\n- **바람직한 현금 흐름:** 관광 명소(JB Central, KLCC, Malacca 등)에서 탁월한 수익을 창출합니다.\n\n### 간접비 및 숨겨진 비용:\n총 수익은 더 높지만 Airbnb의 월별 비용은 다음과 같습니다.\n- **숙소 관리 수수료:** 전문 대행업체에서는 게스트 체크인, 메시지, 세탁 처리 비용으로 총 수입의 **20%~30%**를 청구합니다.\n- **공과금:** 고속 Wi-Fi, 전기, 지속적인 물 사용에 대한 비용을 지불해야 합니다.\n- **청소 및 플랫폼 수수료:** 에어비앤비가 비용을 삭감하고 숙박 후 청소를 정리해야 합니다.\n\n### 수학적 예:\n- **콘도 구입 가격:** RM 600,000\n- **평균 1박 요금:** RM 250\n- **점유율(65% / 20일 점유):** 총 RM 5,000/월\n- **연간 총 수익:** RM 60,000\n- **적음: 대행 수수료(25%):** RM 15,000\n- **적음: 유틸리티(Wi-Fi, 물, AC 전기):** RM 6,000\n- **적음: 유지관리비(RM 350/월):** RM 4,200\n- **연간 순이익:** RM 34,800\n- **순임대수익률:** **5.8%**\n\n---\n\n## 3. 병렬 전략 결정 테이블\n\n| 기능 | 장기임차 | 에어비앤비 / 단기숙박 |\n| :--- | :--- | :--- |\n| **총수익률 잠재력** | 중간(**5% - 6%**) | 매우 높음(**8% - 12%**) |\n| **순수익률 잠재력** | 안정적(**4% - 5%**) | 가변적(**5.5% - 8%**) |\n| **월간 현금 흐름 예측 가능성** | 완벽한 | 관광 시즌에 따라 변동 |\n| **마모 및 손상** | 낮은 | 높을수록 손질 필요 |\n| **최고의 위치** | 몽 키아라, 사이버자야, 방사르 | KLCC, RTS 근처 JB 시티 센터, 페낭 거니 |\n\n## 결론: 귀하에게 적합한 것은 무엇입니까?\n\n- 스트레스 제로, 현금 흐름 예측 가능, 에이전시 없이 해외 거주를 원하신다면 **장기 선택**하세요.\n- **단기 선택** 귀하의 부동산이 수요가 많은 대중교통 노드에 있고 신뢰할 수 있는 관리 기관이 있으며 우선 순위는 순 연간 수익률을 최대화하는 것입니다.\n\n특정 개발에 대한 맞춤형 임대 시장 예측을 받으려면 지금 WhatsApp에서 Shyan Yee에게 문의하세요. 함께 수익률을 최적화해 보세요!",
       "faqs": [
@@ -3630,7 +3630,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "استثمار",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop",
       "summary": "هل تختار بين العاصمة كوالالمبور وممر النمو عالي الأوكتان في جوهور باهرو؟ نحن نزن حقائق المعاملات والعوائد والتركيبة السكانية لكليهما.",
       "content": "# كوالالمبور مقابل جوهور باهرو: ما هو السوق الذي يفوز بمحفظتك؟\n\nغالبًا ما يواجه المستثمرون الذين يتطلعون إلى ماليزيا معضلة كلاسيكية: هل تستثمر في العاصمة المرموقة **كوالالمبور (KL)**، أم تختار ممر النمو السريع المجاور لسنغافورة **جوهور باهرو (JB)**؟\n\nلدى كلا السوقين محركات اقتصادية متميزة، وتركيبة سكانية مستهدفة، ونقاط دخول. في هذه المقالة، نجري مقارنة جنبًا إلى جنب لمساعدتك في اختيار السوق المناسب بناءً على قدرتك على تحمل المخاطر وأهدافك الاستثمارية.\n\n---\n\n## 1. كوالالمبور (كوالالمبور): فئة الأصول السيادية\n\nكوالالمبور، وخاصة منطقة كوالالمبور الكبرى ووادي كلانج، هي العاصمة الاقتصادية والمالية لماليزيا.\n\n### نقاط القوة الرئيسية:\n- **استقرار المستأجر:** يهيمن عليه المقر الرئيسي للشركة، والمديرون التنفيذيون متعددو الجنسيات، والسفارات، والمهنيون المحليون ذوو الدخل المرتفع.\n- **سيولة عالية:** باعتبارها عاصمة عالمية، تتمتع عقارات كوالالمبور بمجموعة هائلة من المشترين المحليين والدوليين لإعادة البيع.\n- **البنية التحتية الحضرية:** مدعومة بثلاثة خطوط مترو أنفاق متكاملة ومدارس دولية ومرافق طبية من الدرجة الأولى.\n\n### ملف التأجير:\nكوالالمبور هي في المقام الأول **سوق تأجير طويل الأجل**. تحقق النقاط الساخنة للوافدين مثل مونت كيارا وبانجسار عائدات إيجارية موثوقة **4.5% إلى 5.5%** مع مستأجرين مستقرين لعدة سنوات.\n\n---\n\n## 2. جوهور باهرو (JB): ممر العبور عالي الإنتاجية\nتم تنشيط سوق العقارات في جوهور باهرو من خلال ** رابط نظام النقل السريع بين جوهور وسنغافورة (RTS) ** و ** المنطقة الاقتصادية الخاصة بين جوهور وسنغافورة (JS-SEZ) **.\n\n### نقاط القوة الرئيسية:\n- **الآثار الجانبية في سنغافورة:** تعمل شركة JB كبديل سكني ميسور التكلفة للغاية للعمال السنغافوريين والماليزيين الذين يكسبون دولارات سنغافورية قوية (SGD).\n- **عائدات إيجار مذهلة:** يمكن للعقارات الواقعة على بعد 3 كيلومترات من عقدة RTS Bukit Chagar أن تجلب بسهولة **6% إلى 8%** عائدات إيجار، مدفوعة بإقامات Airbnb قصيرة الأجل والركاب عبر الحدود.\n- ** تكلفة دخول أقل: ** تكلف الوحدات السكنية الفاخرة المتميزة في JB جزءًا صغيرًا من أسعار كوالالمبور (عادةً 800 رينجيت ماليزي إلى 1200 رينجيت ماليزي لكل قدم مربع مقارنة بـ 1200 رينجيت ماليزي إلى 2000+ رينجيت ماليزي لكل قدم مربع للقطاعات الفاخرة).\n\n### ملف التأجير:\nتتمتع شركة JB بتقسيم مزدهر بين **الإيجارات السياحية للإقامة القصيرة (Airbnb)** و**إيجارات الركاب طويلة الأجل**، مما يوفر تدفقات نقدية فورية أعلى ولكن يتطلب إدارة أكثر نشاطًا للممتلكات.\n\n---\n\n## 3. مصفوفة المقارنة جنبًا إلى جنب\n\n| عامل الاستثمار | كوالالمبور (كوالالمبور) | جوهور باهرو (جي بي) |\n| :--- | :--- | :--- |\n| **متوسط ​​سعر الدخول** | أعلى (الحد الأدنى 1,000,000 رينجيت ماليزي للأجانب) | تنافسية للغاية (الإعفاءات في ميديني / الدخول يبدأ من مليون رينجيت ماليزي في أي مكان آخر) |\n| **عائد الإيجار الأساسي** | **4.5% - 5.5%** (مستقر، طويل الأجل) | **6.0% - 8.0%** (تدفق نقدي مرتفع، مدعوم بالعبور) |\n| **محفز نمو رأس المال** | توسعة المركز المالي، خط MRT3، نمو الشركات | رابط RTS، الحوافز الضريبية JS-SEZ، أسعار صرف الدولار السنغافوري في سنغافورة |\n| ** سهولة التعامل مع المشتري الأجنبي ** | عتبة RM 1M في KL / RM 2M في سيلانجور | عتبة 1 مليون رينجيت ماليزي بشكل عام، مع حد 0 رينجيت ماليزي في منطقة ميديني |\n\n---\n\n## توصية موجزة:\n\n- **اختر كوالالمبور إذا:** كنت مستثمرًا محافظًا يسعى إلى **الحفاظ على رأس المال**، وسلامة الأصول المتعددة الأجيال، والمستأجرين المؤسسيين ذوي الاستقرار العالي، وانخفاض النفقات الإدارية.\n- **اختر جوهور باهرو إذا:** كنت ترغب في تحقيق أقصى قدر من **التدفق النقدي الفوري للإيجار**، وركوب موجة التكامل الاقتصادي التاريخية في سنغافورة، وتأمين مكاسب رأسمالية أعلى على مدار 3 إلى 5 سنوات القادمة.\n\nلإجراء مقارنة تخطيطية مخصصة وجداول بيانات الإنتاجية في كلتا الولايتين، اتصل بـ Shyan Yee على WhatsApp اليوم.",
       "faqs": [
@@ -3706,7 +3706,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "المالية",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
       "summary": "هل يجب عليك تأجير الممتلكات الخاصة بك لمستأجر شركة آمن وطويل الأجل، أم يجب عليك تشغيل إيجار عالي العائد لقضاء العطلات على المدى القصير على Airbnb؟ نقوم بمقارنة صافي الأرباح النهائية جنبًا إلى جنب.",
       "content": "# دروس متقدمة في عوائد الإيجار: المستأجرون على المدى الطويل مقابل الإقامات القصيرة عبر Airbnb\n\nعند شراء عقار استثماري في ماليزيا، فإن اختيار استراتيجية التأجير المناسبة لا يقل أهمية عن اختيار الموقع المناسب. \n\nأدى ازدهار السياحة الرقمية اليوم إلى جعل **Airbnb/التأجير قصير الأجل** شائعًا للغاية، ولكن هل يتفوق حقًا على **تأجير الشركات طويل الأجل** التقليدي بمجرد حساب تكاليف التنظيف ورسوم الإدارة والمرافق ومعدلات الشواغر؟\n\nدعونا نحلل الرياضيات الدقيقة.\n\n---\n\n## 1. الإيجار طويل الأجل (الطريق السلبي المستقر)\n\nهذا هو نموذج التأجير التقليدي حيث يقوم المستأجر بتوقيع عقد لمدة سنة واحدة أو سنتين.\n\n### المزايا:\n- ** الدخل السلبي الحقيقي: ** يتم دفع الإيجار باستمرار كل شهر. جهد إداري منخفض للغاية.\n- **لا توجد فواتير مرافق:** يدفع المستأجرون تكاليف استخدام الكهرباء والمياه والإنترنت وتكييف الهواء.\n- ** لا صدمات التآكل: ** يعامل شاغلو الإسطبل العقار بعناية على مدى فترات طويلة.\n\n### مثال رياضي:\n- ** سعر شراء الشقة: ** 600000 رينجيت ماليزي\n- ** الإيجار الشهري المستلم: ** 2500 رينجيت ماليزي\n- ** الإيجار السنوي: ** 30000 رينجيت ماليزي\n- **أقل: رسوم الصيانة (350 رينجيت ماليزي شهريًا):** 4200 رينجيت ماليزي\n- ** صافي الربح السنوي: ** 25800 رينجيت ماليزي\n- **صافي عائد الإيجار:** **4.3%**\n\n---\n\n## 2. Airbnb/الإقامة القصيرة (الطريق النشط عالي الإنتاجية)\n\nيقوم هذا النموذج بتأجير العقار في الليلة للسياح والمسافرين من رجال الأعمال والمقيمين.\n\n### المزايا:\n- **نقاط السعر الأعلى:** تحصيل رسوم تتراوح بين 200 رينجيت ماليزي إلى 350 رينجيت ماليزي في الليلة مقارنة برسوم شهرية ثابتة منخفضة.\n- **تدفقات نقدية مناسبة:** عوائد ممتازة في المناطق السياحية الساخنة (مثل JB Central وKLCC وMalacca).\n\n### النفقات العامة والتكاليف المخفية:\nفي حين أن إجمالي الإيرادات أعلى، فإن Airbnb لديها نفقات شهرية واسعة النطاق:\n- **رسوم إدارة الممتلكات:** تتقاضى الوكالات المهنية **20% إلى 30%** من إجمالي الأرباح للتعامل مع عمليات تسجيل وصول الضيوف والرسائل وغسيل الملابس.\n- **المرافق:** يجب عليك الدفع مقابل خدمة الواي فاي عالية السرعة والكهرباء والاستخدام المستمر للمياه.\n- **رسوم التنظيف والمنصة:** تأخذ Airbnb جزءًا، ويجب تنظيم التنظيف بعد كل إقامة.\n\n### مثال رياضي:\n- ** سعر شراء الشقة: ** 600000 رينجيت ماليزي\n- **متوسط سعر الليلة:** 250 رينجيت ماليزي\n- **معدل الإشغال (65% / 20 يومًا مشغولًا):** إجمالي 5000 رينجيت ماليزي/الشهر\n- ** إجمالي الإيرادات السنوية: ** 60.000 رينجيت ماليزي\n- **أقل: رسوم الوكالة (25%):** 15000 رينجيت ماليزي\n- **أقل: المرافق (واي فاي، ماء، كهرباء مكيف):** 6000 رينجيت ماليزي\n- **أقل: رسوم الصيانة (350 رينجيت ماليزي شهريًا):** 4200 رينجيت ماليزي\n- ** صافي الربح السنوي: ** 34800 رينجيت ماليزي\n- **صافي عائد الإيجار:** **5.8%**\n\n---\n\n## 3. جدول قرارات الإستراتيجية جنبًا إلى جنب\n\n| ميزة | إيجار طويل الأجل | Airbnb / إقامة قصيرة |\n| :--- | :--- | :--- |\n| **إجمالي العائد** | معتدل (**5% - 6%**) | عالية جدًا (**8% - 12%**) |\n| ** صافي العائد المحتمل ** | مستقر (**4% - 5%**) | المتغير (**5.5% - 8%**) |\n| ** القدرة على التنبؤ بالتدفق النقدي الشهري ** | مثالي | يتقلب حسب الموسم السياحي |\n| ** البلى ** | أقل | أعلى، يتطلب اللمسات |\n| **أفضل المواقع** | مونت كيارا، سايبرجايا، بانجسار | KLCC، مركز مدينة جي بي بالقرب من RTS، بينانج جورني |\n\n## الخلاصة: ما هو المناسب لك؟\n\n- **اختر طويل الأجل** إذا كنت تريد التخلص من التوتر، والحصول على تدفقات نقدية يمكن التنبؤ بها، والإقامة في الخارج بدون شريك وكالة.\n- **اختر المدى القصير** إذا كان عقارك في نقطة عبور عالية الطلب، ولديك وكالة إدارة موثوقة، وأولويتك هي زيادة صافي عائدك السنوي إلى الحد الأقصى.\n\nلتلقي توقعات مخصصة لسوق الإيجار لتطورات محددة، تواصل مع Shyan Yee على WhatsApp اليوم. دعونا تحسين عائداتك معا!",
       "faqs": [
@@ -3921,7 +3921,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "June 2026",
       "author": "Shyan Yee",
       "category": "Investissement",
-      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a5ea?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1200&auto=format&fit=crop",
       "summary": "Vous décidez entre la majesté de la capitale Kuala Lumpur et le corridor de croissance à indice d'octane élevé de Johor Bahru ? Nous pesons les réalités transactionnelles, les rendements et les données démographiques des deux.",
       "content": "# Kuala Lumpur vs Johor Bahru : quel marché remporte votre portefeuille ?\n\nLes investisseurs qui s'intéressent à la Malaisie sont souvent confrontés à un dilemme classique : investissez-vous dans la prestigieuse capitale de **Kuala Lumpur (KL)**, ou optez-vous pour le corridor de croissance rapide adjacent à Singapour de **Johor Bahru (JB)** ?\n\nLes deux marchés ont des moteurs économiques, des cibles démographiques et des points d’entrée distincts. Dans cet article, nous effectuons une comparaison côte à côte pour vous aider à choisir le bon marché en fonction de votre tolérance au risque et de vos objectifs d'investissement.\n\n---\n\n## 1. Kuala Lumpur (KL) : La classe d'actifs souverains\n\nKuala Lumpur, en particulier la région du Grand KL et de la vallée de Klang, est la capitale économique et financière de la Malaisie.\n\n### Points forts :\n- **Stabilité des locataires :** Dominé par les sièges sociaux d'entreprise, les dirigeants de multinationales, les ambassades et les professionnels nationaux à revenus élevés.\n- **Liquidité élevée :** En tant que capitale mondiale, les propriétés de KL bénéficient d'un vaste bassin d'acheteurs locaux et internationaux pour la revente.\n- **Infrastructure urbaine :** Soutenue par trois lignes MRT entièrement intégrées, des écoles internationales et des installations médicales de premier plan.\n\n### Profil de location :\nKL est avant tout un **marché de location longue durée**. Les points chauds des expatriés comme Mont Kiara et Bangsar génèrent des rendements locatifs nets fiables **4,5 % à 5,5 %** avec des locataires stables sur plusieurs années.\n\n---\n\n## 2. Johor Bahru (JB) : le corridor de transit à haut rendement\n\nLe marché immobilier de Johor Bahru a été dynamisé par le prochain **lien Johor-Singapour Rapid Transit System (RTS)** et la **zone économique spéciale Johor-Singapour (JS-SEZ)**.\n\n### Points forts :\n- **Singapour Spillover :** JB constitue une alternative résidentielle très abordable pour les travailleurs singapouriens et malaisiens qui gagnent de forts dollars de Singapour (SGD).\n- **Rendements locatifs incroyables :** Les propriétés situées à moins de 3 km du nœud RTS Bukit Chagar peuvent facilement atteindre des rendements locatifs de **6 % à 8 %**, grâce aux séjours Airbnb de courte durée et aux navetteurs transfrontaliers.\n- **Coût d'entrée inférieur :** Les copropriétés de luxe haut de gamme à JB coûtent une fraction des prix de KL (généralement entre 800 RM et 1 200 RM par pied carré, contre 1 200 RM à 2 000 RM par pied carré à KL pour les segments de luxe).\n\n### Profil de location :\nJB a une répartition florissante entre les **locations touristiques de court séjour (Airbnb)** et les **locations de banlieue à long terme**, offrant des flux de trésorerie immédiats plus élevés mais nécessitant une gestion immobilière plus active.\n\n---\n\n## 3. Matrice de comparaison côte à côte\n\n| Facteur d'investissement | Kuala Lumpur (KL) | Johor Bahru (JB) |\n| :--- | :--- | :--- |\n| **Prix d'entrée moyen** | Plus élevé (seuil minimum de 1 000 000 RM pour les étrangers) | Très compétitif (exemptions à Medini / entrée à partir de 1 million de RM ailleurs) |\n| **Rendement locatif principal** | **4,5% - 5,5%** (Stable, long terme) | **6,0 % - 8,0 %** (flux de trésorerie élevé, adossé au transit) |\n| **Catalyseur de croissance du capital** | Agrandissement du centre financier, ligne MRT3, croissance des entreprises | RTS Link, incitations fiscales JS-SEZ, taux de change Singapour SGD |\n| **Convivialité pour les acheteurs étrangers** | Seuil RM 1M à KL / RM 2M à Selangor | Seuil RM 1M en général, avec limite RM 0 dans la zone Medini |\n\n---\n\n## Recommandation récapitulative :\n\n- **Choisissez Kuala Lumpur si :** Vous êtes un investisseur conservateur recherchant une **préservation du capital**, la sécurité des actifs multigénérationnels, des locataires d'entreprise très stables et des frais généraux de gestion réduits.\n- **Choisissez Johor Bahru si :** Vous souhaitez maximiser les **flux de trésorerie locatifs immédiats**, surfer sur la vague historique d'intégration économique de Singapour et obtenir des plus-values ​​plus élevées au cours des 3 à 5 prochaines années.\n\nPour une comparaison de mise en page personnalisée et des feuilles de calcul de rendement dans les deux États, contactez Shyan Yee sur WhatsApp dès aujourd'hui.",
       "faqs": [
@@ -3997,7 +3997,7 @@ export const PRE_TRANSLATED_BLOG_DETAILS: Record<string, Record<string, BlogArti
       "publishDate": "January 2026",
       "author": "Shyan Yee",
       "category": "Données financières",
-      "image": "https://images.unsplash.com/photo-1560520653-9e0e4c89df11?q=80&w=1200&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
       "summary": "Devriez-vous louer votre propriété à une entreprise locataire à long terme sécurisée, ou devriez-vous exploiter une location de vacances à court terme à haut rendement sur Airbnb ? Nous comparons côte à côte les bénéfices nets finaux.",
       "content": "# Masterclass sur le rendement locatif : locataires longue durée vs courts séjours Airbnb\n\nLors de l’achat d’un immeuble de placement en Malaisie, choisir la bonne stratégie de location est tout aussi important que choisir le bon emplacement. \n\nLe boom actuel du tourisme numérique a rendu la **location Airbnb/courte durée** extrêmement populaire, mais surpasse-t-elle vraiment un **bail d'entreprise à long terme** traditionnel une fois que l'on prend en compte le nettoyage, les frais de gestion, les services publics et les taux d'inoccupation ?\n\nDécomposons les mathématiques exactes.\n\n---\n\n## 1. Location à long terme (la voie passive stable)\n\nIl s'agit du modèle de location traditionnel où un locataire signe un contrat d'un ou deux ans.\n\n### Avantages :\n- **Véritable revenu passif :** Le loyer est payé de manière constante chaque mois. Très faible effort de gestion.\n- **Aucune facture de services publics :** Les locataires paient leur propre consommation d'électricité, d'eau, d'Internet et de climatisation.\n- **Aucun choc d'usure :** Les occupants stables traitent la propriété avec soin pendant de longues périodes.\n\n### Exemple mathématique :\n- **Prix d'achat du condo :** RM 600 000\n- **Loyer mensuel perçu :** 2 500 RM\n- **Loyer annuel :** 30 000 RM\n- **Moins : frais de maintenance (RM 350/mois) :** RM 4 200\n- **Bénéfice annuel net :** 25 800 RM\n- **Rendement locatif net :** **4,3%**\n\n---\n\n## 2. Airbnb/Short-Stay (La route active à haut rendement)\n\nCe modèle loue la propriété par nuit aux touristes, aux voyageurs d'affaires et aux séjours.\n\n### Avantages :\n- **Points de prix plus élevés :** Facturation de 200 RM à 350 RM par nuit par rapport à un tarif mensuel forfaitaire peu élevé.\n- **Flux de trésorerie favorables :** Excellents rendements dans les hauts lieux touristiques (comme JB Central, KLCC et Malacca).\n\n### Les frais généraux et les coûts cachés :\nBien que les revenus bruts soient plus élevés, Airbnb a des dépenses mensuelles importantes :\n- **Frais de gestion immobilière :** Les agences professionnelles facturent **20 % à 30 %** des revenus bruts pour gérer l'enregistrement des clients, les messages et la lessive.\n- **Utilitaires :** Vous devez payer pour la connexion Wi-Fi haut débit, l'électricité et la consommation continue d'eau.\n- **Frais de nettoyage et de plateforme :** Airbnb prélève une réduction et le ménage doit être organisé après chaque séjour.\n\n### Exemple mathématique :\n- **Prix d'achat du condo :** RM 600 000\n- **Tarif moyen par nuit :** RM 250\n- **Taux d'occupation (65 % / 20 jours occupés) :** RM brut 5 000/mois\n- **Revenu brut annuel :** 60 000 RM\n- **Moins : frais d'agence (25 %) :** RM 15 000\n- **Moins : Utilitaires (Wi-Fi, eau, électricité AC) :** RM 6 000\n- **Moins : frais de maintenance (RM 350/mois) :** RM 4 200\n- **Bénéfice annuel net :** 34 800 RM\n- **Rendement locatif net :** **5,8%**\n\n---\n\n## 3. Table de décision stratégique côte à côte\n\n| Fonctionnalité | Location à long terme | Airbnb / Court séjour |\n| :--- | :--- | :--- |\n| **Potentiel de rendement brut** | Modéré (**5% - 6%**) | Très élevé (**8 % - 12 %**) |\n| **Potentiel de rendement net** | Stable (**4% - 5%**) | Variable (**5,5% - 8%**) |\n| **Prévisibilité mensuelle des flux de trésorerie** | Parfait | Fluctue selon la saison touristique |\n| **Usures** | Inférieur | Plus élevé, nécessite des retouches |\n| **Meilleurs emplacements** | Mont Kiara, Cyberjaya, Bangsar | KLCC, centre-ville JB près de RTS, Penang Gurney |\n\n## Conclusion : Qu'est-ce qui vous convient ?\n\n- **Choisissez Long Terme** si vous souhaitez zéro stress, des flux de trésorerie prévisibles et résider à l'étranger sans agence partenaire.\n- **Choisissez Court Terme** si votre propriété se trouve dans un nœud de transport en commun très demandé, si vous disposez d'une agence de gestion fiable et si votre priorité est de maximiser votre rendement annuel net.\n\nPour recevoir des projections personnalisées du marché de la location pour des développements spécifiques, contactez Shyan Yee sur WhatsApp dès aujourd'hui. Optimisons ensemble vos rendements !",
       "faqs": [

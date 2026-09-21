@@ -15,7 +15,7 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
     "updatedOn": "2026-09-21",
     "author": "Shyan Yee",
     "category": "Reviews",
-    "image": "https://lh3.googleusercontent.com/d/1Pbm9MbeURHPhClLhS100Jdzg_75vbL-Y=w1600",
+    "image": "https://lh3.googleusercontent.com/d/10tZk8SpaCnd7kVmcS_ytsQX-a9WVu299=w1600",
     "faqs": [
       {
         "question": "Is CloutHaus KLCC freehold?",
@@ -287,7 +287,7 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
     "updatedOn": "2026-09-21",
     "author": "Shyan Yee",
     "category": "Reviews",
-    "image": "https://lh3.googleusercontent.com/d/1Pbm9MbeURHPhClLhS100Jdzg_75vbL-Y=w1600",
+    "image": "https://lh3.googleusercontent.com/d/10tZk8SpaCnd7kVmcS_ytsQX-a9WVu299=w1600",
     "faqs": [
       {
         "question": "CloutHaus 是永久地契吗？",

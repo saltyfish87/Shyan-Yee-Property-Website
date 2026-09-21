@@ -3,7 +3,7 @@ title: CloutHaus KLCC Review: Price, Layouts, Pros & Cons from a Licensed Agent
 metaDescription: CloutHaus KLCC review: freehold residences facing the Petronas Twin Towers, from RM 1.5 million. Layouts, facilities, maintenance fee, pros and cons, and who it suits.
 summary: CloutHaus is a freehold, 66-storey twin-tower residence on Jalan P. Ramlee, directly facing the Petronas Twin Towers. This review covers price, the 18 layouts, facilities, the trade-offs, and who should and should not buy.
 category: Reviews
-image: https://lh3.googleusercontent.com/d/1Pbm9MbeURHPhClLhS100Jdzg_75vbL-Y=w1600
+image: https://lh3.googleusercontent.com/d/10tZk8SpaCnd7kVmcS_ytsQX-a9WVu299=w1600
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: clouthaus, orion-residence, pavilion-square-residences, core-residence-trx

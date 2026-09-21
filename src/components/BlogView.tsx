@@ -202,24 +202,26 @@ export const BlogView: React.FC<BlogViewProps> = ({
     });
   }, [articles, searchQuery, selectedCategory]);
 
+  // Hooks must run on every render, so this stays above the early returns below.
+  const handleBodyClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement;
+    const video = target.closest('.md-video') as HTMLElement | null;
+    if (video && video.dataset.youtube) {
+      e.preventDefault();
+      video.innerHTML = `<iframe src="${youtubeEmbed(video.dataset.youtube)}" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+      return;
+    }
+    const link = target.closest('a') as HTMLAnchorElement | null;
+    if (!link) return;
+    const href = link.getAttribute('href') || '';
+    const path = href.replace(/^https?:\/\/(www\.)?shyanyee\.com/i, '').replace(/^\/zh(?=\/)/, '');
+    const blog = path.match(/^\/blog\/([^/?#]+)/);
+    const proj = path.match(/^\/projects\/([^/?#]+)/);
+    if (blog) { e.preventDefault(); onBlogNavigate(blog[1]); }
+    else if (proj) { e.preventDefault(); onProjectNavigate(proj[1]); }
+  }, [onBlogNavigate, onProjectNavigate]);
+
   if (activeBlogSlug) {
-    const handleBodyClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-      const target = e.target as HTMLElement;
-      const video = target.closest('.md-video') as HTMLElement | null;
-      if (video && video.dataset.youtube) {
-        e.preventDefault();
-        video.innerHTML = `<iframe src="${youtubeEmbed(video.dataset.youtube)}" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
-        return;
-      }
-      const link = target.closest('a') as HTMLAnchorElement | null;
-      if (!link) return;
-      const href = link.getAttribute('href') || '';
-      const path = href.replace(/^https?:\/\/(www\.)?shyanyee\.com/i, '').replace(/^\/zh(?=\/)/, '');
-      const blog = path.match(/^\/blog\/([^/?#]+)/);
-      const proj = path.match(/^\/projects\/([^/?#]+)/);
-      if (blog) { e.preventDefault(); onBlogNavigate(blog[1]); }
-      else if (proj) { e.preventDefault(); onProjectNavigate(proj[1]); }
-    }, [onBlogNavigate, onProjectNavigate]);
 
     if (isLoadingActive || !activeFullArticle) {
       return <ShimmerArticle />;
