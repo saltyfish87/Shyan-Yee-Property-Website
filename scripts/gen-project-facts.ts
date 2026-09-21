@@ -93,10 +93,18 @@ function main() {
     return Array.isArray(d) ? d : d.projects || [];
   })();
 
-  const byAlias = new Map<string, ProjectFacts>();
+  // The sales kits live on the agent's Mac, not on the deploy server. When they are not here the
+  // committed output is the good copy, so keep it rather than overwriting it with an empty file.
   if (!fs.existsSync(CTG_DIR)) {
-    console.warn(`[gen-project-facts] ${CTG_DIR} not found; writing an empty file so the build still works.`);
-  } else {
+    if (fs.existsSync(OUT)) {
+      console.log(`[gen-project-facts] ${CTG_DIR} not found; keeping the committed ${path.relative(ROOT, OUT)}.`);
+      return;
+    }
+    console.warn(`[gen-project-facts] ${CTG_DIR} not found and no committed file; writing an empty one.`);
+  }
+
+  const byAlias = new Map<string, ProjectFacts>();
+  if (fs.existsSync(CTG_DIR)) {
     for (const dir of fs.readdirSync(CTG_DIR)) {
       if (dir.startsWith('.') || /\.bak_/i.test(dir)) continue;
       const f = path.join(CTG_DIR, dir, 'result.json');
