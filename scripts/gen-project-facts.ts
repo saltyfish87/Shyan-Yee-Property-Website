@@ -197,6 +197,14 @@ async function main() {
   })();
 
   const localFac = localFacilities();
+  // The deploy server has no sales-kit folder, so a plain rebuild there would drop every facilities
+  // list that was filled in from the Mac. Start from what is already committed and only ever add.
+  const previous: Record<string, ProjectFacts> = (() => {
+    try {
+      const txt = fs.readFileSync(OUT, 'utf8');
+      return JSON.parse(txt.slice(txt.indexOf('= {') + 2).trim().replace(/;\s*$/, ''));
+    } catch { return {}; }
+  })();
   const out: Record<string, ProjectFacts> = {};
   const missing: string[] = [];
   for (const p of projects) {
@@ -224,9 +232,17 @@ async function main() {
         || [...localFac.entries()].find(([key]) => key.length >= 4 && (key.startsWith(norm(p.name)) || norm(p.name).startsWith(key)))?.[1];
       if (fallback) facts.facilities = parseFacilities(fallback);
     }
+    const old = previous[p.id];
+    if (old) {
+      if (!facts.keyFeatures.length) facts.keyFeatures = old.keyFeatures || [];
+      if (!facts.facilities.length) facts.facilities = old.facilities || [];
+      if (!facts.nearby.length) facts.nearby = old.nearby || [];
+    }
     if (facts.keyFeatures.length || facts.facilities.length || facts.nearby.length) out[p.id] = facts;
     else missing.push(`${p.name} (row present but empty)`);
   }
+
+  for (const [id, old] of Object.entries(previous)) if (!out[id]) out[id] = old;
 
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, moduleText(out), 'utf8');
