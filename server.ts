@@ -498,6 +498,35 @@ async function fetchGoogleDriveStructuredImages(): Promise<ImageSyncResult> {
       }
     }
 
+    // Google Drive's folder page truncates the listing (it returned 67 of 82 folders, which is how
+    // Queenswoodz lost its images and fell back to Kingswoodz's). embeddedfolderview returns the
+    // full list in one simple page, so use it as the authoritative source and keep the scrape above
+    // as a backup for when this endpoint is unavailable.
+    try {
+      const embUrl = `https://drive.google.com/embeddedfolderview?id=${folderId}#list`;
+      const embRes = await fetchWithRetry(embUrl, {
+        headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" },
+      }, 3, 10000);
+      const embHtml = await embRes.text();
+      const entryRegex = /\/folders\/([a-zA-Z0-9_-]{20,50})"[\s\S]{0,800}?<div class="flip-entry-title">([^<]+)<\/div>/g;
+      let em;
+      let embCount = 0;
+      while ((em = entryRegex.exec(embHtml)) !== null) {
+        const id = em[1];
+        const name = em[2].trim();
+        if (!name || !id) continue;
+        if (name.toLowerCase().includes("bin") || name.toLowerCase().includes("trash")) continue;
+        embCount++;
+        if (!seenFolderIds.has(id)) {
+          seenFolderIds.add(id);
+          folders.push({ name, id });
+        }
+      }
+      console.log(`Drive Sync: embeddedfolderview listed ${embCount} folders (total now ${folders.length}).`);
+    } catch (e: any) {
+      console.warn(`Drive Sync: embeddedfolderview failed, using the scraped list only: ${e.message || e}`);
+    }
+
     // Force add vital folders to ensure those not listed are fully supported
     const vitalFolders = [
       { name: "Axis", id: "1sySWvaUlkW47FQt_IWIgMgORz6Xx0Vvd" },
@@ -1741,9 +1770,8 @@ async function fetchGoogleSheetsProjects(forceRefresh = false): Promise<any[]> {
           } else {
             // Priority word list for precise matching first
             let bestKey = "";
-            if (id.includes("queenswoodz") || id === "queenswoodz") {
-              bestKey = Object.keys(imagesMap).find(key => (key === "kingswoodz" || key.includes("kingswoodz")) && hasRealImages(key)) || "";
-            } else if (id.includes("axis")) {
+            // Never borrow another project's photos: queenswoodz used to fall back to kingswoodz here.
+            if (id.includes("axis")) {
               bestKey = Object.keys(imagesMap).find(key => (key === "axis" || key.includes("axis")) && hasRealImages(key)) || "";
             } else if (id.includes("brixton")) {
               bestKey = Object.keys(imagesMap).find(key => (key === "brixton" || key.includes("brixton")) && hasRealImages(key)) || "";
