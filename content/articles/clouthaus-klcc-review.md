@@ -7,7 +7,7 @@ image: https://lh3.googleusercontent.com/d/10tZk8SpaCnd7kVmcS_ytsQX-a9WVu299=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: clouthaus, orion-residence, pavilion-square-residences, core-residence-trx
-relatedSlugs: orion-residence-bukit-bintang-review, pavilion-square-kl-review, freehold-vs-leasehold, foreigner-buying-property-in-malaysia
+relatedSlugs: centrix-the-station-klcc-review, core-residence-trx-review, orion-residence-bukit-bintang-review, pavilion-square-kl-review, freehold-vs-leasehold, foreigner-buying-property-in-malaysia
 tags: klcc, freehold, branded residence, review
 faqs:
   - q: Is CloutHaus KLCC freehold?

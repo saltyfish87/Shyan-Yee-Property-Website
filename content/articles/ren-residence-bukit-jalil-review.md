@@ -7,7 +7,7 @@ image: https://lh3.googleusercontent.com/d/1SzU_RC5uFKLIp_jmvk576_APCBUfRUPd=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: ren-residence, oaka-residences, queenswoodz, kingswoodz-bukit-jalil, park-green-pavilion-bukit-jalil
-relatedSlugs: freehold-vs-leasehold, understanding-maintenance-fees-sinking-funds
+relatedSlugs: oaka-residences-bukit-jalil-review, ayanna-bukit-jalil-review, freehold-vs-leasehold, understanding-maintenance-fees-sinking-funds
 tags: bukit jalil, family, residential title, review
 faqs:
   - q: Is Ren Residence a residential or commercial title?
@@ -58,8 +58,8 @@ On an elevated site in Taman LTAT, Bukit Jalil, near Tzu Chi International Schoo
 | **Ren Residence** | Leasehold | RM 537,000 | 920 to 1,680 sq ft | 1,260 | RM 0.35 psf | 2026 |
 | [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | Leasehold | RM 422,500 | 474 to 904 sq ft | 1,558 | RM 0.42 psf | 2028 |
 | [Queenswoodz](/projects/queenswoodz) | Leasehold | RM 723,000 | 807 to 1,410 sq ft | 1,004 | RM 0.42 psf | 2029 |
-| [OAKA Residences](/projects/oaka-residences) | Freehold | RM 836,000 | 882 to 1,423 sq ft | 350 | RM 0.33 psf | 2028 |
-| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.40 psf | 2029 |
+| [OAKA Residences](/projects/oaka-residences) | Freehold | RM 836,000 | 882 to 1,509 sq ft | 350 | RM 0.51 psf | 2028 |
+| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.44 psf | 2029 |
 
 Ren has the lowest entry price for a three-bedroom home of 920 sq ft in this group, and the earliest completion. The freehold options (OAKA, Park Green) start noticeably higher.
 

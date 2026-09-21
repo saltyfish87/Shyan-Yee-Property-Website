@@ -7,7 +7,7 @@ image: https://lh3.googleusercontent.com/d/1roffnx2x4ACpJOXhinTiAgB8LMJB7xXz=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: orion-residence, clouthaus, pavilion-square-residences, core-residence-trx
-relatedSlugs: clouthaus-klcc-review, pavilion-square-kl-review, freehold-vs-leasehold
+relatedSlugs: core-residence-trx-review, golden-crown-trx-review, clouthaus-klcc-review, pavilion-square-kl-review, freehold-vs-leasehold
 tags: bukit bintang, freehold, branded residence, review
 faqs:
   - q: Is Orion Residence freehold?

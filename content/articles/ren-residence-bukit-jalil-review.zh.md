@@ -51,8 +51,8 @@ faqs:
 | **Ren Residence** | 租赁 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |
 | [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租赁 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |
 | [Queenswoodz](/projects/queenswoodz) | 租赁 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |
-| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,423 平方英尺 | 350 | 每平方英尺 RM 0.33 | 2028 |
-| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.40 | 2029 |
+| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |
+| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |
 
 在这一组里，Ren 的 920 平方英尺 3 房入门价最低，完工也最早。永久地契的选择（OAKA、Park Green）起价明显更高。
 

@@ -3,6 +3,171 @@ import type { BlogArticle } from '../types';
 
 export const GENERATED_ARTICLES: BlogArticle[] = [
   {
+    "id": "ayanna-bukit-jalil-review",
+    "slug": "ayanna-bukit-jalil-review",
+    "title": "Ayanna Bukit Jalil Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Ayanna Resort Residences review: freehold residential-title condo in Bukit Jalil by Chin Hin, 1,155 to 2,453 sq ft, from RM 753,000. Layouts, fees, pros and cons.",
+    "summary": "Ayanna Resort Residences is a pair of 42 and 44-storey towers on 4.9 acres in Bukit Jalil, with 824 large freehold homes from 1,155 sq ft. This review covers price per square foot, the layouts, the resort-style facilities, the trade-offs and who it suits.",
+    "content": "# Quick verdict: who should buy Ayanna?\n\n**My view.** Ayanna is the cheapest floor area of any freehold launch I follow in Bukit Jalil, at about RM 639 per square foot. The smallest unit is 1,155 sq ft and there is nothing here below three bedrooms, so this is a building for households that need room, not for a single buyer looking for a small city unit. It is freehold with a residential title, so utilities are at domestic rates, and the monthly fee of RM 0.27 psf is the lowest in the comparison below. What you give up is walkability: the nearest LRT is a drive away, and at 824 units with 9 to 13 homes per floor and 3 passenger lifts per tower, this is a full-sized community rather than a quiet one.\n\n- **Suits:** families who want the most space per ringgit in Bukit Jalil; buyers who want freehold and residential title; households with two or more cars.\n- **Think twice if:** you want to walk to an LRT station, or you prefer a small, low-density building.\n\n# Ayanna at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Chin Hin Group Property |\n| Address | Jalan Mas, Bukit Jalil, 58200 Kuala Lumpur |\n| Tenure / title | Freehold, residential title |\n| Land size | 4.9 acres |\n| Towers / floors | Block A 42 storeys, Block B 44 storeys |\n| Total units | 824 (Block A: 333; Block B: 491) |\n| Units per floor / lifts | Tower A 9 units, Tower B 13 units; 3 lifts + 1 service lift |\n| Built-up | 1,155 to 2,453 sq ft |\n| Bedrooms | 3 to 4 + 2 |\n| Car parks | 2 to 4 per unit, over 9 car park levels (LG to Level 7) |\n| Price | From RM 753,000 (about RM 639 psf) |\n| Maintenance fee | RM 0.27 psf including sinking fund |\n| Target completion | Q2 2027 (48 months from SPA) |\n\n# Where is Ayanna, and what is nearby?\n\nOn Jalan Mas in Bukit Jalil, on a 4.9-acre site. Alam Sutera LRT is about 1.5 km away and Kinrara BK5 about 2.5 km, so both are a drive or a feeder ride rather than a walk. Driving routes are the Bukit Jalil Highway, KESAS, the KL to Seremban Expressway, MEX, LDP and NPE.\n\nNearby: Giant Kinrara (2.5 km), Pavilion Bukit Jalil (3.5 km), IOI Mall Puchong (6.3 km), Sunway Pyramid (7.5 km) and Mid Valley Megamall (8.9 km). Schools and campuses include SJK(C) Lai Meng (3.8 km), Tzu Chi International School (3.9 km), International Medical University (5.2 km), Sunway University (6.9 km), APU (8.2 km) and Taylor's University (8.4 km). Hospitals: KPJ Kinrara (1.8 km), IMU Healthcare (5.2 km), Sunway Medical Centre (6 km) and Columbia Asia (6.9 km). Bukit Jalil Recreational Park is about 4 km away.\n\n# How does Ayanna compare with other Bukit Jalil launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Ayanna** | Freehold | RM 753,000 | 1,155 to 2,453 sq ft | 824 | RM 0.27 psf | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | Freehold | RM 836,000 | 882 to 1,509 sq ft | 350 | RM 0.51 psf | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.44 psf | 2029 |\n| [Ren Residence](/projects/ren-residence) | Leasehold | RM 537,000 | 920 to 1,680 sq ft | 1,260 | RM 0.35 psf | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | Leasehold | RM 723,000 | 807 to 1,410 sq ft | 1,004 | RM 0.42 psf | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | Leasehold | RM 422,500 | 474 to 904 sq ft | 1,558 | RM 0.42 psf | 2028 |\n\nAyanna starts below OAKA while offering a much larger minimum unit, which is where the price-per-square-foot gap shows. Against Park Green, the other large-unit freehold here, Ayanna is the budget option; Park Green trades that for a smaller building and a bridge into Pavilion Bukit Jalil.\n\n# Which Ayanna layout is best?\n\n| Type | Size | Configuration | Share of units |\n| :--- | :--- | :--- | :--- |\n| E | 1,155 to 1,189 sq ft | 3 bedrooms, 2 bathrooms | 41% |\n| A | 1,365 to 1,400 sq ft | 4 bedrooms, 2 bathrooms | 40% |\n| B | 1,679 to 1,697 sq ft | 4 + 1 bedrooms, 2 bathrooms | 9% |\n| C | 1,859 to 1,879 sq ft | 4 + 2 bedrooms, 3 + 1 bathrooms | 5% |\n| D | 2,316 to 2,453 sq ft | 4 + 2 bedrooms, 3 + 1 bathrooms | 5% |\n\n**What I would pick.** Types E and A make up 81% of the building, so those are the two most buyers will choose between, and they are genuinely different homes. Type E at 1,155 to 1,189 sq ft is the entry: a real three-bedroom, and the cheapest way into a freehold residential title here. Type A at 1,365 to 1,400 sq ft adds a fourth bedroom for a step up in price, and it is the layout I would push a growing family towards. Types B, C and D are the rare ones, 19% of the building between them, running up to 2,453 sq ft with four-plus-two bedrooms; if you need that much room, ask which stacks they sit on, because scarce layouts in a large building tend to hold value best.\n\n# Facilities\n\nAyanna is built around a 1.3-acre ground-level park with an interactive stream, cabanas, a fitness area, a parcourse station, a multi-generational play area and a dedicated pet zone with a dog agility trail and pet shower. Level 1 has two badminton courts and a kids' play room; Level 4 the gym; Level 5 games room, co-working space and reading room; Level 6 a function hall. Level 9 is the pool deck: lap pool, family pool, kids' pool with water play, jacuzzi, cascading water feature, pavilion, open lawn and flower garden. Both towers have a sky BBQ deck at the top, on Level 40 and Level 42. Practical provisions include EV charging, a car wash area, parcel and mail rooms, a surau, and space for a kindergarten, laundry and convenience store.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| About RM 639 psf, the lowest of the freehold launches compared above | Nearest LRT is 1.5 km: a drive or feeder ride |\n| Freehold with residential title: domestic utility rates | 824 units with 9 to 13 per floor and 3 passenger lifts per tower |\n| Nothing smaller than 3 bedrooms; 2 to 4 car parks | No layout below 1,155 sq ft, so the entry ticket is a family-sized home |\n| 1.3-acre park, pet-friendly with a dog agility trail | Completion in 2027 |\n\n# How to view Ayanna\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Ayanna project page](/projects/ayanna).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Ayanna data page on PropertyPortal](https://www.propertyportal.my/project/ayanna-res).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1EdnmVYVGe4UQ_mAWSYppkiLkQClwbmT1=w1600",
+    "faqs": [
+      {
+        "question": "Is Ayanna freehold or leasehold?",
+        "answer": "Freehold, with a residential title. Ayanna Resort Residences is developed by Chin Hin Group Property on Jalan Mas, Bukit Jalil."
+      },
+      {
+        "question": "What is the starting price of Ayanna?",
+        "answer": "From RM 753,000, or about RM 639 per square foot. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "What sizes are available at Ayanna?",
+        "answer": "From 1,155 sq ft (3 bedrooms) to 2,453 sq ft (4 + 2 bedrooms), with 2 to 4 car park bays depending on the layout."
+      },
+      {
+        "question": "How many units does Ayanna have?",
+        "answer": "824 units in two towers, Block A at 42 storeys with 9 units per floor and Block B at 44 storeys with 13 units per floor."
+      },
+      {
+        "question": "When will Ayanna be completed?",
+        "answer": "Q2 2027, on a 48-month construction period from the sale and purchase agreement."
+      }
+    ],
+    "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "ayanna",
+      "oaka-residences",
+      "ren-residence",
+      "park-green-pavilion-bukit-jalil",
+      "queenswoodz"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "family",
+      "review"
+    ]
+  },
+  {
+    "id": "branniganz-klcc-review",
+    "slug": "branniganz-klcc-review",
+    "title": "Branniganz KLCC Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Branniganz review: EXSIM's mixed tower on Lorong Yap Kwan Seng with 490 office suites and 269 serviced suites, 344 to 678 sq ft, from RM 803,500 gross.",
+    "summary": "Branniganz is EXSIM's two-wing development in the KL city centre, pairing 490 office suites with 269 serviced suites from 344 sq ft. This review covers price, the layouts, the maintenance charge, what is missing from the published data and who it suits.",
+    "content": "# Quick verdict: who should buy Branniganz?\n\n**My view.** Branniganz is the smallest entry ticket into the KL city centre that I have on my list, at RM 803,500 gross, and you should understand exactly what that buys. This is a two-wing building: 490 office suites in Wing A and only 269 serviced suites in Wing B, so the residential part is a minority of the development. The smallest layout is 344 sq ft. At that size you are buying a city base or a letting asset, not a home you grow into. The maintenance charge is RM 1.21 psf with a developer subsidy of RM 0.40 psf for two years, which means your cost steps up in year three. I would ask two questions before anything else: which wing is the unit in, and what car park allocation comes with it, because the data I have does not list an allocated bay.\n\n- **Suits:** buyers who want a city-centre address at the lowest possible entry price; owners who want a compact letting asset near KLCC; people who do not need a car park.\n- **Think twice if:** you need space, you want freehold, or you want a purely residential building.\n\n# Branniganz at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Lembaran Beruntung Sdn Bhd (EXSIM) |\n| Address | Lorong Yap Kwan Seng, Bukit Kewangan, 50450 Kuala Lumpur |\n| Tenure | Leasehold |\n| Composition | Wing A: 490 office suites; Wing B: 269 serviced suites |\n| Total units | 759 |\n| Built-up | 344 to 678 sq ft |\n| Bedrooms | 1 to 2 |\n| Price | From RM 803,500 (gross) |\n| Maintenance fee | RM 1.21 psf, with a developer subsidy of RM 0.40 psf for 2 years |\n| Car park | Not listed in the current data: confirm with the developer |\n| Target completion | 2028 |\n\n# Where is Branniganz, and what is nearby?\n\nOn Lorong Yap Kwan Seng in Bukit Kewangan, inside the KL city centre. This is the same pocket as EXSIM's Phoeniz Suites, a short drive from KLCC, Suria KLCC and Pavilion Kuala Lumpur, and within the CBD and Golden Triangle. The AKLEH highway serves the area, and the nearest rail options are the Dang Wangi and Ampang Park stations depending on which side of Jalan Ampang you walk to. Ask the sales team for the measured walking distance from this site, as it makes a real difference at this unit size.\n\n# How does Branniganz compare with its KLCC neighbours?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Branniganz** | Leasehold | RM 803,500 | 344 to 678 sq ft | 759 | RM 1.21 psf | 2028 |\n| [Centrix The Station](/projects/centrix) | Leasehold | RM 907,800 | 571 to 1,187 sq ft | 857 | RM 0.44 psf | 2028 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | Freehold | RM 1,016,400 | 484 to 678 sq ft | 394 | RM 1.21 psf | 2031 |\n| [Golden Crown](/projects/golden-crown) | Leasehold | RM 1,280,000 | 624 to 1,238 sq ft | 490 | RM 0.80 psf | 2026 |\n| [CloutHaus](/projects/clouthaus) | Freehold | RM 1,548,800 | 549 to 1,216 sq ft | 615 | RM 0.80 psf | 2029 |\n| [Orion Residence](/projects/orion-residence) | Freehold | RM 1,580,000 | 491 to 1,329 sq ft | 298 | RM 1.32 psf | Completed |\n\nBranniganz has the lowest entry price of the six and the smallest units. The comparison I would actually put to a buyer is against Centrix: for about RM 100,000 more, Centrix gives a 571 sq ft minimum instead of 344, a monthly charge of RM 0.44 instead of RM 1.21, and an LRT station under the building. If your budget genuinely stops at RM 800,000, Branniganz is the city-centre option; if it can stretch, look at Centrix first.\n\n# Which Branniganz layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A | 344 sq ft | 1 bedroom, 1 bathroom |\n| B1 | 400 sq ft | 1 bedroom, 1 bathroom |\n| B2 | 455 sq ft | 1 bedroom, 1 bathroom |\n| C1 | 511 sq ft | 1 bedroom, 1 bathroom |\n| C2 | 567 sq ft | 1 bedroom, 1 bathroom |\n| C3 | 622 sq ft | 1 bedroom, 1 bathroom |\n| D | 678 sq ft | 2 bedrooms, 2 bathrooms |\n\n**What I would pick.** Type D at 678 sq ft is the only layout here I would buy to live in, because it is the only one with two bedrooms and two bathrooms, and in a building made mostly of small suites the scarce type is usually the one that holds its value best. Among the one-bedrooms, C1 at 511 sq ft is where a unit starts to feel like an apartment rather than a room; below that, Types A and B are better understood as compact letting stock. Whichever you choose, confirm in writing whether the unit sits in the office-suite wing or the serviced-suite wing, because that affects how the building is used day to day.\n\n# Facilities\n\nThe developer has not published a full facilities schedule in the data I have, so I will not list one here rather than guess. EXSIM's nearby tower stacks its facilities on the upper floors, with a sky pool and sky gym near the top and the management, concierge and service floors lower down. Ask the sales gallery for the equivalent plan for Branniganz, and in particular which wing has access to what.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Lowest entry price of the KLCC projects compared above | RM 1.21 psf monthly charge, stepping up after the 2-year subsidy |\n| City-centre address inside the CBD and Golden Triangle | Smallest unit is 344 sq ft; only one 2-bedroom layout |\n| Compact units are the easiest size to let in this area | Only 269 of the 759 units are serviced suites; the rest are office suites |\n| Completion in 2028, earlier than Phoeniz Suites nearby | No car park allocation listed in the current data; facilities schedule not published |\n\n# How to view Branniganz\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Branniganz project page](/projects/branniganz).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Branniganz data page on PropertyPortal](https://www.propertyportal.my/project/branniganz-exsim).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1QuDcLSm-vtaXzl_-XkHSY6I3haTxVy4U=w1600",
+    "faqs": [
+      {
+        "question": "Is Branniganz freehold or leasehold?",
+        "answer": "Leasehold. It is developed by Lembaran Beruntung Sdn Bhd, an EXSIM company, on Lorong Yap Kwan Seng in the KL city centre."
+      },
+      {
+        "question": "What is the starting price of Branniganz?",
+        "answer": "From RM 803,500 gross. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "What is Branniganz made up of?",
+        "answer": "Two wings totalling 759 units: Wing A holds 490 office suites and Wing B holds 269 serviced suites."
+      },
+      {
+        "question": "What sizes are available at Branniganz?",
+        "answer": "From 344 sq ft to 678 sq ft, with the largest layout being a 2-bedroom."
+      },
+      {
+        "question": "When will Branniganz be completed?",
+        "answer": "2028, according to the current project data. Confirm the construction period in the sale and purchase agreement."
+      }
+    ],
+    "relatedSlugs": [
+      "phoeniz-suites-klcc-review",
+      "centrix-the-station-klcc-review",
+      "clouthaus-klcc-review"
+    ],
+    "relatedProjectIds": [
+      "branniganz",
+      "phoeniz-suites-kl-city-centre",
+      "centrix",
+      "golden-crown",
+      "clouthaus"
+    ],
+    "tags": [
+      "klcc",
+      "leasehold",
+      "suites",
+      "review"
+    ]
+  },
+  {
+    "id": "centrix-the-station-klcc-review",
+    "slug": "centrix-the-station-klcc-review",
+    "title": "Centrix The Station KLCC Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Centrix The Station KLCC review: a 47-storey TOD sitting on Dang Wangi LRT, 857 units, 571 to 1,187 sq ft, from RM 907,800. Layouts, views, fees, pros and cons.",
+    "summary": "Centrix The Station is a 47-storey transit-oriented tower on Jalan Ampang, built directly above Dang Wangi LRT station. This review covers price per square foot, the layouts, the views, the facilities and who should and should not buy.",
+    "content": "# Quick verdict: who should buy Centrix The Station KLCC?\n\n**My view.** Centrix is a transit building first and a view building second, and both are real. The basement connects straight into Dang Wangi LRT, so you walk out of the lift and into the station; Bukit Nanas monorail is a short walk on top of that, KLCC is two stops away, and driving to the Twin Towers is about five minutes. Upper floors look out at what we call the four landmarks in this business: the Petronas Twin Towers, KL Tower, Merdeka 118 and the TRX cluster, with the KL Forest Eco Park greenery on some stacks. The entry price is also noticeably below the luxury towers a few streets away, which is the main reason I show it. One thing to know before you go: this is the project's third time coming to market, having been shelved twice before. Ask the sales team directly about the construction schedule, and check it against what you see on site.\n\n- **Suits:** professionals working in KLCC who want the shortest possible commute; buyers who want a liquid city-centre asset; foreign buyers, including MM2H holders, who want a central address that clears the state price threshold.\n- **Think twice if:** you want freehold, or a low-density building with few units per floor.\n\n# Video walkthrough\n\n{{youtube:KyYFl2cz4Vw}}\n\n# Centrix at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Intan Sekitar Sdn Bhd (Crest Builder Berhad) |\n| Address | Jalan Ampang, 50450 Kuala Lumpur |\n| Tenure / title | Leasehold, commercial title |\n| Land size | 2.39 acres |\n| Floors | 47 |\n| Total units | 857 |\n| Units per floor | 14 to 21 depending on the band; 11 on Levels 43 and 44 |\n| Lifts | 11 in total: 5 for the low zone, 5 plus a service lift for the high zone |\n| Built-up | 571 to 1,187 sq ft |\n| Layouts | Studio, large studio, 1 bedroom, 1 bedroom + study, dual key |\n| Price | From RM 907,800 (about RM 1,600 to RM 1,850 psf gross) |\n| Maintenance fee | RM 0.44 psf (RM 0.40 maintenance + RM 0.04 sinking fund) |\n| Target completion | 2028 |\n\n# Where is Centrix, and what is within walking distance?\n\nOn Jalan Ampang, at the intersection with Jalan Sultan Ismail, directly above Dang Wangi LRT station (KJ12). Bukit Nanas monorail station is a walk away, which gives you both rail lines from one address.\n\nWithin the immediate area: KL Forest Eco Park, Quill City Mall, Life Centre, the Saloma Link bridge, Avenue K, Suria KLCC and the Petronas Twin Towers, KL Tower, Pavilion Kuala Lumpur, Merdeka 118 and The Exchange TRX. Schools include St John International, Primrose Hill International and Eton International. Hospitals: KPJ Sentosa, Prince Court Medical Centre and HSC Medical Centre.\n\n# How does Centrix compare with its KLCC neighbours?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Centrix The Station** | Leasehold | RM 907,800 | 571 to 1,187 sq ft | 857 | RM 0.44 psf | 2028 |\n| [Branniganz](/projects/branniganz) | Leasehold | RM 803,500 | 344 to 678 sq ft | 759 | RM 1.21 psf | 2028 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | Freehold | RM 1,016,400 | 484 to 678 sq ft | 394 | RM 1.21 psf | 2031 |\n| [Golden Crown](/projects/golden-crown) | Leasehold | RM 1,280,000 | 624 to 1,238 sq ft | 490 | RM 0.80 psf | 2026 |\n| [CloutHaus](/projects/clouthaus) | Freehold | RM 1,548,800 | 549 to 1,216 sq ft | 615 | RM 0.80 psf | 2029 |\n| [Orion Residence](/projects/orion-residence) | Freehold | RM 1,580,000 | 491 to 1,329 sq ft | 298 | RM 1.32 psf | Completed |\n\nCentrix has the lowest monthly fee of this group by a wide margin, and sits in the lower half on entry price while offering larger units than Branniganz or Phoeniz. What it gives up against CloutHaus and Orion is freehold tenure and building exclusivity: 857 units with up to 21 homes per floor is a busy tower.\n\n# Which Centrix layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| Studio | 571 to 659 sq ft | Studio |\n| 1 bedroom / 1 bedroom + study | 578 to 871 sq ft | 1 bedroom |\n| Large studio | 752 to 855 sq ft | Studio |\n| Dual key | 593 to 777 sq ft | Two lockable sides |\n| Dual key (large) | 891 sq ft and above | Two lockable sides |\n\n**What I would pick.** The layout I filmed is the dual key at just over 800 sq ft, and it is the one I would choose. It splits into two self-contained sides of roughly 400 sq ft each, each with its own entrance off a shared foyer, its own bathroom and its own kitchenette. Everything is included: wardrobes, kitchen cabinets, appliances and beds, on 2 ft by 4 ft floor tiles that make the rooms read larger. Live in one side and use the other as a home office, or keep one for family. If you only need one address, the 578 to 871 sq ft one-bedroom with study is the practical own-stay choice. Ask which stacks face the Twin Towers and which face the forest park before you pick a floor.\n\n# Facilities\n\nThe facilities sit on two podium levels, the 10th and the 45th. The pool deck has the Aqua Sonata lap pools (16 m by 4.5 m, 1.2 m deep) and a kids' pool (5.5 m by 4.5 m, 600 mm deep), with cabanas and a sun deck. The work and social block includes flexible meeting rooms, fully serviced workspaces, dedicated lounges, a games room, a reading room and a gourmet kitchen. Garden spaces run through the scheme: water cascades, misty alcoves, walking trails, a canopy walk, a mini lawn, swings and a play area. At the top: sky gymnasium, sky lounge, BBQ garden and viewing decks. Retail sits at the base alongside the grand lobby.\n\nThe sales team has also mentioned a managed-service option for owners. That is not in the written specification I have, so confirm it in writing before you count on it.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Built directly above Dang Wangi LRT, with the monorail within walking distance | Leasehold with a commercial title: confirm utility tariffs |\n| Lowest monthly fee of the KLCC launches compared above, at RM 0.44 psf | 857 units, with up to 21 homes per floor |\n| Entry price below the luxury towers nearby | The project has come to market three times; check the construction schedule |\n| Views of the Twin Towers, KL Tower, Merdeka 118 and the forest park | Mostly studios and one-bedrooms: limited choice for families |\n\n# How to view Centrix The Station KLCC\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Centrix project page](/projects/centrix).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Centrix data page on PropertyPortal](https://www.propertyportal.my/project/centrix).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1MY5YTmBIm4WE2ge52ikODy_gKU1Xflcs=w1600",
+    "faqs": [
+      {
+        "question": "Is Centrix The Station KLCC freehold or leasehold?",
+        "answer": "Leasehold, with a commercial title. It is developed by Intan Sekitar Sdn Bhd, a subsidiary of Crest Builder Berhad."
+      },
+      {
+        "question": "Is Centrix connected to the LRT?",
+        "answer": "Yes. It is a transit-oriented development built above Dang Wangi LRT station (KJ12), with Bukit Nanas monorail station within walking distance."
+      },
+      {
+        "question": "What is the starting price of Centrix?",
+        "answer": "From RM 907,800, or about RM 1,600 to RM 1,850 per square foot gross. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "What sizes are available at Centrix?",
+        "answer": "From 571 sq ft studios up to 1,187 sq ft, including large studios, one-bedroom and dual-key layouts."
+      },
+      {
+        "question": "When will Centrix be completed?",
+        "answer": "The developer targets 2028. As of the latest update, piling is complete and the superstructure has reached Level 3."
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-klcc-review",
+      "golden-crown-trx-review",
+      "foreigner-buying-property-in-malaysia"
+    ],
+    "relatedProjectIds": [
+      "centrix",
+      "clouthaus",
+      "golden-crown",
+      "phoeniz-suites-kl-city-centre",
+      "branniganz"
+    ],
+    "tags": [
+      "klcc",
+      "tod",
+      "lrt",
+      "review"
+    ]
+  },
+  {
     "id": "clouthaus-klcc-review",
     "slug": "clouthaus-klcc-review",
     "title": "CloutHaus KLCC Review: Price, Layouts, Pros & Cons from a Licensed Agent",
@@ -39,6 +204,8 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
       }
     ],
     "relatedSlugs": [
+      "centrix-the-station-klcc-review",
+      "core-residence-trx-review",
       "orion-residence-bukit-bintang-review",
       "pavilion-square-kl-review",
       "freehold-vs-leasehold",
@@ -54,6 +221,116 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
       "klcc",
       "freehold",
       "branded residence",
+      "review"
+    ]
+  },
+  {
+    "id": "core-residence-trx-review",
+    "slug": "core-residence-trx-review",
+    "title": "Core Residence @ TRX Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Core Residence TRX review: freehold residences inside Tun Razak Exchange with direct MRT interchange access, 700 units, 622 to 1,572 sq ft, from about RM 1.44 million.",
+    "summary": "Core Residence @ TRX is a completed freehold development of 700 homes inside Tun Razak Exchange, by a joint venture between CCCG and WCT. This review covers the three towers, price per square foot, the layouts, the facilities and who it suits.",
+    "content": "# Quick verdict: who should buy Core Residence @ TRX?\n\n**My view.** Core Residence is the option in this comparison that you can walk through today. It is finished, freehold, and inside Tun Razak Exchange itself, which means the MRT interchange, the 10-acre central park and The Exchange mall are part of the estate rather than things nearby. It also carries double green certification, GBI and LEED, which very few residential buildings in the city hold. Most of the stock is in Towers 1 and 2, which are compact one and two-bedroom homes; Tower 3 is the smaller, more expensive tower with the large layouts. Decide which of those two products you are buying before you look at a price list, because they are almost different projects sharing an address.\n\n- **Suits:** buyers who want a freehold TRX address and want to move in now; people who work in the financial district; foreign buyers who need to clear the RM 1 million threshold with a completed asset.\n- **Think twice if:** you want a launch-stage payment schedule, or a purely residential building without offices and a hotel in the neighbourhood.\n\n# Core Residence at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | CORE Precious Development Sdn Bhd (CCCG and WCT Holdings Berhad) |\n| Address | Tun Razak Exchange, Jalan Tun Razak, 55188 Kuala Lumpur |\n| Tenure / title | Freehold, commercial title under HDA |\n| Land size | 1.65 acres |\n| Towers / floors | 3 towers, 50 storeys |\n| Total units | 700 (Towers 1 and 2: 580; Tower 3: 120) |\n| Units per floor / lifts | Tower 1: 7 units; Tower 2: 8 units; 3 lifts + 1 service lift |\n| Built-up | 622 to 1,572 sq ft |\n| Bedrooms | 1 to 3 |\n| Price | About RM 1.44 million to RM 4.66 million (about RM 2,171 psf) |\n| Maintenance fee | RM 0.85 psf including sinking fund |\n| Green rating | GBI and LEED |\n| Status | Completed (Towers 1 and 2 in 2024, Tower 3 in 2025) |\n\n# Where is Core Residence, and what is nearby?\n\nInside Tun Razak Exchange, Malaysia's international financial district and an RM 40 billion masterplan whose office tenants include HSBC and Prudential. The TRX MRT interchange for Lines 1 and 2 is directly connected, and the 10-acre TRX Central Park is on the estate.\n\nRetail: The Exchange Mall inside TRX, Pavilion Kuala Lumpur (800 m), Starhill Gallery, Fahrenheit 88, Lot 10 and IKEA Cheras. Healthcare: Prince Court Medical Centre (900 m), HSC Medical Centre and Gleneagles. Schools: EtonHouse International and the International School of Kuala Lumpur. Recreation: Royal Selangor Golf Club (850 m). Driving: MEX, the SMART Tunnel, Jalan Tun Razak and Jalan Sultan Ismail. The Exchange 106 tower is on the estate and the Petronas Twin Towers are 1.8 km away.\n\n# How does Core Residence compare with its neighbours?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Core Residence @ TRX** | Freehold | RM 1,442,207 | 622 to 1,572 sq ft | 700 | RM 0.85 psf | Completed |\n| [Golden Crown](/projects/golden-crown) | Leasehold | RM 1,280,000 | 624 to 1,238 sq ft | 490 | RM 0.80 psf | 2026 |\n| [Centrix The Station](/projects/centrix) | Leasehold | RM 907,800 | 571 to 1,187 sq ft | 857 | RM 0.44 psf | 2028 |\n| [CloutHaus](/projects/clouthaus) | Freehold | RM 1,548,800 | 549 to 1,216 sq ft | 615 | RM 0.80 psf | 2029 |\n| [Orion Residence](/projects/orion-residence) | Freehold | RM 1,580,000 | 491 to 1,329 sq ft | 298 | RM 1.32 psf | Completed |\n| [Pavilion Square](/projects/pavilion-square-residences) | Leasehold | RM 1,700,000 | 504 to 1,272 sq ft | 960 | RM 0.90 psf | 2029 |\n\nCore and Orion are the two completed freeholds in this group. Orion is the boutique one at 298 units with hotel-style services and a much higher monthly charge; Core is the larger estate with the bigger top-end layouts and a lower fee. Against Golden Crown next door, Core is freehold and ready, and Golden Crown is leasehold with a lower entry price.\n\n# Which Core Residence layout is best?\n\nTowers 1 and 2 hold the compact stock:\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A1 | 624 sq ft | 1 bedroom, 1 bathroom |\n| A2 | 688 sq ft | 1 + 1 bedrooms, 1 bathroom |\n| B1 | 817 sq ft | 2 bedrooms, 2 bathrooms |\n| B2 / B2a | 839 sq ft | 2 bedrooms, 2 bathrooms |\n| B3 | 925 sq ft | 2 + 1 bedrooms, 2 bathrooms |\n| B4 | 1,011 sq ft | 2 bedrooms, 2 bathrooms |\n| C1 | 1,022 sq ft | 3 bedrooms, 2 bathrooms |\n\nTower 3 holds the 120 larger homes, running from about 1,029 sq ft up to 1,572 sq ft, priced from around RM 2.01 million to RM 4.66 million.\n\n**What I would pick.** In Towers 1 and 2, B3 at 925 sq ft is the layout I would choose for own stay: two bedrooms plus a utility room, two bathrooms, and still under the psychological line where TRX pricing gets steep. A1 at 624 sq ft is the entry ticket and the most liquid unit in the building. If you need a family home rather than a city base, go straight to Tower 3 and compare its larger layouts against CloutHaus and Orion, because at that budget those become the real alternatives.\n\n# Facilities\n\nLevel 7 is the family and community deck: function hall, reading room, indoor playground, outdoor lounge, a recreational park and a childcare centre. Level 50 is the sky deck: sky pool, wading pool, pool deck and sky gym. There is also a sky bar on the hotel rooftop within the development. Beyond the building, residents have the 10-acre TRX Central Park and The Exchange Mall on the same estate.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Freehold and completed: you can inspect the actual unit | About RM 2,171 psf, the highest entry per square foot of the group compared above |\n| Direct connectivity to the TRX MRT interchange | Commercial title: confirm utility tariffs and assessment rates |\n| GBI and LEED dual green certification | Towers 1 and 2 are mostly compact one and two-bedroom units |\n| 10-acre central park and the mall on the same estate | 700 units across three towers, sharing an estate with offices and a hotel |\n\n# How to view Core Residence @ TRX\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Core Residence @ TRX project page](/projects/core-residence-trx).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Core Residence @ TRX data page on PropertyPortal](https://www.propertyportal.my/project/core-trx).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/13XbMaagXXczrYR5zOxhRmYUIRV7fa-4w=w1600",
+    "faqs": [
+      {
+        "question": "Is Core Residence @ TRX freehold?",
+        "answer": "Yes. Core Residence @ TRX is freehold with a commercial title under the Housing Development Act, developed by CORE Precious Development Sdn Bhd, a joint venture between CCCG and WCT Holdings Berhad."
+      },
+      {
+        "question": "Is Core Residence completed?",
+        "answer": "Yes. Towers 1 and 2 were targeted for completion in September 2024 and Tower 3 in Q3 2025, so this is a ready building rather than a launch."
+      },
+      {
+        "question": "What is the starting price of Core Residence @ TRX?",
+        "answer": "From about RM 1.44 million, or roughly RM 2,171 per square foot. Tower 3 units are priced higher, up to about RM 4.66 million."
+      },
+      {
+        "question": "How is Core Residence connected to public transport?",
+        "answer": "It sits inside Tun Razak Exchange with direct connectivity to the TRX MRT interchange station, which serves MRT Lines 1 and 2."
+      },
+      {
+        "question": "Can foreigners buy at Core Residence @ TRX?",
+        "answer": "Yes. Prices are above Kuala Lumpur's RM 1,000,000 minimum purchase price for foreign buyers."
+      }
+    ],
+    "relatedSlugs": [
+      "golden-crown-trx-review",
+      "clouthaus-klcc-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "core-residence-trx",
+      "golden-crown",
+      "clouthaus",
+      "orion-residence",
+      "pavilion-square-residences"
+    ],
+    "tags": [
+      "trx",
+      "freehold",
+      "completed",
+      "review"
+    ]
+  },
+  {
+    "id": "golden-crown-trx-review",
+    "slug": "golden-crown-trx-review",
+    "title": "Golden Crown TRX Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Golden Crown Residence review: 60-storey tower beside TRX with an underground tunnel to the MRT interchange, 490 units, 624 to 1,238 sq ft, from RM 1,280,000.",
+    "summary": "Golden Crown Residence is a 60-storey tower on Jalan Tun Razak, next door to Tun Razak Exchange, with a basement tunnel into the TRX MRT interchange. This review covers price, the layouts, the rooftop facilities, the trade-offs and who it suits.",
+    "content": "# Quick verdict: who should buy Golden Crown?\n\n**My view.** Golden Crown's case is the tunnel. From the basement you walk underground into the TRX MRT interchange, which is two lines in one station, and into The Exchange TRX mall, which is 50 m away. In a city where the last 200 m in the rain decides how often you actually use the train, that matters more than most buyers expect. It sits inside Menara Golden Eagle, a mixed development that also holds a hotel and offices, and it is the only launch in this comparison that completes this year, so you are not buying a plan on paper. The price reflects all of that, at about RM 2,051 psf, and the tenure is leasehold, which is the usual trade in this pocket of the city.\n\n- **Suits:** buyers who work at TRX or in the Golden Triangle and want a covered walk to the MRT; people who want a completed building rather than a four-year wait; buyers who want a 2 + 1 or 3-bedroom home in the city centre.\n- **Think twice if:** you want freehold, or a residential-only building rather than one sharing an address with a hotel and offices.\n\n# Golden Crown at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Multibay Development Sdn Bhd (Golden Eagle) |\n| Address | Jalan Tun Razak, adjacent to Tun Razak Exchange, Kuala Lumpur |\n| Tenure / title | Leasehold, commercial title |\n| Land size | 2.033 acres |\n| Floors | 60 |\n| Total units | 490 |\n| Units per floor / lifts | 10 to 11 units; 4 passenger lifts + 1 service lift |\n| Built-up | 624 to 1,238 sq ft |\n| Bedrooms | 1 to 3 |\n| Price | RM 1,280,000 to RM 3,031,000 (about RM 2,051 psf) |\n| Maintenance fee | About RM 0.80 psf |\n| Part of | Menara Golden Eagle: residences, hotel and offices |\n| Target completion | August 2026 (36 months from SPA) |\n\n# Where is Golden Crown, and what is within walking distance?\n\nOn Jalan Tun Razak, immediately next to Tun Razak Exchange. The MRT Line 1 and 2 interchange is 50 m away with a direct basement tunnel, and the 10-acre TRX park is the same distance.\n\nRetail: The Exchange TRX (50 m), IKEA and MyTown (800 m), Berjaya Times Square (900 m), Pavilion Kuala Lumpur, Starhill Gallery and Lot 10 (1 km), Suria KLCC (1.8 km). Healthcare: Prince Court Medical Centre (600 m), Tung Shin Hospital (800 m), HSC Medical Centre (2 km). Schools: EtonHouse International (1 km), Tsun Jin High School (1.8 km), International School of Kuala Lumpur (2.3 km). Recreation: Royal Selangor Golf Club (550 m) and KLCC Park (1.3 km). Driving: Jalan Tun Razak, the SMART Tunnel, MEX and the SPE.\n\n# How does Golden Crown compare with its neighbours?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Golden Crown** | Leasehold | RM 1,280,000 | 624 to 1,238 sq ft | 490 | RM 0.80 psf | 2026 |\n| [Core Residence @ TRX](/projects/core-residence-trx) | Freehold | RM 1,442,207 | 622 to 1,572 sq ft | 700 | RM 0.85 psf | Completed |\n| [Centrix The Station](/projects/centrix) | Leasehold | RM 907,800 | 571 to 1,187 sq ft | 857 | RM 0.44 psf | 2028 |\n| [CloutHaus](/projects/clouthaus) | Freehold | RM 1,548,800 | 549 to 1,216 sq ft | 615 | RM 0.80 psf | 2029 |\n| [Pavilion Square](/projects/pavilion-square-residences) | Leasehold | RM 1,700,000 | 504 to 1,272 sq ft | 960 | RM 0.90 psf | 2029 |\n| [Orion Residence](/projects/orion-residence) | Freehold | RM 1,580,000 | 491 to 1,329 sq ft | 298 | RM 1.32 psf | Completed |\n\nThe direct comparison is Core Residence @ TRX: both are at TRX, both connect to the same MRT interchange. Core is freehold and completed with larger top-end units; Golden Crown is leasehold, starts lower and completes this year. Against Centrix, Golden Crown is the more expensive and more central address; Centrix is the cheaper entry with a much lower monthly fee.\n\n# Which Golden Crown layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A1 | 624 sq ft | 1 bedroom, 1 bathroom |\n| A2 (balcony) | 732 sq ft | 1 bedroom, 1 bathroom |\n| B1 / B2 | 926 sq ft | 2 + 1 bedrooms, 2 bathrooms |\n| B3 | 958 sq ft | 2 + 1 bedrooms, 2 bathrooms |\n| C (dual key) | 1,023 sq ft | 2 + 1 bedrooms, 2 bathrooms |\n| D | 1,238 sq ft | 3 bedrooms, 2 bathrooms |\n\n**What I would pick.** The B-series at 926 to 958 sq ft is the sensible middle for own stay: two bedrooms plus a utility room that works as a study, two bathrooms, and enough floor area that the living and dining do not feel like a hotel suite. A2 at 732 sq ft is the one-bedroom worth paying up for over A1, because the balcony is the difference between a city apartment and a box. The 1,023 sq ft Type C dual key suits an owner who wants a separate front door for a parent or an adult child, and Type D at 1,238 sq ft is the only true three-bedroom in the building.\n\n# Facilities\n\nFacilities are at the top of the tower and at street level. Level 58: prayer room, library, gym, multipurpose room and a games and video room. Level 59: infinity swimming pool, wading pool, pool deck, BBQ terrace, children's playground and changing rooms. Ground floor: concierge, 24-hour security, lobby, retail, kindergarten, management office and mail room. Basement 1 holds more retail and the tunnel to the TRX MRT interchange.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Basement tunnel into the TRX MRT interchange and The Exchange TRX | Leasehold with a commercial title: confirm utility tariffs |\n| Completing in 2026, the earliest of the group compared above | About RM 2,051 psf, above Centrix and Core TRX per square foot |\n| 490 units at 10 to 11 per floor | Shares the development with a hotel and offices |\n| 10-acre TRX park 50 m away | Only one true three-bedroom layout |\n\n# How to view Golden Crown\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Golden Crown project page](/projects/golden-crown).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Golden Crown data page on PropertyPortal](https://www.propertyportal.my/project/golden-crown).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1yH8boDRs4uKXH35ZlmOdet_7Crovvvp_=w1600",
+    "faqs": [
+      {
+        "question": "Is Golden Crown freehold or leasehold?",
+        "answer": "Leasehold, with a commercial title. It is developed by Multibay Development Sdn Bhd, a subsidiary of Golden Eagle."
+      },
+      {
+        "question": "Is Golden Crown connected to the TRX MRT station?",
+        "answer": "Yes. There is a basement-level tunnel from the development to the TRX MRT interchange for Lines 1 and 2, and to The Exchange TRX mall."
+      },
+      {
+        "question": "What is the starting price of Golden Crown?",
+        "answer": "From RM 1,280,000, or about RM 2,051 per square foot. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "How many units are there at Golden Crown?",
+        "answer": "490 units in a 60-storey tower, at 10 to 11 units per floor with 4 passenger lifts and 1 service lift."
+      },
+      {
+        "question": "When will Golden Crown be completed?",
+        "answer": "The developer targets August 2026, on a 36-month construction period from the sale and purchase agreement."
+      }
+    ],
+    "relatedSlugs": [
+      "core-residence-trx-review",
+      "centrix-the-station-klcc-review",
+      "clouthaus-klcc-review"
+    ],
+    "relatedProjectIds": [
+      "golden-crown",
+      "core-residence-trx",
+      "centrix",
+      "clouthaus",
+      "pavilion-square-residences"
+    ],
+    "tags": [
+      "trx",
+      "klcc",
+      "mrt",
       "review"
     ]
   },
@@ -110,6 +387,116 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
     ]
   },
   {
+    "id": "kingswoodz-bukit-jalil-review",
+    "slug": "kingswoodz-bukit-jalil-review",
+    "title": "The Kingswoodz Bukit Jalil Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "The Kingswoodz Bukit Jalil review: EXSIM's 1,558-unit leasehold launch from RM 422,500, 474 to 904 sq ft, 900 m to LRT Awan Besar. Layouts, fees, pros and cons.",
+    "summary": "The Kingswoodz is EXSIM's three-tower, 1,558-unit development on 3.45 acres in Bukit Jalil, and the lowest entry price of any launch in the area. This review covers price, the layouts, the facilities, the trade-offs and who it suits.",
+    "content": "# Quick verdict: who should buy The Kingswoodz?\n\n**My view.** The Kingswoodz is the cheapest way into Bukit Jalil that I can put in front of a buyer right now: RM 422,500 for a 474 sq ft unit, in a township where most new launches start above RM 700,000. That price buys a small unit in a big building, and both parts of that sentence matter. Three towers and 1,558 homes make this the largest community in the area, at 14 to 17 units per floor with three or four passenger lifts per tower. If you are buying your first home and the deposit is the obstacle, that trade is usually worth making. If you are buying a family home to live in for ten years, look at the larger, lower-density options nearby first.\n\n- **Suits:** first-home buyers working in Bukit Jalil, Sri Petaling or Kuchai Lama; buyers who want the lowest entry price in the township; people who use the LRT and buses.\n- **Think twice if:** you need three bedrooms and more than one car park, or you dislike large, dense buildings.\n\n# The Kingswoodz at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | EXSIM Jalil Link Sdn Bhd |\n| Address | Lot 38628, Jalan Jalil Perkasa 1, Bukit Jalil, Kuala Lumpur |\n| Tenure / title | Leasehold, commercial title under HDA |\n| Land size | 3.45 acres |\n| Towers / floors | Tower A 46, Tower B 45, Tower C 46 storeys |\n| Total units | 1,558 |\n| Units per floor | Tower A about 14, Tower B about 15, Tower C about 17 |\n| Lifts | Towers A and B: 4 passenger + 1 service; Tower C: 3 passenger + 1 service |\n| Built-up | 474 to 904 sq ft |\n| Bedrooms | 1 to 3 |\n| Price | RM 422,500 to RM 766,800 (about RM 809 psf) |\n| Maintenance fee | RM 0.42 psf including sinking fund |\n| Furnishing | Partially furnished as standard |\n| Target completion | 2028 (52 months) |\n\n# Where is The Kingswoodz, and what is nearby?\n\nOn Jalan Jalil Perkasa 1 in Bukit Jalil. LRT Awan Besar is about 900 m away and there is a Rapid KL bus stop about 230 m from the site, which is closer public transport than most of the launches in this township. Driving routes are KESAS, the NPE Kuchai Link, MEX, Sprint, ELITE, the Sungai Besi Expressway and SUKE.\n\nNearby: Aurora Place Bukit Jalil (1 km), Pavilion Bukit Jalil (2.8 km), The Food Merchant (3.4 km), Giant Bukit Kinrara (5.2 km), NSK Kuchai Lama (6.6 km) and Mid Valley Megamall (7.5 km). Schools and campuses include SJK(C) Lai Meng (1 km), SJK(T) Ladang Bukit Jalil (1.5 km) and International Medical University (4.4 km).\n\n# How does The Kingswoodz compare with other Bukit Jalil launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **The Kingswoodz** | Leasehold | RM 422,500 | 474 to 904 sq ft | 1,558 | RM 0.42 psf | 2028 |\n| [Ren Residence](/projects/ren-residence) | Leasehold | RM 537,000 | 920 to 1,680 sq ft | 1,260 | RM 0.35 psf | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | Leasehold | RM 723,000 | 807 to 1,410 sq ft | 1,004 | RM 0.42 psf | 2029 |\n| [Ayanna](/projects/ayanna) | Freehold | RM 753,000 | 1,155 to 2,453 sq ft | 824 | RM 0.27 psf | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | Freehold | RM 836,000 | 882 to 1,509 sq ft | 350 | RM 0.51 psf | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.44 psf | 2029 |\n\nKingswoodz is the only launch here that starts below RM 500,000, and the only one with units under 500 sq ft. Queenswoodz, from the same developer and also in Bukit Jalil, is the larger-unit sibling: it starts at 807 sq ft and RM 723,000.\n\n# Which Kingswoodz layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A | 474 sq ft | 1 bedroom, 1 bathroom |\n| B | 678 sq ft | 2 bedrooms, 2 bathrooms |\n| C | 904 sq ft | 3 bedrooms, 2 bathrooms |\n\nThe project page also lists 617 sq ft and 761 sq ft variants, so ask the sales team for the current type chart before you commit to a size.\n\n**What I would pick.** Type B at 678 sq ft is the layout I would choose for a first home: two bedrooms and two bathrooms is the smallest configuration that still rents and resells easily, and the gap in price from the 474 sq ft studio is not large. Type C at 904 sq ft is the only three-bedroom, and the one to look at if this has to hold a small family. Type A works as a rental unit or a single person's first purchase, but understand that it competes with 1,557 other units in the same building.\n\n# Facilities\n\nThe facilities are on Level 8 and at the top of each tower. Level 8: swimming pool, jacuzzi, wading pool, outdoor gym and indoor gym, reflexology garden, games room, reading lounge, function hall, pavilion, biopond, children's playground, basketball court, garden plaza, lawn, community farm, outdoor dining and a fitness trail. The rooftops (Level 45 in Tower B, Level 46 in Towers A and C) have a sky lounge, sky BBQ, sky dining and a sky garden. Ground floor has the grand entrance, three lobbies, retail, a mailroom and a nursery in Tower A. The facade is by WDA Design.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Lowest entry price of any Bukit Jalil launch compared above | 1,558 units across three towers: the densest option here |\n| About 900 m to LRT Awan Besar and 230 m to a bus stop | 14 to 17 units per floor with 3 to 4 passenger lifts |\n| Partially furnished as standard | Leasehold with a commercial title: confirm utility tariffs |\n| Facilities on a full podium level plus three rooftops | Largest unit is 904 sq ft, so limited room to grow |\n\n# How to view The Kingswoodz\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Kingswoodz project page](/projects/kingswoodz-bukit-jalil).\n\nFor the full unit-type table, facilities list and nearby distances, see the [The Kingswoodz data page on PropertyPortal](https://www.propertyportal.my/project/kingswoodz).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1b2w3wss5365AM_l66TWcXOjRnDSFLXzc=w1600",
+    "faqs": [
+      {
+        "question": "Is The Kingswoodz freehold or leasehold?",
+        "answer": "Leasehold, with a commercial title under the Housing Development Act. It is developed by EXSIM Jalil Link Sdn Bhd on Jalan Jalil Perkasa 1, Bukit Jalil."
+      },
+      {
+        "question": "What is the starting price of The Kingswoodz?",
+        "answer": "From RM 422,500, or about RM 809 per square foot. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "How far is the LRT from The Kingswoodz?",
+        "answer": "LRT Awan Besar is about 900 m away, and there is a Rapid KL bus stop about 230 m from the site."
+      },
+      {
+        "question": "How many units are there?",
+        "answer": "1,558 units across three towers of 45 to 46 storeys, at roughly 14 to 17 units per floor."
+      },
+      {
+        "question": "When will The Kingswoodz be completed?",
+        "answer": "2028, on a 52-month construction period."
+      }
+    ],
+    "relatedSlugs": [
+      "ren-residence-bukit-jalil-review",
+      "oaka-residences-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "kingswoodz-bukit-jalil",
+      "queenswoodz",
+      "ren-residence",
+      "oaka-residences",
+      "ayanna"
+    ],
+    "tags": [
+      "bukit jalil",
+      "leasehold",
+      "first home",
+      "review"
+    ]
+  },
+  {
+    "id": "oaka-residences-bukit-jalil-review",
+    "slug": "oaka-residences-bukit-jalil-review",
+    "title": "OAKA Residences Bukit Jalil Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "OAKA Residences review: freehold residential-title condo in Bukit Jalil by Berjaya, 350 units, 7 per floor, from RM 836,000. Layouts, fees, pros and cons.",
+    "summary": "OAKA Residences is a 30-storey, 350-unit freehold condominium on 2.2 acres in Bukit Jalil, by Berjaya Hartanah. This review covers price, the layouts, the low-density plan, facilities, the trade-offs and who it suits.",
+    "content": "# Quick verdict: who should buy OAKA Residences?\n\n**My view.** OAKA is the low-density option in Bukit Jalil. Where the other launches here run to 800, 1,000 or 1,500 units, OAKA has 350 in two blocks, at 7 units per floor with 3 lifts. That ratio is the single number I would buy this building for: lift waits and corridor traffic are what residents complain about after handover, and this plan is built to avoid both. It is also freehold with a residential title, so utilities are billed at domestic rates rather than commercial ones. You pay for the low density in two places: the monthly fee is higher than its Bukit Jalil neighbours, and the entry price is above the leasehold launches nearby.\n\n- **Suits:** buyers who want freehold and residential title in Bukit Jalil; people who dislike crowded lifts and large communities; households needing two or three parking bays.\n- **Think twice if:** you want the lowest entry price in the area, or the lowest monthly charge.\n\n# OAKA Residences at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Berjaya Hartanah Berhad |\n| Address | Lot 36471, Jalan Jalil Perkasa 7, Bukit Jalil, 57000 Kuala Lumpur |\n| Tenure / title | Freehold, residential title |\n| Land size | 2.2 acres |\n| Blocks / floors | 2 blocks, 30 storeys |\n| Total units | 350 (175 per block) |\n| Units per floor / lifts | 7 units, 3 lifts |\n| Built-up | 882 to 1,509 sq ft |\n| Bedrooms | 2 to 3 |\n| Car parks | 2 to 3 per unit |\n| Price | RM 836,000 to RM 1,503,000 (about RM 820 to RM 1,056 psf) |\n| Maintenance fee | RM 0.51 psf including sinking fund |\n| Green rating | GreenRE Gold |\n| Target completion | Q1 2028 (48 months from first SPA) |\n\n# Where is OAKA Residences, and what is nearby?\n\nOn Jalan Jalil Perkasa 7, inside the established part of Bukit Jalil. Awan Besar, Bukit Jalil and Sri Petaling LRT stations serve the area, and the Bukit Jalil Highway, MEX, KESAS, MRR2, SUKE and the KL to Seremban Expressway are the driving routes.\n\nWithin the neighbourhood: Pavilion Bukit Jalil, Pearl Point Shopping Mall, The Tropika and The Link 2; Columbia Asia Hospital Bukit Jalil; SJKC Lai Meng, SMK Bukit Jalil, Tzu Chi International School and Kingsgate International School; International Medical University, APIIT and APU. The 80-acre Bukit Jalil Recreational Park, Bukit Jalil Golf & Country Resort, the National Stadium and KL Sports City are all in the same pocket.\n\n# How does OAKA compare with other Bukit Jalil launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **OAKA Residences** | Freehold | RM 836,000 | 882 to 1,509 sq ft | 350 | RM 0.51 psf | 2028 |\n| [Ayanna](/projects/ayanna) | Freehold | RM 753,000 | 1,155 to 2,453 sq ft | 824 | RM 0.27 psf | 2027 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.44 psf | 2029 |\n| [Ren Residence](/projects/ren-residence) | Leasehold | RM 537,000 | 920 to 1,680 sq ft | 1,260 | RM 0.35 psf | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | Leasehold | RM 723,000 | 807 to 1,410 sq ft | 1,004 | RM 0.42 psf | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | Leasehold | RM 422,500 | 474 to 904 sq ft | 1,558 | RM 0.42 psf | 2028 |\n\nOAKA has by far the fewest units of the six. Ayanna is the other freehold with a residential title and offers more floor area per ringgit, but in a building of 824 units. Park Green is the premium freehold option at a noticeably higher entry price.\n\n# Which OAKA layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A | 882 sq ft | 2 bedrooms, 2 bathrooms |\n| A1a | 915 sq ft | 2 bedrooms, extended balcony |\n| B3 (lanai) | 1,175 sq ft | 2 + 1 bedrooms, 2 bathrooms |\n| B1 / B2 | 1,182 sq ft | 2 + 1 bedrooms, 2 bathrooms |\n| B3a | 1,240 sq ft | 2 + 1 bedrooms, extended balcony |\n| B1a / B2a | 1,262 sq ft | 2 + 1 bedrooms, extended balcony |\n| C | 1,423 sq ft | 3 bedrooms, 3 bathrooms |\n| C1a | 1,509 sq ft | 3 bedrooms, extended balcony |\n\n**What I would pick.** The B-series at 1,175 to 1,262 sq ft is the practical middle: two bedrooms plus a utility room that works as a study or helper's room, and a wide living and dining frontage. The lanai and extended-balcony versions are worth asking about, because outdoor space at this size is rare in Bukit Jalil. Type C at 1,423 sq ft gives each of the three bedrooms its own bathroom. Ask which stack faces the golf course and which faces the KL skyline before you choose a floor.\n\n# Facilities\n\nLevel 1 and the podium hold the infinity pool, wading pool, whirlpool tub, pool deck and pavilion, outdoor shower, half basketball court, lawn and children's playground, gymnasium, yoga and dance studio, games room, theatre room, residents' lounge, kid's studio, multipurpose hall, and sauna and changing rooms. The rooftop adds a sky outdoor lounge, sky garden, sky pavilion, sky gazebo and BBQ deck. Practical provisions: EV charging bays, car wash area, parcel and mail rooms, food delivery area, surau, and space set aside for a nursery, retail and a laundrette.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Freehold with residential title: domestic utility rates | Monthly fee of RM 0.51 psf is the highest of the Bukit Jalil launches compared above |\n| Only 350 units, 7 per floor with 3 lifts | Entry price above the leasehold launches nearby |\n| 2 to 3 car park bays per unit | Nearest LRT is a drive or a feeder ride, not a walk |\n| GreenRE Gold, pet-friendly, all units with balcony or lanai | Completion in 2028 |\n\n# How to view OAKA Residences\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [OAKA Residences project page](/projects/oaka-residences).\n\nFor the full unit-type table, facilities list and nearby distances, see the [OAKA Residences data page on PropertyPortal](https://www.propertyportal.my/project/oaka-res).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1dWgmVqgZk6bFD9Pn5Ndd6i1-tq2_tdLH=w1600",
+    "faqs": [
+      {
+        "question": "Is OAKA Residences freehold or leasehold?",
+        "answer": "Freehold, with a residential title. It is developed by Berjaya Hartanah Berhad on Jalan Jalil Perkasa 7, Bukit Jalil."
+      },
+      {
+        "question": "What is the starting price of OAKA Residences?",
+        "answer": "From RM 836,000, or about RM 820 to RM 1,056 per square foot. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "How many units are there at OAKA Residences?",
+        "answer": "350 units in two blocks of 30 storeys, at 7 units per floor served by 3 lifts."
+      },
+      {
+        "question": "How many car parks come with each unit?",
+        "answer": "Two to three parking bays per unit, according to the developer."
+      },
+      {
+        "question": "When will OAKA Residences be completed?",
+        "answer": "The developer targets Q1 2028, 48 months from the first sale and purchase agreement."
+      }
+    ],
+    "relatedSlugs": [
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold",
+      "understanding-maintenance-fees-sinking-funds"
+    ],
+    "relatedProjectIds": [
+      "oaka-residences",
+      "ren-residence",
+      "park-green-pavilion-bukit-jalil",
+      "ayanna",
+      "kingswoodz-bukit-jalil"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "low density",
+      "review"
+    ]
+  },
+  {
     "id": "orion-residence-bukit-bintang-review",
     "slug": "orion-residence-bukit-bintang-review",
     "title": "Orion Residence Bukit Bintang Review: Price, Layouts, Pros & Cons",
@@ -146,6 +533,8 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
       }
     ],
     "relatedSlugs": [
+      "core-residence-trx-review",
+      "golden-crown-trx-review",
       "clouthaus-klcc-review",
       "pavilion-square-kl-review",
       "freehold-vs-leasehold"
@@ -160,6 +549,61 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
       "bukit bintang",
       "freehold",
       "branded residence",
+      "review"
+    ]
+  },
+  {
+    "id": "park-green-bukit-jalil-review",
+    "slug": "park-green-bukit-jalil-review",
+    "title": "Park Green Pavilion Bukit Jalil Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Park Green Bukit Jalil review: freehold Malton tower with a link bridge into Pavilion Bukit Jalil, 453 units, 1,201 to 1,905 sq ft, from RM 1,209,100. Layouts and verdict.",
+    "summary": "Park Green is Malton's third and final phase inside Pavilion Bukit Jalil, a 47-storey freehold tower of 453 large homes with its own bridge into the mall. This review covers price, the six layouts, the park view, the facilities and who it suits.",
+    "content": "# Quick verdict: who should buy Park Green?\n\n**My view.** Park Green sells two things, and I said the same in my walkthrough video: the bridge and the view. The bridge runs from Level 2 of the building into Level 5 of Pavilion Bukit Jalil, which is where the cinemas and restaurants are, so the mall is genuinely part of daily life rather than a drive away. The view is the 80-acre Bukit Jalil Recreational Park, and in a township this built up, an outlook that cannot be blocked is worth paying for. This is Malton's third and final phase here, after Phase 1's four blocks and Phase 2's two, and it is the smallest and most expensive of the three. Everything in it is a large home: nothing below 1,201 sq ft, all of it freehold. Note that the stacks facing the park are priced above those facing the mall, so decide which you are buying before you compare price lists.\n\n- **Suits:** buyers who want a large freehold home with mall access on foot; families who value an unblockable park view; people who want the address inside Pavilion Bukit Jalil.\n- **Think twice if:** your budget stops below RM 1.2 million, or you want to walk to an LRT station.\n\n# Video walkthrough\n\n{{youtube:_EelMcIcXaI}}\n\n# Park Green at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Regal Path Sdn Bhd (Malton Berhad) |\n| Address | Persiaran Jalil Utama, Bukit Jalil, 57000 Kuala Lumpur |\n| Tenure / title | Freehold, commercial title |\n| Land size | 0.92 acres |\n| Floors | 47 |\n| Total units | 453 |\n| Units per floor / lifts | Wing A 6 units, Wing B 7 units; 4 lifts per wing |\n| Car park | Up to Level 10 |\n| Built-up | 1,201 to 1,905 sq ft |\n| Bedrooms | 3 to 4 |\n| Price | RM 1,209,100 to RM 2,029,100 (about RM 1,007 psf) |\n| Maintenance fee | RM 0.44 psf including sinking fund |\n| Green rating | GreenRE (provisional) |\n| Target completion | Q1 / Q2 2029 (54 months from SPA) |\n\n# Where is Park Green, and what is nearby?\n\nInside the Pavilion Bukit Jalil township, on Persiaran Jalil Utama. Pavilion Bukit Jalil is 50 m away and connected by the bridge. The Bukit Jalil Highway runs past the site: west towards Puchong and Kinrara and on to Subang, and the NPE towards Cheras, north into the city and south towards Seremban. OUG, Old Klang Road and Mid Valley are all on that corridor.\n\nPublic transport is a drive rather than a walk: LRT Awan Besar is about 2 km, Alam Sutera 2.2 km, Muhibbah 2.7 km and Sri Petaling 3.8 km, with Terminal Bersepadu Selatan about 8 km away. Technology Park Malaysia is next door, and KL Wellness City, billed as Southeast Asia's largest medical city, is being built in the same pocket. Other retail: The Food Merchant OUG (2.4 km), Pearl Point (4.8 km), Giant Kinrara (5 km), IOI Mall Puchong, Sunway Pyramid and Mid Valley (all about 10 km).\n\n# How does Park Green compare with other Bukit Jalil launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Park Green Pavilion** | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.44 psf | 2029 |\n| [OAKA Residences](/projects/oaka-residences) | Freehold | RM 836,000 | 882 to 1,509 sq ft | 350 | RM 0.51 psf | 2028 |\n| [Ayanna](/projects/ayanna) | Freehold | RM 753,000 | 1,155 to 2,453 sq ft | 824 | RM 0.27 psf | 2027 |\n| [Ren Residence](/projects/ren-residence) | Leasehold | RM 537,000 | 920 to 1,680 sq ft | 1,260 | RM 0.35 psf | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | Leasehold | RM 723,000 | 807 to 1,410 sq ft | 1,004 | RM 0.42 psf | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | Leasehold | RM 422,500 | 474 to 904 sq ft | 1,558 | RM 0.42 psf | 2028 |\n\nPark Green is the most expensive per square foot of the six, at about RM 1,007 against Ayanna's RM 639 for comparable sizes. What the premium buys is the address inside the Pavilion township and the bridge into the mall. If the mall connection is not the point for you, Ayanna gives more floor area for less money, and OAKA gives a lower unit count.\n\n# Which Park Green layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A / A1 | 1,201 sq ft | 3 bedrooms, 2 bathrooms |\n| B / B1 | 1,408 sq ft | 3 bedrooms, 2 bathrooms |\n| C | 1,485 sq ft | 3 bedrooms, 2 bathrooms |\n| D | 1,501 sq ft | 3 bedrooms, 2 bathrooms |\n| F | 1,627 sq ft | 3 bedrooms, 2 bathrooms |\n| E | 1,905 sq ft | 4 bedrooms, 3 bathrooms |\n\n**What I would pick.** The three-bedroom I filmed is the one most buyers will settle on. Three bedrooms in 1,200 to 1,500 sq ft means every room is wide rather than squeezed: the living area runs about 16 feet across, the balcony is about 16 feet wide and 4 feet deep, and the second bedroom is nearly the size of the master. There is a wet and a dry kitchen, with the cabinets, hood, hob and fridge included and the dry kitchen left open for you to fit out. The master bathroom has a large separate shower area with a rain shower. The third room works as a study, and its bathroom is positioned so guests can use it as a powder room. Type E at 1,905 sq ft is the one to look at if you need a genuine fourth bedroom.\n\n# Facilities\n\nTwo levels. Level 11, above the car park, holds the infinity pool, wading pool, jacuzzi, BBQ terrace, social garden, outdoor lounge and children's play area, plus the gym, yoga room, games room, multipurpose hall, coworking lounge, steam room and changing rooms, the management office and space for a kindergarten. Level 47, the rooftop, has an outdoor yoga deck, sky lounge, sky terrace seating and a private lounge with executive dining. At ground level: concierge, waiting lounge, food delivery zone, parcel and mail rooms, and EV charging.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Dedicated bridge from Level 2 into Level 5 of Pavilion Bukit Jalil | Highest price per square foot of the Bukit Jalil launches compared above |\n| Outlook over the 80-acre Bukit Jalil Recreational Park | Nearest LRT is about 2 km: a drive, not a walk |\n| 453 units at 6 to 7 per floor, with 4 lifts per wing | Commercial title: confirm utility tariffs with the developer |\n| Nothing below 1,201 sq ft; wet and dry kitchens as standard | Completion in 2029 |\n\n# How to view Park Green\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Park Green project page](/projects/park-green-pavilion-bukit-jalil).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Park Green data page on PropertyPortal](https://www.propertyportal.my/project/park-green).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1O6nOxQMa5cFDLbt1GJ6rZEuGRWLLSDYz=w1600",
+    "faqs": [
+      {
+        "question": "Is Park Green freehold or leasehold?",
+        "answer": "Freehold, with a commercial title. It is developed by Regal Path Sdn Bhd, a subsidiary of Malton Berhad, the master developer of Bukit Jalil City."
+      },
+      {
+        "question": "Is Park Green connected to Pavilion Bukit Jalil?",
+        "answer": "Yes. A dedicated pedestrian bridge runs from Level 2 of the development into Level 5 of Pavilion Bukit Jalil, which is the cinema, dining and entertainment floor."
+      },
+      {
+        "question": "What is the starting price of Park Green?",
+        "answer": "From RM 1,209,100, or about RM 1,007 per square foot. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "How many units are there at Park Green?",
+        "answer": "453 units in a 47-storey tower, with 6 units per floor in Wing A and 7 in Wing B."
+      },
+      {
+        "question": "When will Park Green be completed?",
+        "answer": "Q1 or Q2 2029, on a 54-month construction period from the sale and purchase agreement."
+      }
+    ],
+    "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ayanna-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "park-green-pavilion-bukit-jalil",
+      "oaka-residences",
+      "ayanna",
+      "ren-residence",
+      "queenswoodz"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "pavilion",
       "review"
     ]
   },
@@ -200,6 +644,8 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
       }
     ],
     "relatedSlugs": [
+      "golden-crown-trx-review",
+      "core-residence-trx-review",
       "clouthaus-klcc-review",
       "orion-residence-bukit-bintang-review",
       "freehold-vs-leasehold"
@@ -218,12 +664,122 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
     ]
   },
   {
+    "id": "phoeniz-suites-klcc-review",
+    "slug": "phoeniz-suites-klcc-review",
+    "title": "Phoeniz Suites KL City Centre Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Phoeniz Suites @ KL City Centre review: EXSIM's freehold 53-storey tower of 394 suites, 484 to 678 sq ft, from RM 1,016,400. Layouts, fees, pros and cons.",
+    "summary": "Phoeniz Suites is EXSIM's freehold 53-storey tower of 394 serviced suites on a 0.56-acre plot in the KL city centre. This review covers price per square foot, the three layouts, the maintenance charge, the trade-offs and who it suits.",
+    "content": "# Quick verdict: who should buy Phoeniz Suites?\n\n**My view.** Phoeniz Suites is a small freehold tower on a small plot: 394 suites on 0.56 acres, 53 storeys tall, in the Golden Triangle with KLCC and Pavilion both a short drive away. Freehold in the city centre at just over RM 1 million is the headline, and for a foreign buyer who needs to clear the RM 1 million threshold in Kuala Lumpur, the entry unit does exactly that with nothing wasted. Two numbers deserve your attention before you sign. The maintenance charge is RM 1.21 psf, which is high, and the developer's subsidy covers only part of it for two years. And the construction period is 60 months from the licence date, so this is the longest wait of any project in this comparison.\n\n- **Suits:** foreign buyers who need a freehold city-centre unit above the RM 1 million threshold without overbuying; professionals who want a compact base in the CBD; buyers who prefer a smaller building.\n- **Think twice if:** you need a family-sized home, you want keys soon, or a RM 1.21 psf monthly charge does not fit your budget.\n\n# Phoeniz Suites at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Exsim YKS 54 Sdn Bhd (EXSIM Group) |\n| Address | Jalan Liew Weng Chee, KL City Centre, 50450 Kuala Lumpur |\n| Tenure / title | Freehold, commercial title under HDA |\n| Land size | 0.56 acres (24,394 sq ft) |\n| Floors | 53 |\n| Total units | 394 serviced suites |\n| Units per floor | 6 on Levels 6 to 18; 8 on the break tank floors; 10 on Levels 19 to 50 |\n| Lifts | 6 passenger + 1 service |\n| Built-up | 484 to 678 sq ft |\n| Bedrooms | 1 to 1 + 1 |\n| Price | RM 1,016,400 to RM 1,421,600 (about RM 2,100 psf) |\n| Maintenance fee | RM 1.21 psf including sinking fund (developer subsidy of up to RM 0.33 psf for 2 years) |\n| Green rating | GreenRE Bronze |\n| Construction period | 60 months after the APDL is obtained |\n\n# Where is Phoeniz Suites, and what is nearby?\n\nOn Jalan Liew Weng Chee in the KL city centre, within the CBD and Golden Triangle. KLCC and Pavilion Kuala Lumpur are both within about a five-minute drive, and there is a bus stop and an MRT station within walking distance. The AKLEH highway serves the area for driving, and TRX and Merdeka 118 are the other landmarks in the immediate radius.\n\n# How does Phoeniz Suites compare with its KLCC neighbours?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Phoeniz Suites** | Freehold | RM 1,016,400 | 484 to 678 sq ft | 394 | RM 1.21 psf | 2031 |\n| [Branniganz](/projects/branniganz) | Leasehold | RM 803,500 | 344 to 678 sq ft | 759 | RM 1.21 psf | 2028 |\n| [Centrix The Station](/projects/centrix) | Leasehold | RM 907,800 | 571 to 1,187 sq ft | 857 | RM 0.44 psf | 2028 |\n| [Golden Crown](/projects/golden-crown) | Leasehold | RM 1,280,000 | 624 to 1,238 sq ft | 490 | RM 0.80 psf | 2026 |\n| [CloutHaus](/projects/clouthaus) | Freehold | RM 1,548,800 | 549 to 1,216 sq ft | 615 | RM 0.80 psf | 2029 |\n| [Orion Residence](/projects/orion-residence) | Freehold | RM 1,580,000 | 491 to 1,329 sq ft | 298 | RM 1.32 psf | Completed |\n\nPhoeniz is the cheapest freehold entry in this group, which is its strongest argument. It is also the smallest building except for Orion, at 394 units. Against Centrix, the comparison is straightforward: Phoeniz gives you freehold, Centrix gives you a much lower monthly fee, larger units and an LRT station under the building.\n\n# Which Phoeniz Suites layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A / A (M) | 484 sq ft | 1 + 1 bedrooms, 1 bathroom |\n| B1 / B1 (M) (dual key) | 657 sq ft | 1 bedroom, 2 bathrooms |\n| B2 (dual key) | 678 sq ft | 1 bedroom, 2 bathrooms |\n\nThe project page also lists a 581 sq ft version of B1, so ask for the current type chart before you choose.\n\n**What I would pick.** The dual-key B2 at 678 sq ft is the layout that earns its price here. Two lockable sides with two bathrooms in a 678 sq ft footprint is efficient use of a small plot: live in one side and use the other as a study or a guest room, or keep the two entirely separate. Type A at 484 sq ft with a study alcove is the entry unit and the one that clears the foreign-buyer threshold most cheaply. The units are delivered furnished to the developer's current specification, so ask for that specification in writing and check what is actually included.\n\n# Facilities\n\nGiven the plot size, the facilities are stacked rather than spread out. Level 51 has the sky gym and a sky music lounge. Level 52 has the sky pool, pool deck and a garden lounge. Lower down: a concierge and reception lobby with a meeting room and a taska or nursing room on Level 3A, and the management office, surau, laundry and a hawker space on Level 5. Level 1 holds the parcel room, mailroom and motorcycle parking, and the car park is mechanical. Security is 24-hour with an access card system and CCTV.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Cheapest freehold entry of the KLCC launches compared above | RM 1.21 psf monthly charge, among the highest in the group |\n| Clears the RM 1 million foreign-buyer threshold without overbuying | 60-month construction period: the longest wait here |\n| Only 394 units, with 6 to 10 per floor and 6 passenger lifts | Largest unit is 678 sq ft: no family-sized option |\n| Furnished to the developer's specification; GreenRE Bronze | Mechanical car park on a 0.56-acre plot |\n\n# How to view Phoeniz Suites\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Phoeniz Suites project page](/projects/phoeniz-suites-kl-city-centre).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Phoeniz Suites data page on PropertyPortal](https://www.propertyportal.my/project/phoeniz-suites).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1dLw1oPBrkEiaryehf5xICc9mJ6iNcbXi=w1600",
+    "faqs": [
+      {
+        "question": "Is Phoeniz Suites freehold or leasehold?",
+        "answer": "Freehold, with a commercial title under the Housing Development Act. It is developed by Exsim YKS 54 Sdn Bhd, a member of the EXSIM Group."
+      },
+      {
+        "question": "What is the starting price of Phoeniz Suites?",
+        "answer": "From RM 1,016,400, or about RM 2,100 per square foot. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "What is the maintenance fee at Phoeniz Suites?",
+        "answer": "RM 1.21 psf including sinking fund. The developer states it will subsidise up to RM 0.33 psf for the first two years, so confirm the exact figure and period in writing."
+      },
+      {
+        "question": "What sizes are available at Phoeniz Suites?",
+        "answer": "Three layout families from 484 sq ft (1 + 1 bedrooms) to 678 sq ft (dual key), with 394 suites in total."
+      },
+      {
+        "question": "When will Phoeniz Suites be completed?",
+        "answer": "The construction period is 60 months after the advertising permit and developer's licence is obtained, putting completion around 2031."
+      }
+    ],
+    "relatedSlugs": [
+      "branniganz-klcc-review",
+      "centrix-the-station-klcc-review",
+      "clouthaus-klcc-review"
+    ],
+    "relatedProjectIds": [
+      "phoeniz-suites-kl-city-centre",
+      "branniganz",
+      "centrix",
+      "clouthaus",
+      "golden-crown"
+    ],
+    "tags": [
+      "klcc",
+      "freehold",
+      "suites",
+      "review"
+    ]
+  },
+  {
+    "id": "queenswoodz-bukit-jalil-review",
+    "slug": "queenswoodz-bukit-jalil-review",
+    "title": "Queenswoodz Bukit Jalil Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "The Queenswoodz Bukit Jalil review: EXSIM's 1,004-unit leasehold launch, 807 to 1,410 sq ft, from RM 723,000. Layouts, tapered upper floors, fees, pros and cons.",
+    "summary": "The Queenswoodz is EXSIM's two-tower, 1,004-unit development on 3.44 acres in Bukit Jalil, with nothing smaller than a 2 + 1 bedroom. This review covers price per square foot, the layouts, the unusual tapered upper floors, the trade-offs and who it suits.",
+    "content": "# Quick verdict: who should buy The Queenswoodz?\n\n**My view.** Queenswoodz is the grown-up version of what EXSIM is building next door at The Kingswoodz. There is no studio and no one-bedroom here: the smallest unit is 807 sq ft with two bedrooms plus a utility room, and the range runs to 1,410 sq ft. That single decision changes who lives in the building, and in my experience it also changes how a development ages. The detail I would point a buyer to is the floor plan of the tower itself: the upper floors taper from about 14 units down to 8, and then to just 4 on the top stretch. If you can stretch to those floors, you are buying into a much quieter part of a 1,004-unit building.\n\n- **Suits:** families and couples who want a 2 + 1 or larger home in Bukit Jalil; buyers who want the low-floor-count upper stacks; people who considered Kingswoodz but need more room.\n- **Think twice if:** you want the cheapest entry price in the township, or you want freehold.\n\n# The Queenswoodz at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | EXSIM |\n| Location | Bukit Jalil, Kuala Lumpur |\n| Tenure / title | Leasehold, commercial title under HDA |\n| Land size | 3.44 acres |\n| Towers / floors | Block A 50 storeys (494 units), Block B 51 storeys (510 units) |\n| Total units | 1,004 |\n| Units per floor | About 14 on the main floors, 8 on the upper floors, 4 on the top floors |\n| Lifts | 5 passenger lifts + 1 service lift |\n| Built-up | 807 to 1,410 sq ft |\n| Bedrooms | 2 + 1 to 4 |\n| Price | RM 723,300 to RM 1,241,300 (about RM 853 psf) |\n| Maintenance fee | RM 0.42 psf including sinking fund |\n| Construction period | 52 months after the APDL is obtained (completion around 2029) |\n\n# Where is The Queenswoodz, and what is nearby?\n\nIn Bukit Jalil, the township built around the National Stadium and KL Sports City. The area is served by the Awan Besar, Alam Sutera, Muhibbah and Sri Petaling LRT stations, and by the Bukit Jalil Highway, KESAS, MEX, NPE and the Sungai Besi Expressway.\n\nThe shopping, schools and healthcare in the township are the same set that serves the other launches here: Pavilion Bukit Jalil and Aurora Place for retail, SJK(C) Lai Meng, Tzu Chi International School and Kingsgate International School for schooling, International Medical University and APU for campuses, and the 80-acre Bukit Jalil Recreational Park and Bukit Jalil Golf & Country Resort for recreation. Ask the sales team for the exact walking and driving distances from this site, as they differ from the Kingswoodz numbers.\n\n# How does Queenswoodz compare with other Bukit Jalil launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **The Queenswoodz** | Leasehold | RM 723,000 | 807 to 1,410 sq ft | 1,004 | RM 0.42 psf | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | Leasehold | RM 422,500 | 474 to 904 sq ft | 1,558 | RM 0.42 psf | 2028 |\n| [Ren Residence](/projects/ren-residence) | Leasehold | RM 537,000 | 920 to 1,680 sq ft | 1,260 | RM 0.35 psf | 2026 |\n| [Ayanna](/projects/ayanna) | Freehold | RM 753,000 | 1,155 to 2,453 sq ft | 824 | RM 0.27 psf | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | Freehold | RM 836,000 | 882 to 1,509 sq ft | 350 | RM 0.51 psf | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.44 psf | 2029 |\n\nAt about RM 853 psf, Queenswoodz is priced above Ren Residence and below the freehold options. The closest comparison is Ren: both are large leasehold buildings aimed at families, but Ren completes earlier, charges a lower monthly fee and has a residential title, while Queenswoodz offers a smaller entry unit at 807 sq ft and the tapered upper floors.\n\n# Which Queenswoodz layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A1 / A2 | 807 sq ft | 2 + 1 bedrooms, 2 bathrooms |\n| B1 / B2 | 936 sq ft | 3 bedrooms, 2 bathrooms |\n| C1 / C2 | 1,206 sq ft | 3 + 1 bedrooms, 3 bathrooms |\n| D1 (dual key) | 1,410 sq ft | 4 bedrooms, 3 bathrooms |\n| D2 | 1,410 sq ft | 3 + 1 bedrooms, 3 bathrooms |\n\nThe project page also lists 1,008 sq ft and 1,209 sq ft variants, so ask for the current type chart before choosing.\n\n**What I would pick.** B1 or B2 at 936 sq ft is the layout I would put a young family in: three real bedrooms, two bathrooms, and a price that still sits under the freehold options nearby. A1 at 807 sq ft is the efficient choice for a couple, with the extra room as a study. If the household has parents or adult children living in, the 1,410 sq ft D1 dual key gives them a separate entrance. Whichever type you choose, ask which floors fall in the 8-unit and 4-unit bands.\n\n# Facilities\n\nThe developer has not released a full facilities schedule in the material I have, so I will not list one here rather than guess. EXSIM's neighbouring Bukit Jalil project puts its facilities on one full podium level plus rooftop decks on each tower, and the sales gallery should be able to show you the equivalent plan for Queenswoodz. Ask specifically about the pool level, the gym, and what is on the top floors of each block.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| No studios or one-bedrooms: the smallest home is 807 sq ft with 2 + 1 bedrooms | Leasehold with a commercial title: confirm utility tariffs |\n| Upper floors taper to 8 and then 4 units per floor | 1,004 units in two towers |\n| 5 passenger lifts plus a service lift per the developer | Facilities schedule not yet published in the material I have |\n| Priced below the freehold launches in the same township | Completion around 2029, the latest of the group |\n\n# How to view The Queenswoodz\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Queenswoodz project page](/projects/queenswoodz).\n\nFor the full unit-type table, facilities list and nearby distances, see the [The Queenswoodz data page on PropertyPortal](https://www.propertyportal.my/project/queenswoodz).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1nTRaBrO1obirsbyinGftgvoh--_ULir7=w1600",
+    "faqs": [
+      {
+        "question": "Is The Queenswoodz freehold or leasehold?",
+        "answer": "Leasehold, with a commercial title under the Housing Development Act. It is developed by EXSIM in Bukit Jalil."
+      },
+      {
+        "question": "What is the starting price of The Queenswoodz?",
+        "answer": "From RM 723,300, or about RM 853 per square foot. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "What sizes are available at The Queenswoodz?",
+        "answer": "From 807 sq ft (2 + 1 bedrooms) to 1,410 sq ft (4 bedrooms, or a 3 + 1 dual key), so there is no studio or one-bedroom here."
+      },
+      {
+        "question": "How many units are there?",
+        "answer": "1,004 units. Block A has 50 storeys and 494 units; Block B has 51 storeys and 510 units."
+      },
+      {
+        "question": "When will The Queenswoodz be completed?",
+        "answer": "The construction period is 52 months from the date the advertising permit and developer's licence is obtained, putting completion around 2029."
+      }
+    ],
+    "relatedSlugs": [
+      "kingswoodz-bukit-jalil-review",
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "queenswoodz",
+      "kingswoodz-bukit-jalil",
+      "ren-residence",
+      "oaka-residences",
+      "ayanna"
+    ],
+    "tags": [
+      "bukit jalil",
+      "leasehold",
+      "family",
+      "review"
+    ]
+  },
+  {
     "id": "ren-residence-bukit-jalil-review",
     "slug": "ren-residence-bukit-jalil-review",
     "title": "Ren Residence Bukit Jalil Review: Price, Layouts, Pros & Cons",
     "metaDescription": "Ren Residence review: residential-title family homes in Bukit Jalil, 920 to 1,680 sq ft, from RM 537,000. Layouts, fees, pros and cons and who it suits.",
     "summary": "Ren Residence is a pair of 52-storey towers on 5.6 acres in Bukit Jalil, with 1,260 family-sized homes from 920 sq ft. This review covers price, the six layouts, the residential title, the facilities, the trade-offs and who it suits.",
-    "content": "# Quick verdict: who should buy Ren Residence?\n\n**My view.** I recommend Ren to people buying a home to live in, not to buyers looking for a small city unit. Four things put it on my list. The larger layouts are still priced under RM 1 million, which is hard to find for this much space in Bukit Jalil. The price per square foot is the lowest of the Bukit Jalil launches I compare below. The towers are designed by GDP Architects, one of the best-known architecture firms in Malaysia. And it is due for completion this year (2026), so the wait for keys is short. Every unit has at least three bedrooms and two car parks, the title is residential and the monthly fee is low. The compromise is leasehold tenure.\n\n- **Suits:** families upgrading from a smaller condo; buyers who want residential-title utility rates and 2 to 3 parking bays.\n- **Think twice if:** you want freehold, or a walk-up connection to Pavilion Bukit Jalil.\n\n# Ren Residence at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Gaya Kuasa Sdn Bhd |\n| Architect | GDP Architects |\n| Address | No. 2, Jalan Bukit Jalil Indah 4, Taman LTAT, 57000 Kuala Lumpur |\n| Tenure / title | Leasehold, residential title |\n| Land size | 5.6 acres |\n| Towers / floors | 2 towers, 52 storeys |\n| Total units | 1,260 (630 per tower) |\n| Units per floor / lifts | 16 units, 5 + 1 lifts per tower |\n| Built-up | 920 to 1,680 sq ft |\n| Bedrooms | 3 to 4 + 1 |\n| Car parks | 2 to 3 per unit |\n| Price | From RM 537,000 |\n| Maintenance fee | RM 0.35 psf |\n| Target completion | 2026 |\n\n# Where is Ren Residence, and what is nearby?\n\nOn an elevated site in Taman LTAT, Bukit Jalil, near Tzu Chi International School. Alam Sutera LRT is the nearest station. Pavilion Bukit Jalil, IMU, Kingsgate International School, Technology Park Malaysia and the National Stadium are in the neighbourhood, with the KESAS, Bukit Jalil, KL to Seremban and Sungai Besi highways for driving.\n\n# How does Ren compare with other Bukit Jalil launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Ren Residence** | Leasehold | RM 537,000 | 920 to 1,680 sq ft | 1,260 | RM 0.35 psf | 2026 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | Leasehold | RM 422,500 | 474 to 904 sq ft | 1,558 | RM 0.42 psf | 2028 |\n| [Queenswoodz](/projects/queenswoodz) | Leasehold | RM 723,000 | 807 to 1,410 sq ft | 1,004 | RM 0.42 psf | 2029 |\n| [OAKA Residences](/projects/oaka-residences) | Freehold | RM 836,000 | 882 to 1,423 sq ft | 350 | RM 0.33 psf | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.40 psf | 2029 |\n\nRen has the lowest entry price for a three-bedroom home of 920 sq ft in this group, and the earliest completion. The freehold options (OAKA, Park Green) start noticeably higher.\n\n# Which Ren layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A | 920 sq ft | 3 bedrooms, 2 bathrooms |\n| B1 | 1,050 sq ft | 3 + 1 bedrooms, 2 bathrooms |\n| B2 | 1,110 sq ft | 3 + 1 bedrooms, 2 bathrooms |\n| B3 | 1,120 sq ft | 3 + 1 bedrooms, 2 bathrooms |\n| C | 1,270 sq ft | 4 + 1 bedrooms, 3 bathrooms |\n| D | 1,680 sq ft | 4 + 1 bedrooms, 3 bathrooms |\n\n**What I would pick.** For own stay I point families to the bigger layouts, because that is where Ren's value shows. Type B (1,050 to 1,120 sq ft) gives three bedrooms plus a utility room that works as a study or helper's room. Type C (1,270 sq ft, 4 + 1 bedrooms) suits a three-generation household and is the kind of size that usually costs well above RM 1 million elsewhere in Bukit Jalil.\n\n# Facilities\n\nMore than an acre of facilities: infinity pool, several children's pools, basketball court, tennis / futsal court, badminton court, gym, yoga room, sauna and steam, co-working room, function rooms, kindergarten and childcare centre, jogging track and gardens. Security is three-tier, with face recognition and licence plate recognition.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Residential title, low RM 0.35 psf fee | Leasehold |\n| Every unit is 3 bedrooms or larger, with 2 to 3 car parks | 1,260 units: a large community |\n| Lowest entry price for a 3-bedroom among the launches compared above | 16 units per floor with 5 + 1 lifts |\n| Completion in 2026, earlier than its peers | Not directly linked to Pavilion Bukit Jalil |\n\n# How to view Ren Residence\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Ren Residence project page](/projects/ren-residence).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Ren Residence data page on PropertyPortal](https://www.propertyportal.my/project/ren-bukit-jalil).",
+    "content": "# Quick verdict: who should buy Ren Residence?\n\n**My view.** I recommend Ren to people buying a home to live in, not to buyers looking for a small city unit. Four things put it on my list. The larger layouts are still priced under RM 1 million, which is hard to find for this much space in Bukit Jalil. The price per square foot is the lowest of the Bukit Jalil launches I compare below. The towers are designed by GDP Architects, one of the best-known architecture firms in Malaysia. And it is due for completion this year (2026), so the wait for keys is short. Every unit has at least three bedrooms and two car parks, the title is residential and the monthly fee is low. The compromise is leasehold tenure.\n\n- **Suits:** families upgrading from a smaller condo; buyers who want residential-title utility rates and 2 to 3 parking bays.\n- **Think twice if:** you want freehold, or a walk-up connection to Pavilion Bukit Jalil.\n\n# Ren Residence at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Gaya Kuasa Sdn Bhd |\n| Architect | GDP Architects |\n| Address | No. 2, Jalan Bukit Jalil Indah 4, Taman LTAT, 57000 Kuala Lumpur |\n| Tenure / title | Leasehold, residential title |\n| Land size | 5.6 acres |\n| Towers / floors | 2 towers, 52 storeys |\n| Total units | 1,260 (630 per tower) |\n| Units per floor / lifts | 16 units, 5 + 1 lifts per tower |\n| Built-up | 920 to 1,680 sq ft |\n| Bedrooms | 3 to 4 + 1 |\n| Car parks | 2 to 3 per unit |\n| Price | From RM 537,000 |\n| Maintenance fee | RM 0.35 psf |\n| Target completion | 2026 |\n\n# Where is Ren Residence, and what is nearby?\n\nOn an elevated site in Taman LTAT, Bukit Jalil, near Tzu Chi International School. Alam Sutera LRT is the nearest station. Pavilion Bukit Jalil, IMU, Kingsgate International School, Technology Park Malaysia and the National Stadium are in the neighbourhood, with the KESAS, Bukit Jalil, KL to Seremban and Sungai Besi highways for driving.\n\n# How does Ren compare with other Bukit Jalil launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Ren Residence** | Leasehold | RM 537,000 | 920 to 1,680 sq ft | 1,260 | RM 0.35 psf | 2026 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | Leasehold | RM 422,500 | 474 to 904 sq ft | 1,558 | RM 0.42 psf | 2028 |\n| [Queenswoodz](/projects/queenswoodz) | Leasehold | RM 723,000 | 807 to 1,410 sq ft | 1,004 | RM 0.42 psf | 2029 |\n| [OAKA Residences](/projects/oaka-residences) | Freehold | RM 836,000 | 882 to 1,509 sq ft | 350 | RM 0.51 psf | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | Freehold | RM 1,209,100 | 1,201 to 1,905 sq ft | 453 | RM 0.44 psf | 2029 |\n\nRen has the lowest entry price for a three-bedroom home of 920 sq ft in this group, and the earliest completion. The freehold options (OAKA, Park Green) start noticeably higher.\n\n# Which Ren layout is best?\n\n| Type | Size | Configuration |\n| :--- | :--- | :--- |\n| A | 920 sq ft | 3 bedrooms, 2 bathrooms |\n| B1 | 1,050 sq ft | 3 + 1 bedrooms, 2 bathrooms |\n| B2 | 1,110 sq ft | 3 + 1 bedrooms, 2 bathrooms |\n| B3 | 1,120 sq ft | 3 + 1 bedrooms, 2 bathrooms |\n| C | 1,270 sq ft | 4 + 1 bedrooms, 3 bathrooms |\n| D | 1,680 sq ft | 4 + 1 bedrooms, 3 bathrooms |\n\n**What I would pick.** For own stay I point families to the bigger layouts, because that is where Ren's value shows. Type B (1,050 to 1,120 sq ft) gives three bedrooms plus a utility room that works as a study or helper's room. Type C (1,270 sq ft, 4 + 1 bedrooms) suits a three-generation household and is the kind of size that usually costs well above RM 1 million elsewhere in Bukit Jalil.\n\n# Facilities\n\nMore than an acre of facilities: infinity pool, several children's pools, basketball court, tennis / futsal court, badminton court, gym, yoga room, sauna and steam, co-working room, function rooms, kindergarten and childcare centre, jogging track and gardens. Security is three-tier, with face recognition and licence plate recognition.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Residential title, low RM 0.35 psf fee | Leasehold |\n| Every unit is 3 bedrooms or larger, with 2 to 3 car parks | 1,260 units: a large community |\n| Lowest entry price for a 3-bedroom among the launches compared above | 16 units per floor with 5 + 1 lifts |\n| Completion in 2026, earlier than its peers | Not directly linked to Pavilion Bukit Jalil |\n\n# How to view Ren Residence\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Ren Residence project page](/projects/ren-residence).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Ren Residence data page on PropertyPortal](https://www.propertyportal.my/project/ren-bukit-jalil).",
     "readTime": "5 min read",
     "publishDate": "September 2026",
     "publishedOn": "2026-09-21",
@@ -254,6 +810,8 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
       }
     ],
     "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ayanna-bukit-jalil-review",
       "freehold-vs-leasehold",
       "understanding-maintenance-fees-sinking-funds"
     ],
@@ -274,6 +832,171 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
 ];
 
 export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
+  "ayanna-bukit-jalil-review": {
+    "id": "ayanna-bukit-jalil-review",
+    "slug": "ayanna-bukit-jalil-review",
+    "title": "Ayanna 武吉加里尔评测：价格、户型、优缺点",
+    "metaDescription": "Ayanna Resort Residences 评测：正鑫（Chin Hin）在武吉加里尔的永久地契住宅地契公寓，1,155 至 2,453 平方英尺，RM 753,000 起。户型、管理费、优缺点。",
+    "summary": "Ayanna Resort Residences 位于武吉加里尔，4.9 英亩土地上两座 42 层和 44 层大楼，共 824 个永久地契大户型，最小 1,155 平方英尺。这篇评测讲尺价、户型、度假式设施、要接受的取舍，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 Ayanna？\n\n**我的看法。** 在我跟的武吉加里尔永久地契新盘里，Ayanna 的尺价最低，约 RM 639。最小的单位是 1,155 平方英尺，而且没有三房以下的户型，所以这是给需要空间的家庭买的楼，不是给找市中心小单位的单身买家。它是永久地契加住宅地契，水电按家用费率；每平方英尺 RM 0.27 的管理费，也是下面比较表里最低的。要放弃的是步行方便度：最近的轻快铁站要开车，而且 824 户、每层 9 到 13 户、每座 3 部客梯，这是一个完整规模的社区，不是安静的小楼。\n\n- **适合：** 想在武吉加里尔用同样的钱买到最大面积的家庭；要永久地契加住宅地契的买家；有两辆或以上车的家庭。\n- **请三思：** 想步行到轻快铁站的人；偏好小型低密度大楼的人。\n\n# Ayanna 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Chin Hin Group Property |\n| 地址 | Jalan Mas, Bukit Jalil, 58200 Kuala Lumpur |\n| 地契 | 永久地契，住宅地契 |\n| 土地面积 | 4.9 英亩 |\n| 楼数 / 楼层 | A 座 42 层，B 座 44 层 |\n| 总单位 | 824 户（A 座 333；B 座 491） |\n| 每层单位 / 电梯 | A 座 9 户，B 座 13 户；3 部客梯 + 1 部服务电梯 |\n| 面积 | 1,155 至 2,453 平方英尺 |\n| 房间 | 3 房至 4 + 2 房 |\n| 车位 | 每单位 2 至 4 个，停车场共 9 层（LG 至 7 楼） |\n| 价格 | RM 753,000 起（尺价约 RM 639） |\n| 管理费 | 每平方英尺 RM 0.27（含储备金） |\n| 预计完工 | 2027 年第二季（签约后 48 个月） |\n\n# Ayanna 在哪里？周边有什么？\n\n位于武吉加里尔 Jalan Mas，占地 4.9 英亩。Alam Sutera 轻快铁站约 1.5 公里，Kinrara BK5 约 2.5 公里，两个都要开车或转接驳，不能步行。开车可用武吉加里尔大道、KESAS、吉隆坡至芙蓉大道、MEX、LDP 和 NPE。\n\n周边：Giant Kinrara（2.5 公里）、Pavilion Bukit Jalil（3.5 公里）、IOI Mall Puchong（6.3 公里）、Sunway Pyramid（7.5 公里）和 Mid Valley Megamall（8.9 公里）。学校院校有 SJK(C) 黎明华小（3.8 公里）、慈济国际学校（3.9 公里）、国际医药大学 IMU（5.2 公里）、双威大学（6.9 公里）、APU（8.2 公里）和泰莱大学（8.4 公里）。医院：KPJ Kinrara（1.8 公里）、IMU Healthcare（5.2 公里）、双威医疗中心（6 公里）和 Columbia Asia（6.9 公里）。武吉加里尔休闲公园约 4 公里。\n\n# 和武吉加里尔其他新盘比，Ayanna 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Ayanna** | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n| [Ren Residence](/projects/ren-residence) | 租赁 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | 租赁 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租赁 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n\nAyanna 的起价比 OAKA 低，但最小单位大很多，尺价差距就在这里。和这一区另一个大户型永久地契项目 Park Green 比，Ayanna 是省钱的选择；Park Green 贵在楼小户少，还有天桥直通 Pavilion Bukit Jalil。\n\n# Ayanna 哪个户型最好？\n\n| 户型 | 面积 | 格局 | 占全楼比例 |\n| :--- | :--- | :--- | :--- |\n| E | 1,155 至 1,189 平方英尺 | 3 房 2 浴 | 41% |\n| A | 1,365 至 1,400 平方英尺 | 4 房 2 浴 | 40% |\n| B | 1,679 至 1,697 平方英尺 | 4 + 1 房 2 浴 | 9% |\n| C | 1,859 至 1,879 平方英尺 | 4 + 2 房 3 + 1 浴 | 5% |\n| D | 2,316 至 2,453 平方英尺 | 4 + 2 房 3 + 1 浴 | 5% |\n\n**我会选哪个。** Type E 和 Type A 加起来占全楼 81%，所以大部分买家其实是在这两个之间选，而它们是两种不同的家。1,155 至 1,189 平方英尺的 Type E 是入门：实实在在的三房，也是这里进入永久地契加住宅地契最便宜的方式。1,365 至 1,400 平方英尺的 Type A 多一间房，价钱往上一档，家庭人口会增加的我会推这个。B、C、D 三种加起来只占 19%，最大到 2,453 平方英尺、4 + 2 房；如果你需要这么大，记得问清楚它们在哪几列——在一栋大楼里，数量少的户型通常最保值。\n\n# 设施\n\nAyanna 的核心是地面层 1.3 英亩的园林：互动水道、凉亭、健身区、体能训练站、多代同乐游乐区，以及专门的宠物区，内有狗狗敏捷训练道和宠物冲洗区。1 楼有两个羽球场和儿童活动室；4 楼健身房；5 楼游戏室、共享办公与阅读室；6 楼宴会厅。9 楼是泳池层：泳道池、家庭池、带戏水设施的儿童池、按摩池、叠水景观、凉亭、开放草坪和花园。两座楼顶都有空中烧烤平台，分别在 40 楼和 42 楼。实用配置包括 EV 充电位、洗车区、包裹室和信件室、祈祷室，以及预留给幼儿园、洗衣店和便利店的空间。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 尺价约 RM 639，上面比较的永久地契新盘中最低 | 最近的轻快铁站 1.5 公里，要开车或转接驳 |\n| 永久地契加住宅地契：水电按家用费率 | 824 户，每层 9 至 13 户，每座 3 部客梯 |\n| 没有三房以下的户型；2 至 4 个车位 | 最小 1,155 平方英尺，入门就是家庭型大户 |\n| 1.3 英亩园林，宠物友善，设狗狗敏捷训练道 | 2027 年才完工 |\n\n# 怎样预约看 Ayanna\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Ayanna 楼盘页](/projects/ayanna)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Ayanna 资料页](https://www.propertyportal.my/project/ayanna-res) 查看。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1EdnmVYVGe4UQ_mAWSYppkiLkQClwbmT1=w1600",
+    "faqs": [
+      {
+        "question": "Ayanna 是永久地契还是租赁地契？",
+        "answer": "永久地契，住宅地契。Ayanna Resort Residences 由 Chin Hin Group Property 开发，位于武吉加里尔 Jalan Mas。"
+      },
+      {
+        "question": "Ayanna 起价多少？",
+        "answer": "RM 753,000 起，尺价约 RM 639。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Ayanna 有哪些面积？",
+        "answer": "从 1,155 平方英尺（3 房）到 2,453 平方英尺（4 + 2 房），按户型配 2 至 4 个车位。"
+      },
+      {
+        "question": "Ayanna 一共有多少单位？",
+        "answer": "两座共 824 户。A 座 42 层，每层 9 户；B 座 44 层，每层 13 户。"
+      },
+      {
+        "question": "Ayanna 什么时候完工？",
+        "answer": "2027 年第二季，建筑期为买卖合约签署后 48 个月。"
+      }
+    ],
+    "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "ayanna",
+      "oaka-residences",
+      "ren-residence",
+      "park-green-pavilion-bukit-jalil",
+      "queenswoodz"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "family",
+      "review"
+    ]
+  },
+  "branniganz-klcc-review": {
+    "id": "branniganz-klcc-review",
+    "slug": "branniganz-klcc-review",
+    "title": "Branniganz KLCC 评测：价格、户型、优缺点",
+    "metaDescription": "Branniganz 评测：EXSIM 在 Lorong Yap Kwan Seng 的混合发展项目，490 个办公套房加 269 个服务式套房，344 至 678 平方英尺，RM 803,500（毛价）起。",
+    "summary": "Branniganz 是 EXSIM 在吉隆坡市中心的双翼项目，A 翼 490 个办公套房，B 翼 269 个服务式套房，最小 344 平方英尺。这篇评测讲价格、户型、管理费、公开资料里缺了什么，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 Branniganz？\n\n**我的看法。** Branniganz 是我手上进入吉隆坡市中心门槛最低的一个，毛价 RM 803,500 起，但你要清楚这个价钱买到的是什么。这是一栋双翼楼：A 翼 490 个办公套房，B 翼只有 269 个服务式套房，住宅部分在整个项目里是少数。最小的户型 344 平方英尺；这个面积买的是市区落脚点或出租资产，不是可以住得越来越久的家。管理费每平方英尺 RM 1.21，发展商头两年补贴 RM 0.40，也就是说第三年开始你的开销会跳一级。我会先问两个问题：这个单位在哪一翼，以及配多少车位——我手上的资料没有列出车位配额。\n\n- **适合：** 想用最低价拿到市中心地址的买家；想在 KLCC 附近持有小面积出租资产的业主；不需要车位的人。\n- **请三思：** 需要空间的人；一定要永久地契的人；想要纯住宅大楼的人。\n\n# Branniganz 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Lembaran Beruntung Sdn Bhd（EXSIM） |\n| 地址 | Lorong Yap Kwan Seng, Bukit Kewangan, 50450 Kuala Lumpur |\n| 地契 | 租赁地契 |\n| 组成 | A 翼：490 个办公套房；B 翼：269 个服务式套房 |\n| 总单位 | 759 |\n| 面积 | 344 至 678 平方英尺 |\n| 房间 | 1 至 2 房 |\n| 价格 | 毛价 RM 803,500 起 |\n| 管理费 | 每平方英尺 RM 1.21，发展商头两年补贴 RM 0.40 |\n| 车位 | 目前资料未列明，请向发展商确认 |\n| 预计完工 | 2028 年 |\n\n# Branniganz 在哪里？周边有什么？\n\n位于吉隆坡市中心 Bukit Kewangan 的 Lorong Yap Kwan Seng。这和 EXSIM 的 Phoeniz Suites 是同一个地段范围，开车到 KLCC、Suria KLCC 和 Pavilion Kuala Lumpur 都很近，属 CBD 和金三角。开车可用 AKLEH 大道；最近的轨道站视你往安邦路哪一边走，是 Dang Wangi 或 Ampang Park。请向销售团队要这个地块实测的步行距离——单位这么小，这一点差别很实在。\n\n# 和 KLCC 周边项目比，Branniganz 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Branniganz** | 租赁 | RM 803,500 | 344 至 678 平方英尺 | 759 | 每平方英尺 RM 1.21 | 2028 |\n| [Centrix The Station](/projects/centrix) | 租赁 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | 永久 | RM 1,016,400 | 484 至 678 平方英尺 | 394 | 每平方英尺 RM 1.21 | 2031 |\n| [Golden Crown](/projects/golden-crown) | 租赁 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n\n六个当中 Branniganz 入门价最低，单位也最小。我真正会拿给买家比的是 Centrix：多约 RM 10 万，最小单位从 344 变成 571 平方英尺，月费从 RM 1.21 变成 RM 0.44，而且楼下就是轻快铁站。如果预算真的只到 RM 80 万，Branniganz 是市中心的选择；如果还能加一点，先看 Centrix。\n\n# Branniganz 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A | 344 平方英尺 | 1 房 1 浴 |\n| B1 | 400 平方英尺 | 1 房 1 浴 |\n| B2 | 455 平方英尺 | 1 房 1 浴 |\n| C1 | 511 平方英尺 | 1 房 1 浴 |\n| C2 | 567 平方英尺 | 1 房 1 浴 |\n| C3 | 622 平方英尺 | 1 房 1 浴 |\n| D | 678 平方英尺 | 2 房 2 浴 |\n\n**我会选哪个。** 678 平方英尺的 Type D 是这里唯一我会买来自住的户型，因为它是唯一的两房两浴；在一栋以小套房为主的楼里，稀少的那个户型通常最保值。一房里面，511 平方英尺的 C1 是\"开始像一间公寓而不是一个房间\"的分界线；再小的 A 和 B，比较适合当紧凑型出租单位来理解。不管选哪个，都要书面确认单位是在办公套房那一翼还是服务式套房那一翼，因为这会影响整栋楼日常的使用状况。\n\n# 设施\n\n我手上的资料里，发展商还没公布完整的设施清单，所以我不猜着列。EXSIM 在附近那栋楼是把设施叠在高层，空中泳池和空中健身房靠近顶部，管理、礼宾和服务楼层在下面。请向销售展厅索取 Branniganz 对应的图，特别要问清楚：哪一翼可以用哪些设施。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 上面比较的 KLCC 项目中入门价最低 | 月费每平方英尺 RM 1.21，两年补贴期过后会跳一级 |\n| CBD 和金三角内的市中心地址 | 最小 344 平方英尺；只有一个两房户型 |\n| 小面积单位在这一带最容易出租 | 759 户里只有 269 户是服务式套房，其余是办公套房 |\n| 2028 年完工，比附近的 Phoeniz Suites 早 | 目前资料未列车位配额；设施清单也未公布 |\n\n# 怎样预约看 Branniganz\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Branniganz 楼盘页](/projects/branniganz)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Branniganz 资料页](https://www.propertyportal.my/project/branniganz-exsim) 查看。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1QuDcLSm-vtaXzl_-XkHSY6I3haTxVy4U=w1600",
+    "faqs": [
+      {
+        "question": "Branniganz 是永久地契还是租赁地契？",
+        "answer": "租赁地契。由 EXSIM 旗下的 Lembaran Beruntung Sdn Bhd 开发，位于吉隆坡市中心 Lorong Yap Kwan Seng。"
+      },
+      {
+        "question": "Branniganz 起价多少？",
+        "answer": "毛价 RM 803,500 起。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Branniganz 由什么组成？",
+        "answer": "两翼共 759 个单位：A 翼 490 个办公套房，B 翼 269 个服务式套房。"
+      },
+      {
+        "question": "Branniganz 有哪些面积？",
+        "answer": "344 至 678 平方英尺，最大的户型是两房。"
+      },
+      {
+        "question": "Branniganz 什么时候完工？",
+        "answer": "按目前的项目资料是 2028 年。实际建筑期请以买卖合约为准。"
+      }
+    ],
+    "relatedSlugs": [
+      "phoeniz-suites-klcc-review",
+      "centrix-the-station-klcc-review",
+      "clouthaus-klcc-review"
+    ],
+    "relatedProjectIds": [
+      "branniganz",
+      "phoeniz-suites-kl-city-centre",
+      "centrix",
+      "golden-crown",
+      "clouthaus"
+    ],
+    "tags": [
+      "klcc",
+      "leasehold",
+      "suites",
+      "review"
+    ]
+  },
+  "centrix-the-station-klcc-review": {
+    "id": "centrix-the-station-klcc-review",
+    "slug": "centrix-the-station-klcc-review",
+    "title": "Centrix The Station KLCC 评测：价格、户型、优缺点",
+    "metaDescription": "Centrix The Station KLCC 评测：47 层 TOD 项目，直接建在 Dang Wangi 轻快铁站之上，857 户，571 至 1,187 平方英尺，RM 907,800 起。户型、景观、管理费、优缺点。",
+    "summary": "Centrix The Station 位于安邦路（Jalan Ampang），是一座直接建在 Dang Wangi 轻快铁站上方的 47 层 TOD 项目。这篇评测讲尺价、户型、景观、设施，以及谁该买、谁不该买。",
+    "content": "# 一句话结论：谁适合买 Centrix The Station KLCC？\n\n**我的看法。** Centrix 首先是交通项目，其次才是景观项目，而这两点都是真的。地库直接通到 Dang Wangi 轻快铁站，电梯出来走几步就进站；Bukit Nanas 单轨站也在步行范围，去 KLCC 两站就到，开车到双子塔大约五分钟。高层看得到我们行内说的\"四大天王\"：国油双子塔、吉隆坡塔、Merdeka 118 和 TRX 那一片高楼，部分楼层还能看到 KL Forest Eco Park 的绿林。它的入门价也明显低过隔几条街的豪宅项目，这是我会拿出来讲的主要原因。去之前有一件事要知道：这个项目是第三次推出市场，之前两次暂停过。直接问销售团队施工进度，再对照你在现场看到的情况。\n\n- **适合：** 在 KLCC 上班、想把通勤时间压到最短的专业人士；想在市中心买流动性高的资产的投资者；包括 MM2H 在内、需要一个符合州属门槛的市中心地址的外国买家。\n- **请三思：** 一定要永久地契的人；想要每层户数少的低密度大楼的人。\n\n# 看房视频\n\n{{youtube:KyYFl2cz4Vw}}\n\n# Centrix 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Intan Sekitar Sdn Bhd（Crest Builder Berhad） |\n| 地址 | Jalan Ampang, 50450 Kuala Lumpur |\n| 地契 | 租赁地契，商业地契 |\n| 土地面积 | 2.39 英亩 |\n| 楼层 | 47 |\n| 总单位 | 857 |\n| 每层单位 | 按楼层段 14 至 21 户；43 和 44 楼各 11 户 |\n| 电梯 | 共 11 部：低区 5 部，高区 5 部加 1 部服务电梯 |\n| 面积 | 571 至 1,187 平方英尺 |\n| 户型 | 套间、大套间、1 房、1 房 + 书房、双钥匙 |\n| 价格 | RM 907,800 起（毛尺价约 RM 1,600 至 RM 1,850） |\n| 管理费 | 每平方英尺 RM 0.44（管理费 RM 0.40 + 储备金 RM 0.04） |\n| 预计完工 | 2028 年 |\n\n# Centrix 在哪里？步行可到什么？\n\n位于安邦路（Jalan Ampang）与苏丹依斯迈路（Jalan Sultan Ismail）交界，直接建在 Dang Wangi 轻快铁站（KJ12）上方。Bukit Nanas 单轨火车站步行可到，等于一个地址接通两条轨道线。\n\n周边：KL Forest Eco Park 城市森林公园、Quill City Mall、Life Centre、Saloma 行人桥、Avenue K、Suria KLCC 和国油双子塔、吉隆坡塔、Pavilion Kuala Lumpur、Merdeka 118 和 The Exchange TRX。学校有 St John International、Primrose Hill International 和 Eton International。医院：KPJ Sentosa、Prince Court 医疗中心和 HSC 医疗中心。\n\n# 和 KLCC 周边项目比，Centrix 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Centrix The Station** | 租赁 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [Branniganz](/projects/branniganz) | 租赁 | RM 803,500 | 344 至 678 平方英尺 | 759 | 每平方英尺 RM 1.21 | 2028 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | 永久 | RM 1,016,400 | 484 至 678 平方英尺 | 394 | 每平方英尺 RM 1.21 | 2031 |\n| [Golden Crown](/projects/golden-crown) | 租赁 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n\n这一组里 Centrix 的月费最低，而且低很多；入门价在偏低的一半，面积又比 Branniganz 和 Phoeniz 大。它比不过 CloutHaus 和 Orion 的地方是地契和稀缺性：857 户、每层最多 21 户，是一栋人多的楼。\n\n# Centrix 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| 套间 | 571 至 659 平方英尺 | 套间 |\n| 1 房 / 1 房 + 书房 | 578 至 871 平方英尺 | 1 房 |\n| 大套间 | 752 至 855 平方英尺 | 套间 |\n| 双钥匙 | 593 至 777 平方英尺 | 两边可独立上锁 |\n| 双钥匙（大） | 891 平方英尺以上 | 两边可独立上锁 |\n\n**我会选哪个。** 我拍的是 800 多平方英尺的双钥匙，也是我会选的那个。它分成两边，各约 400 平方英尺，共用一个玄关但各有自己的门、浴室和小厨房。东西全部附送：衣橱、厨柜、家电、床，地砖用的是 2 尺乘 4 尺的大片砖，看起来更大气。可以自己住一边、另一边当工作室，或者留给家人。如果你只需要一个门口，578 至 871 平方英尺的一房加书房是自住最实际的选择。选楼层之前，先问哪几列朝双子塔、哪几列朝森林公园。\n\n# 设施\n\n设施在两个平台层，10 楼和 45 楼。泳池层有 Aqua Sonata 泳道池（16 米 x 4.5 米，深 1.2 米）和儿童池（5.5 米 x 4.5 米，深 600 毫米），配凉亭和日光平台。工作与社交区有灵活会议室、全配套办公位、专属休息室、游戏室、阅读室和共享厨房。园林贯穿整个项目：叠水、雾境角落、步道、林冠走道、小草坪、秋千和游乐区。顶层有空中健身房、空中休息室、烧烤花园和观景平台。底层是零售店和主大堂。\n\n销售团队另外提过有代管服务的选项。这一项不在我手上的书面规格里，所以在你把它算进预算之前，请要他们书面确认。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 直接建在 Dang Wangi 轻快铁站上方，单轨站也在步行范围 | 租赁地契加商业地契：水电费率请确认 |\n| 每平方英尺 RM 0.44，是上面比较的 KLCC 项目中最低 | 857 户，每层最多 21 户 |\n| 入门价低过附近的豪宅项目 | 项目三次推出市场，施工进度要问清楚 |\n| 可看双子塔、吉隆坡塔、Merdeka 118 和森林公园 | 以套间和一房为主，适合家庭的选择不多 |\n\n# 怎样预约看 Centrix The Station KLCC\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Centrix 楼盘页](/projects/centrix)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Centrix 资料页](https://www.propertyportal.my/project/centrix) 查看。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1MY5YTmBIm4WE2ge52ikODy_gKU1Xflcs=w1600",
+    "faqs": [
+      {
+        "question": "Centrix The Station KLCC 是永久地契还是租赁地契？",
+        "answer": "租赁地契，商业地契。由 Crest Builder Berhad 旗下的 Intan Sekitar Sdn Bhd 开发。"
+      },
+      {
+        "question": "Centrix 有连接轻快铁吗？",
+        "answer": "有。它是建在 Dang Wangi 轻快铁站（KJ12）上方的 TOD 项目，Bukit Nanas 单轨火车站也在步行范围内。"
+      },
+      {
+        "question": "Centrix 起价多少？",
+        "answer": "RM 907,800 起，毛尺价约 RM 1,600 至 RM 1,850。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Centrix 有哪些面积？",
+        "answer": "从 571 平方英尺的套间到 1,187 平方英尺，包括大套间、一房和双钥匙户型。"
+      },
+      {
+        "question": "Centrix 什么时候完工？",
+        "answer": "发展商目标是 2028 年。按最新进度，打桩已完成，上层结构做到 3 楼。"
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-klcc-review",
+      "golden-crown-trx-review",
+      "foreigner-buying-property-in-malaysia"
+    ],
+    "relatedProjectIds": [
+      "centrix",
+      "clouthaus",
+      "golden-crown",
+      "phoeniz-suites-kl-city-centre",
+      "branniganz"
+    ],
+    "tags": [
+      "klcc",
+      "tod",
+      "lrt",
+      "review"
+    ]
+  },
   "clouthaus-klcc-review": {
     "id": "clouthaus-klcc-review",
     "slug": "clouthaus-klcc-review",
@@ -311,6 +1034,8 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       }
     ],
     "relatedSlugs": [
+      "centrix-the-station-klcc-review",
+      "core-residence-trx-review",
       "orion-residence-bukit-bintang-review",
       "pavilion-square-kl-review",
       "freehold-vs-leasehold",
@@ -326,6 +1051,116 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       "klcc",
       "freehold",
       "branded residence",
+      "review"
+    ]
+  },
+  "core-residence-trx-review": {
+    "id": "core-residence-trx-review",
+    "slug": "core-residence-trx-review",
+    "title": "Core Residence @ TRX 评测：价格、户型、优缺点",
+    "metaDescription": "Core Residence TRX 评测：敦拉萨国际贸易中心内的永久地契住宅，直通捷运转换站，700 户，622 至 1,572 平方英尺，约 RM 144 万起。",
+    "summary": "Core Residence @ TRX 位于敦拉萨国际贸易中心（TRX）内，由中国交建（CCCG）与 WCT 合资开发，700 户永久地契住宅，已完工。这篇评测讲三座塔楼的分别、尺价、户型、设施，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 Core Residence @ TRX？\n\n**我的看法。** 在这份比较里，Core Residence 是你今天就能走进去看的那一个。它建好了、是永久地契，而且就在敦拉萨国际贸易中心（TRX）里面，所以捷运转换站、10 英亩中央公园和 The Exchange 商场是这个项目的一部分，不是\"附近有\"。它还拿了 GBI 和 LEED 双绿色认证，全市住宅楼里有这个的很少。大部分单位在 1 号和 2 号塔，是紧凑型的一房和两房；3 号塔户数少、价钱高，大户型都在那里。看价单之前先决定你要买哪一种，因为这两者几乎是共用一个地址的两个项目。\n\n- **适合：** 想要 TRX 永久地契地址、又想马上入住的买家；在金融区上班的人；需要用现成资产跨过 RM 100 万门槛的外国买家。\n- **请三思：** 想要新盘那种分期付款安排的人；不想周边有办公楼和酒店、只要纯住宅的人。\n\n# Core Residence 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | CORE Precious Development Sdn Bhd（中国交建 CCCG 与 WCT Holdings Berhad） |\n| 地址 | Tun Razak Exchange, Jalan Tun Razak, 55188 Kuala Lumpur |\n| 地契 | 永久地契，HDA 下的商业地契 |\n| 土地面积 | 1.65 英亩 |\n| 楼数 / 楼层 | 3 座，50 层 |\n| 总单位 | 700（1 号与 2 号塔 580；3 号塔 120） |\n| 每层单位 / 电梯 | 1 号塔 7 户，2 号塔 8 户；3 部电梯 + 1 部服务电梯 |\n| 面积 | 622 至 1,572 平方英尺 |\n| 房间 | 1 至 3 房 |\n| 价格 | 约 RM 144 万至 RM 466 万（尺价约 RM 2,171） |\n| 管理费 | 每平方英尺 RM 0.85（含储备金） |\n| 绿色认证 | GBI 与 LEED |\n| 状态 | 已完工（1、2 号塔 2024 年，3 号塔 2025 年） |\n\n# Core Residence 在哪里？周边有什么？\n\n在敦拉萨国际贸易中心（TRX）内。TRX 是马来西亚的国际金融区，总值 RM 400 亿的发展总规划，办公楼租户包括汇丰（HSBC）和保诚（Prudential）。捷运 1 号线与 2 号线的 TRX 转换站直接连通，10 英亩的 TRX 中央公园就在项目所在的地块群内。\n\n商场：TRX 内的 The Exchange 商场、Pavilion Kuala Lumpur（800 米）、Starhill Gallery、Fahrenheit 88、Lot 10 和 IKEA Cheras。医疗：Prince Court 医疗中心（900 米）、HSC 医疗中心和 Gleneagles。学校：EtonHouse 国际学校和吉隆坡国际学校 ISKL。休闲：雪兰莪皇家高尔夫俱乐部（850 米）。开车：MEX、SMART 隧道、Jalan Tun Razak 和 Jalan Sultan Ismail。The Exchange 106 就在同一片地，国油双子塔 1.8 公里。\n\n# 和附近项目比，Core Residence 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Core Residence @ TRX** | 永久 | RM 1,442,207 | 622 至 1,572 平方英尺 | 700 | 每平方英尺 RM 0.85 | 已完工 |\n| [Golden Crown](/projects/golden-crown) | 租赁 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [Centrix The Station](/projects/centrix) | 租赁 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n| [Pavilion Square](/projects/pavilion-square-residences) | 租赁 | RM 1,700,000 | 504 至 1,272 平方英尺 | 960 | 每平方英尺 RM 0.90 | 2029 |\n\n这一组里已完工的永久地契只有 Core 和 Orion。Orion 走精品路线，只有 298 户、有酒店式服务，月费高很多；Core 规模大、顶端户型更大、月费更低。和隔壁的 Golden Crown 比，Core 是永久地契而且现成，Golden Crown 是租赁地契但入门价较低。\n\n# Core Residence 哪个户型最好？\n\n1 号和 2 号塔是紧凑型单位：\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A1 | 624 平方英尺 | 1 房 1 浴 |\n| A2 | 688 平方英尺 | 1 + 1 房 1 浴 |\n| B1 | 817 平方英尺 | 2 房 2 浴 |\n| B2 / B2a | 839 平方英尺 | 2 房 2 浴 |\n| B3 | 925 平方英尺 | 2 + 1 房 2 浴 |\n| B4 | 1,011 平方英尺 | 2 房 2 浴 |\n| C1 | 1,022 平方英尺 | 3 房 2 浴 |\n\n3 号塔是 120 户大户型，面积约 1,029 至 1,572 平方英尺，价钱约 RM 201 万至 RM 466 万。\n\n**我会选哪个。** 1、2 号塔里，自住我会选 925 平方英尺的 B3：两房加一个杂物房、两个浴室，价钱还没到 TRX 变贵的那条线。624 平方英尺的 A1 是入门票，也是全楼最好转手的单位。如果你要的是家庭住宅而不是市区落脚点，就直接看 3 号塔的大户型，并且拿它和 CloutHaus、Orion 比较——到了那个预算，那两个才是真正的对手。\n\n# 设施\n\n7 楼是家庭与社区层：宴会厅、阅读室、室内游乐场、户外休息区、休闲园林和托儿中心。50 楼是空中层：空中泳池、浅水池、泳池平台和空中健身房。项目内的酒店顶楼另有空中酒吧。走出大楼，住户还有同一片地块上的 10 英亩 TRX 中央公园和 The Exchange 商场。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 永久地契而且已完工：可以直接看实际单位 | 尺价约 RM 2,171，是上面比较中最高 |\n| 直接连接 TRX 捷运转换站 | 商业地契：水电费率和门牌税请确认 |\n| GBI 与 LEED 双绿色认证 | 1、2 号塔以紧凑型一房两房为主 |\n| 同一片地有 10 英亩中央公园和商场 | 三座楼共 700 户，与办公楼和酒店共用同一片地 |\n\n# 怎样预约看 Core Residence @ TRX\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Core Residence @ TRX 楼盘页](/projects/core-residence-trx)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Core Residence @ TRX 资料页](https://www.propertyportal.my/project/core-trx) 查看。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/13XbMaagXXczrYR5zOxhRmYUIRV7fa-4w=w1600",
+    "faqs": [
+      {
+        "question": "Core Residence @ TRX 是永久地契吗？",
+        "answer": "是。永久地契，属房屋发展法令（HDA）下的商业地契，由 CORE Precious Development Sdn Bhd 开发，是中国交建（CCCG）与 WCT Holdings Berhad 的合资公司。"
+      },
+      {
+        "question": "Core Residence 完工了吗？",
+        "answer": "完工了。1 号和 2 号塔目标 2024 年 9 月完工，3 号塔 2025 年第三季，所以这是现成的楼，不是新盘。"
+      },
+      {
+        "question": "Core Residence @ TRX 起价多少？",
+        "answer": "约 RM 144 万起，尺价约 RM 2,171。3 号塔的单位更贵，最高约 RM 466 万。"
+      },
+      {
+        "question": "Core Residence 的交通如何？",
+        "answer": "它位于敦拉萨国际贸易中心（TRX）内，直接连接 TRX 捷运转换站，该站服务捷运 1 号线与 2 号线。"
+      },
+      {
+        "question": "外国人可以买 Core Residence @ TRX 吗？",
+        "answer": "可以。价格高于吉隆坡外国买家 RM 1,000,000 的最低购买门槛。"
+      }
+    ],
+    "relatedSlugs": [
+      "golden-crown-trx-review",
+      "clouthaus-klcc-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "core-residence-trx",
+      "golden-crown",
+      "clouthaus",
+      "orion-residence",
+      "pavilion-square-residences"
+    ],
+    "tags": [
+      "trx",
+      "freehold",
+      "completed",
+      "review"
+    ]
+  },
+  "golden-crown-trx-review": {
+    "id": "golden-crown-trx-review",
+    "slug": "golden-crown-trx-review",
+    "title": "Golden Crown TRX 评测：价格、户型、优缺点",
+    "metaDescription": "Golden Crown Residence 评测：TRX 隔壁的 60 层大楼，地库隧道直通 TRX 捷运转换站，490 户，624 至 1,238 平方英尺，RM 1,280,000 起。",
+    "summary": "Golden Crown Residence 位于 Jalan Tun Razak，紧邻敦拉萨国际贸易中心（TRX），地库有隧道直通 TRX 捷运转换站。这篇评测讲价格、户型、顶楼设施、要接受的取舍，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 Golden Crown？\n\n**我的看法。** Golden Crown 的卖点是那条隧道。从地库走地下通道就进到 TRX 捷运转换站（一个站接两条线），也通到 50 米外的 The Exchange TRX 商场。在吉隆坡，下雨天最后那 200 米决定你到底会不会天天搭地铁，这一点比很多买家想的重要。它属于 Menara Golden Eagle 综合发展项目的一部分，同一栋还有酒店和办公楼；而且它是这份比较里唯一今年完工的项目，买的不是图纸。价钱也反映了这些，尺价约 RM 2,051，地契是租赁——在市中心这一带，这通常就是要接受的取舍。\n\n- **适合：** 在 TRX 或金三角上班、想有盖走到捷运站的买家；想要现成大楼、不想等四年的人；想在市中心买 2 + 1 房或三房的买家。\n- **请三思：** 一定要永久地契的人；不想和酒店、办公楼共用同一个地址的人。\n\n# Golden Crown 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Multibay Development Sdn Bhd（Golden Eagle） |\n| 地址 | Jalan Tun Razak，紧邻 Tun Razak Exchange，吉隆坡 |\n| 地契 | 租赁地契，商业地契 |\n| 土地面积 | 2.033 英亩 |\n| 楼层 | 60 |\n| 总单位 | 490 |\n| 每层单位 / 电梯 | 10 至 11 户；4 部客梯 + 1 部服务电梯 |\n| 面积 | 624 至 1,238 平方英尺 |\n| 房间 | 1 至 3 房 |\n| 价格 | RM 1,280,000 至 RM 3,031,000（尺价约 RM 2,051） |\n| 管理费 | 每平方英尺约 RM 0.80 |\n| 所属项目 | Menara Golden Eagle：住宅、酒店与办公楼 |\n| 预计完工 | 2026 年 8 月（签约后 36 个月） |\n\n# Golden Crown 在哪里？步行可到什么？\n\n位于 Jalan Tun Razak，就在敦拉萨国际贸易中心（TRX）旁边。捷运 1 号线与 2 号线的转换站距离 50 米，有地库隧道直通；10 英亩的 TRX 公园同样 50 米。\n\n商场：The Exchange TRX（50 米）、IKEA 和 MyTown（800 米）、Berjaya Times Square（900 米）、Pavilion Kuala Lumpur、Starhill Gallery 和 Lot 10（1 公里）、Suria KLCC（1.8 公里）。医疗：Prince Court 医疗中心（600 米）、同善医院（800 米）、HSC 医疗中心（2 公里）。学校：EtonHouse 国际学校（1 公里）、循人中学（1.8 公里）、吉隆坡国际学校 ISKL（2.3 公里）。休闲：雪兰莪皇家高尔夫俱乐部（550 米）和 KLCC 公园（1.3 公里）。开车：Jalan Tun Razak、SMART 隧道、MEX 和 SPE。\n\n# 和附近项目比，Golden Crown 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Golden Crown** | 租赁 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [Core Residence @ TRX](/projects/core-residence-trx) | 永久 | RM 1,442,207 | 622 至 1,572 平方英尺 | 700 | 每平方英尺 RM 0.85 | 已完工 |\n| [Centrix The Station](/projects/centrix) | 租赁 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Pavilion Square](/projects/pavilion-square-residences) | 租赁 | RM 1,700,000 | 504 至 1,272 平方英尺 | 960 | 每平方英尺 RM 0.90 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n\n最直接的对手是 Core Residence @ TRX：两个都在 TRX，都接同一个捷运转换站。Core 是永久地契、已完工，顶端户型更大；Golden Crown 是租赁地契，起价较低，今年完工。和 Centrix 比，Golden Crown 更贵、地段更核心；Centrix 入门价更低，月费也低很多。\n\n# Golden Crown 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A1 | 624 平方英尺 | 1 房 1 浴 |\n| A2（阳台） | 732 平方英尺 | 1 房 1 浴 |\n| B1 / B2 | 926 平方英尺 | 2 + 1 房 2 浴 |\n| B3 | 958 平方英尺 | 2 + 1 房 2 浴 |\n| C（双钥匙） | 1,023 平方英尺 | 2 + 1 房 2 浴 |\n| D | 1,238 平方英尺 | 3 房 2 浴 |\n\n**我会选哪个。** 自住的话，926 至 958 平方英尺的 B 系列是合理的中间选择：两房加一个可当书房的杂物房、两个浴室，面积也够，客饭厅不会像酒店套房。一房的话，732 平方英尺的 A2 值得比 A1 多付一点，因为那个阳台就是\"市区公寓\"和\"一个盒子\"的分别。1,023 平方英尺的 Type C 双钥匙适合要给父母或成年子女一个独立大门的业主；1,238 平方英尺的 Type D 是全楼唯一真正的三房。\n\n# 设施\n\n设施在楼顶和街面两处。58 楼：祈祷室、图书室、健身房、多功能室，以及游戏与影音室。59 楼：无边际泳池、浅水池、泳池平台、烧烤露台、儿童游乐场和更衣室。地面层：礼宾台、24 小时保安、大堂、零售店、幼儿园、管理处和信件室。地库一层有更多零售店，以及通往 TRX 捷运转换站的隧道。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 地库隧道直通 TRX 捷运转换站和 The Exchange TRX | 租赁地契加商业地契：水电费率请确认 |\n| 2026 年完工，是上面比较中最早的 | 尺价约 RM 2,051，高过 Centrix 和 Core TRX |\n| 490 户，每层 10 至 11 户 | 和酒店、办公楼共用同一个发展项目 |\n| 10 英亩 TRX 公园就在 50 米外 | 真正的三房只有一个户型 |\n\n# 怎样预约看 Golden Crown\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Golden Crown 楼盘页](/projects/golden-crown)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Golden Crown 资料页](https://www.propertyportal.my/project/golden-crown) 查看。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1yH8boDRs4uKXH35ZlmOdet_7Crovvvp_=w1600",
+    "faqs": [
+      {
+        "question": "Golden Crown 是永久地契还是租赁地契？",
+        "answer": "租赁地契，商业地契。由 Golden Eagle 旗下的 Multibay Development Sdn Bhd 开发。"
+      },
+      {
+        "question": "Golden Crown 有连接 TRX 捷运站吗？",
+        "answer": "有。地库层有隧道通往捷运 1 号线与 2 号线的 TRX 转换站，以及 The Exchange TRX 商场。"
+      },
+      {
+        "question": "Golden Crown 起价多少？",
+        "answer": "RM 1,280,000 起，尺价约 RM 2,051。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Golden Crown 一共有多少单位？",
+        "answer": "60 层大楼共 490 户，每层 10 至 11 户，配 4 部客梯和 1 部服务电梯。"
+      },
+      {
+        "question": "Golden Crown 什么时候完工？",
+        "answer": "发展商目标是 2026 年 8 月，建筑期为买卖合约签署后 36 个月。"
+      }
+    ],
+    "relatedSlugs": [
+      "core-residence-trx-review",
+      "centrix-the-station-klcc-review",
+      "clouthaus-klcc-review"
+    ],
+    "relatedProjectIds": [
+      "golden-crown",
+      "core-residence-trx",
+      "centrix",
+      "clouthaus",
+      "pavilion-square-residences"
+    ],
+    "tags": [
+      "trx",
+      "klcc",
+      "mrt",
       "review"
     ]
   },
@@ -381,6 +1216,116 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       "review"
     ]
   },
+  "kingswoodz-bukit-jalil-review": {
+    "id": "kingswoodz-bukit-jalil-review",
+    "slug": "kingswoodz-bukit-jalil-review",
+    "title": "The Kingswoodz 武吉加里尔评测：价格、户型、优缺点",
+    "metaDescription": "The Kingswoodz 武吉加里尔评测：EXSIM 的 1,558 户租赁地契新盘，RM 422,500 起，474 至 904 平方英尺，距 LRT Awan Besar 900 米。户型、管理费、优缺点。",
+    "summary": "The Kingswoodz 是 EXSIM 在武吉加里尔 3.45 英亩地段上的三座大楼，共 1,558 户，也是这一区入门价最低的新盘。这篇评测讲价格、户型、设施、要接受的取舍，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 The Kingswoodz？\n\n**我的看法。** 现在我能拿给买家的、进入武吉加里尔最便宜的方式就是 The Kingswoodz：474 平方英尺的单位 RM 422,500，而这一区大部分新盘都从 RM 70 万以上起跳。这个价钱买到的是\"大楼里的小单位\"，这句话的两半都要看清楚。三座楼 1,558 户，是这一区规模最大的社区，每层 14 至 17 户，每座配 3 或 4 部客梯。如果你买第一间房、卡在首期，这个取舍通常值得；如果你买的是要住十年的家庭房，先看附近面积更大、密度更低的选择。\n\n- **适合：** 在武吉加里尔、斯里白沙罗（Sri Petaling）或古晋路一带上班的首购族；想要本区最低入门价的买家；搭轻快铁和巴士的人。\n- **请三思：** 需要三房加超过一个车位的人；不喜欢大型高密度大楼的人。\n\n# The Kingswoodz 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | EXSIM Jalil Link Sdn Bhd |\n| 地址 | Lot 38628, Jalan Jalil Perkasa 1, Bukit Jalil, Kuala Lumpur |\n| 地契 | 租赁地契，HDA 下的商业地契 |\n| 土地面积 | 3.45 英亩 |\n| 楼数 / 楼层 | A 座 46 层，B 座 45 层，C 座 46 层 |\n| 总单位 | 1,558 |\n| 每层单位 | A 座约 14 户，B 座约 15 户，C 座约 17 户 |\n| 电梯 | A、B 座各 4 部客梯 + 1 部服务电梯；C 座 3 部客梯 + 1 部服务电梯 |\n| 面积 | 474 至 904 平方英尺 |\n| 房间 | 1 至 3 房 |\n| 价格 | RM 422,500 至 RM 766,800（尺价约 RM 809） |\n| 管理费 | 每平方英尺 RM 0.42（含储备金） |\n| 装修 | 标准配置为半装修 |\n| 预计完工 | 2028 年（52 个月） |\n\n# The Kingswoodz 在哪里？周边有什么？\n\n位于武吉加里尔 Jalan Jalil Perkasa 1。LRT Awan Besar 约 900 米，Rapid KL 巴士站距项目约 230 米，公共交通比这一区大部分新盘都近。开车可用 KESAS、NPE（古晋路支线）、MEX、Sprint、ELITE、新街场大道和 SUKE。\n\n周边：Aurora Place Bukit Jalil（1 公里）、Pavilion Bukit Jalil（2.8 公里）、The Food Merchant（3.4 公里）、Giant Bukit Kinrara（5.2 公里）、NSK 古晋路（6.6 公里）和 Mid Valley Megamall（7.5 公里）。学校院校有 SJK(C) 黎明华小（1 公里）、SJK(T) Ladang Bukit Jalil（1.5 公里）和国际医药大学 IMU（4.4 公里）。\n\n# 和武吉加里尔其他新盘比，The Kingswoodz 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **The Kingswoodz** | 租赁 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n| [Ren Residence](/projects/ren-residence) | 租赁 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | 租赁 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [Ayanna](/projects/ayanna) | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n\nKingswoodz 是这里唯一起价低于 RM 50 万的项目，也是唯一有 500 平方英尺以下单位的项目。同一个发展商在武吉加里尔的 Queenswoodz 是它的\"大户型版本\"：从 807 平方英尺、RM 723,000 起。\n\n# The Kingswoodz 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A | 474 平方英尺 | 1 房 1 浴 |\n| B | 678 平方英尺 | 2 房 2 浴 |\n| C | 904 平方英尺 | 3 房 2 浴 |\n\n楼盘页另外列出 617 平方英尺和 761 平方英尺的版本，所以定面积之前，请先向销售团队要最新的户型表。\n\n**我会选哪个。** 买第一间房的话，我会选 678 平方英尺的 Type B：两房两浴是最小的、出租和转手都还容易的格局，而且和 474 平方英尺的差价不大。904 平方英尺的 Type C 是唯一的三房，如果这间房要住得下一个小家庭，就看它。Type A 可以做出租单位或单身首购，但要明白它在同一座楼里要和另外 1,557 户竞争。\n\n# 设施\n\n设施集中在 8 楼和每座楼的顶层。8 楼：泳池、按摩池、浅水池、户外健身区和室内健身房、足底按摩步道、游戏室、阅读休息室、宴会厅、凉亭、生态池、儿童游乐场、篮球场、花园广场、草坪、社区农圃、户外餐区和健身步道。顶层（B 座 45 楼，A、C 座 46 楼）有空中休息室、空中烧烤区、空中餐区和空中花园。地面层有主入口、三个大堂、零售店、信件室，A 座还有幼儿园。外立面由 WDA Design 设计。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 上面比较的武吉加里尔新盘中入门价最低 | 三座楼 1,558 户，是这里密度最高的 |\n| 距 LRT Awan Besar 约 900 米，巴士站 230 米 | 每层 14 至 17 户，配 3 至 4 部客梯 |\n| 标准配置已含半装修 | 租赁地契加商业地契：水电费率请确认 |\n| 一整层平台设施再加三个顶楼 | 最大只有 904 平方英尺，将来换房空间有限 |\n\n# 怎样预约看 The Kingswoodz\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Kingswoodz 楼盘页](/projects/kingswoodz-bukit-jalil)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 The Kingswoodz 资料页](https://www.propertyportal.my/project/kingswoodz) 查看。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1b2w3wss5365AM_l66TWcXOjRnDSFLXzc=w1600",
+    "faqs": [
+      {
+        "question": "The Kingswoodz 是永久地契还是租赁地契？",
+        "answer": "租赁地契，属房屋发展法令（HDA）下的商业地契。由 EXSIM Jalil Link Sdn Bhd 开发，位于武吉加里尔 Jalan Jalil Perkasa 1。"
+      },
+      {
+        "question": "The Kingswoodz 起价多少？",
+        "answer": "RM 422,500 起，尺价约 RM 809。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "离轻快铁站多远？",
+        "answer": "LRT Awan Besar 约 900 米，另有 Rapid KL 巴士站距项目约 230 米。"
+      },
+      {
+        "question": "一共有多少单位？",
+        "answer": "三座 45 至 46 层大楼共 1,558 户，每层约 14 至 17 户。"
+      },
+      {
+        "question": "The Kingswoodz 什么时候完工？",
+        "answer": "2028 年，建筑期 52 个月。"
+      }
+    ],
+    "relatedSlugs": [
+      "ren-residence-bukit-jalil-review",
+      "oaka-residences-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "kingswoodz-bukit-jalil",
+      "queenswoodz",
+      "ren-residence",
+      "oaka-residences",
+      "ayanna"
+    ],
+    "tags": [
+      "bukit jalil",
+      "leasehold",
+      "first home",
+      "review"
+    ]
+  },
+  "oaka-residences-bukit-jalil-review": {
+    "id": "oaka-residences-bukit-jalil-review",
+    "slug": "oaka-residences-bukit-jalil-review",
+    "title": "OAKA Residences 武吉加里尔评测：价格、户型、优缺点",
+    "metaDescription": "OAKA Residences 评测：成功集团（Berjaya）在武吉加里尔的永久地契住宅地契公寓，350 户、每层 7 户，RM 836,000 起。户型、管理费、优缺点。",
+    "summary": "OAKA Residences 位于武吉加里尔，2.2 英亩土地上两座 30 层大楼，共 350 户，由 Berjaya Hartanah 开发，永久地契。这篇评测讲价格、户型、低密度设计、设施、要接受的取舍，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 OAKA Residences？\n\n**我的看法。** OAKA 是武吉加里尔的低密度选择。这一区其他新盘动辄 800、1,000 甚至 1,500 户，OAKA 两座楼一共只有 350 户，每层 7 户配 3 部电梯。这个比例是我会为它买单的关键数字：交房之后住户最常抱怨的就是等电梯和走廊人多，这个设计就是冲着这两点来的。它还是永久地契加住宅地契，水电按家用费率计算，不是商业费率。低密度的代价在两个地方：管理费比武吉加里尔其他新盘高，入门价也高过附近的租赁地契项目。\n\n- **适合：** 想在武吉加里尔要永久地契和住宅地契的买家；不喜欢挤电梯和大社区的人；需要两三个车位的家庭。\n- **请三思：** 想要本区最低入门价的人；想要最低月费的人。\n\n# OAKA Residences 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Berjaya Hartanah Berhad |\n| 地址 | Lot 36471, Jalan Jalil Perkasa 7, Bukit Jalil, 57000 Kuala Lumpur |\n| 地契 | 永久地契，住宅地契 |\n| 土地面积 | 2.2 英亩 |\n| 楼数 / 楼层 | 2 座，30 层 |\n| 总单位 | 350 户（每座 175 户） |\n| 每层单位 / 电梯 | 7 户，3 部电梯 |\n| 面积 | 882 至 1,509 平方英尺 |\n| 房间 | 2 至 3 房 |\n| 车位 | 每单位 2 至 3 个 |\n| 价格 | RM 836,000 至 RM 1,503,000（尺价约 RM 820 至 RM 1,056） |\n| 管理费 | 每平方英尺 RM 0.51（含储备金） |\n| 绿色认证 | GreenRE 金级 |\n| 预计完工 | 2028 年第一季（首份买卖合约后 48 个月） |\n\n# OAKA 在哪里？周边有什么？\n\n位于 Jalan Jalil Perkasa 7，在武吉加里尔发展成熟的那一带。附近有 Awan Besar、Bukit Jalil 和 Sri Petaling 三个轻快铁站；开车可用武吉加里尔大道、MEX、KESAS、MRR2、SUKE 和吉隆坡至芙蓉大道。\n\n周边配套：Pavilion Bukit Jalil、Pearl Point 商场、The Tropika 和 The Link 2；Columbia Asia 武吉加里尔医院；SJKC 黎明华小、武吉加里尔国中、慈济国际学校和 Kingsgate 国际学校；国际医药大学（IMU）、APIIT 和 APU。80 英亩的武吉加里尔休闲公园、武吉加里尔高尔夫球乡村俱乐部、国家体育馆和 KL Sports City 都在同一个区域。\n\n# 和武吉加里尔其他新盘比，OAKA 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **OAKA Residences** | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Ayanna](/projects/ayanna) | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n| [Ren Residence](/projects/ren-residence) | 租赁 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | 租赁 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租赁 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n\n六个当中 OAKA 的户数最少，而且少很多。Ayanna 是另一个永久地契加住宅地契的选择，同样的钱买到的面积更大，但整座楼有 824 户。Park Green 是这一区的高端永久地契选择，入门价明显更高。\n\n# OAKA 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A | 882 平方英尺 | 2 房 2 浴 |\n| A1a | 915 平方英尺 | 2 房，加大阳台 |\n| B3（Lanai） | 1,175 平方英尺 | 2 + 1 房 2 浴 |\n| B1 / B2 | 1,182 平方英尺 | 2 + 1 房 2 浴 |\n| B3a | 1,240 平方英尺 | 2 + 1 房，加大阳台 |\n| B1a / B2a | 1,262 平方英尺 | 2 + 1 房，加大阳台 |\n| C | 1,423 平方英尺 | 3 房 3 浴 |\n| C1a | 1,509 平方英尺 | 3 房，加大阳台 |\n\n**我会选哪个。** 1,175 至 1,262 平方英尺的 B 系列是最实用的中间选择：2 房加一个杂物房（可做书房或帮佣房），客饭厅的面宽也够。Lanai 和加大阳台的版本值得问一问，因为在武吉加里尔，这个面积还带户外空间很少见。1,423 平方英尺的 Type C 三间房各有自己的浴室。选楼层之前，先问清楚哪一列朝高尔夫球场、哪一列朝吉隆坡市景。\n\n# 设施\n\n一楼和平台层有无边际泳池、浅水池、按摩池、泳池平台和凉亭、户外淋浴、半场篮球场、草坪和儿童游乐场、健身房、瑜伽与舞蹈室、游戏室、影音室、住户休息室、儿童活动室、多功能厅，以及桑拿和更衣室。顶楼另有空中户外休息区、空中花园、空中凉亭、空中观景亭和烧烤平台。实用配置：EV 充电位、洗车区、包裹室和信件室、外卖取餐区、祈祷室，以及预留给幼儿园、零售店和洗衣店的空间。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 永久地契加住宅地契：水电按家用费率 | 每平方英尺 RM 0.51，是上面比较的武吉加里尔新盘中最高 |\n| 只有 350 户，每层 7 户配 3 部电梯 | 入门价高过附近的租赁地契项目 |\n| 每单位 2 至 3 个车位 | 最近的轻快铁站要开车或转接驳，不能步行 |\n| GreenRE 金级、宠物友善、每户都有阳台或 Lanai | 2028 年才完工 |\n\n# 怎样预约看 OAKA Residences\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [OAKA Residences 楼盘页](/projects/oaka-residences)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 OAKA Residences 资料页](https://www.propertyportal.my/project/oaka-res) 查看。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1dWgmVqgZk6bFD9Pn5Ndd6i1-tq2_tdLH=w1600",
+    "faqs": [
+      {
+        "question": "OAKA Residences 是永久地契还是租赁地契？",
+        "answer": "永久地契，住宅地契。由 Berjaya Hartanah Berhad 开发，位于武吉加里尔 Jalan Jalil Perkasa 7。"
+      },
+      {
+        "question": "OAKA Residences 起价多少？",
+        "answer": "RM 836,000 起，尺价约 RM 820 至 RM 1,056。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "OAKA Residences 一共有多少单位？",
+        "answer": "两座 30 层大楼共 350 户，每层 7 户，配 3 部电梯。"
+      },
+      {
+        "question": "每个单位有几个车位？",
+        "answer": "根据发展商资料，每个单位有 2 至 3 个车位。"
+      },
+      {
+        "question": "OAKA Residences 什么时候完工？",
+        "answer": "发展商目标是 2028 年第一季，即第一份买卖合约签署后 48 个月。"
+      }
+    ],
+    "relatedSlugs": [
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold",
+      "understanding-maintenance-fees-sinking-funds"
+    ],
+    "relatedProjectIds": [
+      "oaka-residences",
+      "ren-residence",
+      "park-green-pavilion-bukit-jalil",
+      "ayanna",
+      "kingswoodz-bukit-jalil"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "low density",
+      "review"
+    ]
+  },
   "orion-residence-bukit-bintang-review": {
     "id": "orion-residence-bukit-bintang-review",
     "slug": "orion-residence-bukit-bintang-review",
@@ -418,6 +1363,8 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       }
     ],
     "relatedSlugs": [
+      "core-residence-trx-review",
+      "golden-crown-trx-review",
       "clouthaus-klcc-review",
       "pavilion-square-kl-review",
       "freehold-vs-leasehold"
@@ -432,6 +1379,61 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       "bukit bintang",
       "freehold",
       "branded residence",
+      "review"
+    ]
+  },
+  "park-green-bukit-jalil-review": {
+    "id": "park-green-bukit-jalil-review",
+    "slug": "park-green-bukit-jalil-review",
+    "title": "Park Green Pavilion 武吉加里尔评测：价格、户型、优缺点",
+    "metaDescription": "Park Green 武吉加里尔评测：Malton 的永久地契大楼，连接桥直通 Pavilion Bukit Jalil，453 户，1,201 至 1,905 平方英尺，RM 1,209,100 起。户型与结论。",
+    "summary": "Park Green 是 Malton 在 Pavilion Bukit Jalil 的第三期、也是最后一期，47 层永久地契大楼共 453 个大户型，有自己的天桥直通商场。这篇评测讲价格、六种户型、公园景、设施，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 Park Green？\n\n**我的看法。** Park Green 卖的是两样东西，我在看房视频里也是这样讲：一座桥，一个景。桥从大楼 2 楼直接通到 Pavilion Bukit Jalil 的 5 楼，也就是戏院和餐厅那一层，所以商场是生活的一部分，不是要开车去的地方。景是 80 英亩的武吉加里尔休闲公园；在一个已经盖得这么满的区，一个不会被挡住的景观是值得付钱的。这是 Malton 在这里的第三期，也是最后一期，前面第一期有四座、第二期两座，这一期最小也最贵。里面全部是大户型，没有低过 1,201 平方英尺的，而且全是永久地契。要注意：朝公园那几列的价钱高过朝商场那几列，所以比价之前先决定你要买哪一面。\n\n- **适合：** 想要大面积永久地契、又能走路去商场的买家；看重不会被挡的公园景的家庭；想要 Pavilion Bukit Jalil 这个地址的人。\n- **请三思：** 预算到不了 RM 120 万的人；想步行到轻快铁站的人。\n\n# 看房视频\n\n{{youtube:_EelMcIcXaI}}\n\n# Park Green 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Regal Path Sdn Bhd（Malton Berhad） |\n| 地址 | Persiaran Jalil Utama, Bukit Jalil, 57000 Kuala Lumpur |\n| 地契 | 永久地契，商业地契 |\n| 土地面积 | 0.92 英亩 |\n| 楼层 | 47 |\n| 总单位 | 453 |\n| 每层单位 / 电梯 | A 翼 6 户，B 翼 7 户；每翼 4 部电梯 |\n| 停车场 | 至 10 楼 |\n| 面积 | 1,201 至 1,905 平方英尺 |\n| 房间 | 3 至 4 房 |\n| 价格 | RM 1,209,100 至 RM 2,029,100（尺价约 RM 1,007） |\n| 管理费 | 每平方英尺 RM 0.44（含储备金） |\n| 绿色认证 | GreenRE（临时） |\n| 预计完工 | 2029 年第一 / 第二季（签约后 54 个月） |\n\n# Park Green 在哪里？周边有什么？\n\n在 Pavilion Bukit Jalil 城镇里面，Persiaran Jalil Utama。Pavilion Bukit Jalil 距离 50 米，有天桥直通。武吉加里尔大道从项目旁边经过：往西去蒲种、Kinrara，再上去是梳邦；接 NPE 可到蕉赖，往北进市区，往南去芙蓉。OUG、旧巴生路和 Mid Valley 都在这条动线上。\n\n公共交通要开车，不能步行：LRT Awan Besar 约 2 公里，Alam Sutera 2.2 公里，Muhibbah 2.7 公里，Sri Petaling 3.8 公里，南湖镇终站（TBS）约 8 公里。隔壁是马来西亚科技园（Technology Park Malaysia），同一带还在兴建 KL Wellness City，发展商称是东南亚最大的医疗城。其他商场：The Food Merchant OUG（2.4 公里）、Pearl Point（4.8 公里）、Giant Kinrara（5 公里）、IOI Mall Puchong、Sunway Pyramid 和 Mid Valley（都约 10 公里）。\n\n# 和武吉加里尔其他新盘比，Park Green 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Park Green Pavilion** | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Ayanna](/projects/ayanna) | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [Ren Residence](/projects/ren-residence) | 租赁 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | 租赁 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租赁 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n\n六个当中 Park Green 的尺价最高，约 RM 1,007，而面积相近的 Ayanna 是 RM 639。贵的部分买到的是 Pavilion 城镇这个地址和直通商场的天桥。如果商场连接对你不重要，Ayanna 同样的钱买到的面积更大，OAKA 的户数更少。\n\n# Park Green 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A / A1 | 1,201 平方英尺 | 3 房 2 浴 |\n| B / B1 | 1,408 平方英尺 | 3 房 2 浴 |\n| C | 1,485 平方英尺 | 3 房 2 浴 |\n| D | 1,501 平方英尺 | 3 房 2 浴 |\n| F | 1,627 平方英尺 | 3 房 2 浴 |\n| E | 1,905 平方英尺 | 4 房 3 浴 |\n\n**我会选哪个。** 我拍的那个三房，就是大部分买家最后会选的。1,200 到 1,500 平方英尺做三房，代表每个空间都是宽的，不是挤出来的：客厅面宽约 16 尺，阳台约 16 尺宽、4 尺深，次卧几乎和主卧一样大。厨房分干湿两个，厨柜、抽油烟机、炉具和冰箱都包括在内，干厨房留空给你自己设计。主人浴室有很大的独立淋浴区，含花洒。第三个房间可以当书房，它的浴室位置也做成客人可用的客厕。需要真正第四间房的，就看 1,905 平方英尺的 Type E。\n\n# 设施\n\n分两层。11 楼在停车场之上，有无边际泳池、浅水池、按摩池、烧烤平台、社交花园、户外休息区和儿童游乐区，还有健身房、瑜伽室、游戏室、多功能厅、共享办公休息室、蒸汽房和更衣室、管理处，以及预留给幼儿园的空间。47 楼顶楼有户外瑜伽平台、空中休息室、空中露台座位区，以及带行政餐厅的私人休息室。地面层：礼宾台、等候区、外卖取餐区、包裹室和信件室，以及 EV 充电位。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 专属天桥从 2 楼直通 Pavilion Bukit Jalil 5 楼 | 尺价是上面比较的武吉加里尔新盘中最高 |\n| 可望 80 英亩武吉加里尔休闲公园 | 最近的轻快铁站约 2 公里，要开车 |\n| 453 户，每层 6 至 7 户，每翼 4 部电梯 | 商业地契：水电费率请向发展商确认 |\n| 没有低过 1,201 平方英尺的户型；标配干湿厨房 | 2029 年才完工 |\n\n# 怎样预约看 Park Green\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Park Green 楼盘页](/projects/park-green-pavilion-bukit-jalil)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Park Green 资料页](https://www.propertyportal.my/project/park-green) 查看。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1O6nOxQMa5cFDLbt1GJ6rZEuGRWLLSDYz=w1600",
+    "faqs": [
+      {
+        "question": "Park Green 是永久地契还是租赁地契？",
+        "answer": "永久地契，商业地契。由 Malton Berhad 旗下的 Regal Path Sdn Bhd 开发，Malton 也是 Bukit Jalil City 的总发展商。"
+      },
+      {
+        "question": "Park Green 有连接 Pavilion Bukit Jalil 吗？",
+        "answer": "有。专属行人天桥从项目 2 楼直通 Pavilion Bukit Jalil 的 5 楼，也就是戏院、餐饮和娱乐那一层。"
+      },
+      {
+        "question": "Park Green 起价多少？",
+        "answer": "RM 1,209,100 起，尺价约 RM 1,007。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Park Green 一共有多少单位？",
+        "answer": "47 层大楼共 453 户，A 翼每层 6 户，B 翼每层 7 户。"
+      },
+      {
+        "question": "Park Green 什么时候完工？",
+        "answer": "2029 年第一或第二季，建筑期为买卖合约签署后 54 个月。"
+      }
+    ],
+    "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ayanna-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "park-green-pavilion-bukit-jalil",
+      "oaka-residences",
+      "ayanna",
+      "ren-residence",
+      "queenswoodz"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "pavilion",
       "review"
     ]
   },
@@ -472,6 +1474,8 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       }
     ],
     "relatedSlugs": [
+      "golden-crown-trx-review",
+      "core-residence-trx-review",
       "clouthaus-klcc-review",
       "orion-residence-bukit-bintang-review",
       "freehold-vs-leasehold"
@@ -489,13 +1493,123 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       "review"
     ]
   },
+  "phoeniz-suites-klcc-review": {
+    "id": "phoeniz-suites-klcc-review",
+    "slug": "phoeniz-suites-klcc-review",
+    "title": "Phoeniz Suites @ KL City Centre 评测：价格、户型、优缺点",
+    "metaDescription": "Phoeniz Suites @ KL City Centre 评测：EXSIM 的永久地契 53 层大楼，394 个套房单位，484 至 678 平方英尺，RM 1,016,400 起。户型、管理费、优缺点。",
+    "summary": "Phoeniz Suites 是 EXSIM 在吉隆坡市中心 0.56 英亩地段上的永久地契 53 层大楼，共 394 个服务式套房。这篇评测讲尺价、三种户型、管理费、要接受的取舍，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 Phoeniz Suites？\n\n**我的看法。** Phoeniz Suites 是小地块上的小型永久地契大楼：0.56 英亩、53 层、394 个套房，位于金三角，开车到 KLCC 和 Pavilion 都不远。卖点是市中心永久地契、价钱刚过 RM 100 万；对需要跨过吉隆坡 RM 100 万门槛的外国买家来说，入门单位刚好够格，不会多花冤枉钱。签约前有两个数字要特别看。管理费每平方英尺 RM 1.21，偏高，而发展商的补贴只补一部分、只补两年。还有建筑期是取得执照后 60 个月，是这份比较里等最久的一个。\n\n- **适合：** 需要市中心永久地契、又不想为了跨门槛而买太大的外国买家；想在市中心有个紧凑落脚点的专业人士；偏好小型大楼的买家。\n- **请三思：** 需要家庭型大户的人；想早点拿钥匙的人；每平方英尺 RM 1.21 月费超出预算的人。\n\n# Phoeniz Suites 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Exsim YKS 54 Sdn Bhd（EXSIM 集团） |\n| 地址 | Jalan Liew Weng Chee, KL City Centre, 50450 Kuala Lumpur |\n| 地契 | 永久地契，HDA 下的商业地契 |\n| 土地面积 | 0.56 英亩（24,394 平方英尺） |\n| 楼层 | 53 |\n| 总单位 | 394 个服务式套房 |\n| 每层单位 | 6 至 18 楼每层 6 户；水箱层每层 8 户；19 至 50 楼每层 10 户 |\n| 电梯 | 6 部客梯 + 1 部服务电梯 |\n| 面积 | 484 至 678 平方英尺 |\n| 房间 | 1 房至 1 + 1 房 |\n| 价格 | RM 1,016,400 至 RM 1,421,600（尺价约 RM 2,100） |\n| 管理费 | 每平方英尺 RM 1.21（含储备金），发展商头两年补贴最高 RM 0.33 |\n| 绿色认证 | GreenRE 铜级 |\n| 建筑期 | 取得 APDL 后 60 个月 |\n\n# Phoeniz Suites 在哪里？周边有什么？\n\n位于吉隆坡市中心 Jalan Liew Weng Chee，属 CBD 和金三角范围。开车到 KLCC 和 Pavilion Kuala Lumpur 都约五分钟，巴士站和捷运站在步行范围内。开车可用 AKLEH 大道；TRX 和 Merdeka 118 也在同一个半径内。\n\n# 和 KLCC 周边项目比，Phoeniz Suites 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Phoeniz Suites** | 永久 | RM 1,016,400 | 484 至 678 平方英尺 | 394 | 每平方英尺 RM 1.21 | 2031 |\n| [Branniganz](/projects/branniganz) | 租赁 | RM 803,500 | 344 至 678 平方英尺 | 759 | 每平方英尺 RM 1.21 | 2028 |\n| [Centrix The Station](/projects/centrix) | 租赁 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [Golden Crown](/projects/golden-crown) | 租赁 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n\nPhoeniz 是这一组里最便宜的永久地契入门价，这是它最强的一点；除了 Orion，它也是户数最少的，只有 394 户。和 Centrix 比很直接：Phoeniz 给你永久地契，Centrix 给你低很多的月费、更大的面积，还有楼下就是轻快铁站。\n\n# Phoeniz Suites 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A / A (M) | 484 平方英尺 | 1 + 1 房 1 浴 |\n| B1 / B1 (M)（双钥匙） | 657 平方英尺 | 1 房 2 浴 |\n| B2（双钥匙） | 678 平方英尺 | 1 房 2 浴 |\n\n楼盘页另外列出 581 平方英尺版本的 B1，选之前请先要最新的户型表。\n\n**我会选哪个。** 678 平方英尺的双钥匙 B2 最对得起它的价钱。678 平方英尺里做出两边可独立上锁、各带浴室，是小地块上很高效的用法：自己住一边，另一边当书房或客房，或者两边完全分开。484 平方英尺、带书房角落的 Type A 是入门单位，也是跨过外国买家门槛最便宜的那一个。单位按发展商现行规格附家具交房，所以请要他们提供那份规格书面版，对清楚到底包含什么。\n\n# 设施\n\n因为地块小，设施是往上叠而不是摊开。51 楼有空中健身房和空中音乐休息室。52 楼有空中泳池、泳池平台和花园休息区。下面几层：3A 楼是礼宾与接待大堂，附会议室和托儿 / 育婴室；5 楼是管理处、祈祷室、洗衣房和小贩空间。1 楼有包裹室、信件室和摩托车停车位，汽车停车场是机械式的。保安为 24 小时，配门禁卡系统和闭路电视。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 上面比较的 KLCC 新盘中，永久地契入门价最低 | 月费每平方英尺 RM 1.21，属这一组里偏高 |\n| 刚好跨过外国买家 RM 100 万门槛，不用多买面积 | 建筑期 60 个月，是这里等最久的 |\n| 只有 394 户，每层 6 至 10 户，6 部客梯 | 最大只有 678 平方英尺，没有家庭型选择 |\n| 按发展商规格附家具交房；GreenRE 铜级 | 0.56 英亩地块，停车场是机械式 |\n\n# 怎样预约看 Phoeniz Suites\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Phoeniz Suites 楼盘页](/projects/phoeniz-suites-kl-city-centre)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Phoeniz Suites 资料页](https://www.propertyportal.my/project/phoeniz-suites) 查看。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1dLw1oPBrkEiaryehf5xICc9mJ6iNcbXi=w1600",
+    "faqs": [
+      {
+        "question": "Phoeniz Suites 是永久地契还是租赁地契？",
+        "answer": "永久地契，属房屋发展法令（HDA）下的商业地契。由 EXSIM 集团成员 Exsim YKS 54 Sdn Bhd 开发。"
+      },
+      {
+        "question": "Phoeniz Suites 起价多少？",
+        "answer": "RM 1,016,400 起，尺价约 RM 2,100。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Phoeniz Suites 的管理费是多少？",
+        "answer": "每平方英尺 RM 1.21（含储备金）。发展商表示头两年会补贴最高每平方英尺 RM 0.33，实际数额和期限请要书面确认。"
+      },
+      {
+        "question": "Phoeniz Suites 有哪些面积？",
+        "answer": "三个户型系列，从 484 平方英尺（1 + 1 房）到 678 平方英尺（双钥匙），全楼共 394 个套房。"
+      },
+      {
+        "question": "Phoeniz Suites 什么时候完工？",
+        "answer": "建筑期为取得广告准证与发展商执照（APDL）后 60 个月，完工约在 2031 年。"
+      }
+    ],
+    "relatedSlugs": [
+      "branniganz-klcc-review",
+      "centrix-the-station-klcc-review",
+      "clouthaus-klcc-review"
+    ],
+    "relatedProjectIds": [
+      "phoeniz-suites-kl-city-centre",
+      "branniganz",
+      "centrix",
+      "clouthaus",
+      "golden-crown"
+    ],
+    "tags": [
+      "klcc",
+      "freehold",
+      "suites",
+      "review"
+    ]
+  },
+  "queenswoodz-bukit-jalil-review": {
+    "id": "queenswoodz-bukit-jalil-review",
+    "slug": "queenswoodz-bukit-jalil-review",
+    "title": "Queenswoodz 武吉加里尔评测：价格、户型、优缺点",
+    "metaDescription": "The Queenswoodz 武吉加里尔评测：EXSIM 的 1,004 户租赁地契新盘，807 至 1,410 平方英尺，RM 723,000 起。户型、高层递减设计、管理费、优缺点。",
+    "summary": "The Queenswoodz 是 EXSIM 在武吉加里尔 3.44 英亩地段上的两座大楼，共 1,004 户，最小的户型也是 2 + 1 房。这篇评测讲尺价、户型、少见的高层递减设计、要接受的取舍，以及适合什么买家。",
+    "content": "# 一句话结论：谁适合买 The Queenswoodz？\n\n**我的看法。** Queenswoodz 是 EXSIM 隔壁 The Kingswoodz 的\"成人版\"。这里没有套间，也没有一房：最小的单位是 807 平方英尺的 2 + 1 房，最大到 1,410 平方英尺。光是这一个决定，就改变了整座楼住的是什么人；按我的经验，也会改变这栋楼往后几年的状态。我会特别叫买家看的是塔楼本身的平面：高层的户数会递减，从每层约 14 户降到 8 户，最顶那一段只有 4 户。如果预算能够到那几层，等于在一栋 1,004 户的大楼里买到安静很多的一块。\n\n- **适合：** 想在武吉加里尔要 2 + 1 房或更大的家庭和夫妻；想要高层低户数那几层的买家；看过 Kingswoodz 但觉得不够大的人。\n- **请三思：** 想要本区最便宜入门价的人；一定要永久地契的人。\n\n# The Queenswoodz 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | EXSIM |\n| 位置 | 吉隆坡武吉加里尔 |\n| 地契 | 租赁地契，HDA 下的商业地契 |\n| 土地面积 | 3.44 英亩 |\n| 楼数 / 楼层 | A 座 50 层（494 户），B 座 51 层（510 户） |\n| 总单位 | 1,004 |\n| 每层单位 | 主要楼层约 14 户，高层 8 户，顶层 4 户 |\n| 电梯 | 5 部客梯 + 1 部服务电梯 |\n| 面积 | 807 至 1,410 平方英尺 |\n| 房间 | 2 + 1 房至 4 房 |\n| 价格 | RM 723,300 至 RM 1,241,300（尺价约 RM 853） |\n| 管理费 | 每平方英尺 RM 0.42（含储备金） |\n| 建筑期 | 取得 APDL 后 52 个月（完工约 2029 年） |\n\n# The Queenswoodz 在哪里？周边有什么？\n\n位于武吉加里尔，就是围绕国家体育馆和 KL Sports City 发展起来的那一区。这一带有 Awan Besar、Alam Sutera、Muhibbah 和 Sri Petaling 四个轻快铁站，开车可用武吉加里尔大道、KESAS、MEX、NPE 和新街场大道。\n\n区内的商场、学校和医疗配套，和这一区其他新盘共用同一套：购物有 Pavilion Bukit Jalil 和 Aurora Place；学校有 SJK(C) 黎明华小、慈济国际学校和 Kingsgate 国际学校；院校有国际医药大学 IMU 和 APU；休闲有 80 英亩的武吉加里尔休闲公园和武吉加里尔高尔夫球乡村俱乐部。这个地段到各处的实际步行和车程，请向销售团队索取，数字和 Kingswoodz 不一样。\n\n# 和武吉加里尔其他新盘比，Queenswoodz 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **The Queenswoodz** | 租赁 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租赁 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n| [Ren Residence](/projects/ren-residence) | 租赁 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Ayanna](/projects/ayanna) | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n\n尺价约 RM 853，Queenswoodz 高过 Ren Residence，低过几个永久地契项目。最接近的对手是 Ren：两个都是面向家庭的大型租赁地契项目，但 Ren 完工更早、月费更低、而且是住宅地契；Queenswoodz 的入门单位较小（807 平方英尺），并且有高层递减的设计。\n\n# Queenswoodz 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A1 / A2 | 807 平方英尺 | 2 + 1 房 2 浴 |\n| B1 / B2 | 936 平方英尺 | 3 房 2 浴 |\n| C1 / C2 | 1,206 平方英尺 | 3 + 1 房 3 浴 |\n| D1（双钥匙） | 1,410 平方英尺 | 4 房 3 浴 |\n| D2 | 1,410 平方英尺 | 3 + 1 房 3 浴 |\n\n楼盘页另外列出 1,008 平方英尺和 1,209 平方英尺的版本，选之前请先要最新的户型表。\n\n**我会选哪个。** 年轻家庭我会带他们看 936 平方英尺的 B1 或 B2：三间实实在在的房、两个浴室，价钱还低过附近的永久地契项目。807 平方英尺的 A1 适合夫妻，多出来的房间当书房。家里有父母或成年子女同住，就看 1,410 平方英尺的 D1 双钥匙，他们可以有自己的大门。不管选哪个户型，都记得问清楚哪几层属于 8 户和 4 户那两段。\n\n# 设施\n\n我手上的资料里，发展商还没公布完整的设施清单，所以我不在这里猜着列。EXSIM 在武吉加里尔的隔壁项目，是把设施放在一整层平台加上每座楼的顶层平台；销售展厅应该可以给你看 Queenswoodz 对应的图。记得特别问：泳池在哪一层、健身房在哪里、每座楼顶层有什么。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 没有套间和一房，最小也是 807 平方英尺的 2 + 1 房 | 租赁地契加商业地契：水电费率请确认 |\n| 高层户数递减到每层 8 户，顶层 4 户 | 两座楼共 1,004 户 |\n| 发展商列明 5 部客梯加 1 部服务电梯 | 我手上的资料还没有设施清单 |\n| 价钱低过同一区的永久地契新盘 | 完工约 2029 年，是这一组里最迟的 |\n\n# 怎样预约看 The Queenswoodz\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Queenswoodz 楼盘页](/projects/queenswoodz)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 The Queenswoodz 资料页](https://www.propertyportal.my/project/queenswoodz) 查看。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1nTRaBrO1obirsbyinGftgvoh--_ULir7=w1600",
+    "faqs": [
+      {
+        "question": "The Queenswoodz 是永久地契还是租赁地契？",
+        "answer": "租赁地契，属房屋发展法令（HDA）下的商业地契，由 EXSIM 在武吉加里尔开发。"
+      },
+      {
+        "question": "The Queenswoodz 起价多少？",
+        "answer": "RM 723,300 起，尺价约 RM 853。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "The Queenswoodz 有哪些面积？",
+        "answer": "从 807 平方英尺（2 + 1 房）到 1,410 平方英尺（4 房，或 3 + 1 房双钥匙），没有套间和一房。"
+      },
+      {
+        "question": "一共有多少单位？",
+        "answer": "共 1,004 户。A 座 50 层 494 户，B 座 51 层 510 户。"
+      },
+      {
+        "question": "The Queenswoodz 什么时候完工？",
+        "answer": "建筑期为取得广告准证与发展商执照（APDL）后 52 个月，完工约在 2029 年。"
+      }
+    ],
+    "relatedSlugs": [
+      "kingswoodz-bukit-jalil-review",
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "queenswoodz",
+      "kingswoodz-bukit-jalil",
+      "ren-residence",
+      "oaka-residences",
+      "ayanna"
+    ],
+    "tags": [
+      "bukit jalil",
+      "leasehold",
+      "family",
+      "review"
+    ]
+  },
   "ren-residence-bukit-jalil-review": {
     "id": "ren-residence-bukit-jalil-review",
     "slug": "ren-residence-bukit-jalil-review",
     "title": "Ren Residence 武吉加里尔评测：价格、户型、优缺点",
     "metaDescription": "Ren Residence 评测：武吉加里尔（Bukit Jalil）住宅地契的家庭型公寓，920 至 1,680 平方英尺，RM 537,000 起。户型、管理费、优缺点，以及适合什么买家。",
     "summary": "Ren Residence 位于武吉加里尔，5.6 英亩土地上两座 52 层大楼，共 1,260 个家庭型单位，最小 920 平方英尺。这篇评测讲价格、六种户型、住宅地契、设施、要接受的取舍，以及适合什么买家。",
-    "content": "# 一句话结论：谁适合买 Ren Residence？\n\n**我的看法。** 我把 Ren 推荐给买来自己住的人，不推荐给想找市中心小单位的买家。我看重它四点。大户型的价钱还在 RM 100 万以下，在武吉加里尔要这么大的面积，这个价很难找。它的尺价是下面我比较的几个武吉加里尔新盘里最低的。大楼由 GDP Architects 设计，是马来西亚最有名的建筑师事务所之一。它今年（2026）就建好，等钥匙的时间短。每个单位至少 3 房、2 个车位，住宅地契，每月管理费低。要接受的是租赁地契。\n\n- **适合：** 从小公寓换大的家庭；想要住宅地契水电费率和 2 至 3 个车位的买家。\n- **请三思：** 一定要永久地契的人；想步行直通 Pavilion Bukit Jalil 的人。\n\n# Ren Residence 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Gaya Kuasa Sdn Bhd |\n| 建筑师 | GDP Architects |\n| 地址 | No. 2, Jalan Bukit Jalil Indah 4, Taman LTAT, 57000 Kuala Lumpur |\n| 地契 | 租赁地契，住宅地契 |\n| 土地面积 | 5.6 英亩 |\n| 楼数 / 楼层 | 2 座，52 层 |\n| 总单位 | 1,260 户（每座 630 户） |\n| 每层单位 / 电梯 | 16 户，每座 5 + 1 部电梯 |\n| 面积 | 920 至 1,680 平方英尺 |\n| 房间 | 3 房至 4 + 1 房 |\n| 车位 | 每单位 2 至 3 个 |\n| 价格 | RM 537,000 起 |\n| 管理费 | 每平方英尺 RM 0.35 |\n| 预计完工 | 2026 年 |\n\n# Ren Residence 在哪里？周边有什么？\n\n位于武吉加里尔 Taman LTAT 的一块高地上，靠近慈济国际学校。最近的轻快铁站是 Alam Sutera LRT。Pavilion Bukit Jalil、国际医药大学（IMU）、Kingsgate 国际学校、马来西亚科技园和国家体育馆都在同一区；开车可用 KESAS、武吉加里尔大道、吉隆坡至芙蓉大道和新街场大道。\n\n# 和武吉加里尔其他新盘比，Ren 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Ren Residence** | 租赁 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租赁 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n| [Queenswoodz](/projects/queenswoodz) | 租赁 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,423 平方英尺 | 350 | 每平方英尺 RM 0.33 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.40 | 2029 |\n\n在这一组里，Ren 的 920 平方英尺 3 房入门价最低，完工也最早。永久地契的选择（OAKA、Park Green）起价明显更高。\n\n# Ren 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A | 920 平方英尺 | 3 房 2 浴 |\n| B1 | 1,050 平方英尺 | 3 + 1 房 2 浴 |\n| B2 | 1,110 平方英尺 | 3 + 1 房 2 浴 |\n| B3 | 1,120 平方英尺 | 3 + 1 房 2 浴 |\n| C | 1,270 平方英尺 | 4 + 1 房 3 浴 |\n| D | 1,680 平方英尺 | 4 + 1 房 3 浴 |\n\n**我会选哪个。** 自住的话，我会带家庭看较大的户型，因为 Ren 的价值就在这里。Type B（1,050 至 1,120 平方英尺）是 3 房加一个杂物房，可以当书房或帮佣房。Type C（1,270 平方英尺，4 + 1 房）适合三代同堂，这种面积在武吉加里尔其他项目通常要远超过 RM 100 万。\n\n# 设施\n\n超过一英亩的设施：无边际泳池、多个儿童泳池、篮球场、网球 / 五人足球场、羽球场、健身房、瑜伽室、桑拿和蒸汽房、共享办公室、多功能厅、幼儿园和托儿中心、跑步道和花园。保安为三层系统，配人脸识别和车牌识别。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 住宅地契，月费低（每平方英尺 RM 0.35） | 租赁地契 |\n| 每个单位都是 3 房或以上，配 2 至 3 个车位 | 1,260 户：社区大 |\n| 在上面比较的新盘中，3 房入门价最低 | 每层 16 户，配 5 + 1 部电梯 |\n| 2026 年完工，比同区项目早 | 没有直接连接 Pavilion Bukit Jalil |\n\n# 怎样预约看 Ren Residence\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Ren Residence 楼盘页](/projects/ren-residence)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Ren Residence 资料页](https://www.propertyportal.my/project/ren-bukit-jalil) 查看。",
+    "content": "# 一句话结论：谁适合买 Ren Residence？\n\n**我的看法。** 我把 Ren 推荐给买来自己住的人，不推荐给想找市中心小单位的买家。我看重它四点。大户型的价钱还在 RM 100 万以下，在武吉加里尔要这么大的面积，这个价很难找。它的尺价是下面我比较的几个武吉加里尔新盘里最低的。大楼由 GDP Architects 设计，是马来西亚最有名的建筑师事务所之一。它今年（2026）就建好，等钥匙的时间短。每个单位至少 3 房、2 个车位，住宅地契，每月管理费低。要接受的是租赁地契。\n\n- **适合：** 从小公寓换大的家庭；想要住宅地契水电费率和 2 至 3 个车位的买家。\n- **请三思：** 一定要永久地契的人；想步行直通 Pavilion Bukit Jalil 的人。\n\n# Ren Residence 资料一览\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Gaya Kuasa Sdn Bhd |\n| 建筑师 | GDP Architects |\n| 地址 | No. 2, Jalan Bukit Jalil Indah 4, Taman LTAT, 57000 Kuala Lumpur |\n| 地契 | 租赁地契，住宅地契 |\n| 土地面积 | 5.6 英亩 |\n| 楼数 / 楼层 | 2 座，52 层 |\n| 总单位 | 1,260 户（每座 630 户） |\n| 每层单位 / 电梯 | 16 户，每座 5 + 1 部电梯 |\n| 面积 | 920 至 1,680 平方英尺 |\n| 房间 | 3 房至 4 + 1 房 |\n| 车位 | 每单位 2 至 3 个 |\n| 价格 | RM 537,000 起 |\n| 管理费 | 每平方英尺 RM 0.35 |\n| 预计完工 | 2026 年 |\n\n# Ren Residence 在哪里？周边有什么？\n\n位于武吉加里尔 Taman LTAT 的一块高地上，靠近慈济国际学校。最近的轻快铁站是 Alam Sutera LRT。Pavilion Bukit Jalil、国际医药大学（IMU）、Kingsgate 国际学校、马来西亚科技园和国家体育馆都在同一区；开车可用 KESAS、武吉加里尔大道、吉隆坡至芙蓉大道和新街场大道。\n\n# 和武吉加里尔其他新盘比，Ren 如何？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Ren Residence** | 租赁 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租赁 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n| [Queenswoodz](/projects/queenswoodz) | 租赁 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n\n在这一组里，Ren 的 920 平方英尺 3 房入门价最低，完工也最早。永久地契的选择（OAKA、Park Green）起价明显更高。\n\n# Ren 哪个户型最好？\n\n| 户型 | 面积 | 格局 |\n| :--- | :--- | :--- |\n| A | 920 平方英尺 | 3 房 2 浴 |\n| B1 | 1,050 平方英尺 | 3 + 1 房 2 浴 |\n| B2 | 1,110 平方英尺 | 3 + 1 房 2 浴 |\n| B3 | 1,120 平方英尺 | 3 + 1 房 2 浴 |\n| C | 1,270 平方英尺 | 4 + 1 房 3 浴 |\n| D | 1,680 平方英尺 | 4 + 1 房 3 浴 |\n\n**我会选哪个。** 自住的话，我会带家庭看较大的户型，因为 Ren 的价值就在这里。Type B（1,050 至 1,120 平方英尺）是 3 房加一个杂物房，可以当书房或帮佣房。Type C（1,270 平方英尺，4 + 1 房）适合三代同堂，这种面积在武吉加里尔其他项目通常要远超过 RM 100 万。\n\n# 设施\n\n超过一英亩的设施：无边际泳池、多个儿童泳池、篮球场、网球 / 五人足球场、羽球场、健身房、瑜伽室、桑拿和蒸汽房、共享办公室、多功能厅、幼儿园和托儿中心、跑步道和花园。保安为三层系统，配人脸识别和车牌识别。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 住宅地契，月费低（每平方英尺 RM 0.35） | 租赁地契 |\n| 每个单位都是 3 房或以上，配 2 至 3 个车位 | 1,260 户：社区大 |\n| 在上面比较的新盘中，3 房入门价最低 | 每层 16 户，配 5 + 1 部电梯 |\n| 2026 年完工，比同区项目早 | 没有直接连接 Pavilion Bukit Jalil |\n\n# 怎样预约看 Ren Residence\n\n需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Ren Residence 楼盘页](/projects/ren-residence)。\n\n户型表、设施清单和周边距离的完整资料，可以到 [PropertyPortal 的 Ren Residence 资料页](https://www.propertyportal.my/project/ren-bukit-jalil) 查看。",
     "readTime": "4 min read",
     "publishDate": "2026 年 9 月",
     "publishedOn": "2026-09-21",
@@ -526,6 +1640,8 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       }
     ],
     "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ayanna-bukit-jalil-review",
       "freehold-vs-leasehold",
       "understanding-maintenance-fees-sinking-funds"
     ],
