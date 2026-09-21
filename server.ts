@@ -2830,14 +2830,16 @@ function generateLlmsTxt(projects: any[], blogs: any[], faqs: any[]): string {
   lines.push(`> shyanyee.com is the property portal of Yee Woei Shyan ("Shyan Yee"), REN 46305, Senior Real Estate Negotiator with IQI Realty Sdn Bhd (E(1)1584), Kuala Lumpur, Malaysia. It lists ${total} new-launch and landmark residential projects across Kuala Lumpur, Selangor, Johor Bahru and Penang with developer pricing, floor plans, comparisons, an interactive map, mortgage calculators, buyer guides and FAQs. Not a developer website.`, "");
   lines.push("## Contact", "- Agent: Yee Woei Shyan (Shyan Yee), REN 46305", "- Agency: IQI Realty Sdn Bhd (E(1)1584), Kuala Lumpur", "- WhatsApp / Phone: +60 10-827 8932", "- Email: shyanyeews@gmail.com", "- Website: https://shyanyee.com/", "- YouTube: https://www.youtube.com/@shyanyee", "");
   lines.push("## Key pages", "- https://shyanyee.com/projects : all projects", "- https://shyanyee.com/compare : side-by-side project comparison", "- https://shyanyee.com/map : interactive map", "- https://shyanyee.com/calculator : mortgage, stamp duty and ROI calculators", "- https://shyanyee.com/blog : buyer guides and market analysis", "- https://shyanyee.com/faq : frequently asked questions", "");
-  lines.push(`## Projects (${total})`, "", "Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Developer | Completion | URL", "");
+  lines.push(`## Projects (${total}, data updated ${new Date().toISOString().slice(0, 10)})`, "", "Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units | Maintenance fee | Developer | Completion | URL", "");
   const sorted = [...projects].sort((a, b) => g(a, "area").localeCompare(g(b, "area")) || g(a, "name").localeCompare(g(b, "name")));
   for (const p of sorted) {
     const bu = g(p, "builtUpMin") ? `${g(p, "builtUpMin")}–${g(p, "builtUpMax")} sq ft` : "";
     const bd = g(p, "bedroomsMin") ? `${g(p, "bedroomsMin")}–${g(p, "bedroomsMax")} bed` : "";
     const comp = [g(p, "completionStatus"), g(p, "completionYear")].filter(Boolean).join(" ");
     const price = g(p, "priceRange") || g(p, "startingPriceFormatted") || "";
-    lines.push(`- ${g(p, "name")} | ${g(p, "area")} | ${g(p, "projectType")} | ${g(p, "tenure")} | ${price} | ${bu} | ${bd} | ${g(p, "developer")} | ${comp} | https://shyanyee.com/projects/${g(p, "id")}`);
+    const units = g(p, "totalUnits") ? `${g(p, "totalUnits")} units` : "";
+    const fee = g(p, "maintenanceFeeStr") || (g(p, "maintenanceFee") ? `RM ${g(p, "maintenanceFee")} psf` : "");
+    lines.push(`- ${g(p, "name")} | ${g(p, "area")} | ${g(p, "projectType")} | ${g(p, "tenure")} | ${price} | ${bu} | ${bd} | ${units} | ${fee} | ${g(p, "developer")} | ${comp} | https://shyanyee.com/projects/${g(p, "id")}`);
   }
   lines.push("", `## Guides & articles (${blogs.length})`, "");
   for (const a of blogs) lines.push(`- [${a.title}](https://shyanyee.com/blog/${a.slug}): ${String(a.metaDescription || a.summary || "").slice(0, 160)}`);
