@@ -6101,5 +6101,990 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "name": "Bukit Jalil Golf & Country Resort"
    }
   ]
+ },
+ "times-square-2": {
+  "source": "Developer sales kit (2026-07-30)",
+  "keyFeatures": [
+   "Freehold",
+   "Prime Imbi location in KL, seamlessly connected to Berjaya Times Square mall/hotel/theme park",
+   "TOD 3 major trainlines (Monorail/LRT/MRT) within walking distance",
+   "Near KL City Centre, Pavilion, Lot 10, LaLaport BBCC",
+   "Resort-style facilities across Level 7/41/41A",
+   "Partial furnishing (kitchen cabinet, hood & hob, fridge, aircon, water heater, digital lock, etc.)"
+  ],
+  "facilities": [
+   "Timber Viewing Deck",
+   "Viewing Seat",
+   "Timber Lounge",
+   "Floating Pavilion",
+   "Garden Walk",
+   "Playground",
+   "Pets' Play Area",
+   "Outdoor Gym",
+   "Multipurpose Hall",
+   "Residence Lounge",
+   "Washroom",
+   "Outdoor Pre-Function Area",
+   "BBQ Area",
+   "Herb Garden",
+   "Sky Whirlpool",
+   "40m Infinity Pool",
+   "Pool Deck",
+   "Sauna Room",
+   "Changing Room",
+   "Sky Pavilion",
+   "Viewing Point",
+   "Sensory Path",
+   "Yoga Deck",
+   "Meditation Deck",
+   "Sky Gym",
+   "Sky Restaurant (Level 41)"
+  ],
+  "nearby": [
+   {
+    "category": "Nearby",
+    "name": "Shopping/Leisure (within 2km): KL City Centre(2km), Pavilion(1.1km), Lot 10(1km), Changkat(1.1km), Jalan Alor(950m), LaLaport BBCC(100m), Berjaya Times Square(100m, directly connected), TRX(1.5km), ICC Food Court",
+    "distance": "1.7km"
+   },
+   {
+    "category": "Nearby",
+    "name": "Transit: Bukit Bintang MRT/Monorail station(750m), Imbi Monorail station(100m), Hang Tuah LRT/Monorail station(350m), TOD connected to 3 major trainlines"
+   }
+  ]
+ },
+ "accent-residences": {
+  "source": "Developer sales kit (2026-07-30)",
+  "keyFeatures": [
+   "Developed by Ayala Land Group",
+   "Architect: WDA Architects, Landscape Architect: Lineworks & Space Studio",
+   "8 units/floor with private lift lobby design",
+   "Selected units on top 5 floors can be combined via hackable walls",
+   "Min. 2 car parks per unit, selected units with 2+1 or 3 car parks",
+   "EV charging hub (11 bays)",
+   "Roca brand sanitary ware",
+   "2-year Defects Liability Period"
+  ],
+  "facilities": [],
+  "nearby": [
+   {
+    "category": "Nearby",
+    "name": "Based on location map: near 1 Utama Shopping Centre, The Curve, IKEA, Kuala Lumpur Golf & Country Club, Tropicana Golf & Country Resort, Jaya One, Jaya Shopping Centre, Centrestage Petaling Jaya, PJ Midtown, Columbia Asia Hospital, Assunta Hospital, University Malaya Medical Centre, MRT Phileo Damansara, LRT Asia Jaya, LRT Taman Jaya"
+   }
+  ]
+ },
+ "ascott-star-residence": {
+  "source": "Developer sales kit (2026-07-30)",
+  "keyFeatures": [
+   "Located next to Petronas Twin Towers in KL City Centre",
+   "Branded luxury residence managed by The Ascott Limited",
+   "Features Southeast Asia's first Star Walk of Fame",
+   "O3 Sky Park on Level 99 with lap pool and city views",
+   "H2O lifestyle facility deck on Level 6."
+  ],
+  "facilities": [
+   "Outdoor Playground",
+   "Reading Room",
+   "Child Play Area",
+   "Chill Out Area",
+   "Gym Area",
+   "Dance / Yoga Room",
+   "Kickboxing Room",
+   "Reflective Pool",
+   "Kids' Pool",
+   "Swimming Pool",
+   "Link Bridge",
+   "Jacuzzi",
+   "Pool Deck",
+   "Floating Cabana",
+   "Rock Garden",
+   "Koi Pond",
+   "Pre-Function Area",
+   "Sports Lounge",
+   "VIP KTV Rooms",
+   "Outdoor Pavilion / BBQ Lounge",
+   "Hammock Garden",
+   "Banquet Room",
+   "Hydrotherapy Shower",
+   "Surau (M & F)",
+   "Laundromat",
+   "Convenience Store",
+   "Management Office",
+   "Meeting Room",
+   "Changing Rooms",
+   "Sun Deck (O3 @ Level 99)",
+   "Lap Pool (O3 @ Level 99)"
+  ],
+  "nearby": [
+   {
+    "category": "Nearby",
+    "name": "Petronas Twin Towers"
+   },
+   {
+    "category": "Nearby",
+    "name": "Suria KL City Centre"
+   },
+   {
+    "category": "Nearby",
+    "name": "Avenue K"
+   },
+   {
+    "category": "Nearby",
+    "name": "Pavilion Kuala Lumpur"
+   },
+   {
+    "category": "Nearby",
+    "name": "Starhill Gallery"
+   },
+   {
+    "category": "Nearby",
+    "name": "Fahrenheit88"
+   },
+   {
+    "category": "Nearby",
+    "name": "Lot 10"
+   },
+   {
+    "category": "Nearby",
+    "name": "Sungei Wang Plaza"
+   },
+   {
+    "category": "Nearby",
+    "name": "Berjaya Times Square"
+   },
+   {
+    "category": "Nearby",
+    "name": "Lalaport"
+   },
+   {
+    "category": "Nearby",
+    "name": "KL City Centre LRT Station"
+   },
+   {
+    "category": "Nearby",
+    "name": "Proposed MRT Station"
+   },
+   {
+    "category": "Nearby",
+    "name": "Megan Avenue II"
+   },
+   {
+    "category": "Nearby",
+    "name": "Menara AmBank"
+   },
+   {
+    "category": "Nearby",
+    "name": "Menara Public Bank"
+   },
+   {
+    "category": "Nearby",
+    "name": "Menara Maxis"
+   },
+   {
+    "category": "Nearby",
+    "name": "Menara 3 Petronas"
+   },
+   {
+    "category": "Nearby",
+    "name": "The Intermark"
+   },
+   {
+    "category": "Nearby",
+    "name": "Citibank Tower"
+   },
+   {
+    "category": "Nearby",
+    "name": "Four Seasons Hotel"
+   },
+   {
+    "category": "Nearby",
+    "name": "Grand Hyatt Hotel"
+   },
+   {
+    "category": "Nearby",
+    "name": "W Hotel"
+   },
+   {
+    "category": "Nearby",
+    "name": "Mandarin Oriental"
+   },
+   {
+    "category": "Nearby",
+    "name": "DoubleTree by Hilton"
+   },
+   {
+    "category": "Nearby",
+    "name": "InterContinental Hotel"
+   },
+   {
+    "category": "Nearby",
+    "name": "KL Tower"
+   },
+   {
+    "category": "Nearby",
+    "name": "Aquaria KL City Centre"
+   },
+   {
+    "category": "Nearby",
+    "name": "Saloma Bridge"
+   }
+  ]
+ },
+ "eaton-residences": {
+  "source": "Developer sales kit (2026-07-31)",
+  "keyFeatures": [
+   "51-storey iconic luxury service residence",
+   "1 min to MRT Conlay Station",
+   "Highest and longest cantilevered sky pool in KL",
+   "Full floor-to-ceiling glass curtain facade",
+   "Unblocked views of Royal Selangor Golf Club and Petronas Twin Towers skyline",
+   "Quality Volakas white marble flooring and designer fittings."
+  ],
+  "facilities": [
+   "Drop Off Point",
+   "Day Care",
+   "Seating Alcove",
+   "Jogging Path",
+   "Lobby",
+   "Playground",
+   "Multi-Purpose Hall",
+   "Rock Garden",
+   "Reading Alcove",
+   "Board Games",
+   "Multi-purpose Deck",
+   "Table Tennis",
+   "Multi-purpose Lawn",
+   "Fitness Stations",
+   "Lawn",
+   "BBQ Pods",
+   "Kitchenette",
+   "Sky Lounge",
+   "Day Bed Garden",
+   "Chill-Out Terrace",
+   "Sky Gym",
+   "Anti-Gravity Yoga Room",
+   "Games Room",
+   "Sauna Room",
+   "Cantilevered Infinity Edge Lap Pool",
+   "Leisure Pool",
+   "Wading Pool",
+   "Gourmet Kitchen",
+   "Steam Room"
+  ],
+  "nearby": [
+   {
+    "category": "Nearby",
+    "name": "Public Transport: MRT Conlay Station (130m / 1 min walk), MRT TRX Station, Persiaran KL City Centre MRT Station"
+   },
+   {
+    "category": "Nearby",
+    "name": "Medical Centres: Prince Court Medical Centre (300m), Beverly Wilshire Medical Centre (600m), HSC Medical Center (1.03km), Tung Shin Hospital (1.8km), Gleneagles Kuala Lumpur",
+    "distance": "2.4km"
+   },
+   {
+    "category": "Nearby",
+    "name": "Shopping Malls: Pavilion Kuala Lumpur (575m), The Linc (780m), Fahrenheit 88 (800m), Suria KL City Centre (965m), The Intermark (1.0km), Avenue K (1.0km), IKEA Cheras"
+   },
+   {
+    "category": "Nearby",
+    "name": "Education: EtonHouse International School Malaysia (100m), Sayfol International School (1.35km), International School of Kuala Lumpur (1.9km), Taylor's International School (2.2km), Alice Smith School (3.3km), Fairview International School",
+    "distance": "6.0km"
+   },
+   {
+    "category": "Nearby",
+    "name": "Recreation & Landmarks: Royal Selangor Golf Club (340m), KL City Centre Park (550m), Saloma Link Bridge (1.6km), KL Forest Eco Park (1.9km), KL Bird Park (3.5km), Petronas Twin Towers, Tun Razak Exchange TRX",
+    "distance": "880m"
+   }
+  ]
+ },
+ "pantai-sentral-park-enlace-suites-ii": {
+  "source": "Developer sales kit (2026-08-12)",
+  "keyFeatures": [
+   "Located in a 58-acre integrated township known as KL's One & Only Urban Forest City",
+   "Adjacent to a 200-acre Bukit Kerinchi Forest Reserve",
+   "Excellent connectivity via major highways (NPE, Federal Highway, LDP) and public transport (KTM, LRT, upcoming MRT3)",
+   "Part of 'Enlace', a commercial hub featuring retail, offices, and wellness components",
+   "1-kilometer stretch of vibrant retail frontage within the development",
+   "Partially furnished units including air-conditioning, kitchen cabinets with hob & hood, oven, refrigerator, and built-in wardrobes"
+  ],
+  "facilities": [
+   "Hammock Garden",
+   "Meditation Pavilion",
+   "Reflexology Garden",
+   "Gym",
+   "Dip Pool",
+   "Pool Lounge",
+   "Jacuzzi",
+   "Pool Cave",
+   "50m Lap Pool",
+   "Sun Deck",
+   "BBQ Pavilion",
+   "Water Garden",
+   "Kid's Pool",
+   "Children's Playground",
+   "Secret Garden",
+   "Children's Play Den",
+   "Gourmet Kitchen",
+   "Terrace Lounge",
+   "Management Office",
+   "Co-Working Studio",
+   "Oasis",
+   "Multi-Purpose Atrium",
+   "Atrium Garden"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "New Pantai Expressway (NPE)"
+   },
+   {
+    "category": "Highways",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara-Puchong Expressway (LDP)"
+   },
+   {
+    "category": "Highways",
+    "name": "KL-Putrajaya Expressway",
+    "distance": "MEX"
+   },
+   {
+    "category": "Highways",
+    "name": "SPRINT Expressway (SPE)"
+   },
+   {
+    "category": "Highways",
+    "name": "Middle Ring Road 2",
+    "distance": "MRR2"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Pantai Dalam"
+   },
+   {
+    "category": "Public Transport",
+    "name": "LRT Universiti"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Upcoming MRT3 Circle Line",
+    "distance": "Pantai Dalam Station"
+   },
+   {
+    "category": "Retail/Conveniences",
+    "name": "Enlace Shoppes",
+    "distance": "Anchor Tenants: Jaya Grocer, Anytime Fitness"
+   },
+   {
+    "category": "Retail/Conveniences",
+    "name": "Mid Valley Megamall & The Gardens"
+   },
+   {
+    "category": "Retail/Conveniences",
+    "name": "KL Gateway Mall"
+   },
+   {
+    "category": "Retail/Conveniences",
+    "name": "Nexus Bangsar South"
+   },
+   {
+    "category": "Retail/Conveniences",
+    "name": "The Sphere, Bangsar South"
+   },
+   {
+    "category": "Retail/Conveniences",
+    "name": "The Scott Garden"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Kuala Lumpur"
+   },
+   {
+    "category": "Healthcare",
+    "name": "University Malaya Medical Centre",
+    "distance": "UMMC"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Life Care Diagnostic Medical Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Taman Desa Medical Centre"
+   },
+   {
+    "category": "Education",
+    "name": "University of Malaya"
+   },
+   {
+    "category": "Education",
+    "name": "MAHSA University"
+   },
+   {
+    "category": "Education",
+    "name": "Brickfields Asia College (BAC)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Kerinchi Forest Reserve (200-acre)"
+   }
+  ]
+ },
+ "conlay": {
+  "source": "Developer sales kit (2026-08-13)",
+  "keyFeatures": [],
+  "facilities": [
+   "11",
+   "facility_name: Sky Garden",
+   "facility_name: Multi-purpose Lounge",
+   "facility_name: Gymnasium",
+   "facility_name: Yoga Room",
+   "facility_name: Sauna",
+   "facility_name: Jacuzzi",
+   "facility_name: Heated Swimming Pool",
+   "facility_name: Children's Playroom",
+   "facility_name: Library Lounge",
+   "facility_name: Music Room",
+   "facility_name: Multimedia Room",
+   "facility_name: Billiard Room",
+   "facility_name: Meeting Room",
+   "36",
+   "facility_name: Fitness centre",
+   "facility_name: Sauna room",
+   "facility_name: Pool deck",
+   "facility_name: Bar",
+   "facility_name: Kid's pool",
+   "50",
+   "facility_name: Lifestyle / F&B commercial space"
+  ],
+  "nearby": [
+   {
+    "category": "Transportation",
+    "name": "Conlay MRT Station"
+   },
+   {
+    "category": "Transportation",
+    "name": "KL City Centre East MRT Station"
+   },
+   {
+    "category": "Transportation",
+    "name": "TRX Station"
+   },
+   {
+    "category": "Transportation",
+    "name": "Bandar Malaysia South MRT Station (High Speed Rail link)"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion Kuala Lumpur"
+   },
+   {
+    "category": "Shopping",
+    "name": "Bukit Bintang Shopping Belt (Starhill Gallery, Lot 10, Fahrenheit 88)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Prince Court Medical Centre"
+   },
+   {
+    "category": "Education",
+    "name": "The International School of Kuala Lumpur (ISKL)"
+   },
+   {
+    "category": "Recreation",
+    "name": "KL City Centre Park"
+   },
+   {
+    "category": "Recreation",
+    "name": "The Royal Selangor Golf Club"
+   },
+   {
+    "category": "Landmarks",
+    "name": "Petronas Twin Towers"
+   },
+   {
+    "category": "Landmarks",
+    "name": "The Exchange 106"
+   }
+  ]
+ },
+ "atas-residences": {
+  "source": "Developer sales kit (2026-08-20)",
+  "keyFeatures": [
+   "Low Density (624 units)",
+   "Conveniently connected to 8 major highways",
+   "Designated EV charging bay",
+   "53 assorted facilities",
+   "Spacious layouts from 3+1 to 4+1 rooms",
+   "Pet-friendly development",
+   "Green Building development",
+   "Sky Semi-D living concept"
+  ],
+  "facilities": [
+   "LG5",
+   "facilities: ['Lift Lobby'",
+   "'Car Wash Area'",
+   "'Tennis Court'",
+   "'Half Basketball Court'",
+   "\"Children's Playground\"",
+   "'Pavilion'",
+   "'Foot Reflexology Path'",
+   "'Outdoor Fitness'",
+   "'Jogging Path'",
+   "'Pet Friendly Corner']",
+   "Ground Floor",
+   "facilities: ['Management Office'",
+   "'Guard House'",
+   "'Nursery'",
+   "'Kindergarten'",
+   "'Lift Lobby'",
+   "'Letter Box'",
+   "'Guest Lounge'",
+   "'Disable Washroom'",
+   "'Washroom'",
+   "'EV Charging Bay']",
+   "Level 3A",
+   "facilities: ['Cafeteria'",
+   "'Outdoor Lounge'",
+   "'Gymnasium'",
+   "'Male/Female Changing Room'",
+   "'Male/Female Sauna'",
+   "'Multi-Purpose Hall'",
+   "'Laundrette'",
+   "'Yoga/Exercise Room'",
+   "'Badminton Court'",
+   "'Squash Court'",
+   "'Table Tennis'",
+   "'Male & Female Solat Room'",
+   "'Putting Green'",
+   "'Swimming Pool'",
+   "'Children Pool'",
+   "'Alfresco Area'",
+   "'Spa Pool'"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "Salak Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Sungai Besi Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "SMART Tunnel"
+   },
+   {
+    "category": "Highways",
+    "name": "NPE Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "KL-Seremban Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "MEX Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "SPRINT Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "SPE Expressway"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Bus Stop",
+    "distance": "Taman Bukit Desa"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Seputeh Station",
+    "distance": "1.7km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "LRT Kerinchi Station",
+    "distance": "4.8km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Kuchai Station",
+    "distance": "5.5km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KLIA Express KL Sentral",
+    "distance": "7.6km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Terminal Bersepadu Selatan (TBS)",
+    "distance": "9.4km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "De Market",
+    "distance": "1km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Pearl Suria",
+    "distance": "3.4km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Nexus Bangsar South",
+    "distance": "4km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Mid Valley Megamall",
+    "distance": "4.1km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "KL Sentral",
+    "distance": "6.4km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Bangsar Village",
+    "distance": "6.7km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Bangsar Shopping Centre",
+    "distance": "8.1km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "The Exchange TRX",
+    "distance": "8.4km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Pavilion KL",
+    "distance": "9.4km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Suria KL City Centre",
+    "distance": "10.1km"
+   },
+   {
+    "category": "Education",
+    "name": "Desa Perdana Secondary School",
+    "distance": "900m"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Taman Desa",
+    "distance": "1.1km"
+   },
+   {
+    "category": "Education",
+    "name": "Vikas International School",
+    "distance": "2km"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Choong Wen",
+    "distance": "2.5km"
+   },
+   {
+    "category": "Education",
+    "name": "Alice Smith International School",
+    "distance": "5.9km"
+   }
+  ]
+ },
+ "divine-kl-city-centre": {
+  "source": "Developer sales kit (2026-08-20)",
+  "keyFeatures": [
+   "Prestigious address 400m from KL City Centre",
+   "Covered walkway to Jalan Ampang - KL City Centre junction",
+   "Bespoke design by award-winning designers (Konzepte, Ministry of Design, SD2)",
+   "Sky-high facilities including an infinity lap pool on Level 80",
+   "Malaysia's First and Tallest 360° Proposed Rooftop Bar",
+   "Luxury living with concierge services",
+   "GreenRE GOLD Provision",
+   "Smart home features."
+  ],
+  "facilities": [],
+  "nearby": [
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Suria KL City Centre",
+    "distance": "400m"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Avenue K",
+    "distance": "550m"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Intermark Mall",
+    "distance": "1.5km"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "The LINC",
+    "distance": "1.5km"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Pavilion KL",
+    "distance": "1.8km"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "The Starhill",
+    "distance": "1.8km"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "The Exchange TRX",
+    "distance": "2.7km"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Bukit Bintang City Centre",
+    "distance": "2.9km"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Covered walkway to Jalan Ampang - KL City Centre junction"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "KL City Centre LRT Station",
+    "distance": "500m"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Persiaran KL City Centre MRT Station",
+    "distance": "500m"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Kampung Baru LRT Station",
+    "distance": "650m"
+   },
+   {
+    "category": "Highways",
+    "name": "AKLEH"
+   },
+   {
+    "category": "Highways",
+    "name": "DUKE Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "MEX Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Setiawangsa-Pantai Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "SMART Highway"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Prince Court Medical Centre",
+    "distance": "2.1km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "National Heart Institute (IJN)",
+    "distance": "2.3km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Kuala Lumpur",
+    "distance": "3.2km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Tung Shin Hospital",
+    "distance": "3.2km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Gleneagles Hospital KL",
+    "distance": "3.6km"
+   },
+   {
+    "category": "Education",
+    "name": "Raffles College of Higher Education",
+    "distance": "1.8km"
+   },
+   {
+    "category": "Education",
+    "name": "The International School of Kuala Lumpur",
+    "distance": "4.0km"
+   },
+   {
+    "category": "Recreation & Attraction",
+    "name": "Saloma Link Bridge",
+    "distance": "300m"
+   },
+   {
+    "category": "Recreation & Attraction",
+    "name": "KL City Centre Park",
+    "distance": "600m"
+   },
+   {
+    "category": "Recreation & Attraction",
+    "name": "Kuala Lumpur Forest Eco Park",
+    "distance": "1.6km"
+   },
+   {
+    "category": "Recreation & Attraction",
+    "name": "Changkat Bukit Bintang",
+    "distance": "2.0km"
+   },
+   {
+    "category": "Recreation & Attraction",
+    "name": "KL Tower",
+    "distance": "2.0km"
+   },
+   {
+    "category": "Corporate & Embassy",
+    "name": "AmBank Tower",
+    "distance": "50m"
+   }
+  ]
+ },
+ "m-aurora": {
+  "source": "Developer sales kit (2026-08-21)",
+  "keyFeatures": [
+   "Freehold title",
+   "Seamless access to NPE, Federal Highway, KESAS",
+   "Multigenerational lifestyle facilities with over 40 options including a 50m lap pool",
+   "Multi-tier security system",
+   "Equipped with EV charging stations, automated waste collection system, and speed ramp design",
+   "GreenRE Silver certified",
+   "QLASSIC assessment for quality workmanship",
+   "Mah Sing Smart Community app and M Concierge services."
+  ],
+  "facilities": [
+   "Level 1",
+   "facility_name: Grand Entrance",
+   "facility_name: Aurora Garden",
+   "facility_name: Seating Alcove + Ribbon Bench",
+   "facility_name: Green Dome",
+   "facility_name: Taska",
+   "facility_name: Tadika",
+   "facility_name: Management Office",
+   "Level 8",
+   "facility_name: 50m Length Lap Pool",
+   "facility_name: Hydrotherapy Seat",
+   "facility_name: Pool Lounge",
+   "facility_name: Jacuzzi",
+   "facility_name: Kid’s Pool & Pool Slide",
+   "facility_name: Gymnasium",
+   "facility_name: Yoga / Dance Studio",
+   "facility_name: Co-Working Space/ Computer/ Reading Room",
+   "facility_name: BBQ",
+   "facility_name: Glamping Dome & Lawn",
+   "facility_name: Courtyard Garden",
+   "facility_name: Playground",
+   "facility_name: Karaoke Room",
+   "facility_name: Games Room",
+   "facility_name: KOI Pond",
+   "facility_name: Steam Rooms",
+   "facility_name: Launderette",
+   "Level 46",
+   "facility_name: Sky Garden",
+   "facility_name: Function Room",
+   "facility_name: Pre-function / Alfresco Dining",
+   "facility_name: Pot Garden & Sky View Terrace"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "KTM Jalan Templer"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Petaling"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Future MRT3, Jalan Klang Lama"
+   },
+   {
+    "category": "Highway",
+    "name": "NPE"
+   },
+   {
+    "category": "Highway",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highway",
+    "name": "KESAS"
+   },
+   {
+    "category": "Highway",
+    "name": "MEX"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Pearl Point"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Bloomsvale shopping"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "The Scott Garden"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Mid Valley Megamall"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Assunta Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KMI Taman Desa Medical Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Beacon Hospital"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Petaling"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Yuk Chyun"
+   },
+   {
+    "category": "Education",
+    "name": "Newton International College"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Choong Wen"
+   }
+  ]
  }
 };

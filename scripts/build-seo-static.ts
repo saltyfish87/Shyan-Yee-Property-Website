@@ -96,6 +96,17 @@ function videoObjects(lang: 'en' | 'zh'): any[] {
   }));
 }
 
+/**
+ * The walkthrough filmed for one project, as a VideoObject for that project's page.
+ * A video is the one thing on a project page a competitor cannot copy from the brochure, so where
+ * HOME_VIDEOS names a projectId the page carries it.
+ */
+function projectVideoObject(projectId: string, lang: 'en' | 'zh'): any | null {
+  const v = HOME_VIDEOS.find(x => x.projectId === projectId);
+  if (!v) return null;
+  return videoObjects(lang).find(o => o['@id'].endsWith(v.youtubeId)) || null;
+}
+
 // VideoObject entries for {{youtube:ID}} embeds inside an article (known home videos keep their real title/date)
 function embeddedVideoObjects(md: string, articleTitle: string, publishedIso: string, lang: 'en' | 'zh'): any[] {
   return extractYoutubeIds(md).map(id => {
@@ -411,6 +422,9 @@ function renderSeoHtml(
         },
         "numberOfRooms": `${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms`
       });
+
+      const projVideo = projectVideoObject(targetProject.id, 'en');
+      if (projVideo) jsonLdGraph.push(projVideo);
 
       // Add RealEstateListing Schema
       jsonLdGraph.push({
@@ -929,6 +943,8 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
       graph.push({ "@type": "Product", "@id": `${canonical}#product`, "name": `${p.name}（${p.area}，${p.location}）`, "description": desc, "image": [ogImage],
         "brand": { "@type": "Brand", "name": dev || 'Malaysia Premier Developers' },
         "offers": { "@type": "Offer", "price": (p.startingPrice || 500000).toString(), "priceCurrency": "MYR", "priceValidUntil": "2027-12-31", "availability": "https://schema.org/InStock", "url": canonical } });
+      const zhProjVideo = projectVideoObject(p.id, 'zh');
+      if (zhProjVideo) graph.push(zhProjVideo);
       graph.push({ "@type": ["Accommodation", "ApartmentComplex"], "@id": `${canonical}#accommodation`, "name": p.name, "description": desc, "url": canonical,
         "address": { "@type": "PostalAddress", "addressLocality": p.area, "addressRegion": p.location, "addressCountry": "MY" }, "numberOfRooms": `${p.bedroomsMin} 至 ${p.bedroomsMax} 房` });
       const faqs = [

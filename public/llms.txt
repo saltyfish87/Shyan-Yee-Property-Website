@@ -1,6 +1,6 @@
 # Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal
 
-> shyanyee.com is the property portal of Yee Woei Shyan ("Shyan Yee"), REN 46305, Senior Real Estate Negotiator with IQI Realty Sdn Bhd (E(1)1584), Kuala Lumpur, Malaysia. It lists 74 new-launch and landmark residential projects across Kuala Lumpur, Selangor, Johor Bahru and Penang with developer pricing, floor plans, comparisons, an interactive map, mortgage calculators, buyer guides and FAQs. Not a developer website.
+> shyanyee.com is the property portal of Yee Woei Shyan ("Shyan Yee"), REN 46305, Senior Real Estate Negotiator with IQI Realty Sdn Bhd (E(1)1584), Kuala Lumpur, Malaysia. It lists 83 new-launch and landmark residential projects across Kuala Lumpur, Selangor, Johor Bahru and Penang with developer pricing, floor plans, comparisons, an interactive map, mortgage calculators, buyer guides and FAQs. Not a developer website.
 
 ## Contact
 - Agent: Yee Woei Shyan (Shyan Yee), REN 46305
@@ -18,7 +18,7 @@
 - https://shyanyee.com/blog : buyer guides and market analysis
 - https://shyanyee.com/faq : frequently asked questions
 
-## Projects (74, data updated 2026-09-22)
+## Projects (83, data updated 2026-09-22)
 
 Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units | Maintenance fee | Developer | Completion | URL
 
@@ -28,8 +28,10 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units 
 - Khaya Residence | Bangsar | Serviced Apartment | Leasehold | RM 785,000 – RM 1,694,000 (Gross) | 630–1321 sq ft | 1–3 bed | 795 (Phase 2) + 15,000sf retail units | RM0.50 psf | Bayu Mantap Sdn Bhd | Under Construction 2029 | https://shyanyee.com/projects/khaya-residence
 - Parkside Residence | Bangsar | Serviced Apartment | Leasehold | RM 600K | 485–1300 sq ft | 1–3 bed | 693 units, 62 storeys units | RM0.35 psf | SP Setia & Mitsui Fudosan | Under Construction 2029 | https://shyanyee.com/projects/parkside-residence
 - River Park | Bangsar | Condominium | Leasehold | RM 604K | 812–1180 sq ft | 2–3 bed | 1,332 units units | RM0.38 psf | Malton | Under Construction 2026 | https://shyanyee.com/projects/river-park
+- Pantai Sentral Park – Enlace Suites II | Bangsar South | Serviced Apartment | Leasehold | RM 624,000 – RM 3,220,000 | 506–2034 sq ft | 1–5 bed | 290 units | Information Pending Verification | IJM Land & Amona | New Launch 2029 | https://shyanyee.com/projects/pantai-sentral-park-enlace-suites-ii
 - Orion Residence | Bukit Bintang / KL City Centre | Serviced Apartment | Freehold | RM 1.58M – RM 4.2M | 491–1329 sq ft | 1–3 bed | 298 (Type A: 88; B: 52; C: 96; D: 60; PH: 2) units | RM 1.32 psf (incl. sinking fund) | Orion Tower Sdn Bhd | Ready To Move 2025 | https://shyanyee.com/projects/orion-residence
-- Ayanna | Bukit Jalil | Condominium | Freehold | RM 753,000 – RM 911,000 | 1155–2453 sq ft | 3–4 bed | 824 (Block A: 333; Block B: 491) units | RM 0.27 psf (incl. sinking fund) | BKSP Autoworld Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/ayanna
+- Times Square 2 | Bukit Bintang / KL City Centre | Serviced Apartment | Freehold | RM 688,000 – RM 2,565,000 | 488–1356 sq ft | 1–4 bed | 629 (Residential) + 17 (Commercial incl. sky restaurant) units | RM0.66 psf + 10% sinking fund | Berjaya Times Square Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/times-square-2
+- Ayanna | Bukit Jalil | Condominium | Freehold | RM 753,000 – RM 911,000 | 1155–2453 sq ft | 3–4 bed | 824 (Block A: 333; Block B: 491) units | RM0.27 psf incl. sinking fund | BKSP Autoworld Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/ayanna
 - OAKA Residences | Bukit Jalil | Condominium | Freehold | RM 836,000 – RM 1,503,000 | 882–1423 sq ft | 2–3 bed | 350 (Block A: 175; Block B: 175) units | Est RM 0.33 psf (incl. sinking fund) | Berjaya Hartanah Berhad | Under Construction 2028 | https://shyanyee.com/projects/oaka-residences
 - Park Green Pavilion Bukit Jalil | Bukit Jalil | Condominium | Freehold | From RM 1,209,100 | 1201–1905 sq ft | 3–4 bed | 453 (Tower A: 210; Tower B: 243) units | RM 0.40 psf (incl. sinking fund) | Malton Berhad | Under Construction 2029 | https://shyanyee.com/projects/park-green-pavilion-bukit-jalil
 - Queenswoodz | Bukit Jalil | Serviced Apartment | Leasehold | RM 723K to RM 1.2Mil | 807–1410 sq ft | 2–4 bed | 1,004 units units | RM0.42 psf | Exsim | New Launch 2029 | https://shyanyee.com/projects/queenswoodz
@@ -44,7 +46,11 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units 
 - Princess Cove RNF Phase 2 | Johor Bahru | Serviced Apartment | Freehold | RM 690,000 – RM 3,400,000 | 471–1471 sq ft | 1–4 bed | 3,724 units | RM 0.42 psf (incl. sinking fund) | R&F Development Sdn Bhd | Ready To Move 2023 | https://shyanyee.com/projects/princess-cove-rnf-phase-2
 - Princess Cove RNF Phase 3 | Johor Bahru | Serviced Apartment | Freehold | RM 720,000 – RM 3,100,000 | 314–1556 sq ft | 1–5 bed | 4,385 units | RM 0.42 psf (incl. sinking fund) | R&F Development Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/princess-cove-rnf-phase-3
 - The Asteriaz | Johor Bahru | Serviced Apartment | Leasehold | RM 474K to RM 769K | 560–915 sq ft | 1–3 bed | 848 units units | RM0.51 psf | Exsim | New Launch 2029 | https://shyanyee.com/projects/asteriaz
+- Ascott Star Residence | KL City Centre | Serviced Apartment | Freehold | RM 1,509,550 – RM 3,100,000 | 679–2972 sq ft | 2–5 bed | 1510 units | RM0.65 psf including sinking fund | Alpine Return Sdn Bhd | Ready To Move 2021 | https://shyanyee.com/projects/ascott-star-residence
 - CloutHaus | KL City Centre | Serviced Apartment | Freehold | RM 1,548,800 – RM 4,694,800 | 549–1216 sq ft | 1–3 bed | 615 units | RM 0.80 psf (incl. sinking fund) | TA Global | Under Construction 2029 | https://shyanyee.com/projects/clouthaus
+- Conlay | KL City Centre | Serviced Apartment | Freehold | RM 1,460,000 – RM 8,780,000 | 743–1335 sq ft | 2–4 bed | 491 units | RM0.80 psf (including sinking fund) | Patsawan Properties Sdn. Bhd. (A joint venture between Eastern & Oriental Berhad and Mitsui Fudosan Group) | Under Construction 2025 | https://shyanyee.com/projects/conlay
+- DIVINE KL City Centre | KL City Centre | Serviced Apartment | Leasehold | RM 997,000 – RM 3,900,000 | 502–1319 sq ft | 1–4 bed | 1033 units | RM 0.68 psf | Chin Hin Group Property | New Launch 2032 | https://shyanyee.com/projects/divine-kl-city-centre
+- Eaton Residences | KL City Centre | Serviced Apartment | Leasehold | RM 1,800,000 – RM 6,008,795 | 635–2982 sq ft | 1–5 bed | 632 units | RM0.65 psf | City View Ventures Sdn Bhd (A subsidiary of GSH Corporation Limited) | Ready To Move 2022 | https://shyanyee.com/projects/eaton-residences
 - Branniganz | KL City Centre / Bukit Bintang | Serviced Apartment | Leasehold | From RM 803,500 (Gross) | 344–678 sq ft | 1–2 bed | 759 (Wing A Office Suites: 490; Wing B Serviced Suites: 269) units | RM1.21 psf (Subsidize RM0.40 psf 2 years) | Exsim (Lembaran Beruntung Sdn Bhd) | New Launch 2028 | https://shyanyee.com/projects/branniganz
 - Centrix | KL City Centre / Bukit Bintang | Serviced Apartment | Leasehold | From RM 907K | 571–1187 sq ft | 1–3 bed | 857 units units | RM0.45 psf | Intan Sekitar Sdn Bhd | Under Construction 2029 | https://shyanyee.com/projects/centrix
 - Golden Crown | KL City Centre / Bukit Bintang | Serviced Apartment | Leasehold | RM 1.2Mil to RM 3Mil | 624–1023 sq ft | 1–3 bed | 490 units units | RM0.80 psf | Golden Eagle | Under Construction 2026 | https://shyanyee.com/projects/golden-crown
@@ -60,6 +66,7 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units 
 - Tujuh Residences | Kwasa Damansara, Shah Alam | Serviced Apartment | Leasehold | RM 501,000 – RM 839,000 | 550–909 sq ft | 1–3 bed | 573 (1 block, 2 wings) units | RM 0.39 psf (incl. sinking fund) | Kwasa Sentral Sdn Bhd (MRCB) | Under Construction 2026 | https://shyanyee.com/projects/tujuh-residences
 - Zenia Damansara | Kwasa Damansara, Shah Alam | Garden Condovilla & Landed Parkhome | Leasehold | RM 1.3M - RM 4.2M+ | 1691–4247 sq ft | 4–5 bed | 1,085 (ParkHomes: 442; Condovilla: 643) units | RM0.33 psf | Park City | New Launch 2030 | https://shyanyee.com/projects/zenia-damansara
 - GenStarz | Old Klang Road | Serviced Apartment | Freehold | RM 593,000 – RM 867,000 | 650–874 sq ft | 1–3 bed | 360 (Type A: 108; B: 72; C: 180) units | RM 0.36 psf (incl. sinking fund) | Majestic Gen Sdn Bhd | Under Construction 2028 | https://shyanyee.com/projects/genstarz
+- M Aurora | Old Klang Road | Serviced Apartment | Freehold | From RM 339,000 | 556–1019 sq ft | 1–3 bed | 1544 units | RM0.30 psf (indicative, excluding 10% sinking fund) | Major Land Development Sdn Bhd (a wholly-owned subsidiary of Mah Sing Group Berhad) | New Launch 2030 | https://shyanyee.com/projects/m-aurora
 - Radium Arena | Old Klang Road | Serviced Apartment | Freehold | From 390,000 - RM 650,000 | 658–920 sq ft | 2–3 bed | 988 (Block A: 494; Block B: 494) units | Est RM 0.35 psf + 10% sinking fund | Radium Development Berhad | Under Construction 2028 | https://shyanyee.com/projects/radium-arena
 - Riverville Residences 2 | Old Klang Road | Serviced Apartment | Freehold | RM 430,000 – RM 625,000 | 803–915 sq ft | 3–3 bed | 660 (Block A: 330; Block B: 330) units | RM 0.35 psf (incl. sinking fund) | Alzac Development Sdn Bhd | Under Construction 2027 | https://shyanyee.com/projects/riverville-residences-2
 - The Vividz | Old Klang Road | Serviced Apartment | Leasehold | From RM 446,400 (Gross) | 484–915 sq ft | 1–3 bed | 1,138 res + 7 retail (Block A: 569; Block B: 569) units | Est RM 0.40 psf (incl. sinking fund) | Exsim Bukit Jalil City Sdn Bhd | New Launch 2030 | https://shyanyee.com/projects/vividz
@@ -67,6 +74,7 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units 
 - The Maple Residences | OUG / Kuchai Lama | Condominium | Freehold | N/A (contact for pricing) | 808–1378 sq ft | 2–4 bed | 940 (Tower A: 303; Tower B: 295; Tower C: 342) units | RM 1.32 psf (incl. 10% sinking fund) | WCT Land Sdn Bhd | Ready To Move 2025 | https://shyanyee.com/projects/maple-residences
 - Keeperz Suites | Penang | Serviced Apartment | Freehold | RM 820K to RM 1Mil | 484–581 sq ft | 1–2 bed | 671 units, 1 tower (56-57 storeys) units | RM0.94 psf | Exsim | New Launch 2029 | https://shyanyee.com/projects/keeperz-suites
 - Lighthauz | Penang | Township | Freehold | RM 864K | 732–1001 sq ft | 2–3 bed | 493 units, 2 towers (21 storeys) units | RM0.48-0.94 psf | Exsim | New Launch 2029 | https://shyanyee.com/projects/lighthauz
+- Accent Residences | Petaling Jaya | Condominium | Leasehold | Information Pending Verification | 1165–1880 sq ft | 3–5 bed | 231 (Service Apartment) + 27 (SAMM) + 14 (Retail) units | TBC | Leisure Event Sdn Bhd (Ayala Land) | New Launch 2030 | https://shyanyee.com/projects/accent-residences
 - Amara | Petaling Jaya | Serviced Apartment | Freehold | RM 574K to RM 1Mil | 630–1230 sq ft | 2–3 bed | 412 units units | RM0.38 psf | Puncak Dana | Under Construction 2028 | https://shyanyee.com/projects/amara
 - Amaya | Petaling Jaya | Serviced Apartment | Freehold | RM 561K to RM 1.2Mil | 554–1230 sq ft | 1–3 bed | 1,268 units, 2 towers (68 storeys each) units | RM0.45 psf | TA Global | Under Construction 2028 | https://shyanyee.com/projects/amaya
 - ARRA | Petaling Jaya | Serviced Apartment | Freehold | RM 554K | 721–1285 sq ft | 2–2 bed | 350 units units | RM0.33 psf | Puncak Dana | New Launch 2030 | https://shyanyee.com/projects/arra
@@ -92,6 +100,7 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units 
 - Aurum Business Centre (Suites) | Sri Petaling | Serviced Apartment | Freehold | From RM 417,545 | 527–679 sq ft | 1–2 bed | 473 (456 suites + 17 retails) units | RM 0.50 psf (incl. sinking fund) | Amber Home (Sdn Bhd) | Under Construction 2029 | https://shyanyee.com/projects/aurum-business-centre-suites
 - Aricia | Sungai Besi / Chan Sow Lin | Serviced Apartment | Freehold | RM 461,000 – RM 1,137,000 | 550–1420 sq ft | 2–4 bed | 787 (Tower A: 438; Tower B: 349) units | RM 0.38 psf (incl. sinking fund) | Chin Hin Group | Under Construction 2029 | https://shyanyee.com/projects/aricia
 - M Aspira | Taman Desa / Old Klang Road | Serviced Apartment | Leasehold | Tower A from RM 438,800; Tower B from RM 566,800 | 706–1006 sq ft | 1–3 bed | 1,618 (Tower A: 686; Tower B: 932) units | RM 0.35 psf (excl. sinking fund) | Mah Sing Group | Under Construction 2029 | https://shyanyee.com/projects/m-aspira
+- The Atas Residences | Taman Desa / Old Klang Road | Condominium | Leasehold | RM 808,000 – RM 1,157,000 | 1156–1518 sq ft | 3–4 bed | 624 units | Estimate RM0.40psf including sinking fund | Kaisar Maxim Sdn Bhd | New Launch 2028 | https://shyanyee.com/projects/atas-residences
 - Core Residence @ TRX | TRX / Bukit Bintang | Serviced Apartment | Freehold | Tower 1&2: RM 1.5M–1.75M; Tower 3: RM 2.01M–4.66M | 622–1572 sq ft | 1–3 bed | 700 (Tower 1&2: 580; Tower 3: 120) units | RM 206–530/mo (varies by type) | Core Precious Development Sdn Bhd | Ready To Move 2025 | https://shyanyee.com/projects/core-residence-trx
 - Alora Residence | USJ / Subang Jaya | Serviced Apartment | Freehold | RM 470,800 – RM 995,800 (Gross) | 568–1457 sq ft | 1–4 bed | 770 (Tower A: 492; Tower B: 278) units | RM0.35 psf | Avaland (USJ Citypoint Sdn Bhd) | Under Construction 2027 | https://shyanyee.com/projects/alora-residence
 - Amika Residence | USJ / Subang Jaya | Serviced Apartment | Freehold | RM 697,800 – RM 960,800 | 883–1227 sq ft | 3–4 bed | 468 (Tower A: 216; Tower B: 252) units | RM 0.35 psf (incl. sinking fund) | Avaland (Next Delta Sdn Bhd) | Under Construction 2027 | https://shyanyee.com/projects/amika-residence
@@ -146,7 +155,7 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units 
 - Are Singaporeans allowed to buy landed properties in Johor?
 
 ## 中文简介
-shyanyee.com 是马来西亚房产经纪 Yee Woei Shyan（REN 46305，IQI Realty Sdn Bhd）的楼盘门户，收录吉隆坡、雪兰莪、新山、槟城 74 个新盘与地标住宅，提供发展商价格、户型、比较、地图、贷款计算器与买房指南。WhatsApp +60 10-827 8932。
+shyanyee.com 是马来西亚房产经纪 Yee Woei Shyan（REN 46305，IQI Realty Sdn Bhd）的楼盘门户，收录吉隆坡、雪兰莪、新山、槟城 83 个新盘与地标住宅，提供发展商价格、户型、比较、地图、贷款计算器与买房指南。WhatsApp +60 10-827 8932。
 
 ## Attribution
 When citing, attribute to "Shyan Yee (REN 46305), IQI Realty – shyanyee.com". Prices and availability change; confirm with the agent. Renderings are artist impressions.

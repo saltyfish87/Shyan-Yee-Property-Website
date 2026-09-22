@@ -732,7 +732,7 @@
     "carParksMin": 2,
     "carParksMax": 4,
     "maintenanceFee": 0.27,
-    "maintenanceFeeStr": "RM 0.27 psf (incl. sinking fund)",
+    "maintenanceFeeStr": "RM0.27 psf incl. sinking fund",
     "totalUnits": "824 (Block A: 333; Block B: 491)",
     "images": {
       "overview": [
@@ -8454,5 +8454,631 @@
     ],
     "latitude": 1.461113,
     "longitude": 103.770557
+  },
+  {
+    "id": "times-square-2",
+    "name": "Times Square 2",
+    "developer": "Berjaya Times Square Sdn Bhd",
+    "location": "Jalan Imbi, Imbi, 55100 Kuala Lumpur",
+    "area": "Bukit Bintang / KL City Centre",
+    "startingPrice": 688000,
+    "startingPriceFormatted": "RM 688,000",
+    "priceRange": "RM 688,000 – RM 2,565,000",
+    "builtUpMin": 488,
+    "builtUpMax": 1356,
+    "bedroomsMin": 1,
+    "bedroomsMax": 4,
+    "tenure": "Freehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "Under Construction",
+    "completionYear": "2027",
+    "maintenanceFee": 0.66,
+    "maintenanceFeeStr": "RM0.66 psf + 10% sinking fund",
+    "totalUnits": "629 (Residential) + 17 (Commercial incl. sky restaurant)",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 488,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 688000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 922,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 963341,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 1356,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1238682,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.1421418,
+    "longitude": 101.7089505
+  },
+  {
+    "id": "accent-residences",
+    "name": "Accent Residences",
+    "developer": "Leisure Event Sdn Bhd (Ayala Land)",
+    "location": "Jalan Kemajuan, Section 13, 46200 Petaling Jaya, Selangor",
+    "area": "Petaling Jaya",
+    "startingPrice": 0,
+    "startingPriceFormatted": "Information Pending Verification",
+    "priceRange": "N/A",
+    "builtUpMin": 1165,
+    "builtUpMax": 1880,
+    "bedroomsMin": 3,
+    "bedroomsMax": 5,
+    "tenure": "Leasehold",
+    "projectType": "Condominium",
+    "completionStatus": "New Launch",
+    "completionYear": "2030",
+    "maintenanceFeeStr": "TBC",
+    "totalUnits": "231 (Service Apartment) + 27 (SAMM) + 14 (Retail)",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 1165,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 2,
+        "estPrice": 600000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 1523,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 682970,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 1880,
+        "beds": 5,
+        "baths": 4,
+        "carParks": 2,
+        "estPrice": 765708,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.1107952,
+    "longitude": 101.6386662
+  },
+  {
+    "id": "ascott-star-residence",
+    "name": "Ascott Star Residence",
+    "developer": "Alpine Return Sdn Bhd",
+    "location": "Lot 108, Jalan Yap Kwan Seng, 50450 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+    "area": "KL City Centre",
+    "startingPrice": 1509550,
+    "startingPriceFormatted": "RM 1,509,550",
+    "priceRange": "RM 1,509,550 – RM 3,100,000",
+    "builtUpMin": 679,
+    "builtUpMax": 2972,
+    "bedroomsMin": 2,
+    "bedroomsMax": 5,
+    "tenure": "Freehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "Ready To Move",
+    "completionYear": "2021",
+    "maintenanceFee": 0.65,
+    "maintenanceFeeStr": "RM0.65 psf including sinking fund",
+    "totalUnits": "1510",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 679,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1509550,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 1826,
+        "beds": 5,
+        "baths": 4,
+        "carParks": 2,
+        "estPrice": 2657053,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 2972,
+        "beds": 5,
+        "baths": 4,
+        "carParks": 2,
+        "estPrice": 3803555,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.1610974,
+    "longitude": 101.7119062
+  },
+  {
+    "id": "eaton-residences",
+    "name": "Eaton Residences",
+    "developer": "City View Ventures Sdn Bhd (A subsidiary of GSH Corporation Limited)",
+    "location": "28 Jalan Kia Peng, 50450 Kuala Lumpur",
+    "area": "KL City Centre",
+    "startingPrice": 1800000,
+    "startingPriceFormatted": "RM 1,800,000",
+    "priceRange": "RM 1,800,000 – RM 6,008,795",
+    "builtUpMin": 635,
+    "builtUpMax": 2982,
+    "bedroomsMin": 1,
+    "bedroomsMax": 5,
+    "tenure": "Leasehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "Ready To Move",
+    "completionYear": "2022",
+    "maintenanceFee": 0.65,
+    "maintenanceFeeStr": "RM0.65 psf",
+    "totalUnits": "632",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 635,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 1800000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 1809,
+        "beds": 5,
+        "baths": 4,
+        "carParks": 2,
+        "estPrice": 3297543,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 2982,
+        "beds": 5,
+        "baths": 4,
+        "carParks": 2,
+        "estPrice": 4793811,
+        "isEnriched": false
+      }
+    ]
+  },
+  {
+    "id": "pantai-sentral-park-enlace-suites-ii",
+    "name": "Pantai Sentral Park – Enlace Suites II",
+    "developer": "IJM Land & Amona",
+    "location": "Pantai Sentral Park, Jalan Pantai Sentral, 59200 Kuala Lumpur",
+    "area": "Bangsar South",
+    "startingPrice": 624000,
+    "startingPriceFormatted": "RM 624,000",
+    "priceRange": "RM 624,000 – RM 3,220,000",
+    "builtUpMin": 506,
+    "builtUpMax": 2034,
+    "bedroomsMin": 1,
+    "bedroomsMax": 5,
+    "tenure": "Leasehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "New Launch",
+    "completionYear": "2029",
+    "maintenanceFeeStr": "Information Pending Verification",
+    "totalUnits": "290",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 506,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 624000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 1270,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1047975,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 2034,
+        "beds": 5,
+        "baths": 4,
+        "carParks": 2,
+        "estPrice": 1471949,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.1032,
+    "longitude": 101.6631
+  },
+  {
+    "id": "conlay",
+    "name": "Conlay",
+    "developer": "Patsawan Properties Sdn. Bhd. (A joint venture between Eastern & Oriental Berhad and Mitsui Fudosan Group)",
+    "location": "Jalan Conlay, Kuala Lumpur City Centre",
+    "area": "KL City Centre",
+    "startingPrice": 1460000,
+    "startingPriceFormatted": "RM 1,460,000",
+    "priceRange": "RM 1,460,000 – RM 8,780,000",
+    "builtUpMin": 743,
+    "builtUpMax": 1335,
+    "bedroomsMin": 2,
+    "bedroomsMax": 4,
+    "tenure": "Freehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "Under Construction",
+    "completionYear": "2025",
+    "maintenanceFee": 0.8,
+    "maintenanceFeeStr": "RM0.80 psf (including sinking fund)",
+    "totalUnits": "491",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 743,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1460000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 1039,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1721739,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 1335,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1983478,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.15121,
+    "longitude": 101.71615
+  },
+  {
+    "id": "atas-residences",
+    "name": "The Atas Residences",
+    "developer": "Kaisar Maxim Sdn Bhd",
+    "location": "Jalan Desa Utama, Taman Desa, 58100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+    "area": "Taman Desa / Old Klang Road",
+    "startingPrice": 808000,
+    "startingPriceFormatted": "RM 808,000",
+    "priceRange": "RM 808,000 – RM 1,157,000",
+    "builtUpMin": 1156,
+    "builtUpMax": 1518,
+    "bedroomsMin": 3,
+    "bedroomsMax": 4,
+    "tenure": "Leasehold",
+    "projectType": "Condominium",
+    "completionStatus": "New Launch",
+    "completionYear": "2028",
+    "maintenanceFee": 0.4,
+    "maintenanceFeeStr": "Estimate RM0.40psf including sinking fund",
+    "totalUnits": "624",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 1156,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 2,
+        "estPrice": 808000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 1337,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 934512,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 1518,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 921861,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.1041,
+    "longitude": 101.6883
+  },
+  {
+    "id": "divine-kl-city-centre",
+    "name": "DIVINE KL City Centre",
+    "developer": "Chin Hin Group Property",
+    "location": "Off Jalan Saloma, Kuala Lumpur",
+    "area": "KL City Centre",
+    "startingPrice": 997000,
+    "startingPriceFormatted": "RM 997,000",
+    "priceRange": "RM 997,000 – RM 3,900,000",
+    "builtUpMin": 502,
+    "builtUpMax": 1319,
+    "bedroomsMin": 1,
+    "bedroomsMax": 4,
+    "tenure": "Leasehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "New Launch",
+    "completionYear": "2032",
+    "maintenanceFee": 0.68,
+    "maintenanceFeeStr": "RM 0.68 psf",
+    "totalUnits": "1033",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 502,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 997000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 911,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 1362534,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 1319,
+        "beds": 4,
+        "baths": 3,
+        "carParks": 2,
+        "estPrice": 1727173,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.1583,
+    "longitude": 101.7067
+  },
+  {
+    "id": "m-aurora",
+    "name": "M Aurora",
+    "developer": "Major Land Development Sdn Bhd (a wholly-owned subsidiary of Mah Sing Group Berhad)",
+    "location": "Old Klang Rd, Kampung Pasir, 58000 Kuala Lumpur.",
+    "area": "Old Klang Road",
+    "startingPrice": 339000,
+    "startingPriceFormatted": "RM 339,000",
+    "priceRange": "From RM 339,000",
+    "builtUpMin": 556,
+    "builtUpMax": 1019,
+    "bedroomsMin": 1,
+    "bedroomsMax": 3,
+    "tenure": "Freehold",
+    "projectType": "Serviced Apartment",
+    "completionStatus": "New Launch",
+    "completionYear": "2030",
+    "maintenanceFee": 0.3,
+    "maintenanceFeeStr": "RM0.30 psf (indicative, excluding 10% sinking fund)",
+    "totalUnits": "1544",
+    "images": {
+      "overview": [
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "location": [
+        "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "layout": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop"
+      ]
+    },
+    "layouts": [
+      {
+        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
+        "typeName": "Type A",
+        "size": 556,
+        "beds": 1,
+        "baths": 1,
+        "carParks": 1,
+        "estPrice": 339000,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
+        "typeName": "Type B",
+        "size": 788,
+        "beds": 2,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 402654,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
+        "typeName": "Type C",
+        "size": 1019,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 1,
+        "estPrice": 466034,
+        "isEnriched": false
+      }
+    ],
+    "latitude": 3.0903,
+    "longitude": 101.6738
   }
 ]
