@@ -145,16 +145,10 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
         {/* Directory Expand Header */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-stone-850">
           <div className="space-y-1 text-left">
-            <div className="flex items-center gap-2">
-              <Sparkles className="h-5 w-5 text-orange-500 animate-pulse shrink-0" />
-              <span className="text-xs font-black uppercase text-orange-500 tracking-widest">
-                {language.startsWith('zh') ? '马来西亚房产全景索引' : 'Comprehensive Property Portfolio Index'}
-              </span>
-            </div>
-            <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+            <h3 className="display text-3xl sm:text-4xl text-white">
               {language.startsWith('zh') ? '马来西亚地标房产大目录' : 'Malaysia Landmark Property Directory'}
             </h3>
-            <p className="text-xs text-stone-400 max-w-2xl leading-relaxed">
+            <p className="text-sm text-stone-400 max-w-2xl leading-relaxed pt-3">
               {language.startsWith('zh') 
                 ? '收录马来西亚全境精选地标项目、官方开发商指导价、户型规格及区域发展深度解析。' 
                 : 'Comprehensive directory of premier developments across Malaysia, featuring official developer specifications, floor plan options, and regional comparative analysis.'}
@@ -233,11 +227,11 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
                     <table className="w-full text-left text-xs border-collapse">
                       <thead>
                         <tr className="text-stone-500 border-b border-stone-850/40 pb-2">
-                          <th className="py-2.5 font-bold uppercase tracking-wider">{language.startsWith('zh') ? '楼盘名称' : 'Project Name'}</th>
-                          <th className="py-2.5 font-bold uppercase tracking-wider">{language.startsWith('zh') ? '开发商' : 'Developer'}</th>
-                          <th className="py-2.5 font-bold uppercase tracking-wider">{language.startsWith('zh') ? '地标节点' : 'Node / Transit'}</th>
-                          <th className="py-2.5 font-bold uppercase tracking-wider">{language.startsWith('zh') ? '参考总价' : 'Est. Price'}</th>
-                          <th className="py-2.5 font-bold uppercase tracking-wider hidden lg:table-cell">{language.startsWith('zh') ? '核心卖点与特色' : 'Key Highlights'}</th>
+                          <th className="py-2.5 font-bold">{language.startsWith('zh') ? '楼盘名称' : 'Project Name'}</th>
+                          <th className="py-2.5 font-bold">{language.startsWith('zh') ? '开发商' : 'Developer'}</th>
+                          <th className="py-2.5 font-bold">{language.startsWith('zh') ? '地标节点' : 'Node / Transit'}</th>
+                          <th className="py-2.5 font-bold">{language.startsWith('zh') ? '参考总价' : 'Est. Price'}</th>
+                          <th className="py-2.5 font-bold hidden lg:table-cell">{language.startsWith('zh') ? '核心卖点与特色' : 'Key Highlights'}</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-stone-850/20 font-medium">
@@ -252,7 +246,7 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
                               <td className="py-3 font-bold text-white group-hover:text-orange-500 transition-colors">
                                 {p.name}
                                 {p.isHot && (
-                                  <span className="ml-2 inline-flex items-center px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider bg-red-950 text-red-500 rounded border border-red-900/40">
+                                  <span className="ml-2 inline-flex items-center px-1.5 py-0.5 text-[11px] font-semibold bg-red-950 text-red-500 rounded border border-red-900/40">
                                     HOT
                                   </span>
                                 )}

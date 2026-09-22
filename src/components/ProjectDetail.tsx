@@ -107,23 +107,6 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
     };
   }, [project]);
 
-  const locHash = React.useMemo(() => {
-    let hash = 0;
-    const str = project.id || "";
-    for (let i = 0; i < str.length; i++) {
-      hash = str.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    return Math.abs(hash);
-  }, [project.id]);
-
-  const transitMinutes = React.useMemo(() => (locHash % 7) + 3, [locHash]); // 3 to 9 mins
-  const transitDistance = React.useMemo(() => (((locHash % 15) + 5) / 10).toFixed(1), [locHash]); // 0.5 to 1.9 KM
-  const mallMinutes = React.useMemo(() => (locHash % 10) + 4, [locHash]); // 4 to 13 mins
-  const grocerDistance = React.useMemo(() => ((locHash % 8) * 100 + 200), [locHash]); // 200m to 900m
-  const academyMinutes = React.useMemo(() => (locHash % 8) + 4, [locHash]); // 4 to 11 mins
-  const prepDistance = React.useMemo(() => (((locHash % 12) + 6) / 10).toFixed(1), [locHash]); // 0.6 to 1.7 KM
-  const medicalMinutes = React.useMemo(() => (locHash % 8) + 6, [locHash]); // 6 to 13 mins
-  const clinicDistance = React.useMemo(() => ((locHash % 7) * 100 + 150), [locHash]); // 150m to 750m
 
   const galleryImages = React.useMemo(() => {
     // Only show facade (overview) and facilities (gallery) (removing layout, location, logo, summary, and faq)
@@ -521,7 +504,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             {t('backToProjects')}
           </button>
 
-          <span className="text-[10px] uppercase font-black tracking-widest text-slate-400 select-none">
+          <span className="text-[10px] font-semibold text-slate-400 select-none">
             Synced: {project.syncedAt || "2026"}
           </span>
         </div>
@@ -534,7 +517,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 <Home className="h-6 w-6 text-rose-500" />
               </div>
               <div>
-                <h4 className="text-sm font-black text-slate-800 uppercase tracking-widest leading-none mb-1.5">
+                <h4 className="text-sm font-semibold text-slate-800 leading-none mb-1.5">
                   {language.startsWith('zh') ? '选择 Zenia 房产子类' : language === 'ja' ? 'Zenia 物件タイプを選択' : 'Select Zenia Property Component'}
                 </h4>
                 <p className="text-[11px] text-slate-500 font-extrabold leading-none">
@@ -550,7 +533,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             <div className="flex gap-2.5 w-full md:w-auto shrink-0">
               <button
                 onClick={() => setZeniaSubtype('condovilla')}
-                className={`flex-1 md:flex-initial px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-wider transition-all border cursor-pointer select-none leading-none flex items-center justify-center gap-2 ${
+                className={`flex-1 md:flex-initial px-6 py-3 rounded-2xl text-[11px] font-semibold transition-all border cursor-pointer select-none leading-none flex items-center justify-center gap-2 ${
                   zeniaSubtype === 'condovilla'
                     ? 'bg-rose-500 text-white border-rose-500 shadow-md shadow-rose-500/10'
                     : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
@@ -561,7 +544,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               
               <button
                 onClick={() => setZeniaSubtype('parkhome')}
-                className={`flex-1 md:flex-initial px-6 py-3 rounded-2xl text-[11px] font-black uppercase tracking-wider transition-all border cursor-pointer select-none leading-none flex items-center justify-center gap-2 ${
+                className={`flex-1 md:flex-initial px-6 py-3 rounded-2xl text-[11px] font-semibold transition-all border cursor-pointer select-none leading-none flex items-center justify-center gap-2 ${
                   zeniaSubtype === 'parkhome'
                     ? 'bg-rose-500 text-white border-rose-500 shadow-md shadow-rose-500/10'
                     : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
@@ -627,7 +610,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               ) : (
                 <div className="w-full h-full bg-slate-100/70 flex flex-col items-center justify-center p-8 text-center select-none">
                   <Building className="h-16 w-16 text-slate-300 mb-4" />
-                  <h3 className="text-lg font-bold text-slate-800 uppercase tracking-widest">
+                  <h3 className="text-base font-medium text-slate-500">
                     Media Pending Verification
                   </h3>
                   <p className="text-xs text-slate-400 mt-2 font-medium italic max-w-md">
@@ -642,10 +625,10 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-slate-50">
                 <div>
-                  <span className="inline-flex items-center gap-1.5 text-[10px] font-black text-orange-600 bg-orange-50 border border-orange-100/50 px-2.5 py-1 rounded-sm uppercase tracking-wider mb-2">
+                  <span className="inline-flex items-center gap-1.5 text-[12px] font-medium text-orange-600 bg-orange-50 border border-orange-100/50 px-2.5 py-1 rounded-full mb-3">
                     {translateCompletionStatus(project.completionStatus, language)}
                   </span>
-                  <h1 className="text-3xl sm:text-4xl font-[800] text-slate-900 tracking-tight leading-none">
+                  <h1 className="display text-4xl sm:text-5xl text-slate-900">
                     {isZenia 
                       ? `${project.name} - ${zeniaSubtype === 'condovilla' ? 'Condovilla' : 'Parkhome'}` 
                       : project.name
@@ -654,8 +637,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 </div>
 
                 <div className="text-left sm:text-right">
-                  <span className="block text-[10px] font-bold uppercase text-slate-400">{t('startingPrice')}</span>
-                  <span className="text-2xl sm:text-3xl font-black ig-text">
+                  <span className="block text-[12px] font-bold text-slate-400">{t('startingPrice')}</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-[#dc2743]">
                     {displayPrice}
                   </span>
                 </div>
@@ -666,7 +649,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 <div className="flex gap-2.5 items-center">
                   <Building className="h-5 w-5 text-slate-400" />
                   <div className="text-left">
-                    <span className="block text-[10px] font-bold uppercase text-slate-400 leading-none">{t('developer')}</span>
+                    <span className="block text-[12px] font-bold text-slate-400 leading-none">{t('developer')}</span>
                     <span className="text-sm font-semibold truncate max-w-[120px] block">{translateDeveloper(project.developer.replace(/\(.*?\)/g, "").trim(), language)}</span>
                   </div>
                 </div>
@@ -674,7 +657,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 <div className="flex gap-2.5 items-center">
                   <Layers className="h-5 w-5 text-stone-400" />
                   <div className="text-left">
-                    <span className="block text-[10px] font-bold uppercase text-stone-400 leading-none">{t('propertyType')}</span>
+                    <span className="block text-[12px] font-bold text-stone-400 leading-none">{t('propertyType')}</span>
                     <span className="text-sm font-semibold">
                       {isZenia 
                         ? (zeniaSubtype === 'condovilla' 
@@ -690,7 +673,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 <div className="flex gap-2.5 items-center">
                   <MapPin className="h-5 w-5 text-stone-400" />
                   <div className="text-left">
-                    <span className="block text-[10px] font-bold uppercase text-stone-400 leading-none">{t('areaNode')}</span>
+                    <span className="block text-[12px] font-bold text-stone-400 leading-none">{t('areaNode')}</span>
                     <span className="text-sm font-semibold">{translateArea(project.area, language)}</span>
                   </div>
                 </div>
@@ -698,7 +681,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 <div className="flex gap-2.5 items-center">
                   <Calculator className="h-5 w-5 text-stone-400" />
                   <div className="text-left">
-                    <span className="block text-[10px] font-bold uppercase text-stone-400 leading-none">{t('tenureTitle')}</span>
+                    <span className="block text-[12px] font-bold text-stone-400 leading-none">{t('tenureTitle')}</span>
                     <span className="text-sm font-bold text-stone-800">{translateTenure(project.tenure, language)}</span>
                   </div>
                 </div>
@@ -750,10 +733,23 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-5">
               <div className="flex items-center gap-2 pb-3 border-b border-slate-50">
                 <Sparkles className="h-5 w-5 text-rose-500 shrink-0" />
-                <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
+                <h3 className="display text-2xl text-slate-900">
                   {t('projectOverview') || "Project Overview"}
                 </h3>
               </div>
+              {/* The developer's own write-up from the project database. The paragraph below it is
+                  a template that says the same thing about every project, so it only appears for
+                  the projects the database does not cover yet. */}
+              {realFacts?.description?.en || realFacts?.description?.zh ? (
+                <>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {(language.startsWith('zh') && realFacts.description.zh) || realFacts.description.en || realFacts.description.zh}
+                  </p>
+                  {realFacts.source ? (
+                    <p className="text-[12px] text-slate-400">{realFacts.source}</p>
+                  ) : null}
+                </>
+              ) : (
               <p className="text-slate-600 text-xs sm:text-[13px] leading-relaxed font-semibold">
                 {isZenia ? (
                   zeniaSubtype === 'condovilla' ? (
@@ -801,56 +797,39 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   )
                 )}
               </p>
-              {aiData?.aiOverview && (
-                <p className="text-slate-600 text-xs sm:text-[13px] leading-relaxed font-semibold mt-4 border-t border-slate-50 pt-4">
-                  {aiData.aiOverview}
-                </p>
-              )}
-              {isAiLoading && (
-                <div className="space-y-2 mt-4 pt-4 border-t border-slate-50 animate-pulse">
-                  <div className="h-3.5 bg-slate-100 rounded w-5/6"></div>
-                  <div className="h-3.5 bg-slate-100 rounded w-4/5"></div>
-                  <div className="h-3.5 bg-slate-100 rounded w-3/4"></div>
-                </div>
               )}
               <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-50 mt-4">
                 <div className="p-3 bg-slate-50 rounded-xl space-y-1">
-                  <span className="block text-[9px] font-black uppercase text-slate-400">{t('constructionStatus')}</span>
+                  <span className="block text-[11px] font-semibold text-slate-400">{t('constructionStatus')}</span>
                   <span className="text-xs font-bold text-slate-800">{translateCompletionStatus(project.completionStatus, language)} (Est. {project.completionYear})</span>
                 </div>
                 <div className="p-3 bg-slate-50 rounded-xl space-y-1">
-                  <span className="block text-[9px] font-black uppercase text-slate-400">{t('propertyTitleType')}</span>
+                  <span className="block text-[11px] font-semibold text-slate-400">{t('propertyTitleType')}</span>
                   <span className="text-xs font-bold text-slate-800">{translateTenure(project.tenure, language)}</span>
                 </div>
                 <div className="p-3 bg-slate-50 rounded-xl space-y-1">
-                  <span className="block text-[9px] font-black uppercase text-slate-400">{t('maintenanceFee')}</span>
+                  <span className="block text-[11px] font-semibold text-slate-400">{t('maintenanceFee')}</span>
                   <span className="text-xs font-bold text-slate-800">{maintenanceFeeStr}</span>
                 </div>
                 <div className="p-3 bg-slate-50 rounded-xl space-y-1">
-                  <span className="block text-[9px] font-black uppercase text-slate-400">{t('totalUnits')}</span>
+                  <span className="block text-[11px] font-semibold text-slate-400">{t('totalUnits')}</span>
                   <span className="text-xs font-bold text-slate-800">{totalUnitsStr}</span>
                 </div>
               </div>
             </div>
 
-            {/* 2. Key Features */}
+            {/* 2. Key selling points, straight from the developer's own list. There is no
+                   generated fallback: a project with nothing on file shows no card at all. */}
+            {realFacts?.keyFeatures?.length ? (
             <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-5">
               <div className="flex items-center gap-2 pb-3 border-b border-slate-50">
                 <Sparkles className="h-5 w-5 text-rose-500 shrink-0" />
-                <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider">
+                <h3 className="display text-2xl text-slate-900">
                   {t('keyFeatures')}
                 </h3>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {isAiLoading ? (
-                  Array.from({ length: 4 }).map((_, id) => (
-                    <div key={id} className="p-3 rounded-2xl border border-slate-50 animate-pulse space-y-2">
-                      <div className="h-4 bg-slate-100 rounded w-1/3"></div>
-                      <div className="h-3 bg-slate-50 rounded w-5/6"></div>
-                    </div>
-                  ))
-                ) : (realFacts?.keyFeatures?.length || aiData?.aiKeySellingPoints?.length) ? (
-                  (realFacts?.keyFeatures?.length ? realFacts.keyFeatures : aiData!.aiKeySellingPoints!).map((pointStr, id) => {
+                {realFacts.keyFeatures.map((pointStr, id) => {
                     let title = pointStr;
                     let desc = "";
                     const colonIdx = pointStr.indexOf(':');
@@ -871,16 +850,19 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                         {desc && <p className="text-[10px] text-slate-500 leading-normal font-semibold">{desc}</p>}
                       </div>
                     );
-                  })
-                ) : null}
+                  })}
               </div>
+              {realFacts.source ? (
+                <p className="text-[12px] text-slate-400">{realFacts.source}</p>
+              ) : null}
             </div>
+            ) : null}
 
             {/* 3. Location Section & Location Images */}
             <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-6">
               <div className="flex items-center gap-2 pb-3 border-b border-slate-50">
                 <MapPin className="h-5 w-5 text-rose-500 shrink-0" />
-                <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
+                <h3 className="display text-2xl text-slate-900">
                   {t('locationHighlights')}
                 </h3>
               </div>
@@ -900,7 +882,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               {/* Location Image render */}
               {project.images?.location && project.images.location.filter(Boolean).length > 0 && (
                 <div className="space-y-3">
-                  <span className="block text-[9px] font-black uppercase text-slate-400 tracking-wider">{t('siteMap')}</span>
+                  <span className="block text-[11px] font-semibold text-slate-400">{t('siteMap')}</span>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {project.images.location.filter(Boolean).map((img, i) => (
                       <div 
@@ -917,7 +899,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-stone-900/5 group-hover:bg-transparent duration-300" />
-                        <div className="absolute bottom-2 left-2 bg-stone-950/80 backdrop-blur-sm px-2 py-0.5 rounded text-[8px] font-black uppercase text-white tracking-widest leading-none scale-90 origin-left">
+                        <div className="absolute bottom-2 left-2 bg-stone-950/80 backdrop-blur-sm px-2 py-0.5 rounded text-[11px] font-semibold text-white leading-none scale-90 origin-left">
                           {t('mapFrame')} {i + 1}
                         </div>
                       </div>
@@ -927,87 +909,41 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               )}
             </div>
 
-            {/* 4. Nearby Amenities */}
-            <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-6">
+            {/* 4. Nearby places, from the developer's own amenity list in the project database.
+                   The four tiles that used to sit here ("MRT hub 5 minutes", "Shopping mall 8
+                   minutes") were generated from a hash of the address — invented numbers, not
+                   measurements — so they are gone. A project with no amenity list shows nothing. */}
+            {realFacts?.nearby?.length ? (
+            <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-5">
               <div className="flex items-center gap-2 pb-3 border-b border-slate-50">
                 <MapPin className="h-5 w-5 text-rose-500 shrink-0" />
-                <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider">
+                <h3 className="display text-2xl text-slate-900">
                   {t('nearbyAmenities')}
                 </h3>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-3 bg-slate-55/40 rounded-2xl border border-slate-100 font-semibold space-y-2">
-                  <h4 className="text-xs font-black uppercase text-orange-600 flex items-center gap-1">
-                    <span>🚈 {t('transitInterlinks')}</span>
-                  </h4>
-                  <ul className="space-y-1.5 text-[11px] text-slate-600">
-                    <li className="flex justify-between items-center bg-white p-2 rounded-xl border border-slate-50 shadow-xs">
-                      <span>{t('mrtHub')}</span>
-                      <span className="text-slate-900 font-bold">{transitMinutes} {t('minutes')}</span>
-                    </li>
-                    <li className="flex justify-between items-center bg-white p-2 rounded-xl border border-slate-50 shadow-xs">
-                      <span>{t('expressway')}</span>
-                      <span className="text-slate-900 font-bold">{transitDistance} KM</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="p-3 bg-slate-55/40 rounded-2xl border border-slate-100 font-semibold space-y-2">
-                  <h4 className="text-xs font-black uppercase text-orange-600 flex items-center gap-1">
-                    <span>🛍️ {t('retailGrocer')}</span>
-                  </h4>
-                  <ul className="space-y-1.5 text-[11px] text-slate-600">
-                    <li className="flex justify-between items-center bg-white p-2 rounded-xl border border-slate-50 shadow-xs">
-                      <span>{t('shoppingMall')}</span>
-                      <span className="text-slate-900 font-bold">{mallMinutes} {t('minutes')}</span>
-                    </li>
-                    <li className="flex justify-between items-center bg-white p-2 rounded-xl border border-slate-50 shadow-xs">
-                      <span>{t('grocer')}</span>
-                      <span className="text-slate-900 font-bold">{grocerDistance} M</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="p-3 bg-slate-55/40 rounded-2xl border border-slate-100 font-semibold space-y-2">
-                  <h4 className="text-xs font-black uppercase text-orange-600 flex items-center gap-1">
-                    <span>🎓 {t('intlEducation')}</span>
-                  </h4>
-                  <ul className="space-y-1.5 text-[11px] text-slate-600">
-                    <li className="flex justify-between items-center bg-white p-2 rounded-xl border border-slate-50 shadow-xs">
-                      <span>{t('academy')}</span>
-                      <span className="text-slate-900 font-bold">{academyMinutes} {t('minutes')}</span>
-                    </li>
-                    <li className="flex justify-between items-center bg-white p-2 rounded-xl border border-slate-50 shadow-xs">
-                      <span>{t('prepSchool')}</span>
-                      <span className="text-slate-900 font-bold">{prepDistance} KM</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="p-3 bg-slate-55/40 rounded-2xl border border-slate-100 font-semibold space-y-2">
-                  <h4 className="text-xs font-black uppercase text-orange-600 flex items-center gap-1">
-                    <span>🏥 {t('premiumHealthcare')}</span>
-                  </h4>
-                  <ul className="space-y-1.5 text-[11px] text-slate-600">
-                    <li className="flex justify-between items-center bg-white p-2 rounded-xl border border-slate-50 shadow-xs">
-                      <span>{t('medical')}</span>
-                      <span className="text-slate-900 font-bold">{medicalMinutes} {t('minutes')}</span>
-                    </li>
-                    <li className="flex justify-between items-center bg-white p-2 rounded-xl border border-slate-50 shadow-xs">
-                      <span>{t('sentryClinic')}</span>
-                      <span className="text-slate-900 font-bold">{clinicDistance} M</span>
-                    </li>
-                  </ul>
-                </div>
+                {Object.entries(realFacts.nearby.reduce((acc, n) => {
+                  (acc[n.category] ||= []).push(n);
+                  return acc;
+                }, {} as Record<string, typeof realFacts.nearby>)).map(([cat, items]) => (
+                  <div key={cat} className="rounded-2xl border border-slate-100 bg-slate-50/50 p-4">
+                    <div className="text-[12px] font-semibold text-slate-500 mb-2.5">{cat}</div>
+                    <ul className="space-y-1.5 text-[13px] text-slate-600">
+                      {items.map((n, i) => (
+                        <li key={i} className="flex justify-between gap-3">
+                          <span>{n.name}</span>
+                          {n.distance ? <span className="text-slate-900 font-medium shrink-0">{n.distance}</span> : null}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
-              {aiData?.aiAmenities && (
-                <div className="p-4 bg-rose-50/20 border border-rose-100/40 rounded-2xl mt-4">
-                  <p className="text-xs text-slate-700 leading-relaxed font-semibold">
-                    ✨ <strong>{t('surroundingsAccess')}:</strong> {aiData.aiAmenities}
-                  </p>
-                </div>
-              )}
+              {realFacts.source ? (
+                <p className="text-[12px] text-slate-400">{realFacts.source}</p>
+              ) : null}
             </div>
+            ) : null}
 
             {/* Floor plans section comes after */}
 
@@ -1016,7 +952,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               <div className="flex items-center justify-between pb-3 border-b border-slate-50">
                 <div className="flex items-center gap-2">
                   <Layers className="h-5 w-5 text-rose-500 shrink-0" />
-                  <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
+                  <h3 className="display text-2xl text-slate-900">
                     {t('floorPlans')}
                   </h3>
                 </div>
@@ -1035,7 +971,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                       <button
                         key={idx}
                         onClick={() => setActiveLayoutIdx(idx)}
-                        className={`flex-1 min-w-[100px] text-center px-3 py-2 rounded-xl text-[11px] font-extrabold uppercase transition-all tracking-wider border cursor-pointer select-none ${
+                        className={`flex-1 min-w-[100px] text-center px-3 py-2 rounded-xl text-[11px] font-semibold transition-all border cursor-pointer select-none ${
                           activeLayoutIdx === idx
                             ? 'bg-rose-500 text-white border-rose-500 shadow-sm'
                             : 'bg-white text-slate-600 border-slate-100 hover:bg-slate-50'
@@ -1081,7 +1017,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                               loading="lazy"
                             />
                             
-                            <div className="absolute top-2.5 right-2.5 bg-rose-500 text-white text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded leading-none">
+                            <div className="absolute top-2.5 right-2.5 bg-rose-500 text-white text-[11px] font-semibold px-2 py-0.5 rounded leading-none">
                               {lay.typeName} Specimen
                             </div>
                           </div>
@@ -1101,7 +1037,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                         <div className="lg:col-span-2 flex flex-col justify-between space-y-4">
                           <div className="space-y-4">
                             <div>
-                              <span className="text-[10px] font-black uppercase text-rose-500 tracking-wider">Layout Blueprint Details</span>
+                              <span className="text-[10px] font-semibold text-rose-500">Layout Blueprint Details</span>
                               <h4 className="text-xl font-black text-slate-900 mt-0.5 tracking-tight font-sans">{lay.typeName} Layout</h4>
                             </div>
 
@@ -1110,7 +1046,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                               <div className="p-3 bg-slate-50/60 rounded-xl border border-slate-100/50 flex items-center gap-2.5 font-semibold">
                                 <Ruler className="h-4.5 w-4.5 text-slate-400 shrink-0" />
                                 <div>
-                                  <span className="block text-[9px] uppercase text-slate-400 leading-none">Built Up Area</span>
+                                  <span className="block text-[11px] text-slate-400 leading-none">Built Up Area</span>
                                   <span className="text-xs font-bold text-slate-800">{lay.size} SQFT</span>
                                 </div>
                               </div>
@@ -1118,7 +1054,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                               <div className="p-3 bg-slate-50/60 rounded-xl border border-slate-100/50 flex items-center gap-2.5 font-semibold">
                                 <Home className="h-4.5 w-4.5 text-slate-400 shrink-0" />
                                 <div>
-                                  <span className="block text-[9px] uppercase text-slate-400 leading-none font-sans">Metric Sizing</span>
+                                  <span className="block text-[11px] text-slate-400 leading-none font-sans">Metric Sizing</span>
                                   <span className="text-xs font-bold text-slate-800">~{Math.round(lay.size / 10.764)} SQM</span>
                                 </div>
                               </div>
@@ -1126,7 +1062,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                               <div className="p-3 bg-slate-50/60 rounded-xl border border-slate-100/50 flex items-center gap-2.5 font-semibold">
                                 <Bed className="h-4.5 w-4.5 text-rose-500/80 shrink-0" />
                                 <div>
-                                  <span className="block text-[9px] uppercase text-slate-400 leading-none">Bedrooms</span>
+                                  <span className="block text-[11px] text-slate-400 leading-none">Bedrooms</span>
                                   <span className="text-xs font-bold text-slate-800">{lay.beds} Bedrooms</span>
                                 </div>
                               </div>
@@ -1134,7 +1070,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                               <div className="p-3 bg-slate-50/60 rounded-xl border border-slate-100/50 flex items-center gap-2.5 font-semibold">
                                 <Bath className="h-4.5 w-4.5 text-rose-500/80 shrink-0" />
                                 <div>
-                                  <span className="block text-[9px] uppercase text-slate-400 leading-none font-sans">Bathrooms</span>
+                                  <span className="block text-[11px] text-slate-400 leading-none font-sans">Bathrooms</span>
                                   <span className="text-xs font-bold text-slate-800">{lay.baths} Bathrooms</span>
                                 </div>
                               </div>
@@ -1142,7 +1078,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                               <div className="p-3 bg-slate-50/60 rounded-xl border border-slate-100/50 flex items-center gap-2.5 font-semibold col-span-2">
                                 <Car className="h-4.5 w-4.5 text-emerald-500/80 shrink-0" />
                                 <div>
-                                  <span className="block text-[9px] uppercase text-slate-400 leading-none">Allocated Car Parks</span>
+                                  <span className="block text-[11px] text-slate-400 leading-none">Allocated Car Parks</span>
                                   <span className="text-xs font-bold text-slate-800">{lay.carParks} {lay.carParks > 1 ? 'Automated Bays' : 'Dedicated Bay'}</span>
                                 </div>
                               </div>
@@ -1160,7 +1096,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               ) : (
                 <div className="p-6 bg-slate-50/70 rounded-2xl text-center border border-slate-100 select-none">
                   <Layers className="h-8 w-8 text-slate-300 mx-auto mb-1.5" />
-                  <h4 className="text-xs font-extrabold text-slate-700 uppercase tracking-widest">Layout Blueprints Pending</h4>
+                  <h4 className="text-xs font-semibold text-slate-700">Layout Blueprints Pending</h4>
                   <p className="text-[10px] text-slate-400 italic font-semibold mt-0.5">Authorized drawings are synced instantly once passed by surveyors.</p>
                 </div>
               )}
@@ -1170,7 +1106,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-6">
               <div className="flex items-center gap-2 pb-3 border-b border-slate-50">
                 <Sparkles className="h-5 w-5 text-rose-500 shrink-0" />
-                <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
+                <h3 className="display text-2xl text-slate-900">
                   {t('visualGallery')}
                 </h3>
               </div>
@@ -1214,7 +1150,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   return (
                     <div className="p-6 bg-slate-50/75 rounded-2xl text-center border border-slate-100 select-none">
                       <Sparkles className="h-8 w-8 text-slate-300 mx-auto mb-1.5" />
-                      <h4 className="text-xs font-bold text-slate-700 uppercase tracking-widest">Gallery Portfolio Synchronizing</h4>
+                      <h4 className="text-xs font-bold text-slate-700">Gallery Portfolio Synchronizing</h4>
                       <p className="text-[10px] text-slate-400 italic mt-0.5">Additional high-resolution slides are added in real-time updates.</p>
                     </div>
                   );
@@ -1227,7 +1163,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-5">
               <div className="flex items-center gap-2 pb-3 border-b border-slate-55">
                 <CheckCircle className="h-5 w-5 text-rose-500 shrink-0" />
-                <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
+                <h3 className="display text-2xl text-slate-900">
                   {t('amenities')}
                 </h3>
               </div>
@@ -1250,39 +1186,12 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             </div>
             ) : null}
 
-            {/* 7b. Nearby places from the developer sales kit. */}
-            {realFacts?.nearby?.length ? (
-            <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-5">
-              <div className="flex items-center gap-2 pb-3 border-b border-slate-55">
-                <MapPin className="h-5 w-5 text-rose-500 shrink-0" />
-                <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
-                  {language.startsWith('zh') ? '交通与周边' : 'Nearby and connectivity'}
-                </h3>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {Object.entries(realFacts.nearby.reduce((acc, n) => {
-                  (acc[n.category] ||= []).push(n);
-                  return acc;
-                }, {} as Record<string, typeof realFacts.nearby>)).map(([cat, items]) => (
-                  <div key={cat} className="rounded-2xl border border-slate-100 bg-slate-50/50 p-4">
-                    <div className="text-[9px] font-black uppercase tracking-wider text-slate-400 mb-2">{cat}</div>
-                    <ul className="space-y-1 text-[11px] font-semibold text-slate-600">
-                      {items.map((n, i) => (
-                        <li key={i}>{n.name}{n.distance ? <span className="text-slate-400 font-medium"> · {n.distance}</span> : null}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-            ) : null}
-
             {/* Guides and reviews that cover this project (articles declare relatedProjectIds) */}
             {BLOG_DATA.some(b => (b.relatedProjectIds || []).includes(project.id)) && (
               <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-4">
                 <div className="flex items-center gap-2 pb-3 border-b border-slate-100">
                   <span className="text-lg">📝</span>
-                  <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider font-sans">
+                  <h3 className="display text-2xl text-slate-900">
                     {language.startsWith('zh') ? '这个楼盘的评测与指南' : 'Reviews & guides about this project'}
                   </h3>
                 </div>
@@ -1303,11 +1212,11 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <div className="flex items-center gap-2">
                     <span className="text-lg">🏢</span>
-                    <h3 className="text-xs font-black text-slate-900 uppercase tracking-widest font-sans">
-                      Our Elite Property Portfolio
+                    <h3 className="display text-xl text-slate-900">
+                      More projects
                     </h3>
                   </div>
-                  <span className="text-[9px] bg-orange-50 text-orange-600 font-black px-2 py-0.5 rounded-full uppercase tracking-wider animate-pulse flex items-center gap-1">
+                  <span className="text-[11px] bg-orange-50 text-orange-600 font-semibold px-2 py-0.5 rounded-full animate-pulse flex items-center gap-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-ping" />
                     <span>Live Showcase</span>
                   </span>
@@ -1332,7 +1241,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             <div id="enquiry-form-card" className="bg-white rounded-3xl border border-slate-100 p-6 sm:p-8 shadow-xl shadow-slate-100/50 scroll-mt-28">
               <div className="flex items-center gap-2 mb-4">
                 <Flame className="h-5 w-5 text-orange-500 animate-pulse animate-duration-1000" />
-                <h3 className="text-md font-black text-slate-900 uppercase tracking-wide font-sans">
+                <h3 className="display text-2xl text-slate-900">
                   {language.startsWith('zh') ? '直接向置业专家咨询' : language === 'ja' ? '専門エージェントに直接相談' : 'Enquire Direct'}
                 </h3>
               </div>
@@ -1360,7 +1269,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   </p>
 
                   <div>
-                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                    <label className="block text-[10px] font-bold text-slate-500 mb-1">
                       {language.startsWith('zh') ? '您的全名' : language === 'ja' ? 'お名前 (フルネーム/必須)' : 'Your Full Name'}
                     </label>
                     <input
@@ -1374,7 +1283,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   </div>
 
                   <div>
-                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                    <label className="block text-[10px] font-bold text-slate-500 mb-1">
                       {language.startsWith('zh') ? '电子邮箱 (选填)' : language === 'ja' ? 'メールアドレス (任意)' : 'Your Email'}
                     </label>
                     <input
@@ -1387,7 +1296,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   </div>
 
                   <div>
-                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">
+                    <label className="block text-[10px] font-bold text-slate-500 mb-1">
                       {language.startsWith('zh') ? 'WhatsApp/中国手机号码' : language === 'ja' ? '携帯電話番号/WhatsApp (必須)' : 'WhatsApp Mobile Phone'}
                     </label>
                     <input
@@ -1440,7 +1349,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             <div className="bg-white rounded-3xl border border-slate-100 p-6 sm:p-8 shadow-sm">
               <div className="flex items-center gap-2 mb-5">
                 <Calculator className="h-5 w-5 text-orange-500 shrink-0" />
-                <h3 className="text-md font-black text-slate-900 uppercase tracking-wide">
+                <h3 className="display text-2xl text-slate-900">
                   Loan Calculator
                 </h3>
               </div>
@@ -1557,8 +1466,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   
                   {/* Output 1: Monthly Instalment */}
                   <div className="p-3.5 bg-slate-50 rounded-2xl border border-slate-100 flex flex-col items-center text-center justify-center space-y-0.5">
-                    <span className="text-[10px] font-black uppercase text-slate-400 tracking-wide">Monthly Instalment</span>
-                    <span className="text-xl sm:text-2xl font-black ig-text">
+                    <span className="text-[10px] font-semibold text-slate-400">Monthly Instalment</span>
+                    <span className="text-xl sm:text-2xl font-bold text-[#dc2743]">
                       {loanResults.dispInstallment} / mo
                     </span>
                   </div>
@@ -1566,13 +1475,13 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   <div className="grid grid-cols-2 gap-3 text-left font-semibold text-slate-700">
                     {/* Output 2: Total Interest */}
                     <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
-                      <span className="block text-[8px] font-bold uppercase text-slate-400 leading-none mb-1">Total Interest</span>
+                      <span className="block text-[11px] font-bold text-slate-400 leading-none mb-1">Total Interest</span>
                       <span className="text-xs font-black text-slate-800 break-all">{loanResults.dispTotalInterest}</span>
                     </div>
 
                     {/* Output 3: Total Repayment */}
                     <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
-                      <span className="block text-[8px] font-bold uppercase text-slate-400 leading-none mb-1">Total Repayment</span>
+                      <span className="block text-[11px] font-bold text-slate-400 leading-none mb-1">Total Repayment</span>
                       <span className="text-xs font-black text-slate-800 break-all">{loanResults.dispTotalRepayment}</span>
                     </div>
                   </div>
@@ -1672,7 +1581,7 @@ export function ProjectListSlider({
                 )}
               </div>
               <div className="flex-grow min-w-0">
-                <span className="block text-[8px] font-black uppercase text-slate-400 tracking-wider truncate mb-0.5 leading-none">{p.developer}</span>
+                <span className="block text-[11px] font-semibold text-slate-400 truncate mb-0.5 leading-none">{p.developer}</span>
                 <h4 className="text-xs font-black text-[#1c1917] group-hover/item:text-orange-600 transition-colors truncate">
                   {p.name}
                 </h4>
@@ -1681,13 +1590,13 @@ export function ProjectListSlider({
                   <span className="truncate">{p.location}</span>
                 </p>
                 <div className="text-[11px] font-black text-slate-900 mt-1.5 flex items-baseline gap-0.5">
-                  <span className="text-[8px] text-orange-500 font-extrabold leading-none uppercase">RM</span>
+                  <span className="text-[11px] text-orange-500 font-semibold leading-none">RM</span>
                   <span>{new Intl.NumberFormat("en-MY").format(p.startingPrice)}</span>
                 </div>
               </div>
 
               {isCurrent && (
-                <div className="absolute top-2.5 right-2.5 bg-orange-500 text-white font-extrabold text-[7px] uppercase tracking-wider px-1.5 py-0.5 rounded-full leading-none zoom-in font-sans">
+                <div className="absolute top-2.5 right-2.5 bg-orange-500 text-white font-semibold text-[10px] px-1.5 py-0.5 rounded-full leading-none zoom-in font-sans">
                   Active
                 </div>
               )}

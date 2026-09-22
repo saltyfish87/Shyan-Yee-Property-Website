@@ -26,6 +26,8 @@ const PROJECTS = path.join(ROOT, 'src', 'projectsFallback.json');
 
 export interface ProjectFacts {
   source: string;
+  /** The developer's own write-up, as published in the database. */
+  description?: { en?: string; zh?: string };
   keyFeatures: string[];
   facilities: string[];
   nearby: { category: string; name: string; distance?: string }[];
@@ -46,7 +48,7 @@ function norm(s: string): string {
 /** Pairs the stripped-name rule cannot make, checked by hand against the database. */
 const MANUAL_ALIASES: Record<string, string> = {
   'bangsar-hill-park-tower-b-and-c': 'Bangsar Hill Park (Phase 2 - TALISA)',
-  'bangsar-hill-park-verdura-tower': 'Bangsar Hill Park (Phase 1 - VERDURA)',
+  'bangsar-hill-park-verdura-tower-d-and-e': 'Bangsar Hill Park (Phase 1 - VERDURA)',
   'vox': 'Vox Residence @ Sentul',
   'zenia-damansara': 'Zenia @ ParkCity Damansara',
   'aurum-business': 'Aurum Suites'
@@ -81,6 +83,16 @@ const splitList = (s: string): string[] => (s || '').split(/\s*\|\s*|\n+/).map(x
  */
 const INTERNAL_NOTE = /(COMPLIANCE|DO NOT|NOT ALLOWED|not allowed|penalt|offence|offense|rebate|cashback|nett\s*price|\bGRR\b|zero\s*downpayment|early\s*bird|below\s*market|discount|approval\s*prior|prior\s*approval|commission|marketing\s*material|advertis|social\s*media)/i;
 
+/** The write-up as the database holds it, with any agent-only note cut off the end. */
+function parseDescription(v: any): string {
+  const t = String(v || '')
+    .replace(/\[COMPLIANCE:[\s\S]*$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!t || t.length < 40 || INTERNAL_NOTE.test(t)) return '';
+  return t;
+}
+
 function parseKeyFeatures(v: any): string[] {
   return splitList(String(v || '').replace(/\s*;\s*/g, '|'))
     .map(x => x.replace(/\[COMPLIANCE:[\s\S]*$/i, '').replace(/[[\]]/g, '').replace(/\.$/, '').trim())
@@ -91,40 +103,100 @@ function parseKeyFeatures(v: any): string[] {
 /** "Podium: Infinity Pool, Pool Deck | Level 8: Gym" or "Gym | Pool" -> a flat list of facility names. */
 function parseFacilities(s: string): string[] {
   const out: string[] = [];
-  for (const chunk of splitList(s)) {
+  // Some rows carry a Python-style list ("facilities: ['Guard house', 'Bike Lane']"); unwrap it
+  // before splitting, or every quote ends up inside a facility name.
+  const listy = s.match(/^\s*(?:[a-z_ ]+:\s*)?\[(.+)\]\s*$/is)
+    || s.match(/(?:^|\|)\s*[a-z_ ]*facilities\s*:\s*\[(.+?)\]/is);
+  const source = listy
+    ? listy[1].split(/'\s*,\s*'|"\s*,\s*"/).map(x => x.replace(/^[\s'"]+|[\s'"]+$/g, '')).join(' | ')
+    : s;
+  for (const chunk of splitList(source)) {
     const m = chunk.match(/^([^:]{2,40}):\s*(.+)$/);
     for (const it of (m ? m[2].split(/\s*,\s*/) : [chunk])) {
-      const t = it.trim().replace(/\.$/, '').replace(/\s*\(space only\)$/i, '');
+      // Rows written as "facilities: ['Guard house', 'Bike Lane']" leave quotes and brackets
+      // glued to the first and last item; strip them off every item rather than the whole string.
+      const t = it.trim()
+        .replace(/^[a-z_ ]*(?:facilities|items|list|amenities)\s*:\s*/i, '')
+        .replace(/^[\s'"\[]+|[\s'"\]]+$/g, '')
+        .replace(/\.$/, '')
+        .replace(/\s*\(space only\)$/i, '');
       if (t && t.length <= 60 && !INTERNAL_NOTE.test(t) && !out.some(o => o.toLowerCase() === t.toLowerCase())) out.push(t);
     }
   }
   return out.slice(0, 40);
 }
 
-/** Two shapes appear: "Category - Name (1.3km)" per pipe, or "category: X, items: ['a','b']". */
+/**
+ * Four shapes appear in the amenities column, so each is read on its own terms:
+ *   "Highways: A, B(1.5km) | Education: C(3.9km)"          category followed by a comma list
+ *   "category: Malls, places: [{'name': 'A', 'distance_km': 0.05}, ...]"   the pipeline's dict form
+ *   "Shopping Mall - Starhill Gallery | Landmark - KL Tower (2.4km)"       one place per pipe
+ *   "LRT Awan Besar station (900m walk) | Pavilion Bukit Jalil"            plain names
+ * Anything with no category of its own is filed under "Nearby".
+ */
 function parseNearby(s: string): ProjectFacts['nearby'] {
+  const raw = String(s || '').trim();
+  if (!raw) return [];
   const out: ProjectFacts['nearby'] = [];
-  const withDistance = (category: string, name: string) => {
-    const m = name.match(/^(.*?)\s*\(([^)]*(?:km|m|min|minute|walk)[^)]*)\)\s*$/i);
-    return m ? { category, name: m[1].trim(), distance: m[2].trim() } : { category, name };
+  const push = (category: string, name: string, distance?: string) => {
+    const n = name.replace(/^[\s'"\[{]+|[\s'"\]}]+$/g, '').replace(/\.$/, '').trim();
+    if (!n || n.length > 70 || INTERNAL_NOTE.test(n)) return;
+    if (out.some(o => o.name.toLowerCase() === n.toLowerCase() && o.category === category)) return;
+    out.push(distance ? { category, name: n, distance } : { category, name: n });
   };
-  for (const chunk of splitList(s)) {
-    const listForm = chunk.match(/^category:\s*([^,]+),\s*(?:amenities|items|places|list):\s*\[(.*)\]$/i);
-    if (listForm) {
-      const cat = listForm[1].trim();
-      for (const raw of listForm[2].split(/'\s*,\s*'|"\s*,\s*"|\}\s*,\s*\{/)) {
-        const nameMatch = raw.match(/'name'\s*:\s*'([^']+)'/) || raw.match(/"name"\s*:\s*"([^"]+)"/);
-        const distMatch = raw.match(/'distance_km'\s*:\s*([\d.]+)/) || raw.match(/"distance_km"\s*:\s*([\d.]+)/);
-        const name = nameMatch ? nameMatch[1] : raw.replace(/^[['"{\s]+|[\]'"}\s]+$/g, '');
-        if (!name || name.length > 70) continue;
-        out.push(distMatch ? { category: cat, name, distance: `${distMatch[1]} km` } : withDistance(cat, name));
-      }
-      continue;
+  /** "Pavilion Bukit Jalil(3.5km)" and "station (900m walk)" both carry the distance in brackets. */
+  const split = (category: string, text: string) => {
+    for (const part of splitOutsideBrackets(text)) {
+      const m = part.match(/^(.*?)\s*\(([^()]*(?:km|m|min|walk)[^()]*)\)\s*$/i);
+      if (m) push(category, m[1], m[2].trim()); else push(category, part);
     }
-    const dash = chunk.match(/^([^-]{2,40})\s+-\s+(.+)$/);
-    out.push(dash ? withDistance(dash[1].trim(), dash[2].trim()) : withDistance('Nearby', chunk));
+  };
+
+  // The dict form: split on the "category:" keys, then read each {name, distance_km} object.
+  if (/places\s*:\s*\[/i.test(raw) || /\bcategory\s*:/i.test(raw)) {
+    for (const group of raw.split(/\|(?=\s*category\s*:)/i)) {
+      const head = group.match(/category\s*:\s*([^,]+),/i);
+      const cat = head ? head[1].trim() : 'Nearby';
+      const body = group.slice(group.indexOf('[') + 1);
+      const objects = body.match(/\{[^}]*\}/g);
+      if (objects) {
+        for (const o of objects) {
+          const name = (o.match(/['"]name['"]\s*:\s*['"]([^'"]+)['"]/) || [])[1];
+          const km = (o.match(/['"]distance_km['"]\s*:\s*([\d.]+)/) || [])[1];
+          if (name) push(cat, name, km ? `${km} km` : undefined);
+        }
+      } else {
+        split(cat, body.replace(/\]\s*$/, ''));
+      }
+    }
+    return out.slice(0, 40);
   }
-  return out.filter(x => x.name && !INTERNAL_NOTE.test(x.name)).slice(0, 30);
+
+  for (const chunk of splitList(raw)) {
+    // "Highways: A, B" — a category with its own comma list.
+    const colon = chunk.match(/^([A-Za-z][A-Za-z&/ ]{2,28}):\s*(.+)$/);
+    if (colon && /,/.test(colon[2])) { split(colon[1].trim(), colon[2]); continue; }
+    // "Shopping Mall - Starhill Gallery" — one place, category in front.
+    const dash = chunk.match(/^([A-Za-z][A-Za-z&/ ]{2,28})\s+-\s+(.+)$/);
+    if (dash) { split(dash[1].trim(), dash[2]); continue; }
+    if (colon) { split(colon[1].trim(), colon[2]); continue; }
+    split('Nearby', chunk);
+  }
+  return out.slice(0, 40);
+}
+
+/** Split on commas that are not inside brackets, so "SJK(C) Lai Meng(3.8km)" stays whole. */
+function splitOutsideBrackets(text: string): string[] {
+  const parts: string[] = [];
+  let depth = 0, cur = '';
+  for (const ch of text) {
+    if (ch === '(' || ch === '[') depth++;
+    else if (ch === ')' || ch === ']') depth = Math.max(0, depth - 1);
+    if (ch === ',' && depth === 0) { parts.push(cur); cur = ''; continue; }
+    cur += ch;
+  }
+  if (cur.trim()) parts.push(cur);
+  return parts.map(x => x.trim()).filter(Boolean);
 }
 
 /** Minimal CSV reader: the sheet has quoted fields with commas and newlines inside them. */
@@ -155,6 +227,8 @@ const moduleText = (out: Record<string, ProjectFacts>) => `// GENERATED by scrip
 
 export interface ProjectFacts {
   source: string;
+  /** The developer's own write-up, as published in the database. */
+  description?: { en?: string; zh?: string };
   keyFeatures: string[];
   facilities: string[];
   nearby: { category: string; name: string; distance?: string }[];
@@ -223,6 +297,11 @@ async function main() {
     const stamp = clean(row.updated_at || row.processing_date).slice(0, 10);
     const facts: ProjectFacts = {
       source: `Developer sales kit${stamp ? ` (${stamp})` : ''}`,
+      description: (() => {
+        const en = parseDescription(row.description_en || row.project_description);
+        const zh = parseDescription(row.description_zh);
+        return en || zh ? { ...(en ? { en } : {}), ...(zh ? { zh } : {}) } : undefined;
+      })(),
       keyFeatures: parseKeyFeatures(row.key_features),
       facilities: parseFacilities(row.facilities || ''),
       nearby: parseNearby(row.amenities || '')
@@ -237,8 +316,9 @@ async function main() {
       if (!facts.keyFeatures.length) facts.keyFeatures = old.keyFeatures || [];
       if (!facts.facilities.length) facts.facilities = old.facilities || [];
       if (!facts.nearby.length) facts.nearby = old.nearby || [];
+      if (!facts.description) facts.description = old.description;
     }
-    if (facts.keyFeatures.length || facts.facilities.length || facts.nearby.length) out[p.id] = facts;
+    if (facts.keyFeatures.length || facts.facilities.length || facts.nearby.length || facts.description) out[p.id] = facts;
     else missing.push(`${p.name} (row present but empty)`);
   }
 

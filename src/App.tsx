@@ -29,7 +29,6 @@ import { InteractiveMap } from './components/InteractiveMap';
 import { BlogView } from './components/BlogView';
 import { AgentCard } from './components/AgentCard';
 import { ProjectDetail } from './components/ProjectDetail';
-import { ProjectSlideshow } from './components/ProjectSlideshow';
 import { AiseoDirectory } from './components/AiseoDirectory';
 import { useSEO } from './utils/useSEO';
 import { Breadcrumbs } from './components/Breadcrumbs';
@@ -54,7 +53,8 @@ import {
   BedDouble,
   Bath,
   Maximize,
-  Calendar
+  Calendar,
+  ChevronDown
 } from 'lucide-react';
 
 // Custom hook to periodically poll designated Google Drive proxy endpoint to fetch and update project image URLs in the state
@@ -890,14 +890,13 @@ function ClientPortalsOrchestrator() {
                 />
 
                 {/* Featured Projects Section (display 6 featured projects: queenswoodz, pavilion-square-residences, parkside, amika, vividz, quaver) */}
-                <section className="py-16 bg-white border-t border-slate-100">
+                <section className="py-28 bg-white border-t border-slate-100">
                   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-12">
-                      <span className="block text-xs font-black uppercase tracking-widest ig-text mb-2 animate-pulse">{t('handpickedListings')}</span>
-                      <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    <div className="max-w-2xl mb-12">
+                      <h2 className="display text-4xl sm:text-5xl text-slate-900">
                         {t('featuredProjects')}
                       </h2>
-                      <p className="text-slate-500 text-sm mt-3 font-semibold">
+                      <p className="text-slate-500 text-base mt-5 leading-relaxed">
                         {t('featuredProjectsDesc')}
                       </p>
                     </div>
@@ -910,7 +909,7 @@ function ClientPortalsOrchestrator() {
                         const remaining = projects.filter(p => !featuredIds.includes(p.id));
                         return [...matched, ...remaining].slice(0, 6);
                       })().map((proj) => {
-                          const { label: priceLabel } = convertPrice(proj.startingPrice);
+                          const { formatted: priceLabel } = convertPrice(proj.startingPrice);
                           return (
                             <div 
                               key={proj.id}
@@ -929,11 +928,11 @@ function ClientPortalsOrchestrator() {
                                 ) : (
                                   <div className="w-full h-full bg-slate-100 flex flex-col items-center justify-center p-6 text-center select-none">
                                     <Building className="h-10 w-10 text-slate-300 mb-1" />
-                                    <p className="text-[10px] font-black uppercase text-slate-400 tracking-wider">Media Pending Verification</p>
+                                    <p className="text-[10px] font-semibold text-slate-400">Media Pending Verification</p>
                                     <p className="text-[9px] text-slate-300 italic mt-0.5">Folder pending setup in Drive</p>
                                   </div>
                                 )}
-                                <div className="absolute top-4 right-4 bg-stone-900/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider text-white">
+                                <div className="absolute top-4 right-4 bg-stone-900/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-semibold text-white">
                                   {translateTenure(proj.tenure, language)}
                                 </div>
                                 <div className="absolute bottom-4 left-4 ig-gradient text-white text-[10px] font-black px-3 py-1 rounded-full shadow-md">
@@ -944,11 +943,11 @@ function ClientPortalsOrchestrator() {
                               {/* Card details */}
                               <div className="p-6 flex-grow flex flex-col justify-between">
                                 <div>
-                                  <span className="block text-[9px] font-black uppercase tracking-widest text-slate-400 mb-1 leading-none">{translateDeveloper(proj.developer, language)}</span>
-                                  <h3 className="text-lg font-black text-slate-900 tracking-tight mb-2 group-hover:text-orange-600 transition-colors">
+                                  <span className="block text-[12px] text-slate-400 mb-1.5 leading-none">{translateDeveloper(proj.developer, language)}</span>
+                                  <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">
                                     {proj.name}
                                   </h3>
-                                  <p className="text-xs text-slate-500 font-semibold flex items-center gap-1">
+                                  <p className="text-[13px] text-slate-500 flex items-center gap-1.5">
                                     <span className="inline-block w-1.5 h-1.5 rounded-full bg-orange-500" />
                                     {translateLocation(proj.location, language)}
                                   </p>
@@ -958,8 +957,8 @@ function ClientPortalsOrchestrator() {
                                     <div className="flex items-center gap-2">
                                       <BedDouble className="h-4 w-4 text-slate-400 shrink-0" />
                                       <div>
-                                        <span className="block text-[8px] font-bold text-slate-400 uppercase leading-none">{t('rooms') || 'Rooms'}</span>
-                                        <span className="text-xs font-semibold text-slate-700">
+                                        <span className="block text-[11px] text-slate-400 leading-none">{t('rooms') || 'Rooms'}</span>
+                                        <span className="text-[13px] font-medium text-slate-700">
                                           {proj.bedroomsMin} - {proj.bedroomsMax} {language.startsWith('zh') ? '房' : language === 'ja' ? '寝室' : 'Beds'}
                                         </span>
                                       </div>
@@ -968,8 +967,8 @@ function ClientPortalsOrchestrator() {
                                     <div className="flex items-center gap-2">
                                       <Bath className="h-4 w-4 text-slate-400 shrink-0" />
                                       <div>
-                                        <span className="block text-[8px] font-bold text-slate-400 uppercase leading-none">{language.startsWith('zh') ? '卫浴' : language === 'ja' ? '浴室' : 'Baths'}</span>
-                                        <span className="text-xs font-semibold text-slate-700">
+                                        <span className="block text-[11px] text-slate-400 leading-none">{language.startsWith('zh') ? '卫浴' : language === 'ja' ? '浴室' : 'Baths'}</span>
+                                        <span className="text-[13px] font-medium text-slate-700">
                                           {getBathsRange(proj)} {language.startsWith('zh') ? '卫' : language === 'ja' ? '浴室' : 'Baths'}
                                         </span>
                                       </div>
@@ -978,8 +977,8 @@ function ClientPortalsOrchestrator() {
                                     <div className="flex items-center gap-2">
                                       <Maximize className="h-4 w-4 text-slate-400 shrink-0" />
                                       <div>
-                                        <span className="block text-[8px] font-bold text-slate-400 uppercase leading-none">{t('size') || 'Size'}</span>
-                                        <span className="text-xs font-semibold text-slate-700 truncate block max-w-[100px]">
+                                        <span className="block text-[11px] text-slate-400 leading-none">{t('size') || 'Size'}</span>
+                                        <span className="text-[13px] font-medium text-slate-700 truncate block max-w-[110px]">
                                           {proj.builtUpMin} - {proj.builtUpMax} {language.startsWith('zh') ? '平方尺' : language === 'ja' ? 'sqft' : 'sqft'}
                                         </span>
                                       </div>
@@ -988,8 +987,8 @@ function ClientPortalsOrchestrator() {
                                     <div className="flex items-center gap-2">
                                       <Calendar className="h-4 w-4 text-slate-400 shrink-0" />
                                       <div>
-                                        <span className="block text-[8px] font-bold text-slate-400 uppercase leading-none">{t('completion') || 'Completion'}</span>
-                                        <span className="text-xs font-semibold text-slate-700">
+                                        <span className="block text-[11px] text-slate-400 leading-none">{t('completion') || 'Completion'}</span>
+                                        <span className="text-[13px] font-medium text-slate-700">
                                           {proj.completionYear !== "N/A" ? proj.completionYear : (language.startsWith('zh') ? "全新推介" : "Launching")}
                                         </span>
                                       </div>
@@ -999,8 +998,8 @@ function ClientPortalsOrchestrator() {
 
                                 <div className="pt-4 mt-4 border-t border-slate-50 flex items-center justify-between">
                                   <div>
-                                    <span className="block text-[9px] font-black text-slate-400 uppercase tracking-widest leading-none">{t('priceStartingFrom')}</span>
-                                    <span className="text-base font-black text-slate-900">{priceLabel}</span>
+                                    <span className="block text-[12px] text-slate-400 leading-none mb-1">{t('priceStartingFrom')}</span>
+                                    <span className="text-base font-semibold text-slate-900">{priceLabel}</span>
                                   </div>
                                   <div className="w-8 h-8 rounded-full bg-slate-50 group-hover:bg-orange-50 group-hover:text-orange-500 flex items-center justify-center text-slate-700 transition-all">
                                     <ArrowRight className="h-4 w-4" />
@@ -1013,13 +1012,13 @@ function ClientPortalsOrchestrator() {
                     </div>
 
                     {/* View All Projects Button */}
-                    <div className="text-center mt-12">
+                    <div className="mt-14">
                       <button
                         onClick={() => {
                           setCurrentPage('projects');
                           window.scrollTo({ top: 0, behavior: 'smooth' });
                         }}
-                        className="px-8 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-extrabold rounded-full border border-slate-900 shadow-sm transition-all cursor-pointer text-xs uppercase tracking-wider inline-flex items-center gap-2"
+                        className="px-8 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-full border border-slate-900 shadow-sm transition-all cursor-pointer text-sm inline-flex items-center gap-2"
                       >
                         <span>{t('viewAllProjects')}</span>
                         <ArrowRight className="h-4 w-4" />
@@ -1031,17 +1030,16 @@ function ClientPortalsOrchestrator() {
                 {/* Project Journey Step by Step */}
                 <section className="py-20 bg-slate-50/50 border-t border-b border-slate-100">
                   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                      <span className="block text-xs font-black uppercase tracking-widest ig-text mb-2">{t('journeySub')}</span>
-                      <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    <div className="max-w-2xl mb-14">
+                      <h2 className="display text-4xl sm:text-5xl text-slate-900">
                         {t('journeyTitle')}
                       </h2>
-                      <p className="text-slate-500 text-sm mt-3 font-semibold">
+                      <p className="text-slate-500 text-base mt-5 leading-relaxed">
                         {t('journeyDesc')}
                       </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-x-6 gap-y-10 border-t border-slate-200 pt-10">
                       {[
                         { step: "01", title: t('journeyStep1Title'), desc: t('journeyStep1Desc') },
                         { step: "02", title: t('journeyStep2Title'), desc: t('journeyStep2Desc') },
@@ -1049,18 +1047,16 @@ function ClientPortalsOrchestrator() {
                         { step: "04", title: t('journeyStep4Title'), desc: t('journeyStep4Desc') },
                         { step: "05", title: t('journeyStep5Title'), desc: t('journeyStep5Desc') }
                       ].map((item, idx) => (
-                        <div key={idx} className="bg-white border border-slate-100 rounded-3xl p-6 shadow-xs flex flex-col justify-between h-full group hover:shadow-md transition-all duration-300">
-                          <div>
-                            <div className="w-10 h-10 rounded-2xl bg-orange-50 text-orange-600 font-extrabold text-sm flex items-center justify-center mb-6 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
-                              {item.step}
-                            </div>
-                            <h3 className="text-base font-extrabold text-slate-900 mb-2 tracking-tight group-hover:text-orange-600 transition-colors">
-                              {item.title}
-                            </h3>
-                            <p className="text-slate-500 text-xs leading-relaxed font-semibold">
-                              {item.desc}
-                            </p>
-                          </div>
+                        <div key={idx} className="group">
+                          <span className="display block text-3xl text-orange-500/80 mb-3 group-hover:text-orange-600 transition-colors">
+                            {item.step}
+                          </span>
+                          <h3 className="text-[15px] font-semibold text-slate-900 mb-2">
+                            {item.title}
+                          </h3>
+                          <p className="text-slate-500 text-[13px] leading-relaxed">
+                            {item.desc}
+                          </p>
                         </div>
                       ))}
                     </div>
@@ -1074,13 +1070,10 @@ function ClientPortalsOrchestrator() {
                   
                   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-12">
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/10 text-orange-400 text-[10px] font-black uppercase tracking-widest mb-3 border border-orange-500/20">
-                        ✨ {language.startsWith('zh') ? '智能置业推荐' : language === 'ja' ? 'AIスマート診断' : 'Smart Matcher'}
-                      </span>
-                      <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                      <h2 className="display text-4xl sm:text-5xl text-white">
                         {language.startsWith('zh') ? '寻找您在马来西亚的黄金房产' : language === 'ja' ? 'あなたに最適なマレーシア不動産を診断' : 'Find Your Perfect Malaysian Property Match'}
                       </h2>
-                      <p className="text-slate-400 text-sm mt-3 font-medium">
+                      <p className="text-slate-400 text-base mt-5 leading-relaxed">
                         {language.startsWith('zh') ? '只需回答4个简单问题，我们的智能系统便能为您筛选出最符合您预算、购房目的和区域偏好的专属项目。' : language === 'ja' ? '4つの質問に答えるだけで、予算、目的、地域に合わせた最適なプロジェクトをAIがマッチングします。' : 'Answer 4 simple questions and let our smart system curate the top luxury developments tailored specifically to your budget, purpose, and preferred location.'}
                       </p>
                     </div>
@@ -1088,7 +1081,7 @@ function ClientPortalsOrchestrator() {
                     <div className="bg-slate-800/40 border border-slate-800 rounded-3xl p-6 sm:p-8 backdrop-blur-md shadow-2xl max-w-2xl mx-auto">
                       {/* Stepper Progress Header */}
                       <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-800">
-                        <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                        <span className="text-xs font-bold text-slate-400">
                           {!smartMatchSubmitted 
                             ? (language.startsWith('zh') ? `步骤 ${smartMatchStep} / 4` : language === 'ja' ? `ステップ ${smartMatchStep} / 4` : `Step ${smartMatchStep} of 4`)
                             : (language.startsWith('zh') ? '推荐结果' : language === 'ja' ? '診断結果' : 'Your Match Results')
@@ -1223,7 +1216,7 @@ function ClientPortalsOrchestrator() {
 
                                 <div className="space-y-3 pt-2 text-left">
                                   <div>
-                                    <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1 leading-none">{language.startsWith('zh') ? '姓名' : language === 'ja' ? 'お名前' : 'Full Name'}</label>
+                                    <label className="block text-[13px] font-medium text-slate-400 mb-1.5 leading-none">{language.startsWith('zh') ? '姓名' : language === 'ja' ? 'お名前' : 'Full Name'}</label>
                                     <input 
                                       type="text" 
                                       required
@@ -1235,7 +1228,7 @@ function ClientPortalsOrchestrator() {
                                   </div>
 
                                   <div>
-                                    <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1 leading-none">{language.startsWith('zh') ? '电话号码 (连同区号)' : language === 'ja' ? '電話番号 (国番号含む)' : 'Phone Number (with Code)'}</label>
+                                    <label className="block text-[13px] font-medium text-slate-400 mb-1.5 leading-none">{language.startsWith('zh') ? '电话号码 (连同区号)' : language === 'ja' ? '電話番号 (国番号含む)' : 'Phone Number (with Code)'}</label>
                                     <input 
                                       type="tel" 
                                       required
@@ -1247,7 +1240,7 @@ function ClientPortalsOrchestrator() {
                                   </div>
 
                                   <div>
-                                    <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1 leading-none">{language.startsWith('zh') ? '电子邮箱' : language === 'ja' ? 'メールアドレス' : 'Email Address'}</label>
+                                    <label className="block text-[13px] font-medium text-slate-400 mb-1.5 leading-none">{language.startsWith('zh') ? '电子邮箱' : language === 'ja' ? 'メールアドレス' : 'Email Address'}</label>
                                     <input 
                                       type="email" 
                                       required
@@ -1279,7 +1272,7 @@ function ClientPortalsOrchestrator() {
                                 <button
                                   type="button"
                                   onClick={() => setSmartMatchStep(smartMatchStep + 1)}
-                                  className="px-6 py-2.5 bg-white text-slate-900 hover:bg-slate-100 duration-150 rounded-xl text-xs font-black cursor-pointer uppercase tracking-wider shadow-md"
+                                  className="px-6 py-2.5 bg-white text-slate-900 hover:bg-slate-100 duration-150 rounded-xl text-xs font-semibold cursor-pointer shadow-md"
                                 >
                                   {language.startsWith('zh') ? '下一步' : language === 'ja' ? '次へ' : 'Next Step'}
                                 </button>
@@ -1288,7 +1281,7 @@ function ClientPortalsOrchestrator() {
                                   type="button"
                                   onClick={handleSmartMatchSubmit}
                                   disabled={isSmartMatching || !matchName || !matchPhone || !matchEmail}
-                                  className="px-6 py-2.5 bg-orange-500 text-white hover:bg-orange-600 rounded-xl text-xs font-black cursor-pointer uppercase tracking-wider disabled:opacity-50 flex items-center gap-2 shadow-lg shadow-orange-500/20"
+                                  className="px-6 py-2.5 bg-orange-500 text-white hover:bg-orange-600 rounded-xl text-xs font-semibold cursor-pointer disabled:opacity-50 flex items-center gap-2 shadow-lg shadow-orange-500/20"
                                 >
                                   {isSmartMatching 
                                     ? (language.startsWith('zh') ? '分析中...' : language === 'ja' ? '分析中...' : 'Analyzing...') 
@@ -1319,7 +1312,7 @@ function ClientPortalsOrchestrator() {
                             <div className="space-y-3">
                               {matchedProjects.length > 0 ? (
                                 matchedProjects.map((p) => {
-                                  const { label: finalPrice } = convertPrice(p.startingPrice);
+                                  const { formatted: finalPrice } = convertPrice(p.startingPrice);
                                   return (
                                     <div 
                                       key={p.id}
@@ -1343,13 +1336,13 @@ function ClientPortalsOrchestrator() {
                                           </div>
                                         )}
                                         <div className="min-w-0">
-                                          <span className="block text-[8px] font-black uppercase text-slate-500 leading-none">{p.developer}</span>
+                                          <span className="block text-[11px] font-semibold text-slate-500 leading-none">{p.developer}</span>
                                           <span className="block font-extrabold text-white text-xs mt-1 group-hover:text-orange-400 duration-150 truncate max-w-[170px] sm:max-w-[250px]">{p.name}</span>
                                           <span className="block text-[10px] text-slate-400 font-semibold truncate max-w-[170px] sm:max-w-[250px]">{p.location}</span>
                                         </div>
                                       </div>
                                       <div className="text-right shrink-0">
-                                        <span className="block text-[8px] font-black text-slate-500 uppercase leading-none">Price From</span>
+                                        <span className="block text-[11px] font-semibold text-slate-500 leading-none">Price From</span>
                                         <span className="block text-xs font-black text-orange-400 mt-1">{finalPrice}</span>
                                       </div>
                                     </div>
@@ -1367,7 +1360,7 @@ function ClientPortalsOrchestrator() {
                                 href={`https://wa.me/60108278932?text=Hi%20Shyan%20Yee%2C%20I%20just%20completed%20the%20Smart%20Matcher%20Questionnaire%20on%20your%20portal%21%20My%20name%20is%20${encodeURIComponent(matchName)}%20and%20my%20budget%20is%20${encodeURIComponent(matchBudget)}.%20Let%27s%20connect%21`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex-1 text-center py-3 rounded-xl ig-gradient text-white text-xs font-black uppercase tracking-wider btn-hover shadow-lg shadow-orange-500/10 no-underline block"
+                                className="flex-1 text-center py-3 rounded-xl ig-gradient text-white text-xs font-semibold btn-hover shadow-lg shadow-orange-500/10 no-underline block"
                               >
                                 {language.startsWith('zh') ? '微信/WhatsApp 咨询 Shyan Yee' : 'WhatsApp Shyan Yee'}
                               </a>
@@ -1386,15 +1379,17 @@ function ClientPortalsOrchestrator() {
                   </div>
                 </section>
 
+                {/* The three guide covers used illustrations of a building that does not exist.
+                    They now borrow the cover photo of a real project, and fall back to the
+                    bundled file if that project is ever missing from the sheet. */}
                 {/* Purchaser Guides Cards: Malaysian, Foreigner, Singapore */}
-                <section className="py-20 bg-white">
+                <section className="py-28 bg-white">
                   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                      <span className="block text-xs font-black uppercase tracking-widest ig-text mb-2">{t('guidesSub')}</span>
-                      <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    <div className="max-w-2xl mb-14">
+                      <h2 className="display text-4xl sm:text-5xl text-slate-900">
                         {t('guidesTitle')}
                       </h2>
-                      <p className="text-slate-500 text-sm mt-3 font-semibold">
+                      <p className="text-slate-500 text-base mt-5 leading-relaxed">
                         {t('guidesDesc')}
                       </p>
                     </div>
@@ -1408,7 +1403,7 @@ function ClientPortalsOrchestrator() {
                         <div>
                           <div className="h-44 w-full rounded-2xl overflow-hidden mb-6 relative bg-slate-100 shadow-inner">
                             <img 
-                              src={malaysiaBuyerGuideImg} 
+                              src={projects.find(p => p.id === 'park-green-pavilion-bukit-jalil')?.images?.overview?.[1] || malaysiaBuyerGuideImg} 
                               alt="Malaysia Buyer Guide" 
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               referrerPolicy="no-referrer"
@@ -1438,7 +1433,7 @@ function ClientPortalsOrchestrator() {
                         <div>
                           <div className="h-44 w-full rounded-2xl overflow-hidden mb-6 relative bg-slate-100 shadow-inner">
                             <img 
-                              src={foreignerBuyerGuideImg} 
+                              src={projects.find(p => p.id === 'orion-residence')?.images?.overview?.[0] || foreignerBuyerGuideImg} 
                               alt="Foreigner Buyer Guide" 
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               referrerPolicy="no-referrer"
@@ -1468,7 +1463,7 @@ function ClientPortalsOrchestrator() {
                         <div>
                           <div className="h-44 w-full rounded-2xl overflow-hidden mb-6 relative bg-slate-100 shadow-inner">
                             <img 
-                              src={singaporeanBuyerGuideImg} 
+                              src={projects.find(p => p.id === 'core-residence-trx')?.images?.overview?.[0] || singaporeanBuyerGuideImg} 
                               alt="Singapore Buyer Guide" 
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               referrerPolicy="no-referrer"
@@ -1496,12 +1491,11 @@ function ClientPortalsOrchestrator() {
                 {/* FAQ Style Accordion Section (display 4 only initially, expand to 20 on See More) */}
                 <section className="py-20 bg-slate-50/50 border-t border-b border-slate-100">
                   <div className="max-w-4xl mx-auto px-4 sm:px-6">
-                    <div className="text-center mb-12">
-                      <span className="block text-xs font-black uppercase tracking-widest ig-text mb-2">Knowledge Base</span>
-                      <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
+                    <div className="mb-12">
+                      <h2 className="display text-4xl sm:text-5xl text-slate-900">
                         {t('faqTitle')}
                       </h2>
-                      <p className="text-slate-500 text-sm mt-3 font-semibold">
+                      <p className="text-slate-500 text-base mt-5 leading-relaxed">
                         {t('faqSubtitle')}
                       </p>
                     </div>
@@ -1519,9 +1513,7 @@ function ClientPortalsOrchestrator() {
                               className="w-full text-left px-6 py-4.5 flex items-center justify-between font-bold text-sm text-slate-800 hover:bg-slate-50/60 transition-colors cursor-pointer select-none"
                             >
                               <span>{faq.question}</span>
-                              <span className={`text-orange-500 font-extrabold text-[10px] duration-150 transition-transform ${isFaqOpen ? 'rotate-180' : ''}`}>
-                                ▼
-                              </span>
+                              <ChevronDown className={`h-4 w-4 shrink-0 text-orange-500 duration-200 transition-transform ${isFaqOpen ? 'rotate-180' : ''}`} />
                             </button>
                             {isFaqOpen && (
                               <div className="px-6 pb-5 pt-1.5 text-xs text-slate-500 leading-relaxed font-semibold border-t border-slate-50 bg-[#FAF9F6]/40">
@@ -1541,7 +1533,7 @@ function ClientPortalsOrchestrator() {
                             setShowAllFaqs(!showAllFaqs);
                             setOpenFaqIdxs([]);
                           }}
-                          className="px-6 py-3 bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 font-black text-xs rounded-full shadow-xs cursor-pointer transition-colors uppercase tracking-wider"
+                          className="px-6 py-3 bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-medium text-sm rounded-full cursor-pointer transition-colors"
                         >
                           {showAllFaqs ? "Show 4 FAQs Only" : `See More FAQs (${translatedFaqs.length} Total FAQs)`}
                         </button>
@@ -1553,8 +1545,6 @@ function ClientPortalsOrchestrator() {
                 {/* Meet representative card (with the three featured YouTube walkthroughs) */}
                 <AgentCard projects={projects} onProjectClick={navigateToProjectDetail} />
 
-                {/* Rotating Project Showcase Slideshow */}
-                <ProjectSlideshow projects={projects} onProjectClick={navigateToProjectDetail} />
               </div>
             )}
 
@@ -1602,10 +1592,10 @@ function ClientPortalsOrchestrator() {
             {currentPage === 'compare' && (
               <div className="animate-fade-in max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
                 <div className="mb-2">
-                  <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">
+                  <h1 className="display text-4xl sm:text-5xl text-slate-900">
                     {t('compareProjects')}
                   </h1>
-                  <p className="text-slate-500 text-sm mt-2 font-medium">
+                  <p className="text-slate-500 text-base mt-4 leading-relaxed">
                     {language.startsWith('zh') ? '横向对比分析多款马来西亚地标名盘，了解其开发商、户型面积、均价、配套车位和投资前景。' : 'Side-by-side spec comparison of landmark luxury properties across Kuala Lumpur & Penang.'}
                   </p>
                 </div>
@@ -1660,14 +1650,11 @@ function ClientPortalsOrchestrator() {
 
             {currentPage === 'faq' && (
               <div className="animate-fade-in max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="text-center max-w-3xl mx-auto mb-12">
-                  <span className="block text-xs font-black uppercase tracking-widest ig-text mb-2">
-                    {language.startsWith('zh') ? '置业指南与买家常识' : 'Advisory & Buyer Knowledge'}
-                  </span>
-                  <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                <div className="max-w-3xl mb-12">
+                  <h1 className="display text-4xl sm:text-5xl text-slate-900">
                     {language.startsWith('zh') ? '马来西亚房产常见问答' : 'Malaysia Real Estate Buyer FAQ'}
                   </h1>
-                  <p className="text-slate-500 text-sm mt-3 font-semibold">
+                  <p className="text-slate-500 text-base mt-5 leading-relaxed">
                     {language.startsWith('zh') 
                       ? '针对本地及海外买家、MM2H第二家园签证、印花税政策以及购房贷款的权威指引。' 
                       : 'Comprehensive answers regarding Malaysian property acquisition laws, foreigner thresholds, MM2H visa guidelines, and financing.'}
@@ -1694,9 +1681,7 @@ function ClientPortalsOrchestrator() {
                           className="w-full text-left px-6 py-4.5 flex items-center justify-between font-bold text-sm text-slate-800 hover:bg-slate-50/60 transition-colors cursor-pointer select-none"
                         >
                           <span className="pr-4">{faq.question}</span>
-                          <span className={`text-orange-500 font-extrabold text-xs duration-150 transition-transform ${isFaqOpen ? 'rotate-180' : ''}`}>
-                            ▼
-                          </span>
+                          <ChevronDown className={`h-4 w-4 shrink-0 text-orange-500 duration-200 transition-transform ${isFaqOpen ? 'rotate-180' : ''}`} />
                         </button>
                         {isFaqOpen && (
                           <div className="px-6 pb-5 pt-1.5 text-xs sm:text-sm text-slate-600 leading-relaxed font-normal border-t border-slate-50 bg-[#FAF9F6]/50">
@@ -1734,14 +1719,14 @@ function ClientPortalsOrchestrator() {
 
       {/* 3. STICKY BOTTOM COMPARE TRAY DRAWER (Only visible when 1 or more projects selected for side-by-side matrix) */}
       {compareList.length > 0 && (
-        <div id="sticky-compare-bar" className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-stone-900 border border-white/10 rounded-2xl sm:rounded-full bg-stone-900/95 backdrop-blur-md px-6 py-4 flex flex-col sm:flex-row items-center gap-5 shadow-2xl max-w-4xl w-[90%] select-none animate-bounce-subtle">
+        <div id="sticky-compare-bar" className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-stone-900 border border-white/10 rounded-2xl sm:rounded-full bg-stone-900/95 backdrop-blur-md px-6 py-4 flex flex-col sm:flex-row items-center gap-5 shadow-2xl max-w-4xl w-[90%] select-none">
           
           <div className="flex items-center gap-2">
             <div className="h-6 w-6 rounded-full bg-rose-500 flex items-center justify-center text-white text-[10px] font-black">
               {compareList.length}
             </div>
             <div>
-              <span className="block text-xs font-bold text-white uppercase tracking-wider leading-none">Compare Ledger</span>
+              <span className="block text-xs font-bold text-white leading-none">Compare Ledger</span>
               <span className="text-[10px] text-stone-400">Select up to 3 properties side-by-side</span>
             </div>
           </div>
@@ -1828,8 +1813,8 @@ function ClientPortalsOrchestrator() {
           {/* Logo & Agent credentials */}
           <div className="md:col-span-5 space-y-4 text-left">
             <div className="flex items-center gap-3">
-              <div className="p-2.5 ig-gradient rounded-xl text-white">
-                <Building className="h-5 w-5" />
+              <div className="w-10 h-10 ig-gradient rounded-xl text-white flex items-center justify-center">
+                <span className="display text-[17px] leading-none tracking-[-0.02em] select-none translate-y-[0.5px]">SY</span>
               </div>
               <span className="text-lg font-black tracking-tight ig-text uppercase">
                 {language.startsWith('zh') ? '马来西亚房产门户' : language === 'ja' ? 'マレーシア不動産ポータル' : 'MALAYSIA PROPERTY PORTAL'}
@@ -1838,7 +1823,7 @@ function ClientPortalsOrchestrator() {
             <p className="text-stone-400 text-xs leading-relaxed font-light">
               {t('footerPortalDesc')}
             </p>
-            <div className="text-[11px] text-stone-500 font-bold uppercase tracking-wider space-y-1">
+            <div className="text-[11px] text-stone-500 font-bold space-y-1">
               <div>{t('footerRepBroker')}</div>
               <div>{t('footerLicense')}</div>
             </div>
@@ -1846,7 +1831,7 @@ function ClientPortalsOrchestrator() {
 
           {/* Quick page directory links */}
           <div className="md:col-span-3 text-left space-y-4">
-            <h4 className="text-white text-xs font-black uppercase tracking-widest">
+            <h4 className="text-white text-xs font-semibold">
               {t('footerDirectory')}
             </h4>
             <div className="grid grid-cols-1 gap-2.5 text-xs">
@@ -1859,7 +1844,7 @@ function ClientPortalsOrchestrator() {
 
           {/* SEO articles Quick indexing links */}
           <div className="md:col-span-4 text-left space-y-4">
-            <h4 className="text-white text-xs font-black uppercase tracking-widest">
+            <h4 className="text-white text-xs font-semibold">
               {t('footerTrending')}
             </h4>
             <div className="grid grid-cols-1 gap-2 text-[11px] leading-tight">

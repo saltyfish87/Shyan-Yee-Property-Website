@@ -243,7 +243,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
 
           <article className="bg-white rounded-3xl border border-slate-100 p-6 sm:p-10 shadow-lg relative">
             {/* Meta headers */}
-            <div className="flex flex-wrap gap-4 items-center mb-6 text-slate-400 text-xs font-bold uppercase select-none">
+            <div className="flex flex-wrap gap-4 items-center mb-6 text-slate-400 text-xs font-bold select-none">
               <span className="px-3 py-1 rounded-full bg-orange-50 text-orange-600 text-[10px] border border-orange-100/50">
                 {activeFullArticle.category}
               </span>
@@ -268,7 +268,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
             </div>
 
             {/* Title */}
-            <h1 className="text-3xl sm:text-4xl font-[800] text-slate-900 tracking-tight leading-zero mb-6 text-left">
+            <h1 className="display text-4xl sm:text-5xl text-slate-900 mb-6 text-left">
               {activeFullArticle.title}
             </h1>
 
@@ -282,7 +282,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
             </div>
 
             {/* Summary Block */}
-            <div className="bg-slate-50 border-l-4 border-orange-500 rounded-r-xl p-5 mb-8 text-slate-600 italic text-sm leading-relaxed font-semibold text-left">
+            <div className="border-l border-orange-300 bg-orange-50/40 rounded-r-lg py-4 px-5 mb-8 text-slate-600 text-[15px] leading-relaxed text-left">
               &ldquo;{activeFullArticle.summary}&rdquo;
             </div>
 
@@ -298,7 +298,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
               <div className="mt-12 pt-8 border-t border-slate-100 text-left select-none">
                 <div className="flex items-center gap-2 mb-6">
                   <HelpCircle className="h-5 w-5 text-orange-500" />
-                  <h3 className="text-lg font-bold text-slate-900 uppercase tracking-wide font-sans">
+                  <h3 className="text-lg font-bold text-slate-900 font-sans">
                     {language.startsWith('zh') ? '文章深度问答与要点释疑' : language === 'ja' ? 'コラムFAQ・専門家による疑問解消' : 'Article FAQs Insights & Explanations'}
                   </h3>
                 </div>
@@ -322,7 +322,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
               <div className="flex flex-col sm:flex-row gap-5 items-start rounded-2xl border border-slate-100 bg-slate-50/60 p-5">
                 <img src="https://lh3.googleusercontent.com/d/1jrGU7WOGJOTL_ORhhYMpjZ7IgMoNavKY=w300" alt="Shyan Yee (Yee Woei Shyan), REN 46305" className="h-20 w-20 rounded-full object-cover shrink-0 border-2 border-white shadow" loading="lazy" />
                 <div className="text-left">
-                  <p className="text-[10px] font-extrabold uppercase tracking-widest text-orange-500">{language.startsWith('zh') ? '作者' : language === 'ja' ? '執筆者' : 'Written by'}</p>
+                  <p className="text-[10px] font-semibold text-orange-500">{language.startsWith('zh') ? '作者' : language === 'ja' ? '執筆者' : 'Written by'}</p>
                   <h4 className="text-base font-black text-slate-950 font-sans mt-0.5">Shyan Yee (Yee Woei Shyan)</h4>
                   <p className="text-xs font-bold text-slate-500 mt-0.5">REN 46305 · IQI Realty Sdn Bhd · Kuala Lumpur</p>
                   <p className="text-sm text-slate-600 mt-2 leading-relaxed font-medium">
@@ -412,7 +412,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                 rel="noopener noreferrer"
                 className="px-6 py-3.5 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-purple-500/10 text-xs flex items-center justify-center gap-1.5 cursor-pointer btn-hover font-sans text-center shrink-0"
               >
-                <MessageCircle className="h-4 w-4 fill-white animate-bounce" />
+                <MessageCircle className="h-4 w-4 fill-white" />
                 {language.startsWith('zh') ? '与顾问沟通 (WhatsApp)' : language === 'ja' ? 'WhatsAppで相談する' : 'Discuss on WhatsApp'}
               </a>
             </div>
@@ -427,11 +427,8 @@ export const BlogView: React.FC<BlogViewProps> = ({
     return (
       <section id="blog-archives" className="py-20 bg-slate-50/20 text-slate-900 border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="block text-xs font-black uppercase tracking-widest text-[#dc2743] mb-2 font-sans select-none">
-              RESEARCH INSIGHTS PORTAL
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-[800] text-slate-900 tracking-tight leading-none mb-4 animate-pulse">
+          <div className="max-w-2xl mb-12">
+            <h2 className="display text-4xl sm:text-5xl text-slate-900 mb-4">
               {t('blogTitle')}
             </h2>
             <div className="h-4 bg-slate-200 rounded w-5/6 mx-auto animate-pulse" />
@@ -455,14 +452,11 @@ export const BlogView: React.FC<BlogViewProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Title */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="block text-xs font-black uppercase tracking-widest text-[#dc2743] mb-2 font-sans select-none">
-            RESEARCH INSIGHTS PORTAL
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-[800] text-slate-900 tracking-tight leading-none mb-4">
+        <div className="max-w-2xl mb-12">
+          <h2 className="display text-4xl sm:text-5xl text-slate-900 mb-4">
             {t('blogTitle')}
           </h2>
-          <p className="text-slate-500 text-[15px] font-semibold">
+          <p className="text-slate-500 text-base leading-relaxed">
             {t('blogSubtitle')}
           </p>
         </div>
@@ -519,7 +513,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   {/* Category tag */}
-                  <span className="absolute top-4 left-4 bg-slate-950/85 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+                  <span className="absolute top-4 left-4 bg-slate-950/85 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded">
                     {language.startsWith('zh') ? (art.category === 'Reviews' ? '楼盘评测' : art.category === 'Financing' ? '贷款融资' : art.category === 'Guides' ? '置业指南' : art.category === 'Investment' ? '投资前瞻' : art.category === 'Market Outlook' ? '市场分析' : art.category === 'Financials' ? '资金税务' : art.category) :
                     language === 'ja' ? (art.category === 'Guides' ? '購入ガイド' : art.category === 'Investment' ? '投資アドバイス' : art.category === 'Market Outlook' ? 'マーケット洞察' : art.category === 'Financials' ? '資金・税金' : art.category) : art.category}
                   </span>
@@ -527,7 +521,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
 
                 {/* Text blocks */}
                 <div className="p-6 text-left space-y-3">
-                  <div className="flex gap-3 items-center text-[10px] font-bold text-slate-400 uppercase tracking-widest select-none">
+                  <div className="flex gap-3 items-center text-[10px] font-bold text-slate-400 select-none">
                     <span className="flex items-center gap-0.5"><Calendar className="h-3 w-3" /> {art.publishDate}</span>
                     <span className="flex items-center gap-0.5"><Clock className="h-3 w-3" /> {art.readTime}</span>
                   </div>
@@ -541,7 +535,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
               </div>
 
               {/* Card Footer arrow action */}
-              <div className="px-6 pb-6 pt-3 mt-auto border-t border-slate-50 flex items-center justify-between text-[11px] font-black text-[#dc2743] uppercase tracking-widest leading-none">
+              <div className="px-6 pb-6 pt-3 mt-auto border-t border-slate-50 flex items-center justify-between text-[11px] font-semibold text-[#dc2743] leading-none">
                 {language.startsWith('zh') ? '阅读深度长文' : language === 'ja' ? '記事を読む' : 'Read Article'}
                 <div className="p-1 rounded-full bg-slate-50 text-slate-400 group-hover:bg-[#dc2743] group-hover:text-white transition-all">
                   <ChevronRight className="h-4.5 w-4.5" />

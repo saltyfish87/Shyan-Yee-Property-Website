@@ -1147,6 +1147,194 @@
       "isEnriched": false
     }
   ],
+  "layouts_quaver-residence": [
+    {
+      "image": "https://lh3.googleusercontent.com/d/1bIdE8Dlrk53JVMqnKy-BdWAgptsdAu_9=w1000",
+      "typeName": "Type A",
+      "size": 1017,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 555000,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1j8Rvzt48F-BPuaGF421bnnVR6YtiDAdT=w1000",
+      "typeName": "Type B",
+      "size": 1184,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 2,
+      "estPrice": 646136,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1ut7Hf6Q41iU7vJehcXOZd2kY06ajP3B1=w1000",
+      "typeName": "Type A",
+      "size": 1350,
+      "beds": 4,
+      "baths": 3,
+      "carParks": 2,
+      "estPrice": 636777,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1i-ENETsS0T221BtC6a-8l1l_Ny2HVvIA=w1000",
+      "typeName": "Type B",
+      "size": 1517,
+      "beds": 4,
+      "baths": 3,
+      "carParks": 2,
+      "estPrice": 677788,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1ob_D4mVvpHsCNoyQy8cWlDa3ur7mgs7B=w1000",
+      "typeName": "Type C",
+      "size": 1683,
+      "beds": 4,
+      "baths": 3,
+      "carParks": 2,
+      "estPrice": 718553,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1D1dMjCrWTVkENVKg2HE1HbwwcESlUTNy=w1000",
+      "typeName": "Type D",
+      "size": 1850,
+      "beds": 4,
+      "baths": 3,
+      "carParks": 2,
+      "estPrice": 759564,
+      "isEnriched": false
+    }
+  ],
+  "layouts_radium-arena": [
+    {
+      "image": "https://lh3.googleusercontent.com/d/1yi0OBbKbeI0cSZRtMJwx9VTA3W7Azjxk=w1000",
+      "typeName": "Type A",
+      "size": 658,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 390000,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1ooOpzH7RHpuI0SQgEF-iS83abuxgW32K=w1000",
+      "typeName": "Type B",
+      "size": 745,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 441565,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/13FFoP0eCqfeehOkgTtX8lTJRBaZ-7E9s=w1000",
+      "typeName": "Type C",
+      "size": 833,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 436676,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1AWYEOISAcX1t8PTqdTbTuUH3IYYV-T3j=w1000",
+      "typeName": "Type D",
+      "size": 920,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 459880,
+      "isEnriched": false
+    }
+  ],
+  "layouts_riverville-residences-2": [
+    {
+      "image": "https://lh3.googleusercontent.com/d/1bXTT2R6-ZCJc1MAtkJNLzMfnFDBFzFa7=w1000",
+      "typeName": "Type A",
+      "size": 803,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 430000,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1EPjNh6ZlfnbTOi5q0CI7rZLD4cVThUKm=w1000",
+      "typeName": "Type B",
+      "size": 859,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 459988,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1IQeVSZJ0GEQTcnz3RYusRQpHTy6HGNzK=w1000",
+      "typeName": "Type C",
+      "size": 915,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 489975,
+      "isEnriched": false
+    }
+  ],
+  "layouts_tria-seputeh": [
+    {
+      "image": "https://lh3.googleusercontent.com/d/1bSZdSjeGePibv7eYo9ZQ36gqJOsOoDHB=w1000",
+      "typeName": "Type Y1",
+      "size": 764,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 736800,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1wyvb5xRmy6nUCEqRQIepLzpjXbgFs6JG=w1000",
+      "typeName": "Type Z1",
+      "size": 1717,
+      "beds": 4,
+      "baths": 3,
+      "carParks": 2,
+      "estPrice": 1150382,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1snyLuH2gDXwx2hHFqbFpvbDioZj_JICc=w1000",
+      "typeName": "Type Z2",
+      "size": 2670,
+      "beds": 5,
+      "baths": 4,
+      "carParks": 2,
+      "estPrice": 1563964,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1btLiN4lBc_o8HsDPS3HngE33lyn6q0Y8=w1000",
+      "typeName": "Type Z3",
+      "size": 3622,
+      "beds": 5,
+      "baths": 4,
+      "carParks": 2,
+      "estPrice": 1977112,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1-99gU1zp9yvDlp3UIhumbcDK8pAJn-J7=w1000",
+      "typeName": "Type Z4",
+      "size": 4575,
+      "beds": 5,
+      "baths": 4,
+      "carParks": 2,
+      "estPrice": 2390694,
+      "isEnriched": false
+    }
+  ],
   "layouts_tujuh-residences": [
     {
       "image": "https://lh3.googleusercontent.com/d/1kDIUZkpAcM3HtUikDvKQVCxFco1hdOle=w1000",
@@ -1467,7 +1655,7 @@
       "beds": 1,
       "baths": 1,
       "carParks": 1,
-      "estPrice": 893000,
+      "estPrice": 785000,
       "isEnriched": false
     },
     {
@@ -1477,7 +1665,7 @@
       "beds": 2,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 968125,
+      "estPrice": 851040,
       "isEnriched": false
     },
     {
@@ -1487,7 +1675,7 @@
       "beds": 2,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 1043251,
+      "estPrice": 917079,
       "isEnriched": false
     },
     {
@@ -1497,7 +1685,7 @@
       "beds": 2,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 994419,
+      "estPrice": 874154,
       "isEnriched": false
     },
     {
@@ -1507,7 +1695,7 @@
       "beds": 2,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 1028864,
+      "estPrice": 904432,
       "isEnriched": false
     },
     {
@@ -1517,7 +1705,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 1062670,
+      "estPrice": 934150,
       "isEnriched": false
     },
     {
@@ -1527,7 +1715,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 1096476,
+      "estPrice": 963868,
       "isEnriched": false
     },
     {
@@ -1537,7 +1725,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 1130283,
+      "estPrice": 993586,
       "isEnriched": false
     },
     {
@@ -1547,7 +1735,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 1164089,
+      "estPrice": 1023304,
       "isEnriched": false
     },
     {
@@ -1557,7 +1745,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 2,
-      "estPrice": 1197896,
+      "estPrice": 1053021,
       "isEnriched": false
     },
     {
@@ -1567,7 +1755,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 2,
-      "estPrice": 1232340,
+      "estPrice": 1083300,
       "isEnriched": false
     },
     {
@@ -1577,7 +1765,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 2,
-      "estPrice": 1266146,
+      "estPrice": 1113018,
       "isEnriched": false
     },
     {
@@ -1587,7 +1775,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 2,
-      "estPrice": 1299953,
+      "estPrice": 1142736,
       "isEnriched": false
     },
     {
@@ -1597,7 +1785,7 @@
       "beds": 3,
       "baths": 2,
       "carParks": 2,
-      "estPrice": 1333759,
+      "estPrice": 1172454,
       "isEnriched": false
     }
   ],
@@ -1779,6 +1967,58 @@
       "isEnriched": false
     }
   ],
+  "layouts_d-evia": [
+    {
+      "image": "https://lh3.googleusercontent.com/d/1Fsz9vpUih5ITYJ-gWCwq1y7Og41ZcnaC=w1000",
+      "typeName": "Type A",
+      "size": 657,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 450000,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1SyrjvBhBDMyaDluUUm4pQJhD-FF_Q5rk=w1000",
+      "typeName": "Type A",
+      "size": 768,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 526027,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/10C_MUfl3nwnBsqWzMtMNkAC3d6rmQFhM=w1000",
+      "typeName": "Type B1",
+      "size": 879,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 518425,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/19k4HCSATzeyH0tmX-RLd11dHtjDbXYVS=w1000",
+      "typeName": "Type B3",
+      "size": 989,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 552329,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1lHrmoZcfxLxJKVgzEubhNuszabuOydwL=w1000",
+      "typeName": "Type C",
+      "size": 1100,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 586541,
+      "isEnriched": false
+    }
+  ],
   "layouts_arra": [
     {
       "image": "https://lh3.googleusercontent.com/d/18EP9H7JEBdRQkV-1zqyKyuOcwdAB91X-=w1000",
@@ -1830,6 +2070,108 @@
       "baths": 3,
       "carParks": 2,
       "estPrice": 790484,
+      "isEnriched": false
+    }
+  ],
+  "layouts_parkside-residence": [
+    {
+      "image": "https://lh3.googleusercontent.com/d/1G1MxpXPHRdy5IQiZeOBDaW8L-5mt8yd-=w1000",
+      "typeName": "Type A",
+      "size": 485,
+      "beds": 1,
+      "baths": 1,
+      "carParks": 1,
+      "estPrice": 600000,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/13hNDtu3frTkSorNtx8zBGjioC0Mb6Vff=w1000",
+      "typeName": "Type A",
+      "size": 576,
+      "beds": 1,
+      "baths": 1,
+      "carParks": 1,
+      "estPrice": 712577,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1vled_-XbeAZgP8JiLdQTH0aMywrnekOx=w1000",
+      "typeName": "Type B",
+      "size": 666,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 700763,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1AIjuWi_eNX2QxyjGMaZNO6O5QaS8H7OR=w1000",
+      "typeName": "Type C1",
+      "size": 757,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 751423,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1sNjKZH_bLuwkS020tggozfVK8b37551b=w1000",
+      "typeName": "Type C2",
+      "size": 847,
+      "beds": 2,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 801526,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1FJgrbZ7U48Px25ZqDX_3C0G-iHJEoVlW=w1000",
+      "typeName": "Type D1",
+      "size": 938,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 852186,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1IiCCETWdh1Qy_ORUXnJPDxKOCGBBeIcR=w1000",
+      "typeName": "Type D2",
+      "size": 1028,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 902289,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/11N5zJbcb62C6onz1FpQlJKaJaN3DJ4yO=w1000",
+      "typeName": "Type D3",
+      "size": 1119,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 2,
+      "estPrice": 952948,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1sncMmgY_gDpF_gZHHU3mDi8gVT6i4k6i=w1000",
+      "typeName": "Type E1",
+      "size": 1209,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 2,
+      "estPrice": 1003052,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1poQruQORdzM8HblgQIpmsrlxQkx0q79t=w1000",
+      "typeName": "Type E2",
+      "size": 1300,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 2,
+      "estPrice": 1053711,
       "isEnriched": false
     }
   ],
@@ -2259,8 +2601,8 @@
   ],
   "layouts_queenswoodz": [
     {
-      "image": "https://lh3.googleusercontent.com/d/1mxcsOGVzqwQUPuTczP0oAGcRjM9L9euB=w1000",
-      "typeName": "Type A1",
+      "image": "https://lh3.googleusercontent.com/d/1cA1l-m7KWnLoT9X3dZQoFYQGI0Y3kLSN=w1000",
+      "typeName": "Type A",
       "size": 807,
       "beds": 2,
       "baths": 2,
@@ -2269,28 +2611,48 @@
       "isEnriched": false
     },
     {
-      "image": "https://lh3.googleusercontent.com/d/1wjKFcYHPh37cqH9jWlLdX1axQu2AYhWF=w1000",
-      "typeName": "Type B1",
-      "size": 1008,
+      "image": "https://lh3.googleusercontent.com/d/1o_7_mclK3TB1zbtK6EXuSr7T5XWPS-Qt=w1000",
+      "typeName": "Type B",
+      "size": 928,
       "beds": 3,
       "baths": 2,
       "carParks": 1,
-      "estPrice": 804035,
+      "estPrice": 831405,
       "isEnriched": false
     },
     {
-      "image": "https://lh3.googleusercontent.com/d/1y-mdwEsASfhaPHb-CJ_6JzFbqbkYeXAP=w1000",
+      "image": "https://lh3.googleusercontent.com/d/1fEepsxKDlEKlxVnkAaAnR2TaOwwePew7=w1000",
       "typeName": "Type C1",
-      "size": 1209,
+      "size": 1048,
+      "beds": 3,
+      "baths": 2,
+      "carParks": 1,
+      "estPrice": 820162,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1838mV1LlajAUl_y2L2Qq9vpVTQPgpHF_=w1000",
+      "typeName": "Type C2",
+      "size": 1169,
       "beds": 3,
       "baths": 2,
       "carParks": 2,
-      "estPrice": 885070,
+      "estPrice": 868944,
       "isEnriched": false
     },
     {
-      "image": "https://lh3.googleusercontent.com/d/1GoQkum76DQR-pJ9P9cBmLdB-jnpwOM9w=w1000",
-      "typeName": "Type C2",
+      "image": "https://lh3.googleusercontent.com/d/192uiFVO_oTzJ2b-Cs5l6Lu-TptQftfjM=w1000",
+      "typeName": "Type D1",
+      "size": 1289,
+      "beds": 4,
+      "baths": 3,
+      "carParks": 2,
+      "estPrice": 917323,
+      "isEnriched": false
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/d/1Qx4Gi3BunDVolt2t-8o2Jgy0zwWQ0tTL=w1000",
+      "typeName": "Type D2",
       "size": 1410,
       "beds": 4,
       "baths": 3,

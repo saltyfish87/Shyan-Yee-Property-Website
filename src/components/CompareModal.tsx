@@ -87,7 +87,7 @@ export const CompareModal: React.FC<CompareModalProps> = ({
   const getRowClass = (hasDiff: boolean) => {
     const base = "grid grid-cols-4 gap-4 py-3 text-sm transition-all duration-200";
     if (highlightDiffs && hasDiff) {
-      return `${base} bg-rose-50/70 text-slate-900 px-3 -mx-3 border-l-4 border-rose-500 rounded-r-lg font-medium`;
+      return `${base} bg-rose-50/70 text-slate-900 px-3 -mx-3 border-l border-rose-400 rounded-r-lg font-medium`;
     }
     return base;
   };
@@ -212,7 +212,7 @@ export const CompareModal: React.FC<CompareModalProps> = ({
           {/* Project Headers Block / Images */}
           <div className="grid grid-cols-4 gap-4 pb-6">
             <div className="flex flex-col justify-end">
-              <span className="block text-xs font-black uppercase text-slate-400 tracking-widest leading-none mb-1">
+              <span className="block text-xs font-semibold text-slate-400 leading-none mb-1">
                 SPEC MATRIX
               </span>
               <p className="text-xs text-slate-500 font-medium">
@@ -483,7 +483,7 @@ export const CompareModal: React.FC<CompareModalProps> = ({
           const isHighlit = highlightDiffs && spec.hasDiff;
           return (
             <div key={sIdx} className="bg-white rounded-2xl p-3 border border-slate-100 shadow-xs">
-              <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-slate-400 uppercase tracking-widest mb-2 pb-1.5 border-b border-slate-50">
+              <div className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-400 mb-2 pb-1.5 border-b border-slate-50">
                 {spec.icon}
                 <span>{spec.label}</span>
                 {spec.hasDiff && (
@@ -502,7 +502,7 @@ export const CompareModal: React.FC<CompareModalProps> = ({
                         : 'bg-slate-50/50 border-slate-100 text-slate-800'
                     }`}
                   >
-                    <div className="text-[9px] font-extrabold text-slate-400 truncate mb-0.5 uppercase">
+                    <div className="text-[11px] font-semibold text-slate-400 truncate mb-0.5">
                       {p.name}
                     </div>
                     <div className="text-[11px] font-bold text-slate-900 leading-normal break-words">

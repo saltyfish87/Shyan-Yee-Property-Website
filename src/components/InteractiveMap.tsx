@@ -170,7 +170,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({ projects, onProj
                   ? 'opacity-100 scale-100 translate-y-0 z-50' 
                   : 'opacity-0 scale-90 translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 z-50'
               }">
-                <span class="font-extrabold text-[#60a5fa] text-[9.5px] uppercase tracking-wide leading-none mb-0.5">${displayPrice || 'Price Pending'}</span>
+                <span class="font-semibold text-[#60a5fa] text-[9.5px] leading-none mb-0.5">${displayPrice || 'Price Pending'}</span>
                 <span class="leading-normal text-slate-100">${proj.name}</span>
               </div>
             </div>
@@ -287,7 +287,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({ projects, onProj
                   ? 'opacity-100 scale-100 translate-y-0 z-50' 
                   : 'opacity-0 scale-90 translate-y-2 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 z-50'
               }">
-                <span class="font-extrabold text-[#60a5fa] text-[9.5px] uppercase tracking-wide leading-none mb-0.5">${displayPrice || 'Price Pending'}</span>
+                <span class="font-semibold text-[#60a5fa] text-[9.5px] leading-none mb-0.5">${displayPrice || 'Price Pending'}</span>
                 <span class="leading-normal text-slate-100">${p.name}</span>
               </div>
             </div>
@@ -330,7 +330,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({ projects, onProj
         <div className="p-5 border-b border-slate-50 bg-slate-50/40">
           <div className="flex items-center gap-2 mb-3">
             <Navigation className="h-5 w-5 text-[#dc2743]" />
-            <h2 className="text-xl font-[800] tracking-tight text-slate-900">
+            <h2 className="display text-2xl text-slate-900">
               Interactive Explorer
             </h2>
           </div>
@@ -390,7 +390,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({ projects, onProj
                   {/* Specifications stack */}
                   <div className="flex-1 min-w-0 text-left flex flex-col justify-between">
                     <div>
-                      <h3 className="text-sm font-extrabold text-slate-900 truncate leading-tight">
+                      <h3 className="text-sm font-semibold text-slate-900 truncate leading-tight">
                         {p.name}
                       </h3>
                       <p className="text-[10px] text-slate-400 font-bold truncate">

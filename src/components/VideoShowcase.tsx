@@ -9,7 +9,7 @@ interface VideoGridProps {
   onProjectClick?: (project: Project) => void;
 }
 
-/** Three featured YouTube walkthroughs, shown inside the agent introduction. Thumbnails only until the visitor presses play. */
+/** Six featured YouTube walkthroughs, shown inside the agent introduction. The rest live on the channel. Thumbnails only until the visitor presses play. */
 export const VideoGrid: React.FC<VideoGridProps> = ({ projects = [], onProjectClick }) => {
   const { t, language } = useLanguage();
   const [playing, setPlaying] = useState<string | null>(null);
@@ -19,9 +19,8 @@ export const VideoGrid: React.FC<VideoGridProps> = ({ projects = [], onProjectCl
     <div className="pt-8 mt-8 border-t border-slate-200">
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-5">
         <div>
-          <span className="block text-xs font-black uppercase tracking-widest ig-text mb-1">{t('videoSub')}</span>
-          <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">{t('videoTitle')}</h3>
-          <p className="text-slate-500 text-sm mt-1 font-medium">{t('videoDesc')}</p>
+          <h3 className="display text-3xl sm:text-4xl text-slate-900">{t('videoTitle')}</h3>
+          <p className="text-slate-500 text-sm mt-2.5">{t('videoDesc')}</p>
         </div>
         <a
           href="https://www.youtube.com/@shyanyee"
@@ -34,7 +33,7 @@ export const VideoGrid: React.FC<VideoGridProps> = ({ projects = [], onProjectCl
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        {HOME_VIDEOS.map((v) => {
+        {HOME_VIDEOS.slice(0, 6).map((v) => {
           const title = isZh ? v.titleZh : v.title;
           const project = v.projectId ? projects.find((p) => p.id === v.projectId) : undefined;
           return (
@@ -96,6 +95,24 @@ export const VideoGrid: React.FC<VideoGridProps> = ({ projects = [], onProjectCl
           );
         })}
       </div>
+
+      {/* The channel holds more than fits here; say how many rather than paginating. */}
+      {HOME_VIDEOS.length > 6 && (
+        <div className="mt-6">
+          <a
+            href="https://www.youtube.com/@shyanyee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold text-white bg-red-600 hover:bg-red-700 rounded-full transition-colors"
+          >
+            <Youtube className="h-4 w-4" />
+            {isZh
+              ? `到 YouTube 看其余 ${HOME_VIDEOS.length - 6} 支影片`
+              : `More videos on YouTube (${HOME_VIDEOS.length - 6} more)`}
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      )}
     </div>
   );
 };

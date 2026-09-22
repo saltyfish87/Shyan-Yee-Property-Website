@@ -68,7 +68,7 @@ export const RouterRedirect: React.FC<RouterRedirectProps> = ({
           {isLegacy ? <Sparkles className="w-8 h-8" /> : <ShieldAlert className="w-8 h-8" />}
         </div>
 
-        <h1 className="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight mb-3">
+        <h1 className="display text-3xl sm:text-4xl text-stone-900 mb-3">
           {isLegacy 
             ? (isZh ? '已自动匹配最新官方指南' : 'Canonical Route Auto-Matched') 
             : (isZh ? '页面已安全重新定向' : 'Page Safely Redirected')}
@@ -93,7 +93,7 @@ export const RouterRedirect: React.FC<RouterRedirectProps> = ({
 
         {isLegacy && suggested && (
           <div className="mb-6 p-4 rounded-xl bg-orange-50/70 border border-orange-200 text-left">
-            <span className="text-[11px] font-extrabold uppercase tracking-wider text-orange-700 block mb-1">
+            <span className="text-[11px] font-semibold text-orange-700 block mb-1">
               {isZh ? '推荐目标页面' : 'Target Destination'}
             </span>
             <div className="text-sm font-bold text-stone-900 truncate">

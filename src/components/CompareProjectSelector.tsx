@@ -71,7 +71,7 @@ export const CompareProjectSelector: React.FC<CompareProjectSelectorProps> = ({
     <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-xs select-none">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
-          <h2 className="text-xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+          <h2 className="text-xl font-semibold text-slate-900 flex items-center gap-2">
             <Layers className="h-5 w-5 text-orange-500" />
             <span>
               {language.startsWith('zh') ? '快速选择楼盘进行对比' : 'Select Projects to Compare'}

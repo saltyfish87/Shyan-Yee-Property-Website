@@ -355,11 +355,8 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
         {/* Section Heading & Reset indicator if filters active */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-10">
           <div>
-            <span className="block text-xs font-black uppercase tracking-widest ig-text mb-2 animate-fade-in">
-              REAL-TIME INSPIRED
-            </span>
-            <h2 className="text-3xl lg:text-[40px] font-extrabold text-slate-900 tracking-tight leading-none">
-              {t('allProjectsLabel')} <span className="text-slate-400 font-light text-2xl sm:text-3xl ml-2">({filteredProjects.length} Listings)</span>
+            <h2 className="display text-4xl lg:text-5xl text-slate-900">
+              {t('allProjectsLabel')} <span className="text-slate-400 italic text-2xl sm:text-3xl ml-2">({filteredProjects.length})</span>
             </h2>
           </div>
 
@@ -399,14 +396,14 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
         <div className="bg-white rounded-3xl border border-slate-100 p-6 shadow-xl shadow-slate-100/35 mb-10 space-y-4">
           <div className="flex items-center gap-2 mb-2 pb-3 border-b border-slate-50">
             <SlidersHorizontal className="h-4.5 w-4.5 text-slate-500" />
-            <span className="text-xs font-black text-slate-700 uppercase tracking-widest">
+            <span className="text-xs font-semibold text-slate-700">
               Instant Advanced Filtration
             </span>
           </div>
 
           {/* Quick Interactive Checkbox Filter Pills with real-time counters */}
           <div className="pt-1 pb-3 border-b border-slate-50 flex flex-wrap items-center gap-2">
-            <span className="text-[11px] font-black uppercase text-slate-400 tracking-wider mr-1">
+            <span className="text-[11px] font-semibold text-slate-400 mr-1">
               {language.startsWith('zh') ? '热门区域筛选:' : language === 'ja' ? '人気エリア:' : 'Quick Region Filters:'}
             </span>
             {areas.map((loc) => {
@@ -442,7 +439,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
             {/* 1. Project or Location (Text Search) */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {language.startsWith('zh') ? '搜索项目/地段/地址' : language === 'ja' ? 'プロジェクト名・エリア・住所検索' : 'Search Project or Location'}
               </span>
               <input
@@ -456,7 +453,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 2. Area (Region) */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {t('area')} ({language.startsWith('zh') ? '区域' : language === 'ja' ? '地区' : 'Region'})
               </span>
               <select
@@ -473,7 +470,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 3. Price (Budget limits) */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {t('price')} ({language.startsWith('zh') ? '预算预算' : language === 'ja' ? '予算' : 'Budget'})
               </span>
               <select
@@ -491,7 +488,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 4. Room (Bedrooms) */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {t('rooms')} ({language.startsWith('zh') ? '卧室卧室' : language === 'ja' ? '寝室' : 'Bedrooms'})
               </span>
               <select
@@ -509,7 +506,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 5. Size (Built up range) */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {language.startsWith('zh') ? '面积大小 (平方尺)' : language === 'ja' ? '専有面積 (sqft)' : 'Size (sqft)'}
               </span>
               <select
@@ -526,7 +523,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 6. Type (Property Type) */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">{t('type')}</span>
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">{t('type')}</span>
               <select
                 value={selectedType}
                 onChange={(e) => setSelectedType(e.target.value)}
@@ -541,7 +538,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 7. Car Park */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {language.startsWith('zh') ? '车位配额' : language === 'ja' ? '駐車場' : 'Car Park'}
               </span>
               <select
@@ -558,7 +555,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 8. Maintenance Fee */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {language.startsWith('zh') ? '物业费 (上限)' : language === 'ja' ? '管理費 (最高)' : 'Maint. Fee (Max)'}
               </span>
               <select
@@ -575,7 +572,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 9. Tenure */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">{t('tenure')}</span>
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">{t('tenure')}</span>
               <select
                 value={selectedTenure}
                 onChange={(e) => setSelectedTenure(e.target.value)}
@@ -589,7 +586,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 10. Project Type */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {language.startsWith('zh') ? '物业类别' : language === 'ja' ? '物件種別' : 'Project Type'}
               </span>
               <select
@@ -606,7 +603,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 11. Developer */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {language.startsWith('zh') ? '品牌开发商' : language === 'ja' ? '開発デベロッパー' : 'Developer'}
               </span>
               <select
@@ -623,7 +620,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
             {/* 12. Completion Status */}
             <div>
-              <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+              <span className="block text-[11px] font-bold text-slate-500 mb-1.5">
                 {language.startsWith('zh') ? '交付状态' : language === 'ja' ? '竣工ステータス' : 'Completion Status'}
               </span>
               <select
@@ -683,7 +680,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                       ) : (
                         <div className="w-full h-full bg-slate-100 flex flex-col items-center justify-center p-6 text-center select-none">
                           <Building className="h-10 w-10 text-slate-300 mb-2" />
-                          <p className="text-[11px] font-black uppercase text-slate-400 tracking-wider">
+                          <p className="text-[11px] font-semibold text-slate-400">
                             Media Pending Verification
                           </p>
                           <p className="text-[10px] text-slate-300 italic mt-1 font-medium">
@@ -714,10 +711,10 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
 
                     {/* Status badge bottom left */}
                     <div className="absolute bottom-4 left-4 flex gap-1.5 items-center">
-                      <span className="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-950/75 backdrop-blur-md text-white border border-white/10">
+                      <span className="px-2.5 py-1 rounded-md text-[10px] font-bold bg-slate-950/75 backdrop-blur-md text-white border border-white/10">
                         {translateCompletionStatus(project.completionStatus, language)}
                       </span>
-                      <span className="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-orange-500/90 text-white">
+                      <span className="px-2.5 py-1 rounded-md text-[10px] font-bold bg-orange-500/90 text-white">
                         {translateProjectType(project.projectType, language)}
                       </span>
                     </div>
@@ -727,7 +724,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
                       {/* Dev Name */}
-                      <span className="block text-[11px] font-bold uppercase tracking-widest text-[#dc2743] mb-1.5 leading-none select-none">
+                      <span className="block text-[11px] font-bold text-[#dc2743] mb-1.5 leading-none select-none">
                         {translateDeveloper(project.developer.replace(/\(.*?\)/g, "").trim(), language) /* clean up parentheses name */}
                       </span>
                       {/* Property Name */}
@@ -744,7 +741,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                         <div className="flex items-center gap-2">
                           <Layout className="h-4.5 w-4.5 text-slate-400" />
                           <div className="text-left">
-                            <span className="block text-[9px] font-bold text-slate-400 uppercase leading-none">{t('size')}</span>
+                            <span className="block text-[11px] font-bold text-slate-400 leading-none">{t('size')}</span>
                             <span className="text-xs font-semibold text-slate-700">
                               {project.builtUpMin} - {project.builtUpMax} {language.startsWith('zh') ? '平方尺' : language === 'ja' ? '平方フィート' : 'sqft'}
                             </span>
@@ -754,7 +751,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                         <div className="flex items-center gap-2">
                           <Layers className="h-4.5 w-4.5 text-slate-400" />
                           <div className="text-left">
-                            <span className="block text-[9px] font-bold text-slate-400 uppercase leading-none">{t('rooms')}</span>
+                            <span className="block text-[11px] font-bold text-slate-400 leading-none">{t('rooms')}</span>
                             <span className="text-xs font-semibold text-slate-700">
                               {project.bedroomsMin} - {project.bedroomsMax} {language.startsWith('zh') ? '房' : language === 'ja' ? '寝室' : language === 'ko' ? '룸' : language === 'ar' ? 'غرف' : language === 'fr' ? 'Chambres' : 'Beds'}
                             </span>
@@ -764,7 +761,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                         <div className="flex items-center gap-2">
                           <Building className="h-4.5 w-4.5 text-slate-400" />
                           <div className="text-left">
-                            <span className="block text-[9px] font-bold text-slate-400 uppercase leading-none">{t('tenure')}</span>
+                            <span className="block text-[11px] font-bold text-slate-400 leading-none">{t('tenure')}</span>
                             <span className="text-xs font-semibold text-slate-700 truncate block max-w-[100px]">
                               {translateTenure(project.tenure, language)}
                             </span>
@@ -774,7 +771,7 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                         <div className="flex items-center gap-2">
                           <DollarSign className="h-4.5 w-4.5 text-slate-400" />
                           <div className="text-left">
-                            <span className="block text-[9px] font-bold text-slate-400 uppercase leading-none">{t('constructionStatus')}</span>
+                            <span className="block text-[11px] font-bold text-slate-400 leading-none">{t('constructionStatus')}</span>
                             <span className="text-xs font-semibold text-slate-700">
                               {project.completionYear !== "N/A" ? project.completionYear : (language.startsWith('zh') ? "全新推介" : language === 'ja' ? "プレローンチ" : "Launching")}
                             </span>
@@ -786,8 +783,8 @@ export const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({
                     {/* Bottom strip Price & Arrow */}
                     <div className="border-t border-slate-50 pt-4 mt-auto flex items-center justify-between">
                       <div>
-                        <span className="block text-[9px] font-bold text-slate-400 uppercase leading-none mb-1 select-none">{t('startingPrice')}</span>
-                        <span className="text-lg font-extrabold ig-text">
+                        <span className="block text-[11px] font-bold text-slate-400 leading-none mb-1 select-none">{t('startingPrice')}</span>
+                        <span className="text-lg font-bold text-[#dc2743]">
                           {displayPrice}
                         </span>
                       </div>

@@ -750,15 +750,11 @@ export default function CalculatorHub() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
         {/* Hub Header */}
-        <div className="text-center max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-orange-600 text-xs font-bold tracking-wider uppercase">
-            <Sparkles className="h-3 w-3" />
-            Empowering Smart Real Estate Decisions
-          </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-slate-900 leading-none">
+        <div className="max-w-2xl">
+          <h1 className="display text-4xl sm:text-5xl text-slate-900">
             {translateKey('calculatorHubTitle')}
           </h1>
-          <p className="text-slate-500 text-sm sm:text-base leading-relaxed font-medium">
+          <p className="text-slate-500 text-base mt-5 leading-relaxed">
             {translateKey('calculatorHubDesc')}
           </p>
         </div>
@@ -797,7 +793,7 @@ export default function CalculatorHub() {
           
           {/* LEFT COLUMN: SHARED VALUE CONTROLLER PANELS (Depends on Category for Context) */}
           <div className="lg:col-span-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-6">
-            <h2 className="text-sm font-extrabold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-3 flex items-center gap-2">
+            <h2 className="text-[15px] font-semibold text-slate-900 border-b border-slate-100 pb-3 flex items-center gap-2">
               <Layers className="h-4 w-4 text-orange-500" />
               {translateKey('propertyInputs')}
             </h2>
@@ -809,7 +805,7 @@ export default function CalculatorHub() {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center text-xs">
                     <label className="font-bold text-slate-700">{translateKey('propPriceLabel')}</label>
-                    <span className="font-black ig-text bg-orange-50 px-2.5 py-1 rounded-md">{formatPrice(propertyPrice)}</span>
+                    <span className="font-bold text-[#dc2743] bg-orange-50 px-2.5 py-1 rounded-md">{formatPrice(propertyPrice)}</span>
                   </div>
                   <input 
                     type="range" 
@@ -942,7 +938,7 @@ export default function CalculatorHub() {
 
                 {/* Commitments Panel */}
                 <div className="pt-4 border-t border-slate-100 space-y-4">
-                  <span className="text-xs font-black text-slate-400 uppercase tracking-widest block">Existing Monthly Debt commitments</span>
+                  <span className="text-xs font-semibold text-slate-400 block">Existing Monthly Debt commitments</span>
                   
                   {/* Car Loan */}
                   <div className="flex items-center justify-between gap-4">
@@ -1160,15 +1156,15 @@ export default function CalculatorHub() {
                   <div className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <div className="p-4 bg-slate-50/50 rounded-xl border border-slate-100 text-center">
-                        <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">{language.startsWith('zh') ? '净贷款额' : 'Total Loan Amount'}</span>
+                        <span className="block text-[10px] font-bold text-slate-400">{language.startsWith('zh') ? '净贷款额' : 'Total Loan Amount'}</span>
                         <span className="text-xl font-black text-slate-900 block mt-1">{formatPrice(mortgageResults.loanAmount)}</span>
                       </div>
                       <div className="p-4 bg-orange-500 text-white rounded-xl text-center shadow-md">
-                        <span className="block text-[10px] font-bold text-orange-200 uppercase tracking-widest">{language.startsWith('zh') ? '每月供款 (EMI)' : 'Monthly Installment'}</span>
+                        <span className="block text-[10px] font-bold text-orange-200">{language.startsWith('zh') ? '每月供款 (EMI)' : 'Monthly Installment'}</span>
                         <span className="text-2xl font-black block mt-1">{formatPrice(mortgageResults.monthlyInstallment)}</span>
                       </div>
                       <div className="p-4 bg-slate-50/50 rounded-xl border border-slate-100 text-center">
-                        <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">{language.startsWith('zh') ? '累计支付利息' : 'Total Interest Payable'}</span>
+                        <span className="block text-[10px] font-bold text-slate-400">{language.startsWith('zh') ? '累计支付利息' : 'Total Interest Payable'}</span>
                         <span className="text-xl font-black text-amber-600 block mt-1">{formatPrice(mortgageResults.totalInterest)}</span>
                       </div>
                     </div>
@@ -1210,7 +1206,7 @@ export default function CalculatorHub() {
 
                     <div className="overflow-x-auto">
                       <table className="w-full text-xs text-left text-slate-600">
-                        <thead className="bg-slate-50 text-slate-700 uppercase font-black text-[10px]">
+                        <thead className="bg-slate-50 text-slate-700 font-semibold text-[12px]">
                           <tr>
                             <th className="py-2.5 px-3">{language.startsWith('zh') ? '年份' : 'Year'}</th>
                             <th className="py-2.5 px-3 text-right">{language.startsWith('zh') ? '年初本金' : 'Starting Bal'}</th>
@@ -1277,12 +1273,12 @@ export default function CalculatorHub() {
                   <div className="space-y-5 text-left">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                        <span className="block text-[10px] font-black text-slate-400 uppercase tracking-wider">{language.startsWith('zh') ? '半往来房贷 (Semi-Flexi)' : 'Semi-Flexi Total Interest'}</span>
+                        <span className="block text-[10px] font-semibold text-slate-400">{language.startsWith('zh') ? '半往来房贷 (Semi-Flexi)' : 'Semi-Flexi Total Interest'}</span>
                         <span className="text-lg font-bold text-slate-800 block mt-1">{formatPrice(flexiComparison.totalInterestSemi)}</span>
                         <span className="block text-[10px] text-slate-400 mt-1">{language.startsWith('zh') ? '没有日常储蓄对冲机制' : 'No automatic liquid offset'}</span>
                       </div>
                       <div className={`p-4 rounded-xl border ${flexiComparison.isAdvised ? 'bg-orange-50 border-orange-100' : 'bg-slate-50 border-slate-200'}`}>
-                        <span className="block text-[10px] font-black text-slate-500 uppercase tracking-wider">{language.startsWith('zh') ? '全往来房贷对冲 (Full-Flexi)' : 'Full-Flexi Total Interest'}</span>
+                        <span className="block text-[10px] font-semibold text-slate-500">{language.startsWith('zh') ? '全往来房贷对冲 (Full-Flexi)' : 'Full-Flexi Total Interest'}</span>
                         <span className="text-lg font-bold text-slate-900 block mt-1">{formatPrice(flexiComparison.totalInterestFull)}</span>
                         <span className="block text-[10px] text-orange-600 font-bold mt-1">
                           {language.startsWith('zh') 
@@ -1314,15 +1310,15 @@ export default function CalculatorHub() {
                   <div className="space-y-5 text-left">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                       <div className="p-3 bg-rose-50 rounded-xl border border-rose-100 text-center">
-                        <span className="block text-[9px] font-black text-rose-500 uppercase">{language.startsWith('zh') ? '原月供金额' : 'Old Monthly Payment'}</span>
+                        <span className="block text-[11px] font-semibold text-rose-500">{language.startsWith('zh') ? '原月供金额' : 'Old Monthly Payment'}</span>
                         <span className="text-base font-black text-slate-800 block mt-1">{formatPrice(refinanceResults.currentMonthlyInstallment)}</span>
                       </div>
                       <div className="p-3 bg-emerald-50 rounded-xl border border-emerald-100 text-center">
-                        <span className="block text-[9px] font-black text-emerald-600 uppercase">{language.startsWith('zh') ? '转贷后新月供' : 'New Monthly Payment'}</span>
+                        <span className="block text-[11px] font-semibold text-emerald-600">{language.startsWith('zh') ? '转贷后新月供' : 'New Monthly Payment'}</span>
                         <span className="text-base font-black text-slate-800 block mt-1">{formatPrice(refinanceResults.newMonthlyInstallment)}</span>
                       </div>
                       <div className="p-3 bg-orange-500 text-white rounded-xl text-center shadow-xs">
-                        <span className="block text-[9px] font-black text-orange-200 uppercase">{language.startsWith('zh') ? '每月节省' : 'Monthly Cash Saved'}</span>
+                        <span className="block text-[11px] font-semibold text-orange-200">{language.startsWith('zh') ? '每月节省' : 'Monthly Cash Saved'}</span>
                         <span className="text-lg font-black block mt-0.5">+{formatPrice(refinanceResults.monthlySavings)}</span>
                       </div>
                     </div>
@@ -1367,15 +1363,15 @@ export default function CalculatorHub() {
                   <div className="space-y-5 text-left">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                       <div className="p-3 bg-rose-50 rounded-xl border border-rose-100 text-center">
-                        <span className="block text-[9px] font-black text-rose-500 uppercase">{language.startsWith('zh') ? '提前还清违约罚息' : 'Lock-In Penalty Fee'}</span>
+                        <span className="block text-[11px] font-semibold text-rose-500">{language.startsWith('zh') ? '提前还清违约罚息' : 'Lock-In Penalty Fee'}</span>
                         <span className="text-base font-black text-rose-600 block mt-1">{formatPrice(earlySettlementResults.penaltyPaid)}</span>
                       </div>
                       <div className="p-3 bg-emerald-50 rounded-xl border border-emerald-100 text-center">
-                        <span className="block text-[9px] font-black text-emerald-600 uppercase">{language.startsWith('zh') ? '省下的未偿还利息' : 'Future Interest Saved'}</span>
+                        <span className="block text-[11px] font-semibold text-emerald-600">{language.startsWith('zh') ? '省下的未偿还利息' : 'Future Interest Saved'}</span>
                         <span className="text-base font-black text-emerald-600 block mt-1">{formatPrice(earlySettlementResults.interestToBeSaved)}</span>
                       </div>
                       <div className="p-3 bg-slate-900 text-white rounded-xl text-center">
-                        <span className="block text-[9px] font-black text-slate-400 uppercase">{language.startsWith('zh') ? '净经济效益' : 'Net Financial Benefit'}</span>
+                        <span className="block text-[11px] font-semibold text-slate-400">{language.startsWith('zh') ? '净经济效益' : 'Net Financial Benefit'}</span>
                         <span className="text-base font-black block mt-1">{formatPrice(earlySettlementResults.netSavings)}</span>
                       </div>
                     </div>
@@ -1428,7 +1424,7 @@ export default function CalculatorHub() {
                     {/* Gauge Meter Verdict Card */}
                     <div className={`p-5 rounded-2xl border ${dsrResults.bgVerdictColor} grid grid-cols-1 md:grid-cols-2 gap-4 items-center`}>
                       <div>
-                        <span className="block text-[10px] font-black text-slate-400 uppercase tracking-wider">{language.startsWith('zh') ? '您的当前总负债比率' : 'Your Computed DSR'}</span>
+                        <span className="block text-[10px] font-semibold text-slate-400">{language.startsWith('zh') ? '您的当前总负债比率' : 'Your Computed DSR'}</span>
                         <span className="text-3xl font-black block text-slate-900 mt-1">{dsrResults.currentDsr.toFixed(1)}%</span>
                         <span className="text-xs text-slate-500 block mt-1">
                           {language.startsWith('zh') ? '总计月债务支出: ' : 'Total monthly obligations: '} 
@@ -1436,7 +1432,7 @@ export default function CalculatorHub() {
                         </span>
                       </div>
                       <div className="md:border-l md:border-slate-200/50 md:pl-6">
-                        <span className="block text-[10px] font-black text-slate-400 uppercase tracking-wider">{language.startsWith('zh') ? '银行按揭审批判定' : 'Bank Approval Verdict'}</span>
+                        <span className="block text-[10px] font-semibold text-slate-400">{language.startsWith('zh') ? '银行按揭审批判定' : 'Bank Approval Verdict'}</span>
                         <span className={`text-xl font-black block mt-1 ${dsrResults.verdictColor}`}>{dsrResults.verdict}</span>
                         <span className="text-[11px] text-slate-500 block mt-1 leading-normal">
                           {language.startsWith('zh') 
@@ -1473,7 +1469,7 @@ export default function CalculatorHub() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="p-4 bg-orange-50 rounded-xl border border-orange-100">
                         <span className="block text-xs font-bold text-slate-500">{language.startsWith('zh') ? '预计最高可承受购房价格' : 'Max Property Purchase Price'}</span>
-                        <span className="text-2xl font-black ig-text block mt-1">{formatPrice(loanAffordabilityResults.estimatedPropertyPrice)}</span>
+                        <span className="text-2xl font-bold text-[#dc2743] block mt-1">{formatPrice(loanAffordabilityResults.estimatedPropertyPrice)}</span>
                       </div>
                       <div className="p-4 bg-slate-50 rounded-xl border border-slate-200">
                         <span className="block text-xs font-bold text-slate-500">{language.startsWith('zh') ? '预计最大批贷额度' : 'Max Allowed Loan Principal'}</span>
@@ -1519,12 +1515,12 @@ export default function CalculatorHub() {
                 {transactionSubTab === 'stamp_duty' && (
                   <div className="space-y-5 text-left">
                     <div className="p-4 bg-slate-900 text-white rounded-xl">
-                      <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">{language.startsWith('zh') ? '交易税费及法务开支总计' : 'Aggregate Statutory Fees & Legal cost'}</span>
+                      <span className="block text-[10px] font-bold text-slate-400">{language.startsWith('zh') ? '交易税费及法务开支总计' : 'Aggregate Statutory Fees & Legal cost'}</span>
                       <span className="text-3xl font-black block mt-1">{formatPrice(transactionFees.totalTransactionFees)}</span>
                     </div>
 
                     <div className="space-y-3.5 pt-2">
-                      <h4 className="text-xs font-black uppercase text-slate-400 tracking-wider">Breakdown of Statutory Fees</h4>
+                      <h4 className="text-xs font-semibold text-slate-400">Breakdown of Statutory Fees</h4>
                       
                       {/* SPA MOT */}
                       <div className="flex justify-between items-center text-xs">
@@ -1556,7 +1552,7 @@ export default function CalculatorHub() {
                 {transactionSubTab === 'buying_cost' && (
                   <div className="space-y-5 text-left">
                     <div className="p-4 bg-orange-500 text-white rounded-xl shadow-xs">
-                      <span className="block text-[10px] font-bold text-orange-200 uppercase tracking-widest">{language.startsWith('zh') ? '首付 + 缴税 + 律师费累计首期所需现金' : 'Minimum Upfront Cash Required (Excl. Reno)'}</span>
+                      <span className="block text-[10px] font-bold text-orange-200">{language.startsWith('zh') ? '首付 + 缴税 + 律师费累计首期所需现金' : 'Minimum Upfront Cash Required (Excl. Reno)'}</span>
                       <span className="text-3xl font-black block mt-1">{formatPrice(totalBuyingCostResults.cashRequired)}</span>
                     </div>
 
@@ -1584,12 +1580,12 @@ export default function CalculatorHub() {
                 {transactionSubTab === 'renovation' && (
                   <div className="space-y-6 text-left">
                     <div className="p-4 bg-slate-900 text-white rounded-xl">
-                      <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">{language.startsWith('zh') ? '预计装修总开销' : 'Total Renovation Budget'}</span>
+                      <span className="block text-[10px] font-bold text-slate-400">{language.startsWith('zh') ? '预计装修总开销' : 'Total Renovation Budget'}</span>
                       <span className="text-2xl font-black block mt-1">{formatPrice(totalRenovationCost)}</span>
                     </div>
 
                     <div className="space-y-3.5">
-                      <span className="text-xs font-black text-slate-400 uppercase tracking-widest block">Itemized Budget Settings</span>
+                      <span className="text-xs font-semibold text-slate-400 block">Itemized Budget Settings</span>
                       
                       {[
                         { label: language.startsWith('zh') ? '客厅与硬装 (Living Room & Ceilings)' : 'Living Room', val: renoLiving, set: setRenoLiving, max: 80000 },
@@ -1622,7 +1618,7 @@ export default function CalculatorHub() {
                 {transactionSubTab === 'rent_vs_buy' && (
                   <div className="space-y-5 text-left">
                     <div className={`p-4 rounded-xl border ${rentVsBuyResults.buyerWins ? 'bg-emerald-50 border-emerald-100' : 'bg-orange-50 border-orange-100'} text-xs leading-relaxed`}>
-                      <span className="block text-[10px] font-black text-slate-400 uppercase tracking-widest">{language.startsWith('zh') ? '10年周期最佳财务效益判定' : 'Rent vs Buy Modeling Result'}</span>
+                      <span className="block text-[10px] font-semibold text-slate-400">{language.startsWith('zh') ? '10年周期最佳财务效益判定' : 'Rent vs Buy Modeling Result'}</span>
                       <span className="text-xl font-black block mt-1 text-slate-900">
                         {rentVsBuyResults.buyerWins 
                           ? (language.startsWith('zh') ? '建议买房：买房积累的资产净值更优' : 'Buying is more financially advantageous!') 
@@ -1795,17 +1791,17 @@ export default function CalculatorHub() {
                   <div className="space-y-5 text-left">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                       <div className={`p-3 rounded-xl border text-center ${riskCashFlowResults.monthlyCashFlow >= 0 ? 'bg-emerald-50 border-emerald-100' : 'bg-rose-50 border-rose-100'}`}>
-                        <span className="block text-[9px] font-black text-slate-500 uppercase">{language.startsWith('zh') ? '月均净现金流' : 'Monthly Net Cashflow'}</span>
+                        <span className="block text-[11px] font-semibold text-slate-500">{language.startsWith('zh') ? '月均净现金流' : 'Monthly Net Cashflow'}</span>
                         <span className={`text-base font-black block mt-1 ${riskCashFlowResults.monthlyCashFlow >= 0 ? 'text-emerald-600' : 'text-rose-500'}`}>
                           {riskCashFlowResults.monthlyCashFlow >= 0 ? '+' : ''}{formatPrice(riskCashFlowResults.monthlyCashFlow)}
                         </span>
                       </div>
                       <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
-                        <span className="block text-[9px] font-black text-slate-500 uppercase">{language.startsWith('zh') ? '现金回报率 (CoC)' : 'Cash-on-Cash Return'}</span>
+                        <span className="block text-[11px] font-semibold text-slate-500">{language.startsWith('zh') ? '现金回报率 (CoC)' : 'Cash-on-Cash Return'}</span>
                         <span className="text-base font-black text-slate-800 block mt-1">{riskCashFlowResults.cashOnCashReturn.toFixed(2)}%</span>
                       </div>
                       <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
-                        <span className="block text-[9px] font-black text-slate-500 uppercase">{language.startsWith('zh') ? '债务偿还覆盖率 (DSCR)' : 'Debt Coverage Ratio'}</span>
+                        <span className="block text-[11px] font-semibold text-slate-500">{language.startsWith('zh') ? '债务偿还覆盖率 (DSCR)' : 'Debt Coverage Ratio'}</span>
                         <span className={`text-base font-black block mt-1 ${riskCashFlowResults.dscr >= 1.2 ? 'text-emerald-600' : 'text-rose-500'}`}>{riskCashFlowResults.dscr.toFixed(2)}</span>
                       </div>
                     </div>
@@ -1878,7 +1874,7 @@ export default function CalculatorHub() {
                   <div className="space-y-5 text-left">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="p-4 bg-slate-900 text-white rounded-xl">
-                        <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">{language.startsWith('zh') ? '离场扣除全部开销后的纯净利润' : 'Net Cash Profit (Exit)'}</span>
+                        <span className="block text-[10px] font-bold text-slate-400">{language.startsWith('zh') ? '离场扣除全部开销后的纯净利润' : 'Net Cash Profit (Exit)'}</span>
                         <span className="text-3xl font-black block mt-1">{formatPrice(netProfitResults.netProfitValue)}</span>
                         <span className="block text-[11px] text-slate-400 mt-1">
                           {language.startsWith('zh') ? '总账面升值毛利: ' : 'Gross asset appreciation: '}
@@ -1938,7 +1934,7 @@ export default function CalculatorHub() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {/* MRTA */}
                       <div className="p-4 bg-slate-50 rounded-xl border border-slate-200">
-                        <span className="block text-[11px] font-black text-slate-500 uppercase tracking-wider">MRTA (Mortgage Reducing Term)</span>
+                        <span className="block text-[11px] font-semibold text-slate-500">MRTA (Mortgage Reducing Term)</span>
                         <span className="text-xl font-black text-slate-900 block mt-1">{formatPrice(insuranceCompareResults.mrtaSinglePremiumEst)}</span>
                         <span className="block text-[10px] text-slate-400 font-bold mt-1">
                           {language.startsWith('zh') ? '通常由房贷打包融资分期还款' : 'Single upfront payment, often loan financed.'}
@@ -1954,7 +1950,7 @@ export default function CalculatorHub() {
 
                       {/* MLTA */}
                       <div className="p-4 bg-orange-50/50 rounded-xl border border-orange-200">
-                        <span className="block text-[11px] font-black text-orange-600 uppercase tracking-wider">MLTA (Mortgage Level Term)</span>
+                        <span className="block text-[11px] font-semibold text-orange-600">MLTA (Mortgage Level Term)</span>
                         <span className="text-xl font-black text-slate-900 block mt-1">{formatPrice(mltaMonthlyPremium)} / {language.startsWith('zh') ? '每月' : 'month'}</span>
                         <span className="block text-[10px] text-orange-600 font-bold mt-1">
                           {language.startsWith('zh') ? `30年总现金价值积累: ${formatPrice(insuranceCompareResults.mltaGuaranteedCashValue)}` : `30-yr maturity cash value: ${formatPrice(insuranceCompareResults.mltaGuaranteedCashValue)}`}

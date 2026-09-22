@@ -62,15 +62,12 @@ export function ProjectSlideshow({ projects, onProjectClick }: ProjectSlideshowP
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-block text-xs font-black uppercase tracking-widest text-orange-600 mb-2 animate-pulse">
-            ⚡ Rotating Portfolio Spotlight
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
-            Exclusive Project Showcase
+        <div className="max-w-2xl mb-12">
+          <h2 className="display text-4xl sm:text-5xl text-slate-900">
+            More projects
           </h2>
-          <p className="text-slate-500 text-sm mt-3 font-semibold">
-            Catch virtual floor plans, real architectural facades, and pricing highlights at a glance.
+          <p className="text-slate-500 text-base mt-5 leading-relaxed">
+            Facades, floor plans and the price each one starts from.
           </p>
         </div>
 
@@ -95,20 +92,20 @@ export function ProjectSlideshow({ projects, onProjectClick }: ProjectSlideshowP
               ) : (
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8 bg-slate-200">
                   <Building className="h-12 w-12 text-slate-400 mb-3" />
-                  <p className="text-xs font-black uppercase tracking-wider text-slate-500">Overview Pending Verification</p>
+                  <p className="text-xs font-semibold text-slate-500">Overview Pending Verification</p>
                 </div>
               )}
 
               {/* Badges layered over the image */}
               <div className="absolute top-6 left-6 flex flex-wrap gap-2 pointer-events-none">
-                <span className="px-3.5 py-1 bg-stone-900/95 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-full backdrop-blur-md border border-stone-800">
+                <span className="px-3.5 py-1 bg-stone-900/95 text-white font-semibold text-[10px] rounded-full backdrop-blur-md border border-stone-800">
                   {activeProject.tenure}
                 </span>
-                <span className="px-3.5 py-1 bg-orange-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-full shadow-lg">
+                <span className="px-3.5 py-1 bg-orange-600 text-white font-semibold text-[10px] rounded-full shadow-lg">
                   {activeProject.projectType}
                 </span>
                 {activeProject.isHot && (
-                  <span className="px-3.5 py-1 bg-rose-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-full animate-bounce">
+                  <span className="px-3.5 py-1 bg-rose-600 text-white font-semibold text-[10px] rounded-full">
                     🔥 Highly Rated
                   </span>
                 )}
@@ -131,7 +128,7 @@ export function ProjectSlideshow({ projects, onProjectClick }: ProjectSlideshowP
             <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between bg-white border-t lg:border-t-0 lg:border-l border-slate-100">
               <div className="space-y-6">
                 <div>
-                  <span className="block text-[10px] font-black uppercase tracking-widest text-orange-600 mb-1.5">
+                  <span className="block text-[12px] font-medium text-orange-600 mb-1.5">
                     {activeProject.developer}
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 group-hover:text-orange-600 transition-colors">
@@ -150,7 +147,7 @@ export function ProjectSlideshow({ projects, onProjectClick }: ProjectSlideshowP
                   <div className="flex items-center gap-2.5 bg-slate-50/80 border border-slate-100 p-3 rounded-2xl">
                     <Maximize className="h-4 w-4 text-orange-500 shrink-0" />
                     <div>
-                      <span className="block text-[8px] text-slate-450 uppercase font-black tracking-wider leading-none">Built up sizes</span>
+                      <span className="block text-[11px] text-slate-450 font-semibold leading-none">Built up sizes</span>
                       <span className="text-[11px] sm:text-xs font-black text-slate-800">
                         {activeProject.builtUpMin} - {activeProject.builtUpMax} sqft
                       </span>
@@ -160,7 +157,7 @@ export function ProjectSlideshow({ projects, onProjectClick }: ProjectSlideshowP
                   <div className="flex items-center gap-2.5 bg-slate-50/80 border border-slate-100 p-3 rounded-2xl">
                     <BedDouble className="h-4 w-4 text-orange-500 shrink-0" />
                     <div>
-                      <span className="block text-[8px] text-slate-450 uppercase font-black tracking-wider leading-none">Bedrooms</span>
+                      <span className="block text-[11px] text-slate-450 font-semibold leading-none">Bedrooms</span>
                       <span className="text-[11px] sm:text-xs font-black text-slate-800">
                         {activeProject.bedroomsMin} - {activeProject.bedroomsMax} rooms
                       </span>
@@ -170,7 +167,7 @@ export function ProjectSlideshow({ projects, onProjectClick }: ProjectSlideshowP
                   <div className="flex items-center gap-2.5 bg-slate-50/80 border border-slate-100 p-3 rounded-2xl col-span-2">
                     <Calendar className="h-4 w-4 text-orange-500 shrink-0" />
                     <div>
-                      <span className="block text-[8px] text-slate-450 uppercase font-black tracking-wider leading-none">Completion Status</span>
+                      <span className="block text-[11px] text-slate-450 font-semibold leading-none">Completion Status</span>
                       <span className="text-[11px] sm:text-xs font-black text-slate-800">
                         {activeProject.completionStatus} ({activeProject.completionYear})
                       </span>
@@ -179,10 +176,10 @@ export function ProjectSlideshow({ projects, onProjectClick }: ProjectSlideshowP
                 </div>
 
                 <div className="pt-4 mt-2">
-                  <span className="block text-[10px] text-slate-400 uppercase font-black tracking-wider mb-0.5">Indicative Pricing Starts</span>
+                  <span className="block text-[10px] text-slate-400 font-semibold mb-0.5">Indicative Pricing Starts</span>
                   <div className="flex items-baseline gap-1.5">
                     <span className="text-2xl sm:text-3xl font-black text-orange-600">{formattedPrice}</span>
-                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">MYR</span>
+                    <span className="text-[10px] text-slate-400 font-bold">MYR</span>
                   </div>
                 </div>
               </div>

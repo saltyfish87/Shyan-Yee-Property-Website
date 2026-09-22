@@ -34,10 +34,10 @@ export const AgentCard: React.FC<AgentCardProps> = ({ projects, onProjectClick }
                   />
                   {/* Status Overlay */}
                   <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 border border-slate-100 shadow-lg">
-                    <span className="block text-xs font-black uppercase text-slate-900 tracking-widest mb-0.5">
+                    <span className="block text-xs font-semibold text-slate-900 mb-0.5">
                       Shyan Yee
                     </span>
-                    <span className="block text-[10px] text-orange-600 font-extrabold uppercase tracking-wider">
+                    <span className="block text-[10px] text-orange-600 font-semibold">
                       REN 46305 • IQI Realty Sdn Bhd
                     </span>
                   </div>
@@ -59,12 +59,8 @@ export const AgentCard: React.FC<AgentCardProps> = ({ projects, onProjectClick }
 
             {/* Agent Content and Social media block */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 text-orange-600 border border-orange-100 text-xs font-black tracking-widest uppercase">
-                {t('portalRepresentative')}
-              </span>
-              
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-none">
-                Shyan Yee <span className="block sm:inline text-slate-400 font-light text-2xl sm:text-3xl sm:ml-2">{t('trustedAdvisor')}</span>
+              <h2 className="display text-4xl sm:text-5xl text-slate-900">
+                Shyan Yee <span className="block sm:inline text-slate-400 italic text-3xl sm:text-4xl sm:ml-2">{t('trustedAdvisor')}</span>
               </h2>
 
               <p className="text-slate-600 text-lg leading-relaxed font-medium">
@@ -151,7 +147,7 @@ export const AgentCard: React.FC<AgentCardProps> = ({ projects, onProjectClick }
 
               {/* Instant Scan Connect QR codes */}
               <div className="pt-6 border-t border-slate-200">
-                <h4 className="text-[11px] font-black uppercase text-slate-400 tracking-wider mb-4 flex items-center gap-1.5">
+                <h4 className="text-[13px] font-medium text-slate-400 mb-4 flex items-center gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-orange-500 animate-pulse"></span>
                   {language.startsWith('zh') ? "直接扫码加我咨询 / 关注" : language === 'ja' ? "QRコードで直接問い合わせ・フォロー" : "Direct Scan to Consult / Connect"}
                 </h4>

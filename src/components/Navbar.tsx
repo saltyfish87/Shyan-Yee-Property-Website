@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../LanguageContext';
 import { useCurrency } from '../CurrencyContext';
 import { SupportedLanguage, SupportedCurrency } from '../types';
-import { Building2, Globe, Coins, Menu, X, Landmark, RefreshCw } from 'lucide-react';
+import { Globe, Coins, Menu, X, Landmark, RefreshCw } from 'lucide-react';
 
 interface NavbarProps {
   currentPage: string;
@@ -60,14 +60,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => setCurrentPage('home')}>
-            <div className="w-9 h-9 ig-gradient rounded-xl flex items-center justify-center text-white shadow-lg shadow-purple-500/25">
-              <Building2 className="h-5 w-5" />
+            <div className="w-10 h-10 ig-gradient rounded-xl flex items-center justify-center text-white shadow-lg shadow-rose-500/25">
+              <span className="display text-[17px] leading-none tracking-[-0.02em] select-none translate-y-[0.5px]">SY</span>
             </div>
             <div>
               <span className="text-lg font-extrabold tracking-tight ig-text block leading-none">
                 MALAYSIA PROPERTY
               </span>
-              <span className="block text-[8.5px] font-bold tracking-widest text-slate-400 uppercase mt-0.5">
+              <span className="block text-[10px] font-medium text-slate-400 mt-1 tracking-wide">
                 Premier Property Portal
               </span>
             </div>
@@ -109,7 +109,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       key={lang.code}
                       onClick={() => setLanguage(lang.code)}
                       className={`block w-full text-left px-3 py-1.5 text-xs text-slate-700 hover:bg-slate-50 rounded-lg transition-colors ${
-                        language === lang.code ? 'font-bold ig-text bg-orange-50/50' : ''
+                        language === lang.code ? 'font-semibold text-[#dc2743] bg-orange-50/50' : ''
                       }`}
                     >
                       {lang.label}
@@ -132,7 +132,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       key={cur}
                       onClick={() => setCurrency(cur)}
                       className={`block w-full text-left px-3 py-1.5 text-xs text-slate-700 hover:bg-slate-50 rounded-lg transition-colors ${
-                        currency === cur ? 'font-bold ig-text bg-orange-50/50' : ''
+                        currency === cur ? 'font-semibold text-[#dc2743] bg-orange-50/50' : ''
                       }`}
                     >
                       {cur}
@@ -216,7 +216,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Mobile selectors */}
           <div className="flex items-center justify-between gap-4 py-2">
             <div>
-              <span className="block text-xs font-bold uppercase text-stone-400 mb-1">Language</span>
+              <span className="block text-xs font-bold text-stone-400 mb-1">Language</span>
               <select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value as SupportedLanguage)}
@@ -229,7 +229,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             <div>
-              <span className="block text-xs font-bold uppercase text-stone-400 mb-1">Currency</span>
+              <span className="block text-xs font-bold text-stone-400 mb-1">Currency</span>
               <select
                 value={currency}
                 onChange={(e) => setCurrency(e.target.value as SupportedCurrency)}

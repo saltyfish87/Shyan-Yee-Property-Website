@@ -1,14 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Archivo:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
+/* Display face is Newsreader, an editorial serif — this is a site of written reviews.
+   CJK has no cut in that family, so it falls through to the platform's own book serif. */
 @theme {
-  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Archivo", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Newsreader", "Songti SC", "Hiragino Mincho ProN", "Noto Serif CJK SC", Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
 body {
   font-family: var(--font-sans);
   background-color: #ffffff; /* Pure white layout */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headline voice. Serif at 400 next to the sans UI is the whole point: do not bold it. */
+.display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+.display em { font-style: italic; }
+
+/* CJK and Arabic have no italic cut; browsers fake one by slanting the glyphs.
+   Those scripts keep an upright emphasis instead. */
+:lang(zh) em, :lang(zh-CN) em, :lang(zh-TW) em,
+:lang(ja) em, :lang(ko) em, :lang(ar) em,
+:lang(zh) .italic, :lang(zh-CN) .italic, :lang(zh-TW) .italic,
+:lang(ja) .italic, :lang(ko) .italic, :lang(ar) .italic { font-style: normal; }
+
+/* Browser chrome the design still owns. */
+::selection { background: #fbd5de; color: #86124a; }
+input, select, textarea { caret-color: #dc2743; }
+:focus-visible { outline: 2px solid #dc2743; outline-offset: 2px; border-radius: 4px; }
+
+/* One authored entrance, used on the masthead only. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); filter: blur(6px); }
+  to   { opacity: 1; transform: none; filter: blur(0); }
+}
+.rise { animation: rise .9s cubic-bezier(.16,1,.3,1) both; }
+@media (prefers-reduced-motion: reduce) {
+  .rise { animation: none; }
 }
 
 /* Custom scrollbar */
@@ -57,8 +93,8 @@ body {
 /* Article bodies rendered by src/lib/markdown.ts (app view and prerendered HTML) */
 .md-body { line-height: 1.8; }
 .md-body > * + * { margin-top: 1.1em; }
-.md-body h2 { font-size: 1.6rem; font-weight: 800; color: #0f172a; letter-spacing: -0.01em; margin-top: 2em; padding-bottom: .4em; border-bottom: 1px solid #f1f5f9; }
-.md-body h3 { font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-top: 1.8em; }
+.md-body h2 { font-family: var(--font-display); font-size: 1.9rem; font-weight: 400; color: #0f172a; letter-spacing: -0.01em; margin-top: 2em; padding-bottom: .4em; border-bottom: 1px solid #f1f5f9; }
+.md-body h3 { font-family: var(--font-display); font-size: 1.45rem; font-weight: 400; color: #0f172a; margin-top: 1.8em; }
 .md-body h4 { font-size: 1.05rem; font-weight: 800; color: #dc2743; margin-top: 1.4em; }
 .md-body p { margin-top: 1.1em; }
 .md-body strong { font-weight: 800; color: #0f172a; }
@@ -68,7 +104,7 @@ body {
 .md-body ul { list-style: disc; }
 .md-body ol { list-style: decimal; }
 .md-body li { margin-top: .4em; }
-.md-body blockquote { border-left: 4px solid #f97316; background: #fff7ed; padding: .8em 1.2em; border-radius: 0 .75rem .75rem 0; color: #7c2d12; }
+.md-body blockquote { border-left: 1px solid #fdba74; background: #fff7ed; padding: .9em 1.3em; border-radius: .5rem; color: #7c2d12; }
 .md-body hr { border: 0; border-top: 1px solid #e2e8f0; margin: 2em 0; }
 .md-body img { max-width: 100%; height: auto; border-radius: .75rem; }
 .md-body code { font-family: 'JetBrains Mono', monospace; font-size: .9em; background: #f1f5f9; padding: .1em .35em; border-radius: .3rem; }

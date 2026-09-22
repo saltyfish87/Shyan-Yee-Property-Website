@@ -29,15 +29,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     onSearch({ budget, bedrooms, location, developer: 'any', projectName });
   };
 
-  const renderGradientTitle = (rawText: string) => {
+  const renderTitle = (rawText: string) => {
     const keywords = ["Malaysia", "马来西亚", "馬來西亞", "マレーシア", "말레이시아", "ماليزيا", "Malaisie"];
     for (const kw of keywords) {
       if (rawText.includes(kw)) {
+        // Brand red marks the word; :lang() rules in index.css drop the italic for
+        // CJK and Arabic, which have no italic cut.
         const parts = rawText.split(kw);
         return (
           <>
             {parts[0]}
-            <span className="ig-text font-black">{kw}</span>
+            <em className="italic text-[#dc2743]">{kw}</em>
             {parts.slice(1).join(kw)}
           </>
         );
@@ -58,28 +60,22 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="absolute inset-0 bg-white/75 backdrop-blur-[1px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col items-center text-center w-full">
-        {/* Elite Badge */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-100/50 text-orange-600 text-xs font-bold tracking-widest uppercase mb-6 sm:mb-8 animate-fade-in self-center">
-          <span className="h-2 w-2 rounded-full bg-orange-500 animate-pulse" />
-          Malaysian Elite Platform Integration
-        </div>
-
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-[800] tracking-tight text-slate-900 max-w-4xl leading-[1.1] mb-6 text-center mx-auto">
-          {renderGradientTitle(t('title'))}
+        <h1 className="display rise text-[2.75rem] sm:text-6xl lg:text-[4.5rem] text-slate-900 max-w-3xl mb-6">
+          {renderTitle(t('title'))}
         </h1>
 
         {/* Subheadline */}
-        <p className="text-slate-600 text-base sm:text-lg lg:text-[18px] max-w-2xl mb-8 leading-relaxed font-semibold text-center mx-auto">
+        <p className="rise text-slate-600 text-base sm:text-lg max-w-xl mb-9 leading-relaxed" style={{ animationDelay: '.08s' }}>
           {t('subtitle')}
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 w-full sm:w-auto self-center">
+        <div className="rise flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-7" style={{ animationDelay: '.16s' }}>
           <button
             onClick={onViewProjectsClick}
-            className="w-full sm:w-auto px-8 py-4 ig-gradient text-white font-extrabold rounded-full shadow-lg shadow-purple-500/15 btn-hover cursor-pointer text-[15px]"
+            className="w-full sm:w-auto px-8 py-4 ig-gradient text-white font-semibold rounded-full shadow-lg shadow-rose-500/20 btn-hover cursor-pointer text-[15px]"
           >
             {t('viewProjects')}
           </button>
@@ -93,22 +89,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-extrabold rounded-full border border-slate-900 shadow-md transition-all text-center cursor-pointer text-[15px] btn-hover"
+            className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-50 text-slate-900 font-semibold rounded-full border border-slate-300 transition-colors text-center cursor-pointer text-[15px]"
           >
             {t('whatsappConsultant')}
           </a>
         </div>
 
+        {/* Who is behind the site. A licence number is the one credential a template never has. */}
+        <p className="rise text-[13px] text-slate-500 mb-14 sm:mb-16" style={{ animationDelay: '.24s' }}>
+          Yee Woei Shyan · REN 46305 · IQI Realty Sdn Bhd
+        </p>
+
         {/* Budget Search Strip Container */}
-        <div className="w-full max-w-5xl bg-white rounded-3xl shadow-2xl p-4 sm:p-5 border border-slate-100 text-slate-900 relative z-10 self-center">
-          <div className="absolute -top-3.5 left-6 px-4 py-1 rounded-full ig-gradient text-white text-[10px] font-black tracking-widest uppercase">
+        <div className="w-full bg-white rounded-3xl shadow-2xl shadow-slate-900/10 p-5 sm:p-6 border border-slate-100 text-slate-900 relative z-10">
+          <p className="text-[13px] font-semibold text-slate-500 mb-4">
             {t('budgetSearch')}
-          </div>
+          </p>
 
           <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end text-left">
             {/* Project Name Filter */}
             <div>
-              <label className="flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+              <label className="flex items-center gap-1.5 text-[13px] font-medium text-slate-500 mb-2">
                 <Search className="h-3.5 w-3.5 text-orange-500" />
                 {t('projectName') || 'Project Name'}
               </label>
@@ -117,20 +118,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 value={projectName}
                 onChange={(e) => setProjectName(e.target.value)}
                 placeholder={t('projectNamePlaceholder') || 'Search e.g. Riverville...'}
-                className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-sm font-semibold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 placeholder:text-slate-400/80 transition-all hover:bg-slate-100/70"
+                className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-sm text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-rose-400 placeholder:text-slate-400/80 transition-all hover:bg-slate-100/70"
               />
             </div>
 
             {/* Location Filter */}
             <div>
-              <label className="flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+              <label className="flex items-center gap-1.5 text-[13px] font-medium text-slate-500 mb-2">
                 <MapPin className="h-3.5 w-3.5 text-orange-500" />
                 {t('location')}
               </label>
               <select
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
-                className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-sm font-semibold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 capitalize cursor-pointer hover:bg-slate-100/70 transition-colors"
+                className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-sm text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-rose-400 capitalize cursor-pointer hover:bg-slate-100/70 transition-colors"
               >
                 <option value="any">{t('any')}</option>
                 {availableLocations.map((loc) => (
@@ -143,14 +144,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Budget Filter */}
             <div>
-              <label className="flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+              <label className="flex items-center gap-1.5 text-[13px] font-medium text-slate-500 mb-2">
                 <DollarSign className="h-3.5 w-3.5 text-orange-500" />
                 {t('budget')} ({currency})
               </label>
               <select
                 value={budget}
                 onChange={(e) => setBudget(e.target.value)}
-                className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-sm font-semibold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer hover:bg-slate-100/70 transition-colors"
+                className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-sm text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-rose-400 cursor-pointer hover:bg-slate-100/70 transition-colors"
               >
                 <option value="any">{t('any')}</option>
                 <option value="under500">Under 500k {currency}</option>
@@ -162,14 +163,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Rooms Filter */}
             <div>
-              <label className="flex items-center gap-1.5 text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+              <label className="flex items-center gap-1.5 text-[13px] font-medium text-slate-500 mb-2">
                 <BedDouble className="h-3.5 w-3.5 text-orange-500" />
                 {t('rooms') || 'Rooms'}
               </label>
               <select
                 value={bedrooms}
                 onChange={(e) => setBedrooms(e.target.value)}
-                className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-sm font-semibold text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-orange-400 cursor-pointer hover:bg-slate-100/70 transition-colors"
+                className="w-full bg-slate-50 border border-slate-100 rounded-xl p-3 text-sm text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-rose-400 cursor-pointer hover:bg-slate-100/70 transition-colors"
               >
                 <option value="any">{t('any')}</option>
                 <option value="1">1+ Bedrooms</option>
@@ -182,7 +183,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Spark Button */}
             <button
               type="submit"
-              className="w-full py-3.5 px-6 rounded-xl ig-gradient text-white font-extrabold flex items-center justify-center gap-2 hover:opacity-95 shadow-lg shadow-purple-500/10 active:scale-[0.98] transition-all cursor-pointer text-sm btn-hover"
+              className="w-full py-3.5 px-6 rounded-xl ig-gradient text-white font-semibold flex items-center justify-center gap-2 hover:opacity-95 shadow-lg shadow-purple-500/10 active:scale-[0.98] transition-all cursor-pointer text-sm btn-hover"
             >
               <Search className="h-4 w-4" />
               <span>{t('search')}</span>
