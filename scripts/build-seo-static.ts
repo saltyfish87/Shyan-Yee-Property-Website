@@ -97,6 +97,52 @@ function videoObjects(lang: 'en' | 'zh'): any[] {
 }
 
 /**
+ * Buyer shortlists: /best/<slug>.
+ *
+ * Buyers search by what they can spend and why they are buying. propertyportal.my answers those
+ * searches with a plain data table; the angle here is deliberately different — these lists lead with
+ * the projects Shyan Yee has actually walked through, so the two sites do not compete with the same
+ * page. Each list filters the live sheet, so it re-sorts itself as prices change.
+ */
+interface BuyerShortlist {
+  slug: string; h1: string; title: string; desc: string; blurb: string;
+  pick: (p: any) => boolean;
+}
+
+const BUYER_SHORTLISTS: BuyerShortlist[] = [
+  { slug: 'condo-under-500k', h1: 'Condominiums Under RM 500,000 — and Which Ones I Have Walked Through',
+    title: 'Condo Under RM 500,000 in KL & Selangor | Shyan Yee',
+    desc: 'Every project on shyanyee.com starting under RM 500,000, with a link to my review or walkthrough video where I have one.',
+    blurb: 'Projects with a developer list price starting under RM 500,000. Where I have filmed or reviewed one, the link is in the last column.',
+    pick: p => Number(p.startingPrice) > 0 && Number(p.startingPrice) < 500000 },
+  { slug: 'condo-under-700k', h1: 'Condominiums Under RM 700,000 — and Which Ones I Have Walked Through',
+    title: 'Condo Under RM 700,000 in KL & Selangor | Shyan Yee',
+    desc: 'Projects starting under RM 700,000, with my review or walkthrough video where I have one.',
+    blurb: 'The band most upgraders shop in. Where I have filmed or reviewed one, the link is in the last column.',
+    pick: p => Number(p.startingPrice) > 0 && Number(p.startingPrice) < 700000 },
+  { slug: 'condo-under-1-million', h1: 'Condominiums Under RM 1 Million — and Which Ones I Have Walked Through',
+    title: 'Condo Under RM 1 Million in KL & Selangor | Shyan Yee',
+    desc: 'Projects starting under RM 1,000,000, with my review or walkthrough video where I have one.',
+    blurb: 'Foreign buyers should note the state minimum purchase price is RM 1,000,000 in Kuala Lumpur and most of Selangor.',
+    pick: p => Number(p.startingPrice) > 0 && Number(p.startingPrice) < 1000000 },
+  { slug: 'freehold-projects', h1: 'Freehold Projects — and Which Ones I Have Walked Through',
+    title: 'Freehold New Launch Projects in Malaysia | Shyan Yee',
+    desc: 'Freehold-title projects on shyanyee.com, with my review or walkthrough video where I have one.',
+    blurb: 'Freehold title only: the land is held without an expiry date, so there is no lease to renew and no state consent needed on a later sale.',
+    pick: p => /freehold/i.test(String(p.tenure || '')) },
+  { slug: 'family-3-bedroom', h1: 'Three-Bedroom and Larger Projects — and Which Ones I Have Walked Through',
+    title: '3-Bedroom Projects for Families in KL & Selangor | Shyan Yee',
+    desc: 'Projects whose layouts start at three bedrooms, with my review or walkthrough video where I have one.',
+    blurb: 'For households that need the rooms rather than the address.',
+    pick: p => Number(p.bedroomsMin) >= 3 },
+  { slug: 'projects-i-have-reviewed', h1: 'Every Project I Have Reviewed or Filmed',
+    title: 'Projects Reviewed by Shyan Yee (REN 46305) | Reviews & Walkthroughs',
+    desc: 'The projects I have been through myself, with the written review, the walkthrough video, or both.',
+    blurb: 'These are the ones I have walked, filmed or written up. Everything else on the site is developer data only.',
+    pick: p => BLOG_DATA.some((b: any) => (b.relatedProjectIds || []).includes(p.id)) || HOME_VIDEOS.some(v => v.projectId === p.id) }
+];
+
+/**
  * The walkthrough filmed for one project, as a VideoObject for that project's page.
  * A video is the one thing on a project page a competitor cannot copy from the brochure, so where
  * HOME_VIDEOS names a projectId the page carries it.
@@ -357,6 +403,43 @@ function renderSeoHtml(
           </div>
         </div>
       `;
+    } else if (reqUrl.startsWith('/best/')) {
+      const sl = BUYER_SHORTLISTS.find(x => `/best/${x.slug}` === reqUrl);
+      if (sl) {
+        const picks = projects.filter(sl.pick).sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity));
+        canonical = `${baseUrl}/best/${sl.slug}`;
+        title = sl.title;
+        desc = sl.desc;
+        const reviewFor = (p: any) => BLOG_DATA.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+        const videoFor = (p: any) => HOME_VIDEOS.find(v => v.projectId === p.id);
+        jsonLdGraph.push({
+          "@type": "CollectionPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
+          "isPartOf": { "@id": `${baseUrl}/#website` },
+          "mainEntity": { "@type": "ItemList", "numberOfItems": picks.length,
+            "itemListElement": picks.map((p: any, i: number) => ({ "@type": "ListItem", "position": i + 1, "name": p.name, "url": `${baseUrl}/projects/${p.id}` })) }
+        });
+        const rows = picks.map((p: any) => {
+          const r = reviewFor(p); const v = videoFor(p);
+          const extras = [
+            r ? `<a href="${baseUrl}/blog/${r.slug}" style="color:#2563eb;text-decoration:none;">Read my review</a>` : '',
+            v ? `<a href="https://www.youtube.com/watch?v=${v.youtubeId}" style="color:#2563eb;text-decoration:none;">Walkthrough video</a>` : ''
+          ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">Developer data only</span>';
+          return `<tr><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"><a href="${baseUrl}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(p.area || '')}</td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(p.tenure || '')}</td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} sq ft` : '')}</td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${extras}</td></tr>`;
+        }).join('');
+        preRenderedBody = `
+          <div style="max-width: 1100px; margin: 0 auto; padding: 40px 20px; font-family: system-ui, sans-serif;">
+            <nav style="margin-bottom: 24px; font-size: 14px; color: #64748b;"><a href="${baseUrl}" style="color:#2563eb;text-decoration:none;">Home</a> &gt; <a href="${baseUrl}/projects" style="color:#2563eb;text-decoration:none;">Projects</a> &gt; <span>${escapeXml(sl.title)}</span></nav>
+            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 12px;">${escapeXml(sl.h1)}</h1>
+            <p style="font-size: 16px; color: #475569; margin-bottom: 24px; line-height: 1.6;">${escapeXml(sl.blurb)}</p>
+            <h2 style="font-size: 20px; font-weight: 700; margin: 24px 0 12px;">${picks.length} project${picks.length === 1 ? '' : 's'}, cheapest first</h2>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;"><thead><tr>${['Project', 'Area', 'Tenure', 'From', 'Built-up', 'My coverage'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;color:#0f172a;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <p style="font-size:13px;color:#64748b;margin-top:16px;">Prices are developer list prices and change with each release. Confirm the current price list before deciding.</p>
+            <h2 style="font-size: 20px; font-weight: 700; margin: 28px 0 10px;">Other shortlists</h2>
+            <ul style="line-height:1.9;">${BUYER_SHORTLISTS.filter(o => o.slug !== sl.slug).map(o => `<li><a href="${baseUrl}/best/${o.slug}" style="color:#2563eb;text-decoration:none;">${escapeXml(o.title)}</a></li>`).join('')}</ul>
+            <p style="margin-top:24px;font-size:15px;color:#334155;">Viewings and the current price list: Yee Woei Shyan (REN 46305), IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>.</p>
+          </div>
+        `;
+      }
     } else if (reqUrl === '/calculator') {
       canonical = `${baseUrl}/calculator`;
       title = "Malaysia Property Loan & Stamp Duty Calculator | Shyan Yee";
@@ -1148,6 +1231,16 @@ const legacyYouth2 = path.join(projectsDir, 'youthcity');
 if (!fs.existsSync(legacyYouth2)) fs.mkdirSync(legacyYouth2, { recursive: true });
 fs.writeFileSync(path.join(legacyYouth2, 'index.html'), createRedirectHtml('https://shyanyee.com/projects'), 'utf-8');
 
+// 9b. Buyer shortlist pages: dist/best/<slug>/index.html
+const bestDir = path.join(distPath, 'best');
+if (!fs.existsSync(bestDir)) fs.mkdirSync(bestDir, { recursive: true });
+for (const sl of BUYER_SHORTLISTS) {
+  const dir = path.join(bestDir, sl.slug);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'index.html'), renderSeoHtml(rawHtml, `/best/${sl.slug}`), 'utf-8');
+}
+console.log(`[SEO Static Build] ${BUYER_SHORTLISTS.length} buyer shortlist pages under /best/.`);
+
 // 10. Generate full sitemap.xml with images
 const todayStr = new Date().toISOString().split('T')[0];
 let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
@@ -1158,6 +1251,10 @@ xml += `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n
 xml += `  <url><loc>https://shyanyee.com</loc><lastmod>${todayStr}</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>\n`;
 for (const r of staticRoutes) {
   xml += `  <url><loc>https://shyanyee.com/${r}</loc><lastmod>${todayStr}</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>\n`;
+}
+
+for (const sl of BUYER_SHORTLISTS) {
+  xml += `  <url><loc>https://shyanyee.com/best/${sl.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>\n`;
 }
 
 // Project Pages with images
