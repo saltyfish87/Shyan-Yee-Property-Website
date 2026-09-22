@@ -895,8 +895,8 @@
     },
     "layouts": [
       {
-        "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1000",
-        "typeName": "Type A",
+        "image": "https://lh3.googleusercontent.com/d/1dYreuRDff9UXkRaj0DAKA2rMYaj8Gjhr=w1000",
+        "typeName": "Type 2A",
         "size": 917,
         "beds": 3,
         "baths": 2,
@@ -905,18 +905,28 @@
         "isEnriched": false
       },
       {
-        "image": "https://lh3.googleusercontent.com/d/1DGtbHz7Me4pKESf5f2qwr9uNCzwW_66m=w1000",
-        "typeName": "Type B",
-        "size": 1198,
-        "beds": 3,
+        "image": "https://lh3.googleusercontent.com/d/1yuOULHDDUQFtXqPJhCvr7leaIFpmJwc9=w1000",
+        "typeName": "Type 2B",
+        "size": 1104,
+        "beds": 2,
         "baths": 2,
         "carParks": 2,
-        "estPrice": 1277856,
+        "estPrice": 1226054,
         "isEnriched": false
       },
       {
-        "image": "https://lh3.googleusercontent.com/d/1g7aUVvi3UaVZlAnx1ZhhB0SI0B574n43=w1000",
-        "typeName": "Type C",
+        "image": "https://lh3.googleusercontent.com/d/1qRY0rmc1rSnm_wElx8qZNCNbs0zwU-fd=w1000",
+        "typeName": "Type 3A",
+        "size": 1291,
+        "beds": 3,
+        "baths": 2,
+        "carParks": 2,
+        "estPrice": 1329108,
+        "isEnriched": false
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/d/10EOWJN3FfqMhe4ypsVrQ5c_1uhcPybAG=w1000",
+        "typeName": "Type 3B",
         "size": 1478,
         "beds": 3,
         "baths": 2,
