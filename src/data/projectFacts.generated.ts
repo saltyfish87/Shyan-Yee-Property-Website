@@ -331,7 +331,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KLCC Park",
+    "name": "KL City Centre Park",
     "distance": "5.1km"
    }
   ]
@@ -682,7 +682,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Kuala Lumpur City Centre (KLCC)"
+    "name": "Kuala Lumpur City Centre (KL City Centre)"
    },
    {
     "category": "Education",
@@ -1024,7 +1024,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping & Entertainment",
-    "name": "KLCC",
+    "name": "KL City Centre",
     "distance": "8.4km"
    },
    {
@@ -1113,7 +1113,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "source": "Developer sales kit (2026-08-22)",
   "keyFeatures": [
    "KL's Most Iconic Address",
-   "Hotel Services by Paradox Hotel KLCC",
+   "Hotel Services by Paradox Hotel KL City Centre",
    "Timeless, Luxury Interior Design",
    "Elevated Facilities for the High Life",
    "Branded Fittings and Appliances.",
@@ -1200,7 +1200,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping & Leisure",
-    "name": "KLCC Twin Towers"
+    "name": "KL City Centre Twin Towers"
    },
    {
     "category": "Shopping & Leisure",
@@ -2126,7 +2126,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Mall",
-    "name": "Suria KLCC",
+    "name": "Suria KL City Centre",
     "distance": "2.9km"
    },
    {
@@ -2539,7 +2539,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KLCC",
+    "name": "Suria KL City Centre",
     "distance": "5km"
    },
    {
@@ -2864,7 +2864,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC",
+    "name": "Suria KL City Centre",
     "distance": "8.0km"
    },
    {
@@ -2924,7 +2924,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Parks",
-    "name": "KLCC Park",
+    "name": "KL City Centre Park",
     "distance": "8.1km"
    }
   ]
@@ -3817,7 +3817,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "keyFeatures": [
    "Excellent choice for investment in KL downtown",
    "Within CBD and Golden Triangle Area",
-   "KLCC, Pavilion shopping mall within 5 min driving distance",
+   "KL City Centre, Pavilion shopping mall within 5 min driving distance",
    "Walking distance to bus stop and MRT station",
    "Top-notch facilities for lifestyle & business",
    "Free upgrade to premier fully furnished by MMH",
@@ -3848,7 +3848,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping",
@@ -4789,6 +4789,206 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    }
   ]
  },
+ "forest-hill": {
+  "source": "Developer sales kit (2026-09-22)",
+  "keyFeatures": [
+   "Situated in Damansara Perdana next to a forest and lake",
+   "Low-density with only 618 units",
+   "Fully residential title",
+   "Multi-tier security and EV charging pods",
+   "Flexible unit sizes from 678 to 1,527 sq. ft",
+   "Dual-key options available."
+  ],
+  "facilities": [
+   "6",
+   "list: ['Welcome Courtyard'",
+   "'Multi-Function Hall'",
+   "'Pre-Function Hall'",
+   "'Management Office'",
+   "'Surau (Male & Female)'",
+   "'Convenient Store'",
+   "'Laundramat'",
+   "'Healthcare'",
+   "'Pocket Lounge'",
+   "'Lobby Lounge'",
+   "'Games Area / Play Room'",
+   "'Chillout Bay'",
+   "'Gymnasium'",
+   "'Meeting Lobby'",
+   "'Reading Room'",
+   "'BBQ Area'",
+   "'Forest Cabana'",
+   "'Viewing Deck'",
+   "'Open Lawn'",
+   "'Forest Walk'",
+   "'Basketball/Futsal Court'",
+   "'Zen Garden'",
+   "'Putting Garden'",
+   "'Blooming Garden'",
+   "'Parcourse Station'",
+   "'Interactive Sculpture'",
+   "'Playground'",
+   "'Wading Pool'",
+   "'Adult Pool / Swimming Pool'",
+   "'Aqua Jacuzzi'",
+   "'Outdoor Rainshower'",
+   "'Cozy Pool Deck'",
+   "'Botanic Garden'",
+   "'Indoor Garden'",
+   "'Sauna (Male & Female)'",
+   "'Tree Island']",
+   "35",
+   "list: ['Sky Deck'",
+   "'Lounge']"
+  ],
+  "nearby": [
+   {
+    "category": "Shopping",
+    "name": "The Curve",
+    "distance": "2.6km"
+   },
+   {
+    "category": "Shopping",
+    "name": "IPC Shopping Centre",
+    "distance": "2.6km"
+   },
+   {
+    "category": "Shopping",
+    "name": "1 Utama Shopping Centre",
+    "distance": "4.3km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Sunway Giza Mall",
+    "distance": "5.6km"
+   },
+   {
+    "category": "Shopping",
+    "name": "3 Damansara",
+    "distance": "8.0km"
+   },
+   {
+    "category": "Shopping",
+    "name": "PJ Trade Centre",
+    "distance": "5 mins"
+   },
+   {
+    "category": "Shopping",
+    "name": "IKEA Damansara",
+    "distance": "10 mins"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital by Nadayu",
+    "distance": "5 mins"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Apollo TTDI Medical Centre",
+    "distance": "4.6km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Damansara Specialist Hospital",
+    "distance": "6.1km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Thomson Hospital Kota Damansara",
+    "distance": "6.9km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Damansara Specialist Hospital",
+    "distance": "7.5km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "ParkCity Medical Centre",
+    "distance": "8.9km / 17 mins"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Global Doctors Hospital",
+    "distance": "9.0km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "University Malaya Specialist Centre",
+    "distance": "11.5km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Kelana Jaya Medical Centre",
+    "distance": "19 mins"
+   },
+   {
+    "category": "Education",
+    "name": "SK Sungai Penchala",
+    "distance": "2.9km"
+   },
+   {
+    "category": "Education",
+    "name": "SMK TTDI",
+    "distance": "5.2km"
+   },
+   {
+    "category": "Education",
+    "name": "Bandar Utama International College",
+    "distance": "5.4km"
+   },
+   {
+    "category": "Education",
+    "name": "British International School Kuala Lumpur",
+    "distance": "5.8km"
+   },
+   {
+    "category": "Education",
+    "name": "SEGI University College",
+    "distance": "7.1km"
+   },
+   {
+    "category": "Education",
+    "name": "Sri KDU International School",
+    "distance": "7.8km"
+   },
+   {
+    "category": "Education",
+    "name": "Garden International School",
+    "distance": "8.9km / 15 mins"
+   },
+   {
+    "category": "Connectivity",
+    "name": "LDP Expressway"
+   },
+   {
+    "category": "Connectivity",
+    "name": "SPRINT Highway (Penchala Link)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "DASH Highway"
+   },
+   {
+    "category": "Connectivity",
+    "name": "NKVE"
+   },
+   {
+    "category": "Connectivity",
+    "name": "MRR2"
+   },
+   {
+    "category": "Connectivity",
+    "name": "MRT Mutiara Damansara Station",
+    "distance": "5 mins"
+   },
+   {
+    "category": "Leisure",
+    "name": "Seri Selangor Golf Club",
+    "distance": "15 mins"
+   }
+  ]
+ },
  "daya-residence": {
   "source": "Developer sales kit (2026-09-18)",
   "keyFeatures": [],
@@ -5268,7 +5468,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping",
@@ -5364,7 +5564,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping Malls",
@@ -5408,7 +5608,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Transportation",
-    "name": "Bukit Bintang – KLCC Pedestrian Walkway"
+    "name": "Bukit Bintang – KL City Centre Pedestrian Walkway"
    },
    {
     "category": "Healthcare",
@@ -5428,7 +5628,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Landmarks",
-    "name": "Petronas Twin Towers (KLCC)"
+    "name": "Petronas Twin Towers (KL City Centre)"
    },
    {
     "category": "Landmarks",
@@ -5448,7 +5648,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Recreation",
@@ -5523,7 +5723,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Malls",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Malls",
@@ -5587,7 +5787,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Fitness and Recreation",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Fitness and Recreation",
@@ -5634,7 +5834,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Nearby",
-    "name": "Shopping Malls: The Exchange TRX (50m), IKEA / MyTown (800m), Berjaya Times Squares (900m), Pavilion KL / Starhill / Lot 10 (1.0km), Suria KLCC",
+    "name": "Shopping Malls: The Exchange TRX (50m), IKEA / MyTown (800m), Berjaya Times Squares (900m), Pavilion KL / Starhill / Lot 10 (1.0km), Suria KL City Centre",
     "distance": "1.8km"
    },
    {
@@ -5644,7 +5844,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Nearby",
-    "name": "Leisure and Parks: TRX 10 acres park (50m), Royal Selangor Golf Club (550m), KLCC Park",
+    "name": "Leisure and Parks: TRX 10 acres park (50m), Royal Selangor Golf Club (550m), KL City Centre Park",
     "distance": "1.3km"
    },
    {
@@ -5728,7 +5928,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Landmark & Entertainment",
-    "name": "Petronas Twin Tower / Suria KLCC"
+    "name": "Petronas Twin Tower / Suria KL City Centre"
    },
    {
     "category": "Landmark & Entertainment",

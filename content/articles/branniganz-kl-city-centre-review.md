@@ -1,5 +1,5 @@
 ---
-title: Branniganz KLCC Review: Price, Layouts, Pros & Cons
+title: Branniganz KL City Centre Review: Price, Layouts, Pros & Cons
 metaDescription: Branniganz review: EXSIM's mixed tower on Lorong Yap Kwan Seng with 490 office suites and 269 serviced suites, 344 to 678 sq ft, from RM 803,500 gross.
 summary: Branniganz is EXSIM's two-wing development in the KL city centre, pairing 490 office suites with 269 serviced suites from 344 sq ft. This review covers price, the layouts, the maintenance charge, what is missing from the published data and who it suits.
 category: Reviews
@@ -7,8 +7,8 @@ image: https://lh3.googleusercontent.com/d/1QuDcLSm-vtaXzl_-XkHSY6I3haTxVy4U=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: branniganz, phoeniz-suites-kl-city-centre, centrix, golden-crown, clouthaus
-relatedSlugs: phoeniz-suites-klcc-review, centrix-the-station-klcc-review, clouthaus-klcc-review
-tags: klcc, leasehold, suites, review
+relatedSlugs: phoeniz-suites-kl-city-centre-review, centrix-the-station-kl-city-centre-review, clouthaus-kl-city-centre-review
+tags: kl city centre, leasehold, suites, review
 faqs:
   - q: Is Branniganz freehold or leasehold?
     a: Leasehold. It is developed by Lembaran Beruntung Sdn Bhd, an EXSIM company, on Lorong Yap Kwan Seng in the KL city centre.
@@ -25,7 +25,7 @@ faqs:
 
 **My view.** Branniganz is the smallest entry ticket into the KL city centre that I have on my list, at RM 803,500 gross, and you should understand exactly what that buys. This is a two-wing building: 490 office suites in Wing A and only 269 serviced suites in Wing B, so the residential part is a minority of the development. The smallest layout is 344 sq ft. At that size you are buying a city base or a letting asset, not a home you grow into. The maintenance charge is RM 1.21 psf with a developer subsidy of RM 0.40 psf for two years, which means your cost steps up in year three. I would ask two questions before anything else: which wing is the unit in, and what car park allocation comes with it, because the data I have does not list an allocated bay.
 
-- **Suits:** buyers who want a city-centre address at the lowest possible entry price; owners who want a compact letting asset near KLCC; people who do not need a car park.
+- **Suits:** buyers who want a city-centre address at the lowest possible entry price; owners who want a compact letting asset near KL City Centre; people who do not need a car park.
 - **Think twice if:** you need space, you want freehold, or you want a purely residential building.
 
 # Branniganz at a glance
@@ -46,9 +46,9 @@ faqs:
 
 # Where is Branniganz, and what is nearby?
 
-On Lorong Yap Kwan Seng in Bukit Kewangan, inside the KL city centre. This is the same pocket as EXSIM's Phoeniz Suites, a short drive from KLCC, Suria KLCC and Pavilion Kuala Lumpur, and within the CBD and Golden Triangle. The AKLEH highway serves the area, and the nearest rail options are the Dang Wangi and Ampang Park stations depending on which side of Jalan Ampang you walk to. Ask the sales team for the measured walking distance from this site, as it makes a real difference at this unit size.
+On Lorong Yap Kwan Seng in Bukit Kewangan, inside the KL city centre. This is the same pocket as EXSIM's Phoeniz Suites, a short drive from KL City Centre, Suria Mall and Pavilion Kuala Lumpur, and within the CBD and Golden Triangle. The AKLEH highway serves the area, and the nearest rail options are the Dang Wangi and Ampang Park stations depending on which side of Jalan Ampang you walk to. Ask the sales team for the measured walking distance from this site, as it makes a real difference at this unit size.
 
-# How does Branniganz compare with its KLCC neighbours?
+# How does Branniganz compare with its KL City Centre neighbours?
 
 | Project | Tenure | From | Built-up | Units | Monthly fee | Completion |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -83,7 +83,7 @@ The developer has not published a full facilities schedule in the data I have, s
 
 | Pros | Cons |
 | :--- | :--- |
-| Lowest entry price of the KLCC projects compared above | RM 1.21 psf monthly charge, stepping up after the 2-year subsidy |
+| Lowest entry price of the KL City Centre projects compared above | RM 1.21 psf monthly charge, stepping up after the 2-year subsidy |
 | City-centre address inside the CBD and Golden Triangle | Smallest unit is 344 sq ft; only one 2-bedroom layout |
 | Compact units are the easiest size to let in this area | Only 269 of the 759 units are serviced suites; the rest are office suites |
 | Completion in 2028, earlier than Phoeniz Suites nearby | No car park allocation listed in the current data; facilities schedule not published |

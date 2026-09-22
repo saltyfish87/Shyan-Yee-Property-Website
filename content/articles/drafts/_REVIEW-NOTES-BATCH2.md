@@ -2,7 +2,7 @@
 
 10 篇英文 + 10 篇中文已写好，整站编译通过，暂时未推送。
 
-**KLCC / 武吉免登 / TRX（5 篇）**：Centrix The Station（有视频）、Golden Crown、Core Residence @ TRX、Phoeniz Suites、Branniganz
+**KL City Centre / 武吉免登 / TRX（5 篇）**：Centrix The Station（有视频）、Golden Crown、Core Residence @ TRX、Phoeniz Suites、Branniganz
 **武吉加里尔（5 篇）**：Park Green（有视频）、OAKA、Ayanna、Queenswoodz、Kingswoodz
 
 ---

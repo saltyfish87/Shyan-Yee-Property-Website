@@ -1,5 +1,5 @@
 ---
-title: CloutHaus 格拉豪斯 KLCC 评测：价格、户型、优缺点（持牌经纪实地看房）
+title: CloutHaus 格拉豪斯 KL City Centre 评测：价格、户型、优缺点（持牌经纪实地看房）
 metaDescription: CloutHaus 格拉豪斯评测：吉隆坡双子塔正对面的永久地契住宅，RM 150 万起。户型、设施、管理费、优缺点，以及适合什么买家。
 summary: CloutHaus 格拉豪斯位于 Jalan P. Ramlee，是正对国油双子塔的永久地契 66 层双塔住宅。这篇评测讲价格、18 种户型、设施、要接受的取舍，以及谁该买、谁不该买。
 faqs:
@@ -16,9 +16,9 @@ faqs:
 ---
 # 一句话结论：谁适合买 CloutHaus，谁不适合
 
-**我的看法。** 我对买家讲的，和我在看房视频里讲的一样：正对国油双子塔的土地几乎没有了，CloutHaus 就在其中一块最后的永久地契地皮上，走大约三十步就到 KLCC。我拍过的每一个样板间都是整面落地玻璃，双子塔从地板到天花板占满整个窗，夜景是大家看完最记得的部分。尺价约 RM 2,900，比我看到 KLCC 其他新项目开的 RM 3,000 到 RM 3,500 低，所以我说在这个地址，它算是价钱合理。如果你付钱买的不是这个景和这个地址，同样的预算在金三角以外可以买到大很多的家。
+**我的看法。** 我对买家讲的，和我在看房视频里讲的一样：正对国油双子塔的土地几乎没有了，CloutHaus 就在其中一块最后的永久地契地皮上，走大约三十步就到 KL City Centre。我拍过的每一个样板间都是整面落地玻璃，双子塔从地板到天花板占满整个窗，夜景是大家看完最记得的部分。尺价约 RM 2,900，比我看到 KL City Centre 其他新项目开的 RM 3,000 到 RM 3,500 低，所以我说在这个地址，它算是价钱合理。如果你付钱买的不是这个景和这个地址，同样的预算在金三角以外可以买到大很多的家。
 
-- **适合：** 想要 KLCC 永久地契地址的买家；看重酒店式服务（Paradox Hotel KLCC）的业主；需要超过 RM 100 万门槛、又想买市中心资产的外国买家。
+- **适合：** 想要 KL City Centre 永久地契地址的买家；看重酒店式服务（Paradox Hotel Kuala Lumpur）的业主；需要超过 RM 100 万门槛、又想买市中心资产的外国买家。
 - **请三思：** 预算有限、又需要三间大房的家庭；不喜欢每月管理费偏高的人。
 
 # 看房视频
@@ -45,13 +45,13 @@ faqs:
 
 # CloutHaus 在哪里？周边有什么？
 
-CloutHaus 位于 Jalan P. Ramlee，正对国油双子塔。Saloma 行人桥、Avenue K、Suria KLCC、The LINC KL 和 KLCC 公园都在旁边；Pavilion KL 和武吉免登开车很近。Prince Court 医疗中心、Gleneagles 医院和吉隆坡国际学校（ISKL）都在市中心常见的生活圈内。
+CloutHaus 位于 Jalan P. Ramlee，正对国油双子塔。Saloma 行人桥、Avenue K、Suria Mall、The LINC KL 和 KL City Centre 公园都在旁边；Pavilion KL 和武吉免登开车很近。Prince Court 医疗中心、Gleneagles 医院和吉隆坡国际学校（ISKL）都在市中心常见的生活圈内。
 
 # 和市中心其他新盘比，价格如何？
 
 | 项目 | 区域 | 地契 | 起价 | 面积 | 单位数 | 完工 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **CloutHaus** | KLCC | 永久 | RM 150 万 | 549 至 1,216 平方英尺 | 615 | 2029 |
+| **CloutHaus** | KL City Centre | 永久 | RM 150 万 | 549 至 1,216 平方英尺 | 615 | 2029 |
 | [Orion Residence](/projects/orion-residence) | 武吉免登 | 永久 | RM 158 万 | 491 至 1,329 平方英尺 | 298 | 已完工 |
 | [Pavilion Square](/projects/pavilion-square-residences) | 武吉免登 | 租赁 | RM 170 万 | 504 至 1,272 平方英尺 | 960 | 2029 |
 | [Core Residence @ TRX](/projects/core-residence-trx) | TRX | 永久 | RM 150 万 | 622 至 1,572 平方英尺 | 700 | 已完工 |
@@ -77,14 +77,14 @@ CloutHaus 位于 Jalan P. Ramlee，正对国油双子塔。Saloma 行人桥、Av
 
 # 设施
 
-设施分三层：33 楼（游乐区、阅读与家庭休息室、空中休息室、空中酒吧、卡拉 OK）、33A 楼（健身房与器械普拉提室、瑜伽与普拉提、游戏与餐饮休息室、麻将房、高尔夫模拟器、音乐室）和 63A 楼（空中泳池、空中按摩池、休闲泳池、桑拿与蒸汽房、空中宴客厅、烧烤区、Clout Bar 和 DJ 台）。酒店服务由 Paradox Hotel KLCC 提供。
+设施分三层：33 楼（游乐区、阅读与家庭休息室、空中休息室、空中酒吧、卡拉 OK）、33A 楼（健身房与器械普拉提室、瑜伽与普拉提、游戏与餐饮休息室、麻将房、高尔夫模拟器、音乐室）和 63A 楼（空中泳池、空中按摩池、休闲泳池、桑拿与蒸汽房、空中宴客厅、烧烤区、Clout Bar 和 DJ 台）。酒店服务由 Paradox Hotel Kuala Lumpur 提供。
 
 # 优缺点
 
 | 优点 | 缺点 |
 | :--- | :--- |
 | 永久地契，位于正对双子塔的最后几块地皮之一 | 管理费每平方英尺 RM 0.80，偏高 |
-| Paradox Hotel KLCC 提供酒店服务 | 入门单位小（549 平方英尺） |
+| Paradox Hotel Kuala Lumpur 提供酒店服务 | 入门单位小（549 平方英尺） |
 | 三层设施，包括 63A 楼空中泳池 | 商业地契：水电费率和门牌税请向发展商确认 |
 | 每层 9 至 13 户，配 9 + 1 部电梯 | 2029 年才完工，要等比较久 |
 

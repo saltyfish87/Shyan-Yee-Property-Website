@@ -45,7 +45,7 @@ faqs:
 
 # Orion Residence 在哪里？步行可到什么？
 
-Orion 位于 Jalan Bukit Bintang 旁的 Jalan Gading。最近的商场是 The Starhill、Pavilion KL 和 Lot 10，武吉免登 MRT 和单轨火车站都很近。Suria KLCC 约 2.9 公里，Prince Court 医疗中心 1.2 公里，隔壁就是 TRX。
+Orion 位于 Jalan Bukit Bintang 旁的 Jalan Gading。最近的商场是 The Starhill、Pavilion KL 和 Lot 10，武吉免登 MRT 和单轨火车站都很近。Suria Mall 约 2.9 公里，Prince Court 医疗中心 1.2 公里，隔壁就是 TRX。
 
 # 和附近项目比，Orion 如何？
 

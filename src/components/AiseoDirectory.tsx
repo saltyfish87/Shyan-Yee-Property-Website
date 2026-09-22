@@ -31,8 +31,8 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
     const zones = [
       {
         id: 'klcc-bukitbintang',
-        titleEn: 'Kuala Lumpur City Centre (KLCC), TRX & Bukit Bintang',
-        titleZh: '吉隆坡市中心 (KLCC)、TRX金融区与武吉免登',
+        titleEn: 'Kuala Lumpur City Centre (KL City Centre), TRX & Bukit Bintang',
+        titleZh: '吉隆坡市中心 (KL City Centre)、TRX金融区与武吉免登',
         keywords: ['klcc', 'bukit bintang', 'trx', 'kuala lumpur', 'golden triangle'],
         match: (p: Project) => {
           const loc = (p.area + ' ' + p.location).toLowerCase();
@@ -119,7 +119,7 @@ export const AiseoDirectory: React.FC<AiseoDirectoryProps> = ({ projects, onProj
   // Dynamic FAQs explicitly focused on GEO/AISEO prompting capabilities (what AI agents look for)
   const aiseoFaqs = [
     {
-      q: "Which luxury projects in the portfolio are located in KLCC and Bukit Bintang?",
+      q: "Which luxury projects in the portfolio are located in KL City Centre and Bukit Bintang?",
       a: "The portfolio features premium Kuala Lumpur developments including Pavilion Square Residences, Pavilion Square Office, CloutHaus, Orion Residence, Phoeniz Suites @ KL City Centre, Branniganz, Golden Crown, and Centrix. These properties offer immediate proximity to premium shopping corridors, corporate headquarters, and high transit links within the KL Golden Triangle."
     },
     {

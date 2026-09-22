@@ -61,7 +61,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({ projects, onProj
         baseLat = 3.1283; // Bangsar
         baseLng = 101.6669;
       } else if (areaLower.includes('klcc') || locLower.includes('klcc')) {
-        baseLat = 3.1579; // KLCC
+        baseLat = 3.1579; // KL City Centre
         baseLng = 101.7123;
       } else if (areaLower.includes('penang') || locLower.includes('penang')) {
         baseLat = 5.4141; // Penang

@@ -6,7 +6,7 @@
  *
  * Each file starts with a front-matter block between `---` lines, e.g.
  *   ---
- *   title: CloutHaus KLCC Review: Price PSF, Layouts & Agent's Verdict
+ *   title: CloutHaus KL City Centre Review: Price PSF, Layouts & Agent's Verdict
  *   metaDescription: One-sentence summary for search results (under 160 characters).
  *   summary: Two or three sentences shown above the article.
  *   category: Reviews

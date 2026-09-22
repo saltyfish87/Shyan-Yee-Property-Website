@@ -1186,7 +1186,7 @@ function ClientPortalsOrchestrator() {
 
                                 <div className="grid grid-cols-1 gap-3">
                                   {[
-                                    { val: 'Kuala Lumpur', label: language.startsWith('zh') ? '吉隆坡市中心 (KLCC、武吉免登、安邦)' : language === 'ja' ? 'クアラルンプール中心部 (KLCC、ブキッ・ビンタン等)' : 'Kuala Lumpur Central (KLCC, Bukit Bintang)' },
+                                    { val: 'Kuala Lumpur', label: language.startsWith('zh') ? '吉隆坡市中心 (KL City Centre、武吉免登、安邦)' : language === 'ja' ? 'クアラルンプール中心部 (KL City Centre、ブキッ・ビンタン等)' : 'Kuala Lumpur Central (KL City Centre, Bukit Bintang)' },
                                     { val: 'Selangor', label: language.startsWith('zh') ? '雪兰莪州高尚社区 (梳邦、蒲种、万宜)' : language === 'ja' ? 'セランゴール州郊外 (スバン、プチョン等)' : 'Selangor State (Subang, Puchong, Bangi)' },
                                     { val: 'Johor', label: language.startsWith('zh') ? '柔佛南部走廊 (新山市中心、RTS沿线、美迪尼)' : language === 'ja' ? 'ジョホール (ジョホールバル、RTS沿線、メディニ)' : 'Johor Gateway (Johor Bahru Central, RTS Corridor)' },
                                     { val: 'any', label: language.startsWith('zh') ? '全马全域搜索 (包含吉隆坡与柔佛)' : language === 'ja' ? '全エリアから探す (KL & ジョホールすべて)' : 'Exhaustive Search (All areas / KL & Johor)' }

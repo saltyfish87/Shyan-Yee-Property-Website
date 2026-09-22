@@ -172,14 +172,14 @@ const AREA_MAP: Record<string, Record<SupportedLanguage, string>> = {
     ar: "بانغسار",
     fr: "Bangsar"
   },
-  "KLCC": {
-    en: "KLCC",
-    "zh-CN": "吉隆坡城中城 (KLCC)",
-    "zh-TW": "吉隆坡城中城 (KLCC)",
-    ja: "KLCC (クアラルンプール)",
-    ko: "KLCC (쿠알라룸푸르)",
-    ar: "وسط كوالالمبور (KLCC)",
-    fr: "Centre-ville (KLCC)"
+  "KL City Centre": {
+    en: "KL City Centre",
+    "zh-CN": "吉隆坡城中城 (KL City Centre)",
+    "zh-TW": "吉隆坡城中城 (KL City Centre)",
+    ja: "KL City Centre (クアラルンプール)",
+    ko: "KL City Centre (쿠알라룸푸르)",
+    ar: "وسط كوالالمبور (KL City Centre)",
+    fr: "Centre-ville (KL City Centre)"
   },
   "TRX / Bukit Bintang": {
     en: "TRX / Bukit Bintang",
@@ -235,14 +235,14 @@ const AREA_MAP: Record<string, Record<SupportedLanguage, string>> = {
     ar: "سيبوتيه / طريق كلانغ القديم",
     fr: "Seputeh / Old Klang Road"
   },
-  "Bukit Bintang / KLCC": {
-    en: "Bukit Bintang / KLCC",
+  "Bukit Bintang / KL City Centre": {
+    en: "Bukit Bintang / KL City Centre",
     "zh-CN": "武吉免登 / 吉隆坡城中城",
     "zh-TW": "武吉免登 / 吉隆坡城中城",
-    ja: "ブキット・ビンタン / KLCC",
-    ko: "부킷 빈탕 / KLCC",
-    ar: "بوكيت بينتانغ / KLCC",
-    fr: "Bukit Bintang / KLCC"
+    ja: "ブキット・ビンタン / KL City Centre",
+    ko: "부킷 빈탕 / KL City Centre",
+    ar: "بوكيت بينتانغ / KL City Centre",
+    fr: "Bukit Bintang / KL City Centre"
   },
   "Kuchai Lama": {
     en: "Kuchai Lama",
@@ -271,14 +271,14 @@ const AREA_MAP: Record<string, Record<SupportedLanguage, string>> = {
     ar: "سينتول",
     fr: "Sentul"
   },
-  "KLCC / Bukit Bintang": {
-    en: "KLCC / Bukit Bintang",
+  "KL City Centre / Bukit Bintang": {
+    en: "KL City Centre / Bukit Bintang",
     "zh-CN": "吉隆坡城中城 / 武吉免登",
     "zh-TW": "吉隆坡城中城 / 武吉免登",
-    ja: "KLCC / ブキット・ビンタン",
-    ko: "KLCC / 부킷 빈탕",
-    ar: "KLCC / بوكيت بينتانغ",
-    fr: "KLCC / Bukit Bintang"
+    ja: "KL City Centre / ブキット・ビンタン",
+    ko: "KL City Centre / 부킷 빈탕",
+    ar: "KL City Centre / بوكيت بينتانغ",
+    fr: "KL City Centre / Bukit Bintang"
   },
   "Penang": {
     en: "Penang",

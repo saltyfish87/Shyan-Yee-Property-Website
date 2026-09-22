@@ -1,5 +1,5 @@
 ---
-title: Branniganz KLCC 评测：价格、户型、优缺点
+title: Branniganz KL City Centre 评测：价格、户型、优缺点
 metaDescription: Branniganz 评测：EXSIM 在 Lorong Yap Kwan Seng 的混合发展项目，490 个办公套房加 269 个服务式套房，344 至 678 平方英尺，RM 803,500（毛价）起。
 summary: Branniganz 是 EXSIM 在吉隆坡市中心的双翼项目，A 翼 490 个办公套房，B 翼 269 个服务式套房，最小 344 平方英尺。这篇评测讲价格、户型、管理费、公开资料里缺了什么，以及适合什么买家。
 faqs:
@@ -18,7 +18,7 @@ faqs:
 
 **我的看法。** Branniganz 是我手上进入吉隆坡市中心门槛最低的一个，毛价 RM 803,500 起，但你要清楚这个价钱买到的是什么。这是一栋双翼楼：A 翼 490 个办公套房，B 翼只有 269 个服务式套房，住宅部分在整个项目里是少数。最小的户型 344 平方英尺；这个面积买的是市区落脚点或出租资产，不是可以住得越来越久的家。管理费每平方英尺 RM 1.21，发展商头两年补贴 RM 0.40，也就是说第三年开始你的开销会跳一级。我会先问两个问题：这个单位在哪一翼，以及配多少车位——我手上的资料没有列出车位配额。
 
-- **适合：** 想用最低价拿到市中心地址的买家；想在 KLCC 附近持有小面积出租资产的业主；不需要车位的人。
+- **适合：** 想用最低价拿到市中心地址的买家；想在 KL City Centre 附近持有小面积出租资产的业主；不需要车位的人。
 - **请三思：** 需要空间的人；一定要永久地契的人；想要纯住宅大楼的人。
 
 # Branniganz 资料一览
@@ -39,9 +39,9 @@ faqs:
 
 # Branniganz 在哪里？周边有什么？
 
-位于吉隆坡市中心 Bukit Kewangan 的 Lorong Yap Kwan Seng。这和 EXSIM 的 Phoeniz Suites 是同一个地段范围，开车到 KLCC、Suria KLCC 和 Pavilion Kuala Lumpur 都很近，属 CBD 和金三角。开车可用 AKLEH 大道；最近的轨道站视你往安邦路哪一边走，是 Dang Wangi 或 Ampang Park。请向销售团队要这个地块实测的步行距离——单位这么小，这一点差别很实在。
+位于吉隆坡市中心 Bukit Kewangan 的 Lorong Yap Kwan Seng。这和 EXSIM 的 Phoeniz Suites 是同一个地段范围，开车到 KL City Centre、Suria Mall 和 Pavilion Kuala Lumpur 都很近，属 CBD 和金三角。开车可用 AKLEH 大道；最近的轨道站视你往安邦路哪一边走，是 Dang Wangi 或 Ampang Park。请向销售团队要这个地块实测的步行距离——单位这么小，这一点差别很实在。
 
-# 和 KLCC 周边项目比，Branniganz 如何？
+# 和 KL City Centre 周边项目比，Branniganz 如何？
 
 | 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -76,7 +76,7 @@ faqs:
 
 | 优点 | 缺点 |
 | :--- | :--- |
-| 上面比较的 KLCC 项目中入门价最低 | 月费每平方英尺 RM 1.21，两年补贴期过后会跳一级 |
+| 上面比较的 KL City Centre 项目中入门价最低 | 月费每平方英尺 RM 1.21，两年补贴期过后会跳一级 |
 | CBD 和金三角内的市中心地址 | 最小 344 平方英尺；只有一个两房户型 |
 | 小面积单位在这一带最容易出租 | 759 户里只有 269 户是服务式套房，其余是办公套房 |
 | 2028 年完工，比附近的 Phoeniz Suites 早 | 目前资料未列车位配额；设施清单也未公布 |

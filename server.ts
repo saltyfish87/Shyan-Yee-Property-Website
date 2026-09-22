@@ -126,7 +126,7 @@ const FALLBACK_PROJECTS = [
     id: "queenswoodz",
     name: "Queenswoodz",
     developer: "Exquisite Landmark Group",
-    location: "Jalan Ampang, KLCC, Kuala Lumpur",
+    location: "Jalan Ampang, KL City Centre, Kuala Lumpur",
     area: "Kuala Lumpur",
     startingPrice: 850000,
     startingPriceFormatted: "RM 850,000",

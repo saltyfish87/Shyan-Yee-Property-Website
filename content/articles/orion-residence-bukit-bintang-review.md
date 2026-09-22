@@ -7,7 +7,7 @@ image: https://lh3.googleusercontent.com/d/1roffnx2x4ACpJOXhinTiAgB8LMJB7xXz=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: orion-residence, clouthaus, pavilion-square-residences, core-residence-trx
-relatedSlugs: core-residence-trx-review, golden-crown-trx-review, clouthaus-klcc-review, pavilion-square-kl-review, freehold-vs-leasehold
+relatedSlugs: core-residence-trx-review, golden-crown-trx-review, clouthaus-kl-city-centre-review, pavilion-square-kl-review, freehold-vs-leasehold
 tags: bukit bintang, freehold, branded residence, review
 faqs:
   - q: Is Orion Residence freehold?
@@ -52,7 +52,7 @@ faqs:
 
 # Where is Orion Residence, and what is within walking distance?
 
-Orion sits on Jalan Gading, just off Jalan Bukit Bintang. The Starhill, Pavilion KL and Lot 10 are the nearest malls, and the Bukit Bintang MRT and monorail stations are close by. Suria KLCC is about 2.9 km away, Prince Court Medical Centre 1.2 km, and TRX is the next district over.
+Orion sits on Jalan Gading, just off Jalan Bukit Bintang. The Starhill, Pavilion KL and Lot 10 are the nearest malls, and the Bukit Bintang MRT and monorail stations are close by. Suria Mall is about 2.9 km away, Prince Court Medical Centre 1.2 km, and TRX is the next district over.
 
 # How does Orion compare with its neighbours?
 

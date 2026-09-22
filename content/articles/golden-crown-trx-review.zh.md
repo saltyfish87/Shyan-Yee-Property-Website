@@ -43,7 +43,7 @@ faqs:
 
 位于 Jalan Tun Razak，就在敦拉萨国际贸易中心（TRX）旁边。捷运 1 号线与 2 号线的转换站距离 50 米，有地库隧道直通；10 英亩的 TRX 公园同样 50 米。
 
-商场：The Exchange TRX（50 米）、IKEA 和 MyTown（800 米）、Berjaya Times Square（900 米）、Pavilion Kuala Lumpur、Starhill Gallery 和 Lot 10（1 公里）、Suria KLCC（1.8 公里）。医疗：Prince Court 医疗中心（600 米）、同善医院（800 米）、HSC 医疗中心（2 公里）。学校：EtonHouse 国际学校（1 公里）、循人中学（1.8 公里）、吉隆坡国际学校 ISKL（2.3 公里）。休闲：雪兰莪皇家高尔夫俱乐部（550 米）和 KLCC 公园（1.3 公里）。开车：Jalan Tun Razak、SMART 隧道、MEX 和 SPE。
+商场：The Exchange TRX（50 米）、IKEA 和 MyTown（800 米）、Berjaya Times Square（900 米）、Pavilion Kuala Lumpur、Starhill Gallery 和 Lot 10（1 公里）、Suria Mall（1.8 公里）。医疗：Prince Court 医疗中心（600 米）、同善医院（800 米）、HSC 医疗中心（2 公里）。学校：EtonHouse 国际学校（1 公里）、循人中学（1.8 公里）、吉隆坡国际学校 ISKL（2.3 公里）。休闲：雪兰莪皇家高尔夫俱乐部（550 米）和 KL City Centre 公园（1.3 公里）。开车：Jalan Tun Razak、SMART 隧道、MEX 和 SPE。
 
 # 和附近项目比，Golden Crown 如何？
 

@@ -1,9 +1,9 @@
 ---
-title: Centrix The Station KLCC 评测：价格、户型、优缺点
-metaDescription: Centrix The Station KLCC 评测：47 层 TOD 项目，直接建在 Dang Wangi 轻快铁站之上，857 户，571 至 1,187 平方英尺，RM 907,800 起。户型、景观、管理费、优缺点。
+title: Centrix The Station 评测：价格、户型、优缺点
+metaDescription: Centrix The Station 评测：47 层 TOD 项目，直接建在 Dang Wangi 轻快铁站之上，857 户，571 至 1,187 平方英尺，RM 907,800 起。户型、景观、管理费、优缺点。
 summary: Centrix The Station 位于安邦路（Jalan Ampang），是一座直接建在 Dang Wangi 轻快铁站上方的 47 层 TOD 项目。这篇评测讲尺价、户型、景观、设施，以及谁该买、谁不该买。
 faqs:
-  - q: Centrix The Station KLCC 是永久地契还是租赁地契？
+  - q: Centrix The Station 是永久地契还是租赁地契？
     a: 租赁地契，商业地契。由 Crest Builder Berhad 旗下的 Intan Sekitar Sdn Bhd 开发。
   - q: Centrix 有连接轻快铁吗？
     a: 有。它是建在 Dang Wangi 轻快铁站（KJ12）上方的 TOD 项目，Bukit Nanas 单轨火车站也在步行范围内。
@@ -14,11 +14,11 @@ faqs:
   - q: Centrix 什么时候完工？
     a: 发展商目标是 2028 年。按最新进度，打桩已完成，上层结构做到 3 楼。
 ---
-# 一句话结论：谁适合买 Centrix The Station KLCC？
+# 一句话结论：谁适合买 Centrix The Station？
 
-**我的看法。** Centrix 首先是交通项目，其次才是景观项目，而这两点都是真的。地库直接通到 Dang Wangi 轻快铁站，电梯出来走几步就进站；Bukit Nanas 单轨站也在步行范围，去 KLCC 两站就到，开车到双子塔大约五分钟。高层看得到我们行内说的"四大天王"：国油双子塔、吉隆坡塔、Merdeka 118 和 TRX 那一片高楼，部分楼层还能看到 KL Forest Eco Park 的绿林。它的入门价也明显低过隔几条街的豪宅项目，这是我会拿出来讲的主要原因。去之前有一件事要知道：这个项目是第三次推出市场，之前两次暂停过。直接问销售团队施工进度，再对照你在现场看到的情况。
+**我的看法。** Centrix 首先是交通项目，其次才是景观项目，而这两点都是真的。地库直接通到 Dang Wangi 轻快铁站，电梯出来走几步就进站；Bukit Nanas 单轨站也在步行范围，去 KL City Centre 两站就到，开车到双子塔大约五分钟。高层看得到我们行内说的"四大天王"：国油双子塔、吉隆坡塔、Merdeka 118 和 TRX 那一片高楼，部分楼层还能看到 KL Forest Eco Park 的绿林。它的入门价也明显低过隔几条街的豪宅项目，这是我会拿出来讲的主要原因。去之前有一件事要知道：这个项目是第三次推出市场，之前两次暂停过。直接问销售团队施工进度，再对照你在现场看到的情况。
 
-- **适合：** 在 KLCC 上班、想把通勤时间压到最短的专业人士；想在市中心买流动性高的资产的投资者；包括 MM2H 在内、需要一个符合州属门槛的市中心地址的外国买家。
+- **适合：** 在 KL City Centre 上班、想把通勤时间压到最短的专业人士；想在市中心买流动性高的资产的投资者；包括 MM2H 在内、需要一个符合州属门槛的市中心地址的外国买家。
 - **请三思：** 一定要永久地契的人；想要每层户数少的低密度大楼的人。
 
 # 看房视频
@@ -47,9 +47,9 @@ faqs:
 
 位于安邦路（Jalan Ampang）与苏丹依斯迈路（Jalan Sultan Ismail）交界，直接建在 Dang Wangi 轻快铁站（KJ12）上方。Bukit Nanas 单轨火车站步行可到，等于一个地址接通两条轨道线。
 
-周边：KL Forest Eco Park 城市森林公园、Quill City Mall、Life Centre、Saloma 行人桥、Avenue K、Suria KLCC 和国油双子塔、吉隆坡塔、Pavilion Kuala Lumpur、Merdeka 118 和 The Exchange TRX。学校有 St John International、Primrose Hill International 和 Eton International。医院：KPJ Sentosa、Prince Court 医疗中心和 HSC 医疗中心。
+周边：KL Forest Eco Park 城市森林公园、Quill City Mall、Life Centre、Saloma 行人桥、Avenue K、Suria Mall 和国油双子塔、吉隆坡塔、Pavilion Kuala Lumpur、Merdeka 118 和 The Exchange TRX。学校有 St John International、Primrose Hill International 和 Eton International。医院：KPJ Sentosa、Prince Court 医疗中心和 HSC 医疗中心。
 
-# 和 KLCC 周边项目比，Centrix 如何？
+# 和 KL City Centre 周边项目比，Centrix 如何？
 
 | 项目 | 地契 | 起价 | 面积 | 单位数 | 月费 | 完工 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -85,11 +85,11 @@ faqs:
 | 优点 | 缺点 |
 | :--- | :--- |
 | 直接建在 Dang Wangi 轻快铁站上方，单轨站也在步行范围 | 租赁地契加商业地契：水电费率请确认 |
-| 每平方英尺 RM 0.44，是上面比较的 KLCC 项目中最低 | 857 户，每层最多 21 户 |
+| 每平方英尺 RM 0.44，是上面比较的 KL City Centre 项目中最低 | 857 户，每层最多 21 户 |
 | 入门价低过附近的豪宅项目 | 项目三次推出市场，施工进度要问清楚 |
 | 可看双子塔、吉隆坡塔、Merdeka 118 和森林公园 | 以套间和一房为主，适合家庭的选择不多 |
 
-# 怎样预约看 Centrix The Station KLCC
+# 怎样预约看 Centrix The Station
 
 需要价单、平面图和预约看房，请 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整规格在 [Centrix 楼盘页](/projects/centrix)。
 

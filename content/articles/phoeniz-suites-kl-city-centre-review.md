@@ -7,8 +7,8 @@ image: https://lh3.googleusercontent.com/d/1dLw1oPBrkEiaryehf5xICc9mJ6iNcbXi=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: phoeniz-suites-kl-city-centre, branniganz, centrix, clouthaus, golden-crown
-relatedSlugs: branniganz-klcc-review, centrix-the-station-klcc-review, clouthaus-klcc-review
-tags: klcc, freehold, suites, review
+relatedSlugs: branniganz-kl-city-centre-review, centrix-the-station-kl-city-centre-review, clouthaus-kl-city-centre-review
+tags: kl city centre, freehold, suites, review
 faqs:
   - q: Is Phoeniz Suites freehold or leasehold?
     a: Freehold, with a commercial title under the Housing Development Act. It is developed by Exsim YKS 54 Sdn Bhd, a member of the EXSIM Group.
@@ -23,7 +23,7 @@ faqs:
 ---
 # Quick verdict: who should buy Phoeniz Suites?
 
-**My view.** Phoeniz Suites is a small freehold tower on a small plot: 394 suites on 0.56 acres, 53 storeys tall, in the Golden Triangle with KLCC and Pavilion both a short drive away. Freehold in the city centre at just over RM 1 million is the headline, and for a foreign buyer who needs to clear the RM 1 million threshold in Kuala Lumpur, the entry unit does exactly that with nothing wasted. Two numbers deserve your attention before you sign. The maintenance charge is RM 1.21 psf, which is high, and the developer's subsidy covers only part of it for two years. And the construction period is 60 months from the licence date, so this is the longest wait of any project in this comparison.
+**My view.** Phoeniz Suites is a small freehold tower on a small plot: 394 suites on 0.56 acres, 53 storeys tall, in the Golden Triangle with KL City Centre and Pavilion both a short drive away. Freehold in the city centre at just over RM 1 million is the headline, and for a foreign buyer who needs to clear the RM 1 million threshold in Kuala Lumpur, the entry unit does exactly that with nothing wasted. Two numbers deserve your attention before you sign. The maintenance charge is RM 1.21 psf, which is high, and the developer's subsidy covers only part of it for two years. And the construction period is 60 months from the licence date, so this is the longest wait of any project in this comparison.
 
 - **Suits:** foreign buyers who need a freehold city-centre unit above the RM 1 million threshold without overbuying; professionals who want a compact base in the CBD; buyers who prefer a smaller building.
 - **Think twice if:** you need a family-sized home, you want keys soon, or a RM 1.21 psf monthly charge does not fit your budget.
@@ -49,9 +49,9 @@ faqs:
 
 # Where is Phoeniz Suites, and what is nearby?
 
-On Jalan Liew Weng Chee in the KL city centre, within the CBD and Golden Triangle. KLCC and Pavilion Kuala Lumpur are both within about a five-minute drive, and there is a bus stop and an MRT station within walking distance. The AKLEH highway serves the area for driving, and TRX and Merdeka 118 are the other landmarks in the immediate radius.
+On Jalan Liew Weng Chee in the KL city centre, within the CBD and Golden Triangle. KL City Centre and Pavilion Kuala Lumpur are both within about a five-minute drive, and there is a bus stop and an MRT station within walking distance. The AKLEH highway serves the area for driving, and TRX and Merdeka 118 are the other landmarks in the immediate radius.
 
-# How does Phoeniz Suites compare with its KLCC neighbours?
+# How does Phoeniz Suites compare with its KL City Centre neighbours?
 
 | Project | Tenure | From | Built-up | Units | Monthly fee | Completion |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -84,7 +84,7 @@ Given the plot size, the facilities are stacked rather than spread out. Level 51
 
 | Pros | Cons |
 | :--- | :--- |
-| Cheapest freehold entry of the KLCC launches compared above | RM 1.21 psf monthly charge, among the highest in the group |
+| Cheapest freehold entry of the KL City Centre launches compared above | RM 1.21 psf monthly charge, among the highest in the group |
 | Clears the RM 1 million foreign-buyer threshold without overbuying | 60-month construction period: the longest wait here |
 | Only 394 units, with 6 to 10 per floor and 6 passenger lifts | Largest unit is 678 sq ft: no family-sized option |
 | Furnished to the developer's specification; GreenRE Bronze | Mechanical car park on a 0.56-acre plot |

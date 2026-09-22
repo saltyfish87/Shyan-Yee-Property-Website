@@ -7,8 +7,8 @@ image: https://lh3.googleusercontent.com/d/1yH8boDRs4uKXH35ZlmOdet_7Crovvvp_=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: golden-crown, core-residence-trx, centrix, clouthaus, pavilion-square-residences
-relatedSlugs: core-residence-trx-review, centrix-the-station-klcc-review, clouthaus-klcc-review
-tags: trx, klcc, mrt, review
+relatedSlugs: core-residence-trx-review, centrix-the-station-kl-city-centre-review, clouthaus-kl-city-centre-review
+tags: trx, kl city centre, mrt, review
 faqs:
   - q: Is Golden Crown freehold or leasehold?
     a: Leasehold, with a commercial title. It is developed by Multibay Development Sdn Bhd, a subsidiary of Golden Eagle.
@@ -50,7 +50,7 @@ faqs:
 
 On Jalan Tun Razak, immediately next to Tun Razak Exchange. The MRT Line 1 and 2 interchange is 50 m away with a direct basement tunnel, and the 10-acre TRX park is the same distance.
 
-Retail: The Exchange TRX (50 m), IKEA and MyTown (800 m), Berjaya Times Square (900 m), Pavilion Kuala Lumpur, Starhill Gallery and Lot 10 (1 km), Suria KLCC (1.8 km). Healthcare: Prince Court Medical Centre (600 m), Tung Shin Hospital (800 m), HSC Medical Centre (2 km). Schools: EtonHouse International (1 km), Tsun Jin High School (1.8 km), International School of Kuala Lumpur (2.3 km). Recreation: Royal Selangor Golf Club (550 m) and KLCC Park (1.3 km). Driving: Jalan Tun Razak, the SMART Tunnel, MEX and the SPE.
+Retail: The Exchange TRX (50 m), IKEA and MyTown (800 m), Berjaya Times Square (900 m), Pavilion Kuala Lumpur, Starhill Gallery and Lot 10 (1 km), Suria Mall (1.8 km). Healthcare: Prince Court Medical Centre (600 m), Tung Shin Hospital (800 m), HSC Medical Centre (2 km). Schools: EtonHouse International (1 km), Tsun Jin High School (1.8 km), International School of Kuala Lumpur (2.3 km). Recreation: Royal Selangor Golf Club (550 m) and KL City Centre Park (1.3 km). Driving: Jalan Tun Razak, the SMART Tunnel, MEX and the SPE.
 
 # How does Golden Crown compare with its neighbours?
 

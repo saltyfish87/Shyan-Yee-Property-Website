@@ -19,7 +19,7 @@ export const HOME_VIDEOS: FeaturedVideo[] = [
   },
   {
     youtubeId: 'Xya5mG87R-Q',
-    title: 'CloutHaus Residences, KLCC — freehold residences facing the Petronas Twin Towers',
+    title: 'CloutHaus Residences, KL City Centre — freehold residences facing the Petronas Twin Towers',
     titleZh: '【CloutHaus 格拉豪斯】吉隆坡双子塔对面｜走路 30 步就到｜永久产权豪华公寓',
     projectId: 'clouthaus',
     uploadDate: '2025-01-12T16:00:18-08:00',

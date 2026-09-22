@@ -16,7 +16,7 @@ faqs:
 ---
 # 一句话结论：谁适合买 Pavilion Square？
 
-**我的看法。** 在 Pavilion Square，你买的是柏威年这个名字和那座天桥。大楼在 Royale Chulan 酒店后面，位于 KLCC、TRX 和吉隆坡塔之间，走专属冷气天桥几分钟就进到 Pavilion KL；步行到武吉免登 MRT 约 6 分钟。柏威年集团推出的项目全部都有完工，对这么大的一座楼来说，这点我很看重。拍样板间时有两点让我印象深：每个单位都是全装修交房，大理石地板、品牌电器和家具都包括；较大的户型有阳台，这在吉隆坡市中心很多项目是没有的。朝北的单位看双子塔，朝南的看武吉免登。要接受的是租赁地契，以及一座楼 960 户；如果一定要永久地契，可以拿 CloutHaus 或 Orion 来比较。
+**我的看法。** 在 Pavilion Square，你买的是柏威年这个名字和那座天桥。大楼在 Royale Chulan 酒店后面，位于 KL City Centre、TRX 和吉隆坡塔之间，走专属冷气天桥几分钟就进到 Pavilion KL；步行到武吉免登 MRT 约 6 分钟。柏威年集团推出的项目全部都有完工，对这么大的一座楼来说，这点我很看重。拍样板间时有两点让我印象深：每个单位都是全装修交房，大理石地板、品牌电器和家具都包括；较大的户型有阳台，这在吉隆坡市中心很多项目是没有的。朝北的单位看双子塔，朝南的看武吉免登。要接受的是租赁地契，以及一座楼 960 户；如果一定要永久地契，可以拿 CloutHaus 或 Orion 来比较。
 
 - **适合：** 想直通商场、认柏威年品牌的买家；想在套间到 3 房之间有多种选择的业主。
 - **请三思：** 一定要永久地契的人；偏好低密度大楼的人。
@@ -44,7 +44,7 @@ faqs:
 
 # Pavilion Square 在哪里？周边有什么？
 
-位于金三角的 Jalan Raja Chulan。天桥通往 Pavilion Kuala Lumpur，再过去就是 The Starhill、Fahrenheit88 和 Lot 10。这一带有武吉免登 MRT、Conlay MRT，以及 Raja Chulan 和武吉免登单轨火车站；有盖的武吉免登至 KLCC 行人天桥可以走到 Suria KLCC。最近的医院是 Prince Court 医疗中心和同善医院。
+位于金三角的 Jalan Raja Chulan。天桥通往 Pavilion Kuala Lumpur，再过去就是 The Starhill、Fahrenheit88 和 Lot 10。这一带有武吉免登 MRT、Conlay MRT，以及 Raja Chulan 和武吉免登单轨火车站；有盖的武吉免登至 KL City Centre 行人天桥可以走到 Suria Mall。最近的医院是 Prince Court 医疗中心和同善医院。
 
 # 和附近项目比，Pavilion Square 如何？
 

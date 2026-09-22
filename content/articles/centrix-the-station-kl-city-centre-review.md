@@ -1,16 +1,16 @@
 ---
-title: Centrix The Station KLCC Review: Price, Layouts, Pros & Cons
-metaDescription: Centrix The Station KLCC review: a 47-storey TOD sitting on Dang Wangi LRT, 857 units, 571 to 1,187 sq ft, from RM 907,800. Layouts, views, fees, pros and cons.
+title: Centrix The Station Review: Price, Layouts, Pros & Cons
+metaDescription: Centrix The Station review: a 47-storey TOD sitting on Dang Wangi LRT, 857 units, 571 to 1,187 sq ft, from RM 907,800. Layouts, views, fees, pros and cons.
 summary: Centrix The Station is a 47-storey transit-oriented tower on Jalan Ampang, built directly above Dang Wangi LRT station. This review covers price per square foot, the layouts, the views, the facilities and who should and should not buy.
 category: Reviews
 image: https://lh3.googleusercontent.com/d/1MY5YTmBIm4WE2ge52ikODy_gKU1Xflcs=w1600
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: centrix, clouthaus, golden-crown, phoeniz-suites-kl-city-centre, branniganz
-relatedSlugs: clouthaus-klcc-review, golden-crown-trx-review, foreigner-buying-property-in-malaysia
-tags: klcc, tod, lrt, review
+relatedSlugs: clouthaus-kl-city-centre-review, golden-crown-trx-review, foreigner-buying-property-in-malaysia
+tags: kl city centre, tod, lrt, review
 faqs:
-  - q: Is Centrix The Station KLCC freehold or leasehold?
+  - q: Is Centrix The Station freehold or leasehold?
     a: Leasehold, with a commercial title. It is developed by Intan Sekitar Sdn Bhd, a subsidiary of Crest Builder Berhad.
   - q: Is Centrix connected to the LRT?
     a: Yes. It is a transit-oriented development built above Dang Wangi LRT station (KJ12), with Bukit Nanas monorail station within walking distance.
@@ -21,11 +21,11 @@ faqs:
   - q: When will Centrix be completed?
     a: The developer targets 2028. As of the latest update, piling is complete and the superstructure has reached Level 3.
 ---
-# Quick verdict: who should buy Centrix The Station KLCC?
+# Quick verdict: who should buy Centrix The Station?
 
-**My view.** Centrix is a transit building first and a view building second, and both are real. The basement connects straight into Dang Wangi LRT, so you walk out of the lift and into the station; Bukit Nanas monorail is a short walk on top of that, KLCC is two stops away, and driving to the Twin Towers is about five minutes. Upper floors look out at what we call the four landmarks in this business: the Petronas Twin Towers, KL Tower, Merdeka 118 and the TRX cluster, with the KL Forest Eco Park greenery on some stacks. The entry price is also noticeably below the luxury towers a few streets away, which is the main reason I show it. One thing to know before you go: this is the project's third time coming to market, having been shelved twice before. Ask the sales team directly about the construction schedule, and check it against what you see on site.
+**My view.** Centrix is a transit building first and a view building second, and both are real. The basement connects straight into Dang Wangi LRT, so you walk out of the lift and into the station; Bukit Nanas monorail is a short walk on top of that, KL City Centre is two stops away, and driving to the Twin Towers is about five minutes. Upper floors look out at what we call the four landmarks in this business: the Petronas Twin Towers, KL Tower, Merdeka 118 and the TRX cluster, with the KL Forest Eco Park greenery on some stacks. The entry price is also noticeably below the luxury towers a few streets away, which is the main reason I show it. One thing to know before you go: this is the project's third time coming to market, having been shelved twice before. Ask the sales team directly about the construction schedule, and check it against what you see on site.
 
-- **Suits:** professionals working in KLCC who want the shortest possible commute; buyers who want a liquid city-centre asset; foreign buyers, including MM2H holders, who want a central address that clears the state price threshold.
+- **Suits:** professionals working in KL City Centre who want the shortest possible commute; buyers who want a liquid city-centre asset; foreign buyers, including MM2H holders, who want a central address that clears the state price threshold.
 - **Think twice if:** you want freehold, or a low-density building with few units per floor.
 
 # Video walkthrough
@@ -54,9 +54,9 @@ faqs:
 
 On Jalan Ampang, at the intersection with Jalan Sultan Ismail, directly above Dang Wangi LRT station (KJ12). Bukit Nanas monorail station is a walk away, which gives you both rail lines from one address.
 
-Within the immediate area: KL Forest Eco Park, Quill City Mall, Life Centre, the Saloma Link bridge, Avenue K, Suria KLCC and the Petronas Twin Towers, KL Tower, Pavilion Kuala Lumpur, Merdeka 118 and The Exchange TRX. Schools include St John International, Primrose Hill International and Eton International. Hospitals: KPJ Sentosa, Prince Court Medical Centre and HSC Medical Centre.
+Within the immediate area: KL Forest Eco Park, Quill City Mall, Life Centre, the Saloma Link bridge, Avenue K, Suria Mall and the Petronas Twin Towers, KL Tower, Pavilion Kuala Lumpur, Merdeka 118 and The Exchange TRX. Schools include St John International, Primrose Hill International and Eton International. Hospitals: KPJ Sentosa, Prince Court Medical Centre and HSC Medical Centre.
 
-# How does Centrix compare with its KLCC neighbours?
+# How does Centrix compare with its KL City Centre neighbours?
 
 | Project | Tenure | From | Built-up | Units | Monthly fee | Completion |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -92,11 +92,11 @@ The sales team has also mentioned a managed-service option for owners. That is n
 | Pros | Cons |
 | :--- | :--- |
 | Built directly above Dang Wangi LRT, with the monorail within walking distance | Leasehold with a commercial title: confirm utility tariffs |
-| Lowest monthly fee of the KLCC launches compared above, at RM 0.44 psf | 857 units, with up to 21 homes per floor |
+| Lowest monthly fee of the KL City Centre launches compared above, at RM 0.44 psf | 857 units, with up to 21 homes per floor |
 | Entry price below the luxury towers nearby | The project has come to market three times; check the construction schedule |
 | Views of the Twin Towers, KL Tower, Merdeka 118 and the forest park | Mostly studios and one-bedrooms: limited choice for families |
 
-# How to view Centrix The Station KLCC
+# How to view Centrix The Station
 
 WhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Centrix project page](/projects/centrix).
 

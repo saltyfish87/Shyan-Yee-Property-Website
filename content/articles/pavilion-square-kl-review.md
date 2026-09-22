@@ -7,7 +7,7 @@ image: https://lh3.googleusercontent.com/d/1J2eYufPL6bh3ARXBh279ZntAWYQv8HhN=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: pavilion-square-residences, clouthaus, orion-residence, core-residence-trx
-relatedSlugs: golden-crown-trx-review, core-residence-trx-review, clouthaus-klcc-review, orion-residence-bukit-bintang-review, freehold-vs-leasehold
+relatedSlugs: golden-crown-trx-review, core-residence-trx-review, clouthaus-kl-city-centre-review, orion-residence-bukit-bintang-review, freehold-vs-leasehold
 tags: bukit bintang, pavilion, leasehold, review
 faqs:
   - q: Is Pavilion Square freehold or leasehold?
@@ -23,7 +23,7 @@ faqs:
 ---
 # Quick verdict: who should buy Pavilion Square?
 
-**My view.** What you buy at Pavilion Square is the Pavilion name and the bridge. The tower stands behind the Royale Chulan hotel, between KLCC, TRX and KL Tower, and a private air-conditioned link bridge takes you into Pavilion KL in a few minutes; the Bukit Bintang MRT is about six minutes on foot. Pavilion Group has completed every project it has launched, which matters to me when a building is this large. Two things stood out when I filmed the show units: every home is delivered fully fitted, with marble floors, branded appliances and furniture, and the larger layouts have a balcony, which many Kuala Lumpur city-centre projects do not offer. North-facing units look towards the Twin Towers and south-facing units over Bukit Bintang. The trade-offs are leasehold tenure and 960 units in one tower; if freehold is a must, compare it with CloutHaus or Orion.
+**My view.** What you buy at Pavilion Square is the Pavilion name and the bridge. The tower stands behind the Royale Chulan hotel, between KL City Centre, TRX and KL Tower, and a private air-conditioned link bridge takes you into Pavilion KL in a few minutes; the Bukit Bintang MRT is about six minutes on foot. Pavilion Group has completed every project it has launched, which matters to me when a building is this large. Two things stood out when I filmed the show units: every home is delivered fully fitted, with marble floors, branded appliances and furniture, and the larger layouts have a balcony, which many Kuala Lumpur city-centre projects do not offer. North-facing units look towards the Twin Towers and south-facing units over Bukit Bintang. The trade-offs are leasehold tenure and 960 units in one tower; if freehold is a must, compare it with CloutHaus or Orion.
 
 - **Suits:** buyers who want direct mall access and the Pavilion brand; owners who want a wide choice from studio to 3 bedrooms.
 - **Think twice if:** freehold is a must, or you prefer a low-density building.
@@ -51,7 +51,7 @@ faqs:
 
 # Where is Pavilion Square, and what is nearby?
 
-On Jalan Raja Chulan in the Golden Triangle. The link bridge goes to Pavilion Kuala Lumpur; The Starhill, Fahrenheit88 and Lot 10 follow from there. Bukit Bintang MRT, Conlay MRT and the Raja Chulan and Bukit Bintang monorail stations serve the area, and the covered Bukit Bintang to KLCC walkway leads to Suria KLCC. Prince Court Medical Centre and Tung Shin Hospital are the nearest hospitals.
+On Jalan Raja Chulan in the Golden Triangle. The link bridge goes to Pavilion Kuala Lumpur; The Starhill, Fahrenheit88 and Lot 10 follow from there. Bukit Bintang MRT, Conlay MRT and the Raja Chulan and Bukit Bintang monorail stations serve the area, and the covered Bukit Bintang to KL City Centre walkway leads to Suria Mall. Prince Court Medical Centre and Tung Shin Hospital are the nearest hospitals.
 
 # How does Pavilion Square compare with its neighbours?
 

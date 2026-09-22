@@ -33,7 +33,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
   // New Property addition form state
   const [newPropName, setNewPropName] = useState('');
   const [newPropPrice, setNewPropPrice] = useState('680000');
-  const [newPropLocation, setNewPropLocation] = useState('Persiaran KLCC, Kuala Lumpur');
+  const [newPropLocation, setNewPropLocation] = useState('Persiaran KL City Centre, Kuala Lumpur');
   const [newPropArea, setNewPropArea] = useState('Kuala Lumpur');
   const [newPropDev, setNewPropDev] = useState('Exclusive Developer Group');
   const [newPropBuiltUp, setNewPropBuiltUp] = useState('1100');

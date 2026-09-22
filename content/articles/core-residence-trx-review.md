@@ -7,7 +7,7 @@ image: https://lh3.googleusercontent.com/d/13XbMaagXXczrYR5zOxhRmYUIRV7fa-4w=w16
 publishedOn: 2026-09-21
 updatedOn: 2026-09-21
 relatedProjectIds: core-residence-trx, golden-crown, clouthaus, orion-residence, pavilion-square-residences
-relatedSlugs: golden-crown-trx-review, clouthaus-klcc-review, orion-residence-bukit-bintang-review
+relatedSlugs: golden-crown-trx-review, clouthaus-kl-city-centre-review, orion-residence-bukit-bintang-review
 tags: trx, freehold, completed, review
 faqs:
   - q: Is Core Residence @ TRX freehold?

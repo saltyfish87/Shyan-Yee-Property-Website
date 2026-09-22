@@ -171,7 +171,7 @@ export const AgentCard: React.FC<AgentCardProps> = ({ projects, onProjectClick }
                     },
                     {
                       id: "klcc",
-                      title: language.startsWith('zh') ? "吉隆坡房产" : "KLCC Properties",
+                      title: language.startsWith('zh') ? "吉隆坡房产" : "KL City Centre Properties",
                       url: "https://lh3.googleusercontent.com/d/1NaN5fDlEdu52DhyZ8qr6BoCnp1Gd3EJQ=w400",
                       desc: "Scan Article"
                     }

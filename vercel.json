@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    { "source": "/blog/clouthaus-klcc-review", "destination": "/blog/clouthaus-kl-city-centre-review", "permanent": true },
+    { "source": "/zh/blog/clouthaus-klcc-review", "destination": "/zh/blog/clouthaus-kl-city-centre-review", "permanent": true },
+    { "source": "/blog/centrix-the-station-klcc-review", "destination": "/blog/centrix-the-station-kl-city-centre-review", "permanent": true },
+    { "source": "/zh/blog/centrix-the-station-klcc-review", "destination": "/zh/blog/centrix-the-station-kl-city-centre-review", "permanent": true },
+    { "source": "/blog/phoeniz-suites-klcc-review", "destination": "/blog/phoeniz-suites-kl-city-centre-review", "permanent": true },
+    { "source": "/zh/blog/phoeniz-suites-klcc-review", "destination": "/zh/blog/phoeniz-suites-kl-city-centre-review", "permanent": true },
+    { "source": "/blog/branniganz-klcc-review", "destination": "/blog/branniganz-kl-city-centre-review", "permanent": true },
+    { "source": "/zh/blog/branniganz-klcc-review", "destination": "/zh/blog/branniganz-kl-city-centre-review", "permanent": true }
+  ]
+}
