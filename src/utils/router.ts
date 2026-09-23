@@ -172,6 +172,13 @@ export function getInitialRouteState(customPath?: string): RouteState {
     };
   }
 
+  // 1b. Area and shortlist pages. These are pre-rendered for crawlers; the app shows the project
+  // grid for them. Without this they fell through to the 404 handler, which rewrote the URL to /
+  // and replaced the served page with the home page.
+  if (rawCandidate.startsWith('area/') || rawCandidate.startsWith('best/')) {
+    return { page: 'projects', project: null, blogSlug: null };
+  }
+
   // 2. Static Route Aliases
   if (STATIC_ROUTE_ALIASES[rawCandidate]) {
     const targetPage = STATIC_ROUTE_ALIASES[rawCandidate];

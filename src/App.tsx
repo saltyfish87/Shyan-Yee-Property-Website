@@ -623,6 +623,27 @@ function ClientPortalsOrchestrator() {
       // Strip leading 'projects/' if present
       const candidate = rawCandidate.startsWith('projects/') ? rawCandidate.replace('projects/', '') : rawCandidate;
 
+      // /area/<slug> and /best/<slug> are served as pre-rendered pages for crawlers. A person
+      // landing on one used to get the home page, because the app did not know the route and
+      // replaced the served HTML with it. Send them to the project grid, filtered where we can.
+      if (candidate.startsWith('area/')) {
+        const wanted = candidate.replace(/^area\//, '');
+        const toSlug = (s: string) => s.toLowerCase().replace(/&/g, ' and ').replace(/[\/]/g, ' ')
+          .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+        const hit = projects.find(pr => toSlug(String((pr as any).area || '')) === wanted);
+        setCurrentPage('projects');
+        setSelectedProject(null);
+        setActiveBlogSlug(null);
+        if (hit) setHeroSearchFilters({ budget: 'any', bedrooms: 'any', location: String((hit as any).area), developer: 'any' });
+        return;
+      }
+      if (candidate.startsWith('best/')) {
+        setCurrentPage('projects');
+        setSelectedProject(null);
+        setActiveBlogSlug(null);
+        return;
+      }
+
       if (['calculator', 'calc'].includes(candidate)) {
         setCurrentPage('calculator');
         setSelectedProject(null);

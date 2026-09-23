@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { BLOG_DATA, FAQ_DATA } from '../src/data';
 import { NEARBY_OSM } from '../src/data/nearbyOsm.generated';
+import { PROJECT_FACTS } from '../src/data/projectFacts.generated';
 import { GENERATED_ZH_ARTICLES } from '../src/data/articles.generated';
 import { translations, PRE_TRANSLATED_BLOGS, PRE_TRANSLATED_BLOG_DETAILS } from '../src/translations';
 import { FAQ_TRANSLATIONS } from '../src/faqTranslations';
@@ -110,6 +111,30 @@ interface BuyerShortlist {
   pick: (p: any) => boolean;
 }
 
+/**
+ * Areas come from the projects, not a hand-kept list, so a new project in a new area gets its own
+ * page on the next build. An area with a single project still gets one: it is the page a search for
+ * "new launch in <that area>" lands on, and it links the project into the rest of the site.
+ */
+const areaSlug = (name: string) => name.toLowerCase()
+  .replace(/&/g, ' and ').replace(/[\/]/g, ' ')
+  .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+interface AreaGroup { slug: string; name: string; items: Project[] }
+const AREAS: AreaGroup[] = (() => {
+  const byName = new Map<string, Project[]>();
+  for (const p of projects) {
+    const a = String((p as any).area || '').trim();
+    if (!a) continue;
+    (byName.get(a) || byName.set(a, []).get(a)!).push(p);
+  }
+  return [...byName.entries()]
+    .map(([name, items]) => ({ slug: areaSlug(name), name, items }))
+    .filter(a => a.slug)
+    .sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
+})();
+const areaOfProject = (p: Project) => AREAS.find(a => a.items.some(x => x.id === p.id));
+
 const BUYER_SHORTLISTS: BuyerShortlist[] = [
   { slug: 'condo-under-500k', h1: 'Condominiums Under RM 500,000 — and Which Ones I Have Walked Through',
     title: 'Condo Under RM 500,000 in KL & Selangor | Shyan Yee',
@@ -179,6 +204,109 @@ function embeddedVideoObjects(md: string, articleTitle: string, publishedIso: st
 }
 
 // Helper to escape XML
+/**
+ * What a crawler saw on a project page was the spec box, the gallery and the FAQ — 365 words and
+ * three links on a project with no layout table. Everything else the page knows (the developer's
+ * write-up, its selling points, its facilities, the measured distances) lived only in the React
+ * app, and no page pointed at any other page. These three blocks put that into the served HTML.
+ */
+/** The nav a crawler can actually follow, on every pre-rendered page. */
+function siteLinksHtml(lang: 'en' | 'zh'): string {
+  const zh = lang === 'zh';
+  const b = zh ? `${SITE}/zh` : SITE;
+  return `<section style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #475569;">
+              <h2 style="font-size:18px;">${zh ? '按地区找楼盘' : 'Browse by area'}</h2>
+              <ul style="line-height:1.9;columns:3;">${AREAS.map(a => `<li><a href="${SITE}/area/${a.slug}">${escapeXml(a.name)} (${a.items.length})</a></li>`).join('')}</ul>
+              <h2 style="font-size:18px;">${zh ? '买家清单' : 'Buyer shortlists'}</h2>
+              <ul style="line-height:1.9;columns:2;">${BUYER_SHORTLISTS.map(l => `<li><a href="${SITE}/best/${l.slug}">${escapeXml(l.h1)}</a></li>`).join('')}</ul>
+              <p><a href="${b}">${zh ? '首页' : 'Home'}</a> &middot; <a href="${SITE}/projects">${zh ? '全部楼盘' : 'All projects'}</a> &middot; <a href="${SITE}/blog">${zh ? '评测与指南' : 'Reviews and guides'}</a> &middot; <a href="${SITE}/map">${zh ? '地图' : 'Map'}</a> &middot; <a href="${SITE}/calculator">${zh ? '贷款计算' : 'Calculators'}</a> &middot; <a href="${SITE}/faq">${zh ? '常见问题' : 'FAQ'}</a></p>
+            </section>`;
+}
+
+function projectFactsHtml(projectId: string, lang: 'en' | 'zh'): string {
+  const f = PROJECT_FACTS[projectId];
+  if (!f) return '';
+  const zh = lang === 'zh';
+  const out: string[] = [];
+  const write = zh ? (f.description?.zh || f.description?.en) : (f.description?.en || f.description?.zh);
+  if (write) {
+    out.push(`<section style="margin-bottom: 40px;">
+              <h2>${zh ? '项目介绍' : 'About this project'}</h2>
+              <p style="line-height:1.8;">${escapeXml(write)}</p>
+              ${f.source ? `<p style="font-size:13px;color:#64748b;">${escapeXml(f.source)}</p>` : ''}
+            </section>`);
+  }
+  if (f.keyFeatures?.length) {
+    out.push(`<section style="margin-bottom: 40px;">
+              <h2>${zh ? '核心卖点' : 'Key selling points'}</h2>
+              <ul style="line-height:1.9;">${f.keyFeatures.map(k => `<li>${escapeXml(k)}</li>`).join('')}</ul>
+            </section>`);
+  }
+  if (f.facilities?.length) {
+    out.push(`<section style="margin-bottom: 40px;">
+              <h2>${zh ? '项目设施' : 'Facilities'}</h2>
+              <ul style="line-height:1.9;columns:2;">${f.facilities.map(k => `<li>${escapeXml(k)}</li>`).join('')}</ul>
+            </section>`);
+  }
+  return out.join('\n            ');
+}
+
+/** Measured distances, grouped, with the straight-line caveat the page owes the reader. */
+function projectNearbyHtml(projectId: string, lang: 'en' | 'zh'): string {
+  const rows = NEARBY_OSM[projectId] || [];
+  const facts = PROJECT_FACTS[projectId];
+  const zh = lang === 'zh';
+  if (!rows.length && !facts?.nearby?.length) return '';
+  const groups: Record<string, typeof rows> = {};
+  for (const r of rows) (groups[zh ? r.categoryZh : r.category] ||= []).push(r);
+  const measured = Object.entries(groups).map(([cat, items]) => `
+                <h3>${escapeXml(cat)}</h3>
+                <ul style="line-height:1.9;">${items.map(i => `<li>${escapeXml(i.name)} — ${i.km < 1 ? `${Math.round(i.km * 1000)} m` : `${i.km.toFixed(1)} km`}</li>`).join('')}</ul>`).join('');
+  const declared = facts?.nearby?.length
+    ? `<h3>${zh ? '发展商列出的周边' : 'Listed by the developer'}</h3>
+                <ul style="line-height:1.9;columns:2;">${facts.nearby.map(n => `<li>${escapeXml(n.name)}${n.distance ? ` — ${escapeXml(n.distance)}` : ''}</li>`).join('')}</ul>`
+    : '';
+  return `<section style="margin-bottom: 40px;">
+              <h2>${zh ? '交通与周边' : 'Access and nearby amenities'}</h2>
+              ${measured}
+              ${measured ? `<p style="font-size:13px;color:#64748b;">${zh ? '以上为 OpenStreetMap 直线距离，实际步行或车程会更远。' : 'Straight-line distance on OpenStreetMap. Walking or driving is always further.'}</p>` : ''}
+              ${declared}
+            </section>`;
+}
+
+/**
+ * Every project page now points at the rest of the site: its neighbours, the shortlists it belongs
+ * to, the reviews that mention it, and its page on the portal. A page with three links is an island.
+ */
+function projectLinksHtml(project: Project, all: Project[], lang: 'en' | 'zh'): string {
+  const zh = lang === 'zh';
+  const base = zh ? `${baseUrlFor('zh')}` : SITE;
+  const areaOf = (p: any) => String(p.area || '').trim();
+  const neighbours = all.filter(p => p.id !== project.id && areaOf(p) && areaOf(p) === areaOf(project)).slice(0, 12);
+  const lists = BUYER_SHORTLISTS.filter(sl => { try { return sl.pick(project as any); } catch { return false; } });
+  const reviews = BLOG_DATA.filter((b: any) => (b.relatedProjectIds || []).includes(project.id));
+  const parts: string[] = [];
+  if (neighbours.length) {
+    parts.push(`<h3>${zh ? `${escapeXml(areaOf(project))} 的其他楼盘` : `Other projects in ${escapeXml(areaOf(project))}`}</h3>
+                <ul style="line-height:1.9;columns:2;">${neighbours.map(n => `<li><a href="${base}/projects/${n.id}">${escapeXml(n.name)}</a></li>`).join('')}</ul>`);
+  }
+  if (lists.length) {
+    parts.push(`<h3>${zh ? '这个楼盘出现在这些清单' : 'Shortlists this project appears on'}</h3>
+                <ul style="line-height:1.9;">${lists.map(l => `<li><a href="${SITE}/best/${l.slug}">${escapeXml(l.title)}</a></li>`).join('')}</ul>`);
+  }
+  if (reviews.length) {
+    parts.push(`<h3>${zh ? '我写过的评测' : 'What I have written about it'}</h3>
+                <ul style="line-height:1.9;">${reviews.map((b: any) => `<li><a href="${base}/blog/${b.slug}">${escapeXml(b.title)}</a></li>`).join('')}</ul>`);
+  }
+  parts.push(`<p><a href="${SITE}/projects">${zh ? '全部楼盘' : 'All projects'}</a> &middot; <a href="${SITE}/map">${zh ? '地图' : 'Map'}</a> &middot; <a href="${SITE}/blog">${zh ? '评测与指南' : 'Reviews and guides'}</a> &middot; <a href="https://www.propertyportal.my/project/${project.id}">${zh ? '在 PropertyPortal 查看完整户型和价格' : 'Full layouts and pricing on PropertyPortal'}</a></p>`);
+  return `<section style="margin-bottom: 40px;">
+              <h2>${zh ? '相关页面' : 'Explore from here'}</h2>
+              ${parts.join('\n                ')}
+            </section>`;
+}
+
+const baseUrlFor = (lang: 'en' | 'zh') => (lang === 'zh' ? `${SITE}/zh` : SITE);
+
 function escapeXml(str?: string): string {
   if (!str) return '';
   return str
@@ -446,6 +574,72 @@ function renderSeoHtml(
           </div>
         `;
       }
+    } else if (reqUrl.startsWith('/area/')) {
+      const ar = AREAS.find(a => `/area/${a.slug}` === reqUrl);
+      if (ar) {
+        canonical = `${baseUrl}/area/${ar.slug}`;
+        title = `New Launch Projects in ${ar.name}, Malaysia | Prices, Layouts & My Reviews`;
+        const prices = ar.items.map(p => Number((p as any).startingPrice) || 0).filter(n => n > 0);
+        const lo = prices.length ? Math.min(...prices) : 0;
+        const hi = prices.length ? Math.max(...prices) : 0;
+        const freehold = ar.items.filter(p => /freehold/i.test(String((p as any).tenure || ''))).length;
+        desc = `${ar.items.length} new launch and recent project${ar.items.length === 1 ? '' : 's'} in ${ar.name}${lo ? `, from RM ${lo.toLocaleString()}` : ''}. Tenure, built-up sizes, completion year and the ones I have reviewed or filmed.`;
+        jsonLdGraph.push({
+          "@type": "CollectionPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
+          "isPartOf": { "@id": `${baseUrl}/#website` },
+          "mainEntity": { "@type": "ItemList", "numberOfItems": ar.items.length,
+            "itemListElement": ar.items.map((p, i) => ({ "@type": "ListItem", "position": i + 1, "name": p.name, "url": `${baseUrl}/projects/${p.id}` })) }
+        });
+        jsonLdGraph.push({
+          "@type": "BreadcrumbList", "@id": `${canonical}#breadcrumb`,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+            { "@type": "ListItem", "position": 2, "name": "Projects", "item": `${baseUrl}/projects` },
+            { "@type": "ListItem", "position": 3, "name": ar.name, "item": canonical }
+          ]
+        });
+        const rows = ar.items
+          .slice()
+          .sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity))
+          .map((p: any) => {
+            const rev = BLOG_DATA.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+            const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
+            const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
+            const mine = [
+              rev ? `<a href="${baseUrl}/blog/${rev.slug}">Review</a>` : '',
+              vid ? `<a href="https://www.youtube.com/watch?v=${vid.youtubeId}">Video</a>` : ''
+            ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">Developer data only</span>';
+            const td = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
+            return `<tr><td ${td}><a href="${baseUrl}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td>`
+              + `<td ${td}>${escapeXml(p.developer || '')}</td>`
+              + `<td ${td}>${escapeXml(p.tenure || '')}</td>`
+              + `<td ${td}>${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td>`
+              + `<td ${td}>${p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} sq ft` : ''}</td>`
+              + `<td ${td}>${escapeXml(String(p.completionYear || ''))}</td>`
+              + `<td ${td}>${station ? `${escapeXml(station.name)} ${station.km < 1 ? `${Math.round(station.km * 1000)} m` : `${station.km.toFixed(1)} km`}` : ''}</td>`
+              + `<td ${td}>${mine}</td></tr>`;
+          }).join('');
+        const nearbyAreas = AREAS.filter(a => a.slug !== ar.slug).slice(0, 8);
+        preRenderedBody = `
+          <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; font-family: system-ui, sans-serif; color:#0f172a;">
+            <nav style="margin-bottom: 24px; font-size: 14px; color: #64748b;"><a href="${baseUrl}" style="color:#2563eb;text-decoration:none;">Home</a> &gt; <a href="${baseUrl}/projects" style="color:#2563eb;text-decoration:none;">Projects</a> &gt; <span>${escapeXml(ar.name)}</span></nav>
+            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 12px;">New Launch Projects in ${escapeXml(ar.name)}</h1>
+            <p style="font-size: 16px; color: #475569; line-height: 1.7; margin-bottom: 8px;">${escapeXml(desc)}</p>
+            <p style="font-size: 15px; color: #475569; line-height: 1.7;">
+              ${ar.items.length} project${ar.items.length === 1 ? '' : 's'} on this page.
+              ${lo && hi ? `Developer list prices run from RM ${lo.toLocaleString()} to RM ${hi.toLocaleString()}.` : ''}
+              ${freehold ? `${freehold} of them ${freehold === 1 ? 'is' : 'are'} freehold.` : ''}
+              Distances to the nearest train station are measured on OpenStreetMap in a straight line, so the walk is longer.
+            </p>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:24px;"><thead><tr>${['Project', 'Developer', 'Tenure', 'From', 'Built-up', 'Completion', 'Nearest station', 'My coverage'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <p style="font-size:13px;color:#64748b;margin-top:16px;">Prices are developer list prices and change with each release. Ask me for the current price list before deciding.</p>
+            <h2 style="font-size:20px;margin-top:32px;">Nearby areas</h2>
+            <ul style="line-height:1.9;columns:2;">${nearbyAreas.map(a => `<li><a href="${baseUrl}/area/${a.slug}">${escapeXml(a.name)} (${a.items.length})</a></li>`).join('')}</ul>
+            <p style="margin-top:24px;font-size:15px;color:#334155;">Viewings and the current price list: Yee Woei Shyan (REN 46305), IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>.</p>
+            ${siteLinksHtml('en')}
+          </div>
+        `;
+      }
     } else if (reqUrl === '/calculator') {
       canonical = `${baseUrl}/calculator`;
       title = "Malaysia Property Loan & Stamp Duty Calculator | Shyan Yee";
@@ -698,7 +892,11 @@ function renderSeoHtml(
             </section>`;
             })() : ''}
 
+            ${projectFactsHtml(targetProject.id, 'en')}
+            ${projectNearbyHtml(targetProject.id, 'en')}
             ${projectGuidesHtml(targetProject.id, 'en')}
+            ${projectLinksHtml(targetProject, projects, 'en')}
+            ${siteLinksHtml('en')}
             <section style="margin-bottom: 40px;">
               <h2>Frequently Asked Questions</h2>
               ${faqs.map(faq => `
@@ -1188,6 +1386,16 @@ for (const b of BLOG_DATA) {
   }
 }
 
+// 8a. Area pages — one per area the projects actually sit in.
+const areaDir = path.join(distPath, 'area');
+if (!fs.existsSync(areaDir)) fs.mkdirSync(areaDir, { recursive: true });
+for (const a of AREAS) {
+  const dir = path.join(areaDir, a.slug);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'index.html'), renderSeoHtml(rawHtml, `/area/${a.slug}`, null, null), 'utf-8');
+}
+console.log(`[SEO Static Build] ${AREAS.length} area pages under /area/.`);
+
 // 8b. Simplified Chinese twins under dist/zh/...
 const zhRoot = path.join(distPath, 'zh');
 const writeZh = (relDir: string, reqUrl: string, p: Project | null = null, b: any = null) => {
@@ -1298,6 +1506,9 @@ for (const b of BLOG_DATA) {
     }
     xml += `  </url>\n`;
   }
+}
+for (const a of AREAS) {
+  xml += `  <url><loc>https://shyanyee.com/area/${a.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>\n`;
 }
 // Simplified Chinese pages
 xml += `  <url><loc>https://shyanyee.com/zh</loc><lastmod>${todayStr}</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>\n`;
