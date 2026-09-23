@@ -188,26 +188,45 @@ const STATIONS: StationGroup[] = (() => {
  * is choosing a group, not an SPV, so everything is folded up to the parent brand. A bracket that
  * names the parent wins over the company in front of it; otherwise the brand is matched by name.
  */
-const DEV_BRANDS = [
-  'Eastern & Oriental', 'Chin Hin Group', 'Mah Sing Group', 'Paramount Property', 'Pavilion Group',
-  'Kerjaya Prospek', 'OSK Property', 'Berjaya', 'Ayala Land', 'Land and General', 'Sun Suria',
-  'SP Setia', 'Radium', 'Glomac', 'Avaland', 'Exsim', 'Malton', 'MRCB', 'BRDB', 'WCT', 'UOA',
-  'IJM', 'TA Global', 'GSH', 'Park City', 'Masteron', 'Asiapac', 'Puncak Dana', 'Majestic Gen',
-  'R&F Development', 'Golden Eagle', 'Ehsan Bina', 'EH Developer', 'Kerjaya', 'OCR', 'SCP', 'TSR'
+/**
+ * [what to look for, what to call it]. The database usually names the group and the project company
+ * together, so a match anywhere in the string is enough. Order matters: longer names first.
+ */
+const DEV_BRANDS: [string, string][] = [
+  ['Eastern & Oriental', 'Eastern & Oriental'], ['Chin Hin', 'Chin Hin Group'],
+  ['Mah Sing', 'Mah Sing Group'], ['Paramount Property', 'Paramount Property'],
+  ['Pavilion Group', 'Pavilion Group'], ['Kerjaya', 'Kerjaya Prospek'],
+  ['Crest Builder', 'Crest Builder'], ['Welton', 'Welton Group'],
+  ['OSK Property', 'OSK Property'], ['Berjaya', 'Berjaya'], ['Ayala Land', 'Ayala Land'],
+  ['Land and General', 'Land and General'], ['Sun Suria', 'Sun Suria'], ['SP Setia', 'SP Setia'],
+  ['Radium', 'Radium'], ['Glomac', 'Glomac'], ['Avaland', 'Avaland'], ['Exsim', 'Exsim'],
+  ['Malton', 'Malton'], ['MRCB', 'MRCB'], ['BRDB', 'BRDB'], ['WCT', 'WCT'], ['UOA', 'UOA'],
+  ['IJM', 'IJM'], ['TA Global', 'TA Global'], ['GSH', 'GSH'], ['Park City', 'Park City'],
+  ['Masteron', 'Masteron'], ['Asiapac', 'Asiapac'], ['Puncak Dana', 'Puncak Dana'],
+  ['Majestic Gen', 'Majestic Gen'], ['R&F Development', 'R&F Development'],
+  ['Golden Eagle', 'Golden Eagle'], ['Ehsan Bina', 'Ehsan Bina'], ['EH Developer', 'EH Developer'],
+  ['OCR', 'OCR'], ['SCP', 'SCP'], ['TSR', 'TSR']
 ];
 
-function devName(raw: any): string {
-  const full = String(raw || '').trim();
-  if (!full) return '';
-  // "(A subsidiary of X)", "(a joint venture between X and Y)", "(MRCB)" — the bracket is the parent.
-  const bracket = (full.match(/\(([^)]*)\)\s*$/) || [])[1] || '';
-  const parentInBracket = /subsidiar|joint venture|group|berhad|limited/i.test(bracket) ? bracket : '';
-  for (const hay of [parentInBracket, full]) {
-    if (!hay) continue;
-    const hit = DEV_BRANDS.find(b => new RegExp(`\\b${b.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(hay));
-    if (hit) return hit;
+/**
+ * Sales kits name the project's own company, not the group behind it. A buyer is choosing a group,
+ * so everything folds up to the parent brand. The project database names both ("Chin Hin Group
+ * Property (Quaver Sdn Bhd)") and is preferred over the website sheet, which names only the SPV
+ * ("Quaver Sdn Bhd") — that is why Quaver and Ayanna sit under Chin Hin without a hand-written rule.
+ */
+function devName(project: Project): string {
+  // Neither source is reliably the better one: the database gives the group for Quaver and only the
+  // project company for Pavilion Square, and the website sheet is the other way round. Look in both
+  // and take whichever names a group; fall back to the sheet's own wording.
+  const fromDb = String(PROJECT_FACTS[project.id]?.developer || '').trim();
+  const fromSheet = String((project as any).developer || '').trim();
+  const full = fromSheet || fromDb;
+  if (!full && !fromDb) return '';
+  for (const [needle, brand] of DEV_BRANDS) {
+    const re = new RegExp(`\\b${needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+    if (re.test(fromDb) || re.test(fromSheet)) return brand;
   }
-  // No brand recognised: it is a one-off project company. Drop the legal suffix and leave it.
+  // No group recognised: a one-off project company. Drop the legal suffix and leave it.
   return full.replace(/\s*\([^)]*\)\s*$/, '')
     .replace(/\s+Sdn\.?\s*Bhd\.?$/i, '')
     .replace(/\s+Berhad$/i, '')
@@ -219,7 +238,7 @@ interface DeveloperGroup { slug: string; name: string; items: Project[] }
 const DEVELOPERS: DeveloperGroup[] = (() => {
   const by = new Map<string, Project[]>();
   for (const p of projects) {
-    const n = devName((p as any).developer);
+    const n = devName(p);
     if (!n) continue;
     (by.get(n) || by.set(n, []).get(n)!).push(p);
   }
@@ -1459,6 +1478,78 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
           <h2 style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0;">${f.question}</h2>
           <p style="font-size: 15px; color: #334155; line-height: 1.6; margin: 0;">${f.answer}</p></div>`).join('')}
         </div>`;
+    } else if (reqUrl.startsWith('/near/') || reqUrl.startsWith('/developer/') || reqUrl.startsWith('/completion/')) {
+      // The three index types share a shape: a heading, a sentence of real numbers, a table of
+      // projects, and links outwards. Only the heading and the first sentence differ.
+      const st = STATIONS.find(x => `/near/${x.slug}` === reqUrl);
+      const dev = DEVELOPERS.find(d => `/developer/${d.slug}` === reqUrl);
+      const yr = COMPLETION_YEARS.find(y => `/completion/${y.year}` === reqUrl);
+      const items: Project[] = st ? st.items.map(x => x.p) : dev ? dev.items : yr ? yr.items : [];
+      if (items.length) {
+        const kmOf = (p: Project) => st ? st.items.find(x => x.p.id === p.id)!.km : undefined;
+        const prices = items.map((p: any) => Number(p.startingPrice) || 0).filter(n => n > 0);
+        const lo = prices.length ? Math.min(...prices) : 0;
+        const hi = prices.length ? Math.max(...prices) : 0;
+        const freehold = items.filter((p: any) => /freehold/i.test(String(p.tenure || ''))).length;
+        const areasHere = [...new Set(items.map((p: any) => String(p.area || '').trim()).filter(Boolean))];
+        const heading = st ? `${st.name}站附近的新楼盘` : dev ? `${dev.name} 的楼盘` : `${yr!.year} 年完工的新楼盘`;
+        title = `${heading} | 价格、户型、地契与完工年份 | Shyan Yee`;
+        desc = st
+          ? `${st.name}站${st.codes.length ? `（${st.codes.join('、')}）` : ''}附近共 ${items.length} 个新楼盘，最近的是${st.items[0].p.name}，直线 ${st.items[0].km < 1 ? `${Math.round(st.items[0].km * 1000)} 米` : `${st.items[0].km.toFixed(1)} 公里`}。距离是量出来的，不是发展商写的。`
+          : dev
+          ? `${dev.name} 在售的 ${items.length} 个楼盘${lo ? `，起价 RM ${lo.toLocaleString()}` : ''}。地契、面积、完工年份、最近车站，以及我写过评测或拍过视频的是哪几个。`
+          : `${items.length} 个预计在 ${yr!.year} 年完工的楼盘${lo ? `，起价 RM ${lo.toLocaleString()}` : ''}。地区、地契、面积与最近车站距离。`;
+        crumbs([['首页', home], ['全部楼盘', `${home}/projects`], [heading, '']]);
+        graph.push({
+          "@type": "CollectionPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
+          "inLanguage": "zh-CN", "isPartOf": { "@id": `${SITE}/#website` },
+          ...(st ? { "about": { "@type": "TrainStation", "name": `${st.name}站` } } : {}),
+          ...(dev ? { "about": { "@type": "Organization", "name": dev.name } } : {}),
+          "mainEntity": { "@type": "ItemList", "numberOfItems": items.length,
+            "itemListElement": items.map((p, i) => ({ "@type": "ListItem", "position": i + 1, "name": p.name, "url": `${home}/projects/${p.id}` })) }
+        });
+        const td = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
+        const rows = items.slice()
+          .sort((a: any, b: any) => st ? (kmOf(a)! - kmOf(b)!) : ((Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity)))
+          .map((p: any) => {
+            const rev = ZH_BLOG_LIST.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+            const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
+            const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
+            const km = kmOf(p);
+            const mine = [
+              rev ? `<a href="${home}/blog/${rev.slug}">评测</a>` : '',
+              vid ? `<a href="https://www.youtube.com/watch?v=${vid.youtubeId}">视频</a>` : ''
+            ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">仅发展商资料</span>';
+            return `<tr>`
+              + (st ? `<td ${td}><strong>${km! < 1 ? `${Math.round(km! * 1000)} 米` : `${km!.toFixed(1)} 公里`}</strong></td>` : '')
+              + `<td ${td}><a href="${home}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td>`
+              + `<td ${td}>${escapeXml(p.area || '')}</td>`
+              + `<td ${td}>${zhTenure(p.tenure)}</td>`
+              + `<td ${td}>${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td>`
+              + `<td ${td}>${p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} 平方尺` : ''}</td>`
+              + `<td ${td}>${escapeXml(String(p.completionYear || ''))}</td>`
+              + (st ? '' : `<td ${td}>${station ? `${escapeXml(station.name)} ${station.km < 1 ? `${Math.round(station.km * 1000)} 米` : `${station.km.toFixed(1)} 公里`}` : ''}</td>`)
+              + `<td ${td}>${mine}</td></tr>`;
+          }).join('');
+        const heads = st
+          ? ['距离', '楼盘', '地区', '地契', '起价', '面积', '完工', '我的内容']
+          : ['楼盘', '地区', '地契', '起价', '面积', '完工', '最近车站', '我的内容'];
+        body = `
+          <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;color:#0f172a;">
+            <nav style="margin-bottom:24px;font-size:14px;color:#64748b;"><a href="${home}" style="color:#2563eb;text-decoration:none;">首页</a> &gt; <a href="${home}/projects" style="color:#2563eb;text-decoration:none;">全部楼盘</a> &gt; <span>${escapeXml(heading)}</span></nav>
+            <h1 style="font-size:32px;font-weight:800;margin-bottom:12px;">${escapeXml(heading)}</h1>
+            <p style="font-size:16px;color:#475569;line-height:1.8;">${escapeXml(desc)}</p>
+            <p style="font-size:15px;color:#475569;line-height:1.8;">
+              这一页收录 ${items.length} 个楼盘。${lo && hi ? `发展商开价由 RM ${lo.toLocaleString()} 到 RM ${hi.toLocaleString()}。` : ''}${freehold ? `其中 ${freehold} 个是永久地契。` : ''}
+              车站距离取自 OpenStreetMap 的直线距离，实际走路会更远。
+            </p>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:24px;"><thead><tr>${heads.map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <p style="font-size:13px;color:#64748b;margin-top:16px;">价格为发展商开价，每一期都会变动。决定前请向我索取最新价目表。</p>
+            ${areasHere.length ? `<h2 style="font-size:20px;margin-top:32px;">相关地区</h2><ul style="line-height:1.9;columns:2;">${areasHere.map(a => `<li><a href="${home}/area/${areaSlug(a)}">${escapeXml(a)}</a></li>`).join('')}</ul>` : ''}
+            <p style="margin-top:24px;font-size:15px;color:#334155;">看房与最新价目表：Yee Woei Shyan（REN 46305），IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>。</p>
+            ${siteLinksHtml('zh')}
+          </div>`;
+      }
     } else if (reqUrl.startsWith('/area/')) {
       const ar = AREAS.find(a => `/area/${a.slug}` === reqUrl);
       if (ar) {
@@ -1741,6 +1832,9 @@ for (const p of projects) if (p && p.id) { writeZh(path.join('projects', p.id), 
 let zhBlogCount = 0;
 for (const b of BLOG_DATA) if (b && b.slug) { writeZh(path.join('blog', b.slug), `/blog/${b.slug}`, null, b); zhBlogCount++; }
 for (const a of AREAS) writeZh(path.join('area', a.slug), `/area/${a.slug}`);
+for (const st of STATIONS) writeZh(path.join('near', st.slug), `/near/${st.slug}`);
+for (const d of DEVELOPERS) writeZh(path.join('developer', d.slug), `/developer/${d.slug}`);
+for (const y of COMPLETION_YEARS) writeZh(path.join('completion', y.year), `/completion/${y.year}`);
 console.log(`[SEO Static Build] Chinese (/zh) twins: home, ${staticRoutes.length} static pages, ${zhProjectCount} projects, ${zhBlogCount} articles.`);
 
 // 9. Generate legacy 301/refresh redirect files for outdated slugs
@@ -1858,6 +1952,15 @@ for (const r of staticRoutes) {
 }
 for (const p of projects) {
   if (p && p.id) xml += `  <url><loc>https://shyanyee.com/zh/projects/${p.id}</loc><lastmod>${p.syncedAt ? p.syncedAt.substring(0, 10) : todayStr}</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>\n`;
+}
+for (const st of STATIONS) {
+  xml += `  <url><loc>https://shyanyee.com/zh/near/${st.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
+}
+for (const d of DEVELOPERS) {
+  xml += `  <url><loc>https://shyanyee.com/zh/developer/${d.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>\n`;
+}
+for (const y of COMPLETION_YEARS) {
+  xml += `  <url><loc>https://shyanyee.com/zh/completion/${y.year}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>\n`;
 }
 for (const a of AREAS) {
   xml += `  <url><loc>https://shyanyee.com/zh/area/${a.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;

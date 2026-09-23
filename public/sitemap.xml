@@ -1146,12 +1146,14 @@
     </image:image>
   </url>
   <url><loc>https://shyanyee.com/developer/exsim</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://shyanyee.com/developer/avaland</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/chin-hin-group</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/developer/avaland</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/mah-sing-group</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/developer/wct</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/berjaya</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/brdb</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/ijm</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/developer/kerjaya-prospek</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/majestic-gen</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/malton</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/mrcb</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
@@ -1161,7 +1163,6 @@
   <url><loc>https://shyanyee.com/developer/r-and-f-development</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/ta-global</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/developer/uoa</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://shyanyee.com/developer/wct</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/completion/2025</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/completion/2026</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/completion/2027</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
@@ -1330,6 +1331,79 @@
   <url><loc>https://shyanyee.com/zh/projects/atas-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
   <url><loc>https://shyanyee.com/zh/projects/divine-kl-city-centre</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
   <url><loc>https://shyanyee.com/zh/projects/m-aurora</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/awan-besar</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/bukit-chagar</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/muhibbah</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/johor-bahru-sentral</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/bukit-bintang</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/sri-petaling</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/abdullah-hukum</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/alam-sutera</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/jalan-templer</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/bangsar</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/conlay</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/pantai-dalam</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/petaling</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/sri-damansara-sentral</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/asia-jaya</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/bukit-jalil</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/bukit-nanas</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/hentian-duta</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/jalan-ipoh</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/kerinchi</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/klcc</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/kota-damansara</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/kuchai</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/kwasa-sentral</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/mutiara-damansara</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/py01-kwasa-damansara</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/raja-chulan</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/segambut</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/sri-damansara-barat</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/taman-jaya</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/taman-paramount</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/ampang-park</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/angkasapuri</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/ara-damansara</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/bandar-utama</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/dang-wangi</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/imbi</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/kampung-dato-harun</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/kinrara-bk-5</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/kl-sentral</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/lembah-subang</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/persiaran-klcc</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/pusat-bandar-puchong</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/py23-tun-razak-exchange</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/seri-setia</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/sri-damansara-timur</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/ss15</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/subang</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/near/taman-naga-emas</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/exsim</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/chin-hin-group</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/avaland</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/mah-sing-group</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/wct</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/berjaya</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/brdb</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/ijm</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/kerjaya-prospek</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/majestic-gen</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/malton</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/mrcb</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/paramount-property</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/pavilion-group</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/puncak-dana</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/r-and-f-development</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/ta-global</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/developer/uoa</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/completion/2025</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/completion/2026</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/completion/2027</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/completion/2028</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/completion/2029</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://shyanyee.com/zh/completion/2030</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
   <url><loc>https://shyanyee.com/zh/area/petaling-jaya</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/zh/area/johor-bahru</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/zh/area/bangsar</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
