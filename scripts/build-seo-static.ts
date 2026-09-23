@@ -216,7 +216,7 @@ function siteLinksHtml(lang: 'en' | 'zh'): string {
   const b = zh ? `${SITE}/zh` : SITE;
   return `<section style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #475569;">
               <h2 style="font-size:18px;">${zh ? '按地区找楼盘' : 'Browse by area'}</h2>
-              <ul style="line-height:1.9;columns:3;">${AREAS.map(a => `<li><a href="${SITE}/area/${a.slug}">${escapeXml(a.name)} (${a.items.length})</a></li>`).join('')}</ul>
+              <ul style="line-height:1.9;columns:3;">${AREAS.map(a => `<li><a href="${b}/area/${a.slug}">${escapeXml(a.name)} (${a.items.length})</a></li>`).join('')}</ul>
               <h2 style="font-size:18px;">${zh ? '买家清单' : 'Buyer shortlists'}</h2>
               <ul style="line-height:1.9;columns:2;">${BUYER_SHORTLISTS.map(l => `<li><a href="${SITE}/best/${l.slug}">${escapeXml(l.h1)}</a></li>`).join('')}</ul>
               <p><a href="${b}">${zh ? '首页' : 'Home'}</a> &middot; <a href="${SITE}/projects">${zh ? '全部楼盘' : 'All projects'}</a> &middot; <a href="${SITE}/blog">${zh ? '评测与指南' : 'Reviews and guides'}</a> &middot; <a href="${SITE}/map">${zh ? '地图' : 'Map'}</a> &middot; <a href="${SITE}/calculator">${zh ? '贷款计算' : 'Calculators'}</a> &middot; <a href="${SITE}/faq">${zh ? '常见问题' : 'FAQ'}</a></p>
@@ -1205,6 +1205,61 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
           <h2 style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0;">${f.question}</h2>
           <p style="font-size: 15px; color: #334155; line-height: 1.6; margin: 0;">${f.answer}</p></div>`).join('')}
         </div>`;
+    } else if (reqUrl.startsWith('/area/')) {
+      const ar = AREAS.find(a => `/area/${a.slug}` === reqUrl);
+      if (ar) {
+        title = `${ar.name}新楼盘 | 价格、户型、地契与我的评测 | Shyan Yee`;
+        const prices = ar.items.map(p => Number((p as any).startingPrice) || 0).filter(n => n > 0);
+        const lo = prices.length ? Math.min(...prices) : 0;
+        const hi = prices.length ? Math.max(...prices) : 0;
+        const freehold = ar.items.filter(p => /freehold/i.test(String((p as any).tenure || ''))).length;
+        desc = `${ar.name}共 ${ar.items.length} 个新楼盘${lo ? `，起价 RM ${lo.toLocaleString()}` : ''}。地契、面积、完工年份、最近车站距离，以及我走过或拍过的是哪几个。`;
+        crumbs([['首页', home], ['全部楼盘', `${home}/projects`], [ar.name, '']]);
+        graph.push({
+          "@type": "CollectionPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
+          "inLanguage": "zh-CN", "isPartOf": { "@id": `${SITE}/#website` },
+          "mainEntity": { "@type": "ItemList", "numberOfItems": ar.items.length,
+            "itemListElement": ar.items.map((p, i) => ({ "@type": "ListItem", "position": i + 1, "name": p.name, "url": `${home}/projects/${p.id}` })) }
+        });
+        const rows = ar.items
+          .slice()
+          .sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity))
+          .map((p: any) => {
+            const rev = ZH_BLOG_LIST.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+            const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
+            const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
+            const mine = [
+              rev ? `<a href="${home}/blog/${rev.slug}">评测</a>` : '',
+              vid ? `<a href="https://www.youtube.com/watch?v=${vid.youtubeId}">视频</a>` : ''
+            ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">仅发展商资料</span>';
+            const td = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
+            return `<tr><td ${td}><a href="${home}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td>`
+              + `<td ${td}>${escapeXml(p.developer || '')}</td>`
+              + `<td ${td}>${zhTenure(p.tenure)}</td>`
+              + `<td ${td}>${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td>`
+              + `<td ${td}>${p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} 平方尺` : ''}</td>`
+              + `<td ${td}>${escapeXml(String(p.completionYear || ''))}</td>`
+              + `<td ${td}>${station ? `${escapeXml(station.name)} ${station.km < 1 ? `${Math.round(station.km * 1000)} 米` : `${station.km.toFixed(1)} 公里`}` : ''}</td>`
+              + `<td ${td}>${mine}</td></tr>`;
+          }).join('');
+        const others = AREAS.filter(a => a.slug !== ar.slug).slice(0, 8);
+        body = `
+          <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;color:#0f172a;">
+            <nav style="margin-bottom:24px;font-size:14px;color:#64748b;"><a href="${home}" style="color:#2563eb;text-decoration:none;">首页</a> &gt; <a href="${home}/projects" style="color:#2563eb;text-decoration:none;">全部楼盘</a> &gt; <span>${escapeXml(ar.name)}</span></nav>
+            <h1 style="font-size:32px;font-weight:800;margin-bottom:12px;">${escapeXml(ar.name)}新楼盘</h1>
+            <p style="font-size:16px;color:#475569;line-height:1.8;">${escapeXml(desc)}</p>
+            <p style="font-size:15px;color:#475569;line-height:1.8;">
+              这一页收录 ${ar.items.length} 个楼盘。${lo && hi ? `发展商开价由 RM ${lo.toLocaleString()} 到 RM ${hi.toLocaleString()}。` : ''}${freehold ? `其中 ${freehold} 个是永久地契。` : ''}
+              车站距离取自 OpenStreetMap 的直线距离，实际走路会更远。
+            </p>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:24px;"><thead><tr>${['楼盘', '发展商', '地契', '起价', '面积', '完工', '最近车站', '我的内容'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <p style="font-size:13px;color:#64748b;margin-top:16px;">价格为发展商开价，每一期都会变动。决定前请向我索取最新价目表。</p>
+            <h2 style="font-size:20px;margin-top:32px;">其他地区</h2>
+            <ul style="line-height:1.9;columns:2;">${others.map(a => `<li><a href="${home}/area/${a.slug}">${escapeXml(a.name)}（${a.items.length}）</a></li>`).join('')}</ul>
+            <p style="margin-top:24px;font-size:15px;color:#334155;">看房与最新价目表：Yee Woei Shyan（REN 46305），IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>。</p>
+            ${siteLinksHtml('zh')}
+          </div>`;
+      }
     } else if (reqUrl === '/calculator') {
       title = '马来西亚房贷与印花税计算器 | Shyan Yee';
       desc = '计算马来西亚房产的每月供款、利息总额、律师费与产权转让（MOT）印花税。';
@@ -1409,6 +1464,7 @@ let zhProjectCount = 0;
 for (const p of projects) if (p && p.id) { writeZh(path.join('projects', p.id), `/projects/${p.id}`, p, null); zhProjectCount++; }
 let zhBlogCount = 0;
 for (const b of BLOG_DATA) if (b && b.slug) { writeZh(path.join('blog', b.slug), `/blog/${b.slug}`, null, b); zhBlogCount++; }
+for (const a of AREAS) writeZh(path.join('area', a.slug), `/area/${a.slug}`);
 console.log(`[SEO Static Build] Chinese (/zh) twins: home, ${staticRoutes.length} static pages, ${zhProjectCount} projects, ${zhBlogCount} articles.`);
 
 // 9. Generate legacy 301/refresh redirect files for outdated slugs
@@ -1517,6 +1573,9 @@ for (const r of staticRoutes) {
 }
 for (const p of projects) {
   if (p && p.id) xml += `  <url><loc>https://shyanyee.com/zh/projects/${p.id}</loc><lastmod>${p.syncedAt ? p.syncedAt.substring(0, 10) : todayStr}</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>\n`;
+}
+for (const a of AREAS) {
+  xml += `  <url><loc>https://shyanyee.com/zh/area/${a.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
 }
 for (const b of BLOG_DATA) {
   if (b && b.slug) xml += `  <url><loc>https://shyanyee.com/zh/blog/${b.slug}</loc><lastmod>${articleDates(b).updated}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
