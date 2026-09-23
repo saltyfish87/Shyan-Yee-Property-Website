@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://shyanyee.com</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-  <url><loc>https://shyanyee.com/projects</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
-  <url><loc>https://shyanyee.com/compare</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
-  <url><loc>https://shyanyee.com/map</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
-  <url><loc>https://shyanyee.com/blog</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
-  <url><loc>https://shyanyee.com/calculator</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
-  <url><loc>https://shyanyee.com/faq</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
-  <url><loc>https://shyanyee.com/best/condo-under-500k</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://shyanyee.com/best/condo-under-700k</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://shyanyee.com/best/condo-under-1-million</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://shyanyee.com/best/freehold-projects</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://shyanyee.com/best/family-3-bedroom</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://shyanyee.com/best/projects-i-have-reviewed</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://shyanyee.com</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
+  <url><loc>https://shyanyee.com/projects</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
+  <url><loc>https://shyanyee.com/compare</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
+  <url><loc>https://shyanyee.com/map</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
+  <url><loc>https://shyanyee.com/blog</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
+  <url><loc>https://shyanyee.com/calculator</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
+  <url><loc>https://shyanyee.com/faq</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
+  <url><loc>https://shyanyee.com/best/condo-under-500k</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://shyanyee.com/best/condo-under-700k</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://shyanyee.com/best/condo-under-1-million</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://shyanyee.com/best/freehold-projects</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://shyanyee.com/best/family-3-bedroom</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://shyanyee.com/best/near-mrt-lrt</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://shyanyee.com/best/projects-i-have-reviewed</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url>
     <loc>https://shyanyee.com/projects/amika-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -26,7 +27,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/anya</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -36,7 +37,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/aricia</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -46,7 +47,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/aster-hill-sri-petaling</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -56,7 +57,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/atera-phase-2</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -66,7 +67,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/aurum-business-centre-suites</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -76,7 +77,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/avantro-residences</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -86,7 +87,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/ayanna</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -96,7 +97,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/bangsar-hill-park-tower-b-and-c</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -106,7 +107,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/bangsar-hill-park-verdura-tower-d-and-e</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -116,7 +117,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/clouthaus</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -126,7 +127,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/core-residence-trx</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -136,7 +137,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/genstarz</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -146,7 +147,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/luminar-residence-federal-avenue</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -156,7 +157,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/m-aspira</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -166,7 +167,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/maple-residences</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -176,7 +177,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/oaka-residences</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -186,7 +187,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/one-seputeh</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -196,7 +197,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/orion-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -206,7 +207,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/park-green-pavilion-bukit-jalil</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -216,7 +217,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/quaver-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -226,7 +227,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/radium-arena</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -236,7 +237,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/riverville-residences-2</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -246,7 +247,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/tria-seputeh</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -256,7 +257,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/tujuh-residences</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -266,7 +267,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/vox</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -276,7 +277,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/wyn</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -286,7 +287,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/zenia-damansara</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -296,7 +297,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/ren-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -306,7 +307,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/aras-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -316,7 +317,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/vividz</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -326,7 +327,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/khaya-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -336,7 +337,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/phoeniz-suites-kl-city-centre</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -346,7 +347,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/branniganz</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -356,7 +357,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/alora-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -366,7 +367,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/loop-city-puchong</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -376,7 +377,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/aldenz</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -386,7 +387,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/d-evia</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -396,7 +397,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/arra</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -406,7 +407,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/atera</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -416,7 +417,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/amara</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -426,7 +427,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/parkside-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -436,7 +437,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/amaya</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -446,7 +447,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/forest-hill</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -456,7 +457,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/dwi-aurora</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -466,7 +467,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/stellar-damansara</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -476,7 +477,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/daya-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -486,7 +487,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/d-tessera</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -496,7 +497,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/veridian</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -506,7 +507,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/livista</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -516,7 +517,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/queenswoodz</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -526,7 +527,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/menerung</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -536,7 +537,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/river-park</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -546,7 +547,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/lighthauz</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -556,7 +557,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/keeperz-suites</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -566,7 +567,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/aetas-seputeh</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -576,7 +577,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/papyrus</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -586,7 +587,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/bamboohill</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -596,7 +597,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/tangen-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -606,7 +607,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/stellaris-riana-dutamas</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -616,7 +617,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/pavilion-square-residences</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -626,7 +627,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/pavilion-square-office</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -636,7 +637,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/golden-crown</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -646,7 +647,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/centrix</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -656,7 +657,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/axis-causewayz-square</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -666,7 +667,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/brixton-causewayz-square</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -676,7 +677,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/dover-causewayz-square</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -686,7 +687,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/asteriaz</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -696,7 +697,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/mosaic</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -706,7 +707,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/kingswoodz-bukit-jalil</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -716,7 +717,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/gen-sphere</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -726,7 +727,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/m-grand-minori</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -736,7 +737,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/princess-cove-rnf-phase-2</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -746,7 +747,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/princess-cove-rnf-phase-3</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -756,7 +757,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/times-square-2</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -766,7 +767,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/accent-residences</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -776,7 +777,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/ascott-star-residence</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -786,7 +787,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/eaton-residences</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -796,7 +797,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/pantai-sentral-park-enlace-suites-ii</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -806,7 +807,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/conlay</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -816,7 +817,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/atas-residences</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -826,7 +827,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/divine-kl-city-centre</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -836,7 +837,7 @@
   </url>
   <url>
     <loc>https://shyanyee.com/projects/m-aurora</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -1144,96 +1145,96 @@
       <image:title>Evaluating Rental Yields: Standard Long-Term Tenants vs. AirBnB Homestays in Malaysia</image:title>
     </image:image>
   </url>
-  <url><loc>https://shyanyee.com/zh</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/compare</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/map</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/blog</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/calculator</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/faq</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/amika-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/anya</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/aricia</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/aster-hill-sri-petaling</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/atera-phase-2</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/aurum-business-centre-suites</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/avantro-residences</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/ayanna</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/bangsar-hill-park-tower-b-and-c</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/bangsar-hill-park-verdura-tower-d-and-e</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/clouthaus</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/core-residence-trx</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/genstarz</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/luminar-residence-federal-avenue</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/m-aspira</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/maple-residences</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/oaka-residences</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/one-seputeh</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/orion-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/park-green-pavilion-bukit-jalil</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/quaver-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/radium-arena</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/riverville-residences-2</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/tria-seputeh</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/tujuh-residences</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/vox</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/wyn</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/zenia-damansara</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/ren-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/aras-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/vividz</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/khaya-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/phoeniz-suites-kl-city-centre</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/branniganz</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/alora-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/loop-city-puchong</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/aldenz</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/d-evia</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/arra</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/atera</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/amara</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/parkside-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/amaya</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/forest-hill</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/dwi-aurora</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/stellar-damansara</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/daya-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/d-tessera</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/veridian</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/livista</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/queenswoodz</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/menerung</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/river-park</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/lighthauz</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/keeperz-suites</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/aetas-seputeh</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/papyrus</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/bamboohill</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/tangen-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/stellaris-riana-dutamas</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/pavilion-square-residences</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/pavilion-square-office</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/golden-crown</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/centrix</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/axis-causewayz-square</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/brixton-causewayz-square</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/dover-causewayz-square</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/asteriaz</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/mosaic</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/kingswoodz-bukit-jalil</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/gen-sphere</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/m-grand-minori</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/princess-cove-rnf-phase-2</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/princess-cove-rnf-phase-3</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/times-square-2</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/accent-residences</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/ascott-star-residence</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/eaton-residences</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/pantai-sentral-park-enlace-suites-ii</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/conlay</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/atas-residences</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/divine-kl-city-centre</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
-  <url><loc>https://shyanyee.com/zh/projects/m-aurora</loc><lastmod>2026-09-22</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/compare</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/map</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/blog</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/calculator</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/faq</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/amika-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/anya</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/aricia</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/aster-hill-sri-petaling</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/atera-phase-2</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/aurum-business-centre-suites</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/avantro-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/ayanna</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/bangsar-hill-park-tower-b-and-c</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/bangsar-hill-park-verdura-tower-d-and-e</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/clouthaus</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/core-residence-trx</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/genstarz</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/luminar-residence-federal-avenue</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/m-aspira</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/maple-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/oaka-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/one-seputeh</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/orion-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/park-green-pavilion-bukit-jalil</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/quaver-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/radium-arena</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/riverville-residences-2</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/tria-seputeh</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/tujuh-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/vox</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/wyn</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/zenia-damansara</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/ren-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/aras-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/vividz</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/khaya-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/phoeniz-suites-kl-city-centre</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/branniganz</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/alora-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/loop-city-puchong</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/aldenz</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/d-evia</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/arra</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/atera</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/amara</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/parkside-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/amaya</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/forest-hill</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/dwi-aurora</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/stellar-damansara</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/daya-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/d-tessera</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/veridian</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/livista</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/queenswoodz</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/menerung</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/river-park</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/lighthauz</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/keeperz-suites</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/aetas-seputeh</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/papyrus</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/bamboohill</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/tangen-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/stellaris-riana-dutamas</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/pavilion-square-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/pavilion-square-office</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/golden-crown</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/centrix</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/axis-causewayz-square</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/brixton-causewayz-square</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/dover-causewayz-square</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/asteriaz</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/mosaic</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/kingswoodz-bukit-jalil</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/gen-sphere</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/m-grand-minori</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/princess-cove-rnf-phase-2</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/princess-cove-rnf-phase-3</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/times-square-2</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/accent-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/ascott-star-residence</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/eaton-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/pantai-sentral-park-enlace-suites-ii</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/conlay</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/atas-residences</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/divine-kl-city-centre</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
+  <url><loc>https://shyanyee.com/zh/projects/m-aurora</loc><lastmod>2026-09-23</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>
   <url><loc>https://shyanyee.com/zh/blog/ayanna-bukit-jalil-review</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/zh/blog/branniganz-kl-city-centre-review</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
   <url><loc>https://shyanyee.com/zh/blog/centrix-the-station-kl-city-centre-review</loc><lastmod>2026-09-21</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>

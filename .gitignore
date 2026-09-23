@@ -6,3 +6,6 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Raw Overpass answers cached by scripts/gen-nearby-osm.ts
+.cache/

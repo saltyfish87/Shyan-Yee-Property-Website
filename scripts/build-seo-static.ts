@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { BLOG_DATA, FAQ_DATA } from '../src/data';
+import { NEARBY_OSM } from '../src/data/nearbyOsm.generated';
 import { GENERATED_ZH_ARTICLES } from '../src/data/articles.generated';
 import { translations, PRE_TRANSLATED_BLOGS, PRE_TRANSLATED_BLOG_DETAILS } from '../src/translations';
 import { FAQ_TRANSLATIONS } from '../src/faqTranslations';
@@ -135,6 +136,11 @@ const BUYER_SHORTLISTS: BuyerShortlist[] = [
     desc: 'Projects whose layouts start at three bedrooms, with my review or walkthrough video where I have one.',
     blurb: 'For households that need the rooms rather than the address.',
     pick: p => Number(p.bedroomsMin) >= 3 },
+  { slug: 'near-mrt-lrt', h1: 'Projects Within One Kilometre of a Train Station',
+    title: 'New Launches Near MRT & LRT Stations in Malaysia | Shyan Yee',
+    desc: 'Projects whose coordinates sit within 1 km of a named rail station, measured on OpenStreetMap.',
+    blurb: 'Measured, not claimed: the straight-line distance from each project\'s own coordinates to the nearest named station on OpenStreetMap. The walk is always longer than the straight line, so treat 1 km as the outer edge of walkable.',
+    pick: p => (NEARBY_OSM[p.id] || []).some(n => n.category === 'Train stations' && n.km <= 1) },
   { slug: 'projects-i-have-reviewed', h1: 'Every Project I Have Reviewed or Filmed',
     title: 'Projects Reviewed by Shyan Yee (REN 46305) | Reviews & Walkthroughs',
     desc: 'The projects I have been through myself, with the written review, the walkthrough video, or both.',

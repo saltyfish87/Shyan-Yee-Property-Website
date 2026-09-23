@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Project } from '../types';
 import { BLOG_DATA } from '../data';
 import { PROJECT_FACTS } from '../data/projectFacts.generated';
+import { NEARBY_OSM } from '../data/nearbyOsm.generated';
 import { useLanguage } from '../LanguageContext';
 import { useCurrency } from '../CurrencyContext';
 import { API_BASE_URL } from '../utils/api';
@@ -64,6 +65,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
   // Real developer facts for this project (sales kits, via scripts/gen-project-facts.ts).
   // When a project has none, the page hides these blocks rather than showing invented text.
   const realFacts = PROJECT_FACTS[project.id];
+  const osmNearby = NEARBY_OSM[project.id] || [];
 
   // Detect if project is Zenia
   const isZenia = React.useMemo(() => {
@@ -909,11 +911,12 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               )}
             </div>
 
-            {/* 4. Nearby places, from the developer's own amenity list in the project database.
-                   The four tiles that used to sit here ("MRT hub 5 minutes", "Shopping mall 8
-                   minutes") were generated from a hash of the address — invented numbers, not
-                   measurements — so they are gone. A project with no amenity list shows nothing. */}
-            {realFacts?.nearby?.length ? (
+            {/* 4. What is actually near the project.
+                   Two sources, kept apart because they are different kinds of claim: distances
+                   measured on OpenStreetMap from the project's own coordinates, and the list the
+                   developer publishes. The four tiles that used to sit here ("MRT hub 5 minutes")
+                   were derived from a hash of the address — invented, never measured. */}
+            {osmNearby.length || realFacts?.nearby?.length ? (
             <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-5">
               <div className="flex items-center gap-2 pb-3 border-b border-slate-50">
                 <MapPin className="h-5 w-5 text-rose-500 shrink-0" />
@@ -921,31 +924,57 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   {t('nearbyAmenities')}
                 </h3>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {Object.entries(realFacts.nearby.reduce((acc, n) => {
-                  (acc[n.category] ||= []).push(n);
-                  return acc;
-                }, {} as Record<string, typeof realFacts.nearby>)).map(([cat, items]) => (
-                  <div key={cat} className="rounded-2xl border border-slate-100 bg-slate-50/50 p-4">
-                    <div className="text-[12px] font-semibold text-slate-500 mb-2.5">{cat}</div>
-                    <ul className="space-y-1.5 text-[13px] text-slate-600">
-                      {items.map((n, i) => (
-                        <li key={i} className="flex justify-between gap-3">
-                          <span>{n.name}</span>
-                          {n.distance ? <span className="text-slate-900 font-medium shrink-0">{n.distance}</span> : null}
-                        </li>
-                      ))}
-                    </ul>
+
+              {osmNearby.length ? (
+                <>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {Object.entries(osmNearby.reduce((acc, n) => {
+                      (acc[language.startsWith('zh') ? n.categoryZh : n.category] ||= []).push(n);
+                      return acc;
+                    }, {} as Record<string, typeof osmNearby>)).map(([cat, items]) => (
+                      <div key={cat} className="rounded-2xl border border-slate-100 bg-slate-50/50 p-4">
+                        <div className="text-[12px] font-semibold text-slate-500 mb-2.5">{cat}</div>
+                        <ul className="space-y-1.5 text-[13px] text-slate-600">
+                          {items.map((n, i) => (
+                            <li key={i} className="flex justify-between gap-3">
+                              <span>{n.name}</span>
+                              <span className="text-slate-900 font-medium shrink-0">
+                                {n.km < 1 ? `${Math.round(n.km * 1000)} m` : `${n.km.toFixed(1)} km`}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-              {realFacts.source ? (
-                <p className="text-[12px] text-slate-400">{realFacts.source}</p>
+                  <p className="text-[12px] text-slate-400 leading-relaxed">
+                    {language.startsWith('zh')
+                      ? '以上为 OpenStreetMap 直线距离，实际步行或车程会更远。'
+                      : 'Straight-line distance on OpenStreetMap. Walking or driving is always further.'}
+                  </p>
+                </>
+              ) : null}
+
+              {realFacts?.nearby?.length ? (
+                <div className={osmNearby.length ? 'pt-4 border-t border-slate-50' : ''}>
+                  <div className="text-[12px] font-semibold text-slate-500 mb-2.5">
+                    {language.startsWith('zh') ? '发展商列出的周边' : 'Listed by the developer'}
+                  </div>
+                  <ul className="flex flex-wrap gap-x-4 gap-y-1.5 text-[13px] text-slate-600">
+                    {realFacts.nearby.map((n, i) => (
+                      <li key={i}>
+                        {n.name}
+                        {n.distance ? <span className="text-slate-400"> · {n.distance}</span> : null}
+                      </li>
+                    ))}
+                  </ul>
+                  {realFacts.source ? (
+                    <p className="text-[12px] text-slate-400 mt-3">{realFacts.source}</p>
+                  ) : null}
+                </div>
               ) : null}
             </div>
             ) : null}
-
-            {/* Floor plans section comes after */}
 
             {/* 5. Floor Plans & Layout Tabs Selection */}
             <div className="bg-white border border-slate-100 p-6 sm:p-8 rounded-3xl shadow-sm space-y-6">
