@@ -263,6 +263,50 @@ const COMPLETION_YEARS: YearGroup[] = (() => {
     .sort((a, b) => a.year.localeCompare(b.year));
 })();
 
+/**
+ * Head-to-head pages.
+ *
+ * A buyer at the end of their search is choosing between two named projects, and that is what they
+ * type. propertyportal.my already carries the spec comparison; this one must not repeat it, or the
+ * two domains compete with each other. So this page leads with what I have actually seen of each —
+ * the review, the walkthrough video — then the measured walk to a station, and sends the reader to
+ * the portal for the full spec sheet.
+ */
+interface ComparePair { slug: string; a: Project; b: Project; area: string }
+const COMPARE_PAIRS: ComparePair[] = (() => {
+  const tokens = (a: any) => String(a || '').split('/').map((t: string) => t.trim()).filter(Boolean);
+  const byArea = new Map<string, Project[]>();
+  for (const p of projects) {
+    if (!Number((p as any).startingPrice) || !(p as any).area) continue;
+    for (const t of tokens((p as any).area)) (byArea.get(t) || byArea.set(t, []).get(t)!).push(p);
+  }
+  const out: ComparePair[] = [];
+  const seen = new Set<string>();
+  for (const [area, list] of byArea) {
+    const sorted = [...list].sort((x: any, y: any) => Number(x.startingPrice) - Number(y.startingPrice));
+    for (let i = 0; i < sorted.length; i++) {
+      for (let j = i + 1; j < sorted.length; j++) {
+        const a: any = sorted[i], b: any = sorted[j];
+        // Past 1.6x apart the buyer is not really choosing between them.
+        if (Number(b.startingPrice) > Number(a.startingPrice) * 1.6) break;
+        const key = [a.id, b.id].sort().join('|');
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push({ slug: `${a.id}-vs-${b.id}`, a, b, area });
+      }
+    }
+  }
+  return out;
+})();
+
+/** What I have on a project, which is the whole point of this page existing here. */
+function coverageOf(p: Project) {
+  const review = reviewOf(p.id);
+  const video = HOME_VIDEOS.find(v => v.projectId === p.id);
+  const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
+  return { review, video, station };
+}
+
 const BUYER_SHORTLISTS: BuyerShortlist[] = [
   { slug: 'condo-under-500k', h1: 'Condominiums Under RM 500,000 — and Which Ones I Have Walked Through',
     title: 'Condo Under RM 500,000 in KL & Selangor | Shyan Yee',
@@ -298,7 +342,7 @@ const BUYER_SHORTLISTS: BuyerShortlist[] = [
     title: 'Projects Reviewed by Shyan Yee (REN 46305) | Reviews & Walkthroughs',
     desc: 'The projects I have been through myself, with the written review, the walkthrough video, or both.',
     blurb: 'These are the ones I have walked, filmed or written up. Everything else on the site is developer data only.',
-    pick: p => BLOG_DATA.some((b: any) => (b.relatedProjectIds || []).includes(p.id)) || HOME_VIDEOS.some(v => v.projectId === p.id) }
+    pick: p => !!reviewOf(p.id) || HOME_VIDEOS.some(v => v.projectId === p.id) }
 ];
 
 /**
@@ -357,10 +401,19 @@ function siteLinksHtml(lang: 'en' | 'zh'): string {
             </section>`;
 }
 
+/**
+ * An article's relatedProjectIds starts with the project it is actually about; the rest are the
+ * cross-links to its neighbours. Matching on `includes` therefore attached the Branniganz review to
+ * CloutHaus, because Branniganz links to it. Only the first id counts as "I wrote this one up".
+ */
+function reviewOf(projectId: string, pool: any[] = BLOG_DATA): any | undefined {
+  return pool.find((b: any) => (b.relatedProjectIds || [])[0] === projectId);
+}
+
 /** One project row, used by the developer and completion-year tables. */
 function projectRowHtml(p: any, baseUrl: string): string {
   const td = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
-  const rev = BLOG_DATA.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+  const rev = reviewOf(p.id);
   const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
   const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
   const mine = [
@@ -698,7 +751,7 @@ function renderSeoHtml(
         canonical = `${baseUrl}/best/${sl.slug}`;
         title = sl.title;
         desc = sl.desc;
-        const reviewFor = (p: any) => BLOG_DATA.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+        const reviewFor = (p: any) => reviewOf(p.id);
         const videoFor = (p: any) => HOME_VIDEOS.find(v => v.projectId === p.id);
         jsonLdGraph.push({
           "@type": "CollectionPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
@@ -782,6 +835,69 @@ function renderSeoHtml(
           </div>
         `;
       }
+    } else if (reqUrl.startsWith('/compare/')) {
+      const pair = COMPARE_PAIRS.find(x => `/compare/${x.slug}` === reqUrl);
+      if (pair) {
+        const { a, b } = pair as any;
+        canonical = `${baseUrl}/compare/${pair.slug}`;
+        const ca = coverageOf(a), cb = coverageOf(b);
+        const covered = [ca, cb].filter(c => c.review || c.video).length;
+        title = `${a.name} or ${b.name}? What I Have Seen of Each | ${pair.area}`;
+        desc = `${a.name} and ${b.name} are both in ${pair.area} and close in price, so buyers ask me to choose. Which one I have walked or filmed, the measured walk to a station, and where they differ.`;
+        jsonLdGraph.push({
+          "@type": "WebPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
+          "isPartOf": { "@id": `${baseUrl}/#website` },
+          "about": [{ "@type": "ApartmentComplex", "name": a.name }, { "@type": "ApartmentComplex", "name": b.name }]
+        });
+        jsonLdGraph.push({
+          "@type": "BreadcrumbList", "@id": `${canonical}#breadcrumb`,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+            { "@type": "ListItem", "position": 2, "name": "Projects", "item": `${baseUrl}/projects` },
+            { "@type": "ListItem", "position": 3, "name": `${a.name} vs ${b.name}`, "item": canonical }
+          ]
+        });
+        const coverageLine = (p: any, c: ReturnType<typeof coverageOf>) => {
+          const bits: string[] = [];
+          if (c.review) bits.push(`I wrote it up: <a href="${baseUrl}/blog/${c.review.slug}">${escapeXml(c.review.title)}</a>`);
+          if (c.video) bits.push(`I filmed it: <a href="https://www.youtube.com/watch?v=${c.video.youtubeId}">walkthrough video</a>`);
+          if (!bits.length) bits.push('I have not walked this one yet — the page carries the developer data only.');
+          return `<li><a href="${baseUrl}/projects/${p.id}"><strong>${escapeXml(p.name)}</strong></a> — ${bits.join('; ')}</li>`;
+        };
+        const row = (label: string, av: string, bv: string) =>
+          `<tr><th style="text-align:left;padding:8px 10px;border-bottom:1px solid #f1f5f9;width:26%;font-weight:600;color:#475569;">${label}</th>`
+          + `<td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(av || '—')}</td>`
+          + `<td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(bv || '—')}</td></tr>`;
+        const stationCell = (c: ReturnType<typeof coverageOf>) =>
+          c.station ? `${c.station.name} ${c.station.km < 1 ? `${Math.round(c.station.km * 1000)} m` : `${c.station.km.toFixed(1)} km`}` : '';
+        const size = (p: any) => p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} sq ft` : '';
+        preRenderedBody = `
+          <div style="max-width: 1000px; margin: 0 auto; padding: 40px 20px; font-family: system-ui, sans-serif; color:#0f172a;">
+            <nav style="margin-bottom: 24px; font-size: 14px; color: #64748b;"><a href="${baseUrl}" style="color:#2563eb;text-decoration:none;">Home</a> &gt; <a href="${baseUrl}/projects" style="color:#2563eb;text-decoration:none;">Projects</a> &gt; <span>${escapeXml(a.name)} vs ${escapeXml(b.name)}</span></nav>
+            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 12px;">${escapeXml(a.name)} or ${escapeXml(b.name)}?</h1>
+            <p style="font-size: 16px; color: #475569; line-height: 1.7;">Both are in ${escapeXml(pair.area)} and within reach of the same budget, which is why this pair comes up. ${covered ? `I have been through ${covered === 2 ? 'both' : 'one'} of them.` : 'I have not walked either of these yet.'}</p>
+            <h2 style="font-size:20px;margin-top:28px;">What I have seen of each</h2>
+            <ul style="line-height:1.9;">${coverageLine(a, ca)}${coverageLine(b, cb)}</ul>
+            <h2 style="font-size:20px;margin-top:28px;">Where they differ</h2>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:12px;">
+              <thead><tr><th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;"></th><th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${escapeXml(a.name)}</th><th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${escapeXml(b.name)}</th></tr></thead>
+              <tbody>
+                ${row('Starting price', a.startingPriceFormatted || a.priceRange || '', b.startingPriceFormatted || b.priceRange || '')}
+                ${row('Built-up', size(a), size(b))}
+                ${row('Tenure', a.tenure || '', b.tenure || '')}
+                ${row('Developer', a.developer || '', b.developer || '')}
+                ${row('Completion', String(a.completionYear || ''), String(b.completionYear || ''))}
+                ${row('Nearest station, measured', stationCell(ca), stationCell(cb))}
+              </tbody>
+            </table>
+            <p style="font-size:13px;color:#64748b;margin-top:12px;">Station distances are straight-line measurements on OpenStreetMap; the walk is longer. Prices are developer list prices and change with each release.</p>
+            <h2 style="font-size:20px;margin-top:28px;">The full spec sheets</h2>
+            <p style="font-size:15px;line-height:1.8;">Layout tables, facilities and floor plans for both sit on the portal: <a href="https://www.propertyportal.my/project/${a.id}">${escapeXml(a.name)}</a> and <a href="https://www.propertyportal.my/project/${b.id}">${escapeXml(b.name)}</a>.</p>
+            <p style="margin-top:20px;font-size:15px;color:#334155;">Want to walk both on the same day? They are in the same area, so that is usually possible. WhatsApp Yee Woei Shyan (REN 46305), IQI Realty Sdn Bhd &mdash; <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>.</p>
+            ${siteLinksHtml('en')}
+          </div>
+        `;
+      }
     } else if (reqUrl.startsWith('/near/')) {
       const st = STATIONS.find(x => `/near/${x.slug}` === reqUrl);
       if (st) {
@@ -807,7 +923,7 @@ function renderSeoHtml(
         });
         const td = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
         const rows = st.items.map(({ p, km }: any) => {
-          const rev = BLOG_DATA.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+          const rev = reviewOf(p.id);
           const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
           const mine = [
             rev ? `<a href="${baseUrl}/blog/${rev.slug}">Review</a>` : '',
@@ -875,7 +991,7 @@ function renderSeoHtml(
           .slice()
           .sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity))
           .map((p: any) => {
-            const rev = BLOG_DATA.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+            const rev = reviewOf(p.id);
             const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
             const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
             const mine = [
@@ -1512,7 +1628,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
         const rows = items.slice()
           .sort((a: any, b: any) => st ? (kmOf(a)! - kmOf(b)!) : ((Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity)))
           .map((p: any) => {
-            const rev = ZH_BLOG_LIST.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+            const rev = reviewOf(p.id, ZH_BLOG_LIST);
             const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
             const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
             const km = kmOf(p);
@@ -1570,7 +1686,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
           .slice()
           .sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity))
           .map((p: any) => {
-            const rev = ZH_BLOG_LIST.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+            const rev = reviewOf(p.id, ZH_BLOG_LIST);
             const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
             const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
             const mine = [
@@ -1818,6 +1934,16 @@ for (const [dir, list] of [['developer', DEVELOPERS.map(d => d.slug)], ['complet
 }
 console.log(`[SEO Static Build] ${DEVELOPERS.length} developer pages and ${COMPLETION_YEARS.length} completion-year pages.`);
 
+// 8a4. Head-to-head pages.
+const cmpDir = path.join(distPath, 'compare');
+if (!fs.existsSync(cmpDir)) fs.mkdirSync(cmpDir, { recursive: true });
+for (const pr of COMPARE_PAIRS) {
+  const d = path.join(cmpDir, pr.slug);
+  if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true });
+  fs.writeFileSync(path.join(d, 'index.html'), renderSeoHtml(rawHtml, `/compare/${pr.slug}`, null, null), 'utf-8');
+}
+console.log(`[SEO Static Build] ${COMPARE_PAIRS.length} head-to-head pages under /compare/.`);
+
 // 8b. Simplified Chinese twins under dist/zh/...
 const zhRoot = path.join(distPath, 'zh');
 const writeZh = (relDir: string, reqUrl: string, p: Project | null = null, b: any = null) => {
@@ -1932,6 +2058,9 @@ for (const b of BLOG_DATA) {
     }
     xml += `  </url>\n`;
   }
+}
+for (const pr of COMPARE_PAIRS) {
+  xml += `  <url><loc>https://shyanyee.com/compare/${pr.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>\n`;
 }
 for (const d of DEVELOPERS) {
   xml += `  <url><loc>https://shyanyee.com/developer/${d.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
