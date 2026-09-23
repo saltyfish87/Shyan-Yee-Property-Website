@@ -637,7 +637,7 @@ function ClientPortalsOrchestrator() {
         if (hit) setHeroSearchFilters({ budget: 'any', bedrooms: 'any', location: String((hit as any).area), developer: 'any' });
         return;
       }
-      if (candidate.startsWith('near/') || candidate.startsWith('best/')) {
+      if (candidate.startsWith('near/') || candidate.startsWith('best/') || candidate.startsWith('developer/') || candidate.startsWith('completion/')) {
         setCurrentPage('projects');
         setSelectedProject(null);
         setActiveBlogSlug(null);

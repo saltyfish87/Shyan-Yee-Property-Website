@@ -175,6 +175,75 @@ const STATIONS: StationGroup[] = (() => {
     .sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
 })();
 
+/**
+ * Developer and completion-year pages.
+ *
+ * Only developers with more than one project get a page: a single-project developer is already
+ * served by that project's own page, and 52 one-row pages is exactly the thin-index padding the
+ * competitors use. Same rule for years.
+ */
+/**
+ * Sales kits name the project's own company, not the group behind it: "EXSIM Jalil Link Sdn Bhd",
+ * "Major Land Development Sdn Bhd (a wholly-owned subsidiary of Mah Sing Group Berhad)". A buyer
+ * is choosing a group, not an SPV, so everything is folded up to the parent brand. A bracket that
+ * names the parent wins over the company in front of it; otherwise the brand is matched by name.
+ */
+const DEV_BRANDS = [
+  'Eastern & Oriental', 'Chin Hin Group', 'Mah Sing Group', 'Paramount Property', 'Pavilion Group',
+  'Kerjaya Prospek', 'OSK Property', 'Berjaya', 'Ayala Land', 'Land and General', 'Sun Suria',
+  'SP Setia', 'Radium', 'Glomac', 'Avaland', 'Exsim', 'Malton', 'MRCB', 'BRDB', 'WCT', 'UOA',
+  'IJM', 'TA Global', 'GSH', 'Park City', 'Masteron', 'Asiapac', 'Puncak Dana', 'Majestic Gen',
+  'R&F Development', 'Golden Eagle', 'Ehsan Bina', 'EH Developer', 'Kerjaya', 'OCR', 'SCP', 'TSR'
+];
+
+function devName(raw: any): string {
+  const full = String(raw || '').trim();
+  if (!full) return '';
+  // "(A subsidiary of X)", "(a joint venture between X and Y)", "(MRCB)" — the bracket is the parent.
+  const bracket = (full.match(/\(([^)]*)\)\s*$/) || [])[1] || '';
+  const parentInBracket = /subsidiar|joint venture|group|berhad|limited/i.test(bracket) ? bracket : '';
+  for (const hay of [parentInBracket, full]) {
+    if (!hay) continue;
+    const hit = DEV_BRANDS.find(b => new RegExp(`\\b${b.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(hay));
+    if (hit) return hit;
+  }
+  // No brand recognised: it is a one-off project company. Drop the legal suffix and leave it.
+  return full.replace(/\s*\([^)]*\)\s*$/, '')
+    .replace(/\s+Sdn\.?\s*Bhd\.?$/i, '')
+    .replace(/\s+Berhad$/i, '')
+    .replace(/\s+Bhd\.?$/i, '')
+    .trim();
+}
+
+interface DeveloperGroup { slug: string; name: string; items: Project[] }
+const DEVELOPERS: DeveloperGroup[] = (() => {
+  const by = new Map<string, Project[]>();
+  for (const p of projects) {
+    const n = devName((p as any).developer);
+    if (!n) continue;
+    (by.get(n) || by.set(n, []).get(n)!).push(p);
+  }
+  return [...by.entries()]
+    .filter(([, items]) => items.length >= 2)
+    .map(([name, items]) => ({ slug: areaSlug(name), name, items }))
+    .filter(d => d.slug)
+    .sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
+})();
+
+interface YearGroup { year: string; items: Project[] }
+const COMPLETION_YEARS: YearGroup[] = (() => {
+  const by = new Map<string, Project[]>();
+  for (const p of projects) {
+    const y = String((p as any).completionYear || '').trim();
+    if (!/^20\d{2}$/.test(y)) continue;
+    (by.get(y) || by.set(y, []).get(y)!).push(p);
+  }
+  return [...by.entries()]
+    .filter(([, items]) => items.length >= 3)
+    .map(([year, items]) => ({ year, items }))
+    .sort((a, b) => a.year.localeCompare(b.year));
+})();
+
 const BUYER_SHORTLISTS: BuyerShortlist[] = [
   { slug: 'condo-under-500k', h1: 'Condominiums Under RM 500,000 — and Which Ones I Have Walked Through',
     title: 'Condo Under RM 500,000 in KL & Selangor | Shyan Yee',
@@ -259,10 +328,34 @@ function siteLinksHtml(lang: 'en' | 'zh'): string {
               <ul style="line-height:1.9;columns:3;">${AREAS.map(a => `<li><a href="${b}/area/${a.slug}">${escapeXml(a.name)} (${a.items.length})</a></li>`).join('')}</ul>
               <h2 style="font-size:18px;">${zh ? '按车站找楼盘' : 'Browse by train station'}</h2>
               <ul style="line-height:1.9;columns:3;">${STATIONS.slice(0, 30).map(st => `<li><a href="${b}/near/${st.slug}">${escapeXml(st.name)} (${st.items.length})</a></li>`).join('')}</ul>
+              <h2 style="font-size:18px;">${zh ? '按发展商' : 'Browse by developer'}</h2>
+              <ul style="line-height:1.9;columns:3;">${DEVELOPERS.map(d => `<li><a href="${b}/developer/${d.slug}">${escapeXml(d.name)} (${d.items.length})</a></li>`).join('')}</ul>
+              <h2 style="font-size:18px;">${zh ? '按完工年份' : 'Browse by completion year'}</h2>
+              <ul style="line-height:1.9;columns:4;">${COMPLETION_YEARS.map(y => `<li><a href="${b}/completion/${y.year}">${y.year} (${y.items.length})</a></li>`).join('')}</ul>
               <h2 style="font-size:18px;">${zh ? '买家清单' : 'Buyer shortlists'}</h2>
               <ul style="line-height:1.9;columns:2;">${BUYER_SHORTLISTS.map(l => `<li><a href="${SITE}/best/${l.slug}">${escapeXml(l.h1)}</a></li>`).join('')}</ul>
               <p><a href="${b}">${zh ? '首页' : 'Home'}</a> &middot; <a href="${SITE}/projects">${zh ? '全部楼盘' : 'All projects'}</a> &middot; <a href="${SITE}/blog">${zh ? '评测与指南' : 'Reviews and guides'}</a> &middot; <a href="${SITE}/map">${zh ? '地图' : 'Map'}</a> &middot; <a href="${SITE}/calculator">${zh ? '贷款计算' : 'Calculators'}</a> &middot; <a href="${SITE}/faq">${zh ? '常见问题' : 'FAQ'}</a></p>
             </section>`;
+}
+
+/** One project row, used by the developer and completion-year tables. */
+function projectRowHtml(p: any, baseUrl: string): string {
+  const td = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
+  const rev = BLOG_DATA.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+  const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
+  const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
+  const mine = [
+    rev ? `<a href="${baseUrl}/blog/${rev.slug}">Review</a>` : '',
+    vid ? `<a href="https://www.youtube.com/watch?v=${vid.youtubeId}">Video</a>` : ''
+  ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">Developer data only</span>';
+  return `<tr><td ${td}><a href="${baseUrl}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td>`
+    + `<td ${td}>${escapeXml(p.area || '')}</td>`
+    + `<td ${td}>${escapeXml(p.tenure || '')}</td>`
+    + `<td ${td}>${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td>`
+    + `<td ${td}>${p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} sq ft` : ''}</td>`
+    + `<td ${td}>${escapeXml(String(p.completionYear || ''))}</td>`
+    + `<td ${td}>${station ? `${escapeXml(station.name)} ${station.km < 1 ? `${Math.round(station.km * 1000)} m` : `${station.km.toFixed(1)} km`}` : ''}</td>`
+    + `<td ${td}>${mine}</td></tr>`;
 }
 
 function projectFactsHtml(projectId: string, lang: 'en' | 'zh'): string {
@@ -613,6 +706,60 @@ function renderSeoHtml(
             <h2 style="font-size: 20px; font-weight: 700; margin: 28px 0 10px;">Other shortlists</h2>
             <ul style="line-height:1.9;">${BUYER_SHORTLISTS.filter(o => o.slug !== sl.slug).map(o => `<li><a href="${baseUrl}/best/${o.slug}" style="color:#2563eb;text-decoration:none;">${escapeXml(o.title)}</a></li>`).join('')}</ul>
             <p style="margin-top:24px;font-size:15px;color:#334155;">Viewings and the current price list: Yee Woei Shyan (REN 46305), IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>.</p>
+          </div>
+        `;
+      }
+    } else if (reqUrl.startsWith('/developer/') || reqUrl.startsWith('/completion/')) {
+      const dev = DEVELOPERS.find(d => `/developer/${d.slug}` === reqUrl);
+      const yr = COMPLETION_YEARS.find(y => `/completion/${y.year}` === reqUrl);
+      const items = dev ? dev.items : yr ? yr.items : [];
+      if (items.length) {
+        const label = dev ? dev.name : `${yr!.year}`;
+        canonical = `${baseUrl}${reqUrl}`;
+        const prices = items.map((p: any) => Number(p.startingPrice) || 0).filter(n => n > 0);
+        const lo = prices.length ? Math.min(...prices) : 0;
+        const hi = prices.length ? Math.max(...prices) : 0;
+        const freehold = items.filter((p: any) => /freehold/i.test(String(p.tenure || ''))).length;
+        const areasHere = [...new Set(items.map((p: any) => String(p.area || '').trim()).filter(Boolean))];
+        title = dev
+          ? `${label} Projects in Malaysia | Every Launch, Price and Completion Year`
+          : `New Launch Projects Completing in ${label} | Prices, Areas and Layouts`;
+        desc = dev
+          ? `All ${items.length} ${label} projects on shyanyee.com${lo ? `, from RM ${lo.toLocaleString()}` : ''}. Tenure, built-up, completion year, nearest station, and the ones I have reviewed or filmed.`
+          : `${items.length} projects scheduled for completion in ${label}${lo ? `, from RM ${lo.toLocaleString()}` : ''}. Areas, tenure, sizes and nearest station, measured.`;
+        jsonLdGraph.push({
+          "@type": "CollectionPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
+          "isPartOf": { "@id": `${baseUrl}/#website` },
+          ...(dev ? { "about": { "@type": "Organization", "name": label } } : {}),
+          "mainEntity": { "@type": "ItemList", "numberOfItems": items.length,
+            "itemListElement": items.map((p: any, i: number) => ({ "@type": "ListItem", "position": i + 1, "name": p.name, "url": `${baseUrl}/projects/${p.id}` })) }
+        });
+        jsonLdGraph.push({
+          "@type": "BreadcrumbList", "@id": `${canonical}#breadcrumb`,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+            { "@type": "ListItem", "position": 2, "name": "Projects", "item": `${baseUrl}/projects` },
+            { "@type": "ListItem", "position": 3, "name": dev ? label : `Completing ${label}`, "item": canonical }
+          ]
+        });
+        const rows = items.slice().sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity))
+          .map((p: any) => projectRowHtml(p, baseUrl)).join('');
+        preRenderedBody = `
+          <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; font-family: system-ui, sans-serif; color:#0f172a;">
+            <nav style="margin-bottom: 24px; font-size: 14px; color: #64748b;"><a href="${baseUrl}" style="color:#2563eb;text-decoration:none;">Home</a> &gt; <a href="${baseUrl}/projects" style="color:#2563eb;text-decoration:none;">Projects</a> &gt; <span>${escapeXml(dev ? label : `Completing ${label}`)}</span></nav>
+            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 12px;">${dev ? `${escapeXml(label)} Projects` : `Projects Completing in ${escapeXml(label)}`}</h1>
+            <p style="font-size: 16px; color: #475569; line-height: 1.7;">${escapeXml(desc)}</p>
+            <p style="font-size: 15px; color: #475569; line-height: 1.7;">
+              ${items.length} project${items.length === 1 ? '' : 's'} on this page.
+              ${lo && hi ? `Developer list prices run from RM ${lo.toLocaleString()} to RM ${hi.toLocaleString()}.` : ''}
+              ${freehold ? `${freehold} ${freehold === 1 ? 'is' : 'are'} freehold.` : ''}
+              ${areasHere.length ? `Areas covered: ${escapeXml(areasHere.join(', '))}.` : ''}
+            </p>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:24px;"><thead><tr>${['Project', 'Area', 'Tenure', 'From', 'Built-up', 'Completion', 'Nearest station', 'My coverage'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <p style="font-size:13px;color:#64748b;margin-top:16px;">Station distances are straight-line measurements on OpenStreetMap. Prices are developer list prices and change with each release.</p>
+            ${areasHere.length ? `<h2 style="font-size:20px;margin-top:32px;">Areas</h2><ul style="line-height:1.9;columns:2;">${areasHere.map(a => `<li><a href="${baseUrl}/area/${areaSlug(a)}">${escapeXml(a)}</a></li>`).join('')}</ul>` : ''}
+            <p style="margin-top:24px;font-size:15px;color:#334155;">Viewings and the current price list: Yee Woei Shyan (REN 46305), IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>.</p>
+            ${siteLinksHtml('en')}
           </div>
         `;
       }
@@ -1568,6 +1715,18 @@ for (const st of STATIONS) {
 }
 console.log(`[SEO Static Build] ${STATIONS.length} station pages under /near/.`);
 
+// 8a3. Developer and completion-year index pages.
+for (const [dir, list] of [['developer', DEVELOPERS.map(d => d.slug)], ['completion', COMPLETION_YEARS.map(y => y.year)]] as [string, string[]][]) {
+  const root = path.join(distPath, dir);
+  if (!fs.existsSync(root)) fs.mkdirSync(root, { recursive: true });
+  for (const key of list) {
+    const d = path.join(root, key);
+    if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true });
+    fs.writeFileSync(path.join(d, 'index.html'), renderSeoHtml(rawHtml, `/${dir}/${key}`, null, null), 'utf-8');
+  }
+}
+console.log(`[SEO Static Build] ${DEVELOPERS.length} developer pages and ${COMPLETION_YEARS.length} completion-year pages.`);
+
 // 8b. Simplified Chinese twins under dist/zh/...
 const zhRoot = path.join(distPath, 'zh');
 const writeZh = (relDir: string, reqUrl: string, p: Project | null = null, b: any = null) => {
@@ -1679,6 +1838,12 @@ for (const b of BLOG_DATA) {
     }
     xml += `  </url>\n`;
   }
+}
+for (const d of DEVELOPERS) {
+  xml += `  <url><loc>https://shyanyee.com/developer/${d.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
+}
+for (const y of COMPLETION_YEARS) {
+  xml += `  <url><loc>https://shyanyee.com/completion/${y.year}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
 }
 for (const st of STATIONS) {
   xml += `  <url><loc>https://shyanyee.com/near/${st.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>\n`;
