@@ -135,6 +135,46 @@ const AREAS: AreaGroup[] = (() => {
 })();
 const areaOfProject = (p: Project) => AREAS.find(a => a.items.some(x => x.id === p.id));
 
+/**
+ * Station pages, built from the measured distances.
+ *
+ * "condo near <station>" is what a buyer without a car actually types, and not one of the sites
+ * competing for these searches can answer it: none of them measures anything. The station list and
+ * every distance on these pages come from the same OpenStreetMap measurement the project pages use.
+ *
+ * OSM labels a station with its line code ("MR6 Bukit Bintang", "KG18A Bukit Bintang"). Those are
+ * two platforms of one interchange as far as a buyer is concerned, so they are grouped by the name
+ * and the codes are listed. Bus terminals tagged as stations are dropped.
+ */
+interface StationGroup { slug: string; name: string; codes: string[]; items: { p: Project; km: number }[] }
+const STATIONS: StationGroup[] = (() => {
+  const strip = (n: string) => n.replace(/^[A-Z]{2}\d+[A-Z]?\s+/, '').replace(/\s+(LRT|MRT|Monorail|KTM)\s+Station$/i, '').trim();
+  const byId = new Map(projects.map(p => [p.id, p]));
+  const groups = new Map<string, StationGroup>();
+  for (const [id, rows] of Object.entries(NEARBY_OSM)) {
+    const p = byId.get(id);
+    if (!p) continue;
+    for (const r of rows) {
+      if (r.category !== 'Train stations') continue;
+      if (/bus\s*terminal|bus\s*station|bus\s*hub/i.test(r.name)) continue;
+      const name = strip(r.name);
+      if (!name) continue;
+      const slug = areaSlug(name);
+      const g = groups.get(slug) || { slug, name, codes: [], items: [] };
+      const code = (r.name.match(/^([A-Z]{2}\d+[A-Z]?)/) || [])[1];
+      if (code && !g.codes.includes(code)) g.codes.push(code);
+      const seen = g.items.find(x => x.p.id === id);
+      if (seen) seen.km = Math.min(seen.km, r.km); else g.items.push({ p, km: r.km });
+      groups.set(slug, g);
+    }
+  }
+  return [...groups.values()]
+    // One project is not a list; those projects are already reachable from their area page.
+    .filter(g => g.items.length >= 2)
+    .map(g => ({ ...g, items: g.items.sort((a, b) => a.km - b.km) }))
+    .sort((a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name));
+})();
+
 const BUYER_SHORTLISTS: BuyerShortlist[] = [
   { slug: 'condo-under-500k', h1: 'Condominiums Under RM 500,000 — and Which Ones I Have Walked Through',
     title: 'Condo Under RM 500,000 in KL & Selangor | Shyan Yee',
@@ -217,6 +257,8 @@ function siteLinksHtml(lang: 'en' | 'zh'): string {
   return `<section style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #475569;">
               <h2 style="font-size:18px;">${zh ? '按地区找楼盘' : 'Browse by area'}</h2>
               <ul style="line-height:1.9;columns:3;">${AREAS.map(a => `<li><a href="${b}/area/${a.slug}">${escapeXml(a.name)} (${a.items.length})</a></li>`).join('')}</ul>
+              <h2 style="font-size:18px;">${zh ? '按车站找楼盘' : 'Browse by train station'}</h2>
+              <ul style="line-height:1.9;columns:3;">${STATIONS.slice(0, 30).map(st => `<li><a href="${b}/near/${st.slug}">${escapeXml(st.name)} (${st.items.length})</a></li>`).join('')}</ul>
               <h2 style="font-size:18px;">${zh ? '买家清单' : 'Buyer shortlists'}</h2>
               <ul style="line-height:1.9;columns:2;">${BUYER_SHORTLISTS.map(l => `<li><a href="${SITE}/best/${l.slug}">${escapeXml(l.h1)}</a></li>`).join('')}</ul>
               <p><a href="${b}">${zh ? '首页' : 'Home'}</a> &middot; <a href="${SITE}/projects">${zh ? '全部楼盘' : 'All projects'}</a> &middot; <a href="${SITE}/blog">${zh ? '评测与指南' : 'Reviews and guides'}</a> &middot; <a href="${SITE}/map">${zh ? '地图' : 'Map'}</a> &middot; <a href="${SITE}/calculator">${zh ? '贷款计算' : 'Calculators'}</a> &middot; <a href="${SITE}/faq">${zh ? '常见问题' : 'FAQ'}</a></p>
@@ -571,6 +613,71 @@ function renderSeoHtml(
             <h2 style="font-size: 20px; font-weight: 700; margin: 28px 0 10px;">Other shortlists</h2>
             <ul style="line-height:1.9;">${BUYER_SHORTLISTS.filter(o => o.slug !== sl.slug).map(o => `<li><a href="${baseUrl}/best/${o.slug}" style="color:#2563eb;text-decoration:none;">${escapeXml(o.title)}</a></li>`).join('')}</ul>
             <p style="margin-top:24px;font-size:15px;color:#334155;">Viewings and the current price list: Yee Woei Shyan (REN 46305), IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>.</p>
+          </div>
+        `;
+      }
+    } else if (reqUrl.startsWith('/near/')) {
+      const st = STATIONS.find(x => `/near/${x.slug}` === reqUrl);
+      if (st) {
+        canonical = `${baseUrl}/near/${st.slug}`;
+        const nearest = st.items[0];
+        const walkable = st.items.filter(x => x.km <= 1).length;
+        title = `New Launch Projects Near ${st.name} Station | Measured Walking Distance`;
+        desc = `${st.items.length} new launch projects near ${st.name} station${st.codes.length ? ` (${st.codes.join(', ')})` : ''}. Nearest is ${nearest.p.name} at ${nearest.km < 1 ? `${Math.round(nearest.km * 1000)} m` : `${nearest.km.toFixed(1)} km`}. Distances measured on OpenStreetMap, not claimed by the developer.`;
+        jsonLdGraph.push({
+          "@type": "CollectionPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
+          "isPartOf": { "@id": `${baseUrl}/#website` },
+          "about": { "@type": "TrainStation", "name": `${st.name} station`, ...(st.codes.length ? { "alternateName": st.codes } : {}) },
+          "mainEntity": { "@type": "ItemList", "numberOfItems": st.items.length,
+            "itemListElement": st.items.map((x, i) => ({ "@type": "ListItem", "position": i + 1, "name": x.p.name, "url": `${baseUrl}/projects/${x.p.id}` })) }
+        });
+        jsonLdGraph.push({
+          "@type": "BreadcrumbList", "@id": `${canonical}#breadcrumb`,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+            { "@type": "ListItem", "position": 2, "name": "Projects", "item": `${baseUrl}/projects` },
+            { "@type": "ListItem", "position": 3, "name": `Near ${st.name} station`, "item": canonical }
+          ]
+        });
+        const td = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
+        const rows = st.items.map(({ p, km }: any) => {
+          const rev = BLOG_DATA.find((x: any) => (x.relatedProjectIds || []).includes(p.id));
+          const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
+          const mine = [
+            rev ? `<a href="${baseUrl}/blog/${rev.slug}">Review</a>` : '',
+            vid ? `<a href="https://www.youtube.com/watch?v=${vid.youtubeId}">Video</a>` : ''
+          ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">Developer data only</span>';
+          return `<tr><td ${td}><strong>${km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1)} km`}</strong></td>`
+            + `<td ${td}><a href="${baseUrl}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td>`
+            + `<td ${td}>${escapeXml(p.area || '')}</td>`
+            + `<td ${td}>${escapeXml(p.tenure || '')}</td>`
+            + `<td ${td}>${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td>`
+            + `<td ${td}>${p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} sq ft` : ''}</td>`
+            + `<td ${td}>${escapeXml(String(p.completionYear || ''))}</td>`
+            + `<td ${td}>${mine}</td></tr>`;
+        }).join('');
+        const areasHere = [...new Set(st.items.map(x => String((x.p as any).area || '').trim()).filter(Boolean))];
+        const otherStations = STATIONS.filter(x => x.slug !== st.slug).slice(0, 12);
+        preRenderedBody = `
+          <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; font-family: system-ui, sans-serif; color:#0f172a;">
+            <nav style="margin-bottom: 24px; font-size: 14px; color: #64748b;"><a href="${baseUrl}" style="color:#2563eb;text-decoration:none;">Home</a> &gt; <a href="${baseUrl}/projects" style="color:#2563eb;text-decoration:none;">Projects</a> &gt; <span>Near ${escapeXml(st.name)} station</span></nav>
+            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 12px;">New Launch Projects Near ${escapeXml(st.name)} Station</h1>
+            <p style="font-size: 16px; color: #475569; line-height: 1.7;">
+              ${st.items.length} projects sit within measuring distance of ${escapeXml(st.name)} station${st.codes.length ? ` (${escapeXml(st.codes.join(', '))})` : ''}.
+              The closest is <strong>${escapeXml(nearest.p.name)}</strong> at ${nearest.km < 1 ? `${Math.round(nearest.km * 1000)} m` : `${nearest.km.toFixed(1)} km`}.
+              ${walkable ? `${walkable} of them ${walkable === 1 ? 'is' : 'are'} within a kilometre.` : ''}
+            </p>
+            <p style="font-size: 15px; color: #475569; line-height: 1.7;">
+              Every distance here is measured from the project's own coordinates to the station on OpenStreetMap, in a straight line.
+              It is not a figure taken from a brochure, and the walk is always longer than the straight line.
+            </p>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:24px;"><thead><tr>${['Distance', 'Project', 'Area', 'Tenure', 'From', 'Built-up', 'Completion', 'My coverage'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <p style="font-size:13px;color:#64748b;margin-top:16px;">Prices are developer list prices and change with each release. Ask me for the current price list.</p>
+            ${areasHere.length ? `<h2 style="font-size:20px;margin-top:32px;">Areas around this station</h2><ul style="line-height:1.9;">${areasHere.map(a => `<li><a href="${baseUrl}/area/${areaSlug(a)}">${escapeXml(a)}</a></li>`).join('')}</ul>` : ''}
+            <h2 style="font-size:20px;margin-top:32px;">Other stations</h2>
+            <ul style="line-height:1.9;columns:2;">${otherStations.map(x => `<li><a href="${baseUrl}/near/${x.slug}">${escapeXml(x.name)} (${x.items.length})</a></li>`).join('')}</ul>
+            <p style="margin-top:24px;font-size:15px;color:#334155;">Viewings and the current price list: Yee Woei Shyan (REN 46305), IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>.</p>
+            ${siteLinksHtml('en')}
           </div>
         `;
       }
@@ -1451,6 +1558,16 @@ for (const a of AREAS) {
 }
 console.log(`[SEO Static Build] ${AREAS.length} area pages under /area/.`);
 
+// 8a2. Station pages — what is actually near each station, measured.
+const nearDir = path.join(distPath, 'near');
+if (!fs.existsSync(nearDir)) fs.mkdirSync(nearDir, { recursive: true });
+for (const st of STATIONS) {
+  const dir = path.join(nearDir, st.slug);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'index.html'), renderSeoHtml(rawHtml, `/near/${st.slug}`, null, null), 'utf-8');
+}
+console.log(`[SEO Static Build] ${STATIONS.length} station pages under /near/.`);
+
 // 8b. Simplified Chinese twins under dist/zh/...
 const zhRoot = path.join(distPath, 'zh');
 const writeZh = (relDir: string, reqUrl: string, p: Project | null = null, b: any = null) => {
@@ -1562,6 +1679,9 @@ for (const b of BLOG_DATA) {
     }
     xml += `  </url>\n`;
   }
+}
+for (const st of STATIONS) {
+  xml += `  <url><loc>https://shyanyee.com/near/${st.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>\n`;
 }
 for (const a of AREAS) {
   xml += `  <url><loc>https://shyanyee.com/area/${a.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>\n`;

@@ -175,7 +175,7 @@ export function getInitialRouteState(customPath?: string): RouteState {
   // 1b. Area and shortlist pages. These are pre-rendered for crawlers; the app shows the project
   // grid for them. Without this they fell through to the 404 handler, which rewrote the URL to /
   // and replaced the served page with the home page.
-  if (rawCandidate.startsWith('area/') || rawCandidate.startsWith('best/')) {
+  if (rawCandidate.startsWith('area/') || rawCandidate.startsWith('best/') || rawCandidate.startsWith('near/')) {
     return { page: 'projects', project: null, blogSlug: null };
   }
 
