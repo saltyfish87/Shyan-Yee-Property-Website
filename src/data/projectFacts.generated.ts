@@ -15,6 +15,8 @@ export interface ProjectFacts {
   keyFeatures: string[];
   facilities: string[];
   nearby: { category: string; name: string; distance?: string }[];
+  /** The unit types exactly as the sales kit lists them. No prices: the kit prices by stack, not by type. */
+  layouts?: { type: string; size?: string; beds?: string; baths?: string; note?: string }[];
 }
 
 export const PROJECT_FACTS: Record<string, ProjectFacts> = {
@@ -174,6 +176,38 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Public Transportation",
     "name": "Putrajaya Sentral Rail Hub"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "560",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "915",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1195",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C(with Private Garden)",
+    "size": "1195",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D(Dual Key)",
+    "size": "1389",
+    "beds": "4",
+    "baths": "3"
    }
   ]
  },
@@ -349,6 +383,38 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "name": "KL City Centre Park",
     "distance": "5.1km"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "550",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "757",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "872",
+    "beds": "3+1",
+    "baths": "2"
+   },
+   {
+    "type": "D1 Duplex",
+    "size": "1410",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "D2 Duplex",
+    "size": "1420",
+    "beds": "3+1",
+    "baths": "3"
+   }
   ]
  },
  "aster-hill-sri-petaling": {
@@ -458,6 +524,56 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Sports & Recreation",
     "name": "Stadium Bukit Jalil",
     "distance": "5.6km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "852",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A2",
+    "size": "872",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A3",
+    "size": "867",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A4",
+    "size": "846",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A5",
+    "size": "857",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "1043",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "1072",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1077",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -641,6 +757,12 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Recreational Park",
     "name": "Bukit Gasing"
    }
+  ],
+  "layouts": [
+   {
+    "type": "B",
+    "size": "775"
+   }
   ]
  },
  "aurum-business-centre-suites": {
@@ -806,6 +928,20 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Highway",
     "name": "KESAS Highway"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "527",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "679",
+    "beds": "2",
+    "baths": "2"
+   }
   ]
  },
  "avantro-residences": {
@@ -907,6 +1043,62 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Nearby",
     "name": "NPE Highway"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "Type A(SAMM)",
+    "size": "550",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "Type B(B2)",
+    "size": "872",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "Type B(B4)",
+    "size": "893",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "Type C(C2)",
+    "size": "1033",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "Type C(C4)",
+    "size": "1055",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "Type D(D1)",
+    "size": "1152",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "Type D(D2)",
+    "size": "1184",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "Type E(E1)",
+    "size": "1173",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "Type E(E2)",
+    "size": "1206",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -1100,6 +1292,56 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "name": "Columbia Asia Hospital",
     "distance": "6.9km"
    }
+  ],
+  "layouts": [
+   {
+    "type": "E1",
+    "size": "1155",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "E2",
+    "size": "1178",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A1",
+    "size": "1365",
+    "beds": "3+1",
+    "baths": "2"
+   },
+   {
+    "type": "A2",
+    "size": "1384",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "A3",
+    "size": "1388",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "B",
+    "size": "1678",
+    "beds": "4+1",
+    "baths": "3"
+   },
+   {
+    "type": "C",
+    "size": "1859",
+    "beds": "4+2",
+    "baths": "3+1"
+   },
+   {
+    "type": "D",
+    "size": "2316",
+    "beds": "4+2",
+    "baths": "3+1"
+   }
   ]
  },
  "bangsar-hill-park-tower-b-and-c": {
@@ -1280,6 +1522,120 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Banks",
     "name": "CIMB Bank (4.2km)"
    }
+  ],
+  "layouts": [
+   {
+    "type": "1A(Tower B)",
+    "size": "1345",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "1B(Tower B)",
+    "size": "1434",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "1C(Tower B)",
+    "size": "847",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "2A(Tower B)",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "2A1(Tower B)",
+    "size": "978",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "2B(Tower B)",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2B1(Tower B)",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2C(Tower B)",
+    "size": "803",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "3A(Tower B)",
+    "size": "1435",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "3B(Tower B)",
+    "size": "1478",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "2A(Tower C)",
+    "size": "978",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "2A1(Tower C)",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "2B(Tower C)",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2B1(Tower C)",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2C1(Tower C)",
+    "size": "803",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "3A(Tower C)",
+    "size": "1435"
+   },
+   {
+    "type": "3B(Tower C)",
+    "size": "1478",
+    "beds": "3+1",
+    "baths": "3+1"
+   },
+   {
+    "type": "3C(Tower C)",
+    "size": "1372",
+    "beds": "3+1",
+    "baths": "3+1"
+   },
+   {
+    "type": "3D(Tower C)",
+    "size": "1407",
+    "beds": "3+1",
+    "baths": "2+1"
+   }
   ]
  },
  "bangsar-hill-park-verdura-tower-d-and-e": {
@@ -1407,6 +1763,104 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Education",
     "name": "University of Malaya"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "2B1-E",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2B-E",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2A1-E",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "2A-E",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "1A-E",
+    "size": "1345",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "1B-E",
+    "size": "1434",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3A-E(Dual Key able)",
+    "size": "1435",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3B-E(Dual Key able)",
+    "size": "1478",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "2B1-D",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2B-D",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2A1-D",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "2A-D",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "3C-D(Dual Key able)",
+    "size": "1372",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3D-D(Dual Key able)",
+    "size": "1407",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3A-D(Dual Key able)",
+    "size": "1435",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3B-D(Dual Key able)",
+    "size": "1478",
+    "beds": "3+1",
+    "baths": "4"
    }
   ]
  },
@@ -1618,6 +2072,116 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Hospitality",
     "name": "Shangri-La Kuala Lumpur"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "1216",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B(Dual Key)",
+    "size": "1098",
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "549",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "D",
+    "size": "549",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "E",
+    "size": "549",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "F",
+    "size": "549",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "G",
+    "size": "904",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "G(Garden Unit)",
+    "size": "904",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "H",
+    "size": "904",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "H(Garden Unit)",
+    "size": "904",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "I",
+    "size": "1119",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "I(Garden Unit)",
+    "size": "1119",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "J(Dual Key)",
+    "size": "1001",
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "type": "K",
+    "size": "635",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "L",
+    "size": "980",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "L1",
+    "size": "990",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "M(Dual Key)",
+    "size": "1173",
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "type": "N(Dual Key)",
+    "size": "893",
+    "beds": "1",
+    "baths": "2"
+   }
   ]
  },
  "core-residence-trx": {
@@ -1731,6 +2295,56 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "name": "Petronas Twin Towers",
     "distance": "1.8km"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "624",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A2",
+    "size": "688",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "817",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "839",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2a",
+    "size": "839",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B3",
+    "size": "925",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "B4",
+    "size": "1011",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "1022",
+    "beds": "3",
+    "baths": "2"
+   }
   ]
  },
  "genstarz": {
@@ -1822,6 +2436,26 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Highways",
     "name": "Jalan Klang Lama"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "650",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "650",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C(Dual Key Ready)",
+    "size": "874",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -1965,6 +2599,38 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Connectivity",
     "name": "Federal Highway",
     "distance": "0km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "549",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "721",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "C",
+    "size": "872",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1076",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "E",
+    "size": "1389",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -2157,6 +2823,26 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Public Transport",
     "name": "KLIA Transit"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "706",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B",
+    "size": "855",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1006",
+    "beds": "4",
+    "baths": "2"
+   }
   ]
  },
  "maple-residences": {
@@ -2321,6 +3007,56 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Recreation",
     "name": "Kinrara Golf Club"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "808",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A2",
+    "size": "808",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2a(Open Kitchen)",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2b(Enclosed Kitchen)",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "1163",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "C2",
+    "size": "1152",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "D1(Dual-Key)",
+    "size": "1378",
+    "beds": "4",
+    "baths": "3"
    }
   ]
  },
@@ -2497,6 +3233,56 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Nearby",
     "name": "KL Sports City"
    }
+  ],
+  "layouts": [
+   {
+    "type": "Type A",
+    "size": "882",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "Type A1a(Extended Balcony)",
+    "size": "915",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "Type B1 & B2",
+    "size": "1182",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "Type B1a & B2a(Extended Balcony)",
+    "size": "1262",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "Type B3(Lanai)",
+    "size": "1175",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "Type B3a(Extended Balcony)",
+    "size": "1240",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "Type C",
+    "size": "1423",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "Type C1a(Extended Balcony)",
+    "size": "1509",
+    "beds": "3",
+    "baths": "3"
+   }
   ]
  },
  "orion-residence": {
@@ -2633,6 +3419,124 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Recreation",
     "name": "Royal Selangor Golf Club",
     "distance": "4.0km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1(Studio)",
+    "size": "495"
+   },
+   {
+    "type": "A2(Studio)",
+    "size": "495"
+   },
+   {
+    "type": "A3(Studio)",
+    "size": "497"
+   },
+   {
+    "type": "A4(Studio)",
+    "size": "491"
+   },
+   {
+    "type": "A4-T(Studio with Terrace)",
+    "size": "588"
+   },
+   {
+    "type": "B1",
+    "size": "680",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "746",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B3",
+    "size": "746",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B4",
+    "size": "708",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "838",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C2",
+    "size": "945",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C3",
+    "size": "923",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C3-T(with Terrace)",
+    "size": "1155",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C4",
+    "size": "992",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C4-T(with Terrace)",
+    "size": "1186",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C5",
+    "size": "886",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C5-T(with Terrace)",
+    "size": "1077",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D1(Dual Key)",
+    "size": "1180",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "D2(Dual Key)",
+    "size": "1329",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "D3(Dual Key)",
+    "size": "1230",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "D4(Dual Key)",
+    "size": "1271",
+    "beds": "3",
+    "baths": "3"
    }
   ]
  },
@@ -2819,6 +3723,56 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "name": "Sunway Lagoon Theme Park",
     "distance": "10 km"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A(A/A(M))",
+    "size": "1201",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A1",
+    "size": "1201",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B",
+    "size": "1408",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "1408",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1485",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D(D/D(M))",
+    "size": "1501",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "E",
+    "size": "1905",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "F",
+    "size": "1627",
+    "beds": "3",
+    "baths": "2"
+   }
   ]
  },
  "quaver-residence": {
@@ -2913,6 +3867,48 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Healthcare",
     "name": "Columbia Asia Hospital Cheras (9km)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "Duplex A",
+    "size": "1367",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "Duplex B",
+    "size": "1701",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "Serviced Apartment A",
+    "size": "1110",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "Serviced Apartment B",
+    "size": "1023",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "Serviced Apartment C",
+    "size": "1647",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "Serviced Apartment D",
+    "size": "1561",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "Serviced Apartment D1",
+    "size": "1851"
    }
   ]
  },
@@ -3082,6 +4078,12 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Business & Commercial Hubs",
     "name": "KL Sentral"
    }
+  ],
+  "layouts": [
+   {
+    "type": "X1",
+    "size": "1001"
+   }
   ]
  },
  "tujuh-residences": {
@@ -3199,6 +4201,32 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Airport",
     "name": "Sultan Abdul Aziz Shah Airport (Subang Airport) (5km)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "550",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "666",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "862",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D(Dual Key)",
+    "size": "909",
+    "beds": "3",
+    "baths": "3"
    }
   ]
  },
@@ -3340,6 +4368,44 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Parks",
     "name": "KL City Centre Park",
     "distance": "8.1km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "667",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "A1a",
+    "size": "667",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "839",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "839",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "947",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1a",
+    "size": "947",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -3629,6 +4695,98 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Other Landmarks",
     "name": "Subang Airport"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A1(Parkhome (Intermediate))",
+    "size": "3150",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "A2(Parkhome (Endlot))",
+    "size": "3820",
+    "beds": "5",
+    "baths": "5"
+   },
+   {
+    "type": "B1(Parkhome (Intermediate))",
+    "size": "3210",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "B2(Parkhome (Endlot))",
+    "size": "3980",
+    "beds": "5",
+    "baths": "6"
+   },
+   {
+    "type": "A1/A2(Condovilla)",
+    "size": "1691",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "A1-g/A2-g(Condovilla (Private Garden))",
+    "size": "2013",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "B1/B1a/B2(Condovilla)",
+    "size": "2053",
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "type": "B1-g/B1a-g(Condovilla (Private Garden))",
+    "size": "2327",
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "type": "C1(Condovilla)",
+    "size": "3095",
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "type": "C1a(Condovilla)",
+    "size": "3137",
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "type": "C1-g(Condovilla (Private Garden))",
+    "size": "3380",
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "type": "C2(Condovilla)",
+    "size": "3657",
+    "beds": "4+1",
+    "baths": "5"
+   },
+   {
+    "type": "C2-ga(Condovilla (Private Garden))",
+    "size": "4247",
+    "beds": "4+1",
+    "baths": "5"
+   },
+   {
+    "type": "C2-gb(Condovilla (Private Garden))",
+    "size": "4177",
+    "beds": "4+1",
+    "baths": "5"
+   },
+   {
+    "type": "D1(Condovilla (Duplex))",
+    "size": "3691",
+    "beds": "5",
+    "baths": "6"
+   }
   ]
  },
  "ren-residence": {
@@ -3751,6 +4909,44 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Recreation",
     "name": "National Stadium Bukit Jalil"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "920",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "1050",
+    "beds": "3+1",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "1110",
+    "beds": "3+1",
+    "baths": "2"
+   },
+   {
+    "type": "B3",
+    "size": "1120",
+    "beds": "3+1",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1270",
+    "beds": "4+1",
+    "baths": "3"
+   },
+   {
+    "type": "D",
+    "size": "1680",
+    "beds": "4+1",
+    "baths": "3"
    }
   ]
  },
@@ -3911,6 +5107,20 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Recreation",
     "name": "Bukit Jalil Golf & Country Resort"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A / A1",
+    "size": "850",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B / B1",
+    "size": "1062",
+    "beds": "3",
+    "baths": "2"
+   }
   ]
  },
  "vividz": {
@@ -4064,6 +5274,32 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Recreation",
     "name": "Bukit Jalil Golf & Country Club"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "484",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "689",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C1(Balcony)",
+    "size": "915",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C2(Without Balcony)",
+    "size": "915",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -4288,6 +5524,122 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Recreation",
     "name": "Perdana Botanical Garden"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "772",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A(M)",
+    "size": "772",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A1",
+    "size": "762",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A2",
+    "size": "772",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A3",
+    "size": "717",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "630",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B(M)",
+    "size": "630",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "C",
+    "size": "683",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "D",
+    "size": "869",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "E",
+    "size": "998",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "E(M)",
+    "size": "998",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "F",
+    "size": "1032",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "G",
+    "size": "1086",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "H",
+    "size": "1028",
+    "beds": "2+2",
+    "baths": "2"
+   },
+   {
+    "type": "I",
+    "size": "1096",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "J",
+    "size": "1070",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "J(M)",
+    "size": "1070",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "K",
+    "size": "1164",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "L",
+    "size": "1321",
+    "beds": "3",
+    "baths": "3"
+   }
   ]
  },
  "phoeniz-suites-kl-city-centre": {
@@ -4358,6 +5710,38 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Education",
     "name": "Nearby Schools & Colleges"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "484",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A(M)(Modified)",
+    "size": "484",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B1(Dual Key)",
+    "size": "657",
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "type": "B1(M)(Dual Key, Modified)",
+    "size": "657",
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "type": "B2(Dual Key)",
+    "size": "678",
+    "beds": "1",
+    "baths": "2"
    }
   ]
  },
@@ -4469,6 +5853,62 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Recreation",
     "name": "Pet-Friendly Neighbourhood Park"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "1042",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "A1(French Balcony)",
+    "size": "1042",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "B",
+    "size": "1028",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "923",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "GC(Private Garden)",
+    "size": "923",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "568",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "F",
+    "size": "1042",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "F(a)(Alternate Layout)",
+    "size": "1042",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "H(Convertible to Dual Key)",
+    "size": "923",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -4621,6 +6061,68 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "name": "University Malaya Medical Centre",
     "distance": "8.8km"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A1(With Balcony)",
+    "size": "775",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "A2(Without Balcony)",
+    "size": "775",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1(With Balcony)",
+    "size": "926",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2(Without Balcony)",
+    "size": "926",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1(With Balcony)",
+    "size": "926",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C2(Without Balcony)",
+    "size": "926",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C3(With Balcony)",
+    "size": "926",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C4(Without Balcony)",
+    "size": "926",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D1(With Balcony)",
+    "size": "926",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D2(Without Balcony)",
+    "size": "926",
+    "beds": "3",
+    "baths": "2"
+   }
   ]
  },
  "d-evia": {
@@ -4756,6 +6258,50 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Education",
     "name": "Segi University",
     "distance": "2.3km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "657",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1(Balcony)",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2(Without Balcony)",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B3(Balcony)",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B4(Without Balcony)",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1(Balcony)",
+    "size": "1109",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "C2(Without Balcony)",
+    "size": "1109",
+    "beds": "4",
+    "baths": "2"
    }
   ]
  },
@@ -4947,6 +6493,14 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Recreation & Parks",
     "name": "Kelana Jaya Lake Park"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "721",
+    "beds": "2",
+    "baths": "2"
+   }
   ]
  },
  "atera": {
@@ -5129,6 +6683,12 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Recreational Park",
     "name": "Bukit Gasing"
    }
+  ],
+  "layouts": [
+   {
+    "type": "B",
+    "size": "775"
+   }
   ]
  },
  "amara": {
@@ -5239,6 +6799,32 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Road Networks",
     "name": "FEDERAL Highway"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A2",
+    "size": "655",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B(B/B1)",
+    "size": "934",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C(C/C1)",
+    "size": "1112",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1272",
+    "beds": "4",
+    "baths": "3"
+   }
   ]
  },
  "parkside-residence": {
@@ -5314,6 +6900,62 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Parks & Recreation",
     "name": "KL Bird Park"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "485",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B(Dual-Key Friendly)",
+    "size": "689",
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "646",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C2",
+    "size": "732",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D1",
+    "size": "872",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "D2",
+    "size": "926",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "D3",
+    "size": "1012",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "E1",
+    "size": "1260",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "E2",
+    "size": "1325",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -5462,6 +7104,98 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Healthcare",
     "name": "Sungai Buloh Hospital",
     "distance": "7.2 km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "554",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "702",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1a",
+    "size": "714",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "792",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D1(Flexi Layout)",
+    "size": "879",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "E1(Flexi Layout)",
+    "size": "1024",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "F1(Flexi Layout)",
+    "size": "1230",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "A2",
+    "size": "539",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B2",
+    "size": "688",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2a",
+    "size": "693",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2b",
+    "size": "681",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C2",
+    "size": "764",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D2",
+    "size": "870",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "E2",
+    "size": "1002",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "F2",
+    "size": "1181",
+    "beds": "3",
+    "baths": "3"
    }
   ]
  },
@@ -5677,6 +7411,11 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Leisure",
     "name": "KLGCC (20 mins)"
    }
+  ],
+  "layouts": [
+   {
+    "type": "5"
+   }
   ]
  },
  "daya-residence": {
@@ -5797,6 +7536,46 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Nearby",
     "name": "North-South Expressway (NSE)"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A(Semi-D)",
+    "size": "3329",
+    "beds": "6",
+    "baths": "8"
+   },
+   {
+    "type": "B(Semi-D)",
+    "size": "3790",
+    "beds": "6",
+    "baths": "8"
+   },
+   {
+    "type": "C(Semi-D)",
+    "size": "3971",
+    "beds": "6",
+    "baths": "8"
+   },
+   {
+    "type": "D(Semi-D)",
+    "size": "3680",
+    "beds": "6",
+    "baths": "8"
+   },
+   {
+    "type": "E(Bungalow)",
+    "size": "5004",
+    "beds": "7",
+    "baths": "9"
+   },
+   {
+    "type": "Condominium",
+    "size": "960–1550"
+   },
+   {
+    "type": "Town Villa",
+    "size": "2975"
+   }
   ]
  },
  "queenswoodz": {
@@ -5881,6 +7660,39 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Nearby",
     "name": "National Stadium Bukit Jalil / Axiata Arena"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1/A2",
+    "size": "807",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "B1/B2",
+    "size": "936",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1/C2",
+    "size": "1206",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "D1",
+    "size": "1410",
+    "beds": "4",
+    "baths": "3",
+    "note": "Dual Key"
+   },
+   {
+    "type": "D2",
+    "size": "1410",
+    "beds": "3+1",
+    "baths": "3"
    }
   ]
  },
@@ -6016,6 +7828,44 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Landmarks",
     "name": "National Mosque of Malaysia"
    }
+  ],
+  "layouts": [
+   {
+    "type": "M1",
+    "size": "1001",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "M1-A",
+    "size": "1012",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "M1-B",
+    "size": "1087",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "M2",
+    "size": "1163",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "M3(Duplex)",
+    "size": "1378",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "L(Duplex)",
+    "size": "3714",
+    "beds": "3+1",
+    "baths": "4+1"
+   }
   ]
  },
  "bamboohill": {
@@ -6131,6 +7981,62 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Healthcare",
     "name": "Parkcity Medical Centre @ Desa Park City",
     "distance": "8km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "603",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "A2",
+    "size": "603",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "743",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "732",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C2",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C3",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C4",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C5",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -6265,6 +8171,104 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Healthcare",
     "name": "Institut Jantung Negara (IJN)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "766",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "A1a(High Floor)",
+    "size": "786",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "A2-c",
+    "size": "776",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "A2a-c(High Floor)",
+    "size": "786",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "884",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B1a(High Floor)",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2-c",
+    "size": "894",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2a-c(High Floor)",
+    "size": "914",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B3",
+    "size": "884",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B3a(High Floor)",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B4",
+    "size": "884",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B4a(High Floor)",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "937",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D(Dual Key)",
+    "size": "1001",
+    "beds": "2+1",
+    "baths": "3"
+   },
+   {
+    "type": "E1(Dual Key)",
+    "size": "1173",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "E2-c(Dual Key)",
+    "size": "1206",
+    "beds": "3+1",
+    "baths": "3"
    }
   ]
  },
@@ -6442,6 +8446,54 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Education",
     "name": "The International School of Kuala Lumpur (ISKL)"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "504"
+   },
+   {
+    "type": "B1",
+    "size": "770",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B2",
+    "size": "772",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "C1",
+    "size": "966",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C2",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "C3",
+    "size": "1100",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "C4",
+    "size": "1272",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1255",
+    "beds": "3",
+    "baths": "3"
+   }
   ]
  },
  "pavilion-square-office": {
@@ -6588,6 +8640,40 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Arts and Culture",
     "name": "National Art Gallery"
    }
+  ],
+  "layouts": [
+   {
+    "type": "Office 1",
+    "size": "2464"
+   },
+   {
+    "type": "Office 2",
+    "size": "1112"
+   },
+   {
+    "type": "Office 3",
+    "size": "1481"
+   },
+   {
+    "type": "Office 3A",
+    "size": "1093"
+   },
+   {
+    "type": "Office 5(Type 5A (Level 3A-9 & 11))",
+    "size": "1668"
+   },
+   {
+    "type": "Office 5(Type 5B (Level 10))",
+    "size": "1426"
+   },
+   {
+    "type": "Office 5(Type 5 (Level 12-23A))",
+    "size": "1795"
+   },
+   {
+    "type": "Penthouse(Level 25)",
+    "size": "9770"
+   }
   ]
  },
  "golden-crown": {
@@ -6718,6 +8804,50 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Highways",
     "name": "SPE Highway"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "624",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A2(Balcony)",
+    "size": "732",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "926",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "926",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "B3",
+    "size": "958",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "C(Dual-key)",
+    "size": "1023",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1238",
+    "beds": "3",
+    "baths": "2"
+   }
   ]
  },
  "centrix": {
@@ -6843,6 +8973,36 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Hospital/Medical",
     "name": "HSC Medical Centre"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "Studio",
+    "size": "571–659"
+   },
+   {
+    "type": "Studio(Large)",
+    "size": "752–855"
+   },
+   {
+    "type": "1BR / 1BR+1ST",
+    "size": "578–871"
+   },
+   {
+    "type": "Dual Key",
+    "size": "593–777"
+   },
+   {
+    "type": "Dual Key(Large)",
+    "size": "891–1039"
+   },
+   {
+    "type": "2 Bedroom",
+    "size": "718–1019"
+   },
+   {
+    "type": "3 Bedroom",
+    "size": "1001–1187"
    }
   ]
  },
@@ -6976,6 +9136,26 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Recreation",
     "name": "Bukit Jalil Golf & Country Resort"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "474",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "678",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "904",
+    "beds": "3",
+    "baths": "2"
+   }
   ]
  },
  "times-square-2": {
@@ -7089,6 +9269,40 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Transit",
     "name": "TOD connected to 3 major trainlines"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "488",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "678",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "888",
+    "beds": "2",
+    "baths": "2",
+    "note": "Dual Key, Powder"
+   },
+   {
+    "type": "D",
+    "size": "1038",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "F",
+    "size": "1356",
+    "beds": "3",
+    "baths": "3",
+    "note": "Study"
+   }
   ]
  },
  "accent-residences": {
@@ -7171,6 +9385,77 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Based on location map",
     "name": "LRT Taman Jaya"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "1,880",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "A(Garden)",
+    "size": "2,811",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "B1",
+    "size": "1,574",
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "type": "B1(Garden)",
+    "size": "1,942",
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "type": "B1(M)",
+    "size": "1,574",
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "type": "B2",
+    "size": "1,574",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "B2(Garden)",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "B2(M)",
+    "size": "1,574",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "C1(balcony)",
+    "size": "1,165",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1(Garden)",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C2(lanai)",
+    "size": "1,165",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C2(Garden)",
+    "beds": "3",
+    "baths": "2"
    }
   ]
  },
@@ -7336,6 +9621,86 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Nearby",
     "name": "Saloma Bridge"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "700–711",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A2",
+    "size": "722",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A3",
+    "size": "679–689",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "775–797",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B2",
+    "size": "808–819",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B3",
+    "size": "851",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "C",
+    "size": "937–959",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1206",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "E",
+    "size": "1399–1400",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "E1(Dual Key)",
+    "size": "1335",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "F1",
+    "size": "1808–1809",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "F2",
+    "size": "2089–2099",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "G",
+    "size": "2971–2972",
+    "beds": "4+1",
+    "baths": "5"
    }
   ]
  },
@@ -7525,6 +9890,56 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "name": "Tun Razak Exchange TRX",
     "distance": "880m"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A1-A6",
+    "size": "635–861",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B1-B11",
+    "size": "797–872",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "C1-C3",
+    "size": "1098–1163",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C4-C5",
+    "size": "1410–1464",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "D1-D2",
+    "size": "1550–1572",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "D3-D4",
+    "size": "1668–1722",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "D5-D6",
+    "size": "2842–2874",
+    "beds": "4+1",
+    "baths": "3"
+   },
+   {
+    "type": "P1-P6(Penthouse)",
+    "size": "2271–2982",
+    "beds": "4",
+    "baths": "3"
+   }
   ]
  },
  "pantai-sentral-park-enlace-suites-ii": {
@@ -7676,6 +10091,78 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Recreation",
     "name": "Bukit Kerinchi Forest Reserve (200-acre)"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A(Studio)",
+    "size": "506"
+   },
+   {
+    "type": "B",
+    "size": "613",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "C1",
+    "size": "979",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C2",
+    "size": "979",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D1",
+    "size": "1227",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "D2",
+    "size": "1485",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "E",
+    "size": "1593",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "G1(Garden Unit)",
+    "size": "1001",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "G2(Garden Unit)",
+    "size": "1216",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "G3(Garden Unit)",
+    "size": "1593",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "RG1(Rooftop Garden)",
+    "size": "1862",
+    "beds": "5",
+    "baths": "4"
+   },
+   {
+    "type": "RG2(Rooftop Garden)",
+    "size": "2034",
+    "beds": "5",
+    "baths": "4"
+   }
   ]
  },
  "conlay": {
@@ -7760,6 +10247,50 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Landmarks",
     "name": "The Exchange 106"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "743",
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "type": "A2",
+    "size": "904",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "743",
+    "beds": "1+1",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "840",
+    "beds": "1+1",
+    "baths": "2"
+   },
+   {
+    "type": "B3",
+    "size": "980",
+    "beds": "1+1",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1206",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1335",
+    "beds": "2+1",
+    "baths": "2"
    }
   ]
  },
@@ -7969,6 +10500,32 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Medical Centre",
     "name": "Gleneagles Hospital (11.9km)"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A / A1",
+    "size": "1156",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "B / B1",
+    "size": "1156",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "C / C1",
+    "size": "1321",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "D / D1",
+    "size": "1518",
+    "beds": "4+1",
+    "baths": "4"
+   }
   ]
  },
  "divine-kl-city-centre": {
@@ -8152,6 +10709,104 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "category": "Hotels",
     "name": "W Kuala Lumpur (300m)"
    }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "513",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A1",
+    "size": "540",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A2",
+    "size": "502",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A3",
+    "size": "530",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A4(L13A only)",
+    "size": "513",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "A5",
+    "size": "511",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B(Dual Key)",
+    "size": "657",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1(Dual Key)",
+    "size": "713",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2(Dual Key)",
+    "size": "653",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B3(Dual Key)",
+    "size": "684",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B4(Dual Key)",
+    "size": "684",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B5(Dual Key)",
+    "size": "648",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B6",
+    "size": "658",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C",
+    "size": "982",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "991",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1319",
+    "beds": "3+1",
+    "baths": "3"
+   }
   ]
  },
  "m-aurora": {
@@ -8282,6 +10937,38 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    {
     "category": "Education",
     "name": "SJK(C) Choong Wen"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "556",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "737",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C(with balcony)",
+    "size": "858",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D(with balcony)",
+    "size": "916",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "E(with balcony)",
+    "size": "1019",
+    "beds": "4",
+    "baths": "3"
    }
   ]
  }

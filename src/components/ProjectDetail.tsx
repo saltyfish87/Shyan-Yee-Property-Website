@@ -48,6 +48,50 @@ interface ProjectDetailProps {
   onBlogLinkNavigate: (slug: string) => void;
 }
 
+/**
+ * Put the sales kit's own unit types back on the layout cards.
+ *
+ * `project.layouts` is filled in by server.ts, which falls back to spreading sizes and prices evenly
+ * from the smallest unit to the largest when it has nothing better. Those numbers reached the page as
+ * fact — and the card turns the price into a monthly repayment — so anything the kit does not confirm
+ * is blanked rather than shown. The kit lists no per-type price (it prices by stack and floor), so the
+ * price and the repayment only appear where a layout was read from a real floor plan.
+ */
+const normType = (s: string) => String(s || '').replace(/type/ig, '').replace(/[^a-z0-9]/ig, '').toUpperCase();
+
+function applyKitLayouts(projectId: string, cards: any[]): any[] {
+  const kit = PROJECT_FACTS[projectId]?.layouts;
+  // `isEnriched` only means a model read the drawings, and it produced even ladders too (Zenia's
+  // enriched cards run 1691, 1708, 1725, 1743…), so the kit wins wherever it has an entry.
+  if (!kit?.length) return cards.map(c => (c.isEnriched ? c : { ...c, size: undefined, beds: undefined, baths: undefined, carParks: undefined, estPrice: undefined }));
+  return cards.map(card => {
+    // Card names carry more than the code: "Type C-D-E-F" is one drawing shared by the kit's C, D,
+    // E and F, and Zenia's "Condovilla - Type A1 (Upper)" has to pick the kit's A1 Condovilla over
+    // its A1 Parkhome. So every word of the card name is scored against each kit entry.
+    const tokens = String(card.typeName || '').replace(/type/ig, '').split(/[-/,()]/).map(normType).filter(Boolean);
+    const head = (k: { type: string }) => normType(String(k.type).split('(')[0]);
+    let match: typeof kit[number] | undefined;
+    let best = 0;
+    for (const k of kit) {
+      const full = normType(k.type);
+      const score = tokens.filter(t => full.includes(t)).length + (tokens.includes(head(k)) ? 2 : 0);
+      if (score > best) { best = score; match = k; }
+    }
+    if (!match) return card.isEnriched ? card : { ...card, size: undefined, beds: undefined, baths: undefined, carParks: undefined, estPrice: undefined };
+    const sqft = Number(String(match.size || '').split('–')[0].replace(/,/g, ''));
+    return {
+      ...card,
+      typeName: `Type ${match.type}`,
+      size: isFinite(sqft) && sqft > 0 ? sqft : undefined,
+      sizeLabel: match.size,
+      beds: match.beds,
+      baths: match.baths,
+      carParks: undefined,
+      estPrice: undefined
+    };
+  });
+}
+
 export const ProjectDetail: React.FC<ProjectDetailProps> = ({
   project,
   allProjects = [],
@@ -302,61 +346,37 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
     }
 
     if (project.layouts && project.layouts.length > 0) {
-      return project.layouts;
+      return applyKitLayouts(project.id, project.layouts);
     }
 
+    // No sheet layouts: show the floor-plan drawings with whatever the kit says, and nothing else.
+    // This used to invent a type letter, a size stepped evenly across the project's range, a bed count
+    // guessed from that size, a car park count and a price.
     const images = project.images?.layout?.filter(Boolean) || [];
     if (images.length === 0) return [];
-    
+    const kit = PROJECT_FACTS[project.id]?.layouts || [];
     return images.map((img, index) => {
-      let size = project.builtUpMin;
-      if (images.length > 1) {
-        const step = (project.builtUpMax - project.builtUpMin) / (images.length - 1);
-        size = Math.round(project.builtUpMin + index * step);
-      }
-      
-      const minBeds = project.bedroomsMin || 1;
-      const maxBeds = project.bedroomsMax || 4;
-      let estimatedBeds = 3;
-      if (size < 650) {
-        estimatedBeds = 1;
-      } else if (size < 850) {
-        estimatedBeds = 2;
-      } else if (size < 1250) {
-        estimatedBeds = 3;
-      } else if (size < 1800) {
-        estimatedBeds = 4;
-      } else {
-        estimatedBeds = 5;
-      }
-      const beds = Math.max(minBeds, Math.min(maxBeds, estimatedBeds));
-      
-      const baths = Math.max(1, beds <= 2 ? beds : beds - 1);
-      const estimatedCarParks = size > 1100 ? 2 : 1;
-      const minCars = project.carParksMin !== undefined ? project.carParksMin : 1;
-      const maxCars = project.carParksMax !== undefined ? project.carParksMax : Math.max(2, estimatedCarParks);
-      const carParks = Math.max(minCars, Math.min(maxCars, estimatedCarParks));
-      const typeLetter = String.fromCharCode(65 + index);
-      const typeName = `Type ${typeLetter}`;
-      
-      const priceFactor = size / Math.max(1, project.builtUpMin);
-      const estPrice = Math.round(project.startingPrice * (priceFactor > 1.2 ? 1.0 + (priceFactor - 1.0) * 0.45 : priceFactor));
-      
+      const k = kit[index];
+      const sqft = k ? Number(String(k.size || '').split('–')[0].replace(/,/g, '')) : NaN;
       return {
         image: img,
-        typeName,
-        size,
-        beds,
-        baths,
-        carParks,
-        estPrice
+        typeName: k ? `Type ${k.type}` : `Layout ${index + 1}`,
+        size: isFinite(sqft) && sqft > 0 ? sqft : undefined,
+        sizeLabel: k?.size,
+        beds: k?.beds,
+        baths: k?.baths,
+        carParks: undefined,
+        estPrice: undefined
       };
     });
   }, [project]);
 
   const activeZeniaLayouts = React.useMemo(() => {
     if (!isZenia) return [];
-    return layoutsData.filter(lay => zeniaSubtype === 'condovilla' ? lay.size < 2200 : lay.size >= 2200);
+    // Split on the name, not on 2,200 sq ft: that threshold was tuned to the invented sizes, and the
+    // kit's Condovillas run from 1,691 to 4,247 sq ft, which straddles it.
+    const isCondo = (lay: any) => /condo\s*villa/i.test(String(lay.typeName || ''));
+    return layoutsData.filter(lay => (zeniaSubtype === 'condovilla' ? isCondo(lay) : !isCondo(lay)));
   }, [isZenia, zeniaSubtype, layoutsData]);
 
   const layoutsToRender = isZenia ? activeZeniaLayouts : layoutsData;
@@ -1008,7 +1028,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                       >
                         {lay.typeName}
                         <span className="block text-[8px] font-normal tracking-normal text-current opacity-80 mt-0.5">
-                          {lay.size} {t('sqft').toUpperCase()}
+                          {lay.sizeLabel || lay.size || '—'} {(lay.sizeLabel || lay.size) ? t('sqft').toUpperCase() : ''}
                         </span>
                       </button>
                     ))}
@@ -1018,15 +1038,6 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                   {(() => {
                     const lay = layoutsToRender[activeLayoutIdx] || layoutsToRender[0];
                     if (!lay) return null;
-
-                    // Calculate installment on the fly
-                    const p = lay.estPrice * 0.9;
-                    const r = (4.25 / 12) / 100;
-                    const n = 35 * 12;
-                    const inst = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-
-                    const { formatted: dispEstPrice } = convertPrice(lay.estPrice);
-                    const { formatted: dispEstInstallment } = convertPrice(Math.round(inst));
 
                     return (
                       <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
@@ -1076,7 +1087,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                                 <Ruler className="h-4.5 w-4.5 text-slate-400 shrink-0" />
                                 <div>
                                   <span className="block text-[11px] text-slate-400 leading-none">Built Up Area</span>
-                                  <span className="text-xs font-bold text-slate-800">{lay.size} SQFT</span>
+                                  <span className="text-xs font-bold text-slate-800">{lay.sizeLabel || lay.size ? `${lay.sizeLabel || lay.size} SQFT` : 'On request'}</span>
                                 </div>
                               </div>
 
@@ -1084,7 +1095,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                                 <Home className="h-4.5 w-4.5 text-slate-400 shrink-0" />
                                 <div>
                                   <span className="block text-[11px] text-slate-400 leading-none font-sans">Metric Sizing</span>
-                                  <span className="text-xs font-bold text-slate-800">~{Math.round(lay.size / 10.764)} SQM</span>
+                                  <span className="text-xs font-bold text-slate-800">{lay.size ? `~${Math.round(lay.size / 10.764)} SQM` : '—'}</span>
                                 </div>
                               </div>
 
@@ -1092,7 +1103,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                                 <Bed className="h-4.5 w-4.5 text-rose-500/80 shrink-0" />
                                 <div>
                                   <span className="block text-[11px] text-slate-400 leading-none">Bedrooms</span>
-                                  <span className="text-xs font-bold text-slate-800">{lay.beds} Bedrooms</span>
+                                  <span className="text-xs font-bold text-slate-800">{lay.beds ? `${lay.beds} Bedrooms` : '—'}</span>
                                 </div>
                               </div>
 
@@ -1100,7 +1111,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                                 <Bath className="h-4.5 w-4.5 text-rose-500/80 shrink-0" />
                                 <div>
                                   <span className="block text-[11px] text-slate-400 leading-none font-sans">Bathrooms</span>
-                                  <span className="text-xs font-bold text-slate-800">{lay.baths} Bathrooms</span>
+                                  <span className="text-xs font-bold text-slate-800">{lay.baths ? `${lay.baths} Bathrooms` : '—'}</span>
                                 </div>
                               </div>
 
@@ -1108,7 +1119,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                                 <Car className="h-4.5 w-4.5 text-emerald-500/80 shrink-0" />
                                 <div>
                                   <span className="block text-[11px] text-slate-400 leading-none">Allocated Car Parks</span>
-                                  <span className="text-xs font-bold text-slate-800">{lay.carParks} {lay.carParks > 1 ? 'Automated Bays' : 'Dedicated Bay'}</span>
+                                  <span className="text-xs font-bold text-slate-800">{lay.carParks ? `${lay.carParks} ${lay.carParks > 1 ? 'Automated Bays' : 'Dedicated Bay'}` : '—'}</span>
                                 </div>
                               </div>
                             </div>

@@ -527,6 +527,40 @@ function projectRowHtml(p: any, baseUrl: string): string {
     + `<td ${td}>${mine}</td></tr>`;
 }
 
+/**
+ * The unit-type table, from the sales kit as published in the project database.
+ *
+ * The table used to come from `project.layouts`, which server.ts fills in with a "beautiful
+ * fallback" when nothing better is available: it spreads sizes and prices evenly from the smallest
+ * unit to the largest and prints them as fact. On CloutHaus that put Type B at 616 sq ft and
+ * RM 1,737,816 when the kit says nothing of the sort, and on Ayanna it priced a 1,526 sq ft unit
+ * below a 1,340 sq ft one. Nothing invented is printed now: no kit, no table. Prices are left out
+ * entirely, because the kit prices by stack and floor, not by type.
+ */
+function projectLayoutsHtml(projectId: string, lang: 'en' | 'zh'): string {
+  const layouts = PROJECT_FACTS[projectId]?.layouts;
+  if (!layouts?.length) return '';
+  const zh = lang === 'zh';
+  const withNote = layouts.some(l => l.note);
+  const th = (t: string) => `<th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">${t}</th>`;
+  const td = (t: string) => `<td style="border:1px solid #e5e7eb;padding:8px;">${escapeXml(t)}</td>`;
+  const head = (zh ? ['户型', '建筑面积（平方尺）', '房', '浴室'] : ['Type', 'Built-up (sq ft)', 'Bedrooms', 'Bathrooms'])
+    .concat(withNote ? [zh ? '备注' : 'Notes'] : []).map(th).join('');
+  const body = layouts.map(l => td(l.type) + td(l.size || '–') + td(l.beds || '–') + td(l.baths || '–')
+    + (withNote ? td(l.note || '–') : '')).map(r => `<tr>${r}</tr>`).join('');
+  return `
+            <section style="margin-bottom: 40px;">
+              <h2>${zh ? '户型与面积' : 'Unit types and sizes'}</h2>
+              <table style="width:100%;border-collapse:collapse;border:1px solid #e5e7eb;margin-bottom:12px;">
+                <thead><tr style="background-color:#f9fafb;">${head}</tr></thead>
+                <tbody>${body}</tbody>
+              </table>
+              <p style="color:#57534e;font-size:14px;">${zh
+                ? '户型与面积取自发展商销售资料。价钱按座向和楼层不同，请索取最新价单。'
+                : 'Types and sizes are from the developer sales kit. Price varies by stack and floor — ask for the current price list.'}</p>
+            </section>`;
+}
+
 function projectFactsHtml(projectId: string, lang: 'en' | 'zh'): string {
   const f = PROJECT_FACTS[projectId];
   if (!f) return '';
@@ -1334,56 +1368,19 @@ function renderSeoHtml(
             </section>`;
             })() : ''}
 
-            ${Array.isArray(targetProject.layouts) && targetProject.layouts.length > 0 ? (() => {
-              const rows = targetProject.layouts.map(layout => {
-                const typeName = escapeXml(layout.typeName || '-');
-                const size = escapeXml(layout.size != null ? `${layout.size}` : '-');
-                const beds = escapeXml(layout.beds != null ? `${layout.beds}` : '-');
-                const baths = escapeXml(layout.baths != null ? `${layout.baths}` : '-');
-                const carParks = escapeXml(layout.carParks != null ? `${layout.carParks}` : '-');
-                const priceFormatted = layout.estPrice != null && layout.estPrice !== 0 && (layout.estPrice as any) !== ''
-                  ? `RM ${layout.estPrice.toLocaleString()}`
-                  : 'Contact agent';
-                const estPrice = escapeXml(priceFormatted);
+            ${projectLayoutsHtml(targetProject.id, 'en')}
 
-                return `
-                <tr>
-                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${typeName}</td>
-                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${size}</td>
-                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${beds}</td>
-                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${baths}</td>
-                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${carParks}</td>
-                  <td style="border: 1px solid #e5e7eb; padding: 8px;">${estPrice}</td>
-                </tr>`;
-              }).join('');
-
-              const layoutImages = targetProject.layouts
-                .filter(l => l.image)
-                .map(layout => {
-                  const alt = escapeXml(`${targetProject.name} ${layout.typeName || ''} floor plan — ${layout.size || ''} sq ft, ${layout.beds || ''} bedrooms`);
-                  return `<img src="${layout.image}" alt="${alt}" loading="lazy" width="800" style="max-width:100%;height:auto;">`;
-                }).join('\n              ');
-
+            ${(() => {
+              const plans = (targetProject.layouts || []).filter(l => l.image);
+              if (!plans.length) return '';
+              // The floor-plan images are real files from the project's Drive folder; only the
+              // sizes and prices that used to sit beside them were invented, so they stay.
               return `
             <section style="margin-bottom: 40px;">
-              <h2>Unit Types and Layouts</h2>
-              <table style="width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; margin-bottom: 16px;">
-                <thead>
-                  <tr style="background-color: #f9fafb;">
-                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Type</th>
-                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Size (sq ft)</th>
-                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Bedrooms</th>
-                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Bathrooms</th>
-                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Car Parks</th>
-                    <th style="border: 1px solid #e5e7eb; padding: 8px; text-align: left;">Indicative Price</th>
-                  </tr>
-                </thead>
-                <tbody>${rows}
-                </tbody>
-              </table>
-              ${layoutImages}
+              <h2>Floor plans</h2>
+              ${plans.map(l => `<img src="${l.image}" alt="${escapeXml(`${targetProject.name} floor plan`)}" loading="lazy" width="800" style="max-width:100%;height:auto;">`).join('\n              ')}
             </section>`;
-            })() : ''}
+            })()}
 
             ${projectFactsHtml(targetProject.id, 'en')}
             ${projectNearbyHtml(targetProject.id, 'en')}
@@ -1945,8 +1942,12 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
           </ul>
         </section>
         ${gallery.length ? `<section style="margin-bottom: 32px;"><h2>${ZH.visualGallery || '实景图库'}</h2>${gallery.map(u => `<img src="${u}" alt="${escapeXml(`${p.name} ${p.area}`)}" loading="lazy" width="800" style="max-width:100%;height:auto;border-radius:8px;margin-bottom:12px;">`).join('')}</section>` : ''}
-        ${Array.isArray(p.layouts) && p.layouts.length ? `<section style="margin-bottom: 32px;"><h2>${ZH.floorPlans || '户型图'}</h2><table style="width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb;"><thead><tr style="background:#f9fafb;"><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">户型</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">面积（平方尺）</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">房</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">浴室</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">车位</th><th style="border:1px solid #e5e7eb;padding:8px;text-align:left;">参考价</th></tr></thead><tbody>${p.layouts.map(l => `<tr><td style="border:1px solid #e5e7eb;padding:8px;">${escapeXml(l.typeName || '-')}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.size ?? '-'}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.beds ?? '-'}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.baths ?? '-'}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.carParks ?? '-'}</td><td style="border:1px solid #e5e7eb;padding:8px;">${l.estPrice ? 'RM ' + Number(l.estPrice).toLocaleString() : '洽询'}</td></tr>`).join('')}</tbody></table>
-          ${p.layouts.filter(l => l.image).map(l => `<img src="${l.image}" alt="${escapeXml(`${p.name} ${l.typeName || ''} 户型图`)}" loading="lazy" width="800" style="max-width:100%;height:auto;margin-top:12px;">`).join('')}</section>` : ''}
+        ${projectLayoutsHtml(p.id, 'zh')}
+        ${(() => {
+          const plans = (p.layouts || []).filter(l => l.image);
+          if (!plans.length) return '';
+          return `<section style="margin-bottom: 32px;"><h2>${ZH.floorPlans || '户型图'}</h2>${plans.map(l => `<img src="${l.image}" alt="${escapeXml(`${p.name} 户型图`)}" loading="lazy" width="800" style="max-width:100%;height:auto;margin-top:12px;">`).join('')}</section>`;
+        })()}
         ${projectGuidesHtml(p.id, 'zh')}
         <section style="margin-bottom: 32px;"><h2>${ZH.faqSectionTitle || '常见问题'}</h2>${faqs.map(f => `<h3>${escapeXml(f.q)}</h3><p>${escapeXml(f.a)}</p>`).join('')}</section>
         ${zhCta(`联系持牌房产经纪 Shyan Yee（REN 46305）索取 ${p.name} 的官方户型图、价单与贷款方案，并预约私人看房。`, `你好 Shyan Yee，我对 ${p.name} 有兴趣。`)}

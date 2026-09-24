@@ -84,7 +84,17 @@ Conlay is the only one of the six where nothing starts below 743 sq ft. Everywhe
 
 # Which Conlay layout is best?
 
-Seven layouts between 743 sq ft and 1,335 sq ft, two to four bedrooms, one to two car parks. Ask the sales team for the current type list and stacking plan before you compare prices.
+Seven layouts between 743 sq ft and 1,335 sq ft. These are the types as the sales kit lists them; the price depends on the stack and the floor, so ask for the current list.
+
+| Type | Built-up | Bedrooms | Bathrooms |
+| :--- | :--- | :--- | :--- |
+| A1 | 743 sq ft | 1 | 2 |
+| A2 | 904 sq ft | 1 | 1 |
+| B1 | 743 sq ft | 1+1 | 2 |
+| B2 | 840 sq ft | 1+1 | 2 |
+| B3 | 980 sq ft | 1+1 | 2 |
+| C | 1,206 sq ft | 2 | 2 |
+| D | 1,335 sq ft | 2+1 | 2 |
 
 **What I saw in the show unit.** I filmed the 1,335 sq ft, the largest, laid out as two bedrooms plus one. The kitchen is open, with a stone worktop and the full appliance package included — fridge, oven, microwave, induction hob and hood. The "+1" is the room worth looking at: it opens directly onto a bathroom, so it works as a proper third bedroom rather than a study that has been counted as one. The balcony is the thing I would buy this layout for. It runs along the master, the second bedroom and the living room rather than sitting off one corner, and it looks over the Royal Selangor Golf Club, which is green that nobody is going to build on. In the master there is a walk-in wardrobe with lighting that comes on as you enter, a bathtub and a twin vanity, water heaters included, and a smart toilet that opens as you approach it.
 

@@ -44,7 +44,7 @@ faqs:
 | Type | Serviced apartment |
 | Floors | 62 |
 | Total units | 693 |
-| Built-up | 485 to 1,300 sq ft |
+| Built-up | 485 to 1,325 sq ft (sales kit) |
 | Bedrooms | 1 to 3 |
 | Price | From RM 600,000 |
 | Maintenance fee | RM 0.50 psf including a 10% sinking fund (about RM 500 a month on 1,000 sq ft) |
@@ -83,7 +83,19 @@ Parkside has the lowest entry price of the five, because it also has the smalles
 
 # Which Parkside Residence layout is best?
 
-Sizes run from 485 sq ft to 1,300 sq ft, one to three bedrooms, so the building is not aimed at one kind of buyer. Ask the sales team for the current type list and stacking plan before you compare prices — the published layout table is indicative.
+Sizes run from 485 sq ft to 1,325 sq ft, one to three bedrooms, so the building is not aimed at one kind of buyer. These are the types as the sales kit lists them; the price depends on the stack and the floor, so ask for the current list.
+
+| Type | Built-up | Bedrooms | Bathrooms |
+| :--- | :--- | :--- | :--- |
+| A | 485 sq ft | 1 | 1 |
+| B (dual-key friendly) | 689 sq ft | 1 | 2 |
+| C1 | 646 sq ft | 2 | 1 |
+| C2 | 732 sq ft | 2 | 2 |
+| D1 | 872 sq ft | 2+1 | 2 |
+| D2 | 926 sq ft | 2+1 | 2 |
+| D3 | 1,012 sq ft | 2+1 | 2 |
+| E1 | 1,260 sq ft | 3 | 2 |
+| E2 | 1,325 sq ft | 3 | 2 |
 
 **What I saw in the show units.** The one I would point most buyers to is the 646 sq ft two-bedroom. It is square rather than long, and the living area runs about 12 feet across where a unit this size usually gives you about 10, which sounds small on paper and is the difference between a sofa that fits and one that does not. The kitchen appliances and cabinets are included. The flexi room has its own window, so it works as a small bedroom or as a study without feeling like a cupboard. The glass is the detail I would go and see for yourself: the sill sits lower than the usual one to two feet, so the light reaches further into the room. The other show unit is the 2+1 with a balcony — same kitchen, dining and living arrangement, plus the outdoor space and the Bangsar outlook.
 

@@ -38,6 +38,8 @@ export interface ProjectFacts {
   keyFeatures: string[];
   facilities: string[];
   nearby: { category: string; name: string; distance?: string }[];
+  /** The unit types exactly as the sales kit lists them. No prices: the kit prices by stack, not by type. */
+  layouts?: { type: string; size?: string; beds?: string; baths?: string; note?: string }[];
 }
 
 /**
@@ -141,6 +143,43 @@ function parseFacilities(s: string): string[] {
  *   "LRT Awan Besar station (900m walk) | Pavilion Bukit Jalil"            plain names
  * Anything with no category of its own is filed under "Nearby".
  */
+/**
+ * Read the database's `layouts` column: "Type A 1216sqft 3R2B | Type B(Dual Key) 1098sqft 1R2B".
+ *
+ * The size can be a range ("700-711sqft"), the bed count can carry a utility room ("2+1R2B"), and a
+ * type can be missing a size altogether, so each part is read in pieces rather than by one pattern.
+ * Sizes stay as the kit writes them, and nothing is interpolated: the project page used to spread
+ * made-up sizes and prices evenly between the smallest and largest unit, which put CloutHaus's
+ * "Type C-D-E-F" at 682 sq ft when the kit says 549.
+ */
+function parseLayouts(raw: string): { type: string; size?: string; beds?: string; baths?: string; note?: string }[] {
+  const text = clean(raw);
+  if (!text) return [];
+  const SIZE = /([\d,]+(?:\s*[-–]\s*[\d,]+)?)\s*sq\s*\.?\s*ft/i;
+  const BEDS = /\b(\d+(?:\s*\+\s*\d+)?)\s*R\s*(\d+(?:\s*\+\s*\d+)?)\s*B((?:\s*\+\s*[A-Za-z]+)?)/i;
+  const out: { type: string; size?: string; beds?: string; baths?: string; note?: string }[] = [];
+  for (const part of text.split('|').map(x => x.trim()).filter(Boolean)) {
+    const size = SIZE.exec(part);
+    const beds = BEDS.exec(part);
+    const cut = Math.min(...[size?.index, beds?.index].filter((i): i is number => i != null).concat(part.length));
+    let type = part.slice(0, cut).replace(/^type\s+/i, '').trim().replace(/^[,\s]+|[,\s]+$/g, '');
+    const tail = part.slice(Math.max(size ? size.index + size[0].length : 0, beds ? beds.index + beds[0].length : 0)).trim();
+    const bracket = /^\(([^)]{1,24})\)$/.exec(tail);
+    // A few rows put the type after the size: "700 sqft (Type B) 2R2B".
+    if (!type && bracket && /^type\s/i.test(bracket[1])) type = bracket[1].replace(/^type\s+/i, '').trim();
+    if (!type) continue;
+    const note = [bracket && !/^type\s/i.test(bracket[1]) ? bracket[1] : '', beds?.[3]?.replace(/^\s*\+\s*/, '') || '']
+      .filter(Boolean).join(', ');
+    out.push({
+      type,
+      ...(size ? { size: size[1].replace(/\s*[-–]\s*/, '–') } : {}),
+      ...(beds ? { beds: beds[1].replace(/\s+/g, ''), baths: beds[2].replace(/\s+/g, '') } : {}),
+      ...(note ? { note } : {})
+    });
+  }
+  return out;
+}
+
 function parseNearby(s: string): ProjectFacts['nearby'] {
   const raw = String(s || '').trim();
   if (!raw) return [];
@@ -246,6 +285,8 @@ export interface ProjectFacts {
   keyFeatures: string[];
   facilities: string[];
   nearby: { category: string; name: string; distance?: string }[];
+  /** The unit types exactly as the sales kit lists them. No prices: the kit prices by stack, not by type. */
+  layouts?: { type: string; size?: string; beds?: string; baths?: string; note?: string }[];
 }
 
 export const PROJECT_FACTS: Record<string, ProjectFacts> = ${JSON.stringify(out, null, 1)};
@@ -332,7 +373,8 @@ async function main() {
       })(),
       keyFeatures: parseKeyFeatures(row.key_features),
       facilities: parseFacilities(row.facilities || ''),
-      nearby: parseNearby(row.amenities || '')
+      nearby: parseNearby(row.amenities || ''),
+      ...(() => { const l = parseLayouts(row.layouts || ''); return l.length ? { layouts: l } : {}; })()
     };
     if (!facts.facilities.length) {
       const fallback = [norm(p.name), norm(row.project_name)].map(key => localFac.get(key)).find(Boolean)
@@ -344,12 +386,13 @@ async function main() {
       if (!facts.keyFeatures.length) facts.keyFeatures = old.keyFeatures || [];
       if (!facts.facilities.length) facts.facilities = old.facilities || [];
       if (!facts.nearby.length) facts.nearby = old.nearby || [];
+      if (!facts.layouts?.length && old.layouts?.length) facts.layouts = old.layouts;
       if (!facts.description) facts.description = old.description;
       if (!facts.developer) facts.developer = old.developer;
       if (!facts.checked) facts.checked = old.checked;
       if (!facts.maintenanceFee) { facts.maintenanceFee = old.maintenanceFee; facts.maintenanceFeePsf = old.maintenanceFeePsf; }
     }
-    if (facts.keyFeatures.length || facts.facilities.length || facts.nearby.length || facts.description) out[p.id] = facts;
+    if (facts.keyFeatures.length || facts.facilities.length || facts.nearby.length || facts.description || facts.layouts?.length) out[p.id] = facts;
     else missing.push(`${p.name} (row present but empty)`);
   }
 
