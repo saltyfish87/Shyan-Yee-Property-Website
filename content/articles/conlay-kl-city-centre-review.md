@@ -3,7 +3,7 @@ title: Conlay KL City Centre Review: Price, Layouts, Pros & Cons
 metaDescription: Conlay review: E&O and Mitsui Fudosan's freehold tower on Jalan Conlay designed by Kerry Hill Architects, 491 units over 51 storeys, 743 to 1,335 sq ft, from RM 1,460,000.
 summary: Conlay is a freehold tower on Jalan Conlay by Eastern & Oriental and Mitsui Fudosan, designed by Kerry Hill Architects, with 491 homes, nothing under 743 sq ft and the MRT about 250 m away. This review covers price, sizes, the concierge, the measured distances and who it suits.
 category: Reviews
-image: https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1600
+image: https://lh3.googleusercontent.com/d/1XvCDyGAANqrSIeUuwHS23-yWRg47LlxT=w1600
 publishedOn: 2026-09-24
 updatedOn: 2026-09-24
 relatedProjectIds: conlay, clouthaus, orion-residence, golden-crown, centrix

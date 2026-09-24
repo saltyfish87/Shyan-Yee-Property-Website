@@ -667,7 +667,7 @@ function renderSeoHtml(
     let title = "Shyan Yee | Malaysia Luxury Properties & Landmark Residences Portal";
     let desc = "Discover 69+ premier Malaysian luxury properties, landmark condominiums, and investment real estate in Kuala Lumpur, Penang & Johor Bahru. Curated by Shyan Yee (REN 46305).";
     let canonical = baseUrl;
-    let ogImage = "https://images.unsplash.com/photo-1596422846543-75c6fc18a523?q=80&w=1200&auto=format&fit=crop";
+    let ogImage = "https://lh3.googleusercontent.com/d/1fAVXiXAlqMY-nv0w5wHt-oBtWl1Td5oS=w1600";
 
     const jsonLdGraph: any[] = [
       {
@@ -1523,6 +1523,9 @@ function renderSeoHtml(
     seoHtml = seoHtml.replace(/<meta property="og:title" content=".*?" \/>/s, `<meta property="og:title" content="${title.replace(/"/g, '&quot;')}" />`);
     seoHtml = seoHtml.replace(/<meta property="og:description" content=".*?" \/>/s, `<meta property="og:description" content="${desc.replace(/"/g, '&quot;')}" />`);
     seoHtml = seoHtml.replace(/<meta property="og:image" content=".*?" \/>/s, `<meta property="og:image" content="${ogImage}" />`);
+    // The share image, the thumbnail and the Twitter card should all show this page, not the home hero.
+    seoHtml = seoHtml.replace(/<meta name="thumbnail" content=".*?" \/>/s, `<meta name="thumbnail" content="${ogImage}" />`)
+      .replace(/<meta property="twitter:image" content=".*?" \/>/s, `<meta property="twitter:image" content="${ogImage}" />`);
     seoHtml = seoHtml.replace(/<meta property="og:url" content=".*?" \/>/s, `<meta property="og:url" content="${canonical}" />`);
 
     if (preRenderedBody) {
@@ -1618,7 +1621,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
     const canonical = zhUrlFor(reqUrl);
     let title = 'Shyan Yee | 马来西亚高端房产与地标豪宅平台';
     let desc = `${ZH.title || '寻找您在马来西亚的理想房产'}。${ZH.subtitle || ''} 由持牌房产经纪 Shyan Yee（REN 46305，IQI Realty Sdn Bhd）为您服务，覆盖吉隆坡、雪兰莪、槟城与新山。`;
-    let ogImage = "https://images.unsplash.com/photo-1596422846543-75c6fc18a523?q=80&w=1200&auto=format&fit=crop";
+    let ogImage = "https://lh3.googleusercontent.com/d/1fAVXiXAlqMY-nv0w5wHt-oBtWl1Td5oS=w1600";
     let body = '';
     const graph: any[] = [
       {
@@ -1996,6 +1999,9 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
     out = out.replace(/<meta property="og:title" content=".*?" \/>/s, `<meta property="og:title" content="${escapeXml(title)}" />`);
     out = out.replace(/<meta property="og:description" content=".*?" \/>/s, `<meta property="og:description" content="${escapeXml(desc)}" />`);
     out = out.replace(/<meta property="og:image" content=".*?" \/>/s, `<meta property="og:image" content="${ogImage}" />`);
+    // The share image, the thumbnail and the Twitter card should all show this page, not the home hero.
+    out = out.replace(/<meta name="thumbnail" content=".*?" \/>/s, `<meta name="thumbnail" content="${ogImage}" />`)
+      .replace(/<meta property="twitter:image" content=".*?" \/>/s, `<meta property="twitter:image" content="${ogImage}" />`);
     out = out.replace(/<meta property="og:url" content=".*?" \/>/s, `<meta property="og:url" content="${canonical}" />\n    <meta property="og:locale" content="zh_CN" />`);
     if (body) out = out.replace('<div id="root"></div>', `<div id="root">${body}</div>`);
     const ld = `<script id="seo-json-ld" type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/<\//g, '<\\/')}</script>`;

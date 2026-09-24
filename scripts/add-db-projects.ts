@@ -303,6 +303,57 @@ async function main() {
   // the existing one — but only when the shorter name is already an area the site has.
   const head = (a: string) => norm(String(a || '').split(',')[0]);
   const areas = new Map(catalogue.map(p => [head(p.area), p.area]));
+  // Two things the owner decided the database should win on, for projects that ARE in the website
+  // sheet already:
+  //  1. price — the two sheets disagree on seven buildings (Vox reads RM 680,160 in the database and
+  //     RM 523,200 on the website sheet), and the database is the maintained one;
+  //  2. photos — ten website-sheet projects have no folder in the site's own Drive parent and were
+  //     showing Unsplash stock photos as if they were the building. Their real photos are in the
+  //     shared photo folder, found by name.
+  const dbByName = store.map(p => ({ p, words: nameWords(p.name) }));
+  // Best word overlap wins; on a tie the unit count decides, because "Bangsar Hill Park – Tower B
+  // and C" shares as many words with the VERDURA row as with the TALISA row, and only its 802 units
+  // say which one it is.
+  const digits = (v: any) => (/\d[\d,]*/.exec(String(v ?? ''))?.[0] || '').replace(/,/g, '');
+  const findDb = (name: string, units?: string) => {
+    const w = nameWords(name);
+    let best: any, bestScore = 0, tie = false;
+    for (const { p, words } of dbByName) {
+      const shared = [...w].filter(x => words.has(x)).length;
+      if (!shared || !(shared === w.size || shared === words.size || shared / Math.max(w.size, words.size) >= 0.6)) continue;
+      const score = shared + (digits(units) && digits(units) === digits(p.totalUnits) ? 0.5 : 0);
+      if (score > bestScore) { best = p; bestScore = score; tie = false; }
+      else if (score === bestScore) tie = true;
+    }
+    return tie ? undefined : best;
+  };
+  let priced = 0, rephotographed = 0;
+  for (const c of catalogue) {
+    const db = findDb(c.name, c.totalUnits);
+    if (db && db.startingPrice && db.startingPrice !== c.startingPrice) {
+      c.startingPrice = db.startingPrice; c.startingPriceFormatted = db.startingPriceFormatted;
+      if (db.priceRange) c.priceRange = db.priceRange;
+      priced++;
+    }
+    const stock = (u: string) => /unsplash\.com/i.test(u);
+    const all = Object.values(c.images || {}).flat() as string[];
+    if (all.length && all.every(stock)) {
+      const hit = (await masterFolders()).find(f => sameProject(f.name, c.name));
+      if (hit) {
+        const real = await imagesFor({ project_name: c.name } as any);
+        const n = real.images.gallery.length + real.images.overview.length;
+        if (n) {
+          c.images = real.images;
+          if (!c.layouts?.length && real.layoutFiles.length) c.layouts = real.layoutFiles.map(f => ({ image: driveUrl(f.id), typeName: f.name.replace(/\.[a-z]+$/i, '').replace(/_/g, ' ') }));
+          rephotographed++;
+          console.log(`  ~ ${c.name}: ${n} real photo(s) replace the stock images`);
+        }
+      }
+    }
+  }
+  if (priced) console.log(`[add-db-projects] price taken from the database on ${priced} existing project(s).`);
+  if (rephotographed) console.log(`[add-db-projects] stock photos replaced on ${rephotographed} project(s).`);
+
   let added = store.filter(p => !inCatalogue(p.name)).map(p => {
     const known = areas.get(head(p.area));
     return known && known !== p.area ? { ...p, area: known } : p;

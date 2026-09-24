@@ -112,3 +112,5 @@ Suria KL City Centre 和 Avenue K 走路就到，Pavilion Kuala Lumpur 约 1.4 �
 # 怎样看 Jewel by Oxley
 
 WhatsApp 联络 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取价单、图则和安排看房。
+
+完整规格在 [Jewel by Oxley 项目页](/projects/jewel-by-oxley-kl-city-centre)。

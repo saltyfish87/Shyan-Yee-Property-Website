@@ -103,3 +103,5 @@ Suria KL City Centre、Pavilion Kuala Lumpur、Avenue K、Starhill、Lot 10 都�
 # 怎样看 Royal Lexis
 
 WhatsApp 联络 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取价单、图则和安排看房。
+
+完整规格在 [Royal Lexis 项目页](/projects/royal-lexis-kuala-lumpur)。

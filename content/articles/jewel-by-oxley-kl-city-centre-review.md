@@ -6,7 +6,7 @@ category: Reviews
 image: https://lh3.googleusercontent.com/d/1JMnxKgPQs56eA53G1Y7_jLV3W8MJoK4P=w1600
 publishedOn: 2026-09-25
 updatedOn: 2026-09-25
-relatedProjectIds: jewel-by-oxley, clouthaus, conlay, orion-residence, golden-crown
+relatedProjectIds: jewel-by-oxley-kl-city-centre, clouthaus, conlay, orion-residence, golden-crown
 relatedSlugs: clouthaus-kl-city-centre-review, conlay-kl-city-centre-review, orion-residence-bukit-bintang-review
 tags: kl city centre, freehold, branded, review
 faqs:
@@ -119,3 +119,5 @@ Downstairs is a two-storey retail galleria of about 42,000 sq ft, and The Langha
 # How to view Jewel by Oxley
 
 WhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing.
+
+Full specifications are on the [Jewel by Oxley project page](/projects/jewel-by-oxley-kl-city-centre).

@@ -53,7 +53,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Skyline Image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=1800&auto=format&fit=crop"
+          src="https://lh3.googleusercontent.com/d/1fAVXiXAlqMY-nv0w5wHt-oBtWl1Td5oS=w1600"
           alt="Kuala Lumpur Skyline"
           className="w-full h-full object-cover object-center opacity-100 scale-100"
         />

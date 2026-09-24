@@ -6,7 +6,7 @@ category: Reviews
 image: https://lh3.googleusercontent.com/d/1WPvCnCMGxylUnmsYyChlIqKXnIsc0apd=w1600
 publishedOn: 2026-09-25
 updatedOn: 2026-09-25
-relatedProjectIds: royal-lexis, conlay, clouthaus, orion-residence, phoeniz-suites-kl-city-centre
+relatedProjectIds: royal-lexis-kuala-lumpur, conlay, clouthaus, orion-residence, phoeniz-suites-kl-city-centre
 relatedSlugs: conlay-kl-city-centre-review, clouthaus-kl-city-centre-review, orion-residence-bukit-bintang-review
 tags: kl city centre, freehold, branded, review
 faqs:
@@ -110,3 +110,5 @@ Because a hotel operates in the same building, the unit is run to hotel standard
 # How to view Royal Lexis
 
 WhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing.
+
+Full specifications are on the [Royal Lexis project page](/projects/royal-lexis-kuala-lumpur).

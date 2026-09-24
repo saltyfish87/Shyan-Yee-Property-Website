@@ -3,6 +3,124 @@ import type { BlogArticle } from '../types';
 
 export const GENERATED_ARTICLES: BlogArticle[] = [
   {
+    "id": "jewel-by-oxley-kl-city-centre-review",
+    "slug": "jewel-by-oxley-kl-city-centre-review",
+    "title": "Jewel by Oxley KL City Centre Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Jewel by Oxley review: the 49-storey freehold tower inside Oxley Towers on Jalan Ampang, 267 units, 678 to 2,185 sq ft, from about RM 2,295 psf gross, with The Langham slated for the same tower.",
+    "summary": "Jewel by Oxley is the low-density tower of the three at Oxley Towers on Jalan Ampang — 267 freehold homes over 49 floors, a short walk from the Twin Towers, with a hotel due in the same building. This review covers price, the ten layouts, the car park rule and who it suits.",
+    "content": "# Quick verdict: who should buy Jewel by Oxley?\n\n**My view.** Oxley Towers is three towers on one site, and Jewel is the quiet one. Sofitel KL Residence runs to 78 floors; Alliance Tower is Grade A offices; Jewel is 49 floors and only 267 homes, which is the lowest density of the three and the reason I would look at it. The address does not need selling — I measured about 300 m to Ampang Park LRT and 350 m to the station beside the Twin Towers, with Suria, Avenue K and the 50-acre KL City Centre Park on the same walk. Freehold, and a commercial title under the Housing Development Act. The offices next door matter more than buyers expect: the professionals working in them are the people who rent a home they can walk to work from, so the letting demand sits in the same development. Two things to check. The published price range covers all of Oxley Towers rather than Jewel alone, so ask for the Jewel price list specifically. And the handover date in the project data has already passed — go and look at the site, and get the current date from the developer in writing.\n\n- **Suits:** buyers who want a freehold city-centre home in a low-density tower; owners who want a letting asset beside Grade A offices; people who want hotel and retail downstairs.\n- **Think twice if:** you want the cheapest entry into the city centre, or you need certainty on the handover date today.\n\n# Video walkthrough\n\n{{youtube:XBp7M_uMoNw}}\n\n# Jewel by Oxley at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Oxley Risings Sdn Bhd |\n| Architect | VERITAS Design Group |\n| Address | Lot 99, Jalan Ampang, Seksyen 58, 50450 Kuala Lumpur |\n| Tenure / title | Freehold; commercial under the HDA |\n| Land size | 3.11 acres (the whole Oxley Towers site) |\n| Floors | 49 |\n| Total units | 267 |\n| Units per floor / lifts | 6 (L32), 9 (L15), 10 (L31), 11 (L10–14 and L16–30); 6 passenger and 2 service lifts |\n| Built-up | 678 to 2,185 sq ft |\n| Bedrooms | 1 to 3+1 |\n| Price | From about RM 2,295 psf gross. The published RM 1,572,000 to RM 3,400,000 range covers all of Oxley Towers, not Jewel alone |\n| Maintenance fee | About RM 0.66 psf including sinking fund (roughly RM 660 a month on 1,000 sq ft) |\n| Car park | One bay per unit, except a listed set of Type B1 units below Level 27 |\n| Green rating | BCA Green Mark certified |\n| Status | Under construction; the data lists 2025, so confirm the current handover date |\n\n# Where is Jewel by Oxley, and what is nearby?\n\nOn Jalan Ampang, next to the Twin Towers. These are straight-line distances measured from the project coordinates against an OpenStreetMap extract of every named station, so every walk is longer than the number shown.\n\n| Place | Straight-line distance |\n| :--- | :--- |\n| KJ9 Ampang Park (Kelana Jaya line) | 0.30 km |\n| The station beside the Twin Towers (Putrajaya line) | 0.31 km |\n| PY20 Ampang Park (Putrajaya line) | 0.32 km |\n| The station beside the Twin Towers (Kelana Jaya line) | 0.35 km |\n| PY22 Conlay | 0.96 km |\n\nSuria KL City Centre and Avenue K are on foot, Pavilion Kuala Lumpur is about 1.4 km, the Kuala Lumpur Convention Centre about 800 m, and the 50-acre KL City Centre Park is across the road. For medical, Twin Towers Medical Centre is next door, HSC about 1 km and Prince Court about 1.8 km. KL Sentral is about 5.2 km, and the AKLEH, DUKE and MEX highways all feed the area.\n\n# How does Jewel by Oxley compare with other city-centre launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Jewel by Oxley** | Freehold | About RM 2,295 psf | 678 to 2,185 sq ft | 267 | RM 0.66 psf | Confirm with developer |\n| [CloutHaus](/projects/clouthaus) | Freehold | RM 1,548,800 | 549 to 1,216 sq ft | 615 | RM 0.80 psf | 2029 |\n| [Conlay](/projects/conlay) | Freehold | RM 1,460,000 | 743 to 1,335 sq ft | 491 | RM 0.80 psf | Confirm with developer |\n| [Orion Residence](/projects/orion-residence) | Freehold | RM 1,580,000 | 491 to 1,329 sq ft | 298 | RM 1.32 psf | 2025 |\n| [Golden Crown](/projects/golden-crown) | Leasehold | RM 1,200,000 | 624 to 1,023 sq ft | 490 | RM 0.80 psf | 2026 |\n\nTwo numbers stand out. Jewel has the lowest monthly charge of the five at RM 0.66 psf, and it reaches the largest size at 2,185 sq ft — nothing else here goes past 1,335. Against Orion, which is the closest in unit count, the monthly difference is about RM 660 versus RM 1,320 on a 1,000 sq ft home, which is roughly RM 8,000 a year.\n\n# Which Jewel by Oxley layout is best?\n\nTen types. These are the types and sizes as the sales kit lists them; the price depends on the stack and the floor, so ask for the current list.\n\n| Type | Built-up |\n| :--- | :--- |\n| B1 | 678 sq ft |\n| B3 | 754 sq ft |\n| B2 | 775 sq ft |\n| B4 | 818 sq ft |\n| C1 | 958 sq ft |\n| C2 | 980 sq ft |\n| B5 | 1,033 sq ft |\n| D2 | 1,173 sq ft |\n| D1 | 1,227 sq ft |\n| E1 | 2,185 sq ft |\n\n**What I saw in the show units.** I filmed three. D1 at 1,227 sq ft is a dual key: a studio on one side and a one-plus-one on the other, off a shared entrance hall, so the bedroom in the larger half is unusually big for the total size. B5 at 1,033 sq ft is a one-plus-one with a separate laundry room and a small flexible space, which is the one I would point a single buyer or a couple towards. D2 at 1,173 sq ft is the two-plus-one, with a dining area that takes a six-seat table and a master bathroom with two basins and a tub. All three are fully fitted — kitchen, appliances, air-conditioning, furniture — and the bathrooms are the detail I would go and see: they are larger than the size of the unit suggests, each with full-height glass.\n\nNote the car park rule when you pick: one bay comes with the unit, except for a listed set of Type B1 units below Level 27, which get none. Ask for that list.\n\n# Facilities\n\nLevel 7 is Jewel's own deck: lobby and lounge, function hall, gym, surau, changing rooms, management office, pool and pool deck, children's playground and children's pool, BBQ area, zen garden, pre-function deck, a collaborative workspace, a wellness and yoga deck and a reading room. Residents also reach Levels 45 and 46 in the SO/ tower, which hold an entertainment room, lounge, reading room, multipurpose hall, gym and yoga space. The development is billed as carrying the city's highest residential infinity pool.\n\nDownstairs is a two-storey retail galleria of about 42,000 sq ft, and The Langham Kuala Lumpur is officially slated to open in this tower with 198 rooms. Treat the opening date as a plan rather than a fact until it is announced.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| 267 units over 49 floors: the lowest density of the three towers | The handover date in the project data has already passed |\n| Freehold beside the Twin Towers, about 300 m to Ampang Park LRT | The published price range covers all of Oxley Towers, not Jewel |\n| Lowest monthly charge of the towers compared above, at RM 0.66 psf | A listed set of Type B1 units below Level 27 come with no car park |\n| Grade A offices, retail and a hotel in the same development | A hotel and offices in the same development means more people through the site |\n\n# How to view Jewel by Oxley\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing.\n\nFull specifications are on the [Jewel by Oxley project page](/projects/jewel-by-oxley-kl-city-centre).",
+    "readTime": "7 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-25",
+    "updatedOn": "2026-09-25",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1JMnxKgPQs56eA53G1Y7_jLV3W8MJoK4P=w1600",
+    "faqs": [
+      {
+        "question": "Is Jewel by Oxley freehold or leasehold?",
+        "answer": "Freehold, on a commercial title under the Housing Development Act. It is developed by Oxley Risings Sdn Bhd on Lot 99, Jalan Ampang."
+      },
+      {
+        "question": "What is Jewel by Oxley, and how does it relate to Oxley Towers?",
+        "answer": "Oxley Towers KL City Centre is three towers on one 3.11-acre site: Sofitel KL Residence at 78 floors, Jewel by Oxley at 49 floors, and Alliance Tower of Grade A offices, over a two-storey retail galleria of about 42,000 sq ft. Jewel is the 267-unit residential tower."
+      },
+      {
+        "question": "How far is Jewel by Oxley from the LRT?",
+        "answer": "About 300 m in a straight line to Ampang Park on the Kelana Jaya line and 320 m to Ampang Park on the Putrajaya line, measured from the project coordinates. The station beside the Twin Towers is about 350 m."
+      },
+      {
+        "question": "Does a Jewel by Oxley unit come with a car park?",
+        "answer": "One bay per unit, except for a listed set of Type B1 units below Level 27, which have none. Ask for that list in writing before you choose a unit."
+      },
+      {
+        "question": "What is the maintenance fee at Jewel by Oxley?",
+        "answer": "About RM 0.66 per square foot including sinking fund, which is roughly RM 660 a month on a 1,000 sq ft unit."
+      },
+      {
+        "question": "When will Jewel by Oxley be completed?",
+        "answer": "The project data lists 2025 with an estimated Q3 2025 handover, which is now behind us, so ask the developer for the current date and check it against the site."
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-kl-city-centre-review",
+      "conlay-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "jewel-by-oxley-kl-city-centre",
+      "clouthaus",
+      "conlay",
+      "orion-residence",
+      "golden-crown"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
+      "review"
+    ]
+  },
+  {
+    "id": "royal-lexis-kl-city-centre-review",
+    "slug": "royal-lexis-kl-city-centre-review",
+    "title": "Royal Lexis Kuala Lumpur Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Royal Lexis review: KL Metro's freehold tower on Jalan Kia Peng where every unit has its own pool, 371 residences over 66 floors, 573 to 1,155 sq ft, from RM 1,897,000.",
+    "summary": "Royal Lexis is a freehold, hotel-managed tower on Jalan Kia Peng where every unit has a private pool on its balcony. This review covers price, the four layouts, the maintenance charge, the car park situation and who it suits.",
+    "content": "# Quick verdict: who should buy Royal Lexis?\n\n**My view.** Royal Lexis sells one thing that nothing else in the city centre sells: a pool in your own unit. Not a shared sky pool — a private pool on the balcony, behind full-height glass, in all 371 residences. Lexis Hotel Group built its name on private-pool villas at its resorts, and this is that idea brought into a 66-storey tower on Jalan Kia Peng, between KL Tower and the Twin Towers. It is freehold, which in this pocket is rare, and the transit is a walk: I measured 450 m to Conlay MRT and 470 m to the Raja Chulan monorail. Two things to settle before anything else. The title is a Serviced Residence outside the Housing Development Act, so the protections you would get on an ordinary new home do not apply in the same way — take that to your solicitor. And the sales kit says plainly that **no car park is allocated to owners**: the podium bays are for hotel guests, and the basement is motorcycle parking. In the middle of the city that may not matter to you. If you drive, it decides the whole thing.\n\n- **Suits:** buyers who want a resort unit in the city and will use the hotel services; foreign buyers who want freehold in the city centre; people who do not need a car.\n- **Think twice if:** you need a car park, you want HDA protection, or you want a plain residential building without a hotel in it.\n\n# Video walkthrough\n\n{{youtube:puFoi9JRDpc}}\n\n# Royal Lexis at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Kuala Lumpur Metro Group |\n| Hotel operator | Lexis Hotel Group |\n| Address | 15, Jalan Kia Peng, 50450 Kuala Lumpur |\n| Tenure / title | Freehold; Serviced Residence (outside the HDA) |\n| Land size | 0.71 acres |\n| Floors | 66 |\n| Total units | 518: 371 residences and 147 hotel rooms |\n| Units per floor / lifts | 11 (Level 11–38), 9 (Level 39–45); 6 passenger lifts |\n| Built-up | 573 to 1,155 sq ft |\n| Bedrooms | 1 to 2 |\n| Price | RM 1,897,000 to RM 4,418,000, from about RM 2,950 psf gross |\n| Maintenance fee | RM 0.80 psf plus a 10% sinking fund (about RM 800 a month on 1,000 sq ft) |\n| Car park | None allocated to owners; podium bays Level 2–8 for hotel guests; basement motorcycle parking |\n| Status | Under construction, Stage 2A, target 2029 |\n\n# Where is Royal Lexis, and what is nearby?\n\nOn Jalan Kia Peng, between KL Tower and the Twin Towers, with the embassies, the convention centre and the shopping belt in the same few blocks. These are straight-line distances measured from the project coordinates against an OpenStreetMap extract of every named station, so every walk is longer than the number shown.\n\n| Place | Straight-line distance |\n| :--- | :--- |\n| PY22 Conlay MRT | 0.45 km |\n| MR7 Raja Chulan monorail | 0.47 km |\n| The station beside the Twin Towers (Putrajaya line) | 0.66 km |\n| MR6 / KG18A Bukit Bintang (monorail and MRT) | 0.74 km |\n| The station beside the Twin Towers (Kelana Jaya line) | 0.82 km |\n\nSuria KL City Centre, Pavilion Kuala Lumpur, Avenue K, Starhill and Lot 10 are all on that walk or one stop away, with the Kuala Lumpur Convention Centre and KL City Centre Park next door and the W, EQ, InterContinental and Sheraton Imperial as neighbours.\n\n# How does Royal Lexis compare with other city-centre launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Royal Lexis** | Freehold | RM 1,897,000 | 573 to 1,155 sq ft | 371 residences | RM 0.80 psf + 10% | 2029 |\n| [Conlay](/projects/conlay) | Freehold | RM 1,460,000 | 743 to 1,335 sq ft | 491 | RM 0.80 psf | Confirm with developer |\n| [CloutHaus](/projects/clouthaus) | Freehold | RM 1,548,800 | 549 to 1,216 sq ft | 615 | RM 0.80 psf | 2029 |\n| [Orion Residence](/projects/orion-residence) | Freehold | RM 1,580,000 | 491 to 1,329 sq ft | 298 | RM 1.32 psf | 2025 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | Freehold | RM 1,016,400 | 484 to 678 sq ft | 394 | RM 1.21 psf | 2031 |\n\nAt about RM 2,950 psf gross, Royal Lexis is the most expensive per square foot of the five. What you are paying for is the pool in the unit and the hotel operation around it. Against Conlay the comparison is clean: similar monthly charge, similar freehold city-centre address, but Conlay gives you more floor area for less money and a car park, while Royal Lexis gives you the pool and the service and no car park at all.\n\n# Which Royal Lexis layout is best?\n\nFour types. These are the types as the sales kit lists them; the price depends on the stack and the floor, so ask for the current list.\n\n| Type | Built-up | Units in the tower |\n| :--- | :--- | :--- |\n| A | 573 sq ft | 112 |\n| B | 802 sq ft | 70 |\n| C | 1,085 sq ft | 175 |\n| D | 1,155 sq ft | 14 |\n\n**What I saw in the show units.** I filmed Type B at 802 sq ft and one of the large dual-key layouts. Type B is the one most buyers will look at: hotel-standard fit-out with the furniture and appliances included, a walk-in wardrobe, a marble bathroom with a bathtub, and the balcony opening straight onto the private pool with a seating area beside it. The dual-key layout is two doors off one entrance hall — a studio on one side and a one-bedroom on the other — and the pool sits between them, so a family can share it while the two halves stay separate. That is the layout to look at if you want to live in one half and let the other, or if you want the parents in one side.\n\n# Facilities\n\nThe hotel and sky levels sit at Level 9 to 10 and Level 55 to 66: concierge, the Roselle coffee house, gym, lobby and pre-function area, a sky ballroom with a bridal room, cafe and outdoor cafe, a sky infinity pool, a Japanese restaurant, an executive lounge, a speciality restaurant, a satellite bar and a sky deck.\n\nBecause a hotel operates in the same building, the unit is run to hotel standards rather than ordinary condominium ones. Ask the developer, in writing, exactly what the management arrangement covers, what it costs and how long it runs — that document, not the brochure, is what you are buying into.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| A private pool in every unit, not a shared one | No car park allocated to owners |\n| Freehold in the city centre | Serviced Residence title outside the HDA |\n| 450 m to Conlay MRT, 470 m to Raja Chulan monorail | The highest price per square foot of the towers compared above |\n| Hotel operation and sky facilities across four levels | Completion in 2029, and a hotel sharing the building |\n\n# How to view Royal Lexis\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing.\n\nFull specifications are on the [Royal Lexis project page](/projects/royal-lexis-kuala-lumpur).",
+    "readTime": "7 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-25",
+    "updatedOn": "2026-09-25",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1WPvCnCMGxylUnmsYyChlIqKXnIsc0apd=w1600",
+    "faqs": [
+      {
+        "question": "Is Royal Lexis freehold or leasehold?",
+        "answer": "Freehold, with a Serviced Residence title that sits outside the Housing Development Act. Ask your solicitor what that changes for you before you sign."
+      },
+      {
+        "question": "Does every unit at Royal Lexis really have its own pool?",
+        "answer": "Yes. The sales kit lists a private pool for every unit, set on the balcony behind full-height glass."
+      },
+      {
+        "question": "What is the starting price of Royal Lexis?",
+        "answer": "From RM 1,897,000, with the published range running to RM 4,418,000, and from about RM 2,950 per square foot gross. Ask for the current price list."
+      },
+      {
+        "question": "Does Royal Lexis come with a car park?",
+        "answer": "No. The sales kit states that no car park is allocated to owners — the podium bays from Level 2 to Level 8 are for hotel guests, and the basement holds motorcycle parking. This is the first thing to confirm with the developer."
+      },
+      {
+        "question": "How many units are there at Royal Lexis?",
+        "answer": "518 in total over 66 floors: 371 residences and 147 hotel rooms, with 11 units per floor from Level 11 to 38 and 9 per floor from Level 39 to 45."
+      },
+      {
+        "question": "When will Royal Lexis be completed?",
+        "answer": "2029, according to the current project data, with construction at Stage 2A. Confirm the construction period in the sale and purchase agreement."
+      }
+    ],
+    "relatedSlugs": [
+      "conlay-kl-city-centre-review",
+      "clouthaus-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "royal-lexis-kuala-lumpur",
+      "conlay",
+      "clouthaus",
+      "orion-residence",
+      "phoeniz-suites-kl-city-centre"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
+      "review"
+    ]
+  },
+  {
     "id": "conlay-kl-city-centre-review",
     "slug": "conlay-kl-city-centre-review",
     "title": "Conlay KL City Centre Review: Price, Layouts, Pros & Cons",
@@ -15,7 +133,7 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
     "updatedOn": "2026-09-24",
     "author": "Shyan Yee",
     "category": "Reviews",
-    "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1600",
+    "image": "https://lh3.googleusercontent.com/d/1XvCDyGAANqrSIeUuwHS23-yWRg47LlxT=w1600",
     "faqs": [
       {
         "question": "Is Conlay freehold or leasehold?",
@@ -1184,7 +1302,7 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
     "updatedOn": "2026-09-24",
     "author": "Shyan Yee",
     "category": "Reviews",
-    "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1600",
+    "image": "https://lh3.googleusercontent.com/d/1XvCDyGAANqrSIeUuwHS23-yWRg47LlxT=w1600",
     "faqs": [
       {
         "question": "Conlay 是永久地契还是租赁地契？",
@@ -1337,6 +1455,65 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       "trx",
       "kl city centre",
       "mrt",
+      "review"
+    ]
+  },
+  "jewel-by-oxley-kl-city-centre-review": {
+    "id": "jewel-by-oxley-kl-city-centre-review",
+    "slug": "jewel-by-oxley-kl-city-centre-review",
+    "title": "Jewel by Oxley 吉隆坡市中心评测：价格、户型、优缺点",
+    "metaDescription": "Jewel by Oxley 评测：Oxley Towers 三栋之一，Jalan Ampang 上的 49 层永久地契住宅，267 个单位，678 至 2,185 平方英尺，尺价约 RM 2,295 起（毛价），同栋楼将进驻 The Langham 酒店。",
+    "summary": "Jewel by Oxley 是 Jalan Ampang 上 Oxley Towers 三栋里密度最低的那一栋 —— 49 层 267 个永久地契单位，走路就到双峰塔，同栋楼还会有酒店。这篇评测讲价格、十个户型、车位规则，以及适合什么买家。",
+    "content": "# 快速结论：谁该买 Jewel by Oxley？\n\n**我的看法。** Oxley Towers 是同一块地上的三栋楼，Jewel 是安静的那一栋。Sofitel KL Residence 78 层；Alliance Tower 是甲级办公楼；Jewel 49 层、只有 267 户，是三栋里密度最低的，这也是我会看它的原因。地段不用推销 —— 我量过，直线到 Ampang Park 轻快铁站约 300 米，到双峰塔旁的车站约 350 米，Suria、Avenue K 和 50 英亩的 KL City Centre 公园都在同一段路上。永久地契，商业地契，在 HDA 之下。旁边那栋办公楼比买家想的重要：在里面上班的人，就是会租「走得到公司」的房子的人，所以租客需求就在同一个发展项目里。有两件事要查。**公开的价格区间是整个 Oxley Towers 的，不是单算 Jewel**，所以要特别索取 Jewel 的价单。另外**项目资料上的交楼日期已经过了** —— 去工地看一趟，再向发展商拿书面的最新日期。\n\n- **适合：** 要市中心永久地契、又要低密度大楼的；想要一个紧邻甲级办公楼的出租资产的；喜欢楼下有酒店和商场的。\n- **要想清楚：** 你要的是进市中心最便宜的那一种，或者你现在就需要一个确定的交楼日期。\n\n# 影片看房\n\n{{youtube:XBp7M_uMoNw}}\n\n# Jewel by Oxley 基本资料\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Oxley Risings Sdn Bhd |\n| 建筑设计 | VERITAS Design Group |\n| 地址 | Lot 99, Jalan Ampang, Seksyen 58, 50450 吉隆坡 |\n| 地契 | 永久地契；商业地契，在 HDA 之下 |\n| 地皮 | 3.11 英亩（整个 Oxley Towers） |\n| 楼层 | 49 层 |\n| 总单位 | 267 |\n| 每层户数／电梯 | 32 楼 6 户、15 楼 9 户、31 楼 10 户、10–14 及 16–30 楼每层 11 户；6 部客梯 + 2 部服务梯 |\n| 面积 | 678 至 2,185 平方英尺 |\n| 房数 | 1 房至 3+1 房 |\n| 价格 | 尺价约 RM 2,295 起（毛价）。公开的 RM 1,572,000 至 RM 3,400,000 区间是整个 Oxley Towers 的，不是单算 Jewel |\n| 管理费 | 每平方英尺约 RM 0.66，含偿债基金（1,000 尺约每月 RM 660） |\n| 车位 | 每单位一个；但名单上的一批 Type B1（27 楼以下）没有车位 |\n| 绿色认证 | BCA Green Mark |\n| 状态 | 兴建中；资料列的是 2025 年，请确认目前的交楼日期 |\n\n# Jewel by Oxley 在哪里？周边有什么？\n\n在 Jalan Ampang，双峰塔旁边。以下是从项目坐标对 OpenStreetMap 的车站资料量出来的直线距离，实际走路一定比这个数字长。\n\n| 地点 | 直线距离 |\n| :--- | :--- |\n| KJ9 Ampang Park（格拉那再也线） | 0.30 公里 |\n| 双峰塔旁的车站（布城线） | 0.31 公里 |\n| PY20 Ampang Park（布城线） | 0.32 公里 |\n| 双峰塔旁的车站（格拉那再也线） | 0.35 公里 |\n| PY22 Conlay | 0.96 公里 |\n\nSuria KL City Centre 和 Avenue K 走路就到，Pavilion Kuala Lumpur 约 1.4 公里，吉隆坡会展中心约 800 米，50 英亩的 KL City Centre 公园就在对面。医疗方面：Twin Towers Medical Centre 在隔邻，HSC 约 1 公里，Prince Court 约 1.8 公里。KL Sentral 约 5.2 公里；AKLEH、DUKE、MEX 高速都在这一带进出。\n\n# Jewel by Oxley 和市中心其他项目比起来怎样？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 管理费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Jewel by Oxley** | 永久地契 | 尺价约 RM 2,295 | 678 至 2,185 尺 | 267 | RM 0.66/尺 | 请向发展商确认 |\n| [CloutHaus](/projects/clouthaus) | 永久地契 | RM 1,548,800 | 549 至 1,216 尺 | 615 | RM 0.80/尺 | 2029 |\n| [Conlay](/projects/conlay) | 永久地契 | RM 1,460,000 | 743 至 1,335 尺 | 491 | RM 0.80/尺 | 请向发展商确认 |\n| [Orion Residence](/projects/orion-residence) | 永久地契 | RM 1,580,000 | 491 至 1,329 尺 | 298 | RM 1.32/尺 | 2025 |\n| [Golden Crown](/projects/golden-crown) | 租赁地契 | RM 1,200,000 | 624 至 1,023 尺 | 490 | RM 0.80/尺 | 2026 |\n\n有两个数字突出。Jewel 的管理费是五个里面最低的，每尺 RM 0.66；面积也做到最大的 2,185 尺 —— 其他几个都没有超过 1,335 尺。跟单位数最接近的 Orion 比，1,000 尺的月费大约是 RM 660 对 RM 1,320，一年差大约 RM 8,000。\n\n# Jewel by Oxley 哪个户型好？\n\n十个户型。下面是销售资料上的户型和面积；价钱按座向和楼层不同，请索取最新价单。\n\n| 户型 | 建筑面积 |\n| :--- | :--- |\n| B1 | 678 尺 |\n| B3 | 754 尺 |\n| B2 | 775 尺 |\n| B4 | 818 尺 |\n| C1 | 958 尺 |\n| C2 | 980 尺 |\n| B5 | 1,033 尺 |\n| D2 | 1,173 尺 |\n| D1 | 1,227 尺 |\n| E1 | 2,185 尺 |\n\n**我在样板房看到的。** 我拍了三间。**D1 1,227 尺是双钥匙**：一个玄关两道门，一边单间、一边一房加一房，所以大的那一半房间对这个总面积来说特别大。**B5 1,033 尺是一房加一房**，有独立洗衣间和一小块多用途空间，单身或者小情侣我会先给他们看这一间。**D2 1,173 尺是两房加一房**，饭厅放得下六人桌，主卧浴室有双洗手台和浴缸。三间都是精装修 —— 厨房、家电、冷气、家具都在配套里 —— 而浴室是我会叫你亲自去看的细节：比这个尺数该有的大很多，而且都是落地窗。\n\n选单位的时候记得车位这一条：每个单位一个车位，但名单上一批 27 楼以下的 Type B1 是没有的。请索取那份名单。\n\n# 设施\n\n7 楼是 Jewel 自己的设施层：大堂与休息厅、多功能厅、健身房、祈祷室、更衣室、管理处、泳池与泳池平台、儿童游乐场与儿童池、烧烤区、禅意花园、迎宾平台、共用工作区、健康与瑜伽平台、阅读室。住户也可以上 SO/ 那栋的 45 和 46 楼，那里有娱乐室、休息厅、阅读室、多功能厅、健身房和瑜伽空间。整个项目官方称拥有吉隆坡最高的住宅无边际泳池。\n\n楼下是约 42,000 平方英尺的两层零售商场；The Langham Kuala Lumpur 官方称将进驻这栋楼，共 198 间客房。开幕时间在正式公布之前，当作计划看，不要当成既定事实。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 49 层只有 267 户，三栋里密度最低 | 项目资料上的交楼日期已经过了 |\n| 双峰塔旁的永久地契，直线到 Ampang Park 轻快铁站约 300 米 | 公开的价格区间是整个 Oxley Towers 的，不是单算 Jewel |\n| 管理费每尺 RM 0.66，是上面比较里最低的 | 名单上一批 27 楼以下的 Type B1 没有车位 |\n| 同一个项目里有甲级办公楼、商场和酒店 | 同一个项目有酒店和办公楼，进出的人也多 |\n\n# 怎样看 Jewel by Oxley\n\nWhatsApp 联络 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取价单、图则和安排看房。\n\n完整规格在 [Jewel by Oxley 项目页](/projects/jewel-by-oxley-kl-city-centre)。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-25",
+    "updatedOn": "2026-09-25",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1JMnxKgPQs56eA53G1Y7_jLV3W8MJoK4P=w1600",
+    "faqs": [
+      {
+        "question": "Jewel by Oxley 是永久地契还是租赁地契？",
+        "answer": "永久地契，商业地契，在《房屋发展法》（HDA）之下。由 Oxley Risings Sdn Bhd 开发，位于 Lot 99, Jalan Ampang。"
+      },
+      {
+        "question": "Jewel by Oxley 和 Oxley Towers 是什么关系？",
+        "answer": "Oxley Towers KL City Centre 是同一块 3.11 英亩地上的三栋楼：78 层的 Sofitel KL Residence、49 层的 Jewel by Oxley，和甲级办公楼 Alliance Tower，下面是约 42,000 平方英尺的两层零售商场。Jewel 就是那栋 267 个单位的住宅楼。"
+      },
+      {
+        "question": "Jewel by Oxley 离轻快铁多远？",
+        "answer": "从项目坐标量，直线到格拉那再也线 Ampang Park 站约 300 米、布城线 Ampang Park 站约 320 米；双峰塔旁的车站约 350 米。"
+      },
+      {
+        "question": "Jewel by Oxley 有车位吗？",
+        "answer": "每个单位一个车位，但有一批名单上的 Type B1 单位（27 楼以下）没有车位。选单位之前，请索取那份书面名单。"
+      },
+      {
+        "question": "Jewel by Oxley 的管理费多少？",
+        "answer": "每平方英尺约 RM 0.66，已含偿债基金；1,000 平方英尺的单位大约每月 RM 660。"
+      },
+      {
+        "question": "Jewel by Oxley 什么时候完工？",
+        "answer": "项目资料列的是 2025 年、预计 2025 年第三季交楼，这个时间已经过了。请向发展商拿目前的交楼日期，并自己到工地看一看。"
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-kl-city-centre-review",
+      "conlay-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "jewel-by-oxley-kl-city-centre",
+      "clouthaus",
+      "conlay",
+      "orion-residence",
+      "golden-crown"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
       "review"
     ]
   },
@@ -1890,6 +2067,65 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       "bukit jalil",
       "family",
       "residential title",
+      "review"
+    ]
+  },
+  "royal-lexis-kl-city-centre-review": {
+    "id": "royal-lexis-kl-city-centre-review",
+    "slug": "royal-lexis-kl-city-centre-review",
+    "title": "Royal Lexis 吉隆坡评测：价格、户型、优缺点",
+    "metaDescription": "Royal Lexis 评测：KL Metro 在 Jalan Kia Peng 的永久地契项目，每个单位都有私人泳池，66 层 371 个住宅单位，573 至 1,155 平方英尺，RM 1,897,000 起。",
+    "summary": "Royal Lexis 是 Jalan Kia Peng 上一栋永久地契、由酒店集团管理的大楼，每个单位的阳台都有私人泳池。这篇评测讲价格、四个户型、管理费、车位问题，以及适合什么买家。",
+    "content": "# 快速结论：谁该买 Royal Lexis？\n\n**我的看法。** Royal Lexis 卖的是一样市中心别的项目卖不了的东西：泳池在你自己的单位里。不是公用的空中泳池，是阳台上的私人泳池，落地玻璃外面，371 个住宅单位全部都有。Lexis 酒店集团是靠度假村的私人泳池别墅做出名的，这个项目就是把那套东西搬进 Jalan Kia Peng 一栋 66 层的楼里，位置在吉隆坡塔和双峰塔之间。永久地契，在这一带很少见；交通是走得到的：我量过，直线到 Conlay 捷运站约 450 米、到 Raja Chulan 单轨站约 470 米。有两件事要先搞清楚。**地契是 Serviced Residence，不在《房屋发展法》之下**，所以你买一般新房该有的那些保障，在这里不是同一回事 —— 这一条拿去问你的律师。另外销售资料写得很清楚：**不分配车位给业主**，平台车位是给酒店客人的，地下室是摩托车位。在市中心正中间，这件事可能对你没差；但如果你开车，这一条就决定了一切。\n\n- **适合：** 要在市区拥有一间度假式单位、会用酒店服务的；要市中心永久地契的外国买家；不需要车位的人。\n- **要想清楚：** 你需要车位、你要 HDA 的保障，或者你要的是一栋没有酒店在里面的纯住宅楼。\n\n# 影片看房\n\n{{youtube:puFoi9JRDpc}}\n\n# Royal Lexis 基本资料\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Kuala Lumpur Metro Group |\n| 酒店营运方 | Lexis Hotel Group |\n| 地址 | 15, Jalan Kia Peng, 50450 吉隆坡 |\n| 地契 | 永久地契；Serviced Residence（不在 HDA 之下） |\n| 地皮 | 0.71 英亩 |\n| 楼层 | 66 层 |\n| 总单位 | 518：371 个住宅 + 147 间酒店客房 |\n| 每层户数／电梯 | 11–38 楼每层 11 户，39–45 楼每层 9 户；6 部客梯 |\n| 面积 | 573 至 1,155 平方英尺 |\n| 房数 | 1 至 2 房 |\n| 价格 | RM 1,897,000 至 RM 4,418,000，尺价约 RM 2,950 起（毛价） |\n| 管理费 | 每平方英尺 RM 0.80，另加 10% 偿债基金（1,000 尺约每月 RM 800） |\n| 车位 | 不分配给业主；2–8 楼平台车位供酒店客人；地下室为摩托车位 |\n| 状态 | 兴建中，Stage 2A，预计 2029 年完工 |\n\n# Royal Lexis 在哪里？周边有什么？\n\n在 Jalan Kia Peng，位于吉隆坡塔和双峰塔之间，大使馆区、会展中心和购物带都在同几个街区内。以下是从项目坐标对 OpenStreetMap 的车站资料量出来的直线距离，实际走路一定比这个数字长。\n\n| 地点 | 直线距离 |\n| :--- | :--- |\n| PY22 Conlay 捷运站 | 0.45 公里 |\n| MR7 Raja Chulan 单轨火车站 | 0.47 公里 |\n| 双峰塔旁的车站（布城线） | 0.66 公里 |\n| MR6／KG18A 武吉免登（单轨与捷运） | 0.74 公里 |\n| 双峰塔旁的车站（格拉那再也线） | 0.82 公里 |\n\nSuria KL City Centre、Pavilion Kuala Lumpur、Avenue K、Starhill、Lot 10 都在走路范围或一站之内；吉隆坡会展中心和 KL City Centre 公园就在旁边，邻居是 W、EQ、洲际和 Sheraton Imperial 这些酒店。\n\n# Royal Lexis 和市中心其他项目比起来怎样？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 管理费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Royal Lexis** | 永久地契 | RM 1,897,000 | 573 至 1,155 尺 | 371 个住宅 | RM 0.80/尺 + 10% | 2029 |\n| [Conlay](/projects/conlay) | 永久地契 | RM 1,460,000 | 743 至 1,335 尺 | 491 | RM 0.80/尺 | 请向发展商确认 |\n| [CloutHaus](/projects/clouthaus) | 永久地契 | RM 1,548,800 | 549 至 1,216 尺 | 615 | RM 0.80/尺 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久地契 | RM 1,580,000 | 491 至 1,329 尺 | 298 | RM 1.32/尺 | 2025 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | 永久地契 | RM 1,016,400 | 484 至 678 尺 | 394 | RM 1.21/尺 | 2031 |\n\n尺价约 RM 2,950（毛价），Royal Lexis 是五个里面最贵的。你付的是单位里那个泳池，和围着它的酒店营运。跟 Conlay 比最干净：管理费差不多、同样是市中心永久地契，Conlay 给你更多面积、更低总价，还有车位；Royal Lexis 给你泳池和服务，但完全没有车位。\n\n# Royal Lexis 哪个户型好？\n\n四个户型。下面是销售资料上的户型；价钱按座向和楼层不同，请索取最新价单。\n\n| 户型 | 建筑面积 | 栋内数量 |\n| :--- | :--- | :--- |\n| A | 573 尺 | 112 |\n| B | 802 尺 | 70 |\n| C | 1,085 尺 | 175 |\n| D | 1,155 尺 | 14 |\n\n**我在样板房看到的。** 我拍了 802 尺的 Type B，还有一间大的双钥匙户型。Type B 是多数买家会看的那个：酒店规格的装修，家具家电都在配套里，有衣帽间，浴室用大理石、配浴缸，阳台直接连到私人泳池，泳池旁边还有一块可以坐的地方。双钥匙那间是一个玄关两道门 —— 一边是单间，一边是一房一厅 —— 泳池在中间，所以一家人可以一起用，两边又各自独立。如果你想自己住一半、出租一半，或者让父母住另一半，就看这个户型。\n\n# 设施\n\n酒店与空中设施在 9 至 10 楼和 55 至 66 楼：礼宾服务、Roselle 咖啡厅、健身房、大堂与迎宾区、空中宴会厅（附新娘房）、咖啡厅与户外咖啡区、空中无边际泳池、日本餐厅、行政酒廊、特色餐厅、高空酒吧和空中观景台。\n\n因为同一栋楼里有酒店在营运，这个单位是按酒店标准在管，不是一般公寓的标准。**请向发展商索取书面说明**：管理安排包括什么、收费多少、年期多长。你买进去的是那份文件，不是宣传册。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 每个单位都有私人泳池，不是公用的 | 不分配车位给业主 |\n| 市中心永久地契 | Serviced Residence 地契，不在 HDA 之下 |\n| 直线到 Conlay 捷运站 450 米、Raja Chulan 单轨站 470 米 | 上面比较的几栋楼里尺价最高 |\n| 酒店营运，设施分布在四个楼层 | 2029 年才完工，而且同栋楼有酒店 |\n\n# 怎样看 Royal Lexis\n\nWhatsApp 联络 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取价单、图则和安排看房。\n\n完整规格在 [Royal Lexis 项目页](/projects/royal-lexis-kuala-lumpur)。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-25",
+    "updatedOn": "2026-09-25",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1WPvCnCMGxylUnmsYyChlIqKXnIsc0apd=w1600",
+    "faqs": [
+      {
+        "question": "Royal Lexis 是永久地契还是租赁地契？",
+        "answer": "永久地契，地契类别是 Serviced Residence，不在《房屋发展法》（HDA）之下。签之前请让律师告诉你这对你有什么影响。"
+      },
+      {
+        "question": "Royal Lexis 每个单位真的都有泳池？",
+        "answer": "是。销售资料写明每个单位都配备私人泳池，位置在阳台，外面是落地玻璃。"
+      },
+      {
+        "question": "Royal Lexis 起价多少？",
+        "answer": "RM 1,897,000 起，公开区间去到 RM 4,418,000，尺价大约每平方英尺 RM 2,950 起（毛价）。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Royal Lexis 有车位吗？",
+        "answer": "没有。销售资料写明不分配车位给业主 —— 二楼到八楼的平台车位是给酒店客人的，地下室是摩托车位。这是要向发展商确认的第一件事。"
+      },
+      {
+        "question": "Royal Lexis 有多少个单位？",
+        "answer": "66 层共 518 个单位：371 个住宅 + 147 间酒店客房。11 至 38 楼每层 11 户，39 至 45 楼每层 9 户。"
+      },
+      {
+        "question": "Royal Lexis 什么时候完工？",
+        "answer": "根据目前的项目资料是 2029 年，工程在 Stage 2A。请以买卖合约上的施工期为准。"
+      }
+    ],
+    "relatedSlugs": [
+      "conlay-kl-city-centre-review",
+      "clouthaus-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "royal-lexis-kuala-lumpur",
+      "conlay",
+      "clouthaus",
+      "orion-residence",
+      "phoeniz-suites-kl-city-centre"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
       "review"
     ]
   }
