@@ -307,6 +307,39 @@ function coverageOf(p: Project) {
   return { review, video, station };
 }
 
+/**
+ * Area shortlists: "freehold in Bukit Jalil", "3-bedroom in Petaling Jaya", "under RM 500,000 in
+ * Old Klang Road". These are the phrases a buyer types once they have settled on a neighbourhood,
+ * and no competitor page answers them. Built from the projects, and only where at least three
+ * qualify — two rows is not a list, it is padding.
+ */
+interface AreaSlice { slug: string; label: string; labelZh: string; pick: (p: any) => boolean }
+const AREA_SLICES: AreaSlice[] = [
+  { slug: 'under-500k', label: 'Under RM 500,000', labelZh: '50 万以下', pick: p => Number(p.startingPrice) > 0 && Number(p.startingPrice) < 500000 },
+  { slug: '500k-to-700k', label: 'RM 500,000 to RM 700,000', labelZh: '50 万至 70 万', pick: p => Number(p.startingPrice) >= 500000 && Number(p.startingPrice) < 700000 },
+  { slug: '700k-to-1-million', label: 'RM 700,000 to RM 1 Million', labelZh: '70 万至 100 万', pick: p => Number(p.startingPrice) >= 700000 && Number(p.startingPrice) < 1000000 },
+  { slug: 'above-1-million', label: 'Above RM 1 Million', labelZh: '100 万以上', pick: p => Number(p.startingPrice) >= 1000000 },
+  { slug: 'freehold', label: 'Freehold', labelZh: '永久地契', pick: p => /freehold/i.test(String(p.tenure || '')) },
+  { slug: '3-bedroom', label: 'Three Bedrooms and Larger', labelZh: '三房或以上', pick: p => Number(p.bedroomsMin) >= 3 },
+  { slug: 'ready-to-move-in', label: 'Ready to Move In', labelZh: '现楼', pick: p => /ready|completed/i.test(String(p.completionStatus || '')) }
+];
+
+interface AreaShortlist { slug: string; area: string; slice: AreaSlice; items: Project[] }
+const AREA_SHORTLISTS: AreaShortlist[] = (() => {
+  const tokens = (a: any) => String(a || '').split('/').map((t: string) => t.trim()).filter(Boolean);
+  const out: AreaShortlist[] = [];
+  const byArea = new Map<string, Project[]>();
+  for (const p of projects) for (const t of tokens((p as any).area)) (byArea.get(t) || byArea.set(t, []).get(t)!).push(p);
+  for (const [area, list] of byArea) {
+    for (const slice of AREA_SLICES) {
+      const items = list.filter(slice.pick);
+      if (items.length < 3) continue;
+      out.push({ slug: `${slice.slug}-in-${areaSlug(area)}`, area, slice, items });
+    }
+  }
+  return out.sort((a, b) => b.items.length - a.items.length || a.slug.localeCompare(b.slug));
+})();
+
 const BUYER_SHORTLISTS: BuyerShortlist[] = [
   { slug: 'condo-under-500k', h1: 'Condominiums Under RM 500,000 — and Which Ones I Have Walked Through',
     title: 'Condo Under RM 500,000 in KL & Selangor | Shyan Yee',
@@ -342,7 +375,17 @@ const BUYER_SHORTLISTS: BuyerShortlist[] = [
     title: 'Projects Reviewed by Shyan Yee (REN 46305) | Reviews & Walkthroughs',
     desc: 'The projects I have been through myself, with the written review, the walkthrough video, or both.',
     blurb: 'These are the ones I have walked, filmed or written up. Everything else on the site is developer data only.',
-    pick: p => !!reviewOf(p.id) || HOME_VIDEOS.some(v => v.projectId === p.id) }
+    pick: p => !!reviewOf(p.id) || HOME_VIDEOS.some(v => v.projectId === p.id) },
+  // The area shortlists join the same family, so the route, the renderer, the sitemap and the
+  // browse block all pick them up without a second code path.
+  ...AREA_SHORTLISTS.map(a => ({
+    slug: a.slug,
+    h1: `${a.slice.label} Projects in ${a.area}`,
+    title: `${a.slice.label} in ${a.area} | New Launch Shortlist | Shyan Yee`,
+    desc: `Every project on shyanyee.com in ${a.area} that is ${a.slice.label.toLowerCase()}, with price, built-up, completion and the ones I have reviewed or filmed.`,
+    blurb: `${a.items.length} projects in ${a.area}. The list is generated from the project data, so a price change or a new launch shows up here on the next build.`,
+    pick: (p: any) => String(p.area || '').split('/').map((t: string) => t.trim()).includes(a.area) && a.slice.pick(p)
+  }))
 ];
 
 /**
@@ -1447,6 +1490,17 @@ function renderSeoHtml(
 // =====================================================================
 const SITE = "https://shyanyee.com";
 const ZH = translations['zh-CN'] || {};
+/** Chinese titles for the seven hand-written shortlists; the area ones build their own. */
+const ZH_SHORTLIST_TITLES: Record<string, string> = {
+  'condo-under-500k': '50 万以下的公寓',
+  'condo-under-700k': '70 万以下的公寓',
+  'condo-under-1-million': '100 万以下的公寓',
+  'freehold-projects': '永久地契楼盘',
+  'family-3-bedroom': '三房或以上的楼盘',
+  'near-mrt-lrt': '走路一公里内有车站的楼盘',
+  'projects-i-have-reviewed': '我走过、拍过或写过的楼盘'
+};
+
 const ZH_BLOG_LIST: any[] = [...Object.values(GENERATED_ZH_ARTICLES), ...(PRE_TRANSLATED_BLOGS['zh-CN'] || []).filter((b: any) => !GENERATED_ZH_ARTICLES[b.slug])];
 const ZH_BLOG_DETAIL: Record<string, any> = { ...(PRE_TRANSLATED_BLOG_DETAILS['zh-CN'] || {}), ...GENERATED_ZH_ARTICLES };
 const ZH_FAQS = FAQ_TRANSLATIONS['zh-CN'] || [];
@@ -1594,6 +1648,54 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
           <h2 style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0;">${f.question}</h2>
           <p style="font-size: 15px; color: #334155; line-height: 1.6; margin: 0;">${f.answer}</p></div>`).join('')}
         </div>`;
+    } else if (reqUrl.startsWith('/best/')) {
+      const sl = BUYER_SHORTLISTS.find(x => `/best/${x.slug}` === reqUrl);
+      const ar = AREA_SHORTLISTS.find(x => `/best/${x.slug}` === reqUrl);
+      if (sl) {
+        const picks = projects.filter(p => { try { return sl.pick(p as any); } catch { return false; } })
+          .sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity));
+        const heading = ar ? `${ar.area}${ar.slice.labelZh}的新楼盘` : (ZH_SHORTLIST_TITLES[sl.slug] || sl.h1);
+        title = `${heading} | 价格、面积、完工年份 | Shyan Yee`;
+        desc = `${heading}：共 ${picks.length} 个楼盘，价格、建筑面积、地契、完工年份与最近车站，以及我写过评测或拍过视频的是哪几个。`;
+        crumbs([['首页', home], ['全部楼盘', `${home}/projects`], [heading, '']]);
+        graph.push({
+          "@type": "CollectionPage", "@id": `${canonical}#page`, "url": canonical, "name": title, "description": desc,
+          "inLanguage": "zh-CN", "isPartOf": { "@id": `${SITE}/#website` },
+          "mainEntity": { "@type": "ItemList", "numberOfItems": picks.length,
+            "itemListElement": picks.map((p, i) => ({ "@type": "ListItem", "position": i + 1, "name": p.name, "url": `${home}/projects/${p.id}` })) }
+        });
+        const td = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
+        const rows = picks.map((p: any) => {
+          const rev = reviewOf(p.id, ZH_BLOG_LIST);
+          const vid = HOME_VIDEOS.find(v => v.projectId === p.id);
+          const station = (NEARBY_OSM[p.id] || []).find(n => n.category === 'Train stations');
+          const mine = [
+            rev ? `<a href="${home}/blog/${rev.slug}">评测</a>` : '',
+            vid ? `<a href="https://www.youtube.com/watch?v=${vid.youtubeId}">视频</a>` : ''
+          ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">仅发展商资料</span>';
+          return `<tr><td ${td}><a href="${home}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td>`
+            + `<td ${td}>${escapeXml(p.area || '')}</td>`
+            + `<td ${td}>${zhTenure(p.tenure)}</td>`
+            + `<td ${td}>${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td>`
+            + `<td ${td}>${p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} 平方尺` : ''}</td>`
+            + `<td ${td}>${escapeXml(String(p.completionYear || ''))}</td>`
+            + `<td ${td}>${station ? `${escapeXml(station.name)} ${station.km < 1 ? `${Math.round(station.km * 1000)} 米` : `${station.km.toFixed(1)} 公里`}` : ''}</td>`
+            + `<td ${td}>${mine}</td></tr>`;
+        }).join('');
+        const others = BUYER_SHORTLISTS.filter(o => o.slug !== sl.slug).slice(0, 14);
+        body = `
+          <div style="max-width:1200px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;color:#0f172a;">
+            <nav style="margin-bottom:24px;font-size:14px;color:#64748b;"><a href="${home}" style="color:#2563eb;text-decoration:none;">首页</a> &gt; <a href="${home}/projects" style="color:#2563eb;text-decoration:none;">全部楼盘</a> &gt; <span>${escapeXml(heading)}</span></nav>
+            <h1 style="font-size:32px;font-weight:800;margin-bottom:12px;">${escapeXml(heading)}</h1>
+            <p style="font-size:16px;color:#475569;line-height:1.8;">共 ${picks.length} 个楼盘，由低价排起。车站距离取自 OpenStreetMap 的直线距离，实际走路会更远。</p>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:24px;"><thead><tr>${['楼盘', '地区', '地契', '起价', '面积', '完工', '最近车站', '我的内容'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <p style="font-size:13px;color:#64748b;margin-top:16px;">价格为发展商开价，每一期都会变动。决定前请向我索取最新价目表。</p>
+            <h2 style="font-size:20px;margin-top:32px;">其他清单</h2>
+            <ul style="line-height:1.9;columns:2;">${others.map(o => `<li><a href="${home}/best/${o.slug}">${escapeXml(ZH_SHORTLIST_TITLES[o.slug] || o.h1)}</a></li>`).join('')}</ul>
+            <p style="margin-top:24px;font-size:15px;color:#334155;">看房与最新价目表：Yee Woei Shyan（REN 46305），IQI Realty Sdn Bhd &mdash; WhatsApp <a href="https://wa.me/60108278932" style="color:#2563eb;text-decoration:none;">+60 10-827 8932</a>。</p>
+            ${siteLinksHtml('zh')}
+          </div>`;
+      }
     } else if (reqUrl.startsWith('/near/') || reqUrl.startsWith('/developer/') || reqUrl.startsWith('/completion/')) {
       // The three index types share a shape: a heading, a sentence of real numbers, a table of
       // projects, and links outwards. Only the heading and the first sentence differ.
@@ -1961,6 +2063,7 @@ for (const a of AREAS) writeZh(path.join('area', a.slug), `/area/${a.slug}`);
 for (const st of STATIONS) writeZh(path.join('near', st.slug), `/near/${st.slug}`);
 for (const d of DEVELOPERS) writeZh(path.join('developer', d.slug), `/developer/${d.slug}`);
 for (const y of COMPLETION_YEARS) writeZh(path.join('completion', y.year), `/completion/${y.year}`);
+for (const sl of BUYER_SHORTLISTS) writeZh(path.join('best', sl.slug), `/best/${sl.slug}`);
 console.log(`[SEO Static Build] Chinese (/zh) twins: home, ${staticRoutes.length} static pages, ${zhProjectCount} projects, ${zhBlogCount} articles.`);
 
 // 9. Generate legacy 301/refresh redirect files for outdated slugs
@@ -2081,6 +2184,9 @@ for (const r of staticRoutes) {
 }
 for (const p of projects) {
   if (p && p.id) xml += `  <url><loc>https://shyanyee.com/zh/projects/${p.id}</loc><lastmod>${p.syncedAt ? p.syncedAt.substring(0, 10) : todayStr}</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>\n`;
+}
+for (const sl of BUYER_SHORTLISTS) {
+  xml += `  <url><loc>https://shyanyee.com/zh/best/${sl.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>\n`;
 }
 for (const st of STATIONS) {
   xml += `  <url><loc>https://shyanyee.com/zh/near/${st.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
