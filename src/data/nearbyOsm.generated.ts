@@ -837,7 +837,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Train stations",
    "categoryZh": "轨道交通",
-   "name": "KJ10 KLCC",
+   "name": "KJ10 KL City Centre",
    "km": 0.5
   },
   {
@@ -855,7 +855,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Shopping malls",
    "categoryZh": "商场",
-   "name": "Suria KLCC",
+   "name": "Suria KL City Centre",
    "km": 0.29
   },
   {
@@ -867,13 +867,13 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Shopping malls",
    "categoryZh": "商场",
-   "name": "Plaza Ombak KLCC",
+   "name": "Plaza Ombak KL City Centre",
    "km": 0.9
   },
   {
    "category": "Supermarkets",
    "categoryZh": "超市",
-   "name": "Cold Storage KLCC",
+   "name": "Cold Storage KL City Centre",
    "km": 0.27
   },
   {
@@ -921,7 +921,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "KLCC Park",
+   "name": "KL City Centre Park",
    "km": 0.58
   }
  ],
@@ -2781,7 +2781,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Train stations",
    "categoryZh": "轨道交通",
-   "name": "PY21 Persiaran KLCC",
+   "name": "PY21 Persiaran KL City Centre",
    "km": 0.46
   },
   {
@@ -2793,7 +2793,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Shopping malls",
    "categoryZh": "商场",
-   "name": "Plaza Ombak KLCC",
+   "name": "Plaza Ombak KL City Centre",
    "km": 0.49
   },
   {
@@ -2847,7 +2847,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "KLCC Park",
+   "name": "KL City Centre Park",
    "km": 0.67
   },
   {
@@ -6787,7 +6787,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Train stations",
    "categoryZh": "轨道交通",
-   "name": "KJ10 KLCC",
+   "name": "KJ10 KL City Centre",
    "km": 0.26
   },
   {
@@ -6811,13 +6811,13 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Shopping malls",
    "categoryZh": "商场",
-   "name": "Suria KLCC",
+   "name": "Suria KL City Centre",
    "km": 0.42
   },
   {
    "category": "Shopping malls",
    "categoryZh": "商场",
-   "name": "Plaza Ombak KLCC",
+   "name": "Plaza Ombak KL City Centre",
    "km": 0.82
   },
   {
@@ -6871,7 +6871,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "KLCC Park",
+   "name": "KL City Centre Park",
    "km": 0.69
   }
  ],
@@ -6983,7 +6983,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Train stations",
    "categoryZh": "轨道交通",
-   "name": "PY21 Persiaran KLCC",
+   "name": "PY21 Persiaran KL City Centre",
    "km": 0.66
   },
   {
@@ -7049,7 +7049,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "KLCC Park",
+   "name": "KL City Centre Park",
    "km": 0.51
   },
   {
@@ -7167,13 +7167,13 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Train stations",
    "categoryZh": "轨道交通",
-   "name": "KJ10 KLCC",
+   "name": "KJ10 KL City Centre",
    "km": 0.75
   },
   {
    "category": "Shopping malls",
    "categoryZh": "商场",
-   "name": "Suria KLCC",
+   "name": "Suria KL City Centre",
    "km": 0.62
   },
   {
@@ -7197,7 +7197,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Supermarkets",
    "categoryZh": "超市",
-   "name": "Cold Storage KLCC",
+   "name": "Cold Storage KL City Centre",
    "km": 0.63
   },
   {
@@ -7351,7 +7351,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Train stations",
    "categoryZh": "轨道交通",
-   "name": "PY21 Persiaran KLCC",
+   "name": "PY21 Persiaran KL City Centre",
    "km": 0.66
   },
   {
@@ -7417,7 +7417,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "KLCC Park",
+   "name": "KL City Centre Park",
    "km": 0.4
   },
   {
@@ -10661,7 +10661,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Train stations",
    "categoryZh": "轨道交通",
-   "name": "PY21 Persiaran KLCC",
+   "name": "PY21 Persiaran KL City Centre",
    "km": 0.31
   },
   {
@@ -10679,7 +10679,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Shopping malls",
    "categoryZh": "商场",
-   "name": "Plaza Ombak KLCC",
+   "name": "Plaza Ombak KL City Centre",
    "km": 0.33
   },
   {
@@ -10733,7 +10733,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "KLCC Park",
+   "name": "KL City Centre Park",
    "km": 0.45
   },
   {
@@ -10753,7 +10753,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Train stations",
    "categoryZh": "轨道交通",
-   "name": "PY21 Persiaran KLCC",
+   "name": "PY21 Persiaran KL City Centre",
    "km": 0.31
   },
   {
@@ -10771,7 +10771,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Shopping malls",
    "categoryZh": "商场",
-   "name": "Plaza Ombak KLCC",
+   "name": "Plaza Ombak KL City Centre",
    "km": 0.33
   },
   {
@@ -10825,7 +10825,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "KLCC Park",
+   "name": "KL City Centre Park",
    "km": 0.45
   },
   {

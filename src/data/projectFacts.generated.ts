@@ -380,7 +380,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KLCC Park",
+    "name": "KL City Centre Park",
     "distance": "5.1km"
    }
   ],
@@ -3359,7 +3359,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Mall",
-    "name": "Suria KLCC",
+    "name": "Suria KL City Centre",
     "distance": "2.9km"
    },
    {
@@ -4012,7 +4012,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KLCC (5km)"
+    "name": "Suria KL City Centre (5km)"
    },
    {
     "category": "Transportation Hubs",
@@ -4306,7 +4306,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC",
+    "name": "Suria KL City Centre",
     "distance": "8.0km"
    },
    {
@@ -4366,7 +4366,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Parks",
-    "name": "KLCC Park",
+    "name": "KL City Centre Park",
     "distance": "8.1km"
    }
   ],
@@ -5685,7 +5685,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping",
@@ -8122,7 +8122,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping",
@@ -8324,7 +8324,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping Malls",
@@ -8408,7 +8408,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Recreation",
@@ -8550,7 +8550,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Malls",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Malls",
@@ -8614,7 +8614,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Fitness and Recreation",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Fitness and Recreation",
@@ -8740,7 +8740,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KLCC",
+    "name": "Suria KL City Centre",
     "distance": "1.8km"
    },
    {
@@ -8770,7 +8770,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Leisure and Parks",
-    "name": "KLCC Park",
+    "name": "KL City Centre Park",
     "distance": "1.3km"
    },
    {
@@ -8928,7 +8928,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Landmark & Entertainment",
-    "name": "Petronas Twin Tower / Suria KLCC"
+    "name": "Petronas Twin Tower / Suria KL City Centre"
    },
    {
     "category": "Landmark & Entertainment",
@@ -9516,7 +9516,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Nearby",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Nearby",
@@ -9552,7 +9552,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Nearby",
-    "name": "KLCC LRT Station"
+    "name": "KL City Centre LRT Station"
    },
    {
     "category": "Nearby",
@@ -9809,7 +9809,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KLCC",
+    "name": "Suria KL City Centre",
     "distance": "965m"
    },
    {
@@ -9863,7 +9863,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation & Landmarks",
-    "name": "KLCC Park",
+    "name": "KL City Centre Park",
     "distance": "550m"
    },
    {
@@ -10234,7 +10234,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Recreation",
@@ -10454,7 +10454,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping & Leisure",
-    "name": "Suria KLCC (10.1km)"
+    "name": "Suria KL City Centre (10.1km)"
    },
    {
     "category": "Education",
@@ -10551,7 +10551,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "nearby": [
    {
     "category": "Shopping & Entertainment",
-    "name": "Suria KLCC (400m)"
+    "name": "Suria KL City Centre (400m)"
    },
    {
     "category": "Shopping & Entertainment",
@@ -10587,7 +10587,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Public Transportation",
-    "name": "KLCC LRT Station (500m)"
+    "name": "KL City Centre LRT Station (500m)"
    },
    {
     "category": "Public Transportation",
@@ -10671,7 +10671,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation & Attraction",
-    "name": "KLCC Park (600m)"
+    "name": "KL City Centre Park (600m)"
    },
    {
     "category": "Recreation & Attraction",
@@ -11007,7 +11007,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "nearby": [
    {
     "category": "Public Transport",
-    "name": "KLCC LRT Station"
+    "name": "KL City Centre LRT Station"
    },
    {
     "category": "Public Transport",
@@ -11031,7 +11031,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping Malls",
@@ -11059,7 +11059,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Landmarks",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Landmarks",
@@ -13803,7 +13803,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls & Supermarkets",
-    "name": "Suria KLCC - 10.4km"
+    "name": "Suria KL City Centre - 10.4km"
    },
    {
     "category": "Education",
@@ -17074,14 +17074,14 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFee": "RM0.70 psf (Including Sinking Fund)",
   "maintenanceFeePsf": 0.7,
   "description": {
-   "en": "DAWN KL City Centre is a 69-storey freehold development located along Jalan Tuanku Abdul Rahman in Kuala Lumpur city centre, developed by Dawn Land Sdn Bhd across less than 1.4 acres with a commercial title under HDA. The project comprises 960 units with expected completion in 2029. It is situated 500m from KLCC LRT Station, 650m from Kampung Baru LRT Station, and 500m from Suria KLCC and Avenue K, with access via the AKLEH Expressway. Built-up sizes range from 348 sq ft to 835 sq ft, offering 1 to 2 bedrooms including dual-key options. Facilities include sky facilities, and car parks are available for rental without allocated bays."
+   "en": "DAWN KL City Centre is a 69-storey freehold development located along Jalan Tuanku Abdul Rahman in Kuala Lumpur city centre, developed by Dawn Land Sdn Bhd across less than 1.4 acres with a commercial title under HDA. The project comprises 960 units with expected completion in 2029. It is situated 500m from KL City Centre LRT Station, 650m from Kampung Baru LRT Station, and 500m from Suria KL City Centre and Avenue K, with access via the AKLEH Expressway. Built-up sizes range from 348 sq ft to 835 sq ft, offering 1 to 2 bedrooms including dual-key options. Facilities include sky facilities, and car parks are available for rental without allocated bays."
   },
   "keyFeatures": [],
   "facilities": [],
   "nearby": [
    {
     "category": "Public Transportation",
-    "name": "KLCC LRT Station (500m)"
+    "name": "KL City Centre LRT Station (500m)"
    },
    {
     "category": "Public Transportation",
@@ -17097,7 +17097,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC (500m)"
+    "name": "Suria KL City Centre (500m)"
    },
    {
     "category": "Shopping",
@@ -17149,7 +17149,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KLCC Park (700m)"
+    "name": "KL City Centre Park (700m)"
    },
    {
     "category": "Recreation",
@@ -17507,6 +17507,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "source": "Developer sales kit (2026-09-20)",
   "developer": "AYER",
   "checked": "2026-09-20",
+  "maintenanceFee": "NIL（销售表注明 Upfront 6 month (Charges TBA)）",
   "description": {
    "en": "Welcome to Bukit Puchong Boulevard Phase 2 – the address of new possibilities. Located within the established 1,390-acre Bukit Puchong township, these freehold 2 & 3-storey shop offices combine contemporary architecture, generous layouts, and a prime community setting to elevate your business and drive lasting growth."
   },
@@ -17730,7 +17731,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping Malls",
@@ -17810,7 +17811,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Recreation",
@@ -17911,14 +17912,14 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFee": "0.66 psf (est., incl. sinking fund)",
   "maintenanceFeePsf": 0.66,
   "description": {
-   "en": "Freehold 49-storey development located along Jalan Ampang in Kuala Lumpur city centre, Jewel by Oxley KL City Centre occupies a 3.11-acre site with 267 units, completed in 2025. The residence is situated near the Petronas Twin Towers, Suria KLCC, KLCC Park, Ampang Park LRT Station, and KLCC LRT Station. Units range from 678 sq ft to 2185 sq ft with 1 to 3+1 bedrooms. Level 7 facilities include a pool and pool deck, gym, kid's playground, BBQ area, yoga deck, and reading room. Parking provides one floating car park access card per unit in Tower 1, and one car park per unit in Tower 2 with specified unit exceptions."
+   "en": "Freehold 49-storey development located along Jalan Ampang in Kuala Lumpur city centre, Jewel by Oxley KL City Centre occupies a 3.11-acre site with 267 units, completed in 2025. The residence is situated near the Petronas Twin Towers, Suria KL City Centre, KL City Centre Park, Ampang Park LRT Station, and KL City Centre LRT Station. Units range from 678 sq ft to 2185 sq ft with 1 to 3+1 bedrooms. Level 7 facilities include a pool and pool deck, gym, kid's playground, BBQ area, yoga deck, and reading room. Parking provides one floating car park access card per unit in Tower 1, and one car park per unit in Tower 2 with specified unit exceptions."
   },
   "keyFeatures": [
    "First SO/ Branded Residence in Kuala Lumpur",
    "Tallest branded residence in Malaysia with a rooftop pool",
    "Freehold mixed development in the heart of KL City Centre",
    "Integrated with two 5-star hotels (SO/ Sofitel and The Langham), signature offices, and retail galleria",
-   "Directly adjacent to the Petronas Twin Towers and 50-acre KLCC Park",
+   "Directly adjacent to the Petronas Twin Towers and 50-acre KL City Centre Park",
    "Designed by award-winning VERITAS Design Group",
    "Certified BCA Green Mark Gold for sustainable design",
    "Fully furnished and interior-designed units available",
@@ -17964,7 +17965,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping",
@@ -17977,7 +17978,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Park",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Public Transport",
@@ -17985,7 +17986,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Public Transport",
-    "name": "KLCC LRT Station"
+    "name": "KL City Centre LRT Station"
    },
    {
     "category": "Public Transport",
@@ -18025,14 +18026,14 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFee": "1.10 psf (est., incl. sinking fund)",
   "maintenanceFeePsf": 1.1,
   "description": {
-   "en": "Rising 78 storeys along Jalan Ampang in Kuala Lumpur city centre, SO Kuala Lumpur Residences is a freehold development on 3.11 acres offering 590 units. Completed in 2025, the property is situated near KLCC Park, Suria KLCC, KLCC LRT Station, and Ampang Park LRT Station. Built-up areas range from 566 sq ft to 995 sq ft across studio to 2+1 bedroom layouts with 1 to 2 bathrooms. Facilities include swimming pools, a gym, yoga room, jacuzzi, sky garden, and children's playground. The development provides 610 parking bays situated across basement levels 3 to 5."
+   "en": "Rising 78 storeys along Jalan Ampang in Kuala Lumpur city centre, SO Kuala Lumpur Residences is a freehold development on 3.11 acres offering 590 units. Completed in 2025, the property is situated near KL City Centre Park, Suria KL City Centre, KL City Centre LRT Station, and Ampang Park LRT Station. Built-up areas range from 566 sq ft to 995 sq ft across studio to 2+1 bedroom layouts with 1 to 2 bathrooms. Facilities include swimming pools, a gym, yoga room, jacuzzi, sky garden, and children's playground. The development provides 610 parking bays situated across basement levels 3 to 5."
   },
   "keyFeatures": [
    "First SO/ Branded Residence in Kuala Lumpur",
    "Tallest branded residence in Malaysia with a rooftop pool",
    "Freehold mixed development in the heart of KL City Centre",
    "Integrated with two 5-star hotels (SO/ Sofitel and The Langham), signature offices, and retail galleria",
-   "Directly adjacent to the Petronas Twin Towers and 50-acre KLCC Park",
+   "Directly adjacent to the Petronas Twin Towers and 50-acre KL City Centre Park",
    "Designed by award-winning VERITAS Design Group",
    "Certified BCA Green Mark Gold for sustainable design",
    "Fully furnished and interior-designed units available",
@@ -18078,7 +18079,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KLCC"
+    "name": "Suria KL City Centre"
    },
    {
     "category": "Shopping",
@@ -18091,7 +18092,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Park",
-    "name": "KLCC Park"
+    "name": "KL City Centre Park"
    },
    {
     "category": "Public Transport",
@@ -18099,7 +18100,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Public Transport",
-    "name": "KLCC LRT Station"
+    "name": "KL City Centre LRT Station"
    },
    {
     "category": "Public Transport",
@@ -18201,7 +18202,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "KLCC"
+    "name": "KL City Centre"
    },
    {
     "category": "Hospitals",
