@@ -3,6 +3,123 @@ import type { BlogArticle } from '../types';
 
 export const GENERATED_ARTICLES: BlogArticle[] = [
   {
+    "id": "conlay-kl-city-centre-review",
+    "slug": "conlay-kl-city-centre-review",
+    "title": "Conlay KL City Centre Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Conlay review: E&O and Mitsui Fudosan's freehold tower on Jalan Conlay designed by Kerry Hill Architects, 491 units over 51 storeys, 743 to 1,335 sq ft, from RM 1,460,000.",
+    "summary": "Conlay is a freehold tower on Jalan Conlay by Eastern & Oriental and Mitsui Fudosan, designed by Kerry Hill Architects, with 491 homes, nothing under 743 sq ft and the MRT about 250 m away. This review covers price, sizes, the concierge, the measured distances and who it suits.",
+    "content": "# Quick verdict: who should buy Conlay?\n\n**My view.** Conlay is the quiet one on this street. E&O and Mitsui Fudosan put Kerry Hill Architects on it — the practice behind the Aman resorts — and instead of another all-glass tower you get a fin-lined façade that frames the view rather than flooding the room with heat. The address does the rest: I measured about 250 m to Conlay MRT, one stop to the KL City Centre and TRX stations, and about 370 m to Pavilion Kuala Lumpur, so the shopping belt is a walk. What separates it from most city-centre projects is the entry size. Nothing here is under 743 sq ft, and there are only 491 homes in 51 floors on about an acre, so this is not a building of small letting units. The service level is the other thing to understand: a 24-hour concierge that arranges cars, deliveries, couriers and a chef for a private dinner, and handles small things inside your unit like linen and basic repairs. That is what the RM 0.80 psf fee is paying for, about RM 800 a month on 1,000 sq ft. It is freehold, which in this pocket of the city is worth saying twice.\n\n- **Suits:** buyers who want a finished, serviced freehold home in the city centre; families who need real floor area rather than a compact suite; buyers who value design and privacy over headline facilities.\n- **Think twice if:** your budget stops below RM 1.46 million, or you want the smallest possible city-centre unit.\n\n# Video walkthrough\n\n{{youtube:C0EZN_aLaKQ}}\n\n# Conlay at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Patsawan Properties Sdn Bhd (Eastern & Oriental Berhad with Mitsui Fudosan Group) |\n| Architect | Kerry Hill Architects |\n| Address | Jalan Conlay, Kuala Lumpur City Centre |\n| Tenure | Freehold |\n| Type | Serviced apartment |\n| Land size | About 1.14 acres |\n| Floors | 51 |\n| Total units | 491 |\n| Built-up | 743 to 1,335 sq ft |\n| Bedrooms | 2 to 4 |\n| Price | RM 1,460,000 to RM 8,780,000 |\n| Maintenance fee | RM 0.80 psf including sinking fund (about RM 800 a month on 1,000 sq ft) |\n| Status | Under construction; the project data lists 2025, so ask the developer for the current handover date |\n\n# Where is Conlay, and what is nearby?\n\nOn Jalan Conlay, with the financial district, the embassies, the Bukit Bintang shopping belt, hospitals and international schools all in the same few blocks. These are straight-line distances measured from the project coordinates on OpenStreetMap, so every walk is longer than the number shown.\n\n| Place | Straight-line distance |\n| :--- | :--- |\n| PY22 Conlay MRT | 0.25 km |\n| Pavilion Kuala Lumpur | 0.37 km |\n| Mercato supermarket | 0.40 km |\n| The Starhill | 0.50 km |\n| Pavilion Elite | 0.50 km |\n| KL City Centre Park | 0.51 km |\n| MR7 Raja Chulan monorail | 0.64 km |\n| Prince Court Medical Centre | 0.62 km |\n\nFrom Conlay station it is one stop to the KL City Centre East and TRX interchanges, and the same line runs south towards Bandar Malaysia. Fahrenheit 88, Lot 10 and Starhill Gallery are all on foot, and the International School of Kuala Lumpur and the Royal Selangor Golf Club are close by.\n\n# How does Conlay compare with other city-centre launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Conlay** | Freehold | RM 1,460,000 | 743 to 1,335 sq ft | 491 | RM 0.80 psf | See status above |\n| [CloutHaus](/projects/clouthaus) | Freehold | RM 1,548,800 | 549 to 1,216 sq ft | 615 | RM 0.80 psf | 2029 |\n| [Orion Residence](/projects/orion-residence) | Freehold | RM 1,580,000 | 491 to 1,329 sq ft | 298 | RM 1.32 psf | 2025 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | Freehold | RM 1,016,400 | 484 to 678 sq ft | 394 | RM 1.21 psf | 2031 |\n| [Golden Crown](/projects/golden-crown) | Leasehold | RM 1,200,000 | 624 to 1,023 sq ft | 490 | RM 0.80 psf | 2026 |\n| [Centrix The Station](/projects/centrix) | Leasehold | RM 907,000 | 571 to 1,187 sq ft | 857 | RM 0.40 psf | 2029 |\n\nConlay is the only one of the six where nothing starts below 743 sq ft. Everywhere else the entry unit is a compact suite, which is why their starting prices look close to Conlay's while the floor area does not. Against CloutHaus the trade is view versus size: CloutHaus faces the Twin Towers from 549 sq ft up, Conlay gives you a larger home and a quieter building. Against Orion the trade is the monthly fee — RM 0.80 psf against RM 1.32 psf is roughly RM 500 a month on 1,000 sq ft.\n\n# Which Conlay layout is best?\n\nSeven layouts between 743 sq ft and 1,335 sq ft, two to four bedrooms, one to two car parks. Ask the sales team for the current type list and stacking plan before you compare prices.\n\n**What I saw in the show unit.** I filmed the 1,335 sq ft, the largest, laid out as two bedrooms plus one. The kitchen is open, with a stone worktop and the full appliance package included — fridge, oven, microwave, induction hob and hood. The \"+1\" is the room worth looking at: it opens directly onto a bathroom, so it works as a proper third bedroom rather than a study that has been counted as one. The balcony is the thing I would buy this layout for. It runs along the master, the second bedroom and the living room rather than sitting off one corner, and it looks over the Royal Selangor Golf Club, which is green that nobody is going to build on. In the master there is a walk-in wardrobe with lighting that comes on as you enter, a bathtub and a twin vanity, water heaters included, and a smart toilet that opens as you approach it.\n\n# Facilities\n\nThree levels. Level 11 carries the sky garden, heated swimming pool, gym, yoga room, sauna, jacuzzi, multi-purpose lounge, children's playroom, library lounge, music room, multimedia room, billiard room and meeting room. Level 36 repeats the essentials higher up with a fitness centre, sauna, pool deck, bar and a children's pool. Level 50 is set aside for lifestyle and food and beverage space.\n\nThe part that is harder to see on a floor plan is the service. The concierge runs 24 hours and covers car arrangements, food delivery, daily parcel and courier handling, and a private chef for dinner at home. Inside the unit it extends to linen and toiletry changes and basic furniture repairs.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Freehold in the KL city centre | Entry price of RM 1.46 million is above the compact-suite towers nearby |\n| Nothing below 743 sq ft; 491 homes over 51 floors | Handover date in the project data is out of step with the construction status |\n| About 250 m to Conlay MRT and 370 m to Pavilion KL | Serviced-apartment title: confirm utility tariffs with the developer |\n| Kerry Hill Architects, with a 24-hour concierge and in-unit services | The service level is paid for monthly, whether you use it or not |\n\n# How to view Conlay\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Conlay project page](/projects/conlay).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Conlay data page on PropertyPortal](https://www.propertyportal.my/project/conlay).",
+    "readTime": "7 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-24",
+    "updatedOn": "2026-09-24",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1600",
+    "faqs": [
+      {
+        "question": "Is Conlay freehold or leasehold?",
+        "answer": "Freehold. It is developed by Patsawan Properties Sdn Bhd, a joint venture between Eastern & Oriental Berhad and the Mitsui Fudosan Group, on Jalan Conlay."
+      },
+      {
+        "question": "Who designed Conlay?",
+        "answer": "Kerry Hill Architects, the practice behind Aman and Amanpuri resorts, which is why the tower reads as fin-lined and framed rather than all glass."
+      },
+      {
+        "question": "What is the starting price of Conlay?",
+        "answer": "From RM 1,460,000, with the published range running to RM 8,780,000. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "How far is Conlay from the MRT?",
+        "answer": "About 250 m in a straight line to Conlay MRT station on the Putrajaya line, measured from the project coordinates on OpenStreetMap. Pavilion Kuala Lumpur is about 370 m."
+      },
+      {
+        "question": "How many units are there at Conlay?",
+        "answer": "491 units in a 51-storey tower on about 1.14 acres, with no layout smaller than 743 sq ft."
+      },
+      {
+        "question": "What is the maintenance fee at Conlay?",
+        "answer": "RM 0.80 per square foot including sinking fund, which is about RM 800 a month on a 1,000 sq ft unit."
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review",
+      "centrix-the-station-kl-city-centre-review"
+    ],
+    "relatedProjectIds": [
+      "conlay",
+      "clouthaus",
+      "orion-residence",
+      "golden-crown",
+      "centrix"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
+      "review"
+    ]
+  },
+  {
+    "id": "parkside-residence-bangsar-review",
+    "slug": "parkside-residence-bangsar-review",
+    "title": "Parkside Residence Bangsar Review: Price, Layouts, Pros & Cons",
+    "metaDescription": "Parkside Residence review: the first homes at Setia Federal Hill by SP Setia and Mitsui Fudosan, 693 units over 62 storeys, 485 to 1,300 sq ft, from RM 600,000, with a five-acre park downstairs.",
+    "summary": "Parkside Residence is the first residential tower at Setia Federal Hill, a 62-storey leasehold building of 693 homes with a five-acre central park at its feet and Bangsar LRT about 500 m away. This review covers price, sizes, the facilities, the measured distances and who it suits.",
+    "content": "# Quick verdict: who should buy Parkside Residence?\n\n**My view.** Parkside is not a Bangsar condominium in the old sense. It is the first residential tower inside Setia Federal Hill, a whole district being planned at once — homes, offices, retail and a hotel around a five-acre central park — and the park is the reason to look at it. An open outlook that nobody can build on is rare this close to the middle of Kuala Lumpur, and here you do not look at the park from a balcony, you take the lift down and walk into it. The transport is the second reason: I measured about 510 m to Bangsar LRT and 680 m to KL Sentral, so the whole rail network is on foot. Entry is RM 600,000 for 485 sq ft, the lowest starting price of the Bangsar projects I compare below, and the holding cost is about RM 500 a month on 1,000 sq ft. The compromises are the tenure, which is leasehold, and the wait — completion is 2029, and a master plan this size takes years to fill in around you.\n\n- **Suits:** buyers who want a city-centre address with a park at the door; people who commute by rail; buyers who are willing to hold through the build-out of a new district.\n- **Think twice if:** you need freehold, you want to move in soon, or you want the old Bangsar low-rise feel.\n\n# Video walkthrough\n\n{{youtube:fZzT_sV0VKU}}\n\n# Parkside Residence at a glance\n\n| Item | Detail |\n| :--- | :--- |\n| Developer | Setia MF SFH Development Sdn Bhd (SP Setia and Mitsui Fudosan) |\n| Address | Setia Federal Hill, Jalan Bangsar, Kuala Lumpur |\n| Tenure | Leasehold |\n| Type | Serviced apartment |\n| Floors | 62 |\n| Total units | 693 |\n| Built-up | 485 to 1,300 sq ft |\n| Bedrooms | 1 to 3 |\n| Price | From RM 600,000 |\n| Maintenance fee | RM 0.50 psf including a 10% sinking fund (about RM 500 a month on 1,000 sq ft) |\n| Master plan | Setia Federal Hill: homes, offices, retail and a hotel around a five-acre central park |\n| Status | Under construction, target 2029 |\n\n# Where is Parkside Residence, and what is nearby?\n\nAt Setia Federal Hill, on the Jalan Bangsar corridor between Bangsar and KL Sentral. These are straight-line distances measured from the project coordinates on OpenStreetMap, so every walk is longer than the number shown.\n\n| Place | Straight-line distance |\n| :--- | :--- |\n| KJ16 Bangsar LRT | 0.51 km |\n| KL Sentral (KTM, ERL, MRT) | 0.68 km |\n| KJ15 KL Sentral LRT | 0.68 km |\n| Nu Sentral | 0.71 km |\n| Bangsar Village 2 | 1.06 km |\n| Telawi Square, Bangsar | 1.10 km |\n| Nearest clinic | 0.24 km |\n| Valley International School | 0.33 km |\n| Taman Botani Perdana | 1.40 km |\n\nFrom KL Sentral the ERL runs direct to KL International Airport, and Mid Valley, Pantai Hospital, University of Malaya and Bangsar South are all a short drive on the same corridor. Bangsar Shopping Centre and the Telawi restaurants are the other way.\n\n# How does Parkside Residence compare with other Bangsar launches?\n\n| Project | Tenure | From | Built-up | Units | Monthly fee | Completion |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Parkside Residence** | Leasehold | RM 600,000 | 485 to 1,300 sq ft | 693 | RM 0.50 psf | 2029 |\n| [Khaya Residence](/projects/khaya-residence) | Leasehold | RM 785,000 | 630 to 1,321 sq ft | 795 | RM 0.50 psf | 2029 |\n| [River Park, Bangsar South](/projects/river-park) | Leasehold | RM 604,000 | 812 to 1,180 sq ft | 1,332 | RM 0.38 psf | 2026 |\n| [Bangsar Hill Park, Towers B and C](/projects/bangsar-hill-park-tower-b-and-c) | Leasehold | RM 1,123,000 | 917 to 1,478 sq ft | 802 | RM 0.35 psf | 2028 |\n| [Menerung](/projects/menerung) | Freehold | RM 1,700,000 | 1,001 to 3,714 sq ft | 111 | RM 0.95 psf | 2027 |\n\nParkside has the lowest entry price of the five, because it also has the smallest entry size at 485 sq ft. Compare it with Khaya first: both are leasehold, both complete in 2029, both charge RM 0.50 psf, and the difference is the address and the outlook — Khaya sits where Bangsar meets Kerinchi with the LRT five minutes away, Parkside sits on the park. If you want floor area rather than a park view, River Park and Bangsar Hill Park both start larger.\n\n# Which Parkside Residence layout is best?\n\nSizes run from 485 sq ft to 1,300 sq ft, one to three bedrooms, so the building is not aimed at one kind of buyer. Ask the sales team for the current type list and stacking plan before you compare prices — the published layout table is indicative.\n\n**What I saw in the show units.** The one I would point most buyers to is the 646 sq ft two-bedroom. It is square rather than long, and the living area runs about 12 feet across where a unit this size usually gives you about 10, which sounds small on paper and is the difference between a sofa that fits and one that does not. The kitchen appliances and cabinets are included. The flexi room has its own window, so it works as a small bedroom or as a study without feeling like a cupboard. The glass is the detail I would go and see for yourself: the sill sits lower than the usual one to two feet, so the light reaches further into the room. The other show unit is the 2+1 with a balcony — same kitchen, dining and living arrangement, plus the outdoor space and the Bangsar outlook.\n\n# Facilities\n\nThe sales kit names four facility zones — Parkside Boulevard, Parkside Retreat, Parkside Collective and Parkside Sky — and they are spread over four levels rather than stacked on one podium. The lowest connects the building straight into the five-acre central park, which is the one that matters: you walk down and you are in it, for a morning walk, a run or the children. Above it sits the everyday level, with the pool, the gym and the yoga space. Then the family and social level, with the children's area, barbecue and lounge space for weekends. At the top is the sky level: sky lounge and coworking, quieter than the rest, with the best outlook in the building.\n\n# Pros and cons\n\n| Pros | Cons |\n| :--- | :--- |\n| Five-acre central park at the foot of the building, not across a road | Leasehold |\n| About 510 m to Bangsar LRT and 680 m to KL Sentral | Completion in 2029, in a district still being built out |\n| Lowest entry price of the Bangsar projects compared above | 693 units in one 62-storey tower |\n| SP Setia with Mitsui Fudosan, on a master plan rather than a single site | Entry unit is 485 sq ft: small for a family |\n\n# How to view Parkside Residence\n\nWhatsApp Shyan Yee (REN 46305, IQI Realty) at +60 10-827 8932 for the price list, floor plans and a viewing. Full specifications are on the [Parkside Residence project page](/projects/parkside-residence).\n\nFor the full unit-type table, facilities list and nearby distances, see the [Parkside Residence data page on PropertyPortal](https://www.propertyportal.my/project/parkside-residence).",
+    "readTime": "6 min read",
+    "publishDate": "September 2026",
+    "publishedOn": "2026-09-24",
+    "updatedOn": "2026-09-24",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1Oz8qQLsSHzA-fdNGILMwYKswHIXxwN6B=w1600",
+    "faqs": [
+      {
+        "question": "Is Parkside Residence freehold or leasehold?",
+        "answer": "Leasehold. It is developed by Setia MF SFH Development Sdn Bhd, a joint venture between SP Setia and Mitsui Fudosan, at Setia Federal Hill off Jalan Bangsar."
+      },
+      {
+        "question": "What is the starting price of Parkside Residence?",
+        "answer": "From RM 600,000. Ask for the current price list, as it changes with each release."
+      },
+      {
+        "question": "How far is Parkside Residence from the LRT?",
+        "answer": "About 510 m in a straight line to Bangsar LRT and about 680 m to KL Sentral, measured from the project coordinates on OpenStreetMap. The walk is longer than the straight line."
+      },
+      {
+        "question": "How many units are there at Parkside Residence?",
+        "answer": "693 units in a 62-storey tower, the first residential phase of the Setia Federal Hill master plan."
+      },
+      {
+        "question": "What is the maintenance fee at Parkside Residence?",
+        "answer": "RM 0.50 per square foot including a 10 per cent sinking fund, which is about RM 500 a month on a 1,000 sq ft unit."
+      },
+      {
+        "question": "When will Parkside Residence be completed?",
+        "answer": "2029, according to the current project data. Confirm the construction period in the sale and purchase agreement."
+      }
+    ],
+    "relatedSlugs": [
+      "khaya-residence-bangsar-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "parkside-residence",
+      "khaya-residence",
+      "river-park",
+      "bangsar-hill-park-tower-b-and-c",
+      "menerung"
+    ],
+    "tags": [
+      "bangsar",
+      "leasehold",
+      "sp setia",
+      "review"
+    ]
+  },
+  {
     "id": "ayanna-bukit-jalil-review",
     "slug": "ayanna-bukit-jalil-review",
     "title": "Ayanna Bukit Jalil Review: Price, Layouts, Pros & Cons",
@@ -1054,6 +1171,65 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       "review"
     ]
   },
+  "conlay-kl-city-centre-review": {
+    "id": "conlay-kl-city-centre-review",
+    "slug": "conlay-kl-city-centre-review",
+    "title": "Conlay 吉隆坡市中心评测：价格、户型、优缺点",
+    "metaDescription": "Conlay 评测：E&O 与三井不动产在 Jalan Conlay 的永久地契项目，Kerry Hill Architects 设计，51 层 491 个单位，743 至 1,335 平方英尺，RM 1,460,000 起。",
+    "summary": "Conlay 是 Eastern & Oriental 与三井不动产在 Jalan Conlay 的永久地契大楼，由 Kerry Hill Architects 设计，491 个单位，最小 743 平方英尺，捷运站约 250 米。这篇评测讲价格、面积、礼宾服务、量出来的距离，以及适合什么买家。",
+    "content": "# 快速结论：谁该买 Conlay？\n\n**我的看法。** Conlay 是这条街上比较安静的那一个。E&O 和三井不动产请了 Kerry Hill Architects——就是做 Aman 度假村那家——所以你拿到的不是又一栋整片玻璃的楼，而是竖鳍式的外立面，把景框起来，而不是把热气灌进房间。地段把其余的事做完了：我量过，直线到 Conlay 捷运站约 250 米，一站就到 KL City Centre 和 TRX；到 Pavilion Kuala Lumpur 约 370 米，整条购物街走路就到。它跟市中心多数项目最不同的地方是入场面积。这里没有低过 743 尺的单位，51 层只有 491 户，占地大约一英亩，所以这不是一栋做小出租单位的楼。另一件要搞清楚的是服务水平：24 小时礼宾服务，帮你安排车、外送、快递收件，甚至请厨师上门做一顿晚餐；单位里面的小事，换毛巾、补洗漱用品、基本家具维修，也包在里面。这就是 RM 0.80/尺的管理费在付的东西，1,000 尺大约每月 RM 800。而且它是永久地契——在市中心这一带，这句话值得讲两次。\n\n- **适合：** 要一间现成的、有服务的市中心永久地契房子的；需要真正面积不是紧凑套房的家庭；看重设计和私隐多过设施数量的。\n- **要想清楚：** 你的预算去不到 RM 146 万，或者你要的是市中心最小的那种单位。\n\n# 影片看房\n\n{{youtube:C0EZN_aLaKQ}}\n\n# Conlay 基本资料\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Patsawan Properties Sdn Bhd（Eastern & Oriental Berhad 与三井不动产集团） |\n| 建筑师 | Kerry Hill Architects |\n| 地址 | Jalan Conlay, 吉隆坡市中心 |\n| 地契 | 永久地契 |\n| 类型 | 服务式公寓 |\n| 地皮 | 约 1.14 英亩 |\n| 楼层 | 51 层 |\n| 总单位 | 491 |\n| 面积 | 743 至 1,335 平方英尺 |\n| 房数 | 2 至 4 房 |\n| 价格 | RM 1,460,000 至 RM 8,780,000 |\n| 管理费 | 每平方英尺 RM 0.80，含偿债基金（1,000 尺约每月 RM 800） |\n| 状态 | 兴建中；项目资料列的是 2025 年，请向发展商确认目前的交楼日期 |\n\n# Conlay 在哪里？周边有什么？\n\n在 Jalan Conlay，金融区、大使馆区、武吉免登购物带、医院和国际学校都在同几个街区内。以下是从项目坐标在 OpenStreetMap 上量的直线距离，实际走路一定比这个数字长。\n\n| 地点 | 直线距离 |\n| :--- | :--- |\n| PY22 Conlay 捷运站 | 0.25 公里 |\n| Pavilion Kuala Lumpur | 0.37 公里 |\n| Mercato 超市 | 0.40 公里 |\n| The Starhill | 0.50 公里 |\n| Pavilion Elite | 0.50 公里 |\n| KL City Centre 公园 | 0.51 公里 |\n| MR7 Raja Chulan 单轨火车站 | 0.64 公里 |\n| Prince Court 医疗中心 | 0.62 公里 |\n\n从 Conlay 站一站就到 KL City Centre East 和 TRX 转换站，同一条线往南通往 Bandar Malaysia。Fahrenheit 88、Lot 10、Starhill Gallery 都可以走路到；吉隆坡国际学校（ISKL）和雪兰莪皇家高尔夫球俱乐部也在附近。\n\n# Conlay 和市中心其他项目比起来怎样？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 管理费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Conlay** | 永久地契 | RM 1,460,000 | 743 至 1,335 尺 | 491 | RM 0.80/尺 | 见上方状态 |\n| [CloutHaus](/projects/clouthaus) | 永久地契 | RM 1,548,800 | 549 至 1,216 尺 | 615 | RM 0.80/尺 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久地契 | RM 1,580,000 | 491 至 1,329 尺 | 298 | RM 1.32/尺 | 2025 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | 永久地契 | RM 1,016,400 | 484 至 678 尺 | 394 | RM 1.21/尺 | 2031 |\n| [Golden Crown](/projects/golden-crown) | 租赁地契 | RM 1,200,000 | 624 至 1,023 尺 | 490 | RM 0.80/尺 | 2026 |\n| [Centrix The Station](/projects/centrix) | 租赁地契 | RM 907,000 | 571 至 1,187 尺 | 857 | RM 0.40/尺 | 2029 |\n\n六个里面只有 Conlay 没有低过 743 尺的单位。其他几个的入场单位都是紧凑套房，所以它们的起价看起来和 Conlay 接近，面积却不是。跟 CloutHaus 比是景观对面积：CloutHaus 从 549 尺起就正对双峰塔，Conlay 给你的是更大的房子和更安静的一栋楼。跟 Orion 比是管理费：RM 0.80/尺 对 RM 1.32/尺，1,000 尺一个月差大约 RM 500。\n\n# Conlay 哪个户型好？\n\n七个户型，743 尺到 1,335 尺，两房到四房，一到两个车位。比价钱之前，跟销售拿最新的户型表和楼层堆叠图。\n\n**我在样板房看到的。** 我拍的是 1,335 尺，最大的那个，做成两房加一房。厨房是开放式的，石台面，家电全套包括在内——冰箱、烤箱、微波炉、电磁炉和抽油烟机。值得看的是多出来的那一间：它直接连着浴室，所以可以当真正的第三间睡房，不是把书房算成一间房。阳台是我会为这个户型买单的地方——它沿着主卧、次卧和客厅一路过去，不是缩在某个角落；望出去是雪兰莪皇家高尔夫球场，那片绿没有人会去盖。主卧里有衣帽间，走进去灯会自己亮；浴室有浴缸、双人洗手台，热水器包在内，还有一个你一靠近就会打开的智能马桶。\n\n# 设施\n\n三层。11 楼是空中花园、恒温泳池、健身房、瑜伽室、桑拿、按摩池、多功能休息厅、儿童游戏室、图书阅览室、音乐室、多媒体室、桌球室和会议室。36 楼在更高的位置再来一套基本的：健身中心、桑拿房、泳池平台、酒吧和儿童池。50 楼留给生活和餐饮商业空间。\n\n图则上看不出来的是服务那部分。礼宾服务 24 小时，包括安排车辆、外送、每日包裹和快递收件，还可以安排厨师上门做晚餐。进到单位里面，还延伸到换毛巾、补洗漱用品和基本家具维修。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 吉隆坡市中心的永久地契 | 入场价 RM 146 万，高过附近做紧凑套房的楼 |\n| 没有低过 743 尺的单位；51 层只有 491 户 | 项目资料上的交楼年份和施工状态对不上 |\n| 直线到 Conlay 捷运站约 250 米、Pavilion KL 约 370 米 | 服务式公寓地契：水电收费请向发展商确认 |\n| Kerry Hill Architects 设计，24 小时礼宾加单位内服务 | 这个服务水平是每个月在付的，用不用都要付 |\n\n# 怎样看 Conlay\n\nWhatsApp 联络 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取价单、图则和安排看房。完整规格在 [Conlay 项目页](/projects/conlay)。\n\n完整的户型表、设施清单和周边距离，可以看 [PropertyPortal 的 Conlay 资料页](https://www.propertyportal.my/project/conlay)。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-24",
+    "updatedOn": "2026-09-24",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1L3xbKaCwq_pPmucjkXD3ObVtNQTHfnUE=w1600",
+    "faqs": [
+      {
+        "question": "Conlay 是永久地契还是租赁地契？",
+        "answer": "永久地契。由 Eastern & Oriental Berhad 与三井不动产集团合资的 Patsawan Properties Sdn Bhd 开发，位于 Jalan Conlay。"
+      },
+      {
+        "question": "Conlay 是谁设计的？",
+        "answer": "Kerry Hill Architects，也就是设计 Aman 与 Amanpuri 度假村的那家事务所。所以这栋楼是竖鳍加画框式的外观，不是整片玻璃。"
+      },
+      {
+        "question": "Conlay 起价多少？",
+        "answer": "RM 1,460,000 起，公开的价格区间去到 RM 8,780,000。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Conlay 离捷运站多远？",
+        "answer": "从项目坐标在 OpenStreetMap 上量，直线到布城线 Conlay 捷运站约 250 米，到 Pavilion Kuala Lumpur 约 370 米。"
+      },
+      {
+        "question": "Conlay 有多少个单位？",
+        "answer": "51 层共 491 个单位，占地约 1.14 英亩，最小的户型是 743 平方英尺。"
+      },
+      {
+        "question": "Conlay 的管理费多少？",
+        "answer": "每平方英尺 RM 0.80，已含偿债基金；1,000 平方英尺的单位大约每月 RM 800。"
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review",
+      "centrix-the-station-kl-city-centre-review"
+    ],
+    "relatedProjectIds": [
+      "conlay",
+      "clouthaus",
+      "orion-residence",
+      "golden-crown",
+      "centrix"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
+      "review"
+    ]
+  },
   "core-residence-trx-review": {
     "id": "core-residence-trx-review",
     "slug": "core-residence-trx-review",
@@ -1434,6 +1610,64 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
       "bukit jalil",
       "freehold",
       "pavilion",
+      "review"
+    ]
+  },
+  "parkside-residence-bangsar-review": {
+    "id": "parkside-residence-bangsar-review",
+    "slug": "parkside-residence-bangsar-review",
+    "title": "Parkside Residence 孟沙评测：价格、户型、优缺点",
+    "metaDescription": "Parkside Residence 评测：SP Setia 与三井不动产在 Setia Federal Hill 的首个住宅，62 层 693 个单位，485 至 1,300 平方英尺，RM 600,000 起，楼下就是 5 英亩中央公园。",
+    "summary": "Parkside Residence 是 Setia Federal Hill 的第一栋住宅楼，62 层、693 个单位、租赁地契，楼下是 5 英亩中央公园，走去 Bangsar 轻快铁站约 500 米。这篇评测讲价格、面积、设施、量出来的距离，以及适合什么买家。",
+    "content": "# 快速结论：谁该买 Parkside Residence？\n\n**我的看法。** Parkside 不是我们印象中那种孟沙公寓。它是 Setia Federal Hill 里的第一栋住宅楼，而 Setia Federal Hill 是一整个区一起规划出来的——住宅、办公楼、商业、酒店，围着一个 5 英亩的中央公园——公园就是我会看这个项目的原因。这么靠近吉隆坡中心，还有一片没人能盖的空地，很少见；而且这里不是站在阳台看公园，是搭电梯下楼走进去。第二个原因是交通：我量过，直线到 Bangsar 轻快铁站大约 510 米、到 KL Sentral 大约 680 米，整个铁路网走路就到。入场价 RM 600,000 买 485 尺，是我下面比较的孟沙项目里最低的；1,000 尺的持有成本大约每月 RM 500。取舍是租赁地契，还有等——2029 年完工，而这么大一个总体规划，周边要好几年才填得满。\n\n- **适合：** 要市中心地址又要一片公园在门口的；每天搭铁路上下班的；愿意等这个新区慢慢建起来的。\n- **要想清楚：** 你一定要永久地契、想快点入住，或者你要的是老孟沙那种低楼层感觉。\n\n# 影片看房\n\n{{youtube:fZzT_sV0VKU}}\n\n# Parkside Residence 基本资料\n\n| 项目 | 内容 |\n| :--- | :--- |\n| 发展商 | Setia MF SFH Development Sdn Bhd（SP Setia 与三井不动产） |\n| 地址 | Setia Federal Hill, Jalan Bangsar, 吉隆坡 |\n| 地契 | 租赁地契 |\n| 类型 | 服务式公寓 |\n| 楼层 | 62 层 |\n| 总单位 | 693 |\n| 面积 | 485 至 1,300 平方英尺 |\n| 房数 | 1 至 3 房 |\n| 价格 | RM 600,000 起 |\n| 管理费 | 每平方英尺 RM 0.50，含 10% 偿债基金（1,000 尺约每月 RM 500） |\n| 总体规划 | Setia Federal Hill：住宅、办公楼、商业、酒店，围绕 5 英亩中央公园 |\n| 状态 | 兴建中，预计 2029 年完工 |\n\n# Parkside Residence 在哪里？周边有什么？\n\n在 Setia Federal Hill，位于 Jalan Bangsar 这条走廊上，介于孟沙和 KL Sentral 之间。以下是从项目坐标在 OpenStreetMap 上量的直线距离，实际走路一定比这个数字长。\n\n| 地点 | 直线距离 |\n| :--- | :--- |\n| KJ16 Bangsar 轻快铁站 | 0.51 公里 |\n| KL Sentral（电动火车、机场快铁、捷运） | 0.68 公里 |\n| KJ15 KL Sentral 轻快铁站 | 0.68 公里 |\n| Nu Sentral | 0.71 公里 |\n| Bangsar Village 2 | 1.06 公里 |\n| Telawi Square（孟沙） | 1.10 公里 |\n| 最近的诊所 | 0.24 公里 |\n| Valley International School | 0.33 公里 |\n| Taman Botani Perdana | 1.40 公里 |\n\n从 KL Sentral 搭机场快铁可直达吉隆坡国际机场；Mid Valley、班台医院、马来亚大学和孟沙南都在同一条走廊上，开车一下就到。反方向是 Bangsar Shopping Centre 和 Telawi 那一带的餐厅。\n\n# Parkside Residence 和孟沙其他新盘比起来怎样？\n\n| 项目 | 地契 | 起价 | 面积 | 单位数 | 管理费 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Parkside Residence** | 租赁地契 | RM 600,000 | 485 至 1,300 尺 | 693 | RM 0.50/尺 | 2029 |\n| [Khaya Residence](/projects/khaya-residence) | 租赁地契 | RM 785,000 | 630 至 1,321 尺 | 795 | RM 0.50/尺 | 2029 |\n| [River Park（孟沙南）](/projects/river-park) | 租赁地契 | RM 604,000 | 812 至 1,180 尺 | 1,332 | RM 0.38/尺 | 2026 |\n| [Bangsar Hill Park B、C 座](/projects/bangsar-hill-park-tower-b-and-c) | 租赁地契 | RM 1,123,000 | 917 至 1,478 尺 | 802 | RM 0.35/尺 | 2028 |\n| [Menerung](/projects/menerung) | 永久地契 | RM 1,700,000 | 1,001 至 3,714 尺 | 111 | RM 0.95/尺 | 2027 |\n\n五个里面 Parkside 入场价最低，因为它的入场面积也最小，485 尺。先拿它跟 Khaya 比：两个都是租赁地契、都是 2029 年完工、管理费都是 RM 0.50/尺，差别在地址和景观——Khaya 在孟沙和 Kerinchi 交界，走 5 分钟到轻快铁；Parkside 就坐在公园上。如果你要的是面积不是公园景，River Park 和 Bangsar Hill Park 的入场面积都比较大。\n\n# Parkside Residence 哪个户型好？\n\n面积从 485 尺到 1,300 尺，一房到三房，所以这栋楼不是只做给某一种买家。比价钱之前，跟销售拿最新的户型表和楼层堆叠图——公开的户型表只能当参考。\n\n**我在样板房看到的。** 我会叫大部分买家先看 646 尺的两房。它是四四方方的，不是长条形；客厅阔度大约 12 尺，而这个尺寸的单位通常只有 10 尺左右——纸上看差一点点，实际上就是沙发放得下和放不下的分别。厨房的橱柜和家电都在配套里。多出来的那个小房间有自己的窗，所以当小睡房或者工作室都行，不会像储藏室。落地窗是我会叫你亲自去看的细节：它的窗台做得比一般的一到两尺更低，光可以照进房间更深的位置。另一间样板房是 2+1 带阳台的，厨房、饭厅、客厅的安排一样，多了户外空间和孟沙那一面的景。\n\n# 设施\n\n销售资料把设施分成四区——Parkside Boulevard、Parkside Retreat、Parkside Collective 和 Parkside Sky——而且分散在四个楼层，不是全部堆在一层平台上。最低那层直接接进 5 英亩的中央公园，这层最重要：你走下去就在公园里，散步、跑步、带小孩都行。上面一层是日常那层，泳池、健身房、瑜伽空间。再上去是家庭和社交那层，儿童区、烧烤、周末聚会的空间。最顶是空中那层：空中休息室和共用工作区，比其他楼层安静，视野也是全栋最好的。\n\n# 优缺点\n\n| 优点 | 缺点 |\n| :--- | :--- |\n| 5 英亩中央公园就在楼下，不是隔一条马路 | 租赁地契 |\n| 直线到 Bangsar 轻快铁站约 510 米、KL Sentral 约 680 米 | 2029 年完工，整个新区还在建 |\n| 入场价是上面比较的孟沙项目里最低的 | 一栋 62 层楼 693 个单位 |\n| SP Setia 加三井不动产，做的是总体规划不是单一地块 | 入场单位 485 尺，对家庭来说偏小 |\n\n# 怎样看 Parkside Residence\n\nWhatsApp 联络 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取价单、图则和安排看房。完整规格在 [Parkside Residence 项目页](/projects/parkside-residence)。\n\n完整的户型表、设施清单和周边距离，可以看 [PropertyPortal 上的 Parkside Residence 资料页](https://www.propertyportal.my/project/parkside-residence)。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-24",
+    "updatedOn": "2026-09-24",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1Oz8qQLsSHzA-fdNGILMwYKswHIXxwN6B=w1600",
+    "faqs": [
+      {
+        "question": "Parkside Residence 是永久地契还是租赁地契？",
+        "answer": "租赁地契。由 SP Setia 与三井不动产合资的 Setia MF SFH Development Sdn Bhd 开发，位于 Jalan Bangsar 旁的 Setia Federal Hill。"
+      },
+      {
+        "question": "Parkside Residence 起价多少？",
+        "answer": "RM 600,000 起。价单每一期都会调整，请索取最新价单。"
+      },
+      {
+        "question": "Parkside Residence 离轻快铁站多远？",
+        "answer": "从项目坐标在 OpenStreetMap 上量，直线到 Bangsar 轻快铁站约 510 米，到 KL Sentral 约 680 米。实际走路会比直线长。"
+      },
+      {
+        "question": "Parkside Residence 有多少个单位？",
+        "answer": "62 层共 693 个单位，是 Setia Federal Hill 总体规划里的第一期住宅。"
+      },
+      {
+        "question": "Parkside Residence 的管理费多少？",
+        "answer": "每平方英尺 RM 0.50，已含 10% 偿债基金；1,000 平方英尺的单位大约每月 RM 500。"
+      },
+      {
+        "question": "Parkside Residence 什么时候完工？",
+        "answer": "根据目前的项目资料是 2029 年。请以买卖合约上的施工期为准。"
+      }
+    ],
+    "relatedSlugs": [
+      "khaya-residence-bangsar-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "parkside-residence",
+      "khaya-residence",
+      "river-park",
+      "bangsar-hill-park-tower-b-and-c",
+      "menerung"
+    ],
+    "tags": [
+      "bangsar",
+      "leasehold",
+      "sp setia",
       "review"
     ]
   },

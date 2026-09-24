@@ -106,8 +106,10 @@ Format: Name | Area | Type | Tenure | Price | Built-up | Bedrooms | Total units 
 - Amika Residence | USJ / Subang Jaya | Serviced Apartment | Freehold | RM 697,800 – RM 960,800 | 883–1227 sq ft | 3–4 bed | 468 (Tower A: 216; Tower B: 252) units | RM 0.35 psf (incl. sinking fund) | Avaland (Next Delta Sdn Bhd) | Under Construction 2027 | https://shyanyee.com/projects/amika-residence
 - Mosaic | USJ / Subang Jaya | Serviced Apartment | Freehold | RM 577K to RM 1.2Mil | 557–1509 sq ft | 1–3 bed | 924 units units | RM0.30 psf - RM0.40 psf | SCP | Under Construction 2029 | https://shyanyee.com/projects/mosaic
 
-## Guides & articles (30)
+## Guides & articles (32)
 
+- [Conlay KL City Centre Review: Price, Layouts, Pros & Cons](https://shyanyee.com/blog/conlay-kl-city-centre-review): Conlay review: E&O and Mitsui Fudosan's freehold tower on Jalan Conlay designed by Kerry Hill Architects, 491 units over 51 storeys, 743 to 1,335 sq ft, from RM
+- [Parkside Residence Bangsar Review: Price, Layouts, Pros & Cons](https://shyanyee.com/blog/parkside-residence-bangsar-review): Parkside Residence review: the first homes at Setia Federal Hill by SP Setia and Mitsui Fudosan, 693 units over 62 storeys, 485 to 1,300 sq ft, from RM 600,000,
 - [Ayanna Bukit Jalil Review: Price, Layouts, Pros & Cons](https://shyanyee.com/blog/ayanna-bukit-jalil-review): Ayanna Resort Residences review: freehold residential-title condo in Bukit Jalil by Chin Hin, 1,155 to 2,453 sq ft, from RM 753,000. Layouts, fees, pros and con
 - [Branniganz KL City Centre Review: Price, Layouts, Pros & Cons](https://shyanyee.com/blog/branniganz-kl-city-centre-review): Branniganz review: EXSIM's mixed tower on Lorong Yap Kwan Seng with 490 office suites and 269 serviced suites, 344 to 678 sq ft, from RM 803,500 gross.
 - [Centrix The Station Review: Price, Layouts, Pros & Cons](https://shyanyee.com/blog/centrix-the-station-kl-city-centre-review): Centrix The Station review: a 47-storey TOD sitting on Dang Wangi LRT, 857 units, 571 to 1,187 sq ft, from RM 907,800. Layouts, views, fees, pros and cons.
