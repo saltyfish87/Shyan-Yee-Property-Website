@@ -124,10 +124,21 @@ interface BuyerShortlist {
  * and it is the second-largest recurring cost after the mortgage.
  */
 function feePsf(p: any): number | null {
+  // The sales kit wins over the website sheet: the sheet had Orion's 1.32 psf on Maple Residences,
+  // whose own kit says 0.39, and five other rows disagreed the same way.
+  const fromKit = PROJECT_FACTS[p.id]?.maintenanceFeePsf;
+  if (typeof fromKit === 'number') return fromKit;
   const v = Number(String(p.maintenanceFee ?? '').replace(/[^0-9.]/g, ''));
-  // The column holds a psf rate; a few rows hold a monthly ringgit figure instead, which is not
-  // comparable and is left out rather than silently divided.
+  // The sheet column holds a psf rate; a few rows hold a monthly ringgit figure instead, which is
+  // not comparable and is left out rather than silently divided.
   return isFinite(v) && v >= 0.1 && v <= 3 ? v : null;
+}
+
+/** The fee as a reader should see it: the kit's own wording where we have it. */
+function feeLabel(p: any): string {
+  const kit = PROJECT_FACTS[p.id]?.maintenanceFee;
+  if (kit) return kit;
+  return p.maintenanceFee ? `RM ${p.maintenanceFee} / sqft` : (p.maintenanceFeeStr || 'Standard');
 }
 function monthlyOn1000(p: any): number | null {
   const f = feePsf(p);
@@ -1274,7 +1285,7 @@ function renderSeoHtml(
                   <li><strong>Starting Price:</strong> <span style="color: #16a34a; font-weight: 700;">${priceStr || 'Contact Agent for Sales Sheet'}</span></li>
                   <li><strong>Bedrooms:</strong> ${targetProject.bedroomsMin} - ${targetProject.bedroomsMax} Beds</li>
                   <li><strong>Built-up Sizes:</strong> ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} - ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft</li>
-                  <li><strong>Maintenance Fee:</strong> ${targetProject.maintenanceFee ? 'RM ' + targetProject.maintenanceFee + ' / sqft' : (targetProject.maintenanceFeeStr || 'Standard')}${(() => { const m = monthlyOn1000(targetProject); return m === null ? '' : ` &mdash; about <strong>RM ${m.toLocaleString()} a month</strong> on a 1,000 sq ft unit`; })()}</li>
+                  <li><strong>Maintenance Fee:</strong> ${escapeXml(feeLabel(targetProject))}${(() => { const m = monthlyOn1000(targetProject); return m === null ? '' : ` &mdash; about <strong>RM ${m.toLocaleString()} a month</strong> on a 1,000 sq ft unit`; })()}</li>
                   <li><strong>Completion:</strong> ${targetProject.completionStatus || 'Under Construction'} ${targetProject.completionYear ? '(' + targetProject.completionYear + ')' : ''}</li>
                 </ul>
               </div>

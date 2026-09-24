@@ -5,6 +5,9 @@ export interface ProjectFacts {
   source: string;
   /** The developer as the database names it — usually the parent group plus the project company. */
   developer?: string;
+  /** Maintenance fee exactly as the sales kit words it, plus the psf rate read out of it. */
+  maintenanceFee?: string;
+  maintenanceFeePsf?: number;
   /** The developer's own write-up, as published in the database. */
   description?: { en?: string; zh?: string };
   keyFeatures: string[];
@@ -16,6 +19,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "anya": {
   "source": "Developer sales kit (2026-09-03)",
   "developer": "Aspect Potential Sdn Bhd",
+  "maintenanceFee": "0.34",
   "description": {
    "en": "ANYA at Shorea Park is a 3.90-acre FREEHOLD vertical oasis that focuses on the nurturing of family living. A part of the 27.7-acre Shorea Park community and just a stone's throw away to the heart of Puchong, ANYA at Shorea Park stands tall with 2 towers and 750 units. Designed with the comfort of multigenerational living in mind, it offers flexible and spacious dual-key layouts that come with multiple living spaces to foster family bonding. The development is surrounded by a thriving matured township and provides a wide array of nature-inspired green landscaping and water features."
   },
@@ -173,6 +177,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aricia": {
   "source": "Developer sales kit (2026-08-22)",
   "developer": "Aricia Sdn Bhd",
+  "maintenanceFee": "RM0.38 per sqft (including sinking fund)",
+  "maintenanceFeePsf": 0.38,
   "description": {
    "en": "Aricia Residence is a name born from the rare beauty of the Aricia butterfly, carrying with it the quiet strength of transformation and the richness of growth. Nestled within 4km of Kuala Lumpur's vibrant heart, Aricia is an exquisite high-rise property designed for a new future and as an ideal home for the next generation. It embodies the perfect blend of convenience and sophistication, where urban living seamlessly intertwines with tranquillity. The strategic location, blending elegance with convenience and connectivity, makes it a desirable residence. Aricia is a place where families find a sense of freedom to become, to change, and to evolve together, building a life filled with memories that will last."
   },
@@ -344,6 +350,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aster-hill-sri-petaling": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "UOA Development Bhd",
+  "maintenanceFee": "RM0.30psf (including sinking fund)",
+  "maintenanceFeePsf": 0.3,
   "description": {
    "en": "Cocooned from the hustle and bustle of the city, discover the modern sanctuary of Aster Hill Sri Petaling. Where your dream home awaits, offering a warm and graceful welcome to everyone in the family. Developed by the award-winning developer of Bangsar South, it is located near Happy Garden, Kuchai Lama and Bukit Jalil, offering thoughtfully designed layouts and modern recreational facilities in a strategically connected location."
   },
@@ -451,6 +459,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "atera-phase-2": {
   "source": "Developer sales kit (2026-09-05)",
   "developer": "Paramount Property",
+  "maintenanceFee": "RM0.32 psf including sinking fund",
+  "maintenanceFeePsf": 0.32,
   "description": {
    "en": "As a new transit-oriented development that will rejuvenate the matured neighbourhood of Section 14, PJ, The Atera brings a fuss-free commute to residents via the Asia Jaya LRT that is within walking distance. Explore Petaling Jaya and the greater Kuala Lumpur vicinity with ease, and live closer to a myriad of lifestyle amenities as you are easily linked to major highways such as the Federal Highway, LDP, SPRINT Expressway, NPE, and NKVE."
   },
@@ -630,6 +640,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aurum-business-centre-suites": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "HARTACOM PROPERTY SDN. BHD.",
+  "maintenanceFee": "Estimate RM0.50psf including sinking fund",
+  "maintenanceFeePsf": 0.5,
   "description": {
    "en": "More than just a development, Aurum Business Centre is a symbol of ambition, prestige, and modern urban living. Strategically located in Sri Petaling, this dynamic mixed-development is the perfect synergy of sophisticated suites, premium retail spaces, and contemporary offices, designed for those who dare to lead, innovate, and shape the future."
   },
@@ -792,6 +804,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "avantro-residences": {
   "source": "Developer sales kit (2026-08-03)",
   "developer": "Boon Koon Commercial Sdn Bhd (Chin Hin Group Property)",
+  "maintenanceFee": "RM 0.35 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "Avantro Residences is a transit-oriented, pet-friendly freehold serviced apartment development by Chin Hin Group Property in Bandar Kinrara, Puchong. Located just 180m from BK5 LRT station, it features 842 units with a 21-lot Lifestyle Retail Hub and over 30 community facilities.",
    "zh": "Avantro Residences 是由 Chin Hin Group 打造的位于 Bandar Kinrara 的永久地契公共交通导向型（TOD）兼宠物友好高尚服务式公寓。项目距离 Kinrara BK5 轻快铁站仅 180 米，包含 842 户住宅及 21 个楼下零售商铺，配备全套智能家居系统和丰富设施。"
@@ -891,6 +905,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "ayanna": {
   "source": "Developer sales kit (2026-07-29)",
   "developer": "Chin Hin Property Development (BKSP Autoworld Sdn Bhd)",
+  "maintenanceFee": "RM0.27 psf incl. sinking fund",
+  "maintenanceFeePsf": 0.27,
   "description": {
    "en": "Ayanna Resort Residences is a freehold resort-style development in Bukit Jalil, Kuala Lumpur, spanning 4.9 acres across two towers with a total of 824 units. Centred around a 1.3-acre recreational park with an interactive stream, the development offers extensive multigenerational facilities including a lap pool, family pool, gymnasium, games room, function hall and sky BBQ decks. Unit types range from a compact 1,155 sqft 3-bedroom layout to a spacious 2,316 sqft dual-key 4+2-bedroom unit, catering to young professionals, growing families and multigenerational households alike.",
    "zh": "Ayanna Resort Residences坐落于吉隆坡Bukit Jalil，为永久地契度假风格发展项目，占地4.9英亩，由两栋塔楼组成，共824个单位。项目核心是1.3英亩会所公园及互动溪流景观，配备丰富多代同堂设施，包括泳池、健身房、游戏室、多功能厅及天空烧烤台。户型从紧凑的1155尺3房到宽敞的2316尺双钥匙4+2房一应俱全，适合首购族、成长中的家庭到多代同堂家庭。"
@@ -1080,6 +1096,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "bangsar-hill-park-tower-b-and-c": {
   "source": "Developer sales kit (2026-08-11)",
   "developer": "Bangsar Hill Park Development Sdn. Bhd.",
+  "maintenanceFee": "RM 0.35 psf (excluding 10% sinking fund)",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "Bangsar Hill Park (Phase 2 - Talisa) is an urban resort-style condominium envisioned for city dwellers. Located in the prestigious and robust property market of Bangsar, it offers a vibrant lifestyle inspired by the world's most coveted cities. The development masterfully blends the convenience of urban living with the serenity of nature, featuring resort-inspired amenities and lush green landscapes. It is a sanctuary designed to provide an international sensation and an elevated living experience, perfect for those who live to seize the day and never settle for less."
   },
@@ -1257,6 +1275,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "bangsar-hill-park-verdura-tower-d-and-e": {
   "source": "Developer sales kit (2026-08-11)",
   "developer": "Bangsar Hill Park Development Sdn. Bhd.",
+  "maintenanceFee": "Estimated to be RM0.35 psf per month excluding sinking fund",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "Set to the backdrop of the vibrant Bangsar cityscape, Verdura at Bangsar Hill Park is the perfect oasis for urban living with resort-inspired lifestyle amenities surrounded by an abundance of greenery. Experience a fine range of thoughtfully crafted facilities while being conveniently connected to Kuala Lumpur's city centre and beyond. This is the place where the cosmopolitan meets nature, where you can live in the middle of it all."
   },
@@ -1382,6 +1402,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "clouthaus": {
   "source": "Developer sales kit (2026-08-22)",
   "developer": "TA First Credit Sdn Bhd",
+  "maintenanceFee": "RM 0.80 psf (Including Sinking Fund)",
+  "maintenanceFeePsf": 0.8,
   "description": {
    "en": "CloutHaus. Power and influence encapsulated in a name. An enclave for the forward thinkers, innovators, and game changers of a generation - the most visionary individuals of our time. Rising from one of the last parcels of land facing Kuala Lumpur's Petronas Twin Towers, this prestigious address stands as a defining landmark and icon, testifying to the city's enduring influence and rich tapestry. As the capital's next architectural masterpiece and premier development, CloutHaus is set to join the ranks of the world's most iconic buildings. Two slender towers stand majestically above a common podium, their sleek profiles mirroring the pulse of the city below."
   },
@@ -1589,6 +1611,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "core-residence-trx": {
   "source": "Developer sales kit (2026-08-24)",
   "developer": "CORE Precious Development Sdn Bhd (A joint venture between CCCG & WCT Holdings Berhad)",
+  "maintenanceFee": "RM0.85 psf (inclusive of sinking fund)",
+  "maintenanceFeePsf": 0.85,
   "description": {
    "en": "CORE Residence @ TRX offers freehold business suites for the ultimate global urbanite experience. A joint venture between Fortune 500's CCCG and WCT Holdings, it is set to transform TRX into a world-class financial centre. The development comprises two 50-storey towers of serviced residences and one tower of hotel apartments, with built-up sizes ranging from 624 sq.ft. to 1,022 sq.ft.",
    "zh": "CORE Residence @ TRX (中央公馆@TRX) 是位于马来西亚首个国际金融中心TRX的永久产权商务住宅项目。该项目由财富500强企业中国交通建设集团（CCCG）与WCT控股联手打造，旨在将TRX提升为世界级金融中心。项目包含两栋50层高的服务式公寓和一栋酒店公寓，户型面积从624平方英尺至1,022平方英尺不等，为全球精英提供极致的都市生活体验。"
@@ -1699,6 +1723,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "genstarz": {
   "source": "Developer sales kit (2026-08-20)",
   "developer": "Majestic Gen Sdn Bhd",
+  "maintenanceFee": "RM0.38psf (including sinking fund)",
+  "maintenanceFeePsf": 0.38,
   "description": {
    "en": "Old Klang Road, a legendary hub at the intersection of Petaling Jaya and Kuala Lumpur, seamlessly blends rich history with a vibrant present. This iconic boulevard is a dynamic fusion of tradition and modernity, where diverse cultures thrive, setting the stage for what awaits you at Gen Starz Residences. Step into a world where contemporary luxury living reigns supreme. With sleek design, stunning views, and top-notch amenities, Gen Starz Residences invites you to immerse yourself in the captivating energy of Old Klang Road, where moments are star-studded experiences."
   },
@@ -1788,6 +1814,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "luminar-residence-federal-avenue": {
   "source": "Developer sales kit (2026-09-01)",
   "developer": "Impiana Impresif Sdn Bhd (a subsidiary of BRDB Developments Sdn Bhd)",
+  "maintenanceFee": "Type A: RM206, Type B: RM286, Type C: RM335, Type D: RM405, Type E: RM530. Accessory parcels include car parks and aircon ledges. An additional car park costs RM23 per month.",
   "description": {
    "en": "Luminar Residence, the first residential phase of Federal Avenue, embodies vibrant and contemporary living. With direct access to the Federal Highway, it introduces a new level of convenience for its flourishing community. Residents' lives are enriched by seamless connections to nearby amenities. An exclusive home base that epitomises the synergy of live, work, and leisure - this stylish residence is designed for today's go-getters, opportunists, and jet-setters who always seize the moment."
   },
@@ -1929,6 +1956,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "m-aspira": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "Mah Sing Properties Sdn Bhd",
+  "maintenanceFee": "RM0.36 psf",
+  "maintenanceFeePsf": 0.36,
   "description": {
    "en": "M Aspira is a high-rise residential development in the mature neighbourhood of Taman Desa, Kuala Lumpur. Developed by Mah Sing, it offers a harmonious blend of urban convenience and serene living. The project boasts exceptional connectivity to major highways and is close to key landmarks like Mid Valley City and Bangsar. Designed with a Japanese-Scandinavian (Japandi) fusion concept, it emphasizes comfort, simplicity, and craftsmanship. M Aspira features two towers with unobstructed city skyline views, lush landscaping, and a comprehensive suite of facilities. It is also a GreenRE certified development, incorporating various sustainable features."
   },
@@ -2117,6 +2146,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "maple-residences": {
   "source": "Developer sales kit (2026-08-07)",
   "developer": "WCT OUG Development Sdn Bhd",
+  "maintenanceFee": "RM0.39 psf (inclusive of sinking fund)",
+  "maintenanceFeePsf": 0.39,
   "description": {
    "en": "The Maple Residences is a freehold, vibrant residential enclave of W City OUG @ Kuala Lumpur, a premier connected and sustainable mixed-use development. This is a place to call home, where the wonderful nuances of life can be savoured to the fullest. W City OUG @ Kuala Lumpur is designed as a composition of residential, mixed commercial and public spaces that are focused on connected living. As a vibrant destination, the development will shape new ways to live, socialise, work, shop and be entertained at the convenience of a single location."
   },
@@ -2279,6 +2310,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "oaka-residences": {
   "source": "Developer sales kit (2026-08-02)",
   "developer": "Berjaya Hartanah Berhad",
+  "maintenanceFee": "RM 0.51 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.51,
   "description": {
    "en": "Oaka Residences is a low-density freehold residential development located in Bukit Jalil, Kuala Lumpur. Developed by Berjaya Hartanah Berhad, it features two 30-storey towers with a total of 350 units (7 units per floor). Units range from 882 to 1,509 sq ft, offering 2 to 3 bedrooms with balconies, utility space, 2-3 parking bays, and Gold Rated GreenRE certification.",
    "zh": "Oaka Residences 是位于吉隆坡武吉加里尔（Bukit Jalil）的低密度永久地契住宅项目。由 Berjaya Hartanah Berhad 打造，项目包含两座30层的住宅大楼，仅有 350 个单位（每层仅 7 户）。提供 882 至 1,509 平方英尺的多款实用户型，每户配有 2 至 3 个车位及阳台/露台，并荣获 GreenRE 金级认证。"
@@ -2451,6 +2484,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "orion-residence": {
   "source": "Developer sales kit (2026-08-12)",
   "developer": "Orion Tower Sdn. Bhd. (Welton Group of Companies)",
+  "maintenanceFee": "RM 1.32 psf (RM 1.20 psf + 10% sinking fund)",
+  "maintenanceFeePsf": 1.32,
   "description": {
    "en": "Situated off Jalan Bukit Bintang, which is considered by many to be a mecca for shoppers, the Orion Residence is a stylish luxury development for the affluent who want to be at the center of glitz and glamour. A towering presence of 46 floors, this establishment offers a spectacular panoramic view of the Kuala Lumpur City Center skyline. Designed by an award-winning team, the Orion Residence offers everything that luxury living represents at the heart of Kuala Lumpur metropolitan."
   },
@@ -2585,6 +2620,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "park-green-pavilion-bukit-jalil": {
   "source": "Developer sales kit (2026-08-05)",
   "developer": "Regal Path Sdn Bhd (a subsidiary of Malton Berhad)",
+  "maintenanceFee": "RM 0.44psf (inclusive of sinking fund)",
+  "maintenanceFeePsf": 0.44,
   "description": {
    "en": "The concept for Park Green Pavilion Bukit Jalil emphasizes modern, sophisticated living within a vibrant urban setting, caters to modern families and professionals seeking a dynamic yet serene residential environment, with the benefits of urban amenities and natural surroundings. Building on the resounding success of Bukit Jalil City, Park Green stands as the crowning and final jewel within this iconic integrated township, offering stunning, panoramic views of the sprawling Bukit Jalil Recreational Park."
   },
@@ -2767,6 +2804,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "quaver-residence": {
   "source": "Developer sales kit (2026-08-07)",
   "developer": "Chin Hin Group Property (Quaver Sdn Bhd)",
+  "maintenanceFee": "RM 0.33 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.33,
   "description": {
    "en": "Introducing a Mont Kiara-inspired lifestyle in Seri Kembangan. Quaver Residence is an energetic, vibrant address in bustling Sungai Besi, offering a home close to key amenities at a price lower than Bukit Jalil's rising properties. It targets locals who desire an urban lifestyle while staying close to their families in the Seri Kembangan and Serdang area. The development provides a myriad of recreational and wellness facilities, promising a new urban-inspired sense of joy, comfort, and quality living."
   },
@@ -2859,6 +2898,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "tria-seputeh": {
   "source": "Developer sales kit (2026-08-18)",
   "developer": "MRCB Seputeh Land Sdn Bhd",
+  "maintenanceFee": "RM0.40 psf including sinking fund",
+  "maintenanceFeePsf": 0.4,
   "description": {
    "en": "TRIA Seputeh, the second phase of the 9 Seputeh masterplan by MRCB Land, is a resort-themed residential enclave offering an exclusive, private, and secure living environment on Old Klang Road. Comprising three high-rise towers (Pelto, Ebon, Cavi) and exclusive Riverfront Villas, this completed development provides residents with a vibrant community connected to nature. It is distinguished by its 4 Pillars of USP: Exclusivity, Privacy, Green, and Security. The project features 52 facilities, including themed rooftop gardens for each tower, a private clubhouse for all ages, and the 1km Promenade Boulevard, a riverside park designed for healthy and sustainable living. Its strategic location offers seamless connectivity to major hubs like Mid Valley, KL Sentral, and Bangsar South."
   },
@@ -3024,6 +3065,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "tujuh-residences": {
   "source": "Developer sales kit (2026-09-09)",
   "developer": "Kwasa Sentral Sdn Bhd (A joint venture between MRCB and Kwasa Land)",
+  "maintenanceFee": "RM0.35 psf (excluding sinking fund)",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "Tujuh Residences is tucked away between the vibrant atmosphere of Kwasa Damansara City Centre and the city's lush greenscape. Designed for contemporary living, Tujuh Residences strikes a balance between it all. Retreat into nature and take in the peaceful seclusion, unwinding to the sounds of cascading water at the poolside cabana - without taking your finger off the pulse of the city. At Tujuh Residences, embrace the comforts of urban city living without the hustle and bustle of a busy metropolis. Like Malaysia's rainforest trees, Tujuh Residences stands majestic and tall. Its facade mirrors the textures of trees and like its inspiration, it is deeply connected to the rhythms of its surroundings. This is your urban sanctuary. Put down your roots, start anew and discover living in harmony with nature."
   },
@@ -3139,6 +3182,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "vox": {
   "source": "Developer sales kit (2026-09-09)",
   "developer": "Kerjaya Property Sdn Bhd",
+  "maintenanceFee": "RM0.35 psf + 10% Sinking Fund",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "Enjoy your very own slice of Sentul at VOX, a collection of contemporary condominiums designed to complement your vibrant lifestyle. From the tranquil bedrooms to the spacious kitchen, sleek and stylish fixtures to a modern décor you can easily mix and match for your own, VOX is where you can live your best life with wellbeing and happiness in mind. A unique mix of Kuala Lumpur's old and new, the best food finds, and a creative vibe - Sentul is one of the capital's most engaging neighbourhoods to offer a vibrant lifestyle while connecting you to all the major landmarks within the city."
   },
@@ -3277,6 +3322,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "wyn": {
   "source": "Developer sales kit (2026-09-10)",
   "developer": "Land & General Berhad",
+  "maintenanceFee": "RM 0.35 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "THE WYN Residences is located in a city with a big heart - Puchong. Enjoy a myriad of seamless public transportation options, essential retail establishments and leisure hot-spots for the entire family. Embracing the five fundamental elements, the residences seek to create a harmonious and balanced living environment by integrating captivating sports facilities, ecofriendly landscaping, innovative architectural design, wellness foundations and contemporary accents."
   },
@@ -3381,6 +3428,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "zenia-damansara": {
   "source": "Developer sales kit (2026-08-27)",
   "developer": "ParkCity",
+  "maintenanceFee": "RM 0.33 psf (Exclude sinking fund)",
+  "maintenanceFeePsf": 0.33,
   "description": {
    "en": "Zenia at ParkCity Damansara is a new development set amidst one of the region's most vibrant and thriving cities. It is described as a hidden gem in Petaling Jaya, featuring a mix of Zenia Parkhomes and Zenia Condovillas. The Condovillas form a vertical enclave offering spacious residences with calm, privacy, and freedom. The Parkhomes consist of 442 units of 3-storey homes."
   },
@@ -3559,6 +3608,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "ren-residence": {
   "source": "Developer sales kit (2026-08-04)",
   "developer": "Gaya Kuasa Sdn Bhd",
+  "maintenanceFee": "RM0.35 psf",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "Inspired by the Chinese character 人 (Rén), meaning people, Ren Residence is designed to connect, belong, and play. Developed by Gaya Kuasa Sdn Bhd and designed by the award-winning GDP Architects, these twin 52-storey towers feature a unique 'Y' shape to maximize natural sunlight, scenic views of Bukit Jalil, and air ventilation. Located on an elevated 5.6-acre leasehold land near Tzu Chi International School, the development comprises 1,260 units with sizes ranging from 920sf to 1,680sf. It boasts over an acre of family-friendly facilities, including a swimming pool, various sports courts, a co-working space, and lush green landscapes, ensuring a peaceful and fulfilling lifestyle."
   },
@@ -3679,6 +3730,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aras-residence": {
   "source": "Developer sales kit (2026-08-07)",
   "developer": "WCT OUG Development Sdn Bhd",
+  "maintenanceFee": "RM0.39 psf (inclusive of Sinking Fund)",
+  "maintenanceFeePsf": 0.39,
   "description": {
    "en": "Aras Residences is a quiet sanctuary with a vital connection to the abundance of nature and vibrancy of city living, just steps away from home."
   },
@@ -3835,6 +3888,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "vividz": {
   "source": "Developer sales kit (2026-08-04)",
   "developer": "EXSIM BUKIT JALIL CITY SDN. BHD.",
+  "maintenanceFee": "RM0.44psf (including sinking fund)",
+  "maintenanceFeePsf": 0.44,
   "description": {
    "en": "The boldness implied by \"Vivid\" reflects a fearless and forward-thinking attitude. It speaks to a willingness to embrace creativity, which is integral to the vision of translating natural elements and bright colors into the spaces. The name reinforces the idea that the building's design is inspired by the untamed beauty of nature, which is reflected in the EXSIM's palette of life. Inspired by the philosophy of \"Colores\", a holistic healing concept that uses colour to balance our physical, emotional, and wellness health, The Vividz @ Bukit Jalil aims to offer a transformative experience for its residents. Our goal is to foster a complete state of harmony with themselves and their environment."
   },
@@ -3986,6 +4041,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "khaya-residence": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "Bayu Mantap Sdn Bhd",
+  "maintenanceFee": "Approx. RM0.50 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.5,
   "description": {
    "en": "Nestled in between Kuala Lumpur and Bangsar, Khaya Residences draws inspiration from the majestic Khaya tree - a symbol of strength, elegance, and timeless serenity. Here, luxury meets nature, creating a perfect harmony of urban sophistication and peaceful living in an affluent address - Bangsar. Khaya Residences thrives in a vibrant enclave, just moments from Kuala Lumpur City Centre. With seamless access to dining, shopping, business hubs, and transit, urban convenience is right at your doorstep. Melati Ehsan Group, in collaboration with Tenaga Nasional Berhad (TNB), brings Khaya Residences to life, blending sustainability, luxury, and practicality in the vibrant township of Bangsar."
   },
@@ -4206,6 +4263,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "phoeniz-suites-kl-city-centre": {
   "source": "Developer sales kit (2026-08-31)",
   "developer": "Exsim YKS 54 Sdn Bhd (1361275-W) (a member of EXSIM Group)",
+  "maintenanceFee": "RM 1.21 psf including sinking fund. EXSIM will subsidize maintenance fees up to max RM0.33psf for 2 years.",
+  "maintenanceFeePsf": 1.21,
   "description": {
    "en": "From the ashes it rises, a symbol of resilience and rebirth - the Phoeniz Suites @ KL City Center embodies the essence of the mythical phoenix, taking flight as a stunning architectural marvel in the heart of the metropolis. Just as the phoenix transcends fiery trials, the suites soar above expectations, offering an experience imbued with both timeless elegance and audacious innovation. More than just a physical structure, the Phoeniz Suites are a testament to the enduring spirit of transformation. Like the mythical bird, the design itself reflects a journey of renewal, weaving a narrative of rebirth through contemporary aesthetics and cutting-edge technology. Transcending mere lodging, the Phoeniz Suites @ KL City Center promises an experience that ignites the senses and inspires the soul, setting a new standard for a hospitality experience that truly rises above the ordinary."
   },
@@ -4274,6 +4333,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "alora-residence": {
   "source": "Developer sales kit (2026-09-03)",
   "developer": "Avaland (USJ Citypoint Sdn. Bhd.)",
+  "maintenanceFee": "RM0.35 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "In the new heart of Subang Jaya, Alora Residences, the final tower of Avenue25's pioneer phase, organically fuses nature and urban conveniences in a forest-inspired lifestyle. These new residences are crafted to suit all needs, with options for multi-gen families or savvy investors. With three levels of facilities, doorstep retail, and direct access to highway networks and rail links via a 300m-covered walkway to the USJ 21 LRT Station, this modish abode offers unparalleled connectivity and pleasure."
   },
@@ -4382,6 +4443,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aldenz": {
   "source": "Developer sales kit (2026-08-30)",
   "developer": "Mightyprop Sdn Bhd (a member of EXSIM Group)",
+  "maintenanceFee": "RM0.42psf (including sinking fund)",
+  "maintenanceFeePsf": 0.42,
   "description": {
    "en": "The Aldenz, with its name meaning 'Old and Wise Friend', represents a sophisticated blend of architectural heritage and modern design principles. Nestled amidst the serene Damansara Perdana neighbourhood, The Aldenz offers a luxurious lifestyle that harmonizes nature with the convenience of city living. Inspired by charming colonial retail architecture, the residences exude a timeless elegance that seamlessly blends with its lush surroundings. It aims to create a vibrant but classic community hub where residents and visitors can experience the charm of nostalgic architecture amidst a dynamic urban setting. It is also a GreenRE certified, eco-responsible development."
   },
@@ -4530,6 +4593,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "d-evia": {
   "source": "Developer sales kit (2026-08-30)",
   "developer": "EXSIM MX4 SDN. BHD. (1486857-W)",
+  "maintenanceFee": "RM0.46psf (including sinking fund)",
+  "maintenanceFeePsf": 0.46,
   "description": {
    "en": "\"Evia\" is a soft, elegant name inspired by \"evian\", synonymous with purity and pristine natural water, reimagined in a simpler, more modern form. It suggests freshness, clarity, and an elevated, spa-like lifestyle – a place where life flows effortlessly. The project consists of a single 32-storey tower of serviced apartments in the new Kwasa Damansara township, offering a range of unit sizes and comprehensive lifestyle facilities."
   },
@@ -4663,6 +4728,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "arra": {
   "source": "Developer sales kit (2026-09-12)",
   "developer": "Puncak Arra Sdn Bhd (a Puncakdana Group project)",
+  "maintenanceFee": "RM0.33 psf (inclusive of sinking fund)",
+  "maintenanceFeePsf": 0.33,
   "description": {
    "en": "An Integrated Transit Oriented Development in Ara Damansara. Surrounded by amenities and urban connectivity, yet framed by calm, green pockets, this is where accessibility meets tranquillity - offering the freedom to live, move, and grow with ease. Anchored by a thoughtfully curated retail park, ARRA offers more than just a home - it brings an entire lifestyle to your doorstep."
   },
@@ -4850,6 +4917,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "atera": {
   "source": "Developer sales kit (2026-09-05)",
   "developer": "Paramount Property",
+  "maintenanceFee": "RM0.32 psf including sinking fund",
+  "maintenanceFeePsf": 0.32,
   "description": {
    "en": "As a new transit-oriented development that will rejuvenate the matured neighbourhood of Section 14, PJ, The Atera brings a fuss-free commute to residents via the Asia Jaya LRT that is within walking distance. Explore Petaling Jaya and the greater Kuala Lumpur vicinity with ease, and live closer to a myriad of lifestyle amenities as you are easily linked to major highways such as the Federal Highway, LDP, SPRINT Expressway, NPE, and NKVE."
   },
@@ -5029,6 +5098,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "amara": {
   "source": "Developer sales kit (2026-09-13)",
   "developer": "Puncakdana Group (Luster Ara Sdn Bhd)",
+  "maintenanceFee": "RM0.38 psf (RM0.35 psf + 10% sinking fund)",
+  "maintenanceFeePsf": 0.38,
   "description": {
    "en": "The Amara Residences, commanding an elevated position in the bustling urban area of Ara Damansara, is an ideal high-rise property for those in search of a tranquil and contemporary living environment. A Freehold mixed development expertly designed to cater to the diverse needs of the modern family across generations, offering a harmonious living experience."
   },
@@ -5136,6 +5207,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "parkside-residence": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "Setia MF SFH Development Sdn Bhd",
+  "maintenanceFee": "RM0.50 psf",
+  "maintenanceFeePsf": 0.5,
   "description": {
    "en": "Parkside Residences is the inaugural residential development at Setia Federal Hill, presenting a rare opportunity to be part of an exclusive community in a new era of urban living in Kuala Lumpur. This revolutionary 62-storey residential tower is where the best of modern luxury and city-centre efficiency meet central park greenery and serene tranquility. Nestled high above the bustling city, this architectural masterpiece offers an unparalleled living experience, designed to elevate your senses and nurture your spirit."
   },
@@ -5209,6 +5282,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "amaya": {
   "source": "Developer sales kit (2026-09-13)",
   "developer": "Indo Aman Bina Sdn Bhd",
+  "maintenanceFee": "RM0.45 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.45,
   "description": {
    "en": "Amaya Residences is a freehold, transit-oriented development within the 48-acre Damansara Avenue masterplan in Bandar Sri Damansara. With a 'Urban Resort Living' concept, it offers serviced apartments with direct connectivity to DA Central Mall and the Sri Damansara Sentral MRT station via a 320m link bridge. The development features two 68-storey towers, extensive resort-inspired facilities, and layouts from 1 to 3+1 bedrooms, designed with modern Japanese aesthetics."
   },
@@ -5354,6 +5429,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "forest-hill": {
   "source": "Developer sales kit (2026-09-22)",
   "developer": "Foresthill Damansara Land Sdn. Bhd.",
+  "maintenanceFee": "RM0.35psf (including sinking fund, estimated)",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "ForestHill Residences emerges as an oasis in the metropolis; as a development crafted to enhance its verdant surroundings. More than just a home, it rises as a new green lung within the prime location of Damansara Perdana, surrounded by a calm lake and rolling hills. Situated next to a forest, residents wake up to fresh, cooling air and enjoy a well-balanced environment with seamless access to lifestyle amenities."
   },
@@ -5565,6 +5642,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "daya-residence": {
   "source": "Developer sales kit (2026-09-18)",
   "developer": "TSR Development Sdn Bhd",
+  "maintenanceFee": "RM0.28 psf (Inclusive Sinking Fund)",
+  "maintenanceFeePsf": 0.28,
   "description": {
    "en": "Daya Residence, a contemporary and freehold residential gem nestled within the verdant surroundings of Kwasa Damansara, boasts a modern design and a low density residence for an exclusive living experience. Daya Residence comprises two remarkable phases, showcasing an elegant bungalow, semi-detached homes, town villas and a stylish condominium, offering diverse choices to suit your preferred lifestyle."
   },
@@ -5682,6 +5761,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "queenswoodz": {
   "source": "Developer sales kit (2026-07-29)",
   "developer": "EXSIM",
+  "maintenanceFee": "RM0.42 psf incl. sinking fund",
+  "maintenanceFeePsf": 0.42,
   "description": {
    "en": "The Queenswoodz rises in the heart of Bukit Jalil, Kuala Lumpur, spanning 3.44 acres across two towers of 50 and 51 storeys with a total of 1,004 units on a leasehold commercial (HDA) title. Just a short walk from LRT Awan Besar station and close to Novel Park, Bukit Jalil Golf & Country Resort and Pavilion Bukit Jalil, it offers a rare balance of urban convenience and green tranquility. Residents enjoy an extensive suite of facilities including a leisure pool, gym, kids' play area, BBQ decks and sky lounges. Unit types range from a compact 807 sqft 2+1-bedroom layout to a spacious 1,410 sqft 4-bedroom dual-key unit, catering to young professionals, growing families and multigenerational households alike.",
    "zh": "The Queenswoodz坐落于吉隆坡Bukit Jalil核心地段，占地3.44英亩，由两栋分别50层（494户）与51层（510户）的高塔组成，共1,004个单位，产权为租赁地契（商业HDA）。项目步行可达LRT Awan Besar站，邻近Novel Park绿地、Bukit Jalil高尔夫乡村俱乐部及Pavilion Bukit Jalil商场，生活机能与自然环境兼备。会所设施丰富，涵盖泳池、健身房、儿童游乐区、烧烤区、天空酒廊等，满足不同生活方式需求。户型从807尺的2+1房到1410尺的4房双钥匙单位一应俱全，适合首购族、小家庭到多代同堂家庭。"
@@ -5764,6 +5845,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "menerung": {
   "source": "Developer sales kit (2026-08-12)",
   "developer": "BRDB Developments Sdn Bhd (5521-A)",
+  "maintenanceFee": "RM 0.95 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.95,
   "description": {
    "en": "111 Menerung is an exclusive low-density luxury residence located in the heart of Bangsar, one of Kuala Lumpur's most prestigious addresses. Comprising only 111 tastefully-designed suites across 23 storeys, this freehold development offers unparalleled elegance and the perfect balance between urban and suburban living. Situated next to Bangsar Shopping Centre and with seamless connectivity via the Pusat Bandar Damansara MRT, residents can enjoy premier retail, dining, and lifestyle amenities. The development features meticulously crafted interiors, high-quality finishes, and a range of rooftop facilities including an infinity pool, gymnasium, and gardens, designed for the discerning few."
   },
@@ -5895,6 +5978,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "bamboohill": {
   "source": "Developer sales kit (2026-09-15)",
   "developer": "Concord Housing Development Sdn Bhd (UOA Group)",
+  "maintenanceFee": "RM0.40 psf inclusive of sinking fund",
+  "maintenanceFeePsf": 0.4,
   "description": {
    "en": "Bamboo Hills Residences is a 10-acre freehold serviced apartment development located at Taman Bamboo, off the Duta-Ulu Kelang Expressway in Kuala Lumpur. The development comprises three residential blocks complemented by a retail podium, inspiring a modern lifestyle of wellness and sustainability. As a transit-oriented development, Bamboo Hills Residences will have a direct link bridge to the Kentonmen MRT station."
   },
@@ -6008,6 +6093,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "stellaris-riana-dutamas": {
   "source": "Developer sales kit (2026-08-11)",
   "developer": "368 Segambut Sdn Bhd (IJM Land & FCW Holdings Berhad)",
+  "maintenanceFee": "RM0.35psf (Inclusive of Sinking Fund)",
+  "maintenanceFeePsf": 0.35,
   "description": {
    "en": "Stellaris @ Riana Dutamas, the final jewel in North Kiara's golden triangle, is a freehold serviced residence designed as an urban retreat. It offers a blend of sophisticated modernity and serene living with 1,143 units tailored for flexible, multi-generational lifestyles. Residents will enjoy unparalleled connectivity with direct highway access and a covered walkway to the KTM station, alongside 31 resort-themed facilities, placing it as a premier address for those who appreciate both the pulse of the city and the calm of home."
   },
@@ -6139,6 +6226,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "pavilion-square-residences": {
   "source": "Developer sales kit (2026-09-06)",
   "developer": "Armani Hartajaya Sdn Bhd",
+  "maintenanceFee": "RM 0.90/sf",
+  "maintenanceFeePsf": 0.9,
   "description": {
    "en": "Pavilion Square is another Pavilion lifestyle development in Kuala Lumpur, located in the Golden Triangle of the KL City Centre. The development consists of a 67-storey tower with 960 luxury residences and a 25-storey tower with 106 corporate suites, along with retail lots. It features a dedicated link-bridge to the Pavilion Kuala Lumpur mall.",
    "zh": "柏威年旗下新的标杆发展项目, 位于首都资源密集的黄金三角区,吉隆坡的新地标。项目包括一座67层豪华住宅楼（960户）和一座25层企业套房楼（106个单位）及零售商店，并设有衔接柏威年商场的天桥。"
@@ -6312,6 +6401,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "pavilion-square-office": {
   "source": "Developer sales kit (2026-09-06)",
   "developer": "Armani Hartajaya Sdn Bhd",
+  "maintenanceFee": "RM 1.30/sf",
+  "maintenanceFeePsf": 1.3,
   "description": {
    "en": "Nestled in the heart of the Golden Triangle, Pavilion Square offers an unparalleled urban environment. Pavilion Square's office tower combines luxury with functionality, empowering businesses to thrive in Kuala Lumpur's vibrant district. Nurture your dreams, embrace the vibrant energy of Bukit Bintang and unlock exceptional possibilities at Pavilion Square."
   },
@@ -6455,6 +6546,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "golden-crown": {
   "source": "Developer sales kit (2026-08-29)",
   "developer": "Multibay Development Sdn Bhd (A Subsidiary of Golden Eagle)",
+  "maintenanceFee": "Approx. RM0.80psf",
+  "maintenanceFeePsf": 0.8,
   "description": {
    "en": "Golden Crown Residence is a 60-storey luxury residential tower within the Menara Golden Eagle, a prestigious mixed-use development comprising a hotel, office, and residence. Located along Jalan Tun Razak and adjacent to the Tun Razak Exchange (TRX), it boasts unparalleled connectivity as a Transit Oriented Development (TOD) with a direct underground link to the TRX MRT interchange and The Exchange TRX mall. The development offers 490 units with layouts ranging from 1 to 3 bedrooms, complemented by a host of premium facilities and amenities in the vicinity of Kuala Lumpur's city center.",
    "zh": "金悦公寓（Golden Crown Residence）是一座60层高的豪华住宅楼，坐落于著名的综合发展项目——金鹰汇（Menara Golden Eagle）之内，该项目包含酒店、办公室和住宅。项目位于敦拉萨路，毗邻敦拉萨国际贸易中心（TRX），作为公共交通导向开发项目（TOD），拥有无与伦比的连通性，通过地下通道直达TRX捷运换乘站和The Exchange TRX购物中心。该项目共提供490个单位，户型从1房到3房不等，并配备了吉隆坡市中心区域内一系列高端设施和便利设施。"
@@ -6582,6 +6675,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "centrix": {
   "source": "Developer sales kit (2026-08-28)",
   "developer": "Intan Sekitar Sdn Bhd (Subsidiary of Crest Builder Berhad)",
+  "maintenanceFee": "RM0.40 psf (Maintenance Fee) + RM0.04 psf (Sinking Fund)",
+  "maintenanceFeePsf": 0.4,
   "description": {
    "en": "A single 47-storey integrated mixed development tower, built above Kuala Lumpur's Dang Wangi LRT (KJ12) underground station. This Transit Oriented Development (TOD) features a SOHO Tower and a 10-storey podium with retail, office, and carpark levels. Nestled in the heart of the KL City Centre district, it blends luxury, sophistication, and cutting-edge lifestyle, offering a premier address at the prestigious junction of Jalan Ampang and Jalan Sultan Ismail with exceptional accessibility and panoramic views of Kuala Lumpur's iconic skyline.",
    "zh": "直接高于轻轨站并连接至单轨列车站。一个47层楼的综合混合发展高楼，建在吉隆坡金三角Dang Wangi地铁站（KJ12）之上。这项以公共交通为导向的发展项目（TOD）包括SOHO大楼和一个10层高的裙楼，内设零售、办公室和停车场。坐落在吉隆坡市中心的心脏地带，融合了奢华、精致和前沿的生活方式，在安邦路和苏丹依斯迈路的著名交界处提供了一个优越的地址，拥有卓越的通达性和吉隆坡标志性天际线的全景。"
@@ -6705,6 +6800,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "kingswoodz-bukit-jalil": {
   "source": "Developer sales kit (2026-08-06)",
   "developer": "EXSIM JALIL LINK SDN BHD",
+  "maintenanceFee": "RM0.42 (inclusive of sinking fund)",
   "description": {
    "en": "Nestled amidst the urban canopy, The Kingswoodz @ Bukit Jalil stands tall as a verdant oasis within a sought-after Bukit Jalil locale. This magnificent multi-faceted development inspired by the intricate inlays of Kingwood furniture, unveils 1,558 signature homes and boasts panoramic vistas, sprawling communal spaces, and top-notch amenities. Designed by forward-thinking architects, this haven not only redefines high-rise living but also seamlessly integrates Malaysia's natural splendour into its modern aesthetic. Experience the epitome of urban comfort intertwined with the tranquillity of nature at The Kingswoodz @ Bukit Jalil."
   },
@@ -6835,6 +6931,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "times-square-2": {
   "source": "Developer sales kit (2026-07-30)",
   "developer": "Berjaya Times Square Sdn Bhd",
+  "maintenanceFee": "RM0.66 psf + 10% sinking fund",
+  "maintenanceFeePsf": 0.66,
   "description": {
    "en": "Times Square 2 is a freehold high-rise residential development integrated with the existing Berjaya Times Square complex in Imbi, Kuala Lumpur. Rising as a single tower with 629 residential units and 17 commercial units, it offers resort-style facilities spread across Level 7, Level 41 and Level 41A, including an infinity pool, sky whirlpool, sky gym and sky restaurant. Strategically located within the Golden Triangle, it enjoys direct connectivity to 3 major trainlines (Monorail, LRT, MRT) and is within walking distance of KL City Centre, Pavilion, Lot 10 and LaLaport BBCC.",
    "zh": "Times Square 2坐落于吉隆坡黄金三角区Imbi，与现有的Berjaya Times Square商场综合体无缝连接，为永久地契高层住宅项目。项目为单栋大楼，共629个住宅单位及17个商业单位，会所设施横跨Level 7、Level 41及Level 41A三层，涵盖无边际泳池、空中按摩浴池、摩天健身房及空中餐厅。项目步行可达3条地铁线（单轨/轻快铁/捷运），邻近KL City Centre、Pavilion、Lot 10及LaLaport BBCC等地标。"
@@ -6945,6 +7043,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "accent-residences": {
   "source": "Developer sales kit (2026-07-30)",
   "developer": "Leisure Event Sdn Bhd (Ayala Land)",
+  "maintenanceFee": "TBC",
   "description": {
    "en": "Accent Residences is a leasehold serviced apartment development by Ayala Land in Section 13, Petaling Jaya. The single-tower development spans 38 storeys with 231 service apartment units, 27 SAMM units and 14 retail lots, designed with a private lift lobby layout of just 8 units per floor. Note: this is based on an early-stage sales kit — detailed facilities plan, individual unit floor plans and pricing are not yet finalized in the available materials.",
    "zh": "Accent Residences是Ayala Land旗下位于八打灵再也13区的租赁地契服务式公寓项目。单栋大楼共38层，包含231个服务式公寓单位、27个SAMM单位及14个商铺单位，采用私人电梯大堂设计，每层仅8户。注：目前资料来自早期销售资料包，详细会所平面图、户型平面图及价格尚未最终确定。"
@@ -7026,6 +7125,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "ascott-star-residence": {
   "source": "Developer sales kit (2026-07-30)",
   "developer": "Alpine Return Sdn Bhd",
+  "maintenanceFee": "RM0.65 psf including sinking fund",
+  "maintenanceFeePsf": 0.65,
   "description": {
    "en": "Ascott Star KL City Centre is an international award-winning luxury mixed development managed by The Ascott Limited, offering 5-star hospitality services, high-end residential towers, and lifestyle retail right in the heart of Kuala Lumpur City Centre.",
    "zh": "Ascott Star KL City Centre（雅诗阁 Star KL City Centre）是位于吉隆坡市中心的五星级奢华服务式公寓，由凯德旗下的雅诗阁（The Ascott Limited）统一管理。项目紧邻双峰塔，结合星光大道商业街与大型会所设施，打造都市奢华生活体验。"
@@ -7188,6 +7289,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "eaton-residences": {
   "source": "Developer sales kit (2026-07-31)",
   "developer": "City View Ventures Sdn Bhd (A subsidiary of GSH Corporation Limited)",
+  "maintenanceFee": "RM0.65 psf",
+  "maintenanceFeePsf": 0.65,
   "description": {
    "en": "Eaton Residences is an award-winning 52-storey luxury serviced residence offering 632 units located at Jalan Kia Peng in Kuala Lumpur's Golden Triangle. Features include a full glass curtain facade, KL's highest and longest cantilevered sky pool, premium finishes, and walking distance to MRT Conlay and Prince Court Medical Centre.",
    "zh": "Eaton Residences（豪景园）位于吉隆坡金三角核心地段 JALAN KIA PENG，楼高52层，共632单位。项目拥有吉隆坡最高及最长的悬挑空中无边际泳池、全玻璃幕墙设计，可俯瞰皇家雪兰莪高尔夫球场及国油双峰塔壮丽天际线，离 MRT Conlay 站仅130米。"
@@ -7523,6 +7626,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "conlay": {
   "source": "Developer sales kit (2026-08-13)",
   "developer": "Patsawan Properties Sdn. Bhd. (A joint venture between Eastern & Oriental Berhad and Mitsui Fudosan Group)",
+  "maintenanceFee": "RM0.80 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.8,
   "description": {
    "en": "Conlay is a contemporary, tropical tower in the heart of Kuala Lumpur, designed by Kerry Hill Architects. It features a distinctive fin-lined, picture-framed façade, offering panoramic city views. The project melds modernity with elegance, creating a calm urban resort. It offers an oasis of luxury in a dynamic world city, emphasizing craftsmanship, hospitality, and a seamless living experience."
   },
@@ -7605,6 +7710,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "atas-residences": {
   "source": "Developer sales kit (2026-08-20)",
   "developer": "Kaisar Maxim Sdn Bhd",
+  "maintenanceFee": "Estimate RM0.40psf including sinking fund",
+  "maintenanceFeePsf": 0.4,
   "description": {
    "en": "THE ATAS is a low-density, pet-friendly condominium in the prime location of Taman Desa, Kuala Lumpur. Featuring family-sized 'Sky Semi-D' layouts from 3+1 to 4+1 rooms across 3 towers, it offers a comprehensive range of over 50 lifestyle facilities and boasts excellent connectivity to major highways and public transport. The development is designed with multigenerational living in mind, providing spacious and adaptable layouts within a green building framework."
   },
@@ -7810,6 +7917,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "divine-kl-city-centre": {
   "source": "Developer sales kit (2026-08-20)",
   "developer": "Chin Hin Group Property",
+  "maintenanceFee": "RM 0.68 psf",
+  "maintenanceFeePsf": 0.68,
   "description": {
    "en": "Located 400 meters from the Petronas Twin Towers, DIVINE KL City Centre is a new icon in Kuala Lumpur's skyline. Designed by a collaboration of award-winning architects—Konzepte, Ministry of Design, and SD2—this 83-storey leasehold serviced apartment offers a seamless harmony of architecture, interiors, and landscape. Rising over 300 meters, it features one of the city's highest sky facilities, including a 360° rooftop bar on Level 81 and an infinity lap pool on Level 80 with front-row views of the city. The project aims to provide a new paradigm of vertical living that is elegant, effortless, and iconic for those who move globally but live meaningfully."
   },
@@ -7990,6 +8099,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "m-aurora": {
   "source": "Developer sales kit (2026-08-21)",
   "developer": "Major Land Development Sdn Bhd (a wholly-owned subsidiary of Mah Sing Group Berhad)",
+  "maintenanceFee": "RM0.30 psf (indicative, excluding 10% sinking fund)",
+  "maintenanceFeePsf": 0.3,
   "description": {
    "en": "M Aurora, ideally located at Old Klang Road, Kuala Lumpur, offers seamless access to major highways (NPE, Federal Highway, KESAS). Surrounded by public transport, malls, schools, healthcare, and leisure spots, everyday convenience is right at your doorstep. The design of M Aurora takes inspiration from the shifting, dynamic beauty of the aurora lights. It embodies the essence of this breathtaking phenomenon through contrasting colours, the use of vertical fins and negative space, thoughtful building orientation, natural light and airflow, and distinctive architectural elements. Every detail is designed with purpose, from smart infrastructure to lifestyle-driven facilities, creating a seamless living experience that balances comfort, convenience, and long-term value."
   },

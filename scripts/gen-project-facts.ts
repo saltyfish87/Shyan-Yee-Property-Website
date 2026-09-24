@@ -28,6 +28,9 @@ export interface ProjectFacts {
   source: string;
   /** The developer as the database names it — usually the parent group plus the project company. */
   developer?: string;
+  /** Maintenance fee exactly as the sales kit words it, plus the psf rate read out of it. */
+  maintenanceFee?: string;
+  maintenanceFeePsf?: number;
   /** The developer's own write-up, as published in the database. */
   description?: { en?: string; zh?: string };
   keyFeatures: string[];
@@ -231,6 +234,9 @@ export interface ProjectFacts {
   source: string;
   /** The developer as the database names it — usually the parent group plus the project company. */
   developer?: string;
+  /** Maintenance fee exactly as the sales kit words it, plus the psf rate read out of it. */
+  maintenanceFee?: string;
+  maintenanceFeePsf?: number;
   /** The developer's own write-up, as published in the database. */
   description?: { en?: string; zh?: string };
   keyFeatures: string[];
@@ -304,6 +310,16 @@ async function main() {
       // The website sheet names the project company ("Quaver Sdn Bhd"); the database names the
       // group behind it ("Chin Hin Group Property (Quaver Sdn Bhd)"). Keep the richer one.
       developer: clean(row.developer) || undefined,
+      // The website sheet and the sales kit disagree on six projects — Maple Residences reads
+      // 1.32 psf there and 0.39 in its own kit, which is Orion's figure copied across a row.
+      // The kit is the developer's own document, so it wins.
+      ...(() => {
+        const raw = clean(row.maintenance_fee);
+        if (!raw) return {};
+        const m = raw.match(/([0-9]*\.?[0-9]+)\s*(?:psf|\/ ?s\.?f\.?|per\s*sq)/i);
+        const psf = m ? parseFloat(m[1]) : NaN;
+        return { maintenanceFee: raw, ...(isFinite(psf) && psf >= 0.1 && psf <= 3 ? { maintenanceFeePsf: psf } : {}) };
+      })(),
       description: (() => {
         const en = parseDescription(row.description_en || row.project_description);
         const zh = parseDescription(row.description_zh);
@@ -325,6 +341,7 @@ async function main() {
       if (!facts.nearby.length) facts.nearby = old.nearby || [];
       if (!facts.description) facts.description = old.description;
       if (!facts.developer) facts.developer = old.developer;
+      if (!facts.maintenanceFee) { facts.maintenanceFee = old.maintenanceFee; facts.maintenanceFeePsf = old.maintenanceFeePsf; }
     }
     if (facts.keyFeatures.length || facts.facilities.length || facts.nearby.length || facts.description) out[p.id] = facts;
     else missing.push(`${p.name} (row present but empty)`);
