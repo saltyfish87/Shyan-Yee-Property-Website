@@ -109,6 +109,29 @@ function videoObjects(lang: 'en' | 'zh'): any[] {
 interface BuyerShortlist {
   slug: string; h1: string; title: string; desc: string; blurb: string;
   pick: (p: any) => boolean;
+  /** Most lists read best cheapest-first; the holding-cost list needs its own order. */
+  sort?: (a: any, b: any) => number;
+  /** An extra column, where the list exists because of a figure the table does not already show. */
+  column?: { head: string; headZh: string; cell: (p: any) => string };
+}
+
+/**
+ * What the maintenance fee actually costs, in ringgit a month.
+ *
+ * Every site quotes it per square foot, which is not a number anyone can feel. On a 1,000 sq ft
+ * unit the spread across these projects runs from about RM 270 a month to RM 1,320 — the same
+ * again as a small car loan, every month, for as long as you own it. No competitor computes it,
+ * and it is the second-largest recurring cost after the mortgage.
+ */
+function feePsf(p: any): number | null {
+  const v = Number(String(p.maintenanceFee ?? '').replace(/[^0-9.]/g, ''));
+  // The column holds a psf rate; a few rows hold a monthly ringgit figure instead, which is not
+  // comparable and is left out rather than silently divided.
+  return isFinite(v) && v >= 0.1 && v <= 3 ? v : null;
+}
+function monthlyOn1000(p: any): number | null {
+  const f = feePsf(p);
+  return f === null ? null : Math.round(f * 1000);
 }
 
 /**
@@ -376,6 +399,14 @@ const BUYER_SHORTLISTS: BuyerShortlist[] = [
     desc: 'The projects I have been through myself, with the written review, the walkthrough video, or both.',
     blurb: 'These are the ones I have walked, filmed or written up. Everything else on the site is developer data only.',
     pick: p => !!reviewOf(p.id) || HOME_VIDEOS.some(v => v.projectId === p.id) },
+  { slug: 'lowest-monthly-maintenance', h1: 'What the Maintenance Fee Actually Costs, Cheapest First',
+    title: 'Lowest Maintenance Fee Condos in KL & Selangor | Monthly Cost Compared',
+    desc: 'Every project ranked by what the maintenance fee costs in ringgit a month on a 1,000 sq ft unit, not by the per-square-foot rate.',
+    blurb: 'Everyone quotes maintenance per square foot, which tells you nothing you can feel. This is the same fee in ringgit a month on a 1,000 sq ft unit. The spread here is roughly five to one, and you pay it every month for as long as you own the place. Projects whose sheet gives a monthly range instead of a psf rate are left out rather than guessed at.',
+    pick: p => monthlyOn1000(p) !== null,
+    sort: (a: any, b: any) => (monthlyOn1000(a) ?? Infinity) - (monthlyOn1000(b) ?? Infinity),
+    column: { head: 'Per month, 1,000 sq ft', headZh: '1,000 尺月付',
+      cell: p => { const m = monthlyOn1000(p); return m === null ? '' : `RM ${m.toLocaleString()}`; } } },
   // The area shortlists join the same family, so the route, the renderer, the sitemap and the
   // browse block all pick them up without a second code path.
   ...AREA_SHORTLISTS.map(a => ({
@@ -790,7 +821,7 @@ function renderSeoHtml(
     } else if (reqUrl.startsWith('/best/')) {
       const sl = BUYER_SHORTLISTS.find(x => `/best/${x.slug}` === reqUrl);
       if (sl) {
-        const picks = projects.filter(sl.pick).sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity));
+        const picks = projects.filter(sl.pick).sort(sl.sort || ((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity)));
         canonical = `${baseUrl}/best/${sl.slug}`;
         title = sl.title;
         desc = sl.desc;
@@ -808,7 +839,10 @@ function renderSeoHtml(
             r ? `<a href="${baseUrl}/blog/${r.slug}" style="color:#2563eb;text-decoration:none;">Read my review</a>` : '',
             v ? `<a href="https://www.youtube.com/watch?v=${v.youtubeId}" style="color:#2563eb;text-decoration:none;">Walkthrough video</a>` : ''
           ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">Developer data only</span>';
-          return `<tr><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"><a href="${baseUrl}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(p.area || '')}</td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(p.tenure || '')}</td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${escapeXml(p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} sq ft` : '')}</td><td style="padding:8px 10px;border-bottom:1px solid #f1f5f9;">${extras}</td></tr>`;
+          const cell = 'style="padding:8px 10px;border-bottom:1px solid #f1f5f9;"';
+          return `<tr><td ${cell}><a href="${baseUrl}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td>`
+            + (sl.column ? `<td ${cell}><strong>${escapeXml(sl.column.cell(p))}</strong></td>` : '')
+            + `<td ${cell}>${escapeXml(p.area || '')}</td><td ${cell}>${escapeXml(p.tenure || '')}</td><td ${cell}>${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td><td ${cell}>${escapeXml(p.builtUpMin ? `${p.builtUpMin}-${p.builtUpMax} sq ft` : '')}</td><td ${cell}>${extras}</td></tr>`;
         }).join('');
         preRenderedBody = `
           <div style="max-width: 1100px; margin: 0 auto; padding: 40px 20px; font-family: system-ui, sans-serif;">
@@ -816,7 +850,7 @@ function renderSeoHtml(
             <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 12px;">${escapeXml(sl.h1)}</h1>
             <p style="font-size: 16px; color: #475569; margin-bottom: 24px; line-height: 1.6;">${escapeXml(sl.blurb)}</p>
             <h2 style="font-size: 20px; font-weight: 700; margin: 24px 0 12px;">${picks.length} project${picks.length === 1 ? '' : 's'}, cheapest first</h2>
-            <table style="border-collapse:collapse;width:100%;font-size:14px;"><thead><tr>${['Project', 'Area', 'Tenure', 'From', 'Built-up', 'My coverage'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;color:#0f172a;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;"><thead><tr>${['Project', ...(sl.column ? [sl.column.head] : []), 'Area', 'Tenure', 'From', 'Built-up', 'My coverage'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;color:#0f172a;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
             <p style="font-size:13px;color:#64748b;margin-top:16px;">Prices are developer list prices and change with each release. Confirm the current price list before deciding.</p>
             <h2 style="font-size: 20px; font-weight: 700; margin: 28px 0 10px;">Other shortlists</h2>
             <ul style="line-height:1.9;">${BUYER_SHORTLISTS.filter(o => o.slug !== sl.slug).map(o => `<li><a href="${baseUrl}/best/${o.slug}" style="color:#2563eb;text-decoration:none;">${escapeXml(o.title)}</a></li>`).join('')}</ul>
@@ -930,6 +964,7 @@ function renderSeoHtml(
                 ${row('Tenure', a.tenure || '', b.tenure || '')}
                 ${row('Developer', a.developer || '', b.developer || '')}
                 ${row('Completion', String(a.completionYear || ''), String(b.completionYear || ''))}
+                ${row('Maintenance, 1,000 sq ft', (() => { const m = monthlyOn1000(a); return m === null ? '' : `RM ${m.toLocaleString()} a month`; })(), (() => { const m = monthlyOn1000(b); return m === null ? '' : `RM ${m.toLocaleString()} a month`; })())}
                 ${row('Nearest station, measured', stationCell(ca), stationCell(cb))}
               </tbody>
             </table>
@@ -1239,7 +1274,7 @@ function renderSeoHtml(
                   <li><strong>Starting Price:</strong> <span style="color: #16a34a; font-weight: 700;">${priceStr || 'Contact Agent for Sales Sheet'}</span></li>
                   <li><strong>Bedrooms:</strong> ${targetProject.bedroomsMin} - ${targetProject.bedroomsMax} Beds</li>
                   <li><strong>Built-up Sizes:</strong> ${targetProject.builtUpMin ? targetProject.builtUpMin.toLocaleString() : ''} - ${targetProject.builtUpMax ? targetProject.builtUpMax.toLocaleString() : ''} sqft</li>
-                  <li><strong>Maintenance Fee:</strong> ${targetProject.maintenanceFee ? 'RM ' + targetProject.maintenanceFee + ' / sqft' : (targetProject.maintenanceFeeStr || 'Standard')}</li>
+                  <li><strong>Maintenance Fee:</strong> ${targetProject.maintenanceFee ? 'RM ' + targetProject.maintenanceFee + ' / sqft' : (targetProject.maintenanceFeeStr || 'Standard')}${(() => { const m = monthlyOn1000(targetProject); return m === null ? '' : ` &mdash; about <strong>RM ${m.toLocaleString()} a month</strong> on a 1,000 sq ft unit`; })()}</li>
                   <li><strong>Completion:</strong> ${targetProject.completionStatus || 'Under Construction'} ${targetProject.completionYear ? '(' + targetProject.completionYear + ')' : ''}</li>
                 </ul>
               </div>
@@ -1498,7 +1533,8 @@ const ZH_SHORTLIST_TITLES: Record<string, string> = {
   'freehold-projects': '永久地契楼盘',
   'family-3-bedroom': '三房或以上的楼盘',
   'near-mrt-lrt': '走路一公里内有车站的楼盘',
-  'projects-i-have-reviewed': '我走过、拍过或写过的楼盘'
+  'projects-i-have-reviewed': '我走过、拍过或写过的楼盘',
+  'lowest-monthly-maintenance': '管理费每月实付多少，由低排起'
 };
 
 const ZH_BLOG_LIST: any[] = [...Object.values(GENERATED_ZH_ARTICLES), ...(PRE_TRANSLATED_BLOGS['zh-CN'] || []).filter((b: any) => !GENERATED_ZH_ARTICLES[b.slug])];
@@ -1653,7 +1689,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
       const ar = AREA_SHORTLISTS.find(x => `/best/${x.slug}` === reqUrl);
       if (sl) {
         const picks = projects.filter(p => { try { return sl.pick(p as any); } catch { return false; } })
-          .sort((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity));
+          .sort(sl.sort || ((a: any, b: any) => (Number(a.startingPrice) || Infinity) - (Number(b.startingPrice) || Infinity)));
         const heading = ar ? `${ar.area}${ar.slice.labelZh}的新楼盘` : (ZH_SHORTLIST_TITLES[sl.slug] || sl.h1);
         title = `${heading} | 价格、面积、完工年份 | Shyan Yee`;
         desc = `${heading}：共 ${picks.length} 个楼盘，价格、建筑面积、地契、完工年份与最近车站，以及我写过评测或拍过视频的是哪几个。`;
@@ -1674,6 +1710,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
             vid ? `<a href="https://www.youtube.com/watch?v=${vid.youtubeId}">视频</a>` : ''
           ].filter(Boolean).join(' &middot; ') || '<span style="color:#94a3b8;">仅发展商资料</span>';
           return `<tr><td ${td}><a href="${home}/projects/${p.id}" style="color:#0f172a;font-weight:700;text-decoration:none;">${escapeXml(p.name)}</a></td>`
+            + (sl.column ? `<td ${td}><strong>${escapeXml(sl.column.cell(p))}</strong></td>` : '')
             + `<td ${td}>${escapeXml(p.area || '')}</td>`
             + `<td ${td}>${zhTenure(p.tenure)}</td>`
             + `<td ${td}>${escapeXml(p.startingPriceFormatted || p.priceRange || '')}</td>`
@@ -1688,7 +1725,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
             <nav style="margin-bottom:24px;font-size:14px;color:#64748b;"><a href="${home}" style="color:#2563eb;text-decoration:none;">首页</a> &gt; <a href="${home}/projects" style="color:#2563eb;text-decoration:none;">全部楼盘</a> &gt; <span>${escapeXml(heading)}</span></nav>
             <h1 style="font-size:32px;font-weight:800;margin-bottom:12px;">${escapeXml(heading)}</h1>
             <p style="font-size:16px;color:#475569;line-height:1.8;">共 ${picks.length} 个楼盘，由低价排起。车站距离取自 OpenStreetMap 的直线距离，实际走路会更远。</p>
-            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:24px;"><thead><tr>${['楼盘', '地区', '地契', '起价', '面积', '完工', '最近车站', '我的内容'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+            <table style="border-collapse:collapse;width:100%;font-size:14px;margin-top:24px;"><thead><tr>${['楼盘', ...(sl.column ? [sl.column.headZh] : []), '地区', '地契', '起价', '面积', '完工', '最近车站', '我的内容'].map(h => `<th style="text-align:left;padding:8px 10px;border-bottom:2px solid #e2e8f0;">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
             <p style="font-size:13px;color:#64748b;margin-top:16px;">价格为发展商开价，每一期都会变动。决定前请向我索取最新价目表。</p>
             <h2 style="font-size:20px;margin-top:32px;">其他清单</h2>
             <ul style="line-height:1.9;columns:2;">${others.map(o => `<li><a href="${home}/best/${o.slug}">${escapeXml(ZH_SHORTLIST_TITLES[o.slug] || o.h1)}</a></li>`).join('')}</ul>
