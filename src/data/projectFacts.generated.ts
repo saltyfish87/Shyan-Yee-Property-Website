@@ -5245,7 +5245,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "Setia MF SFH Development Sdn Bhd",
   "checked": "2026-08-10",
-  "maintenanceFee": "RM0.50 psf",
+  "maintenanceFee": "RM0.50 psf (incl. 10% sinking fund)",
   "maintenanceFeePsf": 0.5,
   "description": {
    "en": "Parkside Residences is the inaugural residential development at Setia Federal Hill, presenting a rare opportunity to be part of an exclusive community in a new era of urban living in Kuala Lumpur. This revolutionary 62-storey residential tower is where the best of modern luxury and city-centre efficiency meet central park greenery and serene tranquility. Nestled high above the bustling city, this architectural masterpiece offers an unparalleled living experience, designed to elevate your senses and nurture your spirit."
