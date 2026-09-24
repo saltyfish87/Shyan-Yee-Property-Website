@@ -380,7 +380,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KL City Centre Park",
+    "name": "KLCC Park",
     "distance": "5.1km"
    }
   ],
@@ -3359,7 +3359,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Mall",
-    "name": "Suria KL City Centre",
+    "name": "Suria KLCC",
     "distance": "2.9km"
    },
    {
@@ -4012,7 +4012,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KL City Centre (5km)"
+    "name": "Suria KLCC (5km)"
    },
    {
     "category": "Transportation Hubs",
@@ -4306,7 +4306,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KL City Centre",
+    "name": "Suria KLCC",
     "distance": "8.0km"
    },
    {
@@ -4366,7 +4366,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Parks",
-    "name": "KL City Centre Park",
+    "name": "KLCC Park",
     "distance": "8.1km"
    }
   ],
@@ -5305,7 +5305,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  },
  "khaya-residence": {
   "source": "Developer sales kit (2026-08-10)",
-  "developer": "Bayu Mantap Sdn Bhd",
+  "developer": "Melati Ehsan Group (Bayu Mantap Sdn Bhd)",
   "checked": "2026-08-10",
   "maintenanceFee": "Approx. RM0.50 psf (including sinking fund)",
   "maintenanceFeePsf": 0.5,
@@ -5685,7 +5685,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KL City Centre"
+    "name": "Suria KLCC"
    },
    {
     "category": "Shopping",
@@ -6312,7 +6312,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFee": "RM0.33 psf (inclusive of sinking fund)",
   "maintenanceFeePsf": 0.33,
   "description": {
-   "en": "An Integrated Transit Oriented Development in Ara Damansara. Surrounded by amenities and urban connectivity, yet framed by calm, green pockets, this is where accessibility meets tranquillity - offering the freedom to live, move, and grow with ease. Anchored by a thoughtfully curated retail park, ARRA offers more than just a home - it brings an entire lifestyle to your doorstep."
+   "en": "ARRA Residences is a 33-storey freehold serviced apartment development situated in Ara Damansara, Petaling Jaya, adjacent to Jalan Lapangan Terbang Subang. Spanning a 4.145-acre commercial land parcel under HDA, the project comprises 1275 units with expected completion in 2030. The development is located within a 2-minute walk from LRT Ara Damansara Station, with proximity to Citta Mall, Subang Airport, and Ara Damansara Medical Centre. Built-up sizes range from 721 sq ft to 1317 sq ft, offering layouts of 2 to 4 bedrooms and 2 to 3 bathrooms. Facilities include a swimming pool, gymnasium, sky pickleball court, cloud yoga zone, and rooftop BBQ, with at least one parking bay allocated per unit."
   },
   "keyFeatures": [
    "Directly next to LRT Ara Damansara Station (less than 200m, 2 mins walking distance)",
@@ -6961,7 +6961,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  },
  "amaya": {
   "source": "Developer sales kit (2026-09-13)",
-  "developer": "Indo Aman Bina Sdn Bhd",
+  "developer": "TA Group (Indo Aman Bina Sdn Bhd)",
   "checked": "2026-09-13",
   "maintenanceFee": "RM0.45 psf (including sinking fund)",
   "maintenanceFeePsf": 0.45,
@@ -7201,7 +7201,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  },
  "forest-hill": {
   "source": "Developer sales kit (2026-09-22)",
-  "developer": "Foresthill Damansara Land Sdn. Bhd.",
+  "developer": "Ehsan Bina Group (Foresthill Damansara Land Sdn. Bhd.)",
   "checked": "2026-09-22",
   "maintenanceFee": "RM0.35psf (including sinking fund, estimated)",
   "maintenanceFeePsf": 0.35,
@@ -7875,7 +7875,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFee": "RM0.40 psf inclusive of sinking fund",
   "maintenanceFeePsf": 0.4,
   "description": {
-   "en": "Bamboo Hills Residences is a 10-acre freehold serviced apartment development located at Taman Bamboo, off the Duta-Ulu Kelang Expressway in Kuala Lumpur. The development comprises three residential blocks complemented by a retail podium, inspiring a modern lifestyle of wellness and sustainability. As a transit-oriented development, Bamboo Hills Residences will have a direct link bridge to the Kentonmen MRT station."
+   "en": "Bamboo Hills Residences is a 50-storey freehold development on a 9.8-acre site along Jalan Ipoh, Kuala Lumpur, offering 2,517 units with an expected completion in 2029. The transit-oriented development is situated 0.1km from Kentonmen MRT Station and the Bamboo Hills Dining Enclave, with access to Lebuhraya Duta-Ulu Kelang (DUKE). Built-up sizes range from 603 sq ft to 904 sq ft, offering configurations of 2 to 3 bedrooms and 1 to 2 bathrooms. Sustainable features include EV charging facilities, solar panels, and rainwater harvesting systems. Resident parking spans Levels 1 to 7, providing one car park for Type A units and two car parks for Type B and C units."
   },
   "keyFeatures": [],
   "facilities": [
@@ -8122,7 +8122,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping",
-    "name": "Suria KL City Centre"
+    "name": "Suria KLCC"
    },
    {
     "category": "Shopping",
@@ -8324,7 +8324,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KL City Centre"
+    "name": "Suria KLCC"
    },
    {
     "category": "Shopping Malls",
@@ -8408,7 +8408,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KL City Centre Park"
+    "name": "KLCC Park"
    },
    {
     "category": "Recreation",
@@ -8550,7 +8550,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Malls",
-    "name": "Suria KL City Centre"
+    "name": "Suria KLCC"
    },
    {
     "category": "Malls",
@@ -8614,7 +8614,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Fitness and Recreation",
-    "name": "KL City Centre Park"
+    "name": "KLCC Park"
    },
    {
     "category": "Fitness and Recreation",
@@ -8740,7 +8740,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KL City Centre",
+    "name": "Suria KLCC",
     "distance": "1.8km"
    },
    {
@@ -8770,7 +8770,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Leisure and Parks",
-    "name": "KL City Centre Park",
+    "name": "KLCC Park",
     "distance": "1.3km"
    },
    {
@@ -8928,7 +8928,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Landmark & Entertainment",
-    "name": "Petronas Twin Tower / Suria KL City Centre"
+    "name": "Petronas Twin Tower / Suria KLCC"
    },
    {
     "category": "Landmark & Entertainment",
@@ -9461,7 +9461,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  },
  "ascott-star-residence": {
   "source": "Developer sales kit (2026-07-30)",
-  "developer": "Alpine Return Sdn Bhd",
+  "developer": "Symphony Life Berhad & United Malayan Land Berhad (Alpine Return Sdn Bhd)",
   "checked": "2026-07-30",
   "maintenanceFee": "RM0.65 psf including sinking fund",
   "maintenanceFeePsf": 0.65,
@@ -9516,7 +9516,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Nearby",
-    "name": "Suria KL City Centre"
+    "name": "Suria KLCC"
    },
    {
     "category": "Nearby",
@@ -9552,7 +9552,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Nearby",
-    "name": "KL City Centre LRT Station"
+    "name": "KLCC LRT Station"
    },
    {
     "category": "Nearby",
@@ -9809,7 +9809,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping Malls",
-    "name": "Suria KL City Centre",
+    "name": "Suria KLCC",
     "distance": "965m"
    },
    {
@@ -9863,7 +9863,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation & Landmarks",
-    "name": "KL City Centre Park",
+    "name": "KLCC Park",
     "distance": "550m"
    },
    {
@@ -10234,7 +10234,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation",
-    "name": "KL City Centre Park"
+    "name": "KLCC Park"
    },
    {
     "category": "Recreation",
@@ -10454,7 +10454,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Shopping & Leisure",
-    "name": "Suria KL City Centre (10.1km)"
+    "name": "Suria KLCC (10.1km)"
    },
    {
     "category": "Education",
@@ -10551,7 +10551,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "nearby": [
    {
     "category": "Shopping & Entertainment",
-    "name": "Suria KL City Centre (400m)"
+    "name": "Suria KLCC (400m)"
    },
    {
     "category": "Shopping & Entertainment",
@@ -10587,7 +10587,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Public Transportation",
-    "name": "KL City Centre LRT Station (500m)"
+    "name": "KLCC LRT Station (500m)"
    },
    {
     "category": "Public Transportation",
@@ -10671,7 +10671,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    },
    {
     "category": "Recreation & Attraction",
-    "name": "KL City Centre Park (600m)"
+    "name": "KLCC Park (600m)"
    },
    {
     "category": "Recreation & Attraction",
@@ -10969,6 +10969,8713 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
     "size": "1019",
     "beds": "4",
     "baths": "3"
+   }
+  ]
+ },
+ "royal-lexis-kuala-lumpur": {
+  "source": "Developer sales kit (2026-08-29)",
+  "developer": "Kuala Lumpur Metro Group",
+  "checked": "2026-08-29",
+  "maintenanceFee": "RM 0.80 + (10% Sinking Fund)",
+  "description": {
+   "en": "Kuala Lumpur's Beacons of Opulence & Exclusivity. KL Metro Group, an esteemed and award-winning developer, continues to shape the Kuala Lumpur skyline with its latest prestigious project, Royal Lexis, strategically located in the heart of Kuala Lumpur city. Tasteful in every detail and appointed with contemporary interiors, each unit features a spacious bedroom, living room and a full bathroom. Its bright tone and sleek furnishing enriches and dignifies its aesthetic quality and effect.",
+   "zh": "吉隆坡丽昇皇廷套房:奢华与尊贵象征。吉隆坡都市集团是一家备受赞誉且屡获殊荣的开发商,其最新和卓越的项目丽昇皇廷套房战略性地坐落在市中心,持续塑造着吉隆坡的天际线。各单位卧室与客厅宽敞豪气,内设浴室、一丝不苟的设计,处处洋溢独家品味;时尚内部装潢,明亮抢眼,更显优质气派。"
+  },
+  "keyFeatures": [
+   "Strategically located in the heart of Kuala Lumpur city",
+   "All units come with a private pool",
+   "Managed by Lexis Hotel Group",
+   "Fully Furnished"
+  ],
+  "facilities": [
+   "Concierge",
+   "Roselle Coffee House",
+   "Gym",
+   "Lobby",
+   "Pre-Function Area",
+   "Sky Ballroom",
+   "Bridal Room",
+   "Cafe",
+   "Outdoor Cafe",
+   "Sky Infinity Pool",
+   "Japanese Restaurant",
+   "Executive Lounge",
+   "Speciality Restaurant",
+   "Satellite Bar",
+   "Sky Deck"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "KLCC LRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Ampang Park LRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Raja Chulan Monorail Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Bukit Bintang Monorail Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Conlay MRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Bukit Bintang MRT Station"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Suria KLCC"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Pavilion Kuala Lumpur"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Avenue K"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Starhill"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Lot 10"
+   },
+   {
+    "category": "Landmarks",
+    "name": "KL City Centre Twin Towers"
+   },
+   {
+    "category": "Landmarks",
+    "name": "Kuala Lumpur Convention Centre"
+   },
+   {
+    "category": "Landmarks",
+    "name": "KLCC Park"
+   },
+   {
+    "category": "Landmarks",
+    "name": "KL Tower"
+   },
+   {
+    "category": "Hospitals",
+    "name": "Tung Shin Hospital"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "573",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "802",
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1085",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "573–1155"
+   }
+  ]
+ },
+ "lunar-seputeh": {
+  "source": "Developer sales kit (2026-08-22)",
+  "developer": "MRCB Land",
+  "checked": "2026-08-22",
+  "maintenanceFee": "RM0.495 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.495,
+  "description": {
+   "en": "Welcome to Lunar Seputeh, the latest phase in the thriving integrated development, 9 Seputeh. Located along the vibrant Old Klang Road, Lunar Seputeh allows residents to live closer to established amenities and conveniences of the city, yet be away from the bustle. This modern residence offers more than meets the eye - an inspired outlook, over 40 curated lifestyle facilities, all cradled within a relaxed residential environment to come home to. Guided by Japanese philosophy of harmony and balanced living, Lunar Seputeh adopts a design approach centred on simplicity, clarity and thoughtful space planning. It is about creating a home that feels steady, comfortable and quietly enduring."
+  },
+  "keyFeatures": [
+   "Part of the 17.4-acre 9 Seputeh integrated development",
+   "Japanese-inspired design philosophy focusing on harmony and balanced living",
+   "Over 40 curated lifestyle facilities across multiple levels, including a Gourmet Lounge and Onsen Bath",
+   "Pet-friendly community spaces such as 'Paw Haven'",
+   "Green-certified building with features like solar PV panels and rainwater harvesting",
+   "Multi-tier security with access card system and CCTV surveillance",
+   "Strategic location with direct access to the OKR-NPE link bridge, just 700m from Mid Valley City",
+   "Partly furnished units including kitchen cabinets, air-conditioners, and water heaters."
+  ],
+  "facilities": [
+   "Level 12",
+   "Lift Lobby",
+   "Multipurpose Hall",
+   "Pre-Function Area",
+   "Sound Studio",
+   "Sculpture",
+   "Toilets",
+   "Stillness Corner",
+   "Outdoor Fitness",
+   "Half-Basketball Court",
+   "Boxing Corner",
+   "Table Tennis",
+   "Working Pods",
+   "Group Seating Area",
+   "Parents' Corner",
+   "Toddlers' Corner",
+   "Floating Lounge",
+   "Gentle Tides",
+   "Jacuzzi",
+   "Infinity Pool",
+   "Aqua Terrace",
+   "Sunken Retreat",
+   "Changing Room + Sauna",
+   "Laundrette",
+   "Zen Courtyard",
+   "Paw Haven",
+   "Community Green",
+   "Moonlight Pavilion",
+   "Serenity Deck",
+   "Planter Island",
+   "Water Jet",
+   "Stillwater Lounge",
+   "Onsen Bath",
+   "Play Area",
+   "Junior Terrace",
+   "Seating",
+   "Pool Pavilion",
+   "Outdoor Shower",
+   "Water Play",
+   "Long Bench"
+  ],
+  "nearby": [
+   {
+    "category": "Highway",
+    "name": "New Pantai Expressway (NPE)"
+   },
+   {
+    "category": "Highway",
+    "name": "SPRINT Expressway (SPE)"
+   },
+   {
+    "category": "Highway",
+    "name": "OKR-NPE Link Bridge (Direct Access)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Mid Valley City",
+    "distance": "700m"
+   },
+   {
+    "category": "Commercial Hub",
+    "name": "Bangsar South",
+    "distance": "2km"
+   },
+   {
+    "category": "Transportation Hub",
+    "name": "KL Sentral",
+    "distance": "2km"
+   },
+   {
+    "category": "Park",
+    "name": "Promenade Boulevard",
+    "distance": "Community Linear Park"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "683",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B1",
+    "size": "841",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1A",
+    "size": "841",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "930",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1(Dual Key)",
+    "size": "1280",
+    "beds": "3",
+    "baths": "3+1"
+   },
+   {
+    "type": "C2",
+    "size": "1280",
+    "beds": "3",
+    "baths": "3+1"
+   },
+   {
+    "type": "C2A",
+    "size": "1280",
+    "beds": "3",
+    "baths": "3+1"
+   },
+   {
+    "type": "D",
+    "size": "1646",
+    "beds": "4+1",
+    "baths": "4+1"
+   }
+  ]
+ },
+ "swnk-houze": {
+  "source": "Developer sales kit (2026-08-24)",
+  "developer": "BBCC Development Sdn. Bhd. (UDA, EcoWorld & EPF)",
+  "checked": "2026-08-24",
+  "maintenanceFee": "RM 0.60 psf",
+  "maintenanceFeePsf": 0.6,
+  "description": {
+   "en": "Well-placed at the heart of Kuala Lumpur City Centre, this riveting residential tower will boldly stamp its mark on the skyline. Contemporary and chic, SWNK Houze is poised to set a new precedent of style and convenience for urbanites.",
+   "zh": "位于吉隆坡市中心。这座引人注目的大楼将在市中心的天际线烙下印记。别致现代, SWNK HOUZE为都市人开创的最新首选,时尚及便捷。"
+  },
+  "keyFeatures": [
+   "Located in the Golden Triangle of Kuala Lumpur City Centre",
+   "Part of the 19.4-acre BBCC integrated development with a transit hub",
+   "The closest residential tower to the BBCC Transit Hub",
+   "Direct link to LaLaport Mall",
+   "Partially furnished units with items like kitchen cabinets, air-conditioners, and wardrobe",
+   "Transit Oriented Integrated Development.",
+   "Do comply with it to protect the End Financing and avoid from slash loan margins",
+   "This also applicable to Whatsapp blasting and any other marketing method that will affect the end financing loan margin",
+   "建筑师 Architect: GDP Architects",
+   "Gross Floor Area 313,520 sq.ft. / Nett Floor Area 311,866 sq.ft"
+  ],
+  "facilities": [
+   "1. Swimming Pool 泳池",
+   "2. BBQ Area 烧烤区",
+   "3. Pool Deck 泳池甲板",
+   "4. Outdoor Shower 户外淋浴",
+   "5. Chillout Lounge 休息室",
+   "6. Gymnasium 健身房",
+   "7. Multipurpose Hall 多功能厅",
+   "8. Lift Lobby 电梯大堂",
+   "9. Toilet / Changing Area 卫生间/更衣区域",
+   "10. Herb Garden 草本园"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "BBCC Transit Hub",
+    "distance": "0km"
+   },
+   {
+    "category": "Shopping",
+    "name": "LaLaport BBCC",
+    "distance": "0km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Berjaya Times Square"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion Kuala Lumpur"
+   },
+   {
+    "category": "Shopping",
+    "name": "Sungei Wang Plaza"
+   },
+   {
+    "category": "Shopping",
+    "name": "Plaza Low Yat"
+   },
+   {
+    "category": "Entertainment",
+    "name": "BBCC Entertainment Hub (Zepp Hall, MGB, GSC Cinema)",
+    "distance": "0km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Tung Shin Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Prince Court Medical Centre"
+   },
+   {
+    "category": "Education",
+    "name": "St. John's International School"
+   },
+   {
+    "category": "Education",
+    "name": "Taylor's International School"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A(A1, A2, A3)",
+    "size": "463"
+   },
+   {
+    "type": "B(B1)",
+    "size": "549",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "C(C1, C2)",
+    "size": "657",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "D(D1, D2)",
+    "size": "818",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "E(E1, E2)",
+    "size": "861",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "G(G1, G2)",
+    "size": "667"
+   },
+   {
+    "type": "H(H1)",
+    "size": "1227",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "F(F1)",
+    "size": "1238",
+    "beds": "3",
+    "baths": "3"
+   }
+  ]
+ },
+ "lucentia-residences-bukit-bintang-city-centre": {
+  "source": "Developer sales kit (2026-08-26)",
+  "developer": "BBCC Development Sdn Bhd (A joint venture between UDA Holdings Berhad, EcoWorld Development Group Berhad and Employees Provident Fund)",
+  "checked": "2026-08-26",
+  "maintenanceFee": "RM0.60 psf",
+  "maintenanceFeePsf": 0.6,
+  "description": {
+   "en": "Lucentia is the first residential offering in BBCC. This high-rise residential development features two conjoined towers, soaring 47 and 35 floors respectively. Drawing inspiration from traditional Japanese paper lanterns, Lucentia is designed to infuse your world with light and a lightness of spirit. By day, the interior is flooded with natural light, and by night, it is softly illuminated, a welcoming beacon to guide you home.",
+   "zh": "LUCENTIA是武吉免登城中城(BBCC) 计划下的第一项住宅项目,由两栋分别楼高47层及35层可相连互通的楼体组成。这项豪华公寓策划从日式纸灯笼中汲取设计灵感,将光的艺术融入家居生活,让日常每一天都沉浸在光的诗性美学中。日间,室内充沛着热带自然光线;落日后,细腻柔和的光线微微透入,将像盏温柔的灯指引回家的路。"
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Gourmet Kitchen",
+   "Multipurpose Hall",
+   "Lounge",
+   "Surau",
+   "Laundry Room",
+   "Tree House",
+   "Playground",
+   "Sun Deck",
+   "Kid's Pool",
+   "Hammock Garden",
+   "Outdoor Seating",
+   "Function Lawn",
+   "Food Preparation Area",
+   "Outdoor Terrace",
+   "Herb Garden",
+   "Changing Room",
+   "Sunken Deck",
+   "Biological Pool",
+   "Jacuzzi Pod",
+   "50m Lap Pool",
+   "Family Pool",
+   "Covered Plaza",
+   "Cantilevered Gym",
+   "Parlor",
+   "Pool Pavilion",
+   "Reading Suite / Library",
+   "Garden Pavilion",
+   "Tea Lounge",
+   "Garden Cabanas",
+   "Chill Deck",
+   "Games and Music Room",
+   "Family Living Suite",
+   "Family Kitchen Suite",
+   "BBQ Deck",
+   "Reflexology Path",
+   "Viewing Deck",
+   "Gym",
+   "Yoga Deck",
+   "Spa Lounge",
+   "Sitting Area"
+  ],
+  "nearby": [
+   {
+    "category": "Transportation",
+    "name": "Hang Tuah LRT Station"
+   },
+   {
+    "category": "Transportation",
+    "name": "Hang Tuah Monorail Station"
+   },
+   {
+    "category": "Transportation",
+    "name": "Merdeka MRT Station"
+   },
+   {
+    "category": "Shopping",
+    "name": "Mitsui Shopping Park LaLaport (within BBCC)"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion Kuala Lumpur"
+   },
+   {
+    "category": "Shopping",
+    "name": "Starhill Gallery"
+   },
+   {
+    "category": "Shopping",
+    "name": "Fahrenheit 88"
+   },
+   {
+    "category": "Shopping",
+    "name": "Lot 10"
+   },
+   {
+    "category": "Shopping",
+    "name": "Sungei Wang Plaza"
+   },
+   {
+    "category": "Shopping",
+    "name": "Berjaya Times Square"
+   },
+   {
+    "category": "Shopping",
+    "name": "Nu Sentral"
+   },
+   {
+    "category": "Shopping",
+    "name": "Sunway Velocity Mall"
+   },
+   {
+    "category": "Shopping",
+    "name": "MyTOWN Shopping Centre"
+   },
+   {
+    "category": "Shopping",
+    "name": "IKEA Cheras"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Tung Shin Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Prince Court Medical Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Cardiac Vascular Sentral Kuala Lumpur (CVSKL)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Kuala Lumpur"
+   },
+   {
+    "category": "Healthcare",
+    "name": "HSC Medical Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Gleneagles Kuala Lumpur"
+   },
+   {
+    "category": "Education",
+    "name": "Alice Smith International School"
+   },
+   {
+    "category": "Education",
+    "name": "Taylor's International School"
+   },
+   {
+    "category": "Education",
+    "name": "Sayfol International School"
+   },
+   {
+    "category": "Education",
+    "name": "Eaton House International"
+   },
+   {
+    "category": "Education",
+    "name": "INTI International College Kuala Lumpur"
+   },
+   {
+    "category": "Education",
+    "name": "Universiti Kuala Lumpur"
+   },
+   {
+    "category": "Landmarks",
+    "name": "PNB Merdeka 118"
+   },
+   {
+    "category": "Landmarks",
+    "name": "KL Tower"
+   },
+   {
+    "category": "Landmarks",
+    "name": "Petronas Twin Towers (KL City Centre)"
+   },
+   {
+    "category": "Landmarks",
+    "name": "Tun Razak Exchange (TRX)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A(Studio)",
+    "size": "454"
+   },
+   {
+    "type": "B(1 Bedroom)",
+    "size": "554",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "C(1+1 Bedroom)",
+    "size": "654",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "D(2 Bedrooms)",
+    "size": "859",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "Dd(Dual Key)",
+    "size": "859",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "E(Dual Key)",
+    "size": "882",
+    "beds": "2",
+    "baths": "2"
+   }
+  ]
+ },
+ "laurel-residence": {
+  "source": "Developer sales kit (2026-08-27)",
+  "developer": "Sunny Uptown Sdn Bhd (UOA Group)",
+  "checked": "2026-08-27",
+  "maintenanceFee": "RM0.33 psf (inclusive of sinking fund)",
+  "maintenanceFeePsf": 0.33,
+  "description": {
+   "en": "Laurel Residence is a 42-storey development located along Jalan Kerinchi in Bangsar South, Kuala Lumpur. Sited on 2.1 acres of leasehold commercial land under HDA, the project comprises 1,260 units and was completed in 2025. It offers access to Universiti LRT Station (1.1km) and Kerinchi LRT Station (1.2km), as well as the Federal Highway and SPRINT Expressway. Built-up sizes range from 495 sq ft to 903 sq ft with layouts ranging from 1+1 to 3 bedrooms and 1 to 2 bathrooms. Facilities include a gymnasium, garden pool, hydrotherapy spa, BBQ pit, and kids playground. A total of 1,409 floating car park bays are provided, with 1 bay for each unit."
+  },
+  "keyFeatures": [
+   "Transit-Oriented Development (TOD) with covered walkway to LRT station",
+   "Located in the self-sustaining township of Bangsar South",
+   "Surrounded by Grade A offices, retail hubs, and healthcare facilities",
+   "Easy access to major highways (Federal, NPE, SPRINT)",
+   "Partially furnished units."
+  ],
+  "facilities": [
+   "Grand Entrance",
+   "Guard House",
+   "Mail Room",
+   "Alcove",
+   "Grand Lobby",
+   "Drop Off Area",
+   "Pre Function Area",
+   "Multipurpose Hall",
+   "Washroom",
+   "Surau",
+   "Taska",
+   "Function Room 2",
+   "Function Room 1",
+   "Lobby Lounge",
+   "Management Office",
+   "Sun Deck",
+   "Zen Garden",
+   "Garden Benches",
+   "Hydrotherapy Spa",
+   "Reflexology Path",
+   "Zen Enclave",
+   "Games Room",
+   "Pool Lounge",
+   "In-Pool Loungers",
+   "Community Hangout Pavilion",
+   "BBQ Pit",
+   "Dining Alfresco",
+   "Zen Yoga Deck",
+   "Function Room 1 (Co-working Lounge)",
+   "Open Lounge",
+   "Kids Playground",
+   "Splash Deck",
+   "Splash Pool",
+   "Garden Pool",
+   "Gymnasium",
+   "Shower Area"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "Universiti LRT Station (1.1km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Kerinchi LRT Station (1.2km, with covered link bridge)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Bangsar LRT Station (4.0km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KL Sentral LRT Station (6.0km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Pantai Dalam KTM Station (2.8km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Angkasapuri KTM Station (3.0km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Mid Valley KTM Station (3.3km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Complimentary Bangsar South shuttle bus service"
+   },
+   {
+    "category": "Public Transport",
+    "name": "RapidKL Bus"
+   },
+   {
+    "category": "Highways",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "New Pantai Expressway (NPE)"
+   },
+   {
+    "category": "Highways",
+    "name": "SPRINT Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara-Puchong Expressway (LDP)"
+   },
+   {
+    "category": "Highways",
+    "name": "Setiawangsa-Pantai Expressway (SPE/DUKE 3)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Nexus Lifestyle Centre (100m walk)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "The Sphere Lifestyle Centre (450m walk)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "KL Gateway Mall (1.0km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Mid Valley Megamall (3.0km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Bangsar Village Shopping Centre (3.6km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Bangsar Shopping Centre (5.5km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Cengild G.I Medical Centre (140m walk)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "LifeCare Diagnostic Medical Centre (300m walk)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Kuala Lumpur (2.6km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Universiti Malaya Medical Centre (3.1km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Universiti Malaya Specialist Centre (4.1km)"
+   },
+   {
+    "category": "Education",
+    "name": "University of Malaya (2.7km)"
+   },
+   {
+    "category": "Education",
+    "name": "MAHSA University (3.4km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bangsar South 6-Acre Park (120m walk)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Gasing Forest Reserve (800m)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Kerinchi Forest Reserve"
+   },
+   {
+    "category": "Commercial Hubs",
+    "name": "The Vertical Corporate Towers"
+   },
+   {
+    "category": "Commercial Hubs",
+    "name": "The Horizon Boutique Offices"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "495",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "548",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C",
+    "size": "590",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "D",
+    "size": "903",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D1",
+    "size": "903",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "E",
+    "size": "853",
+    "beds": "3",
+    "baths": "2"
+   }
+  ]
+ },
+ "eden-taman-duta": {
+  "source": "Developer sales kit (2026-08-27)",
+  "developer": "BRDB Developments Sdn Bhd (5521-A)",
+  "checked": "2026-08-27",
+  "maintenanceFee": "RM0.70 psf (Estimate)",
+  "maintenanceFeePsf": 0.7,
+  "description": {
+   "en": "Eden Taman Duta is your next chapter in life — a story that will continue as an heirloom, carried forward in time."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Yoga Deck",
+   "Kids' Play Area",
+   "BBQ Area",
+   "Learner Pool",
+   "Central Lap Pool",
+   "Kids' Pool",
+   "Submerged Lounger Deck",
+   "Garden Cabanas",
+   "Wellness Suite",
+   "Steam Room",
+   "Sauna",
+   "Cold Plunge",
+   "Jacuzzi",
+   "Lounger Deck",
+   "Pool",
+   "Viewing Deck",
+   "Pre-function Area",
+   "Event Pavilion",
+   "Open Lawn",
+   "Tennis Court",
+   "Therapy Room",
+   "Sports Lounge",
+   "Multipurpose Court (Half Basketball / Pickleball)",
+   "Green Terrace",
+   "Waiting Pavilion",
+   "Guardhouse",
+   "EV Charging Bay",
+   "Pet Care Area",
+   "Visitors' Parking, Penthouse Lawn"
+  ],
+  "nearby": [
+   {
+    "category": "Shopping & Retail",
+    "name": "Publika"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "1 Mont Kiara"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "163 Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Plaza Damas"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Damansara City Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Pavilion Damansara Heights"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Bangsar Shopping Centre"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Bangsar Village I & II"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "IKEA Cheras"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Global Doctors Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Kuala Lumpur"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Prince Court Medical Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Tung Shin Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Kuala Lumpur Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "National Heart Institute"
+   },
+   {
+    "category": "Education",
+    "name": "Garden International School"
+   },
+   {
+    "category": "Education",
+    "name": "Mont Kiara International School"
+   },
+   {
+    "category": "Education",
+    "name": "The children's house Montessori"
+   },
+   {
+    "category": "Education",
+    "name": "Spectrum School"
+   },
+   {
+    "category": "Education",
+    "name": "Cempaka International School"
+   },
+   {
+    "category": "Education",
+    "name": "Cambridge International School"
+   },
+   {
+    "category": "Education",
+    "name": "Alice Smith School"
+   },
+   {
+    "category": "Education",
+    "name": "Sayfol International School"
+   },
+   {
+    "category": "Recreation & Leisure",
+    "name": "KL Golf & Country Club (KLGCC)"
+   },
+   {
+    "category": "Recreation & Leisure",
+    "name": "Royal Selangor Club"
+   },
+   {
+    "category": "Recreation & Leisure",
+    "name": "Titiwangsa Golf Course"
+   },
+   {
+    "category": "Recreation & Leisure",
+    "name": "Perdana Botanical Gardens"
+   },
+   {
+    "category": "Recreation & Leisure",
+    "name": "The Royal Selangor Golf Club"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "MATRADE Exhibition and Convention Centre"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "National Palace (Istana Negara)"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "National Science Centre"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "World Trade Centre Kuala Lumpur"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "Malaysian Houses of Parliament"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "KL Sentral"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "KL City Centre"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "KL Tower"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "Merdeka 118"
+   },
+   {
+    "category": "Landmarks & Connectivity",
+    "name": "The Exchange 106 (TRX)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A(Deluxe)",
+    "size": "5296–5533"
+   },
+   {
+    "type": "A(Penthouse)",
+    "size": "9182–9192",
+    "beds": "4+2",
+    "baths": "6+1"
+   },
+   {
+    "type": "C(Deluxe)",
+    "size": "6491"
+   },
+   {
+    "type": "C(Penthouse)",
+    "size": "11141",
+    "beds": "4+2",
+    "baths": "7+1"
+   },
+   {
+    "type": "D(Penthouse)",
+    "size": "18998–19041",
+    "beds": "5+2",
+    "baths": "8+1"
+   }
+  ]
+ },
+ "dnuri-residences-kwasa-damansara": {
+  "source": "Developer sales kit (2026-08-31)",
+  "developer": "EXSIM MX4 SDN. BHD. (a member of EXSIM Group)",
+  "checked": "2026-08-31",
+  "maintenanceFee": "RM0.46 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.46,
+  "description": {
+   "en": "D'Nuri Residences is an eco-responsible residential development located in the new Kwasa Damansara township, a joint development between Kwasa Land and the EXSIM Group. This project exemplifies innovative green features and is GreenRE certified, aligning with a philosophy of creating a sustainable environment. As a Transit-Oriented Development (TOD), it offers residents unparalleled connectivity with a 400-meter walk to the MRT Kwasa Sentral station. D'Nuri Residences is designated as an affordable housing project under LPHS, offering a single, practical 550 sqft 2-bedroom layout, making it an accessible entry point into a major urban development hub."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Swimming Pool",
+   "Wading Pool",
+   "Gym",
+   "Garden",
+   "Playground",
+   "BBQ",
+   "Multipurpose Hall",
+   "24-hour Security with Access Card System",
+   "CCTV",
+   "Landscaping"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "MRT Kwasa Sentral"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Kwasa Damansara"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Sultan Abdul Aziz Shah Airport (Subang Airport)"
+   },
+   {
+    "category": "Highways",
+    "name": "Guthrie Corridor Expressway (GCE)"
+   },
+   {
+    "category": "Highways",
+    "name": "North-South Expressway (NSE)"
+   },
+   {
+    "category": "Highways",
+    "name": "North Klang Valley Expressway (NKVE)"
+   },
+   {
+    "category": "Highways",
+    "name": "Lebuhraya Damansara Puchong (LDP)"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara Shah Alam Elevated Expressway (DASH)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Kwasa Damansara City Centre (KDCC) Shopping Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Star Avenue Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Giant Hypermarket"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "The Curve / IKEA / IPC"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "1 Utama Shopping Centre"
+   },
+   {
+    "category": "Education",
+    "name": "HELP International School & University"
+   },
+   {
+    "category": "Education",
+    "name": "SEGI University College"
+   },
+   {
+    "category": "Education",
+    "name": "Sri KDU Schools"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Thomson Hospital Kota Damansara"
+   },
+   {
+    "category": "Corporate",
+    "name": "Menara KWSP"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "550",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "A(M)(Mirrored)",
+    "size": "550",
+    "beds": "2",
+    "baths": "1"
+   }
+  ]
+ },
+ "trinity-rainfora": {
+  "source": "Developer sales kit (2026-09-01)",
+  "developer": "Trinity Group / Darul Dinasti Sdn. Bhd.",
+  "checked": "2026-09-01",
+  "description": {
+   "en": "Trinity Rainfora sets the Gold Standard for Transit-Oriented Living in the Klang Valley. Spanning 2.4 acres of freehold land in Bandar Kinrara, it offers a prestigious address just 400m from the BK5 LRT Station and only 5 minutes from Pavilion Bukit Jalil. Setting the tone for a sophisticated and tranquil arrival experience, the 5-star rainforest-inspired Grand Lobby is bound to leave a lasting impression; offering a peek into the refined lifestyle that lies beyond."
+  },
+  "keyFeatures": [
+   "Rainforest-Inspired Transit-Oriented Development (TOD)",
+   "400m covered walkway to Kinrara BK5 LRT Station",
+   "Freehold title in Bandar Kinrara",
+   "Comprehensive lifestyle facilities across two levels",
+   "Seamless connectivity via KESAS, LDP, and Bukit Jalil Highway",
+   "Backed by Trinity Gold Assurance with extended warranties"
+  ],
+  "facilities": [
+   "Sauna",
+   "Gourmet Kitchen",
+   "Kitchen",
+   "Laundry",
+   "Multipurpose Hall",
+   "Gymnasium",
+   "Co-Working Space",
+   "Music & Dance Room",
+   "Nature Playscape",
+   "Cabana",
+   "Pool Terrace",
+   "Wading Pool",
+   "Pool Shower",
+   "Infinity Pool *25m lap",
+   "Rainforest Canopy",
+   "Jacuzzi",
+   "Aqua Gym",
+   "Yoga Deck",
+   "Pool Pilates",
+   "Lounger Deck",
+   "Pool Deck",
+   "Dining Terrace",
+   "BBQ Terrace",
+   "Swing Nook",
+   "Study Garden",
+   "Hammock Nook",
+   "Glamping Forest",
+   "Edible Garden",
+   "Community Garden",
+   "Picnic Courtyard",
+   "Outdoor Fitness",
+   "Rest Corner",
+   "Tabata Pad",
+   "Moonlit Skyrun *150m",
+   "Reflexology Garden",
+   "Stretch Loop"
+  ],
+  "nearby": [
+   {
+    "category": "Transportation",
+    "name": "Kinrara BK5 LRT Station"
+   },
+   {
+    "category": "Highways",
+    "name": "KESAS Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "LDP Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Bukit Jalil Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "MEX Highway"
+   },
+   {
+    "category": "Shopping",
+    "name": "Giant Hypermarket"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion Bukit Jalil"
+   },
+   {
+    "category": "Shopping",
+    "name": "SetiaWalk Mall"
+   },
+   {
+    "category": "Shopping",
+    "name": "IOI Mall Puchong"
+   },
+   {
+    "category": "Shopping",
+    "name": "Sunway Pyramid"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Yak Chee"
+   },
+   {
+    "category": "Education",
+    "name": "Tzu Chi International School"
+   },
+   {
+    "category": "Education",
+    "name": "Sunway University"
+   },
+   {
+    "category": "Education",
+    "name": "IMU University"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Ambulatory Care Centre Kinrara"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sunway Medical Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital - Puchong"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kinrara Golf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Jalil Recreational Park"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "B/B1",
+    "size": "739",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "974",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1026",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "E(Dual Key)",
+    "size": "1124",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "F",
+    "size": "1136",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "G",
+    "size": "1184",
+    "beds": "4",
+    "baths": "2"
+   }
+  ]
+ },
+ "arte-solaris": {
+  "source": "Developer sales kit (2026-09-03)",
+  "developer": "Solaris Ceria Sdn. Bhd.",
+  "checked": "2026-09-03",
+  "maintenanceFee": "RM0.40 psf (excl. sinking fund; RM0.44 incl. 10%)",
+  "maintenanceFeePsf": 0.4,
+  "description": {
+   "en": "Arte Solaris is a symbol of grandeur and affluent living. It pushes architectural boundaries through the unification of three art mediums: Architecture, Painting, and Sculpture on the exterior and interior of Arte Solaris. This unification creates a theatrical display with an intense dramatisation of spaces. Achieved with exterior projections such as wings, columns, ornaments, corbels, statues, paintings and many others. The mesmerising elements leave an immersive impact on onlookers, depicting the symbolism of 'Palatial Living'."
+  },
+  "keyFeatures": [
+   "Palatial themed architecture with European-inspired facilities",
+   "Located in the prime address of Solaris, Mont Kiara",
+   "Directly attached to Solaris Retail Centre",
+   "Mix of office suites and serviced apartments",
+   "Multi-tier security system",
+   "Semi-furnished units."
+  ],
+  "facilities": [
+   "Ground Floor",
+   "facility_name: Royale Reception",
+   "facility_name: Lift Lobby",
+   "facility_name: Parcel Drop Off",
+   "facility_name: Mail Room",
+   "facility_name: Management Office",
+   "facility_name: Loading Area",
+   "Recreational Floor (Level R)",
+   "facility_name: Royale 'Trevi' Pool",
+   "facility_name: Arte's Luxe Gym",
+   "facility_name: Royale Treillage Garden",
+   "facility_name: Restroom",
+   "facility_name: Surau",
+   "Sky Floor (Level 33A)",
+   "facility_name: Winged Sky Deck",
+   "facility_name: Venetian Fountain Bridge",
+   "facility_name: Sky Lounge",
+   "facility_name: Royale Palais Room"
+  ],
+  "nearby": [
+   {
+    "category": "Shopping & Retail",
+    "name": "category: Shopping & Retail"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "amenity_name: Solaris Mont Kiara"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "distance: 100m / 1 min"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "amenity_name: Publika Shopping Gallery"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "distance: 650m / 2 mins"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "amenity_name: 1 Mont Kiara"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "distance: 1.7km / 4 mins"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "amenity_name: Pavilion Kuala Lumpur"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "distance: 8.8km / 15 mins"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "amenity_name: The Gardens Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "distance: 9.3km / 14 mins"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "amenity_name: 1 Utama Shopping Center"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "distance: 10km / 15 mins"
+   },
+   {
+    "category": "Connectivity",
+    "name": "category: Connectivity"
+   },
+   {
+    "category": "Connectivity",
+    "name": "amenity_name: PLUS (Jalan Duta-Sg Buloh Expressway)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "amenity_name: DUKE (Duta-Ulu Kelang Expressway)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "amenity_name: SPRINT (Penchala Link & Kerinchi Link)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "amenity_name: NKVE (New Klang Valley Expressway)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "amenity_name: LDP",
+    "distance": "Damansara-Puchong Expressway"
+   },
+   {
+    "category": "Public Transport",
+    "name": "category: Public Transport"
+   },
+   {
+    "category": "Public Transport",
+    "name": "amenity_name: Future MRT3 Station - Mont Kiara"
+   },
+   {
+    "category": "Public Transport",
+    "name": "amenity_name: Future MRT3 Station - Bukit Segambut"
+   },
+   {
+    "category": "Public Transport",
+    "name": "amenity_name: Future MRT3 Station - Dutamas"
+   },
+   {
+    "category": "Education",
+    "name": "category: Education"
+   },
+   {
+    "category": "Education",
+    "name": "amenity_name: Odyssey The Global Preschool Malaysia"
+   },
+   {
+    "category": "Education",
+    "name": "distance: 550m / 2 mins"
+   },
+   {
+    "category": "Education",
+    "name": "amenity_name: Kiaramas Primary Schools"
+   },
+   {
+    "category": "Education",
+    "name": "distance: 850m / 2 mins"
+   },
+   {
+    "category": "Education",
+    "name": "amenity_name: Mont Kiara International School"
+   },
+   {
+    "category": "Education",
+    "name": "distance: 1km / 2 mins"
+   },
+   {
+    "category": "Education",
+    "name": "amenity_name: Garden International School"
+   },
+   {
+    "category": "Education",
+    "name": "distance: 2.4km / 6 mins"
+   },
+   {
+    "category": "Education",
+    "name": "amenity_name: French School of Kuala Lumpur"
+   },
+   {
+    "category": "Education",
+    "name": "distance: 3km / 7 mins"
+   },
+   {
+    "category": "Healthcare",
+    "name": "category: Healthcare"
+   },
+   {
+    "category": "Healthcare",
+    "name": "amenity_name: Global Doctors Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "distance: 2.6km / 7 mins"
+   },
+   {
+    "category": "Healthcare",
+    "name": "amenity_name: Kiara Medical Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "distance: 3.2km / 8 mins"
+   },
+   {
+    "category": "Healthcare",
+    "name": "amenity_name: ParkCity Medical Centre"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "T1",
+    "size": "635"
+   }
+  ]
+ },
+ "arunya-residences-kl-north": {
+  "source": "Developer sales kit (2026-09-11)",
+  "developer": "KLN Land Sdn Bhd",
+  "checked": "2026-09-11",
+  "maintenanceFee": "RM0.33 per sqft + (10% sinking fund)",
+  "maintenanceFeePsf": 0.33,
+  "description": {
+   "en": "Named after the first rays of the sun, Arunya Residences invites a peaceful atmosphere in every home, with natural light beaming freely into each home. Placed at the intersection of mature developments and growing communities, Arunya brings a new approach to luxury living, prioritising wellness, comfort, and relaxation. Escape from the hustle and bustle of urban life with a comforting retreat-style home."
+  },
+  "keyFeatures": [
+   "Low-density layout",
+   "North-South oriented",
+   "33 modern facilities",
+   "Up to 40% green space",
+   "600m walking distance to MRT Jinjang",
+   "Semi-furnished units included",
+   "Strategic location in KL North near mature neighborhoods."
+  ],
+  "facilities": [
+   "Reading Nook",
+   "Adventure Escape",
+   "Basketball Court",
+   "Zen Garden",
+   "Yoga Garden",
+   "Pilates Garden",
+   "Facilities Podium",
+   "Infinity Pool",
+   "Floating Gym",
+   "Club Lounge",
+   "Treehouse",
+   "Glamping Park",
+   "BBQ Deck",
+   "Amphitheatre Promenade",
+   "Wading Pool",
+   "Lap Pool",
+   "EV Charging bay",
+   "Utility Room",
+   "Retail Lots"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "MRT Jinjang (Putrajaya Line)",
+    "distance": "0.6km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Segambut KTM Station",
+    "distance": "2km"
+   },
+   {
+    "category": "Highways",
+    "name": "DUKE Highway",
+    "distance": "4.1km"
+   },
+   {
+    "category": "Highways",
+    "name": "Jalan Kepong"
+   },
+   {
+    "category": "Highways",
+    "name": "Jalan Kuching"
+   },
+   {
+    "category": "Highways",
+    "name": "NKVE"
+   },
+   {
+    "category": "Highways",
+    "name": "SPRINT"
+   },
+   {
+    "category": "Retail & Shopping",
+    "name": "AEON Metro Prima",
+    "distance": "3.2km"
+   },
+   {
+    "category": "Retail & Shopping",
+    "name": "Publika Shopping Gallery",
+    "distance": "5.3km"
+   },
+   {
+    "category": "Retail & Shopping",
+    "name": "Desa ParkCity"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Kepong 2",
+    "distance": "4km"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Kepong Baru",
+    "distance": "3.2km"
+   },
+   {
+    "category": "Education",
+    "name": "The International School @ ParkCity",
+    "distance": "5.3km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "ParkCity Medical Centre",
+    "distance": "4.8km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "743",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "840",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1044",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1119",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "E",
+    "size": "1184",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "F1(Podium)",
+    "size": "1152",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "F2",
+    "size": "1119",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "G1",
+    "size": "1399",
+    "beds": "3+1",
+    "baths": "2+1"
+   },
+   {
+    "type": "G2a",
+    "size": "1345",
+    "beds": "3+1",
+    "baths": "2+1"
+   }
+  ]
+ },
+ "bayu-mori-park": {
+  "source": "Developer sales kit (2026-09-04)",
+  "developer": "Mori Park Sdn. Bhd. (OSK Property)",
+  "checked": "2026-09-04",
+  "maintenanceFee": "RM 0.385 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.385,
+  "description": {
+   "en": "Nestled in the vibrant heart of Seksyen 13, Shah Alam, Bayu @ Mori Park is a Transit-Oriented Development that seamlessly blends convenience, nature, and community. It offers a rare investment opportunity with strong rental demand and long-term capital appreciation, surrounded by universities, businesses, and premium amenities. The development features Flexi Suites and Serviced Apartments with versatile layouts, designed for modern lifestyles, entrepreneurial ventures, or personal sanctuaries, providing a future-proof investment with lasting value."
+  },
+  "keyFeatures": [
+   "Transit-Oriented Development with covered walkway to LRT3 Station",
+   "Located in the high-growth corridor of Seksyen 13, Shah Alam",
+   "Versatile layouts including Flexi Suites for home offices and dual-key options",
+   "Comprehensive wellness-focused facilities across two levels",
+   "Retail conveniences at the doorstep."
+  ],
+  "facilities": [
+   "Parcourse Station",
+   "Jogging Path",
+   "Pocket Garden",
+   "Games Room",
+   "Changing Room",
+   "Private Dining",
+   "Reading Room",
+   "Sunken Lawn",
+   "Covered Walkway",
+   "Sunlounger Deck",
+   "50m Lap Infinity Pool",
+   "Jacuzzi",
+   "Dip Pool",
+   "Urban Farming",
+   "Sensory Playground",
+   "BBQ Pavilion",
+   "Kids Pool",
+   "Gymnasium",
+   "Multipurpose Hall",
+   "Jenazah Room",
+   "Musolla",
+   "Yoga Zone",
+   "Open Lawn",
+   "Pickleball Court",
+   "Wellness Dome",
+   "Summer Breezeway Pavilion"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "LRT3 Stadium Shah Alam",
+    "distance": "0.7km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Batu Tiga Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Subang Jaya Station"
+   },
+   {
+    "category": "Highway Access",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highway Access",
+    "name": "Guthrie Highway"
+   },
+   {
+    "category": "Highway Access",
+    "name": "NKVE Highway"
+   },
+   {
+    "category": "Highway Access",
+    "name": "Elite Highway"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Giant Hypermarket",
+    "distance": "0.75km"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "AEON Mall Shah Alam",
+    "distance": "2km"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Lotus's Shah Alam",
+    "distance": "3.5km"
+   },
+   {
+    "category": "Education",
+    "name": "Management and Science University (MSU)",
+    "distance": "1.7km"
+   },
+   {
+    "category": "Education",
+    "name": "MSU College",
+    "distance": "2km"
+   },
+   {
+    "category": "Education",
+    "name": "UOW (KDU College, Glenmarie Campus)",
+    "distance": "3.5km"
+   },
+   {
+    "category": "Education",
+    "name": "Sri KDU International School",
+    "distance": "5.5km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "MSU Medical Centre",
+    "distance": "1.9km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Avisena Specialist Hospital",
+    "distance": "5.8km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sime Darby Medical Centre",
+    "distance": "7.1km"
+   },
+   {
+    "category": "Recreation & Sports",
+    "name": "Shah Alam Extreme Park",
+    "distance": "1.3km"
+   },
+   {
+    "category": "Recreation & Sports",
+    "name": "Stadium Shah Alam",
+    "distance": "2.2km"
+   },
+   {
+    "category": "Golf & Country Club",
+    "name": "Sultan Abdul Aziz Shah Golf & Country Club",
+    "distance": "3.1km"
+   },
+   {
+    "category": "Golf & Country Club",
+    "name": "Glenmarie Golf & Country Club",
+    "distance": "5.3km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "S1 (Flexi Suite)",
+    "size": "549",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "S2 (Flexi Suite)",
+    "size": "732",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "S3 (Flexi Suite)",
+    "size": "732",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "A",
+    "size": "550",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "829",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "958",
+    "beds": "4",
+    "baths": "2"
+   }
+  ]
+ },
+ "astrum-shah-alam": {
+  "source": "Developer sales kit (2026-09-11)",
+  "developer": "Astrum Shah Alam Sdn Bhd",
+  "checked": "2026-09-11",
+  "maintenanceFee": "RM 0.35 psf + 10% sinking fund",
+  "maintenanceFeePsf": 0.35,
+  "description": {
+   "en": "Welcome to Astrum, a vibrant mixed-use community in the heart of Shah Alam that seamlessly blends residential, commercial, and recreational spaces. With the Dato' Menteri LRT station right at your doorstep, Astrum offers a modern urban lifestyle for all."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "50m infinity lap pool",
+   "Multi purpose hall",
+   "Baking Studio",
+   "Male gym room",
+   "Female gym room",
+   "Power gym",
+   "BBQ pit",
+   "Car washing bays",
+   "Karaoke Room"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "Dato' Menteri LRT Station"
+   },
+   {
+    "category": "Healthcare",
+    "name": "AVISENA Specialist Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "SALAM Specialist Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Selangor Specialist Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Shah Alam"
+   },
+   {
+    "category": "Shopping",
+    "name": "SACC Mall"
+   },
+   {
+    "category": "Shopping",
+    "name": "PKNS Complex"
+   },
+   {
+    "category": "Shopping",
+    "name": "Plaza Alam Sentral"
+   },
+   {
+    "category": "Shopping",
+    "name": "AEON Mall Shah Alam"
+   },
+   {
+    "category": "Shopping",
+    "name": "Central i-City"
+   },
+   {
+    "category": "Education",
+    "name": "DWI EMAS International School"
+   },
+   {
+    "category": "Education",
+    "name": "UiTM"
+   },
+   {
+    "category": "Education",
+    "name": "UNISEL"
+   },
+   {
+    "category": "Education",
+    "name": "MSU"
+   },
+   {
+    "category": "Recreation",
+    "name": "Taman Tasik Shah Alam"
+   },
+   {
+    "category": "Recreation",
+    "name": "Wet World Water Park"
+   },
+   {
+    "category": "Recreation",
+    "name": "Masjid Sultan Salahuddin Abdul Aziz"
+   },
+   {
+    "category": "Highway",
+    "name": "LKSA"
+   },
+   {
+    "category": "Highway",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highway",
+    "name": "KESAS"
+   },
+   {
+    "category": "Highway",
+    "name": "GCE"
+   },
+   {
+    "category": "Highway",
+    "name": "NKVE"
+   },
+   {
+    "category": "Highway",
+    "name": "ELITE"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "1054",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "B",
+    "size": "775",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "796",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "1022",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B3",
+    "size": "1054",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1054",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1065",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "E",
+    "size": "570",
+    "beds": "2",
+    "baths": "2"
+   }
+  ]
+ },
+ "botanica-hills": {
+  "source": "Developer sales kit (2026-09-05)",
+  "developer": "Stellar Trinity Sdn Bhd",
+  "checked": "2026-09-05",
+  "maintenanceFee": "There are no maintenance fees.",
+  "description": {
+   "en": "This development concept embraces biophilic design, connecting people with nature by incorporating natural elements to promote well-being. Inspired by Malaysia's natural beauty, the project works with the land's hilly terrain, weaving in green spaces, water features, and thoughtful streetscapes to foster a sustainable, balanced lifestyle. Built on a naturally elevated terrain and nestled beside the verdant Taman Eko Rimba Templer forest, Botanica Hills offers easy access via Rawang Bypass—connecting residents to urban conveniences without compromising on its deep-rooted harmony with nature."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Children playground",
+   "Parcourse",
+   "Jogging / cycling track",
+   "Basketball court",
+   "Pickleball court",
+   "Central Park",
+   "Surau",
+   "community hall / kindergarten",
+   "Guard house"
+  ],
+  "nearby": [
+   {
+    "category": "Education",
+    "name": "SMK Sungai Choh",
+    "distance": "3 km"
+   },
+   {
+    "category": "Education",
+    "name": "Reed International School",
+    "distance": "3 km"
+   },
+   {
+    "category": "Education",
+    "name": "SK Bukit Rawang Jaya",
+    "distance": "4 km"
+   },
+   {
+    "category": "Education",
+    "name": "Pipakids International Playschool",
+    "distance": "11 km"
+   },
+   {
+    "category": "Education",
+    "name": "Straits International School Rawang",
+    "distance": "12 km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Clinic Rawang Healthcare",
+    "distance": "4 km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Rawang Specialist Hospital",
+    "distance": "6 km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Selgate Specialist Hospital Rawang",
+    "distance": "14 km"
+   },
+   {
+    "category": "Shopping & Grocery",
+    "name": "NSK Trade City Rawang Jaya",
+    "distance": "4 km"
+   },
+   {
+    "category": "Shopping & Grocery",
+    "name": "Giant Rawang",
+    "distance": "6 km"
+   },
+   {
+    "category": "Shopping & Grocery",
+    "name": "Mydin Rawang",
+    "distance": "7 km"
+   },
+   {
+    "category": "Shopping & Grocery",
+    "name": "Lotus",
+    "distance": "9 km"
+   },
+   {
+    "category": "Shopping & Grocery",
+    "name": "Aeon Mall Rawang",
+    "distance": "12 km"
+   },
+   {
+    "category": "Shopping & Grocery",
+    "name": "168 Park Mall",
+    "distance": "21 km"
+   },
+   {
+    "category": "Leisure & Lifestyle",
+    "name": "Carpe Diem Orchard Home Serendah",
+    "distance": "2 km"
+   },
+   {
+    "category": "Leisure & Lifestyle",
+    "name": "Taman Rekreasi Perigi Tujuh",
+    "distance": "5 km"
+   },
+   {
+    "category": "Leisure & Lifestyle",
+    "name": "Rawang Bypass Hiking Trailhead",
+    "distance": "6 km"
+   },
+   {
+    "category": "Leisure & Lifestyle",
+    "name": "Serendah Recreational Waterfall",
+    "distance": "8 km"
+   },
+   {
+    "category": "Leisure & Lifestyle",
+    "name": "Templer Park Rainforest Retreat",
+    "distance": "15 km"
+   },
+   {
+    "category": "Industrial Hub",
+    "name": "UMW High Value Manufacturing Park",
+    "distance": "2 km"
+   },
+   {
+    "category": "Industrial Hub",
+    "name": "UMW Aerospace Sdn Bhd",
+    "distance": "5 km"
+   },
+   {
+    "category": "Rail Connectivity",
+    "name": "ECRL Bandar Serendah Station (Upcoming)",
+    "distance": "5 km"
+   },
+   {
+    "category": "Rail Connectivity",
+    "name": "KTM Bukit Serendah",
+    "distance": "5 km"
+   },
+   {
+    "category": "Rail Connectivity",
+    "name": "KTM Rawang",
+    "distance": "6 km"
+   },
+   {
+    "category": "Rail Connectivity",
+    "name": "KTM Kuang",
+    "distance": "18 km"
+   },
+   {
+    "category": "Highway & Expressway",
+    "name": "Rawang Bypass"
+   },
+   {
+    "category": "Highway & Expressway",
+    "name": "Latar Highway"
+   },
+   {
+    "category": "Highway & Expressway",
+    "name": "North-South Highway"
+   },
+   {
+    "category": "Highway & Expressway",
+    "name": "Jalan Persekutuan 1"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A Intermediate Lot",
+    "size": "1660"
+   }
+  ]
+ },
+ "nara-at-shorea-park": {
+  "source": "Developer sales kit (2026-09-06)",
+  "developer": "Aspect Potential Sdn Bhd (OSK Property)",
+  "checked": "2026-09-06",
+  "maintenanceFee": "RM3.28 per share unit (including 10% sinking fund)",
+  "description": {
+   "en": "NARA draws inspiration from its Japanese origins, reflecting the essence of a flower from heaven. It's like embracing life fully, just like a flower in full bloom, shining bright and full of life. Experience the essence of Living by the Park, NARA at Shorea Park. Step into a world where nature meets urban living, creating a haven for families of all kinds. Embrace the tranquil beauty of nature-inspired community Living as your embark on a new chapter filled with Leisure, Connection and Comfort."
+  },
+  "keyFeatures": [
+   "Freehold nature-inspired community living",
+   "Adjacent to a 1-acre central park",
+   "Wonderland-themed facilities for all ages",
+   "Functional unit layouts with additional storage space",
+   "GreenRE certified development",
+   "Vibrant mix of commercial convenience & essential amenities."
+  ],
+  "facilities": [
+   "Landscape area",
+   "Roof garden",
+   "Swimming pool",
+   "Kids pool",
+   "Gym area",
+   "Private Function Room",
+   "Co-working room",
+   "Jogging track",
+   "Sunken lawn",
+   "Sky Terrace (Decking with Bench)",
+   "Central park"
+  ],
+  "nearby": [
+   {
+    "category": "Accessibility",
+    "name": "Damansara Puchong Expressway (LDP)"
+   },
+   {
+    "category": "Accessibility",
+    "name": "South Klang Valley Expressway (SKVE)"
+   },
+   {
+    "category": "Accessibility",
+    "name": "North South Expressway Central Link (ELITE)"
+   },
+   {
+    "category": "Hypermarkets",
+    "name": "Lotus's Extra"
+   },
+   {
+    "category": "Hypermarkets",
+    "name": "Bukit Puchong (<3km)"
+   },
+   {
+    "category": "Hypermarkets",
+    "name": "Aeon Big Puchong Utama (<3km)"
+   },
+   {
+    "category": "Hypermarkets",
+    "name": "Hero Market Puchong Utama (<5km)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "IOI Mall"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Puchong (<15km)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "DPULZE Shopping Centre (<15km)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Tamarind Square"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Cyberjaya (<15km)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Putrajaya (<15km)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Setia Walk (<12km)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "IOI Boulevard (<14km)"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (C) Sin Ming (<3km)"
+   },
+   {
+    "category": "Education",
+    "name": "SK Pulau Meranti (<3km)"
+   },
+   {
+    "category": "Education",
+    "name": "SK Puchong Utama 2 (<3km)"
+   },
+   {
+    "category": "Education",
+    "name": "Taylor's International School (<3km)"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Puchong Utama 1"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPMC Puchong Specialist Centre (<5km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Bandar Puteri (<5km)"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "Wawasan Puchong Basketball Court"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "Taman Wawasan (<12 km)"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "Sports Arena Puchong"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "Bandar Puchong Jaya (<12km)"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "Puchong Sports Center"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "Puchong Utama (<5km)"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "KSL Sports Puchong"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "Puchong Utama (Badminton & Futsal) (<5km)"
+   },
+   {
+    "category": "Sports Centers",
+    "name": "Futsal Putra Perdana (<5 km)"
+   },
+   {
+    "category": "Commercial Hubs",
+    "name": "Tanming Boulevard (<3.3km)"
+   },
+   {
+    "category": "Commercial Hubs",
+    "name": "Taman Puchong Prima (<7 km)"
+   },
+   {
+    "category": "Commercial Hubs",
+    "name": "Bandar Bukit Puchong (<6.5km)"
+   },
+   {
+    "category": "Commercial Hubs",
+    "name": "Prima Business Hub"
+   },
+   {
+    "category": "Commercial Hubs",
+    "name": "Taman Tasik Prima (<5 km)"
+   },
+   {
+    "category": "Commercial Hubs",
+    "name": "Bandar Puteri Puchong (<10 km)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "560"
+   }
+  ]
+ },
+ "sanderling-2-lakefront-residence": {
+  "source": "Developer sales kit (2026-09-07)",
+  "developer": "Lakefront Residence Sdn Bhd (A Subsidiary of Avaland Bhd)",
+  "checked": "2026-09-07",
+  "maintenanceFee": "approx. RM0.30 PSF (RM2.81 per share unit + 10% sinking fund)",
+  "maintenanceFeePsf": 0.3,
+  "description": {
+   "en": "Sanderling 2 is the last phase of the award-winning Lakefront Residence in Cyberjaya, a freehold vertical living community. This development features two towers with a total of 606 units, offering modern lakeside living enhanced by comprehensive amenities and stylish residences. It boasts the largest facilities podium in Cyberjaya, spanning 600,000 sqft, with a wide range of recreational facilities for all ages. Positioned for seamless connectivity, Sanderling 2 provides direct access to major highways like ELITE, MEX, and LDP, ensuring everyday conveniences are within easy reach."
+  },
+  "keyFeatures": [
+   "Freehold",
+   "Lakeside Living",
+   "Award-Winning Township",
+   "The Biggest Facilities Podium in Cyberjaya (600,000 sqft)",
+   "Multi-tier security system",
+   "Units with North-South orientation"
+  ],
+  "facilities": [
+   "Level 1 / Podium",
+   "Amphitheatre",
+   "Par Course",
+   "Seating Area",
+   "Skyscape Hammock Seat",
+   "Feature Gazebo",
+   "Event Lawn",
+   "Sunken Seating",
+   "Tropical Garden Retreat",
+   "Reflexology Walkway",
+   "Heliconia Garden",
+   "Children's Playground",
+   "Herb Garden",
+   "Covered Walkway",
+   "BBQ deck",
+   "Level CP 1",
+   "Lakeside Gymnasium",
+   "Level CP 2",
+   "Badminton Court",
+   "Level 27",
+   "Multipurpose Hall",
+   "Swimming Pools"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "North-South Expressway Central Link (ELITE)"
+   },
+   {
+    "category": "Highways",
+    "name": "Maju Expressway (MEX)"
+   },
+   {
+    "category": "Highways",
+    "name": "Putrajaya-Cyberjaya Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara-Puchong Expressway (LDP)"
+   },
+   {
+    "category": "Highways",
+    "name": "South Klang Valley Expressway (SKVE)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Cyberjaya City Centre MRT Station (6km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Cyberjaya North MRT Station (6km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Putrajaya Sentral MRT Station (10km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "16 Sierra MRT Station (11km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "KFC & MCD Drive-thru (1km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Gem In Mall Cyberjaya (2km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Tamarind Square (3km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "DPULZE Shopping Centre (3km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Starbucks & MCD Drive-thru (4km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Shaftsbury Square (5km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "IOI City Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Putrajaya (15km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Alamanda Shopping Centre (15km)"
+   },
+   {
+    "category": "Education",
+    "name": "Multimedia University (MMU) (2km)"
+   },
+   {
+    "category": "Education",
+    "name": "University of Cyberjaya (UoC) (2km)"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Union"
+   },
+   {
+    "category": "Education",
+    "name": "Cyberjaya (3km)"
+   },
+   {
+    "category": "Education",
+    "name": "SK Cyberjaya I (3km)"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Cyberjaya (3km)"
+   },
+   {
+    "category": "Education",
+    "name": "King Henry VIII College (4km)"
+   },
+   {
+    "category": "Education",
+    "name": "Limkokwing University (6km)"
+   },
+   {
+    "category": "Education",
+    "name": "ELC International School"
+   },
+   {
+    "category": "Education",
+    "name": "Brainy Bunch International Islamic Montessori"
+   },
+   {
+    "category": "Education",
+    "name": "Abedeen Academy International and Private Schools"
+   },
+   {
+    "category": "Education",
+    "name": "The Children's House"
+   },
+   {
+    "category": "Education",
+    "name": "Sekolah Seri Puteri"
+   },
+   {
+    "category": "Medical",
+    "name": "Hospital Cyberjaya (3km)"
+   },
+   {
+    "category": "Medical",
+    "name": "Hospital Putrajaya (9km)"
+   },
+   {
+    "category": "Others",
+    "name": "Raja Haji Fisabilillah Mosque (2km)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "D1-1",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D2-1",
+    "size": "958",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D2-2/D2A-2",
+    "size": "969",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D1-3/D1A-3",
+    "size": "1022",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D3-3/D3A-3",
+    "size": "1044",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "F1/F1A",
+    "size": "1324",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "F2/F2A",
+    "size": "1324",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "E1",
+    "size": "1485"
+   },
+   {
+    "type": "E2",
+    "size": "1485"
+   },
+   {
+    "type": "G1",
+    "size": "1711"
+   },
+   {
+    "type": "G2",
+    "size": "1711"
+   }
+  ]
+ },
+ "levia-residence": {
+  "source": "Developer sales kit (2026-09-07)",
+  "developer": "Matrix Concepts (Cheras) Sdn Bhd",
+  "checked": "2026-09-07",
+  "maintenanceFee": "RM0.33psf including sinking fund",
+  "maintenanceFeePsf": 0.33,
+  "description": {
+   "en": "Celebrate dynamic excellence in life within the dazzling towers of LEVIA, a new vertical residence that integrates creative architecture and lush greenery across 4.71 acres of open space to offer both comfort and beauty. Perfectly positioned in a mature location of South KL, near KL City Centre and Tun Razak Exchange, the area boasts a vast array of lifestyle amenities and transportation links designed to provide a complete Kuala Lumpur lifestyle experience. The captivating fusion of elements hints at a lifestyle makeover, offering a sophisticated take on living spaces. It's an invitation to embrace a more mindful, culturally inspired way of living in Levia, where your surroundings and lifestyle intertwine seamlessly."
+  },
+  "keyFeatures": [
+   "Strategically located in South KL (Cheras)",
+   "Good connectivity & accessibility to major highways and public transport",
+   "Comprehensive lifestyle facilities across multiple levels",
+   "Low-density with 778 units on 4.71-acre land",
+   "North-South orientation",
+   "Residential land title",
+   "GreenRE Silver Rated green building",
+   "Smart security features including AI-powered CCTV and facial recognition",
+   "Convenience services like shuttle bus, smart concierge, and childcare centre",
+   "Units with 2-4+1 bedrooms, catering to multigenerational living"
+  ],
+  "facilities": [
+   "Lobby Lounge",
+   "Management Office",
+   "Function Pavilion Hall",
+   "Garden Walkway",
+   "Pool Deck",
+   "Water Feature",
+   "Outdoor Courtyard",
+   "Co-working Deck",
+   "Prayer Room",
+   "Taska Space (Childcare)",
+   "Pool Cabana & Shallow Pool",
+   "Swimming Pool",
+   "Jacuzzi",
+   "Pool Lounge",
+   "Sunken Yoga Deck",
+   "Sauna",
+   "Grill Deck",
+   "Farm Kitchen",
+   "Open Green Lawn",
+   "Outdoor Shower",
+   "Herb Garden",
+   "Kids' Playground",
+   "Kids' Pool",
+   "Garden Lounge",
+   "Outdoor Fitness Garden & Reflexology Park",
+   "Forest Garden",
+   "Courtyard Garden",
+   "Gym",
+   "Sports Lounge",
+   "Sky Lounge",
+   "Garden Deck",
+   "Smart Concierge Service Kiosk",
+   "Shuttle Service",
+   "AI Powered CCTV & Facial Recognition Access",
+   "Parcel Delivery Station",
+   "EV Fast Charging Stations"
+  ],
+  "nearby": [
+   {
+    "category": "Transportation",
+    "name": "Future MRT 3 Taman Cheras - 0.7km"
+   },
+   {
+    "category": "Transportation",
+    "name": "Future MRT 3 Taman Kencana - 1.0km"
+   },
+   {
+    "category": "Transportation",
+    "name": "Taman Pertama MRT - 2.3km"
+   },
+   {
+    "category": "Transportation",
+    "name": "Taman Midah MRT - 2.8km"
+   },
+   {
+    "category": "Transportation",
+    "name": "Taman Mutiara MRT - 3.1km"
+   },
+   {
+    "category": "Transportation",
+    "name": "Maluri MRT/LRT - 3.9km"
+   },
+   {
+    "category": "Transportation",
+    "name": "Cochrane MRT - 4.4km"
+   },
+   {
+    "category": "Transportation",
+    "name": "Taman Connaught MRT - 4.7km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Cheras - 2.1km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Ampang - 3.6km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Canselor Tuanku Muhriz UKM - 3.8km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Ampang Hospital - 5.0km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sunway Medical Centre Velocity - 5.9km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Gleneagles KL Medical Centre - 7.2km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Prince Court Medical Centre - 9.0km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Tung Shin Hospital - 10.2km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "1 Shamelin Mall"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "Cheras LeisureMall - 2.7km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "Lotus's Cheras - 2.9km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "EkoCheras Mall - 5.3km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "IKEA Cheras - 5.3km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "Sunway Velocity Mall - 5.5km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "MyTOWN Shopping Centre - 6.2km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "Berjaya Times Square"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "BBCC - 8.5km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "Pavilion Kuala Lumpur - 10.2km"
+   },
+   {
+    "category": "Shopping Malls & Supermarkets",
+    "name": "Suria KLCC - 10.4km"
+   },
+   {
+    "category": "Education",
+    "name": "Sri Sempurna International School - 2.5km"
+   },
+   {
+    "category": "Education",
+    "name": "UCSI University - 6.1km"
+   },
+   {
+    "category": "Education",
+    "name": "Sunway College @ Velocity - 6.2km"
+   },
+   {
+    "category": "Education",
+    "name": "Taylor's International School - 6.3km"
+   },
+   {
+    "category": "Education",
+    "name": "Cempaka National Schools - 6.6km"
+   },
+   {
+    "category": "Education",
+    "name": "Tsun Jin High School - 8.3km"
+   },
+   {
+    "category": "Education",
+    "name": "Kuen Cheng High School - 9.4km"
+   },
+   {
+    "category": "Education",
+    "name": "INTI International College - 10.0km"
+   },
+   {
+    "category": "Leisure & Recreation",
+    "name": "Taman Pudu Ulu - 3.6km"
+   },
+   {
+    "category": "Leisure & Recreation",
+    "name": "Taman Tasik Permaisuri - 5.6km"
+   },
+   {
+    "category": "Highways",
+    "name": "Kuala Lumpur Middle Ring Road 2 (MRR2)"
+   },
+   {
+    "category": "Highways",
+    "name": "East-West Link Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Sungai Besi Expressway (SBE)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "B",
+    "size": "938",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1109",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "D",
+    "size": "1364",
+    "beds": "4+1",
+    "baths": "3"
+   }
+  ]
+ },
+ "trinity-nordic-residences": {
+  "source": "Developer sales kit (2026-09-10)",
+  "developer": "Trinity Group (Olympic Builders Sdn. Bhd.)",
+  "checked": "2026-09-10",
+  "maintenanceFee": "RM0.33 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.33,
+  "description": {
+   "en": "Trinity Nordic Residences is a new Nordic-inspired freehold condominium rising in Serdang Hill, Seri Kembangan. Developed by Trinity Group, it offers a lifestyle philosophy shaped by four ideals: Peaceful Living, Spacious Living, Joyful Living, and Serene Living. The project features 714 units across three towers, with versatile layouts and over 40 lifestyle facilities, set within a matured neighborhood with excellent connectivity."
+  },
+  "keyFeatures": [
+   "Freehold Residential Condominium",
+   "Prime connectivity (MEX, NSE, SKVE, MRT UPM)",
+   "Matured neighborhood with retail, education, and healthcare amenities",
+   "Exclusive dual entrances and seamless direct carpark access",
+   "Over 40 lifestyle facilities including a 50m pool, grand gym, and indoor badminton courts",
+   "Versatile layouts from 937 to 2,014 sq.ft",
+   "Innovative Balcony+ concept for selected units."
+  ],
+  "facilities": [
+   "Community Farm",
+   "Farmers' Retreat",
+   "Terrace Walkway",
+   "Terrace Steps",
+   "Harvesting Nook",
+   "50m Infinity Pool",
+   "N-Pavilion",
+   "Water Spa",
+   "Aqua Gym",
+   "Jacuzzi",
+   "Pool Deck",
+   "Pool Lounge",
+   "Pool Shower",
+   "Floral Splash",
+   "Kiddie Pool",
+   "BBQ Deck",
+   "Sauna",
+   "Male Changing Room",
+   "Female Changing Room",
+   "N-House",
+   "Fun Park",
+   "Play House",
+   "Fun Meadow",
+   "Wellness Garden",
+   "Outdoor Fitness",
+   "Community Lawn",
+   "Breezy Jogging Trail",
+   "The Social Pantry",
+   "Outdoor Lounge",
+   "Multipurpose Hall",
+   "Badminton Court",
+   "Pickleball Court",
+   "Kids Play Area",
+   "Gym",
+   "Aerobic & Zumba Room",
+   "Elderly Activity Area",
+   "Reading & Co-Working Area",
+   "Laundry Area",
+   "Male Surau",
+   "Female Surau"
+  ],
+  "nearby": [
+   {
+    "category": "Connectivity",
+    "name": "MRT UPM"
+   },
+   {
+    "category": "Connectivity",
+    "name": "MRT Serdang Jaya"
+   },
+   {
+    "category": "Connectivity",
+    "name": "KTM Serdang"
+   },
+   {
+    "category": "Connectivity",
+    "name": "KL-Putrajaya Expressway",
+    "distance": "MEX"
+   },
+   {
+    "category": "Connectivity",
+    "name": "North-South Expressway (NSE)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "South Klang Valley Expressway (SKVE)"
+   },
+   {
+    "category": "Retail",
+    "name": "Olive Hill"
+   },
+   {
+    "category": "Retail",
+    "name": "The Mines Shopping Mall"
+   },
+   {
+    "category": "Retail",
+    "name": "Aeon Mall Taman Equine"
+   },
+   {
+    "category": "Retail",
+    "name": "Pavilion Bukit Jalil"
+   },
+   {
+    "category": "Retail",
+    "name": "IOI City Mall"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Serdang Baru 1"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Serdang Baru 2"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Seri Kembangan"
+   },
+   {
+    "category": "Education",
+    "name": "Wembley International School"
+   },
+   {
+    "category": "Education",
+    "name": "Alice Smith International School"
+   },
+   {
+    "category": "Education",
+    "name": "University Putra Malaysia",
+    "distance": "UPM"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Bukit Serdang"
+   },
+   {
+    "category": "Education",
+    "name": "Universiti Tenaga Nasional (UNITEN)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "ANDORRA Women & Children Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sultan Abdul Aziz Shah Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Serdang Hospital"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Serdang Hiking Trail"
+   },
+   {
+    "category": "Recreation",
+    "name": "The Mines Resort & Golf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Farm In The City"
+   },
+   {
+    "category": "Recreation",
+    "name": "Selangor Turf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "UniPutra Golf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Jalil Recreational Park"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "937",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B",
+    "size": "1077",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B(a)",
+    "size": "1077",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1228",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "D(m)(Duplex)",
+    "size": "2014",
+    "beds": "5",
+    "baths": "4"
+   }
+  ]
+ },
+ "senna-heights": {
+  "source": "Developer sales kit (2026-09-10)",
+  "developer": "Greencove Sdn Bhd (A Member of Kerjaya Prospek Property Berhad)",
+  "checked": "2026-09-10",
+  "maintenanceFee": "RM0.29 psf + 10% sinking fund",
+  "maintenanceFeePsf": 0.29,
+  "description": {
+   "en": "Imagine waking up every day in a home that perfectly balances modern living with the tranquility of nature. Senna Heights, nestled in the vibrant heart of Damansara Damai, offers you this unique lifestyle. With seamless access to major highways, MRT stations, and all essential amenities like shopping malls, business centers, schools, and medical facilities, Senna Heights ensures you're always connected to what matters most. At Senna Heights, breathtaking views of lush forests from our two towers inspire peace and serenity. Every detail of this prestigious development has been thoughtfully designed to blend elegance and comfort, creating a sanctuary where you can truly thrive. Embrace eco-friendly living with sustainable features, enjoy top-tier security for your peace of mind, and personalize your space to reflect your unique style. Welcome to Senna Heights - where urban sophistication meets natural beauty."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "100-meter swimming pool",
+   "150 people)",
+   "BBQ area (separate halal & non-halal sections)",
+   "Rooftop yoga deck & seating area"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "LDP"
+   },
+   {
+    "category": "Highways",
+    "name": "NSE"
+   },
+   {
+    "category": "Highways",
+    "name": "DUKE"
+   },
+   {
+    "category": "Highways",
+    "name": "NKVE"
+   },
+   {
+    "category": "Highways",
+    "name": "MRR2"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Damansara Damai (3 km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Sungai Buloh (5.5 km)"
+   },
+   {
+    "category": "Shopping & Grocer",
+    "name": "Hero Market (2.1 km)"
+   },
+   {
+    "category": "Shopping & Grocer",
+    "name": "Jaya Grocer Sieramas (3.5 km)"
+   },
+   {
+    "category": "Shopping & Grocer",
+    "name": "Ativo Plaza (5.6 km)"
+   },
+   {
+    "category": "Shopping & Grocer",
+    "name": "Lotus's Kepong (7.6 km)"
+   },
+   {
+    "category": "Shopping & Grocer",
+    "name": "AEON Mall Metro Prima (8.4 km)"
+   },
+   {
+    "category": "Shopping & Grocer",
+    "name": "Village Grocer @ Plaza Arkadia (8.8 km)"
+   },
+   {
+    "category": "Shopping & Grocer",
+    "name": "IKEA Damansara (10.5 km)"
+   },
+   {
+    "category": "Shopping & Grocer",
+    "name": "1 Utama Shopping Centre (11.8 km)"
+   },
+   {
+    "category": "Medical",
+    "name": "Qualitas Health Clinic Damai (0.8 km)"
+   },
+   {
+    "category": "Medical",
+    "name": "Hospital Sungei Buloh (5.9 km)"
+   },
+   {
+    "category": "Medical",
+    "name": "UiTM Private Specialist Centre (7.8 km)"
+   },
+   {
+    "category": "Medical",
+    "name": "Park City Medical Centre (8.2 km)"
+   },
+   {
+    "category": "Medical",
+    "name": "KPJ Damansara Specialist Hospital (2) (9.1 km)"
+   },
+   {
+    "category": "Medical",
+    "name": "Selayang Hospital (11.8 km)"
+   },
+   {
+    "category": "Education",
+    "name": "SK Damansara Damai (1.6 km)"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Damansara Damai (2.2 km)"
+   },
+   {
+    "category": "Education",
+    "name": "IGB International School (3.8 km)"
+   },
+   {
+    "category": "Education",
+    "name": "Sri Bestari International Schools (5.2 km)"
+   },
+   {
+    "category": "Education",
+    "name": "The International School @ Parkcity (8.4 km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Urban Park (0.4 km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Taman Tasik Menjalara (6.7 km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Taman Rimba Riang (7.2 km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "FRIM Kepong (10.7 km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Valencia Golf Club (5.0 km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kelab Rahman Putra Malaysia (8.2 km)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "1464"
+   },
+   {
+    "type": "B",
+    "size": "1023"
+   },
+   {
+    "type": "C",
+    "size": "1023"
+   },
+   {
+    "type": "D1",
+    "size": "1023"
+   },
+   {
+    "type": "E",
+    "size": "700",
+    "beds": "1",
+    "baths": "1"
+   }
+  ]
+ },
+ "jimbaran-gaia-gardens-setia-eco-templer": {
+  "source": "Developer sales kit (2026-09-10)",
+  "developer": "Setia Eco Templer Sdn Bhd",
+  "checked": "2026-09-10",
+  "maintenanceFee": "Estimate RM0.20psf based on land size",
+  "maintenanceFeePsf": 0.2,
+  "description": {
+   "en": "With the legendary creeks weaving through the township, this resort living enclave embraces the meaning of nature-inspired living and the luxury of fresh air. Set against a backdrop of the historical Bukit Takun, Jimbaran is the second residential phase of Gaia Gardens, inheriting a unique resort living concept that centres on tropical bliss and spacious comfort. The luxury life in Jimbaran encompasses the experience of engaging with the rich nature, be transported to the tropical resorts of Bali and to live at a gentler pace."
+  },
+  "keyFeatures": [
+   "Resort garden living by the hill",
+   "Balinese-inspired architecture and landscape",
+   "Low-density enclave",
+   "Gated and guarded community",
+   "Nature-inspired living with access to hiking, trekking, and birdwatching",
+   "Spacious multigenerational homes"
+  ],
+  "facilities": [
+   "Thematic gardens (e.g., Angkul Garden)",
+   "Balinese-inspired gateways (Gapura Candi Bentar)",
+   "Viewing Tower",
+   "Access to Templer's Club (township clubhouse)"
+  ],
+  "nearby": [
+   {
+    "category": "Recreation",
+    "name": "Templer Park",
+    "distance": "3km"
+   },
+   {
+    "category": "Recreation",
+    "name": "Taman Rimba Komanwel Waterfalls",
+    "distance": "5km"
+   },
+   {
+    "category": "Recreation",
+    "name": "Batu Caves",
+    "distance": "15km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Lotus's Rawang",
+    "distance": "3km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Jusco Rawang",
+    "distance": "15km"
+   },
+   {
+    "category": "Shopping",
+    "name": "KL City Centre",
+    "distance": "25km"
+   },
+   {
+    "category": "Education",
+    "name": "Institut Kraf Negara (IKN)",
+    "distance": "2km"
+   },
+   {
+    "category": "Education",
+    "name": "Templer Park International School",
+    "distance": "3km"
+   },
+   {
+    "category": "Education",
+    "name": "IGB International School (IGBIS)",
+    "distance": "25km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Selayang"
+   },
+   {
+    "category": "Accessibility",
+    "name": "Rawang KTM Station",
+    "distance": "3km"
+   },
+   {
+    "category": "Accessibility",
+    "name": "Subang Skypark Terminal",
+    "distance": "14km"
+   },
+   {
+    "category": "Accessibility",
+    "name": "LATAR Expressway"
+   },
+   {
+    "category": "Accessibility",
+    "name": "GUTHRIE Corridor Expressway (GCE)"
+   },
+   {
+    "category": "Accessibility",
+    "name": "North-South Expressway (PLUS)"
+   },
+   {
+    "category": "Accessibility",
+    "name": "MRR2"
+   },
+   {
+    "category": "Accessibility",
+    "name": "DUKE Highway"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "2-Storey Semi-D",
+    "size": "2780",
+    "beds": "4",
+    "baths": "4",
+    "note": "32'x80'"
+   },
+   {
+    "type": "2-Storey Link Villa",
+    "size": "2230–2540",
+    "beds": "4",
+    "baths": "3",
+    "note": "20'x80'"
+   }
+  ]
+ },
+ "residensi-danau": {
+  "source": "Developer sales kit (2026-09-11)",
+  "developer": "Pakatan Perakbina Sdn Bhd",
+  "checked": "2026-09-11",
+  "maintenanceFee": "Est RM0.35 psf (main parcel, inclusive of sinking fund), Est RM0.18 psf (accessory parcel + carpark, inclusive of sinking fund)",
+  "maintenanceFeePsf": 0.35,
+  "description": {
+   "en": "Danau Puchong offers an idyllic setting beside a pristine lake that is made uniquely appealing by its proximity to the heart of Puchong's thriving urban centre. Situated close to the thriving commercial heart of Puchong, a host of modern conveniences offer the peak of contemporary living. And yet, home is an instant escape from the pace of the city, within the tranquillity of a lush atmosphere and the embrace of the cool waterside breeze. Strategically positioned between LRT stations, residents are conveniently linked to other key commercial, business and leisure destinations within Greater KL via a network of interconnected highways."
+  },
+  "keyFeatures": [
+   "Lakeside living, Proximity to Puchong urban centre, Convenient public transportation access (LRT), Comprehensive highway connectivity, Nature-centric surroundings"
+  ],
+  "facilities": [
+   "Outdoor Seating/Garden",
+   "Play Area",
+   "Mini Library",
+   "Multipurpose Hall",
+   "Yoga Deck",
+   "Infinity-edge Pool",
+   "Wading Pool",
+   "Pool Deck",
+   "Iconic Pavilion",
+   "Garden Pavilion",
+   "Barbecue Terrace",
+   "Gymnasium",
+   "Hammock Garden"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transportation",
+    "name": "Pusat Bandar Puchong LRT Station"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "IOI Puchong LRT Station"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara-Puchong Highway (LDP)"
+   },
+   {
+    "category": "Highways",
+    "name": "Shah Alam Expressway (KESAS)"
+   },
+   {
+    "category": "Highways",
+    "name": "Bukit Jalil Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Maju Expressway",
+    "distance": "MEX"
+   },
+   {
+    "category": "Highways",
+    "name": "North-South Expressway Central Link (ELITE)"
+   },
+   {
+    "category": "Highways",
+    "name": "South Klang Valley Expressway (SKVE)"
+   },
+   {
+    "category": "Retail & Recreation",
+    "name": "IOI Mall Puchong"
+   },
+   {
+    "category": "Retail & Recreation",
+    "name": "Lotus's Puchong"
+   },
+   {
+    "category": "Retail & Recreation",
+    "name": "SetiaWalk Mall"
+   },
+   {
+    "category": "Retail & Recreation",
+    "name": "Hero Market"
+   },
+   {
+    "category": "Retail & Recreation",
+    "name": "Sunway Pyramid"
+   },
+   {
+    "category": "Retail & Recreation",
+    "name": "Rakan Muda Sports Complex"
+   },
+   {
+    "category": "Retail & Recreation",
+    "name": "Ayer Hitam Forest Reserve"
+   },
+   {
+    "category": "Education",
+    "name": "SJKC Poi Min"
+   },
+   {
+    "category": "Education",
+    "name": "SK Pusat Bandar Puchong"
+   },
+   {
+    "category": "Education",
+    "name": "SK Puchong Jaya"
+   },
+   {
+    "category": "Education",
+    "name": "Binary University"
+   },
+   {
+    "category": "Education",
+    "name": "RIMA International College"
+   },
+   {
+    "category": "Education",
+    "name": "Taylor's University Lakeside Campus"
+   },
+   {
+    "category": "Education",
+    "name": "Sunway University"
+   },
+   {
+    "category": "Education",
+    "name": "Monash University"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital Puchong"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPMC Puchong Specialist Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sunway Medical Centre"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "566",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "855",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "999",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "999",
+    "beds": "3",
+    "baths": "2"
+   }
+  ]
+ },
+ "akasa-cheras-south": {
+  "source": "Developer sales kit (2026-09-12)",
+  "developer": "Hap Seng Land Development (Balakong) Sdn Bhd",
+  "checked": "2026-09-12",
+  "maintenanceFee": "Approx RM0.33 per sqf + 10% sinking fund",
+  "maintenanceFeePsf": 0.33,
+  "description": {
+   "en": "Freehold AKASA Cheras South is a development located along Jalan Balakong in Cheras South, Selangor, comprising Tower A at 36 storeys and Towers B and C at 29 storeys across a 9.65-acre site. Completed in 2021, the project houses 998 units. It is accessible via the SILK Highway and Cheras-Kajang Highway, with MRT Tun Hussein Onn located approx. 2km away and AEON Cheras Selatan Shopping Centre nearby. Built-up sizes range from 850 sq ft to 2048 sq ft with 2 to 4 bedrooms and 2 to 5 bathrooms. Facilities span approx. 150,000 sq ft, including a man-made sandy beach pool, a 3-tiered security system, and a dedicated shuttle service, with 2 to 3 carparks provided."
+  },
+  "keyFeatures": [
+   "Freehold Integrated Development",
+   "Approx. 150,000 sq ft facilities",
+   "First man-made sandy beach pool in Cheras",
+   "3 MRT stations within 2km radius",
+   "Dedicated shuttle service",
+   "3-tiered security system",
+   "Matured neighborhood with access to malls and hospitals"
+  ],
+  "facilities": [
+   "Level 7 (Facilities Deck)",
+   "Leisure Pool",
+   "Wading Pool",
+   "Sandy Beach",
+   "Cabana",
+   "Hammock Garden",
+   "Children Fun Zone",
+   "Zen Garden",
+   "Outdoor Shower",
+   "Chit Chat Lounge",
+   "Wifi Corner",
+   "Jogging Track",
+   "Reflexology Belt",
+   "Meditation & Calmness Zone",
+   "Lazing Deck",
+   "Gymnasium",
+   "Martial Arts Room",
+   "Olympic-length Lap Pool",
+   "BBQ & Picnic Corner",
+   "Multi-purpose Hall",
+   "Changing Room",
+   "Steam Room",
+   "Activity Room",
+   "Self-operated Laundry",
+   "Surau",
+   "Open Deck",
+   "Roof Top",
+   "Chill-Out Lounge",
+   "Moon Light Deck",
+   "Reading Pavilion",
+   "Sky Lounge",
+   "Gourmet Kitchen",
+   "Private Dining Atrium",
+   "Games Lounge",
+   "Reading Corner",
+   "Lounge Area",
+   "Kids Entertainment Zone",
+   "TV / Audio Room",
+   "Music Chamber",
+   "Star Gazing Deck"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "MRT Tun Hussein Onn (approx. 2km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Batu Sebelas (approx. 2km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Bkt. Dukung (approx. 2km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Sri Raya"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Serdang"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Bandar Tasik Selatan"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Dedicated shuttle service to nearby MRT"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM stations"
+   },
+   {
+    "category": "Highways",
+    "name": "SILK Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Cheras-Kajang Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "North-South Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Besraya Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "KESAS Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "East-West Highway"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "The Mines Shopping Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "AEON Cheras Selatan Shopping Centre"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Econsave Balakong"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Leisure Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "BIG C"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital Cheras"
+   },
+   {
+    "category": "Education",
+    "name": "Australian International School"
+   },
+   {
+    "category": "Recreation",
+    "name": "Sg. Long Golf & Country Club"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "850",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B",
+    "size": "1000",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1155",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "D",
+    "size": "1500",
+    "beds": "4",
+    "baths": "3",
+    "note": "Dual-key"
+   },
+   {
+    "type": "E",
+    "size": "2048",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "F",
+    "size": "1421",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "G",
+    "size": "2000",
+    "beds": "4",
+    "baths": "5"
+   }
+  ]
+ },
+ "alamanda-heights": {
+  "source": "Developer sales kit (2026-09-13)",
+  "developer": "Multiplex Land Sdn Bhd",
+  "checked": "2026-09-13",
+  "maintenanceFee": "RM0.25 - RM0.28 psf",
+  "maintenanceFeePsf": 0.28,
+  "description": {
+   "en": "Pangsapuri Bukit Alamanda (Alamanda Heights) is a brand new 36-story highrise residential project (Freehold Title) develop by Multiplex Land Sdn. Bhd. Its located at Taman Bukit Serdang, Seri Kembangan. This 3.09-acre development contain 440 units, which include of Type A (1050 sq. ft, 114 units), Type B (971 sq. ft, 238 units) and Type Q RSKU (900 sq. ft, 88 units). With spacious yet flexible interior layout designs tailored to meet the diverse needs of you and your family."
+  },
+  "keyFeatures": [
+   "Freehold residential title",
+   "Located in Taman Bukit Serdang, Seri Kembangan",
+   "36-storey high-rise with 440 units",
+   "3-tier security",
+   "37 facility types across Level 1 and Level 6",
+   "Proximity to MRT stations (Serdang Raya Utara) and major highways (MEX, Bukit Jalil, SILK, North-South)",
+   "Each unit includes 2 car parks"
+  ],
+  "facilities": [
+   "Drop - Off",
+   "E-Hailing Parking",
+   "Parcel & Mail Room",
+   "Lift Lobby",
+   "Foyer",
+   "Kindergarden",
+   "Public & OKU Toilet",
+   "Management Office",
+   "Outdoor Gym",
+   "Landscape Garden",
+   "Entrance Statement",
+   "Hall",
+   "Ping Pong Table (Inside Hall)",
+   "Mini Library",
+   "Indoor Game room (Inside Mini Library)",
+   "Meditation Room",
+   "Indoor Gym",
+   "Senior Citizen Activity Corner",
+   "Cafe",
+   "Children Playground (Indoor)",
+   "Children Playground (Outdoor)",
+   "Garden Sitting",
+   "Kids Pool",
+   "Rainbow Door Waterplay",
+   "Mushroom Waterplay",
+   "Kids Pool Slide",
+   "Swimming Pool",
+   "Sunbath Sitting",
+   "Jogging Track",
+   "BBQ Pit",
+   "Male & Female Sauna Room",
+   "Male & Female Prayer Room",
+   "Male & Female Changing Room (Toilet)",
+   "OKU Toilet",
+   "Self Service Dobby"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "MRT Serdang Raya Utara"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Serdang Raya Selatan"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Seremban Line"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "South City Plaza"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "The Mines Shopping Mall"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Aurora Place Bukit Jalil"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Pavilion Bukit Jalil"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Aeon Mall Taman Equine"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "IOI City Mall"
+   },
+   {
+    "category": "Medical",
+    "name": "Columbia Asia Hospital"
+   },
+   {
+    "category": "Medical",
+    "name": "Sultan Idris Shah Hospital"
+   },
+   {
+    "category": "Medical",
+    "name": "Serdang"
+   },
+   {
+    "category": "Medical",
+    "name": "ANDORRA Woman & Children Hospital"
+   },
+   {
+    "category": "Medical",
+    "name": "Seri Kembangan"
+   },
+   {
+    "category": "University",
+    "name": "IMU University"
+   },
+   {
+    "category": "University",
+    "name": "APU - Asia Pacific University of Technology & Innovation"
+   },
+   {
+    "category": "University",
+    "name": "UPM - University Putra Malaysia"
+   },
+   {
+    "category": "University",
+    "name": "UNITEN - University Tenaga Nasional"
+   },
+   {
+    "category": "Highway",
+    "name": "MEX Highway"
+   },
+   {
+    "category": "Highway",
+    "name": "Bukit Jalil Highway"
+   },
+   {
+    "category": "Highway",
+    "name": "SILK Highway"
+   },
+   {
+    "category": "Highway",
+    "name": "KL-Seremban Expressway"
+   },
+   {
+    "category": "Highway",
+    "name": "North South Expressway",
+    "distance": "Sg Besi/UPM"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "1050"
+   },
+   {
+    "type": "B",
+    "size": "971",
+    "beds": "3+1",
+    "baths": "2",
+    "note": "238u"
+   },
+   {
+    "type": "Q RSKU",
+    "size": "900",
+    "note": "88u，无户型图"
+   }
+  ]
+ },
+ "alstonia-hilltop-homes": {
+  "source": "Developer sales kit (2026-09-13)",
+  "developer": "Pinnacle Paradise Sdn Bhd (a subsidiary of MRCB Land)",
+  "checked": "2026-09-13",
+  "maintenanceFee": "RM0.35psf including sinking fund",
+  "maintenanceFeePsf": 0.35,
+  "description": {
+   "en": "'Alstonia' definition. A widespread genus of evergreen trees and shrubs. BE HERE FOR THE GATEWAYS. The perfect retreat stepping into the comfort of nature or immersing in cool water and relaxing in cosy lounges. Come home to resort-like living. BE HERE FOR THE MEMORIES. Create everlasting memories with your loved ones, let your children grow up in an environment to remember. Have carefree playtime in a protected vicinity."
+  },
+  "keyFeatures": [
+   "Hilltop Homes with resort-like living concept in a protected vicinity. Villas feature double volume living rooms and wide driveways."
+  ],
+  "facilities": [
+   "Kids Play Area",
+   "Management Office",
+   "Gymnasium",
+   "Multipurpose Hall",
+   "Water Feature",
+   "Drop Off Lobby",
+   "Foyer",
+   "Reading Corner",
+   "Games Room",
+   "Laundry Room",
+   "Praying Hall",
+   "Sunken Lounge",
+   "Stepping Streams",
+   "Swimming Pool",
+   "Wading Pool",
+   "Sliding Park",
+   "Hopscotch",
+   "Yoga Deck",
+   "Hammock Garden",
+   "Outdoor Par Course",
+   "Reflexology Path"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "Guthrie Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "North-South Expressway (PLUS)"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara-Puchong Expressway (LDP)"
+   },
+   {
+    "category": "Highways",
+    "name": "SPRINT Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara-Shah Alam Elevated Expressway (DASH)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Sungai Buloh Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Sungai Buloh Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Kwasa Damansara Station"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Sunway Giza Mall"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "1 Utama Shopping Centre"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "The Curve"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Ikano Power Centre"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Atria Shopping Gallery"
+   },
+   {
+    "category": "Education",
+    "name": "ELC International School"
+   },
+   {
+    "category": "Education",
+    "name": "IGB International School"
+   },
+   {
+    "category": "Education",
+    "name": "HELP International School"
+   },
+   {
+    "category": "Education",
+    "name": "SEGI University"
+   },
+   {
+    "category": "Education",
+    "name": "Sri KDU Schools"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Sungai Buloh"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Tropicana Medical Centre"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kelab Rahman Putra Malaysia"
+   },
+   {
+    "category": "Recreation",
+    "name": "Valencia Golf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Desa ParkCity"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1(Condominium)",
+    "size": "1001",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A2(Condominium)",
+    "size": "1022",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "A3(Condominium)",
+    "size": "1033",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B1(Condominium)",
+    "size": "1216",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "B2(Condominium)",
+    "size": "1227",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "B3(Condominium)",
+    "size": "1270",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "B4(Condominium)",
+    "size": "1345",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "B5(Condominium)",
+    "size": "1302",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "C1(Condominium)",
+    "size": "1431",
+    "beds": "4+1",
+    "baths": "4"
+   },
+   {
+    "type": "SL(3-Storey Villa (Intermediate & End))",
+    "size": "3500",
+    "beds": "4+2",
+    "baths": "5"
+   },
+   {
+    "type": "SL(3-Storey Villa (Corner))",
+    "size": "3600",
+    "beds": "4+2",
+    "baths": "5"
+   }
+  ]
+ },
+ "ambience-residence": {
+  "source": "Developer sales kit (2026-09-14)",
+  "developer": "Faithview Group",
+  "checked": "2026-09-14",
+  "maintenanceFee": "Approximately RM0.30 psf (Excluding Sinking Fund)",
+  "maintenanceFeePsf": 0.3,
+  "description": {
+   "en": "Ambience KL is a freehold high-rise residential development located in the strategic area of Sungai Besi, Kuala Lumpur. This project comprises a single 31-storey tower housing a total of 482 service apartment units. Residents can enjoy excellent connectivity with the Taman Naga Emas MRT station just 800 meters away, along with direct access from the Sungai Besi Highway. The development offers a range of facilities spread across Level 6, Level 7, and a rooftop deck on Level 32, catering to various lifestyle needs."
+  },
+  "keyFeatures": [
+   "Freehold title",
+   "800m to Taman Naga Mas MRT Station",
+   "Low density with 482 units",
+   "Comprehensive facilities across three levels",
+   "Direct access from Sungai Besi Highway."
+  ],
+  "facilities": [
+   "Nursery (room only)",
+   "Lounge",
+   "Management Office",
+   "Meeting Room",
+   "Gymnasium",
+   "Swimming Pool",
+   "Jacuzzi",
+   "Pool Deck & Chairs",
+   "Jogging Track",
+   "Gourmet Kitchen",
+   "Sauna",
+   "Multipurpose Hall",
+   "Wading Pool",
+   "Playground",
+   "Outdoor Gym",
+   "Game Room",
+   "Surau",
+   "Yoga Deck",
+   "Co-Working Area",
+   "Rooftop Viewing Deck",
+   "24 Hours Security System",
+   "3-Tier Security"
+  ],
+  "nearby": [
+   {
+    "category": "Transportation",
+    "name": "Taman Naga Mas MRT Station"
+   },
+   {
+    "category": "Transportation",
+    "name": "Bus Stop"
+   },
+   {
+    "category": "Medical Centre",
+    "name": "KMI Taman Desa Medical Centre"
+   },
+   {
+    "category": "Medical Centre",
+    "name": "UKM Medical Centre"
+   },
+   {
+    "category": "Medical Centre",
+    "name": "Pantai Hospital Cheras"
+   },
+   {
+    "category": "Medical Centre",
+    "name": "Assunta Hospital"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "NSK Trade City"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Mid Valley Megamall"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Pavilion Bukit Jalil"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "TRX Tower 106"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "The Mines"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Eko Cheras Mall"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Sunway Velocity Mall"
+   },
+   {
+    "category": "Education",
+    "name": "SK Salak South"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) La Salle"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Desa Petaling"
+   },
+   {
+    "category": "Education",
+    "name": "Sri Desa International School"
+   },
+   {
+    "category": "Education",
+    "name": "International Medical University",
+    "distance": "IMU"
+   },
+   {
+    "category": "Education",
+    "name": "UCSI University"
+   },
+   {
+    "category": "Education",
+    "name": "Asia Pacific University of Technology (APU)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "669",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "A(A1)",
+    "size": "669",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B",
+    "size": "866",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B(B1)",
+    "size": "866",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C",
+    "size": "1080",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "C(C1)",
+    "size": "1080",
+    "beds": "4",
+    "baths": "3"
+   }
+  ]
+ },
+ "arte-star": {
+  "source": "Developer sales kit (2026-09-14)",
+  "developer": "Suriamega Development Sdn Bhd",
+  "checked": "2026-09-14",
+  "maintenanceFee": "RM 0.30 psf + 10% sinking fund",
+  "maintenanceFeePsf": 0.3,
+  "description": {
+   "en": "Arte Star is a design-forward, transit-oriented development (TOD) in Sungai Besi, Kuala Lumpur. It comprises three residential editions, each capturing the essence of a world city: London (The Regal), Milan (The Milano), and Paris (Future Development). The project offers a global lifestyle with unique themed facilities, direct access to the Salak Expressway, and walking distance to KTM, LRT, and future MRT3 stations, providing seamless connectivity to the city."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Welcome Plaza",
+   "Wizarding Hall",
+   "Pop Art Pool",
+   "Tea Party Rooftop",
+   "Union Jack Gym",
+   "Buckingham Lobby",
+   "Yoga Tube",
+   "The Royal Pickle Pavilion",
+   "EV Charging Bays",
+   "Rooftop Facilities"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "KTM Salak Selatan"
+   },
+   {
+    "category": "Public Transport",
+    "name": "LRT Salak Selatan"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT3 Salak Selatan"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Terminal Bersepadu Selatan (TBS)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Bandar Malaysia & HSR"
+   },
+   {
+    "category": "Highways",
+    "name": "Salak Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Kuala Lumpur – Seremban Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Sungai Besi Expressway (BESRAYA)"
+   },
+   {
+    "category": "Highways",
+    "name": "MEX Highway"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Taman Tasik Permaisuri"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Eko Cheras Mall"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Lotus Cheras"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Sunway Velocity"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Aeon Maluri"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Ikea & Mytown"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Cheras Leisure Mall"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Mid Valley Megamall"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "The Exchange TRX"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "KL City Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "UMH Medical Clinic"
+   },
+   {
+    "category": "Healthcare",
+    "name": "HUKM"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sunway Medical Centre Velocity"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Cheras"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Seri Permaisuri"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Tai Thung"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Salak South"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Taman Connaught"
+   },
+   {
+    "category": "Education",
+    "name": "Sri Desa International School"
+   },
+   {
+    "category": "Education",
+    "name": "UCSI College"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "527",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "A1",
+    "size": "732",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "A3",
+    "size": "549",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "625",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "656",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "872",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B5",
+    "size": "861",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B7",
+    "size": "656",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B8",
+    "size": "872",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B9",
+    "size": "625",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "C2",
+    "size": "1185",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C6",
+    "size": "840",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C7",
+    "size": "840",
+    "beds": "3",
+    "baths": "2"
+   }
+  ]
+ },
+ "atwater-corporate-office-towers": {
+  "source": "Developer sales kit (2026-09-16)",
+  "developer": "Paramount Property Development Sdn. Bhd.",
+  "checked": "2026-09-16",
+  "maintenanceFee": "RM0.72 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.72,
+  "description": {
+   "en": "ATWATER is a 5.09-acre integrated development in the heart of Petaling Jaya's thriving Section 13, featuring two corporate office towers, retail spaces, and serviced apartments. Designed for modern business needs, the Grade A office towers offer flexible layouts and sustainable features with GreenRE and MSC-compliant certifications. Surrounded by a host of established amenities, ATWATER combines strategic connectivity via major highways and public transport with lifestyle convenience, placing businesses at the centre of a mature and vibrant commercial and residential enclave."
+  },
+  "keyFeatures": [
+   "Grade A office suites",
+   "GreenRE certified (Bronze & Silver)",
+   "MSC-compliant (Tier 1 & Tier 2)",
+   "Shuttle service to nearby public transport",
+   "EV charging stations",
+   "Dual and direct lobby drop-offs",
+   "Multi-layered security with destination controlled lift system",
+   "Integrated development with retail and residential components",
+   "Flexible layouts from 1,384sf to 30,077sf."
+  ],
+  "facilities": [
+   "Dual & Direct Lobby Drop-off",
+   "Retails Spaces at Ground and Level 1",
+   "Lush Greenery Landscape",
+   "Water Features",
+   "Bicycle Parking",
+   "E-hailing Queuing Bay",
+   "Roof Top Gardens",
+   "Visitor Car Parking",
+   "EV Charging Stations",
+   "Surau"
+  ],
+  "nearby": [
+   {
+    "category": "Shopping Malls",
+    "name": "Jaya One",
+    "distance": "0.5km"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "PJ33 Mall",
+    "distance": "1.5km"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Jaya Shopping Centre",
+    "distance": "1.5km"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "The Hub SS2",
+    "distance": "2.0km"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Seventeen Mall",
+    "distance": "2.3km"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "3 Damansara",
+    "distance": "2.4km"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Amcorp Mall",
+    "distance": "3.5km"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "The Starling",
+    "distance": "5.0km"
+   },
+   {
+    "category": "Medical Centres",
+    "name": "Columbia Asia Hospital",
+    "distance": "0.9km"
+   },
+   {
+    "category": "Medical Centres",
+    "name": "Tun Hussein Onn National Eye Hospital",
+    "distance": "2.6km"
+   },
+   {
+    "category": "Medical Centres",
+    "name": "University Malaya Medical Centre (UMMC)",
+    "distance": "2.9km"
+   },
+   {
+    "category": "Medical Centres",
+    "name": "UM Specialist Centre (UMSC)",
+    "distance": "3.0km"
+   },
+   {
+    "category": "Medical Centres",
+    "name": "Assunta Hospital PJ",
+    "distance": "4.5km"
+   },
+   {
+    "category": "Education",
+    "name": "University of Malaya",
+    "distance": "3.6km"
+   },
+   {
+    "category": "Education",
+    "name": "MAHSA Avenue International College",
+    "distance": "2.5km"
+   },
+   {
+    "category": "Education",
+    "name": "Brickfields Asia College",
+    "distance": "3.0km"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Atwater Bus Stop (T790, T787)",
+    "distance": "0.1km"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Taman Paramount LRT Station",
+    "distance": "2.2km"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Phileo Damansara MRT Station",
+    "distance": "3.3km"
+   },
+   {
+    "category": "Highways",
+    "name": "LDP Highway",
+    "distance": "2.0km"
+   },
+   {
+    "category": "Highways",
+    "name": "SPRINT Highway",
+    "distance": "2.0km"
+   },
+   {
+    "category": "Highways",
+    "name": "Federal Highway",
+    "distance": "2.5km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "01(Tower B, Level 2 - 5)",
+    "size": "2933"
+   },
+   {
+    "type": "02(Tower B, Level 2 - 5)",
+    "size": "1417"
+   },
+   {
+    "type": "03(Tower B, Level 2 - 5)",
+    "size": "1889"
+   },
+   {
+    "type": "01(Tower B, Level 6 - 10)",
+    "size": "2178"
+   },
+   {
+    "type": "02(Tower B, Level 6 - 10)",
+    "size": "1417"
+   },
+   {
+    "type": "03(Tower B, Level 6 - 10)",
+    "size": "1889"
+   },
+   {
+    "type": "3A(Tower B, Level 6 - 10)",
+    "size": "2356"
+   },
+   {
+    "type": "05(Tower B, Level 6 - 10)",
+    "size": "1797"
+   },
+   {
+    "type": "06(Tower B, Level 6 - 10)",
+    "size": "1727"
+   },
+   {
+    "type": "07(Tower B, Level 6 - 10)",
+    "size": "3298"
+   },
+   {
+    "type": "01(Tower B, Level 11 - 16 (Premier Suite))",
+    "size": "16547"
+   },
+   {
+    "type": "01(Tower A, Level 2 - 5)",
+    "size": "30077"
+   },
+   {
+    "type": "01(Tower A, Level 6)",
+    "size": "21417"
+   },
+   {
+    "type": "01(Tower A, Level 7 - 8)",
+    "size": "2844"
+   },
+   {
+    "type": "02(Tower A, Level 7 - 8)",
+    "size": "2071"
+   },
+   {
+    "type": "03(Tower A, Level 7 - 8)",
+    "size": "1384"
+   },
+   {
+    "type": "3A(Tower A, Level 7 - 8)",
+    "size": "1788"
+   },
+   {
+    "type": "05(Tower A, Level 7 - 8)",
+    "size": "1739"
+   },
+   {
+    "type": "06(Tower A, Level 7 - 8)",
+    "size": "2413"
+   },
+   {
+    "type": "07(Tower A, Level 7 - 8)",
+    "size": "1549"
+   }
+  ]
+ },
+ "kamelia-1-p3a-caledonia": {
+  "source": "Developer sales kit (2026-09-17)",
+  "developer": "KLK Park Homes Sdn. Bhd. (KLK LAND)",
+  "checked": "2026-09-17",
+  "maintenanceFee": "RM100 per month (for security)",
+  "description": {
+   "en": "Welcome to Caledonia - a modern, self-sufficient township that is designed to be lifestyle focused and fosters community togetherness. Kamelia homes blend thoughtful design with functional spaces, offering comfort, elegance, and flexibility. Each element, from smart layouts to carefully chosen finishes, has been selected to make everyday living smoother, allowing you to embrace each moment in a space that truly feels like yours amidst abundant green spaces and tranquil surroundings."
+  },
+  "keyFeatures": [
+   "Individual Title",
+   "Non-Strata Guarded Community",
+   "3-Phase Wiring",
+   "Booster Pump",
+   "Instant water heater points",
+   "Auto-gate point",
+   "Unifi Ready (1 year free)",
+   "Free 2 years security",
+   "Laminated Timber Flooring (SPC) for staircase and first floor",
+   "RG6 cable ready for Astro installation."
+  ],
+  "facilities": [
+   "Guardhouse",
+   "Perimeter Fencing",
+   "Tropical-themed green spaces"
+  ],
+  "nearby": [
+   {
+    "category": "Education",
+    "name": "SKJ (C) Ijok",
+    "distance": "3.5km"
+   },
+   {
+    "category": "Education",
+    "name": "Sekolah Kebangsaan Bukit Badong",
+    "distance": "5.4km"
+   },
+   {
+    "category": "Education",
+    "name": "Sekolah Kebangsaan Ijok",
+    "distance": "5.8km"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Tuanku Abdul Rahman",
+    "distance": "7.8km"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Bandar Tasik Puteri",
+    "distance": "12.9km"
+   },
+   {
+    "category": "Education",
+    "name": "UiTM Puncak Alam",
+    "distance": "18km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital UiTM Puncak Alam",
+    "distance": "13km"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Coalfields Retail Park",
+    "distance": "7km"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "KIPMall Desa Coalfields",
+    "distance": "12km"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Jaya Grocer",
+    "distance": "13km"
+   },
+   {
+    "category": "Highways & Public Transport",
+    "name": "LATAR Expressway"
+   },
+   {
+    "category": "Highways & Public Transport",
+    "name": "Jalan Kuala Selangor"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "T(Intermediate)",
+    "size": "1696",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "C(Corner Lot)",
+    "size": "1997",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "E(End Lot (Standard))",
+    "size": "1751",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "E1(End Lot (Narrow))",
+    "size": "1731",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "E2(End Lot (Wide))",
+    "size": "2254",
+    "beds": "4",
+    "baths": "4"
+   }
+  ]
+ },
+ "quinton-residences": {
+  "source": "Developer sales kit (2026-09-17)",
+  "developer": "KLK LAND",
+  "checked": "2026-09-17",
+  "maintenanceFee": "RM250 per month (to be confirmed)",
+  "description": {
+   "en": "Freehold two-storey development, Quinton Residences by KLK LAND is located along Jalan BSC 6B within the 1,001-acre Bandar Seri Coalfields masterplan in Sungai Buloh, Selangor. The low-density project comprises 128 individual-titled units and completed in 2025. It is accessible via the LATAR Expressway and Guthrie Corridor Expressway (GCE), with KIP Mall Desa Coalfields located approximately 1.8km away. Unit built-up sizes range from 2,016 sq ft to 2,418 sq ft, offering 4 bedrooms and 4 bathrooms. Facilities and fittings include a 24-hour guard post with RFID access, 8 ft anti-climb perimeter fencing, EV charging point provisions, smart door locks, and space to park up to 2 cars."
+  },
+  "keyFeatures": [
+   "Gated and guarded community with Anti-Climb perimeter fencing and RFID access",
+   "Individual Title",
+   "Low-density development",
+   "Spacious open-concept layouts with high ceilings",
+   "Solar water heater for all bathrooms",
+   "Water booster pump",
+   "EV Charging point provision (25A)",
+   "Conduit for future solar panel installation",
+   "Smart Door Lock for main door",
+   "Autogate system provided"
+  ],
+  "facilities": [
+   "24 hours Guard Post with RFID (carplate recogition)",
+   "Anti-climb fencing (8 ft)",
+   "Individual fencing (5 ft)"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "LATAR Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Guthrie Corridor Expressway (GCE)"
+   },
+   {
+    "category": "Highways",
+    "name": "NKVE"
+   },
+   {
+    "category": "Highways",
+    "name": "North-South Expressway (NSE)"
+   },
+   {
+    "category": "Highways",
+    "name": "DASH Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "West Coast Expressway (WCE)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Upcoming Coalfields Retail Park (Target Q2 2026)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "KIP Mall Desa Coalfields (1.8km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Econsave Alam Jaya (5.4km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Lotus's Puncak Alam (8.4km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Setia City Mall (22.1km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "IKEA Damansara (24.4km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "One Utama Shopping Centre (25.0km)"
+   },
+   {
+    "category": "Education",
+    "name": "Wesley Methodist School (in township)"
+   },
+   {
+    "category": "Education",
+    "name": "SJKC Lee Loy Seng (under planning, target Q1 2026)"
+   },
+   {
+    "category": "Education",
+    "name": "SK Desa Aman Coalfields (3.1km)"
+   },
+   {
+    "category": "Education",
+    "name": "HELP International School (15.6km)"
+   },
+   {
+    "category": "Education",
+    "name": "IGB International School (16.3km)"
+   },
+   {
+    "category": "Education",
+    "name": "Tenby International & Private School (22.3km)"
+   },
+   {
+    "category": "Education",
+    "name": "SEGI University (26.5km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital UITM Puncak Alam (7.0km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Sungai Buloh (16.1km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Selayang (25.7km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Specialist Damansara (28.7km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Sungai Buloh (14.6km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "SAAS Airport Subang (20.0km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KL Sentral (32.8km)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KLIA / KLIA2 (69.3km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "50-acre Central Park (Township amenity)"
+   },
+   {
+    "category": "Recreation",
+    "name": "BSC Club (Township amenity)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Footballhub (Township amenity)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1 / A2(Standard)",
+    "size": "2016",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "A3 / A4(Corner)",
+    "size": "2016",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "B1 / B2(End Lot)",
+    "size": "2418",
+    "beds": "4",
+    "baths": "4"
+   }
+  ]
+ },
+ "jardin-residences-2-precinct-6a1": {
+  "source": "Developer sales kit (2026-09-17)",
+  "developer": "KLK LAND",
+  "checked": "2026-09-17",
+  "maintenanceFee": "RM150 per month",
+  "description": {
+   "en": "Beautiful in Nature. That is the essence of Jardin Residences, taking inspiration from the French word for 'Garden'. Located at the fringes of the Bandar Seri Coalfields, Jardin Residences has just the right amount of everything - utmost convenience, without the city buzz. These 237 units are set amid a 1,001-acre, low-density township that boasts invaluable spaces for family bonding."
+  },
+  "keyFeatures": [
+   "Guarded community in an award-winning masterplan",
+   "Freehold individual title",
+   "Open concept layout for a spacious environment",
+   "Proximity to 50-acre Central Park, BSC Club, and KIP Mall",
+   "Includes solar water heater, booster pump, basic alarm system, and auto gate",
+   "Fiber optic ready for internet connectivity."
+  ],
+  "facilities": [
+   "Five Stones Playground",
+   "Tricycle Lane",
+   "Family Pavilion",
+   "Rain Tree Clusters",
+   "Play Mounds",
+   "3 Parcourses",
+   "Jogging Track"
+  ],
+  "nearby": [
+   {
+    "category": "Shopping Mall / Hypermarket",
+    "name": "KIP Mall Desa Coalfields",
+    "distance": "1.8km"
+   },
+   {
+    "category": "Shopping Mall / Hypermarket",
+    "name": "Coalfields Retail Park (Target Opening Aug 2026)",
+    "distance": "0km"
+   },
+   {
+    "category": "Shopping Mall / Hypermarket",
+    "name": "Econsave Alam Jaya",
+    "distance": "5.4km"
+   },
+   {
+    "category": "Shopping Mall / Hypermarket",
+    "name": "Tesco Puncak Alam",
+    "distance": "8.4km"
+   },
+   {
+    "category": "Shopping Mall / Hypermarket",
+    "name": "IKEA Damansara",
+    "distance": "24.4km"
+   },
+   {
+    "category": "Shopping Mall / Hypermarket",
+    "name": "One Utama Shopping Centre",
+    "distance": "25.0km"
+   },
+   {
+    "category": "Education",
+    "name": "Wesley Methodist School (Private)",
+    "distance": "0km"
+   },
+   {
+    "category": "Education",
+    "name": "SJKC Lee Loy Seng (Under Planning, Target Q4 2026)",
+    "distance": "0km"
+   },
+   {
+    "category": "Education",
+    "name": "SK Desa Aman Coalfields",
+    "distance": "3.1km"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Puncak Alam",
+    "distance": "7.7km"
+   },
+   {
+    "category": "Education",
+    "name": "HELP International School Shah Alam",
+    "distance": "15.6km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital UITM Puncak Alam",
+    "distance": "7.0km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Sungai Buloh",
+    "distance": "16.1km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Selayang",
+    "distance": "25.7km"
+   },
+   {
+    "category": "Recreation",
+    "name": "BSC Club",
+    "distance": "0km"
+   },
+   {
+    "category": "Recreation",
+    "name": "50-acre Central Park",
+    "distance": "0km"
+   },
+   {
+    "category": "Recreation",
+    "name": "Footballhub (Football & Futsal fields)",
+    "distance": "0km"
+   },
+   {
+    "category": "Connectivity",
+    "name": "LATAR Expressway",
+    "distance": "km"
+   },
+   {
+    "category": "Connectivity",
+    "name": "Guthrie Corridor Expressway (GCE)",
+    "distance": "km"
+   },
+   {
+    "category": "Connectivity",
+    "name": "DASH Highway",
+    "distance": "km"
+   },
+   {
+    "category": "Connectivity",
+    "name": "West Coast Expressway (WCE)",
+    "distance": "km"
+   },
+   {
+    "category": "Transportation",
+    "name": "MRT Sungai Buloh",
+    "distance": "14.6km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1(Corner)",
+    "size": "2611",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "A2(Intermediate)",
+    "size": "2208",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "A3(End Lot with balcony)",
+    "size": "2611",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "A4(End Lot without balcony)",
+    "size": "2483",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "B1(Corner)",
+    "size": "2455",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "B2(Intermediate)",
+    "size": "1961",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "B3(End Lot with balcony)",
+    "size": "2455",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "B4(End Lot without balcony)",
+    "size": "2266",
+    "beds": "4",
+    "baths": "4"
+   }
+  ]
+ },
+ "the-walden-2-p4c1": {
+  "source": "Developer sales kit (2026-09-17)",
+  "developer": "KL-Kepong Country Homes Sdn. Bhd.",
+  "checked": "2026-09-17",
+  "maintenanceFee": "RM350 per month",
+  "description": {
+   "en": "Nestled within the burgeoning North-West urban corridor of Klang Valley, the North Haven masterplan at Bandar Seri Coalfields unfolds across a serene 516-acre hilltop landscape. This idyllic enclave features luxurious homes set against a backdrop of lush greenery. The Walden at North Haven is a world of its own with a limited-edition collection of resort-like bungalow-style homes, designed for enriching living experiences in a low-density premium community."
+  },
+  "keyFeatures": [
+   "Gated and guarded community with 3-tier security (Guardpost with RFID, Anti-climb perimeter fencing, Individual house alarm system)",
+   "Low-density enclave (69 units) with Individual Title",
+   "Unifi Ready (1 year free)",
+   "2 years free security fees."
+  ],
+  "facilities": [
+   "24 hours Guard Post with RFID (carplate recogition)",
+   "Anti-climb fencing (8 ft)",
+   "Individual fencing (5 ft)"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "LATAR Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Guthrie Corridor Expressway (GCE)"
+   },
+   {
+    "category": "Highways",
+    "name": "DASH Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "West Coast Expressway (WCE)"
+   },
+   {
+    "category": "Highways",
+    "name": "North-South Expressway"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Station Sungai Buloh"
+   },
+   {
+    "category": "Education",
+    "name": "Wesley Methodist School (Private)"
+   },
+   {
+    "category": "Education",
+    "name": "SJKC Lee Loy Seng"
+   },
+   {
+    "category": "Education",
+    "name": "Kompleks Sekolah Rendah & Menengah (upcoming)"
+   },
+   {
+    "category": "Education",
+    "name": "Chinese Independent School (upcoming)"
+   },
+   {
+    "category": "Education",
+    "name": "Sasana International School"
+   },
+   {
+    "category": "Education",
+    "name": "UiTM Puncak Alam"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "KIP Mall"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Lotus's Puncak Alam"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Jaya Grocer"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Coalfields Retail Park (upcoming Q3 2026)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital UiTM"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Sungai Buloh"
+   },
+   {
+    "category": "Recreation",
+    "name": "50-acre Central Park"
+   },
+   {
+    "category": "Recreation",
+    "name": "Footballhub"
+   },
+   {
+    "category": "Recreation",
+    "name": "Tasik Puteri Golf & Country Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kundang Lakes Country Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kelab Rahman Putra"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A(1-Storey Bungalow)",
+    "size": "2962",
+    "beds": "4+1",
+    "baths": "4+1"
+   },
+   {
+    "type": "C(1-Storey Bungalow)",
+    "size": "2938",
+    "beds": "4+1",
+    "baths": "4+1"
+   },
+   {
+    "type": "D(1-Storey Bungalow)",
+    "size": "3628",
+    "beds": "4+1",
+    "baths": "4+1"
+   },
+   {
+    "type": "D1(1-Storey Bungalow)",
+    "size": "3928",
+    "beds": "4+1",
+    "baths": "4+1"
+   },
+   {
+    "type": "E(2-Storey Bungalow)",
+    "size": "3730",
+    "beds": "5+1",
+    "baths": "5+1"
+   },
+   {
+    "type": "F(2-Storey Bungalow)",
+    "size": "3900",
+    "beds": "5+1",
+    "baths": "5+1"
+   },
+   {
+    "type": "G(2-Storey Bungalow)",
+    "size": "4088",
+    "beds": "5+1",
+    "baths": "5+1"
+   }
+  ]
+ },
+ "duo-tower-bangsar-south": {
+  "source": "Developer sales kit (2026-09-17)",
+  "developer": "UOA Group (Paramount Properties Sdn Bhd)",
+  "checked": "2026-09-17",
+  "maintenanceFee": "0.70",
+  "description": {
+   "en": "Duo Tower @ Bangsar South is the latest office building to join Bangsar South's vibrant mix of corporate, retail, hospitality, healthcare and residential metropolis. Its contemporary architectural concept creates a harmonized duality with its surrounding sustainable ecosystem, where business meets leisure, productivity meets convenience, and work meets play. As part of UOA Group's award-winning business district, Duo Tower features two iconic Grade A office blocks within Bangsar South's bustling vicinity. Conceptualized to accord a quintessential work-life balance, it is a GreenRE certified (Silver) building designed to inspire a sustainable way of life, complete with a four-tier smart security system."
+  },
+  "keyFeatures": [
+   "Grade A office in the award-winning Bangsar South business district",
+   "GreenRE Certified (Silver) building with 30% solar panel installation",
+   "Four-tier smart security system",
+   "Excellent connectivity via LRT stations (Kerinchi, Universiti) and major highways (Federal, NPE, SPE, Kerinchi Link)",
+   "Features up to 20 wellness facilities across Level 1 & 2, including a garden gym, yoga deck, and badminton court",
+   "Surrounded by a vibrant mix of retail, hospitality, and healthcare amenities",
+   "Contemporary architectural design promoting a work-life balance"
+  ],
+  "facilities": [
+   "1 (Vitality Zone)",
+   "Carpark/Common Lift Lobby",
+   "Lobby Lounge",
+   "Garden Gym",
+   "Garden Lounge",
+   "Amphitheatre",
+   "Communal Garden",
+   "2 (Sensory Wellness Zone)",
+   "Viewing Courtyard",
+   "Leisure Deck",
+   "River Trail",
+   "Cocoon Lounge",
+   "Meditation Deck",
+   "Floating Yoga Deck",
+   "Floating Path",
+   "Viewing Lounge",
+   "Function Room",
+   "Badminton Court",
+   "Player's Bench",
+   "Serene Garden"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transportation",
+    "name": "Universiti LRT Station (5 mins walk)"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Kerinchi LRT Station (5 mins walk)"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Angkasapuri KTM Station (5 mins drive)"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Complimentary shuttle bus service within Bangsar South"
+   },
+   {
+    "category": "Highways",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "New Pantai Expressway (NPE)"
+   },
+   {
+    "category": "Highways",
+    "name": "Kerinchi Link"
+   },
+   {
+    "category": "Highways",
+    "name": "Setiawangsa-Pantai Expressway (SPE)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "The Sphere & Nexus Lifestyle Retail Mall (2 mins walk)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Mid Valley Megamall (5 mins drive)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "The Gardens Mall (5 mins drive)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Bangsar Village I & II (5 mins drive)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Bangsar Shopping Centre (7 mins drive)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "LifeCare Diagnostic Medical Centre (2 mins walk)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Kuala Lumpur (3 mins drive)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "University Malaya Medical Centre (3 mins drive)"
+   },
+   {
+    "category": "Hotels",
+    "name": "VE Hotel & Residences (2 mins walk)"
+   },
+   {
+    "category": "Hotels",
+    "name": "Komune Living (in Bangsar South)"
+   },
+   {
+    "category": "Hotels",
+    "name": "Cititel & Boulevard Hotel (5 mins drive)"
+   },
+   {
+    "category": "Hotels",
+    "name": "The Gardens Hotel & Residences (5 mins drive)"
+   },
+   {
+    "category": "Hotels",
+    "name": "PJ Hilton / Armada Hotel (5 mins drive)"
+   },
+   {
+    "category": "Education",
+    "name": "University of Malaya (5 mins drive)"
+   },
+   {
+    "category": "Education",
+    "name": "Stamford College"
+   },
+   {
+    "category": "Education",
+    "name": "University TAR"
+   },
+   {
+    "category": "Education",
+    "name": "KDU University College"
+   },
+   {
+    "category": "Recreation",
+    "name": "6-acre central park in Bangsar South"
+   },
+   {
+    "category": "Nearby Landmarks",
+    "name": "KL Sentral (8 mins drive)"
+   },
+   {
+    "category": "Nearby Landmarks",
+    "name": "KL City Centre (12 mins drive)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "Office",
+    "size": "1389"
+   },
+   {
+    "type": "Office",
+    "size": "1668"
+   },
+   {
+    "type": "Office",
+    "size": "1701"
+   },
+   {
+    "type": "Office",
+    "size": "1712"
+   },
+   {
+    "type": "Office",
+    "size": "1755"
+   },
+   {
+    "type": "Office",
+    "size": "2228"
+   },
+   {
+    "type": "Office",
+    "size": "2260"
+   },
+   {
+    "type": "Office",
+    "size": "3025"
+   }
+  ]
+ },
+ "bayu-timur-residences": {
+  "source": "Developer sales kit (2026-09-18)",
+  "developer": "Pakar Angsana Sdn. Bhd. (A subsidiary of Berjaya Land Berhad)",
+  "checked": "2026-09-18",
+  "maintenanceFee": "Est. RM 0.30 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.3,
+  "description": {
+   "en": "Nestled across 8.51 acres in Shah Alam, Bayu Timur is the ideal sanctuary that seamlessly connects you to the area's finest offerings. Stay moments away from an array of amenities to explore at any hour, start each new day with new experiences to anticipate, and discover the perfect balance of tranquility and convenience in this vibrant landscape."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Ground Floor",
+   "Centralized Roundabout",
+   "Entrance Statement",
+   "Drop Off Area",
+   "Feature Mounding",
+   "Mini Amphitheatre",
+   "Open Lawn",
+   "Family Swing Area",
+   "Swimming Pool",
+   "Pool Timber Deck",
+   "Pool Shade Cabana",
+   "BBQ Area",
+   "Herb / Edible Garden",
+   "Outdoor Shower",
+   "Kids Pool",
+   "Kids Playground",
+   "Family Seating Area",
+   "Outdoor Gym Stations",
+   "Bicycle / Jogging Path Lane",
+   "Maze Garden",
+   "Reflexology Path",
+   "Kindergarten",
+   "Children Play Zone",
+   "Nursery",
+   "Game Room",
+   "Meeting Room",
+   "Management Office",
+   "Sauna / Changing Room (Female)",
+   "Sauna / Changing Room (Male)",
+   "Shop lots",
+   "Laundry Room",
+   "Surau",
+   "Level 1",
+   "Multipurpose Hall / Badminton Court",
+   "Table Tennis Room",
+   "Café Space",
+   "Library",
+   "Co-working space",
+   "Shop Lot",
+   "Gymnasium"
+  ],
+  "nearby": [
+   {
+    "category": "Connectivity",
+    "name": "Shah Alam Expressway (KESAS)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "North-South Expressway Central Link (ELITE)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "South Klang Valley Expressway (SKVE)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "New Klang Valley Expressway (NKVE)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "Kemuning-Shah Alam Expressway (LKSA)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "Damansara-Puchong Expressway (LDP)"
+   },
+   {
+    "category": "Connectivity",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "AEON BIG Bukit Rimau (3.4 km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Gamuda Walk Mall (4.1 km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Giant Hypermarket (6.0 km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Quayside Mall (7.6 km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Sanctuary Mall (8.2 km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "AEON Mall Bukit Tinggi (10.2 km)"
+   },
+   {
+    "category": "Education",
+    "name": "Sekolah Kebangsaan Jalan Kebun (1.8 km)"
+   },
+   {
+    "category": "Education",
+    "name": "Sekolah Kebangsaan Bukit Rimau (2.9 km)"
+   },
+   {
+    "category": "Education",
+    "name": "Peninsula College"
+   },
+   {
+    "category": "Education",
+    "name": "The Lighthouse Campus (3.1 km)"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (C) Chung Hua Kota Kemuning (3.8 km)"
+   },
+   {
+    "category": "Education",
+    "name": "Chinese Taipei School (3.9 km)"
+   },
+   {
+    "category": "Education",
+    "name": "Sime Darby Nursing and Health Sciences College (5.0 km)"
+   },
+   {
+    "category": "Education",
+    "name": "Saint International School (5.4 km)"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (T) Taman Sentosa (5.4 km)"
+   },
+   {
+    "category": "Education",
+    "name": "ICTI College (6.2 km)"
+   },
+   {
+    "category": "Education",
+    "name": "Tenby International School (6.7 km)"
+   },
+   {
+    "category": "Education",
+    "name": "ISHA Technical College (7.2 km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital Bukit Rimau (3.8 km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Pakar Sentosa (6.6 km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Selangor Specialist Hospital (12.3 km)"
+   },
+   {
+    "category": "Recreational",
+    "name": "Bukit Kemuning Golf & Country Resort (2.1 km)"
+   },
+   {
+    "category": "Recreational",
+    "name": "Kota Permai Golf & Country Club (4.4 km)"
+   },
+   {
+    "category": "Recreational",
+    "name": "Taman Tasik Kota Kemuning (5.4 km)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "1000"
+   },
+   {
+    "type": "B",
+    "size": "1100"
+   },
+   {
+    "type": "C(Dual Key)",
+    "size": "1200"
+   },
+   {
+    "type": "D(Dual Key)",
+    "size": "1280"
+   }
+  ]
+ },
+ "casa-darcadia": {
+  "source": "Developer sales kit (2026-09-18)",
+  "developer": "I&P Alam Impian Sdn Bhd (a member of S P Setia)",
+  "checked": "2026-09-18",
+  "maintenanceFee": "Depends on RA (After completion of the project)",
+  "description": {
+   "en": "Casa D'Arcadia is a low-density, freehold development in Alam Impian, Shah Alam, offering 172 premium resort-style homes. Spread across 51 acres with 45% dedicated to green spaces, it features modern tropical architecture. Located in the exclusive Cinematic Arts Precinct, it offers a serene, unhurried lifestyle with a focus on tranquility and nature. The development includes 2-storey and 3-storey Semi-Ds and Villas, designed for multi-generational living where every moment feels like coming home to serenity."
+  },
+  "keyFeatures": [
+   "Low-density enclave of 172 premium homes",
+   "Resort-style living with 45% green/recreational area",
+   "Modern contemporary tropical architecture",
+   "Located in the exclusive Cinematic Arts Precinct",
+   "eGreenLiving features (Solar Panel, EV Port, Smart Lock etc.)",
+   "Private lift for 3-storey units."
+  ],
+  "facilities": [
+   "Lighthouse View Tower",
+   "Yacht Plaza",
+   "Step Terrace",
+   "Palm Terrace Garden",
+   "Creek Garden",
+   "Tree Sculpture Terrace",
+   "Gateway Terrace",
+   "Children's Playground",
+   "Lake and water bodies",
+   "Jogging & Cycling Path"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "LKSA"
+   },
+   {
+    "category": "Highways",
+    "name": "KESAS Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "ELITE"
+   },
+   {
+    "category": "Highways",
+    "name": "NKVE"
+   },
+   {
+    "category": "Highways",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "WCE"
+   },
+   {
+    "category": "Highways",
+    "name": "GCE"
+   },
+   {
+    "category": "Retail",
+    "name": "AEON BIG"
+   },
+   {
+    "category": "Retail",
+    "name": "GIANT Hypermarket"
+   },
+   {
+    "category": "Retail",
+    "name": "MYDIN"
+   },
+   {
+    "category": "Retail",
+    "name": "LOTUS'S"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Selangor Specialist Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "SALAM Medical Centre"
+   },
+   {
+    "category": "Recreation",
+    "name": "Taman Tasik Shah Alam"
+   },
+   {
+    "category": "Transportation",
+    "name": "Subang Airport"
+   },
+   {
+    "category": "Landmark",
+    "name": "Sultan Salahuddin Abdul Aziz Shah Mosque"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A(3-Storey Semi-D)",
+    "size": "4280",
+    "beds": "5+1",
+    "baths": "7"
+   },
+   {
+    "type": "B(3-Storey Semi-D)",
+    "size": "4393",
+    "beds": "5+1",
+    "baths": "7"
+   },
+   {
+    "type": "C(2-Storey Semi-D)",
+    "size": "3347",
+    "beds": "4",
+    "baths": "6"
+   },
+   {
+    "type": "D(2-Storey Semi-D)",
+    "size": "3345",
+    "beds": "4",
+    "baths": "6"
+   }
+  ]
+ },
+ "colonial-infinite-edumetro": {
+  "source": "Developer sales kit (2026-09-18)",
+  "developer": "HCK Builders Sdn Bhd",
+  "checked": "2026-09-18",
+  "maintenanceFee": "Estimated RM0.40 per sqft + 10% sinking fund",
+  "maintenanceFeePsf": 0.4,
+  "description": {
+   "en": "Enjoy direct access to major highways. Benefit from the proximity to Segi College. Create lasting memories in a community designed for shared spaces and urban professionals. Live safely and securely with smart door locks and CCTV surveillance. Located at the heart of USJ, Subang Jaya, this integrated development is surrounded by abundant amenities and transport services. Take advantage of the free shuttle service to simplify and enhance your daily commute. Customise your space to fit your lifestyle with our versatile and flexible layouts, featuring duplex units, high ceilings and mezzanine floors.",
+   "zh": "便捷畅达，连接无忧。坐落于众多学府之间。在专为共享空间和城市专业人士设计的社区中创造持久的回忆。位于首邦再也USJ的中心地带，被丰富的设施和交通服务所环绕。利用免费班车服务，简化和改善您的日常通勤。通过我们多功能和灵活的布局，定制您的空间，设有复式单元、高天花板和夹层楼。"
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Lounge lobby",
+   "infinity pool",
+   "gymnasium",
+   "leisure lounge",
+   "social lounge",
+   "co-working spaces"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "USJ7 LRT/BRT Station",
+    "distance": "1.7km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Shuttle Service to USJ 7"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Da Men"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Taipan USJ 10"
+   },
+   {
+    "category": "Highways",
+    "name": "KESAS Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Lebuhraya Damansara Puchong (LDP)"
+   },
+   {
+    "category": "Highways",
+    "name": "New Pantai Expressway (NPE)"
+   },
+   {
+    "category": "Highways",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "ELITE Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "NKVE Highway"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Giant USJ 1 Subang Jaya Mall",
+    "distance": "1.7km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Summit USJ",
+    "distance": "1.8km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Mydin Subang Jaya Hypermarket",
+    "distance": "1.9km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Da Men Mall",
+    "distance": "4.6km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "SS15 Courtyard",
+    "distance": "5.1km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Subang Parade",
+    "distance": "5.5km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Main Place Mall",
+    "distance": "6.0km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Sunway Geo Avenue",
+    "distance": "6.1km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Empire Shopping Centre",
+    "distance": "6.2km"
+   },
+   {
+    "category": "Shopping & Leisure",
+    "name": "Sunway Pyramid",
+    "distance": "6.8km"
+   },
+   {
+    "category": "Education",
+    "name": "SEGI College Subang Jaya",
+    "distance": "1.2km"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Chee Wen",
+    "distance": "1.6km"
+   },
+   {
+    "category": "Education",
+    "name": "Sunway International School",
+    "distance": "2.4km"
+   },
+   {
+    "category": "Education",
+    "name": "Sri Kuala Lumpur",
+    "distance": "4.1km"
+   },
+   {
+    "category": "Education",
+    "name": "Monash University Malaysia",
+    "distance": "5.0km"
+   },
+   {
+    "category": "Education",
+    "name": "Sunway University",
+    "distance": "5.2km"
+   },
+   {
+    "category": "Education",
+    "name": "Sunway College",
+    "distance": "5.4km"
+   },
+   {
+    "category": "Education",
+    "name": "Taylor's University Lakeside Campus",
+    "distance": "7.8km"
+   },
+   {
+    "category": "Medical",
+    "name": "Subang Jaya Medical Centre",
+    "distance": "4.5km"
+   },
+   {
+    "category": "Medical",
+    "name": "Sunway Medical Centre",
+    "distance": "5.3km"
+   },
+   {
+    "category": "Recreation",
+    "name": "91 Pickleball Club House",
+    "distance": "2.1km"
+   },
+   {
+    "category": "Recreation",
+    "name": "X Park Sunway South Quay",
+    "distance": "5.4km"
+   },
+   {
+    "category": "Recreation",
+    "name": "Glenmarie Golf & Country Club",
+    "distance": "8.3km"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kelab Golf Negara Subang",
+    "distance": "9.7km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "Simplex(Studio + 1 Bathroom)",
+    "size": "280–549"
+   },
+   {
+    "type": "Simplex(1 Bedroom + 1 Bathroom)",
+    "size": "474–549",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "Duplex(Standard Unit + 1 Bathroom)",
+    "size": "388–797",
+    "beds": "0",
+    "baths": "1"
+   },
+   {
+    "type": "Duplex(1 Bedroom + 1 Bathroom)",
+    "size": "646–1001",
+    "beds": "1",
+    "baths": "1"
+   }
+  ]
+ },
+ "dawn-kl-city-centre": {
+  "source": "Developer sales kit (2026-09-18)",
+  "developer": "Dawn Land Sdn Bhd",
+  "checked": "2026-09-18",
+  "maintenanceFee": "RM0.70 psf (Including Sinking Fund)",
+  "maintenanceFeePsf": 0.7,
+  "description": {
+   "en": "DAWN KL City Centre is a 69-storey freehold development located along Jalan Tuanku Abdul Rahman in Kuala Lumpur city centre, developed by Dawn Land Sdn Bhd across less than 1.4 acres with a commercial title under HDA. The project comprises 960 units with expected completion in 2029. It is situated 500m from KLCC LRT Station, 650m from Kampung Baru LRT Station, and 500m from Suria KLCC and Avenue K, with access via the AKLEH Expressway. Built-up sizes range from 348 sq ft to 835 sq ft, offering 1 to 2 bedrooms including dual-key options. Facilities include sky facilities, and car parks are available for rental without allocated bays."
+  },
+  "keyFeatures": [],
+  "facilities": [],
+  "nearby": [
+   {
+    "category": "Public Transportation",
+    "name": "KLCC LRT Station (500m)"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Kampung Baru LRT Station (650m)"
+   },
+   {
+    "category": "Highways",
+    "name": "AKLEH Expressway"
+   },
+   {
+    "category": "Shopping",
+    "name": "Avenue K (500m)"
+   },
+   {
+    "category": "Shopping",
+    "name": "Suria KLCC (500m)"
+   },
+   {
+    "category": "Shopping",
+    "name": "Intermark Mall (1.5km)"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion KL (1.8km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Prince Court Medical Centre (2.1km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "National Heart Institute (IJN) (2.3km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Tung Shin Hospital (3.2km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Kuala Lumpur (3.2km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Gleneagles Hospital KL (3.6km)"
+   },
+   {
+    "category": "Education",
+    "name": "INTI International College KL (2.4km)"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (C) Chung Hwa (P) (2.4km)"
+   },
+   {
+    "category": "Education",
+    "name": "St. John's International School (2.5km)"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Convent Bukit Nanas (2.8km)"
+   },
+   {
+    "category": "Education",
+    "name": "Sayfol International School (2.9km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "KLCC Park (700m)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kuala Lumpur Forest Eco-Park (2.1km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "The Royal Selangor Golf Club (3.3km)"
+   },
+   {
+    "category": "Nearby Landmarks",
+    "name": "Petronas Twin Towers"
+   },
+   {
+    "category": "Nearby Landmarks",
+    "name": "Menara Public Bank (200m)"
+   },
+   {
+    "category": "Nearby Landmarks",
+    "name": "W Kuala Lumpur (400m)"
+   },
+   {
+    "category": "Nearby Landmarks",
+    "name": "KL Tower"
+   },
+   {
+    "category": "Nearby Landmarks",
+    "name": "Exchange 106 @ TRX"
+   },
+   {
+    "category": "Nearby Landmarks",
+    "name": "Merdeka 118"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A(Office Suite)",
+    "size": "350",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A1(Office Suite)",
+    "size": "350",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A2(Office Suite)",
+    "size": "405",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A3(Office Suite)",
+    "size": "416",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A4(Office Suite)",
+    "size": "350",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A5(Office Suite)",
+    "size": "348",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A6(Office Suite)",
+    "size": "402",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "A7(Office Suite)",
+    "size": "413",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B(Dual-key)",
+    "size": "550"
+   },
+   {
+    "type": "B1",
+    "size": "550",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C(Dual-key)",
+    "size": "762"
+   },
+   {
+    "type": "Ca(Dual-key)",
+    "size": "806"
+   },
+   {
+    "type": "C1",
+    "size": "739",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C1a",
+    "size": "780",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C2",
+    "size": "785",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C2a",
+    "size": "835",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C3(Dual-key)",
+    "size": "760"
+   },
+   {
+    "type": "C4(Dual-key)",
+    "size": "804"
+   },
+   {
+    "type": "C5",
+    "size": "737",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C6",
+    "size": "778",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C7",
+    "size": "783",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C8",
+    "size": "833",
+    "beds": "2",
+    "baths": "1"
+   }
+  ]
+ },
+ "erat-residence-alam-impian": {
+  "source": "Developer sales kit (2026-09-20)",
+  "developer": "Suntrack Development Sdn Bhd",
+  "checked": "2026-09-20",
+  "maintenanceFee": "RM0.35 + 10% sinking fund",
+  "description": {
+   "en": "ERAT is a low density development with only 269 units sitting on top of 4.49 acres. Youniversal Design makes this a multi-generational and multi-ability residence. Which means, easy accessibility for those in their golden years or anyone in a wheelchair, from bedroom to bathroom and all the way to common areas, facilities, features and more. ERAT is built to last, and is spatially designed with useful features for ageing in place. This is a forever home, made practical for the long term. The 'linking and tightening' landscape design is coupled with an architectural concept of structured knots, both inspired by Songket patterns."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Inside Residential Tower",
+   "Management Office",
+   "Parcel & Mailroom",
+   "Communal Kitchen",
+   "Changing Rooms",
+   "Activity Room",
+   "Activity Space",
+   "OKU Toilet",
+   "Children's Playroom",
+   "Library & Reading Room",
+   "Residents' Lounge",
+   "Main Lobby",
+   "Outside Residential Tower / Podium",
+   "Outdoor Court",
+   "Communal Garden",
+   "Guardhouse",
+   "Fenced Playground",
+   "Gazebo",
+   "Drop-off Area",
+   "Multi-Storey Carpark Building",
+   "Surau",
+   "Gymnasium",
+   "Swimming Pool",
+   "Wading Pool",
+   "Picnic & BBQ Area",
+   "Sports Hall",
+   "320m walking track",
+   "Open lawn and pocket garden"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Shah Alam Expressway (KESAS)"
+   },
+   {
+    "category": "Highways",
+    "name": "Kemuning - Shah Alam Highway (LKSA)"
+   },
+   {
+    "category": "Highways",
+    "name": "Shapadu Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "West Coast Expressway (WCE)"
+   },
+   {
+    "category": "Highways",
+    "name": "New Klang Valley Expressway (NKVE)"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara - Shah Alam Elevated Expressway (DASH)"
+   },
+   {
+    "category": "Highways",
+    "name": "ELITE Highway"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "LakePoint Gallerie (400m)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Econsave (5.7km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "NSK (6.1km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Giant Kemuning (6.2km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Hero Market Kota Kemuning (7.5km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "AEON BiG Bukit Rimau (8.3km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Gamuda Walk Mall (8.5km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "AEON Mall Shah Alam (13.1km)"
+   },
+   {
+    "category": "Shopping & Retail",
+    "name": "Mid Valley Megamall (27km)"
+   },
+   {
+    "category": "Education",
+    "name": "Eaton International School (next door)"
+   },
+   {
+    "category": "Education",
+    "name": "SK Taman Sri Muda (6.9km)"
+   },
+   {
+    "category": "Education",
+    "name": "SMJK Chung Hwa"
+   },
+   {
+    "category": "Education",
+    "name": "Klang (7km)"
+   },
+   {
+    "category": "Education",
+    "name": "INTEC Education College (8.4km)"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Khe Beng (8.9km)"
+   },
+   {
+    "category": "Education",
+    "name": "Peninsula College Malaysia (10km)"
+   },
+   {
+    "category": "Education",
+    "name": "Universal Institute of Professional Management (14.2km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "SALAM Shah Alam Specialist Hospital (6.6km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Selangor Specialist Hospital (7.9km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital - Bukit Rimau (9.3km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Avisena Specialist Hospital (9.4km)"
+   },
+   {
+    "category": "Recreation",
+    "name": "LakePoint Club (400m)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Taman Tasik Alam Impian (550m)"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kota Permai Golf & Country Club (9km)"
+   },
+   {
+    "category": "Public Transportation & Tolls",
+    "name": "Alam Impian LKSA Toll Plaza (3km)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "1098",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B",
+    "size": "1216",
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "type": "C(Penthouse)",
+    "size": "2206",
+    "beds": "5",
+    "baths": "4"
+   }
+  ]
+ },
+ "erica-residence": {
+  "source": "Developer sales kit (2026-09-20)",
+  "developer": "AYER",
+  "checked": "2026-09-20",
+  "description": {
+   "en": "Welcome to Bukit Puchong Boulevard Phase 2 – the address of new possibilities. Located within the established 1,390-acre Bukit Puchong township, these freehold 2 & 3-storey shop offices combine contemporary architecture, generous layouts, and a prime community setting to elevate your business and drive lasting growth."
+  },
+  "keyFeatures": [],
+  "facilities": [],
+  "nearby": [
+   {
+    "category": "Education",
+    "name": "Taylor's International School"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (C) Han Ming (Chinese School)"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (C) Sin Ming (Chinese School)"
+   },
+   {
+    "category": "Education",
+    "name": "Alice Smith School"
+   },
+   {
+    "category": "Education",
+    "name": "Taylor's University Lakeside Campus"
+   },
+   {
+    "category": "Education",
+    "name": "Monash University"
+   },
+   {
+    "category": "Education",
+    "name": "Multimedia University"
+   },
+   {
+    "category": "Education",
+    "name": "Lim Kok Wing University"
+   },
+   {
+    "category": "Shopping",
+    "name": "Lotus's Bukit Puchong"
+   },
+   {
+    "category": "Shopping",
+    "name": "AEON Big Hypermarket"
+   },
+   {
+    "category": "Shopping",
+    "name": "Lotus's Puchong"
+   },
+   {
+    "category": "Shopping",
+    "name": "IOI Mall"
+   },
+   {
+    "category": "Shopping",
+    "name": "Sunway Pyramid Shopping Mall"
+   },
+   {
+    "category": "Shopping",
+    "name": "IOI City Mall"
+   },
+   {
+    "category": "Recreation",
+    "name": "MOS Driving Range & Academy"
+   },
+   {
+    "category": "Recreation",
+    "name": "Palma Garden Golf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kinrara Golf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Jalil Recreation Park"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Jalil Sport City"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Besar Serdang"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital Puchong"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Putrajaya Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sunway Medical"
+   },
+   {
+    "category": "Connectivity",
+    "name": "LDP Highway"
+   },
+   {
+    "category": "Connectivity",
+    "name": "SKVE Highway"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "M(Intermediate Lot)",
+    "size": "3520"
+   },
+   {
+    "type": "C(Corner Lot)",
+    "size": "9504"
+   },
+   {
+    "type": "E(End Lot)",
+    "size": "5280"
+   }
+  ]
+ },
+ "ekotitiwangsa": {
+  "source": "Developer sales kit (2026-09-20)",
+  "developer": "Ekovest Berhad (Ekovest Land Sdn Bhd)",
+  "checked": "2026-09-20",
+  "maintenanceFee": "Office: RM 0.25 PSF; Service Apartment: RM 0.30 PSF",
+  "maintenanceFeePsf": 0.25,
+  "description": {
+   "en": "EkoTitiwangsa is a freehold integrated development located in Setapak, Kuala Lumpur, offering a dynamic mix of office suites, service apartments, and retail shops. Designed for modern urban living, it boasts excellent accessibility via major highways like DUKE and public transportation including LRT and MRT, with a complimentary shuttle service provided. The development features a multi-tiered security system and a comprehensive suite of lifestyle facilities spread across multiple levels, including an infinity pool, sky gardens, and a gymnasium, all while offering magnificent views of the KL city skyline. Nestled in a mature neighborhood, residents have easy access to a wide array of amenities such as shopping malls, hospitals, educational institutions, and the scenic Titiwangsa Lake Gardens."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Infinity Pool",
+   "Jacuzzi",
+   "Serene Wading Pool",
+   "Poolside Pavilion",
+   "Sun Lounge",
+   "Floating Deck",
+   "Poolside Shower",
+   "BBQ Deck",
+   "Community Garden",
+   "Outdoor Social Lounge",
+   "Children's Playground",
+   "Multipurpose Hall/ Table Tennis",
+   "Changing Room",
+   "Surau",
+   "Muslim Mortuary",
+   "Gymnasium",
+   "Meditation/Yoga Deck",
+   "Reading Room/ Co-Working Space",
+   "Entertainment Room",
+   "Sauna Room",
+   "Steam Room",
+   "Management Office",
+   "Non-Muslim Mortuary",
+   "Breezy Hangout",
+   "Sky Garden",
+   "Active Zone",
+   "Reflexology Path",
+   "Green Lawn",
+   "Picnic Meadow",
+   "Lookout Point"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "LRT Station Sentul"
+   },
+   {
+    "category": "Public Transport",
+    "name": "LRT Station Sentul Timur"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT/LRT/Monorail/Bus Station Titiwangsa"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KTM Station Sentul"
+   },
+   {
+    "category": "Highways",
+    "name": "DUKE Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "DUKE 2 Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Lebuhraya Sultan Iskandar"
+   },
+   {
+    "category": "Highways",
+    "name": "AKLEH Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Middle Ring Road II (MRR2)"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Setapak Central"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Giant Setapak"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "AEON Big @ The Palette"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "AEON @ Alpha Angle"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Sunway Putra Mall"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Suria KLCC"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Pavilion KL"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "The Exchange TRX"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Tawakkal Specialist"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Sentosa"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Hospital Kuala Lumpur"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Institut Jantung Negara"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Gleneagles Hospital"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Prince Court Medical Centre"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (C) Chong Hwa"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Mun Yee"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Tinggi Setapak"
+   },
+   {
+    "category": "Education",
+    "name": "Wesley Methodist International School"
+   },
+   {
+    "category": "Education",
+    "name": "SMJK Chong Hwa"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Chiao Nan"
+   },
+   {
+    "category": "Education",
+    "name": "Universiti Teknologi Malaysia"
+   },
+   {
+    "category": "Education",
+    "name": "Tunku Abdul Rahman University College"
+   },
+   {
+    "category": "Recreation",
+    "name": "Titiwangsa Golf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Taman Tasik Titiwangsa"
+   },
+   {
+    "category": "Recreation",
+    "name": "KLCC Park"
+   },
+   {
+    "category": "Recreation",
+    "name": "Arena Sukan KL"
+   },
+   {
+    "category": "Attractions & Amenities",
+    "name": "HGH Convention Centre"
+   },
+   {
+    "category": "Attractions & Amenities",
+    "name": "Istana Budaya"
+   },
+   {
+    "category": "Attractions & Amenities",
+    "name": "National Library"
+   },
+   {
+    "category": "Attractions & Amenities",
+    "name": "World Trade Centre"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A(Office)",
+    "size": "1033–2120"
+   },
+   {
+    "type": "A(Service Apartment)",
+    "size": "806",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B/Ba(Service Apartment)",
+    "size": "690",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B1/B1a(Service Apartment)",
+    "size": "690",
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "type": "B2/B2a(Service Apartment)",
+    "size": "690",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "C/Ca(Service Apartment)",
+    "size": "809",
+    "beds": "1+1",
+    "baths": "2"
+   },
+   {
+    "type": "C1(Service Apartment)",
+    "size": "809",
+    "beds": "1+1",
+    "baths": "2"
+   },
+   {
+    "type": "C2(Service Apartment)",
+    "size": "809",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "D(Service Apartment)",
+    "size": "854",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "E(Service Apartment)",
+    "size": "845",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "F(Service Apartment (Dual Key))",
+    "size": "1120",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "J1(Office (En Floor Unit))",
+    "size": "7546"
+   }
+  ]
+ },
+ "jewel-by-oxley-kl-city-centre": {
+  "source": "Developer sales kit (2026-09-22)",
+  "developer": "Oxley Risings Sdn Bhd",
+  "checked": "2026-09-22",
+  "maintenanceFee": "0.66 psf (est., incl. sinking fund)",
+  "maintenanceFeePsf": 0.66,
+  "description": {
+   "en": "Freehold 49-storey development located along Jalan Ampang in Kuala Lumpur city centre, Jewel by Oxley KL City Centre occupies a 3.11-acre site with 267 units, completed in 2025. The residence is situated near the Petronas Twin Towers, Suria KLCC, KLCC Park, Ampang Park LRT Station, and KLCC LRT Station. Units range from 678 sq ft to 2185 sq ft with 1 to 3+1 bedrooms. Level 7 facilities include a pool and pool deck, gym, kid's playground, BBQ area, yoga deck, and reading room. Parking provides one floating car park access card per unit in Tower 1, and one car park per unit in Tower 2 with specified unit exceptions."
+  },
+  "keyFeatures": [
+   "First SO/ Branded Residence in Kuala Lumpur",
+   "Tallest branded residence in Malaysia with a rooftop pool",
+   "Freehold mixed development in the heart of KL City Centre",
+   "Integrated with two 5-star hotels (SO/ Sofitel and The Langham), signature offices, and retail galleria",
+   "Directly adjacent to the Petronas Twin Towers and 50-acre KLCC Park",
+   "Designed by award-winning VERITAS Design Group",
+   "Certified BCA Green Mark Gold for sustainable design",
+   "Fully furnished and interior-designed units available",
+   "Exclusive access to 24-hour concierge and à la carte hotel services."
+  ],
+  "facilities": [
+   "Level 7 (Jewel)",
+   "description: Lobby/Lounge",
+   "Function Hall",
+   "Gym",
+   "Surau",
+   "Changing Rooms",
+   "Management Office",
+   "Pool & Pool Deck",
+   "Kid's Playground",
+   "BBQ Area",
+   "Kid's Pool",
+   "Zen Garden",
+   "Pre-function Deck",
+   "Collaborative Workspace",
+   "Wellness Sanctuary / Yoga Deck",
+   "Reading Room",
+   "Level 45 (SO/KL)",
+   "description: Entertainment Room",
+   "Level 46 (SO/KL)",
+   "description: Lounge",
+   "Multipurpose Hall",
+   "Yoga Room",
+   "Sauna",
+   "Screening Room",
+   "Sky Garden",
+   "Level 77 (SO/KL)",
+   "description: Pool",
+   "Jacuzzi",
+   "BBQ Pit",
+   "Cabana",
+   "AV Room"
+  ],
+  "nearby": [
+   {
+    "category": "Landmark",
+    "name": "Petronas Twin Towers"
+   },
+   {
+    "category": "Shopping",
+    "name": "Suria KLCC"
+   },
+   {
+    "category": "Shopping",
+    "name": "Avenue K"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion Kuala Lumpur",
+    "distance": "1.4km"
+   },
+   {
+    "category": "Park",
+    "name": "KLCC Park"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Ampang Park LRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KLCC LRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KL Sentral",
+    "distance": "5.2km"
+   },
+   {
+    "category": "Convention Center",
+    "name": "Kuala Lumpur Convention Centre",
+    "distance": "0.8km"
+   },
+   {
+    "category": "Medical",
+    "name": "Prince Court Medical Centre",
+    "distance": "1.8km"
+   },
+   {
+    "category": "Medical",
+    "name": "Twin Towers Medical Centre"
+   },
+   {
+    "category": "Medical",
+    "name": "HSC Medical Center",
+    "distance": "1km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "10"
+   }
+  ]
+ },
+ "so-kuala-lumpur-residences": {
+  "source": "Developer sales kit (2026-09-22)",
+  "developer": "Oxley Risings Sdn Bhd",
+  "checked": "2026-09-22",
+  "maintenanceFee": "1.10 psf (est., incl. sinking fund)",
+  "maintenanceFeePsf": 1.1,
+  "description": {
+   "en": "Rising 78 storeys along Jalan Ampang in Kuala Lumpur city centre, SO Kuala Lumpur Residences is a freehold development on 3.11 acres offering 590 units. Completed in 2025, the property is situated near KLCC Park, Suria KLCC, KLCC LRT Station, and Ampang Park LRT Station. Built-up areas range from 566 sq ft to 995 sq ft across studio to 2+1 bedroom layouts with 1 to 2 bathrooms. Facilities include swimming pools, a gym, yoga room, jacuzzi, sky garden, and children's playground. The development provides 610 parking bays situated across basement levels 3 to 5."
+  },
+  "keyFeatures": [
+   "First SO/ Branded Residence in Kuala Lumpur",
+   "Tallest branded residence in Malaysia with a rooftop pool",
+   "Freehold mixed development in the heart of KL City Centre",
+   "Integrated with two 5-star hotels (SO/ Sofitel and The Langham), signature offices, and retail galleria",
+   "Directly adjacent to the Petronas Twin Towers and 50-acre KLCC Park",
+   "Designed by award-winning VERITAS Design Group",
+   "Certified BCA Green Mark Gold for sustainable design",
+   "Fully furnished and interior-designed units available",
+   "Exclusive access to 24-hour concierge and à la carte hotel services."
+  ],
+  "facilities": [
+   "Level 7 (Jewel)",
+   "description: Lobby/Lounge",
+   "Function Hall",
+   "Gym",
+   "Surau",
+   "Changing Rooms",
+   "Management Office",
+   "Pool & Pool Deck",
+   "Kid's Playground",
+   "BBQ Area",
+   "Kid's Pool",
+   "Zen Garden",
+   "Pre-function Deck",
+   "Collaborative Workspace",
+   "Wellness Sanctuary / Yoga Deck",
+   "Reading Room",
+   "Level 45 (SO/KL)",
+   "description: Entertainment Room",
+   "Level 46 (SO/KL)",
+   "description: Lounge",
+   "Multipurpose Hall",
+   "Yoga Room",
+   "Sauna",
+   "Screening Room",
+   "Sky Garden",
+   "Level 77 (SO/KL)",
+   "description: Pool",
+   "Jacuzzi",
+   "BBQ Pit",
+   "Cabana",
+   "AV Room"
+  ],
+  "nearby": [
+   {
+    "category": "Landmark",
+    "name": "Petronas Twin Towers"
+   },
+   {
+    "category": "Shopping",
+    "name": "Suria KLCC"
+   },
+   {
+    "category": "Shopping",
+    "name": "Avenue K"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion Kuala Lumpur",
+    "distance": "1.4km"
+   },
+   {
+    "category": "Park",
+    "name": "KLCC Park"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Ampang Park LRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KLCC LRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KL Sentral",
+    "distance": "5.2km"
+   },
+   {
+    "category": "Convention Center",
+    "name": "Kuala Lumpur Convention Centre",
+    "distance": "0.8km"
+   },
+   {
+    "category": "Medical",
+    "name": "Prince Court Medical Centre",
+    "distance": "1.8km"
+   },
+   {
+    "category": "Medical",
+    "name": "Twin Towers Medical Centre"
+   },
+   {
+    "category": "Medical",
+    "name": "HSC Medical Center",
+    "distance": "1km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "9"
+   }
+  ]
+ },
+ "est8-seputeh": {
+  "source": "Developer sales kit (2026-09-22)",
+  "developer": "Titian Sama Sdn. Bhd. (Subsidiary of Eupe Corporation Berhad)",
+  "checked": "2026-09-22",
+  "maintenanceFee": "RM 0.44 psf (Including sinking fund)",
+  "maintenanceFeePsf": 0.44,
+  "description": {
+   "en": "Est8 is a ground-breaking concept in Malaysian property development that joins community, sustainability and art into a distinctive enclave within walking distance of one of the city's most sought-after shopping, transport and entertainment facilities. Developed by the award-winning Eupe Corporation, Est8 is committed to a 'Shared Value' approach, delivering more innovative features and design excellence at an affordable price. The project's iconic masterplan, 'Valley of Dreams', is brought to life by leading design firm Ministry of Design, creating a truly imaginative lifestyle offering with lush dreamscapes, artistic sculptures, and functional spaces that elevate physical and mental well-being."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Main Entrance",
+   "The Relaxing Walk",
+   "The Forest Walk",
+   "Podium (A Walk in the Woods)",
+   "Facilities Deck (The Enchanted Walk)",
+   "Floating Garden (Adult Wellness)",
+   "Cloud Maze (Kids Play)",
+   "Flutter Meadow",
+   "Paradise Blue (Kids Play)",
+   "Garden of Giants (Adult Wellness)"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transportation",
+    "name": "Mid Valley KTM Station"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Seputeh KTM Station"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Abdullah Hukum LRT Station"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "Bangsar LRT Station"
+   },
+   {
+    "category": "Public Transportation",
+    "name": "KL Sentral"
+   },
+   {
+    "category": "Shopping",
+    "name": "Mid Valley Megamall"
+   },
+   {
+    "category": "Shopping",
+    "name": "The Gardens Mall"
+   },
+   {
+    "category": "Shopping",
+    "name": "Nu Sentral"
+   },
+   {
+    "category": "Shopping",
+    "name": "KL Gateway Mall"
+   },
+   {
+    "category": "Shopping",
+    "name": "The Sphere & Nexus Bangsar South"
+   },
+   {
+    "category": "Shopping",
+    "name": "Bangsar Village"
+   },
+   {
+    "category": "Shopping",
+    "name": "KLCC"
+   },
+   {
+    "category": "Hospitals",
+    "name": "IHEAL Medical Centre"
+   },
+   {
+    "category": "Hospitals",
+    "name": "Pantai Hospital Kuala Lumpur"
+   },
+   {
+    "category": "Hospitals",
+    "name": "University of Malaya Medical Centre"
+   },
+   {
+    "category": "Education",
+    "name": "Kuen Cheng High School"
+   },
+   {
+    "category": "Education",
+    "name": "University of Malaya"
+   },
+   {
+    "category": "Education",
+    "name": "Valley International School"
+   },
+   {
+    "category": "Connectivity",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Connectivity",
+    "name": "SALAK Highway"
+   },
+   {
+    "category": "Connectivity",
+    "name": "Setiawangsa-Pantai Expressway (SPE)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "Type 1",
+    "size": "753",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "Type 1A(Dual Key)",
+    "size": "753",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "Type 2",
+    "size": "973",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "Type 3",
+    "size": "1084",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "Type 4(Duplex)",
+    "size": "1213",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "Type 5(Duplex)",
+    "size": "1694",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "Type 6(Duplex)",
+    "size": "1947",
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "type": "Villa V1",
+    "size": "543–639",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "Villa V2",
+    "size": "624–975",
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "type": "Villa V3(Duplex)",
+    "size": "914–1175",
+    "beds": "2",
+    "baths": "2"
+   }
+  ]
+ },
+ "the-queenswoodz": {
+  "source": "Developer sales kit (2026-07-29)",
+  "developer": "EXSIM",
+  "checked": "2026-07-29",
+  "maintenanceFee": "RM0.42 psf incl. sinking fund",
+  "maintenanceFeePsf": 0.42,
+  "description": {
+   "en": "The Queenswoodz rises in the heart of Bukit Jalil, Kuala Lumpur, spanning 3.44 acres across two towers of 50 and 51 storeys with a total of 1,004 units on a leasehold commercial (HDA) title. Just a short walk from LRT Awan Besar station and close to Novel Park, Bukit Jalil Golf & Country Resort and Pavilion Bukit Jalil, it offers a rare balance of urban convenience and green tranquility. Residents enjoy an extensive suite of facilities including a leisure pool, gym, kids' play area, BBQ decks and sky lounges. Unit types range from a compact 807 sqft 2+1-bedroom layout to a spacious 1,410 sqft 4-bedroom dual-key unit, catering to young professionals, growing families and multigenerational households alike.",
+   "zh": "The Queenswoodz坐落于吉隆坡Bukit Jalil核心地段，占地3.44英亩，由两栋分别50层（494户）与51层（510户）的高塔组成，共1,004个单位，产权为租赁地契（商业HDA）。项目步行可达LRT Awan Besar站，邻近Novel Park绿地、Bukit Jalil高尔夫乡村俱乐部及Pavilion Bukit Jalil商场，生活机能与自然环境兼备。会所设施丰富，涵盖泳池、健身房、儿童游乐区、烧烤区、天空酒廊等，满足不同生活方式需求。户型从807尺的2+1房到1410尺的4房双钥匙单位一应俱全，适合首购族、小家庭到多代同堂家庭。"
+  },
+  "keyFeatures": [
+   "1,004 units across 2 towers (50 & 51 storeys)",
+   "3.44-acre land",
+   "GreenRE Green Building certified",
+   "Walking distance to LRT Awan Besar station",
+   "5 unit types 807-1,410 sqft",
+   "Level 8/9 podium facilities + Level 50/51 sky facilities",
+   "Type D1 dual-key unit for flexible subletting"
+  ],
+  "facilities": [
+   "Momentum Studio Gym (Level 50)",
+   "Sky BBQ A & Moonlight Sip A (Level 50)",
+   "Sky BBQ B & Moonlight Sip B (Level 51)"
+  ],
+  "nearby": [
+   {
+    "category": "LRT Sri Petaling Line",
+    "name": "LRT Awan Besar station",
+    "distance": "900m walk"
+   },
+   {
+    "category": "Nearby",
+    "name": "Rapid KL bus stop KL1743",
+    "distance": "230m walk"
+   },
+   {
+    "category": "Nearby highways",
+    "name": "KESAS"
+   },
+   {
+    "category": "Nearby highways",
+    "name": "NPE Kuchai Link"
+   },
+   {
+    "category": "Nearby highways",
+    "name": "MEX"
+   },
+   {
+    "category": "Nearby highways",
+    "name": "Sprint"
+   },
+   {
+    "category": "Nearby highways",
+    "name": "ELITE"
+   },
+   {
+    "category": "Nearby highways",
+    "name": "Sungai Besi Expressway"
+   },
+   {
+    "category": "Nearby",
+    "name": "Novel Park @ Bukit Jalil (1.47 acres)"
+   },
+   {
+    "category": "Nearby",
+    "name": "Bukit Jalil Recreational Park"
+   },
+   {
+    "category": "Nearby",
+    "name": "Bukit Jalil Golf & Country Resort"
+   },
+   {
+    "category": "Nearby",
+    "name": "Pavilion Bukit Jalil Mall"
+   },
+   {
+    "category": "Nearby",
+    "name": "International Medical University"
+   },
+   {
+    "category": "Nearby",
+    "name": "National Stadium Bukit Jalil / Axiata Arena"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1/A2",
+    "size": "807",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "B1/B2",
+    "size": "936",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1/C2",
+    "size": "1206",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "D1",
+    "size": "1410",
+    "beds": "4",
+    "baths": "3",
+    "note": "Dual Key"
+   },
+   {
+    "type": "D2",
+    "size": "1410",
+    "beds": "3+1",
+    "baths": "3"
+   }
+  ]
+ },
+ "aurum-suites": {
+  "source": "Developer sales kit (2026-08-10)",
+  "developer": "HARTACOM PROPERTY SDN. BHD.",
+  "checked": "2026-08-10",
+  "maintenanceFee": "Estimate RM0.50psf including sinking fund",
+  "maintenanceFeePsf": 0.5,
+  "description": {
+   "en": "More than just a development, Aurum Business Centre is a symbol of ambition, prestige, and modern urban living. Strategically located in Sri Petaling, this dynamic mixed-development is the perfect synergy of sophisticated suites, premium retail spaces, and contemporary offices, designed for those who dare to lead, innovate, and shape the future."
+  },
+  "keyFeatures": [
+   "Versatile Layouts adaptable for home, office, or both",
+   "Exclusive Lift Lobby Experience with 5 lifts serving only 10 suites per floor",
+   "Light-filled Interiors with 2.6m height windows",
+   "Natural Ventilation in all rooms and bathrooms",
+   "Multi-tier Security."
+  ],
+  "facilities": [
+   "Podium Lobby",
+   "Pantry",
+   "Games Lounge",
+   "Changing Room",
+   "Lifestyle Pavilion",
+   "50m Lap Pool",
+   "Wading Pool",
+   "Water Sculpture Archway",
+   "Cabanas",
+   "Pickleball Court",
+   "Co-Working Space",
+   "Feature Spiral Stairs",
+   "Gym",
+   "Washroom"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "MRT Taman Naga Emas"
+   },
+   {
+    "category": "Public Transport",
+    "name": "LRT Bukit Jalil"
+   },
+   {
+    "category": "Public Transport",
+    "name": "LRT Sri Petaling"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Terminal Bersepadu Selatan (TBS)"
+   },
+   {
+    "category": "Commercial",
+    "name": "Sri Petaling Commercial Hub"
+   },
+   {
+    "category": "Commercial",
+    "name": "Kuchai Entrepreneurs Park"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion Bukit Jalil"
+   },
+   {
+    "category": "Shopping",
+    "name": "Mid Valley Megamall"
+   },
+   {
+    "category": "Shopping",
+    "name": "Sunway Velocity"
+   },
+   {
+    "category": "Shopping",
+    "name": "IKEA Cheras"
+   },
+   {
+    "category": "Shopping",
+    "name": "MyTOWN Shopping Centre"
+   },
+   {
+    "category": "Shopping",
+    "name": "Kuala Lumpur City Centre (KL City Centre)"
+   },
+   {
+    "category": "Education",
+    "name": "SK Bandar Baru Sri Petaling"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (C) La Salle"
+   },
+   {
+    "category": "Education",
+    "name": "SMK Bandar Baru Sri Petaling"
+   },
+   {
+    "category": "Education",
+    "name": "International Medical University",
+    "distance": "IMU"
+   },
+   {
+    "category": "Education",
+    "name": "Bukit Jalil Sports School"
+   },
+   {
+    "category": "Education",
+    "name": "SJK (C) Lai Meng"
+   },
+   {
+    "category": "Education",
+    "name": "Asia Pacific University (APU)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "IMU Healthcare"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Universiti Kebangsaan Malaysia Medical Centre",
+    "distance": "HUKM"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sunway Medical Centre Velocity"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Kuala Lumpur"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sunway Medical Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Subang Jaya Medical Centre"
+   },
+   {
+    "category": "Recreation",
+    "name": "Commonwealth Hill"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Jalil Recreational Park"
+   },
+   {
+    "category": "Golf Club",
+    "name": "Bukit Jalil Golf & Country Resort"
+   },
+   {
+    "category": "Highway",
+    "name": "East-West Link Expressway"
+   },
+   {
+    "category": "Highway",
+    "name": "KL-Seremban Highway"
+   },
+   {
+    "category": "Highway",
+    "name": "Besraya Highway"
+   },
+   {
+    "category": "Highway",
+    "name": "KESAS Highway"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A",
+    "size": "527",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "B",
+    "size": "679",
+    "beds": "2",
+    "baths": "2"
+   }
+  ]
+ },
+ "bangsar-hill-park-phase-1-verdura": {
+  "source": "Developer sales kit (2026-08-11)",
+  "developer": "Bangsar Hill Park Development Sdn. Bhd.",
+  "checked": "2026-08-11",
+  "maintenanceFee": "Estimated to be RM0.35 psf per month excluding sinking fund",
+  "maintenanceFeePsf": 0.35,
+  "description": {
+   "en": "Set to the backdrop of the vibrant Bangsar cityscape, Verdura at Bangsar Hill Park is the perfect oasis for urban living with resort-inspired lifestyle amenities surrounded by an abundance of greenery. Experience a fine range of thoughtfully crafted facilities while being conveniently connected to Kuala Lumpur's city centre and beyond. This is the place where the cosmopolitan meets nature, where you can live in the middle of it all."
+  },
+  "keyFeatures": [
+   "Urban Resort Home",
+   "The Meeting Point of Nature and Urban Living",
+   "Resort-inspired lifestyle amenities",
+   "Conveniently connected to Kuala Lumpur's city centre and beyond"
+  ],
+  "facilities": [
+   "Management office",
+   "Multipurpose hall",
+   "Surau (Male & Female)",
+   "Kindergarten",
+   "Laundry",
+   "Mini mart",
+   "Swimming pool",
+   "Spa pool",
+   "Wading pool",
+   "Garden",
+   "Yoga deck",
+   "Children playground",
+   "Club House",
+   "Lawn",
+   "Stage",
+   "Hammock Area",
+   "Sunken Seating",
+   "Rooftop Whirlpool",
+   "Rooftop Barbecue Area",
+   "Rooftop Seating Area",
+   "Rooftop Children Playground",
+   "Sauna & steam room",
+   "Event lounge",
+   "Gourmet kitchen / Eating Area",
+   "Study room",
+   "Badminton court",
+   "Barbecue Area",
+   "Toilet / Changing room (Female & Male)",
+   "Gymnasium",
+   "Kid's Room",
+   "Games Room",
+   "Basketball court"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "Bank Rakyat – Bangsar LRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "KL Sentral (Largest Transportation Hub)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Pusat Bandar Damansara MRT Station"
+   },
+   {
+    "category": "Highway Access",
+    "name": "Sprint Highway"
+   },
+   {
+    "category": "Highway Access",
+    "name": "Federal Highway"
+   },
+   {
+    "category": "Highway Access",
+    "name": "NPE Highway"
+   },
+   {
+    "category": "Highway Access",
+    "name": "Damansara Link"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "KL Gateway Mall"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Mid Valley Megamall"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "The Garden Mall"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Bangsar Village"
+   },
+   {
+    "category": "Shopping Mall",
+    "name": "Bangsar Shopping Centre"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Kuala Lumpur"
+   },
+   {
+    "category": "Healthcare",
+    "name": "IBC Integrated Healthcare & Wellness"
+   },
+   {
+    "category": "Healthcare",
+    "name": "University Hospital"
+   },
+   {
+    "category": "Education",
+    "name": "Cempaka International Schools Damansara Heights"
+   },
+   {
+    "category": "Education",
+    "name": "The Alice Smith International School"
+   },
+   {
+    "category": "Education",
+    "name": "HELP University"
+   },
+   {
+    "category": "Education",
+    "name": "University of Malaya"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "2B1-E",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2B-E",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2A1-E",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "2A-E",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "1A-E",
+    "size": "1345",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "1B-E",
+    "size": "1434",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3A-E(Dual Key able)",
+    "size": "1435",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3B-E(Dual Key able)",
+    "size": "1478",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "2B1-D",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2B-D",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2A1-D",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "2A-D",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "3C-D(Dual Key able)",
+    "size": "1372",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3D-D(Dual Key able)",
+    "size": "1407",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3A-D(Dual Key able)",
+    "size": "1435",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "3B-D(Dual Key able)",
+    "size": "1478",
+    "beds": "3+1",
+    "baths": "4"
+   }
+  ]
+ },
+ "bangsar-hill-park-phase-2-talisa": {
+  "source": "Developer sales kit (2026-08-11)",
+  "developer": "Bangsar Hill Park Development Sdn. Bhd.",
+  "checked": "2026-08-11",
+  "maintenanceFee": "RM 0.35 psf (excluding 10% sinking fund)",
+  "maintenanceFeePsf": 0.35,
+  "description": {
+   "en": "Bangsar Hill Park (Phase 2 - Talisa) is an urban resort-style condominium envisioned for city dwellers. Located in the prestigious and robust property market of Bangsar, it offers a vibrant lifestyle inspired by the world's most coveted cities. The development masterfully blends the convenience of urban living with the serenity of nature, featuring resort-inspired amenities and lush green landscapes. It is a sanctuary designed to provide an international sensation and an elevated living experience, perfect for those who live to seize the day and never settle for less."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Swimming Pool",
+   "Kids' Pool",
+   "Whirlpool",
+   "Kids' Water Play",
+   "Kids' Playground",
+   "Seating Area",
+   "Swing Area",
+   "Water Feature",
+   "Indoor Event Space",
+   "Lounge/Mahjong Space",
+   "Gourmet Kitchen",
+   "Karaoke Area",
+   "Outdoor Event Space",
+   "Board Games Space",
+   "Pool Deck",
+   "BBQ Area",
+   "Sauna (Male & Female)",
+   "Steam Room (Male & Female)",
+   "Surau (Male)",
+   "Surau (Female)",
+   "Management Office",
+   "Gymnasium",
+   "Dance/Yoga Studio",
+   "Co-working Space",
+   "Planter Area",
+   "Pergola",
+   "Viewing Area",
+   "Pet Friendly Walkway Path",
+   "Pets Room"
+  ],
+  "nearby": [
+   {
+    "category": "Transportation Hub",
+    "name": "Bank Rakyat-Bangsar LRT Station (750m)"
+   },
+   {
+    "category": "Transportation Hub",
+    "name": "KL Sentral (Largest Transportation Hub) (2.7km)"
+   },
+   {
+    "category": "Transportation Hub",
+    "name": "Pusat Bandar Damansara MRT Station (5.0km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Bangsar Village (700m)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Telawi Street (800m)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Bangsar Shopping Centre (2.1km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Nu Sentral (2.2km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Mid Valley & The Gardens Mall (3.2km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "KL Eco City (3.9km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "KL Gateway (3.9km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Pavilion Damansara Heights (4.1km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Pavilion KL (6.4km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "Kiara 163 (7.9km)"
+   },
+   {
+    "category": "Shopping & Entertainment",
+    "name": "KL City Centre (8.4km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Mahameru International Medical Centre (MIMC) (700m)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Pantai Hospital Kuala Lumpur (2.6km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Cardiac Vascular Sentral Kuala Lumpur (CVSKL) (2.8km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Cengild G.I. Medical Centre (4.7km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Universiti Malaya Medical Centre (5.4km)"
+   },
+   {
+    "category": "Healthcare",
+    "name": "LifeCare Diagnostic Medical Centre (5.4km)"
+   },
+   {
+    "category": "Education",
+    "name": "FasTracKids International (1.5km)"
+   },
+   {
+    "category": "Education",
+    "name": "The Children's House (1.8km)"
+   },
+   {
+    "category": "Education",
+    "name": "Beaconhouse Newlands (2.4km)"
+   },
+   {
+    "category": "Education",
+    "name": "Methodist College Kuala Lumpur (2.8km)"
+   },
+   {
+    "category": "Education",
+    "name": "Stella Maris International School (4.0km)"
+   },
+   {
+    "category": "Education",
+    "name": "HELP University (4.6km)"
+   },
+   {
+    "category": "Education",
+    "name": "Cempaka Int. School @ Damansara Heights (5.7km)"
+   },
+   {
+    "category": "Education",
+    "name": "University of Malaya (6.9km)"
+   },
+   {
+    "category": "Banks",
+    "name": "Maybank (550m)"
+   },
+   {
+    "category": "Banks",
+    "name": "Hong Leong Bank (700m)"
+   },
+   {
+    "category": "Banks",
+    "name": "Bank Simpanan Nasional (800m)"
+   },
+   {
+    "category": "Banks",
+    "name": "Alliance Bank (1.6km)"
+   },
+   {
+    "category": "Banks",
+    "name": "AmBank (1.6km)"
+   },
+   {
+    "category": "Banks",
+    "name": "CIMB Bank (4.2km)"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "1A(Tower B)",
+    "size": "1345",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "1B(Tower B)",
+    "size": "1434",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "1C(Tower B)",
+    "size": "847",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "2A(Tower B)",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "2A1(Tower B)",
+    "size": "978",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "2B(Tower B)",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2B1(Tower B)",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2C(Tower B)",
+    "size": "803",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "3A(Tower B)",
+    "size": "1435",
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "type": "3B(Tower B)",
+    "size": "1478",
+    "beds": "3+1",
+    "baths": "4"
+   },
+   {
+    "type": "2A(Tower C)",
+    "size": "978",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "2A1(Tower C)",
+    "size": "978",
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "type": "2B(Tower C)",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2B1(Tower C)",
+    "size": "917",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "2C1(Tower C)",
+    "size": "803",
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "type": "3A(Tower C)",
+    "size": "1435"
+   },
+   {
+    "type": "3B(Tower C)",
+    "size": "1478",
+    "beds": "3+1",
+    "baths": "3+1"
+   },
+   {
+    "type": "3C(Tower C)",
+    "size": "1372",
+    "beds": "3+1",
+    "baths": "3+1"
+   },
+   {
+    "type": "3D(Tower C)",
+    "size": "1407",
+    "beds": "3+1",
+    "baths": "2+1"
+   }
+  ]
+ },
+ "zenia-parkcity-damansara": {
+  "source": "Developer sales kit (2026-08-27)",
+  "developer": "ParkCity",
+  "checked": "2026-08-27",
+  "maintenanceFee": "RM 0.33 psf (Exclude sinking fund)",
+  "maintenanceFeePsf": 0.33,
+  "description": {
+   "en": "Zenia at ParkCity Damansara is a new development set amidst one of the region's most vibrant and thriving cities. It is described as a hidden gem in Petaling Jaya, featuring a mix of Zenia Parkhomes and Zenia Condovillas. The Condovillas form a vertical enclave offering spacious residences with calm, privacy, and freedom. The Parkhomes consist of 442 units of 3-storey homes."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Main Pool",
+   "Pool Deck",
+   "Kid's Pool",
+   "Reading & Work Loft",
+   "Changing Room",
+   "BBQ Pavilion",
+   "Multipurpose Hall",
+   "Seating Terrace",
+   "Multi Court",
+   "Family Pool",
+   "Prayer Room",
+   "Kindergarten",
+   "Playground",
+   "Outdoor Fitness",
+   "Reflexology Path",
+   "Connecting Access",
+   "Guardhouse",
+   "Arrival Plaza",
+   "Utility/Locker",
+   "Games Room",
+   "Music Room",
+   "Kids Playroom",
+   "Makers Studio",
+   "Study",
+   "Lounge",
+   "Management Office",
+   "Convenience Store",
+   "Outdoor Deck",
+   "Outdoor Deck Seating Lounge",
+   "Lobby",
+   "Drop-off",
+   "Entertainment Room",
+   "Refuse Chamber",
+   "Gym",
+   "Badminton Court",
+   "Pickle Ball Court",
+   "Loading Bays",
+   "Connecting Door to Pond"
+  ],
+  "nearby": [
+   {
+    "category": "Highways",
+    "name": "North-South Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "Damansara-Puchong Expressway (LDP)"
+   },
+   {
+    "category": "Highways",
+    "name": "DASH Highway"
+   },
+   {
+    "category": "Highways",
+    "name": "Penchala Link"
+   },
+   {
+    "category": "Highways",
+    "name": "SPRINT Expressway"
+   },
+   {
+    "category": "Highways",
+    "name": "New Klang Valley Expressway (NKVE)"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Kwasa Sentral MRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Surian MRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Mutiara Damansara MRT Station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Bandar Utama MRT Station"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "The Curve"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "IPC Shopping Centre"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "1 Utama Shopping Centre"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "Sunway GIZA Mall"
+   },
+   {
+    "category": "Shopping Malls",
+    "name": "IOI Mall Damansara"
+   },
+   {
+    "category": "Hospitals",
+    "name": "Thomson Hospital Kota Damansara"
+   },
+   {
+    "category": "Hospitals",
+    "name": "Sunway Specialist Centre Damansara"
+   },
+   {
+    "category": "Hospitals",
+    "name": "Damansara Specialist Hospital"
+   },
+   {
+    "category": "Education",
+    "name": "HELP University"
+   },
+   {
+    "category": "Education",
+    "name": "SEGI University"
+   },
+   {
+    "category": "Education",
+    "name": "Sri KDU International School"
+   },
+   {
+    "category": "Education",
+    "name": "St. Joseph's Institution International School"
+   },
+   {
+    "category": "Education",
+    "name": "The British International School of Kuala Lumpur"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Damansara"
+   },
+   {
+    "category": "Education",
+    "name": "Asia Pacific Schools"
+   },
+   {
+    "category": "Recreation",
+    "name": "Tropicana Golf & Country Resort"
+   },
+   {
+    "category": "Recreation",
+    "name": "Seri Selangor Golf Club"
+   },
+   {
+    "category": "Recreation",
+    "name": "Kuala Lumpur Golf & Country Club (KLGCC)"
+   },
+   {
+    "category": "Recreation",
+    "name": "The Club @ Bukit Utama"
+   },
+   {
+    "category": "Recreation",
+    "name": "Bukit Kiara Park"
+   },
+   {
+    "category": "Other Landmarks",
+    "name": "Menara KWSP"
+   },
+   {
+    "category": "Other Landmarks",
+    "name": "Subang Airport"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1(Parkhome (Intermediate))",
+    "size": "3150",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "A2(Parkhome (Endlot))",
+    "size": "3820",
+    "beds": "5",
+    "baths": "5"
+   },
+   {
+    "type": "B1(Parkhome (Intermediate))",
+    "size": "3210",
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "type": "B2(Parkhome (Endlot))",
+    "size": "3980",
+    "beds": "5",
+    "baths": "6"
+   },
+   {
+    "type": "A1/A2(Condovilla)",
+    "size": "1691",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "A1-g/A2-g(Condovilla (Private Garden))",
+    "size": "2013",
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "type": "B1/B1a/B2(Condovilla)",
+    "size": "2053",
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "type": "B1-g/B1a-g(Condovilla (Private Garden))",
+    "size": "2327",
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "type": "C1(Condovilla)",
+    "size": "3095",
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "type": "C1a(Condovilla)",
+    "size": "3137",
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "type": "C1-g(Condovilla (Private Garden))",
+    "size": "3380",
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "type": "C2(Condovilla)",
+    "size": "3657",
+    "beds": "4+1",
+    "baths": "5"
+   },
+   {
+    "type": "C2-ga(Condovilla (Private Garden))",
+    "size": "4247",
+    "beds": "4+1",
+    "baths": "5"
+   },
+   {
+    "type": "C2-gb(Condovilla (Private Garden))",
+    "size": "4177",
+    "beds": "4+1",
+    "baths": "5"
+   },
+   {
+    "type": "D1(Condovilla (Duplex))",
+    "size": "3691",
+    "beds": "5",
+    "baths": "6"
+   }
+  ]
+ },
+ "vox-residence-sentul": {
+  "source": "Developer sales kit (2026-09-09)",
+  "developer": "Kerjaya Property Sdn Bhd",
+  "checked": "2026-09-09",
+  "maintenanceFee": "RM0.35 psf + 10% Sinking Fund",
+  "maintenanceFeePsf": 0.35,
+  "description": {
+   "en": "Enjoy your very own slice of Sentul at VOX, a collection of contemporary condominiums designed to complement your vibrant lifestyle. From the tranquil bedrooms to the spacious kitchen, sleek and stylish fixtures to a modern décor you can easily mix and match for your own, VOX is where you can live your best life with wellbeing and happiness in mind. A unique mix of Kuala Lumpur's old and new, the best food finds, and a creative vibe - Sentul is one of the capital's most engaging neighbourhoods to offer a vibrant lifestyle while connecting you to all the major landmarks within the city."
+  },
+  "keyFeatures": [],
+  "facilities": [
+   "Pool (40meters)",
+   "EV charge parking"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "Bus Stop (SJKC Peng Ming)",
+    "distance": "0.28km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "Free Shuttle Bus to LRT station"
+   },
+   {
+    "category": "Public Transport",
+    "name": "LRT Sentul Timur",
+    "distance": "2.7km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "LRT Sentul",
+    "distance": "3.0km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT Sentul Barat",
+    "distance": "3.6km"
+   },
+   {
+    "category": "Public Transport",
+    "name": "MRT/KTM Kampung Batu",
+    "distance": "3.6km"
+   },
+   {
+    "category": "Highways",
+    "name": "DUKE Highway",
+    "distance": "3.3km"
+   },
+   {
+    "category": "Highways",
+    "name": "MRR2",
+    "distance": "5.6km"
+   },
+   {
+    "category": "Highways",
+    "name": "Karak Highway",
+    "distance": "7.5km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Setapak Central Mall",
+    "distance": "4.7km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Sunway Putra Mall",
+    "distance": "4.8km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Publika Shopping Gallery",
+    "distance": "7.1km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Suria KL City Centre",
+    "distance": "8.0km"
+   },
+   {
+    "category": "Shopping",
+    "name": "Pavilion Kuala Lumpur",
+    "distance": "9.3km"
+   },
+   {
+    "category": "Education",
+    "name": "SJK(C) Sentul Pasar Peng Ming",
+    "distance": "0.4km"
+   },
+   {
+    "category": "Education",
+    "name": "Wesley Methodist School KL",
+    "distance": "2.4km"
+   },
+   {
+    "category": "Education",
+    "name": "Chong Hwa Independent High School",
+    "distance": "5.4km"
+   },
+   {
+    "category": "Education",
+    "name": "Tunku Abdul Rahman University College",
+    "distance": "6.5km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sentul Medical Centre",
+    "distance": "3.4km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital - Setapak",
+    "distance": "4.4km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "KPJ Tawakkal KL Specialist Hospital",
+    "distance": "4.5km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Kuala Lumpur General Hospital (HKL)",
+    "distance": "5.4km"
+   },
+   {
+    "category": "Parks",
+    "name": "Sentul Park",
+    "distance": "5.4km"
+   },
+   {
+    "category": "Parks",
+    "name": "Taman Tasik Titiwangsa",
+    "distance": "5.7km"
+   },
+   {
+    "category": "Parks",
+    "name": "KL City Centre Park",
+    "distance": "8.1km"
+   }
+  ],
+  "layouts": [
+   {
+    "type": "A1",
+    "size": "667",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "A1a",
+    "size": "667",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "type": "B1",
+    "size": "839",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "B2",
+    "size": "839",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1",
+    "size": "947",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "type": "C1a",
+    "size": "947",
+    "beds": "3",
+    "baths": "2"
+   }
+  ]
+ },
+ "the-wyn-residences": {
+  "source": "Developer sales kit (2026-09-10)",
+  "developer": "Land & General Berhad",
+  "checked": "2026-09-10",
+  "maintenanceFee": "RM 0.35 psf (including sinking fund)",
+  "maintenanceFeePsf": 0.35,
+  "description": {
+   "en": "THE WYN Residences is located in a city with a big heart - Puchong. Enjoy a myriad of seamless public transportation options, essential retail establishments and leisure hot-spots for the entire family. Embracing the five fundamental elements, the residences seek to create a harmonious and balanced living environment by integrating captivating sports facilities, ecofriendly landscaping, innovative architectural design, wellness foundations and contemporary accents."
+  },
+  "keyFeatures": [
+   "Located in the Golden Triangle of Puchong Centre City",
+   "150m covered walkway to LRT Puchong Jaya Station",
+   "150m walking distance to IOI Mall",
+   "Co-Working Space",
+   "5 Elements of Landscaping & Facilities including a 50m Lap Pool",
+   "Practical and conducive interior layouts",
+   "EV charging stations",
+   "Multi-tier security."
+  ],
+  "facilities": [
+   "swimming pool",
+   "Outdoor Gym",
+   "Workout room",
+   "surau",
+   "EV charging System",
+   "Cafeteria"
+  ],
+  "nearby": [
+   {
+    "category": "Public Transport",
+    "name": "LRT Puchong Jaya Station"
+   },
+   {
+    "category": "Shopping Malls & Retail",
+    "name": "IOI Mall Puchong"
+   },
+   {
+    "category": "Shopping Malls & Retail",
+    "name": "IOI Boulevard"
+   },
+   {
+    "category": "Shopping Malls & Retail",
+    "name": "IOI Business Park"
+   },
+   {
+    "category": "Shopping Malls & Retail",
+    "name": "Lotus's Puchong",
+    "distance": "1.5km"
+   },
+   {
+    "category": "Shopping Malls & Retail",
+    "name": "SetiaWalk",
+    "distance": "1.8km"
+   },
+   {
+    "category": "Shopping Malls & Retail",
+    "name": "Sunway Pyramid",
+    "distance": "4.9km"
+   },
+   {
+    "category": "Shopping Malls & Retail",
+    "name": "Pavilion Bukit Jalil",
+    "distance": "7.8km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Columbia Asia Hospital",
+    "distance": "3.5km"
+   },
+   {
+    "category": "Healthcare",
+    "name": "Sunway Medical Centre",
+    "distance": "3.5km"
+   },
+   {
+    "category": "Education",
+    "name": "Taylor's University Lakeside Campus",
+    "distance": "5.7km"
+   },
+   {
+    "category": "Education",
+    "name": "Sunway University",
+    "distance": "5km"
+   },
+   {
+    "category": "Education",
+    "name": "Monash University Malaysia"
+   },
+   {
+    "category": "Highways",
+    "name": "LDP"
+   },
+   {
+    "category": "Highways",
+    "name": "KESAS"
+   },
+   {
+    "category": "Highways",
+    "name": "NPE"
+   },
+   {
+    "category": "Banks",
+    "name": "Various banks at IOI Boulevard",
+    "distance": "Maybank, Public Bank, CIMB, Hong Leong, HSBC, Alliance, RHB, BSN"
    }
   ]
  }

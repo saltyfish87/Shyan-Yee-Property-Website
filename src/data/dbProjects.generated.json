@@ -1,0 +1,5143 @@
+[
+ {
+  "id": "royal-lexis-kuala-lumpur",
+  "name": "Royal Lexis Kuala Lumpur",
+  "developer": "Kuala Lumpur Metro Group",
+  "location": "15, Jalan Kia Peng, 50450 Kuala Lumpur",
+  "area": "Kuala Lumpur City Centre",
+  "startingPrice": 1897000,
+  "startingPriceFormatted": "RM 1,897,000",
+  "priceRange": "RM 1,897,000 – RM 4,418,000",
+  "builtUpMin": 573,
+  "builtUpMax": 1155,
+  "bedroomsMin": 1,
+  "bedroomsMax": 2,
+  "tenure": "Freehold",
+  "projectType": "Commercial",
+  "completionStatus": "Under Construction",
+  "completionYear": "2029",
+  "maintenanceFee": 0.8,
+  "maintenanceFeeStr": "RM 0.80 + (10% Sinking Fund)",
+  "totalUnits": "518",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/12kDlxnts2gQefjQi0FIHierCVz2catK_=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1vf6Ku421m6DzJ4CqdnOYdN0in7uo0NC_=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1iRbc7oZOJ6i9lwZMZy0aGI1_f2663lvX=w1000",
+    "https://lh3.googleusercontent.com/d/16y5RhdikSLvFXMsZtYYU4UKxpVeRRwvd=w1000",
+    "https://lh3.googleusercontent.com/d/1wkLsY3htyCU20Wjm3OnwG0kXVznX-MdO=w1000",
+    "https://lh3.googleusercontent.com/d/1zagJgYmzkTxjxZhZtQf44bAZu2_JVlA3=w1000",
+    "https://lh3.googleusercontent.com/d/1_HuWXXA6AWHjvVkxb9rJoG311Fqz8Jrq=w1000",
+    "https://lh3.googleusercontent.com/d/11Q3DeTF4ekf9K_wjQrCMbXVcTMeHPcpe=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1B6cx9W3rxefQLUz1JeVabB4g6ykWoPZN=w1000",
+    "https://lh3.googleusercontent.com/d/1NY631DlxkBm6vJ667zaVGAEVY22ORV7I=w1000",
+    "https://lh3.googleusercontent.com/d/1vd7kpL95F1oLdOlk6lZ8lvB2ZmeMuJSq=w1000",
+    "https://lh3.googleusercontent.com/d/1EGQgKrMDPkCxwr7jCyUL6eHBPXfXmMQ-=w1000",
+    "https://lh3.googleusercontent.com/d/1aQxD8sIoYovUlCMPOBHd9xXojo7riikL=w1000",
+    "https://lh3.googleusercontent.com/d/1oCrtoIgW7dJuQBMQL8FAMH3C1GxRXDGx=w1000",
+    "https://lh3.googleusercontent.com/d/1jB80S923t5gplF7jWz43o63vmN9mPx2m=w1000",
+    "https://lh3.googleusercontent.com/d/1mRKxfwOsr1bnnSbjbyXLgsYxKkgCBUVx=w1000",
+    "https://lh3.googleusercontent.com/d/1mSijq0zkTZh_OQ_rW3t5G4i8xnYOdtnu=w1000",
+    "https://lh3.googleusercontent.com/d/1YTH7taAdx5LBfrUKMP32Lja1AUJhpGjs=w1000",
+    "https://lh3.googleusercontent.com/d/1qOWz6YHEP6FuI0h4F16QmMzd9cEeP1HY=w1000",
+    "https://lh3.googleusercontent.com/d/1zna8jjpXIKibG7lShp7EnkKcaNip1t3h=w1000",
+    "https://lh3.googleusercontent.com/d/1GAGoMUOnopV6Gchqu0j-YDOmqAID74pc=w1000",
+    "https://lh3.googleusercontent.com/d/1oTNuEsA3Ppnc6aKlBUs8Hv5DRhBl0xcN=w1000",
+    "https://lh3.googleusercontent.com/d/12T3SQ726uPf0RMgnpDzeMFMN73khtFBY=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1iRbc7oZOJ6i9lwZMZy0aGI1_f2663lvX=w1000",
+    "typeName": "Type A",
+    "size": 573,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/16y5RhdikSLvFXMsZtYYU4UKxpVeRRwvd=w1000",
+    "typeName": "Type B",
+    "size": 802,
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1wkLsY3htyCU20Wjm3OnwG0kXVznX-MdO=w1000",
+    "typeName": "Type C",
+    "size": 1085,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1zagJgYmzkTxjxZhZtQf44bAZu2_JVlA3=w1000",
+    "typeName": "Type D",
+    "size": 1155
+   }
+  ],
+  "latitude": 3.152,
+  "longitude": 101.7145,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "the-queenswoodz",
+  "name": "The Queenswoodz",
+  "developer": "EXSIM",
+  "location": "Sebahagian Lot 38628, Jalan Jalil Perkasa 1",
+  "area": "Bukit Jalil",
+  "startingPrice": 723300,
+  "startingPriceFormatted": "RM 723,300",
+  "priceRange": "RM 723,300 – RM 1,241,300",
+  "builtUpMin": 807,
+  "builtUpMax": 1410,
+  "bedroomsMin": 2,
+  "bedroomsMax": 4,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2029",
+  "maintenanceFee": 0.42,
+  "maintenanceFeeStr": "RM0.42 psf incl. sinking fund",
+  "totalUnits": "1004",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1nI27XkdvxPyatKV_gLDVxR9SGeuUDHFS=w1000",
+    "https://lh3.googleusercontent.com/d/1cuWbgde_TpVPeweEadIhVccwhiIsznQ_=w1000",
+    "https://lh3.googleusercontent.com/d/19R6h2le7jXtniCnZI4qBtNVIzEBNPfcs=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1SlABoTVf9L7KafnanZofBxXei8G-Hsj4=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1N-65dA820RXQW6V5hhx9NUHC8GHCws7K=w1000",
+    "https://lh3.googleusercontent.com/d/1EiyZ1CHFmcfPWCSU-emBtqBrRqA6mSgp=w1000",
+    "https://lh3.googleusercontent.com/d/1kkFRynSEDl5GHt1d3O2vO0dogVftZzwz=w1000",
+    "https://lh3.googleusercontent.com/d/1t_vFQZMVapQGzpZgMPqfr-yeKinTUU_o=w1000",
+    "https://lh3.googleusercontent.com/d/1VOUPIo4NDUdn9CtALMXqQ7YnWcBB6Igl=w1000",
+    "https://lh3.googleusercontent.com/d/1yDnOU3FTHSKNnnwbI9JQN_8ZZWs40rrp=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1p4KgvGgNAF4n4SiWJ56fykolj9znvI4g=w1000",
+    "https://lh3.googleusercontent.com/d/1eQFa5lAynRS-ZYnPGkT7oMMBzWteUsc6=w1000",
+    "https://lh3.googleusercontent.com/d/1WB7QsWqeS0rr0mZkLrHG7baafM1_nItp=w1000",
+    "https://lh3.googleusercontent.com/d/1D6NjBSIsCAmr0rkuCZz3FGu9aAL2A0fC=w1000",
+    "https://lh3.googleusercontent.com/d/1qhXnXVVAhr69Mc1M7WGlwpue5de0ghR3=w1000",
+    "https://lh3.googleusercontent.com/d/1OjKd_Tm801_Jz4cj6A9epe7qKguvdSB7=w1000",
+    "https://lh3.googleusercontent.com/d/1ThKAn9ksKRS_oh57dDK8tWWEAXNr8-rO=w1000",
+    "https://lh3.googleusercontent.com/d/1BJyAh0ScnvV641QiuVfhxHhZMOLffjvh=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1N-65dA820RXQW6V5hhx9NUHC8GHCws7K=w1000",
+    "typeName": "Type A1/A2",
+    "size": 807,
+    "beds": "2+1",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1EiyZ1CHFmcfPWCSU-emBtqBrRqA6mSgp=w1000",
+    "typeName": "Type B1/B2",
+    "size": 936,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1kkFRynSEDl5GHt1d3O2vO0dogVftZzwz=w1000",
+    "typeName": "Type C1/C2",
+    "size": 1206,
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1VOUPIo4NDUdn9CtALMXqQ7YnWcBB6Igl=w1000",
+    "typeName": "Type D1",
+    "size": 1410,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1yDnOU3FTHSKNnnwbI9JQN_8ZZWs40rrp=w1000",
+    "typeName": "Type D2",
+    "size": 1410,
+    "beds": "3+1",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.0573642,
+  "longitude": 101.6730171,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "aurum-suites",
+  "name": "Aurum Suites",
+  "developer": "HARTACOM PROPERTY SDN. BHD.",
+  "location": "Seri Gembira Avenue, 6, Jalan Senang Ria, Taman Gembira, 58200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "area": "Sri Petaling",
+  "startingPrice": 417545,
+  "startingPriceFormatted": "RM 417,545",
+  "priceRange": "RM 417,545 – RM 573,755",
+  "builtUpMin": 527,
+  "builtUpMax": 679,
+  "bedroomsMin": 1,
+  "bedroomsMax": 2,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2029",
+  "maintenanceFee": 0.5,
+  "maintenanceFeeStr": "Estimate RM0.50psf including sinking fund",
+  "totalUnits": "456",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1Mcbgr_vB8pJukcGdfIHFLH0OZ2lGVtVR=w1000",
+    "https://lh3.googleusercontent.com/d/1WR12tWAm6jNfCD9yZmZ_2Jidqg1mSI5O=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1831MYMjVgRgeAwfsQMlOb4BwBFaBfH5Y=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1WQnd6C4STQBDEghuvRvweKrHuzbS-RY2=w1000",
+    "https://lh3.googleusercontent.com/d/1g13Jqb6OaE-HIcZvgX5_pQnJTnAcp97b=w1000",
+    "https://lh3.googleusercontent.com/d/1uDSoew63fh7ghn-r_Bl9OYyGbk8GwMOt=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1F79pxGUHxShqfswzs3Rz3m7bOAf26_HX=w1000",
+    "https://lh3.googleusercontent.com/d/1MYpBodTgFMZJawdcsT46SGEt0uJr9j9m=w1000",
+    "https://lh3.googleusercontent.com/d/1FVCa1S4lDvSQM6csWQ_ainITW6sPjA6P=w1000",
+    "https://lh3.googleusercontent.com/d/1s9ZWN_fJXp1ubOW8nEMHnAKFlMXudXlb=w1000",
+    "https://lh3.googleusercontent.com/d/1ls1liOKbt4HDEk07v80ven8IyQf8T4z_=w1000",
+    "https://lh3.googleusercontent.com/d/1VlnJGpJG_rSW4agYogvQKPphpz2wwYB0=w1000",
+    "https://lh3.googleusercontent.com/d/1BVVpki3ryInXNOORWVqQZlLxFyP0bKZS=w1000",
+    "https://lh3.googleusercontent.com/d/1lTcrgXQ4jpTee6sEsXIC3KXKCmdThQX4=w1000",
+    "https://lh3.googleusercontent.com/d/1FM1ZE1CiBp1ncDA4PlU45dCXgleyfBJH=w1000",
+    "https://lh3.googleusercontent.com/d/1Aigbhtq7qQkT31_opqGGDWhbmwuvPmfK=w1000",
+    "https://lh3.googleusercontent.com/d/15R9TkFv_-5OCZ6lY8-su0dG1XzYeqyxA=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1WQnd6C4STQBDEghuvRvweKrHuzbS-RY2=w1000",
+    "typeName": "Type A",
+    "size": 527,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1g13Jqb6OaE-HIcZvgX5_pQnJTnAcp97b=w1000",
+    "typeName": "Type B",
+    "size": 679,
+    "beds": "2",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.0781,
+  "longitude": 101.6931,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "bangsar-hill-park-phase-1-verdura",
+  "name": "Bangsar Hill Park (Phase 1 - VERDURA)",
+  "developer": "Bangsar Hill Park Development Sdn. Bhd.",
+  "location": "Lorong Maarof, Bangsar, Kuala Lumpur",
+  "area": "Bangsar",
+  "startingPrice": 835000,
+  "startingPriceFormatted": "RM 835,000",
+  "priceRange": "RM 835,000 – RM 1,599,000",
+  "builtUpMin": 917,
+  "builtUpMax": 1478,
+  "bedroomsMin": 2,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Completed",
+  "completionYear": "2025",
+  "maintenanceFee": 0.35,
+  "maintenanceFeeStr": "Estimated to be RM0.35 psf per month excluding sinking fund",
+  "totalUnits": "812",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1i1UvtyAEMDws-E54so7tAaT1fCafNeib=w1000",
+    "https://lh3.googleusercontent.com/d/1ythkPA9zYseV6NoYkw9NCEcOVOwozUA4=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1Ygda9LHaRvu_C8YXUwAVXNe2LOaKiZuO=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/15CG5jskaA02aJ399GBgZaEyWLmrKM27E=w1000",
+    "https://lh3.googleusercontent.com/d/1THYa8QTlTiUSxVWmDKFtbm42NuYDvRiN=w1000",
+    "https://lh3.googleusercontent.com/d/1dwHrajl8vM3lwcgM74ap24RPtV-7y9K0=w1000",
+    "https://lh3.googleusercontent.com/d/1kqmDk8FR-km-cva1_tVgndNZergfiMKD=w1000",
+    "https://lh3.googleusercontent.com/d/1DIUmTi7i_zR3ib5nudM1-fmc_QMXDDGr=w1000",
+    "https://lh3.googleusercontent.com/d/1kdz-FT9IYOhSgUueoX0LliN_6Oeuce5B=w1000",
+    "https://lh3.googleusercontent.com/d/1RPHaLFiEUngbjPp4bx_MapQS71AQeadi=w1000",
+    "https://lh3.googleusercontent.com/d/1gHFI02F7RheDvysbg00ii5Tt2ovc3oLj=w1000",
+    "https://lh3.googleusercontent.com/d/1O06c2tgvTqWJ488eVDb40hQd9BXzuz49=w1000",
+    "https://lh3.googleusercontent.com/d/1gDaiq4iVldHr6G23ypw4No0Vg4Rt9QSe=w1000",
+    "https://lh3.googleusercontent.com/d/1Ny60z16rjjFuTRw9GpmRp8US7Ic0FsWC=w1000",
+    "https://lh3.googleusercontent.com/d/1LNuaGmmQfeLAusohDMOw_t7PR_CFiMlZ=w1000",
+    "https://lh3.googleusercontent.com/d/1ZQIGcc8OXeLQoUb5BTNkl2zp1-dRIH4E=w1000",
+    "https://lh3.googleusercontent.com/d/1CtVtQMaIpxeGRf5T16YsUh_8Q_4DFuMy=w1000",
+    "https://lh3.googleusercontent.com/d/1eDrpNbww5KAqZmin0Y_ePhA5CMXkg64I=w1000",
+    "https://lh3.googleusercontent.com/d/1B2sqUJjl_-EoE2hEHoI4qxf4tztyfI6D=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1Q11OWlzutWHFs7xx7epVUCwMXzD9NTEo=w1000",
+    "https://lh3.googleusercontent.com/d/1hTuROcHl9Z7SRWUnGmoHDF2lVPne9uZp=w1000",
+    "https://lh3.googleusercontent.com/d/1P4UWDG6KxU2zKqDvzWHF36OQQJm66kL3=w1000",
+    "https://lh3.googleusercontent.com/d/19zbGJ8EIvjwMuXtCX3So7upCGu-ITHP1=w1000",
+    "https://lh3.googleusercontent.com/d/1pkE799OFxah-rzxa8DPW8xd8kz1SI1L4=w1000",
+    "https://lh3.googleusercontent.com/d/1EYg3Kj6COHuaRnyKgRLHvV0QZ3BXVUhC=w1000",
+    "https://lh3.googleusercontent.com/d/1-mpDKBRy_y6znDq_lheKpg-KfiZ2cj1h=w1000",
+    "https://lh3.googleusercontent.com/d/19yKuKU0VKuAU9vEq_4cMcn-coh6L98UI=w1000",
+    "https://lh3.googleusercontent.com/d/1-hbGAwsu18UdQRmsFiGlyUNVJyHE3ipt=w1000",
+    "https://lh3.googleusercontent.com/d/1eR6LXO_uLTy5aQgkxaJP1oEDgtbsIWsP=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/15CG5jskaA02aJ399GBgZaEyWLmrKM27E=w1000",
+    "typeName": "Type 1A-E",
+    "size": 1345,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1THYa8QTlTiUSxVWmDKFtbm42NuYDvRiN=w1000",
+    "typeName": "Type 1B-E",
+    "size": 1434,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1kqmDk8FR-km-cva1_tVgndNZergfiMKD=w1000",
+    "typeName": "Type 2A-E",
+    "size": 978,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1kdz-FT9IYOhSgUueoX0LliN_6Oeuce5B=w1000",
+    "typeName": "Type 2A1-E",
+    "size": 978,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1gHFI02F7RheDvysbg00ii5Tt2ovc3oLj=w1000",
+    "typeName": "Type 2B-E",
+    "size": 917,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1gDaiq4iVldHr6G23ypw4No0Vg4Rt9QSe=w1000",
+    "typeName": "Type 2B1-E",
+    "size": 917,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1LNuaGmmQfeLAusohDMOw_t7PR_CFiMlZ=w1000",
+    "typeName": "Type 3A-E",
+    "size": 1435,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1CtVtQMaIpxeGRf5T16YsUh_8Q_4DFuMy=w1000",
+    "typeName": "Type 3B-E",
+    "size": 1478,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Ny60z16rjjFuTRw9GpmRp8US7Ic0FsWC=w1000",
+    "typeName": "Type 3A-D",
+    "size": 1435,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ZQIGcc8OXeLQoUb5BTNkl2zp1-dRIH4E=w1000",
+    "typeName": "Type 3B-D",
+    "size": 1478,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1B2sqUJjl_-EoE2hEHoI4qxf4tztyfI6D=w1000",
+    "typeName": "Type 3D-D",
+    "size": 1407,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1eDrpNbww5KAqZmin0Y_ePhA5CMXkg64I=w1000",
+    "typeName": "Type 3C-D",
+    "size": 1372,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1dwHrajl8vM3lwcgM74ap24RPtV-7y9K0=w1000",
+    "typeName": "Type 2A-D",
+    "size": 978,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1DIUmTi7i_zR3ib5nudM1-fmc_QMXDDGr=w1000",
+    "typeName": "Type 2A1-D",
+    "size": 978,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1O06c2tgvTqWJ488eVDb40hQd9BXzuz49=w1000",
+    "typeName": "Type 2B1-D",
+    "size": 917,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1RPHaLFiEUngbjPp4bx_MapQS71AQeadi=w1000",
+    "typeName": "Type 2B-D",
+    "size": 917,
+    "beds": "2",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.1315,
+  "longitude": 101.6755,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "bangsar-hill-park-phase-2-talisa",
+  "name": "Bangsar Hill Park (Phase 2 - TALISA)",
+  "developer": "Bangsar Hill Park Development Sdn. Bhd.",
+  "location": "Lorong Maarof, Bangsar, 59000 Kuala Lumpur",
+  "area": "Bangsar",
+  "startingPrice": 803240,
+  "startingPriceFormatted": "RM 803,240",
+  "priceRange": "RM 803,240 – RM 1,742,000",
+  "builtUpMin": 803,
+  "builtUpMax": 1478,
+  "bedroomsMin": 1,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "maintenanceFee": 0.35,
+  "maintenanceFeeStr": "RM 0.35 psf (excluding 10% sinking fund)",
+  "totalUnits": "802",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1gRLh-vCpYpifzRPC7B3spmr4iOgHE9I3=w1000",
+    "https://lh3.googleusercontent.com/d/1O4bFW1dJ8qRC8BThrX0vGJ183WDBD6y_=w1000",
+    "https://lh3.googleusercontent.com/d/1lKfT8BsY3ux-rRAV0scAVOcitywIB1R4=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1gcGUkDAELChjE5_eHCQDTce61HlRR2k6=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/191lu3rlYchjUbYhRBq0alV5XNFomTk4b=w1000",
+    "https://lh3.googleusercontent.com/d/1a-UQJXyjPnrCVmdTA9mFQ59RlEX-uxBh=w1000",
+    "https://lh3.googleusercontent.com/d/1YI7FAcZtua4hxSvPZUsVbKEGrw1NzZHB=w1000",
+    "https://lh3.googleusercontent.com/d/1IgoNdL5PjrFFkEzcoWFWHHSAdqS1fMph=w1000",
+    "https://lh3.googleusercontent.com/d/1GFJVhAvpQUzrOudvzHLlACKNDGMP3sFz=w1000",
+    "https://lh3.googleusercontent.com/d/16z8zzzC648HavUS35ZJO1O-Xfr9X2Vyq=w1000",
+    "https://lh3.googleusercontent.com/d/1utYVO3pG8DYPGhO--BwSqwBQi-D_Zp9o=w1000",
+    "https://lh3.googleusercontent.com/d/1scYeIypCCE4bdroOWF-qmoaLKtKzAF7w=w1000",
+    "https://lh3.googleusercontent.com/d/1ywJxYhmsTqGsTMydXV_6W9RtTrUFrOF8=w1000",
+    "https://lh3.googleusercontent.com/d/1sWlPrEDFk12D1WjpOyCqlccMF6MvRdGF=w1000",
+    "https://lh3.googleusercontent.com/d/14SsUFoXVBeFQX8ofAuqKyClmG7Oc6_A9=w1000",
+    "https://lh3.googleusercontent.com/d/13bQBJ0E9hhT5GoREYbUyBiiKnOKmY08z=w1000",
+    "https://lh3.googleusercontent.com/d/1NPQJhyT0CBJpe-elpTqi4F-wSxRzOCXA=w1000",
+    "https://lh3.googleusercontent.com/d/13CoMPM8Pr_5SnM0sfA_jc-D0LaBUqCbg=w1000",
+    "https://lh3.googleusercontent.com/d/1oi2F2C-jN4AvkPjfN-P7r63aJMpkmS1V=w1000",
+    "https://lh3.googleusercontent.com/d/1Lpc6PkhgDUH1yqkKf6gg8l0hdVIvJ9l6=w1000",
+    "https://lh3.googleusercontent.com/d/1GAaOA7qU84s9oqian_PGpaORRvCcYq5H=w1000",
+    "https://lh3.googleusercontent.com/d/1u-uuxq8ouzkkpxt58lQdpK81_3ahPCBY=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1CPFXSAjLx2WzJYJBFcM9L_7xDHTkWzLb=w1000",
+    "https://lh3.googleusercontent.com/d/1_BNXmzTfyy_t_PCK_GB8U5jbSigskeqm=w1000",
+    "https://lh3.googleusercontent.com/d/1CfaZUgGajWEtBn15hTV6O11M30_MDm1N=w1000",
+    "https://lh3.googleusercontent.com/d/1rRhi36rulUsIRJiBtL10woLeMM5CMrHa=w1000",
+    "https://lh3.googleusercontent.com/d/1ai6v5kViDjLITZk0RuodEORmCP9Tgk04=w1000",
+    "https://lh3.googleusercontent.com/d/1kPkPIlC5rYN7zyLxQ6cIR0yiSbeJgWiR=w1000",
+    "https://lh3.googleusercontent.com/d/1AgJiQKa3Tv3QaRRu8Z8k_96c7GJWtPUS=w1000",
+    "https://lh3.googleusercontent.com/d/1kvVJcKfDN31u5bhT7nCCzakWPmGf1p6v=w1000",
+    "https://lh3.googleusercontent.com/d/1KWreO6NrWccFSo3pOk-S1iHKdTBe9G92=w1000",
+    "https://lh3.googleusercontent.com/d/1iYgHJk0W6LmOcb6oSiG7GYSLLIHbowXS=w1000",
+    "https://lh3.googleusercontent.com/d/1dSlrYHOaW8lbkhjnZerjw6TDrc8kN1uR=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1IgoNdL5PjrFFkEzcoWFWHHSAdqS1fMph=w1000",
+    "typeName": "Type 2A-C",
+    "size": 978,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/16z8zzzC648HavUS35ZJO1O-Xfr9X2Vyq=w1000",
+    "typeName": "Type 2A1-C",
+    "size": 978,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1scYeIypCCE4bdroOWF-qmoaLKtKzAF7w=w1000",
+    "typeName": "Type 2B-C",
+    "size": 917,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1sWlPrEDFk12D1WjpOyCqlccMF6MvRdGF=w1000",
+    "typeName": "Type 2B1-C",
+    "size": 917,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13bQBJ0E9hhT5GoREYbUyBiiKnOKmY08z=w1000",
+    "typeName": "Type 3A-C",
+    "size": 1435,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13CoMPM8Pr_5SnM0sfA_jc-D0LaBUqCbg=w1000",
+    "typeName": "Type 3B-C",
+    "size": 1478,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1oi2F2C-jN4AvkPjfN-P7r63aJMpkmS1V=w1000",
+    "typeName": "Type 3C-C",
+    "size": 1372,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Lpc6PkhgDUH1yqkKf6gg8l0hdVIvJ9l6=w1000",
+    "typeName": "Type 3D-C",
+    "size": 1407,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/191lu3rlYchjUbYhRBq0alV5XNFomTk4b=w1000",
+    "typeName": "Type 1A-B",
+    "size": 1345,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1a-UQJXyjPnrCVmdTA9mFQ59RlEX-uxBh=w1000",
+    "typeName": "Type 1B-B",
+    "size": 1434,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1YI7FAcZtua4hxSvPZUsVbKEGrw1NzZHB=w1000",
+    "typeName": "Type 2A-B",
+    "size": 978,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1GFJVhAvpQUzrOudvzHLlACKNDGMP3sFz=w1000",
+    "typeName": "Type 2A1-B",
+    "size": 978,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1utYVO3pG8DYPGhO--BwSqwBQi-D_Zp9o=w1000",
+    "typeName": "Type 2B-B",
+    "size": 917,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ywJxYhmsTqGsTMydXV_6W9RtTrUFrOF8=w1000",
+    "typeName": "Type 2B1-B",
+    "size": 917,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/14SsUFoXVBeFQX8ofAuqKyClmG7Oc6_A9=w1000",
+    "typeName": "Type 3A-B",
+    "size": 1435,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1NPQJhyT0CBJpe-elpTqi4F-wSxRzOCXA=w1000",
+    "typeName": "Type 3B-B",
+    "size": 1478,
+    "beds": "4",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.1325,
+  "longitude": 101.672,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "lunar-seputeh",
+  "name": "Lunar Seputeh",
+  "developer": "MRCB Land",
+  "location": "Jalan Klang Lama, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "area": "Seputeh, Old Klang Road",
+  "startingPrice": 607800,
+  "startingPriceFormatted": "RM 607,800",
+  "priceRange": "RM 607,800 – RM 1,453,800",
+  "builtUpMin": 683,
+  "builtUpMax": 1646,
+  "bedroomsMin": 1,
+  "bedroomsMax": 4,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2030",
+  "maintenanceFee": 0.495,
+  "maintenanceFeeStr": "RM0.495 psf (including sinking fund)",
+  "totalUnits": "483",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/105HM6VIPsIpAoshwTqF04hZYQ_HmdHTg=w1000",
+    "https://lh3.googleusercontent.com/d/10NQqpltKXjILp8394cCJz8bXVZJNNSoE=w1000",
+    "https://lh3.googleusercontent.com/d/1Q9IXugM3fz7wO-nvGy5ijv9UkIpK2vMp=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1ab9MiOC7AzCYx4KO6pDKffuIwdGPqLk5=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1cPhc44fJScPx2cevZO5k_JAbVcrMzvml=w1000",
+    "https://lh3.googleusercontent.com/d/1uAA1lFy0q_20ngAO8JtNKBXsJKsR3Ryw=w1000",
+    "https://lh3.googleusercontent.com/d/1z3nJLVYgPFVNXprZwfmP6YfJhfy8v_7i=w1000",
+    "https://lh3.googleusercontent.com/d/17acMeQZVsG4tkFmyMWo--q47JT11lEeU=w1000",
+    "https://lh3.googleusercontent.com/d/1WLecb0UiBD4mlmirkKCbi5M8CXKGWT4V=w1000",
+    "https://lh3.googleusercontent.com/d/1Hwr-wU2nJczv1zgpA95LZ_jAXDIy3Sgg=w1000",
+    "https://lh3.googleusercontent.com/d/1ySnNrq4fxEk-b2zK_HYHo1zkBt0nmoqf=w1000",
+    "https://lh3.googleusercontent.com/d/1AfUsgzRKKBtFz23VInVUU0XDDHTRdHFb=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1kQWNxULTgCCph0GXVMBNph33ihH38Zf1=w1000",
+    "https://lh3.googleusercontent.com/d/1yrlXL7k7Fvie_lpz-IwtOEWkuGABm8fp=w1000",
+    "https://lh3.googleusercontent.com/d/1VMxDW49-DMcP7NpOhBz5CGOUc7JenD0o=w1000",
+    "https://lh3.googleusercontent.com/d/1vuyLQIbT3hiWxlm9cFoXGi9RquTOE6vh=w1000",
+    "https://lh3.googleusercontent.com/d/1WYfjPU4TKSBm3dCFSjl5faI0ODa4LRU7=w1000",
+    "https://lh3.googleusercontent.com/d/1_vxWACo4S0wLvxY1QkNB9jYWJZ_tPp42=w1000",
+    "https://lh3.googleusercontent.com/d/1bzp30hXq-RCY8GF_huvzdXPC0r8CVSji=w1000",
+    "https://lh3.googleusercontent.com/d/1VPcfCUN_Y0UPj7IDSvVrW99GOBlBupHQ=w1000",
+    "https://lh3.googleusercontent.com/d/1oqBZD2hDi9Or15M4AstwAdPiYcDCyZyA=w1000",
+    "https://lh3.googleusercontent.com/d/11qlj66e4KedQNzYE6eh4CJdJS1QBBpwS=w1000",
+    "https://lh3.googleusercontent.com/d/1r4zIwPt03PT-z5yzahZ1UN_m69FDLxMG=w1000",
+    "https://lh3.googleusercontent.com/d/1taetPZCab7kAMx4asfHhPYz00X9BVcPK=w1000",
+    "https://lh3.googleusercontent.com/d/1x4aIQm-tQ6HJfEp28yu_oBO9ipFCRn_G=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1cPhc44fJScPx2cevZO5k_JAbVcrMzvml=w1000",
+    "typeName": "Type A",
+    "size": 683,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1z3nJLVYgPFVNXprZwfmP6YfJhfy8v_7i=w1000",
+    "typeName": "Type B1A",
+    "size": 841,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1uAA1lFy0q_20ngAO8JtNKBXsJKsR3Ryw=w1000",
+    "typeName": "Type B1",
+    "size": 841,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/17acMeQZVsG4tkFmyMWo--q47JT11lEeU=w1000",
+    "typeName": "Type B2",
+    "size": 930,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1WLecb0UiBD4mlmirkKCbi5M8CXKGWT4V=w1000",
+    "typeName": "Type C1",
+    "size": 1280,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ySnNrq4fxEk-b2zK_HYHo1zkBt0nmoqf=w1000",
+    "typeName": "Type D",
+    "size": 1646,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Hwr-wU2nJczv1zgpA95LZ_jAXDIy3Sgg=w1000",
+    "typeName": "Type C2/C2A",
+    "size": 1280,
+    "beds": "3",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.116,
+  "longitude": 101.678,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "swnk-houze",
+  "name": "SWNK HOUZE",
+  "developer": "BBCC Development Sdn. Bhd. (UDA, EcoWorld & EPF)",
+  "location": "2, Jalan Hang Tuah, BBCC, Bukit Bintang, 55100 Kuala Lumpur, Federal Territory of Kuala Lumpur",
+  "area": "Bukit Bintang",
+  "startingPrice": 705000,
+  "startingPriceFormatted": "RM 705,000",
+  "priceRange": "RM 705,000 – RM 1,461,000",
+  "builtUpMin": 463,
+  "builtUpMax": 1238,
+  "bedroomsMin": 3,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2026",
+  "maintenanceFee": 0.6,
+  "maintenanceFeeStr": "RM 0.60 psf",
+  "totalUnits": "441",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1S92GfT-bejPHYaAkbPURNZ8vhqoiBhZS=w1000",
+    "https://lh3.googleusercontent.com/d/1HYp6dtm-AjQnS-rF5lEIXJhDCJWghylh=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1sec6jmWGWJZQdVirswjEH-qbMd1vyNau=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1XdjNQgI-2yDIs9xOAlxdh-N87vxuqp0d=w1000",
+    "https://lh3.googleusercontent.com/d/10B49Nkn2ajLtWnjdObcCiy4Voev_WJpb=w1000",
+    "https://lh3.googleusercontent.com/d/1NGGHinUsNs2nvypY1I200hT4AqAh9iue=w1000",
+    "https://lh3.googleusercontent.com/d/1_iNIAx52Zix031rVrcvlykgvDqHRRXsH=w1000",
+    "https://lh3.googleusercontent.com/d/1o0SEqb7sqYuQDYJXkLVV5KpVgy0fd8dA=w1000",
+    "https://lh3.googleusercontent.com/d/1OZtyF_FjtMlEFbSHJeXdY_3WJohgIUB5=w1000",
+    "https://lh3.googleusercontent.com/d/1Rg39UmJxTYrLrkESNuJDXoWP4KaraV14=w1000",
+    "https://lh3.googleusercontent.com/d/1tzEeSrmqAkWEnXyp0ztjlVBHNoz7_55c=w1000",
+    "https://lh3.googleusercontent.com/d/1K6toWntMBwlPx5216uX4tjKuioS-Vo_8=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1dWHVEfvEY-VGx8aUnZHOlhIIfGsQIOl0=w1000",
+    "https://lh3.googleusercontent.com/d/16k3bu48hOOKjBDGwkadPgCF8bmZrZoVY=w1000",
+    "https://lh3.googleusercontent.com/d/1uHtFmIiDk6mXa8j2CE9i04dqHZvGlD1N=w1000",
+    "https://lh3.googleusercontent.com/d/1PgKKutLAA_WzC1x1fBnBABGlsS6xAt-y=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1XdjNQgI-2yDIs9xOAlxdh-N87vxuqp0d=w1000",
+    "typeName": "Type A",
+    "size": 463,
+    "beds": "0",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/10B49Nkn2ajLtWnjdObcCiy4Voev_WJpb=w1000",
+    "typeName": "Type B",
+    "size": 549,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1NGGHinUsNs2nvypY1I200hT4AqAh9iue=w1000",
+    "typeName": "Type C",
+    "size": 657,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1_iNIAx52Zix031rVrcvlykgvDqHRRXsH=w1000",
+    "typeName": "Type D",
+    "size": 818,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1o0SEqb7sqYuQDYJXkLVV5KpVgy0fd8dA=w1000",
+    "typeName": "Type E",
+    "size": 861,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1OZtyF_FjtMlEFbSHJeXdY_3WJohgIUB5=w1000",
+    "typeName": "Type F",
+    "size": 1238,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Rg39UmJxTYrLrkESNuJDXoWP4KaraV14=w1000",
+    "typeName": "Type G",
+    "size": 667,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1tzEeSrmqAkWEnXyp0ztjlVBHNoz7_55c=w1000",
+    "typeName": "Type H",
+    "size": 1227,
+    "beds": "3",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.141656,
+  "longitude": 101.707755,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "lucentia-residences-bukit-bintang-city-centre",
+  "name": "Lucentia Residences @ Bukit Bintang City Centre",
+  "developer": "BBCC Development Sdn Bhd (A joint venture between UDA Holdings Berhad, EcoWorld Development Group Berhad and Employees Provident Fund)",
+  "location": "No. 2, Jalan Hang Tuah, 55100 Kuala Lumpur",
+  "area": "Bukit Bintang",
+  "startingPrice": 782000,
+  "startingPriceFormatted": "RM 782,000",
+  "priceRange": "RM 782,000 – RM 2,178,000",
+  "builtUpMin": 454,
+  "builtUpMax": 882,
+  "bedroomsMin": 1,
+  "bedroomsMax": 1,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Completed",
+  "completionYear": "2021",
+  "maintenanceFee": 0.6,
+  "maintenanceFeeStr": "RM0.60 psf",
+  "totalUnits": "668",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1RdKtFkW1fI6QGb1NnDZk0NkMJosWtX4D=w1000",
+    "https://lh3.googleusercontent.com/d/1r1t9uxp-3DJwT4b4cmr2yC_VVIRG7xKi=w1000",
+    "https://lh3.googleusercontent.com/d/15xj-U5lj63buBXRhZrKAvGULcuylRYPL=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1U0b785GjFjTAWwkCQCO6vFOfqfiaSop3=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1a88kQhvzirAyen02Md6EgO8bPsnSZcl5=w1000",
+    "https://lh3.googleusercontent.com/d/1jlDwaGzP4Z3DB27Bnc4IRUij4tCvp_vg=w1000",
+    "https://lh3.googleusercontent.com/d/1QyCCTk1d_ydkcE_H7NLhz3E0lVl3f2qj=w1000",
+    "https://lh3.googleusercontent.com/d/1QiPvjERzIMnVFDlgov15o7nWY2BdGDy3=w1000",
+    "https://lh3.googleusercontent.com/d/1Lq7lGOEa7q2nVvVaKGeXnF8NQzOvaHEF=w1000",
+    "https://lh3.googleusercontent.com/d/1c7MtvstS5ADXOPCR5iqKOOSiMrLoXtYu=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/19dXTfSwRBGRck_U-KJuPqQWw9rndi5dW=w1000",
+    "https://lh3.googleusercontent.com/d/183-VNWslYUNNYtmCxio5j_VFPfqugUoh=w1000",
+    "https://lh3.googleusercontent.com/d/1E3ykCYyYm7u5VD-YUAKRzZ73f7y4Free=w1000",
+    "https://lh3.googleusercontent.com/d/1VY_g0tqeUMymU9GT7qHunuInIY_BddBT=w1000",
+    "https://lh3.googleusercontent.com/d/1Md4m3TFLESI-nXPPwMfD2cX7ZuZTWm9r=w1000",
+    "https://lh3.googleusercontent.com/d/1fT6Ts0dyrtXn4Sc29pF6q-fu7dIXsu1H=w1000",
+    "https://lh3.googleusercontent.com/d/1T4ribQ2joG88XiowVJsvWPsCqoRPinGo=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1a88kQhvzirAyen02Md6EgO8bPsnSZcl5=w1000",
+    "typeName": "Type A",
+    "size": 454,
+    "beds": "0",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1jlDwaGzP4Z3DB27Bnc4IRUij4tCvp_vg=w1000",
+    "typeName": "Type B",
+    "size": 554,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QyCCTk1d_ydkcE_H7NLhz3E0lVl3f2qj=w1000",
+    "typeName": "Type C",
+    "size": 654,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QiPvjERzIMnVFDlgov15o7nWY2BdGDy3=w1000",
+    "typeName": "Type D",
+    "size": 859,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Lq7lGOEa7q2nVvVaKGeXnF8NQzOvaHEF=w1000",
+    "typeName": "Type DD",
+    "size": 859,
+    "beds": "2",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.141656,
+  "longitude": 101.707755,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "laurel-residence",
+  "name": "Laurel Residence",
+  "developer": "Sunny Uptown Sdn Bhd (UOA Group)",
+  "location": "Jalan Kerinchi, Bangsar South, 59200 Kuala Lumpur",
+  "area": "Bangsar South",
+  "startingPrice": 450000,
+  "startingPriceFormatted": "RM 450,000",
+  "priceRange": "RM 450,000 – RM 899,300",
+  "builtUpMin": 495,
+  "builtUpMax": 903,
+  "bedroomsMin": 1,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2025",
+  "maintenanceFee": 0.33,
+  "maintenanceFeeStr": "RM0.33 psf (inclusive of sinking fund)",
+  "totalUnits": "1260",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1VORtWijEzJUaZBxcrRaA3Lz5Bj20HuvS=w1000",
+    "https://lh3.googleusercontent.com/d/1SUiOkKjJAD-jyohzhraHqDynBvB_GmUl=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1T8nkl-Zulhfa5evNM1kzU8O6XTHQZ2Kc=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1HONjILGhsCfydrrhPOlkmtgetTqIBXPJ=w1000",
+    "https://lh3.googleusercontent.com/d/1ZSKnDY32ZU37ZY5r0aSJ-068KquZwOO9=w1000",
+    "https://lh3.googleusercontent.com/d/1XrkM8Ytx2kE1YUOBEESNLfm8RFPF5sTG=w1000",
+    "https://lh3.googleusercontent.com/d/1laxfH2yUf6HP4Mw4minsfYmcWGutXZ_4=w1000",
+    "https://lh3.googleusercontent.com/d/1wdRkdDveNptLJbjYEOjMOHfIokQ4vR2N=w1000",
+    "https://lh3.googleusercontent.com/d/1bhkad51VMjSWKybSTX2dIWd5nhpm_he2=w1000",
+    "https://lh3.googleusercontent.com/d/1jItDnpON7be38G_bZc6dm2zdC1po1MMl=w1000",
+    "https://lh3.googleusercontent.com/d/1o6AI1RDEjdGztvvpCOHAIv93T2KfRH61=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1SwMc1k_FR7AV1xg4fsvBFqsCpGosuFz_=w1000",
+    "https://lh3.googleusercontent.com/d/1RnXO6vgXgxgEOYZnQEny73Abn-2O3tpc=w1000",
+    "https://lh3.googleusercontent.com/d/1oFfYemMyZaSXiHM_F_zD7dopTkJtA3AZ=w1000",
+    "https://lh3.googleusercontent.com/d/1mRKEslOkk90FpT7Ud1rUjfU7AWVQwkQD=w1000",
+    "https://lh3.googleusercontent.com/d/1eC3Wd2q1zjVqVi1GIXjmnRHeu61n6JXj=w1000",
+    "https://lh3.googleusercontent.com/d/1c5qO5b6AiHzsYjX8CCTd6ahDQy9BN5PG=w1000",
+    "https://lh3.googleusercontent.com/d/1K00MrBxLadmMLJe6j5oU3_sw-g3vCjY2=w1000",
+    "https://lh3.googleusercontent.com/d/1AaHjefpEj6Lm6XuheK0K8TSPLW4gJdsn=w1000",
+    "https://lh3.googleusercontent.com/d/1cAWSVShzAijKMOHN_LZzxbpnY09LzZ8B=w1000",
+    "https://lh3.googleusercontent.com/d/1xmUuaGi5welkH7MwqzwKEkRQz5kUEGaP=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1HONjILGhsCfydrrhPOlkmtgetTqIBXPJ=w1000",
+    "typeName": "Type A",
+    "size": 495,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ZSKnDY32ZU37ZY5r0aSJ-068KquZwOO9=w1000",
+    "typeName": "Type B",
+    "size": 548,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1XrkM8Ytx2kE1YUOBEESNLfm8RFPF5sTG=w1000",
+    "typeName": "Type C",
+    "size": 590,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1laxfH2yUf6HP4Mw4minsfYmcWGutXZ_4=w1000",
+    "typeName": "Type D",
+    "size": 903,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1laxfH2yUf6HP4Mw4minsfYmcWGutXZ_4=w1000",
+    "typeName": "Type D1",
+    "size": 903,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1bhkad51VMjSWKybSTX2dIWd5nhpm_he2=w1000",
+    "typeName": "Type E",
+    "size": 853,
+    "beds": "3",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.1102,
+  "longitude": 101.6645,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "eden-taman-duta",
+  "name": "EDEN Taman Duta",
+  "developer": "BRDB Developments Sdn Bhd (5521-A)",
+  "location": "Jalan Taman Duta, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "area": "Taman Duta",
+  "startingPrice": 7900000,
+  "startingPriceFormatted": "RM 7,900,000",
+  "priceRange": "RM 7,900,000 – RM 28,000,000",
+  "builtUpMin": 5296,
+  "builtUpMax": 19041,
+  "bedroomsMin": 4,
+  "bedroomsMax": 5,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2029",
+  "maintenanceFee": 0.7,
+  "maintenanceFeeStr": "RM0.70 psf (Estimate)",
+  "totalUnits": "146",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1CsDPKa4zgNNgPZgdWC5Wv6g-J7itipS8=w1000",
+    "https://lh3.googleusercontent.com/d/1lsVIh0fgsDg6BErU5f0CM2nkY3Od0554=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1mqF16irSqr7KrKqnEuTgKEjX-WJ6MUqM=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1auGQbpYHaG2xqSsFEorv9-MZu3mwK15-=w1000",
+    "https://lh3.googleusercontent.com/d/1HEPmzeEnupr3DUyYpVR0HHgEuzscRM5Q=w1000",
+    "https://lh3.googleusercontent.com/d/1XvgPfrtuqbQ2mfvqA77LPPHXw0Co1r5j=w1000",
+    "https://lh3.googleusercontent.com/d/1bW1NwuNnpMmCuAa7PB5mWd1Sh4Wny-8R=w1000",
+    "https://lh3.googleusercontent.com/d/1g1DRMwM6IAAay-d8Sv-AzSRz3xLH3WTK=w1000",
+    "https://lh3.googleusercontent.com/d/1K7OhnbBSbRtir9wNFiaeWZrTV-w1sFzb=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1eaLGneSdUfQge6otJtX32WJIcn1k9vgo=w1000",
+    "https://lh3.googleusercontent.com/d/1zoNiBx4R8QW4j8TKiefHx1X83qwB47Xm=w1000",
+    "https://lh3.googleusercontent.com/d/1Huo-A06torVDiMUQXkHJ8YAz87MnYLa_=w1000",
+    "https://lh3.googleusercontent.com/d/1I6pxP34-duRbXlEJL5mABFnvH_cP-Uup=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1HEPmzeEnupr3DUyYpVR0HHgEuzscRM5Q=w1000",
+    "typeName": "Type A3B",
+    "size": 9192,
+    "beds": "6",
+    "baths": "6"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1XvgPfrtuqbQ2mfvqA77LPPHXw0Co1r5j=w1000",
+    "typeName": "Type A3C",
+    "size": 9182,
+    "beds": "6",
+    "baths": "6"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1auGQbpYHaG2xqSsFEorv9-MZu3mwK15-=w1000",
+    "typeName": "Type A3A",
+    "size": 9192,
+    "beds": "6",
+    "baths": "6"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1bW1NwuNnpMmCuAa7PB5mWd1Sh4Wny-8R=w1000",
+    "typeName": "Type C1",
+    "size": 11141,
+    "beds": "6",
+    "baths": "7"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1g1DRMwM6IAAay-d8Sv-AzSRz3xLH3WTK=w1000",
+    "typeName": "Type D1",
+    "size": 19031,
+    "beds": "7",
+    "baths": "8"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1K7OhnbBSbRtir9wNFiaeWZrTV-w1sFzb=w1000",
+    "typeName": "Type D2",
+    "size": 19041,
+    "beds": "7",
+    "baths": "8"
+   }
+  ],
+  "latitude": 3.155093,
+  "longitude": 101.674395,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "zenia-parkcity-damansara",
+  "name": "Zenia @ ParkCity Damansara",
+  "developer": "ParkCity",
+  "location": "Sales Gallery: Persiaran Residen, Desa Parkcity, 52200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "area": "Damansara, Petaling Jaya",
+  "startingPrice": 1300000,
+  "startingPriceFormatted": "RM 1,300,000",
+  "priceRange": "",
+  "builtUpMin": 1691,
+  "builtUpMax": 4247,
+  "bedroomsMin": 3,
+  "bedroomsMax": 5,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2030",
+  "maintenanceFee": 0.33,
+  "maintenanceFeeStr": "RM 0.33 psf (Exclude sinking fund)",
+  "totalUnits": "1085",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1gJOAuE9Rd7kOqhKavMsvf2mjGirsC_fE=w1000",
+    "https://lh3.googleusercontent.com/d/1gZk7Dss0mSyga4DjEElWkfOUvKzGm9s5=w1000",
+    "https://lh3.googleusercontent.com/d/1HUKkp59Aabn-P2alZOkHZ_l-pvP9z7LF=w1000",
+    "https://lh3.googleusercontent.com/d/1gbxGJG0Ad8StZlExeHkjhrK5oxOXcrTO=w1000",
+    "https://lh3.googleusercontent.com/d/1kt1r5FXAlBoupnlIoPOqCMcYJHkv8emJ=w1000",
+    "https://lh3.googleusercontent.com/d/1ADqjMbk9QmLVV8JYPB5J3bLzXoCzHdbG=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1BpuZxXmrroCkxVoJRF8es2ZBeEFsAVmL=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1fq7feHzInl2SkVMeYS28xtzenKoeL-Fv=w1000",
+    "https://lh3.googleusercontent.com/d/1HaN-58BeXixIopABS-di43atUTu5ed0N=w1000",
+    "https://lh3.googleusercontent.com/d/1DgVeKXicSbPk2I9EL5mDMNMKcY9-TzDL=w1000",
+    "https://lh3.googleusercontent.com/d/1H3Mo1UDdTwjtgDQVknoauHArVPjC_OYS=w1000",
+    "https://lh3.googleusercontent.com/d/1PDZXurh8zpwNS0g2KxMXDGU-cswHSCxY=w1000",
+    "https://lh3.googleusercontent.com/d/1mo_sSWvkXZkbzA3PNGHyKL8R987XLXOb=w1000",
+    "https://lh3.googleusercontent.com/d/1d9R8m19Dsq_E4zh1kbkvTcEWMPEcpa4p=w1000",
+    "https://lh3.googleusercontent.com/d/1wgS70AlR23YNoBnsydkc7CfJwEDDSImd=w1000",
+    "https://lh3.googleusercontent.com/d/1Y5MG5JOv6b6vknRxH7CUr6XgCFS1lE8t=w1000",
+    "https://lh3.googleusercontent.com/d/1VK8H_pEK40v9GqGNibQj1GopzKwSgzN7=w1000",
+    "https://lh3.googleusercontent.com/d/1CmyOUSHmP-ZLP_PntED2xm8cXo-a6ClQ=w1000",
+    "https://lh3.googleusercontent.com/d/1De3cmpKTNAK1kyurtBErMruhB-4_b6pb=w1000",
+    "https://lh3.googleusercontent.com/d/1vpp8NjGOCiZRJaH0vfCipz7Zv9SUYoyp=w1000",
+    "https://lh3.googleusercontent.com/d/1lRMNL3BF3wnhB-m5DzX2ovDkMX89jP21=w1000",
+    "https://lh3.googleusercontent.com/d/1VWM4wCPups7oFdiP4R_luy0lK0KTLFPB=w1000",
+    "https://lh3.googleusercontent.com/d/1F2oFobUM0xlFHvxnf3yKCRqpvCSAOcau=w1000",
+    "https://lh3.googleusercontent.com/d/1I8sH-0gI5H96UpRcEDdz6dnBCmegU7K-=w1000",
+    "https://lh3.googleusercontent.com/d/1SQadRZl74_uwr7JnaNMCAqrP3DBxz1yd=w1000",
+    "https://lh3.googleusercontent.com/d/1BLhBvpzzmM25wDsEgT4KdCSbOfo0ymnf=w1000",
+    "https://lh3.googleusercontent.com/d/1jQps6O3EgvBbd7nAT6UJC4C7PnvquBXD=w1000",
+    "https://lh3.googleusercontent.com/d/10Tq7s-uhVmA-QNTWS1aZQdEkr8bwSWa5=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1y69HG1eUjMlTHq0k9b347SyHnU52A_Xj=w1000",
+    "https://lh3.googleusercontent.com/d/1aDLSUsb-8HNtdEPJUI2v5HBMNOoIKz7f=w1000",
+    "https://lh3.googleusercontent.com/d/1TvxHs1XEFTORDg_-l9h4BLr2BBi9kLkz=w1000",
+    "https://lh3.googleusercontent.com/d/1MOoP_CYcLyTul7hw_LnQHTC7bTSTX92C=w1000",
+    "https://lh3.googleusercontent.com/d/1vPMV0puMc8oJr9YZTQ6m8-YwsiAa924F=w1000",
+    "https://lh3.googleusercontent.com/d/1HevhEa8tqIo5AGq7YFm5BuK4vObjzUhg=w1000",
+    "https://lh3.googleusercontent.com/d/1SFHm_PYp3Wk0GecOPv9YkqIVhA5EdoqD=w1000",
+    "https://lh3.googleusercontent.com/d/1gTtmCyr--DXYlp831EJDMoQJ1_V1bTmU=w1000",
+    "https://lh3.googleusercontent.com/d/13bAq2Hy9Xm7QErkpN1PyrlWy3A30Iqfj=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1fq7feHzInl2SkVMeYS28xtzenKoeL-Fv=w1000",
+    "typeName": "Type A1",
+    "size": 3150,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1DgVeKXicSbPk2I9EL5mDMNMKcY9-TzDL=w1000",
+    "typeName": "Type A2",
+    "size": 3820,
+    "beds": "5",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1PDZXurh8zpwNS0g2KxMXDGU-cswHSCxY=w1000",
+    "typeName": "Type B1",
+    "size": 3210,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Y5MG5JOv6b6vknRxH7CUr6XgCFS1lE8t=w1000",
+    "typeName": "Type B2",
+    "size": 3980,
+    "beds": "5",
+    "baths": "6"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1fq7feHzInl2SkVMeYS28xtzenKoeL-Fv=w1000",
+    "typeName": "Type A1",
+    "size": 1691,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1fq7feHzInl2SkVMeYS28xtzenKoeL-Fv=w1000",
+    "typeName": "Type A1-g",
+    "size": 2013,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1DgVeKXicSbPk2I9EL5mDMNMKcY9-TzDL=w1000",
+    "typeName": "Type A2",
+    "size": 1691,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1DgVeKXicSbPk2I9EL5mDMNMKcY9-TzDL=w1000",
+    "typeName": "Type A2-g",
+    "size": 2013,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1PDZXurh8zpwNS0g2KxMXDGU-cswHSCxY=w1000",
+    "typeName": "Type B1",
+    "size": 2053,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1PDZXurh8zpwNS0g2KxMXDGU-cswHSCxY=w1000",
+    "typeName": "Type B1-g",
+    "size": 2327,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1d9R8m19Dsq_E4zh1kbkvTcEWMPEcpa4p=w1000",
+    "typeName": "Type B1a",
+    "size": 2053,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1d9R8m19Dsq_E4zh1kbkvTcEWMPEcpa4p=w1000",
+    "typeName": "Type B1a-g",
+    "size": 2327,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Y5MG5JOv6b6vknRxH7CUr6XgCFS1lE8t=w1000",
+    "typeName": "Type B2",
+    "size": 2053,
+    "beds": "3",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1VK8H_pEK40v9GqGNibQj1GopzKwSgzN7=w1000",
+    "typeName": "Type C1",
+    "size": 3095,
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1De3cmpKTNAK1kyurtBErMruhB-4_b6pb=w1000",
+    "typeName": "Type C1a",
+    "size": 3137,
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1VK8H_pEK40v9GqGNibQj1GopzKwSgzN7=w1000",
+    "typeName": "Type C1-g",
+    "size": 3380,
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1vpp8NjGOCiZRJaH0vfCipz7Zv9SUYoyp=w1000",
+    "typeName": "Type C2",
+    "size": 3657,
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1vpp8NjGOCiZRJaH0vfCipz7Zv9SUYoyp=w1000",
+    "typeName": "Type C2-ga",
+    "size": 4247,
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lRMNL3BF3wnhB-m5DzX2ovDkMX89jP21=w1000",
+    "typeName": "Type C2-gb",
+    "size": 4177,
+    "beds": "4",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1F2oFobUM0xlFHvxnf3yKCRqpvCSAOcau=w1000",
+    "typeName": "Type D1",
+    "size": 3691,
+    "beds": "5",
+    "baths": "6"
+   }
+  ],
+  "latitude": 3.166,
+  "longitude": 101.579,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "dnuri-residences-kwasa-damansara",
+  "name": "D'Nuri Residences @ Kwasa Damansara",
+  "developer": "EXSIM MX4 SDN. BHD. (a member of EXSIM Group)",
+  "location": "Jalan Sungai Buloh, Kwasa Damansara, 47810 Petaling Jaya, Selangor",
+  "area": "Kwasa Damansara",
+  "startingPrice": 270000,
+  "startingPriceFormatted": "RM 270,000",
+  "priceRange": "RM 270,000 – RM 270,000",
+  "builtUpMin": 550,
+  "builtUpMax": 550,
+  "bedroomsMin": 2,
+  "bedroomsMax": 2,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2029",
+  "maintenanceFee": 0.46,
+  "maintenanceFeeStr": "RM0.46 psf (including sinking fund)",
+  "totalUnits": "492",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1gRB6SNOZzMzZ_L2OMaqJQKHMi4yBLbNC=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1fjT5fjP9728_TcetTUb7j52qKC5GXrGA=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1QOPmN783v-jDaCR0UfLxlCnnlSb6YaxE=w1000",
+    "https://lh3.googleusercontent.com/d/1vBI1pMWZqJNeGM4aPvSyoQmuIAoIdsIi=w1000",
+    "https://lh3.googleusercontent.com/d/154hClh_v4Og_dXt7BSAh45278JGz12Yf=w1000"
+   ],
+   "gallery": []
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QOPmN783v-jDaCR0UfLxlCnnlSb6YaxE=w1000",
+    "typeName": "Type A",
+    "size": 550,
+    "beds": "2",
+    "baths": "1"
+   }
+  ],
+  "latitude": 3.168157,
+  "longitude": 101.565502,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "trinity-rainfora",
+  "name": "Trinity Rainfora",
+  "developer": "Trinity Group / Darul Dinasti Sdn. Bhd.",
+  "location": "Bandar Kinrara 5, 47180 Puchong, Selangor",
+  "area": "Bandar Kinrara",
+  "startingPrice": 568000,
+  "startingPriceFormatted": "RM 568,000",
+  "priceRange": "",
+  "builtUpMin": 739,
+  "builtUpMax": 1184,
+  "bedroomsMin": 2,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "totalUnits": "535",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1DfdkdpcKCvxEx32Nx4976Lj7ceUZrSCP=w1000",
+    "https://lh3.googleusercontent.com/d/1eHhURokPe2PZzS3dV9-kbJVndufIN6p2=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1bCbcTnZH0WrWstJ_Y0RZAEAPmALWus3n=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1XtPtrg66LfQcjGkbwJMSpYFYQNU2nMR3=w1000",
+    "https://lh3.googleusercontent.com/d/1mDedIHZVGeoPYA6RrATmgsSC3TwSzy9w=w1000",
+    "https://lh3.googleusercontent.com/d/16FKg922gOSCYFkEbPJqk36i-a1BL-GsT=w1000",
+    "https://lh3.googleusercontent.com/d/1sWeOXu5LQJlEue24K7ABSUAjC_prM4m1=w1000",
+    "https://lh3.googleusercontent.com/d/1k8YbAQwyjOVAWMwfuDtERU3FVM8DR5NY=w1000",
+    "https://lh3.googleusercontent.com/d/1sDmfQl4Ij9HkxlE_IzrzGP7NP3Uf6VhG=w1000",
+    "https://lh3.googleusercontent.com/d/1TdoKhQYmshs6quu-9HyarKyip-0BddoS=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1gpK_38U3yufWJ4teMbTBbDfyHaDDoL7l=w1000",
+    "https://lh3.googleusercontent.com/d/1wyNgQ7Svrq67xoHrn6yTwkaAfrUHORoq=w1000",
+    "https://lh3.googleusercontent.com/d/19EfkyoDbHlHtE6VRZdqWhtm9eHaOeFqJ=w1000",
+    "https://lh3.googleusercontent.com/d/1CQ1cf_fiELd_shBGOV3F2Rg-_sTPDv8g=w1000",
+    "https://lh3.googleusercontent.com/d/1i7vHzegu5Eg9jdXPr8W_XpcKY3yHqeFo=w1000",
+    "https://lh3.googleusercontent.com/d/1jzcKdI4Lh2_bRh_wQVk58UDy2Aquy4JX=w1000",
+    "https://lh3.googleusercontent.com/d/1J9lNR3cI8uyWkOE2WL30kfdUf87tT9Ez=w1000",
+    "https://lh3.googleusercontent.com/d/1l-M8VIsxu-dlmES6zwIuRKF1vqqnCKTt=w1000",
+    "https://lh3.googleusercontent.com/d/1KWLC-qddiZre-YWjvPmI_xBHAsLX9fdM=w1000",
+    "https://lh3.googleusercontent.com/d/1IDhWfxMAcLNtlYh1_kNAGUqHVPP67w-j=w1000",
+    "https://lh3.googleusercontent.com/d/1hxvkzYbpTP6pZlQaumfby-DZzjnJzGpG=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1XtPtrg66LfQcjGkbwJMSpYFYQNU2nMR3=w1000",
+    "typeName": "Type B/B1",
+    "size": 739,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1sWeOXu5LQJlEue24K7ABSUAjC_prM4m1=w1000",
+    "typeName": "Type E",
+    "size": 1124,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1mDedIHZVGeoPYA6RrATmgsSC3TwSzy9w=w1000",
+    "typeName": "Type C",
+    "size": 974,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1k8YbAQwyjOVAWMwfuDtERU3FVM8DR5NY=w1000",
+    "typeName": "Type F",
+    "size": 1136,
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/16FKg922gOSCYFkEbPJqk36i-a1BL-GsT=w1000",
+    "typeName": "Type D",
+    "size": 1026,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1sDmfQl4Ij9HkxlE_IzrzGP7NP3Uf6VhG=w1000",
+    "typeName": "Type G",
+    "size": 1184,
+    "beds": "4",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.045,
+  "longitude": 101.647,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "arte-solaris",
+  "name": "Arte Solaris",
+  "developer": "Solaris Ceria Sdn. Bhd.",
+  "location": "Jalan Duta Kiara, Solaris, Mont Kiara, 50480 Kuala Lumpur",
+  "area": "Solaris, Mont Kiara",
+  "startingPrice": 580000,
+  "startingPriceFormatted": "RM 580,000",
+  "priceRange": "RM 580,000 – RM 1,902,000",
+  "builtUpMin": 477,
+  "builtUpMax": 2051,
+  "bedroomsMin": 1,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2026",
+  "maintenanceFee": 0.4,
+  "maintenanceFeeStr": "RM0.40 psf (excl. sinking fund; RM0.44 incl. 10%)",
+  "totalUnits": "603",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1BUiXA1FKAjy4iF_n7LJYtiVHEW-yUxaq=w1000",
+    "https://lh3.googleusercontent.com/d/1XL0c0V89gmDI70I9EAo2iwvnt6jj_o2T=w1000",
+    "https://lh3.googleusercontent.com/d/1XdVjoWnkEU14EF8oxrA96Z9L1_XmPeu8=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1LUvFpUwZsLhH6yJSmOMFzSKaHSsALnWD=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1XA1T8a9h8w-pU3M9FWUGRneMm1ZGNHmi=w1000",
+    "https://lh3.googleusercontent.com/d/1sijYwQFV03Ab_gHX0Xhu1mZv6UowyrI1=w1000",
+    "https://lh3.googleusercontent.com/d/1WqQpTkIIsd7UG5gupjM58BxVc_YnKeVv=w1000",
+    "https://lh3.googleusercontent.com/d/1CXvE9bqHDpilFZh66Tj0Ym4cK5SA4syO=w1000",
+    "https://lh3.googleusercontent.com/d/15fmnBTws20wb6Jhnaxet61u7a7zufv7T=w1000",
+    "https://lh3.googleusercontent.com/d/1tMHQ_Yba7gTa6QxZZquCmmJnW_oyf4be=w1000",
+    "https://lh3.googleusercontent.com/d/1aWTOC2Yhz5-AIzFhkB-6R3VkZ0adb4ad=w1000",
+    "https://lh3.googleusercontent.com/d/1M6u9eGP2TX-pCKoSfJrJ6K3_NLD712EY=w1000",
+    "https://lh3.googleusercontent.com/d/1us7c675iafb4GL9F1W9x3WtgkDuYpajQ=w1000",
+    "https://lh3.googleusercontent.com/d/1ypYKYv1Hj6ghzLrZqGlYwG8aRvTvi2nS=w1000",
+    "https://lh3.googleusercontent.com/d/1CcCiY4h9bvtdHnX_RWw58pvx2DPmM9wz=w1000",
+    "https://lh3.googleusercontent.com/d/13WeYQfCl-s0THiGU_2qlV84fWENYB1wc=w1000",
+    "https://lh3.googleusercontent.com/d/1WwVJvsmS8ST75m9y_s_lgMzGQ6TuMZFP=w1000",
+    "https://lh3.googleusercontent.com/d/16capNtPBayd1VrYsrB1g2PTByfF2Q8cZ=w1000",
+    "https://lh3.googleusercontent.com/d/1HARXDaaYKcvjTcOG38P2nJRoGziCGlkJ=w1000",
+    "https://lh3.googleusercontent.com/d/1sYZJ5yrDMMkbCb2tUKnawrYyDo9gWdLj=w1000",
+    "https://lh3.googleusercontent.com/d/1LVLzw3wefQazjbs8QLyfYKPGwRigLA57=w1000",
+    "https://lh3.googleusercontent.com/d/1-NQEjoYz3xMYSNqwEgTi5CqvDm9KVBeo=w1000",
+    "https://lh3.googleusercontent.com/d/1CIY6zJJYkDG94e5hCDc8Ki2ioip8cGbd=w1000",
+    "https://lh3.googleusercontent.com/d/1DsQyvn3YAqFnYUAUXtlKNZX7e4SpyIOR=w1000",
+    "https://lh3.googleusercontent.com/d/1mjH_6SDj494_QCCA_nXZq36Jb8UAa2T1=w1000",
+    "https://lh3.googleusercontent.com/d/10wHohxNFk6-SGIHKssuUIHe5SBjDThSE=w1000",
+    "https://lh3.googleusercontent.com/d/1LRNp8kz4VS7hPrPwGsck4ShIVBbPULcX=w1000",
+    "https://lh3.googleusercontent.com/d/1ziTQc5R2l20-bV8UDmtOEF5YZZOxQlhI=w1000",
+    "https://lh3.googleusercontent.com/d/1brcJ5eZqpvqKlsDddNmMVbbTr6KTRjyG=w1000",
+    "https://lh3.googleusercontent.com/d/1eHgeLCYD0u6zepfXB3wsxrvS36pJchl7=w1000",
+    "https://lh3.googleusercontent.com/d/1-OLzLH-9TdYnE9Qq1oC61r93LpntiIp2=w1000",
+    "https://lh3.googleusercontent.com/d/186ev8W3dMhC7gGnWI_DM_A1AnO6R1oEe=w1000",
+    "https://lh3.googleusercontent.com/d/1eKCXGQ23OFDtQq3q2BETz0HdZ-ZNqhpI=w1000",
+    "https://lh3.googleusercontent.com/d/1H81UcR-HH8zSSMVXeLe0Ty_RAoizR5j3=w1000",
+    "https://lh3.googleusercontent.com/d/14frb1kw94P4s_aTD4Wd0jdDaUFeXd0Xq=w1000",
+    "https://lh3.googleusercontent.com/d/1l6r1mwEiWLaROh5HNLCIhmtfzY5cHDfT=w1000",
+    "https://lh3.googleusercontent.com/d/1u8QLpDe9ae5wlCwMgZyv4GmTneGaaKtA=w1000",
+    "https://lh3.googleusercontent.com/d/1wH8yDeqcAOjWxMjsExrxPtZR4CObrJHj=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1ifVuZUMSp9V6OMz0QAhqLrWqVTgu4RvN=w1000",
+    "https://lh3.googleusercontent.com/d/1u0mF6G0fHTos4_kb-xLXj-vw8JRsWLKm=w1000",
+    "https://lh3.googleusercontent.com/d/1beeqPclySSZBF6ulqkjpzwLbrFmMU3iS=w1000",
+    "https://lh3.googleusercontent.com/d/1eqp0L3wNytN4ugO6pG7nl6pvQYecF5KC=w1000",
+    "https://lh3.googleusercontent.com/d/1tnD5iH-F4ImWDrpw15qh_Yym8IxUMM8w=w1000",
+    "https://lh3.googleusercontent.com/d/12EokvSMyb-eJpKn_hQVH3L1PpUeVxRE_=w1000",
+    "https://lh3.googleusercontent.com/d/1PbxJ2WxLGhtWHfPUyxIf6z3kTpxu888M=w1000",
+    "https://lh3.googleusercontent.com/d/1AxiseI-vvO0FyaZJKVgJ-BduyqpAlvvQ=w1000",
+    "https://lh3.googleusercontent.com/d/1f9LGoB1G5IZX4o9YqQ_CBs3ipV9hE_8d=w1000",
+    "https://lh3.googleusercontent.com/d/19iaexbrvsQ2evDFKkKRfkzhwZwufIAN8=w1000",
+    "https://lh3.googleusercontent.com/d/1JdAGtpbes8aOv__uxNiny8BgkZzo2GvB=w1000",
+    "https://lh3.googleusercontent.com/d/19Nu8W9OFmnrEtPI14SRrV4ZOwUbsH-Rn=w1000",
+    "https://lh3.googleusercontent.com/d/1mOw2GICUeZF-ThA47NK6HluwMOvl4CEj=w1000",
+    "https://lh3.googleusercontent.com/d/1JjmMWt3g6C7Q2BMBSE14S64Jcy7kjKjg=w1000",
+    "https://lh3.googleusercontent.com/d/1lgcxAN9XICyG18vmZrwVD4Gp3QcKghGg=w1000",
+    "https://lh3.googleusercontent.com/d/1kc23QI74ytSS8FfeUkv1AN8lInm-Fcjl=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1-NQEjoYz3xMYSNqwEgTi5CqvDm9KVBeo=w1000",
+    "typeName": "Type T1",
+    "size": 635,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/10wHohxNFk6-SGIHKssuUIHe5SBjDThSE=w1000",
+    "typeName": "Type T1B",
+    "size": 861,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1mjH_6SDj494_QCCA_nXZq36Jb8UAa2T1=w1000",
+    "typeName": "Type T1A",
+    "size": 828,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1LRNp8kz4VS7hPrPwGsck4ShIVBbPULcX=w1000",
+    "typeName": "Type T2",
+    "size": 488,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ziTQc5R2l20-bV8UDmtOEF5YZZOxQlhI=w1000",
+    "typeName": "Type T3",
+    "size": 510,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1brcJ5eZqpvqKlsDddNmMVbbTr6KTRjyG=w1000",
+    "typeName": "Type T3A",
+    "size": 646,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1eHgeLCYD0u6zepfXB3wsxrvS36pJchl7=w1000",
+    "typeName": "Type T5",
+    "size": 477,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1-OLzLH-9TdYnE9Qq1oC61r93LpntiIp2=w1000",
+    "typeName": "Type T6",
+    "size": 625,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/186ev8W3dMhC7gGnWI_DM_A1AnO6R1oEe=w1000",
+    "typeName": "Type T6A",
+    "size": 806,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1eKCXGQ23OFDtQq3q2BETz0HdZ-ZNqhpI=w1000",
+    "typeName": "Type T7",
+    "size": 759,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1H81UcR-HH8zSSMVXeLe0Ty_RAoizR5j3=w1000",
+    "typeName": "Type T7A",
+    "size": 964,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/14frb1kw94P4s_aTD4Wd0jdDaUFeXd0Xq=w1000",
+    "typeName": "Type T8",
+    "size": 603,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1l6r1mwEiWLaROh5HNLCIhmtfzY5cHDfT=w1000",
+    "typeName": "Type T9",
+    "size": 539,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1-NQEjoYz3xMYSNqwEgTi5CqvDm9KVBeo=w1000",
+    "typeName": "Type T10",
+    "size": 506,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1CIY6zJJYkDG94e5hCDc8Ki2ioip8cGbd=w1000",
+    "typeName": "Type T11",
+    "size": 499,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1XA1T8a9h8w-pU3M9FWUGRneMm1ZGNHmi=w1000",
+    "typeName": "Type A",
+    "size": 790,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1sijYwQFV03Ab_gHX0Xhu1mZv6UowyrI1=w1000",
+    "typeName": "Type B",
+    "size": 814,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1WqQpTkIIsd7UG5gupjM58BxVc_YnKeVv=w1000",
+    "typeName": "Type C",
+    "size": 925,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1CXvE9bqHDpilFZh66Tj0Ym4cK5SA4syO=w1000",
+    "typeName": "Type CA",
+    "size": 1105,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/15fmnBTws20wb6Jhnaxet61u7a7zufv7T=w1000",
+    "typeName": "Type D",
+    "size": 947,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1tMHQ_Yba7gTa6QxZZquCmmJnW_oyf4be=w1000",
+    "typeName": "Type DA",
+    "size": 1151,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1aWTOC2Yhz5-AIzFhkB-6R3VkZ0adb4ad=w1000",
+    "typeName": "Type E",
+    "size": 839,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1M6u9eGP2TX-pCKoSfJrJ6K3_NLD712EY=w1000",
+    "typeName": "Type F",
+    "size": 1055,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1us7c675iafb4GL9F1W9x3WtgkDuYpajQ=w1000",
+    "typeName": "Type FA",
+    "size": 1263,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ypYKYv1Hj6ghzLrZqGlYwG8aRvTvi2nS=w1000",
+    "typeName": "Type G1",
+    "size": 987,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1CcCiY4h9bvtdHnX_RWw58pvx2DPmM9wz=w1000",
+    "typeName": "Type G1A",
+    "size": 1105,
+    "beds": "2",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13WeYQfCl-s0THiGU_2qlV84fWENYB1wc=w1000",
+    "typeName": "Type G2",
+    "size": 1066,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1WwVJvsmS8ST75m9y_s_lgMzGQ6TuMZFP=w1000",
+    "typeName": "Type H1",
+    "size": 1044,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/16capNtPBayd1VrYsrB1g2PTByfF2Q8cZ=w1000",
+    "typeName": "Type H2",
+    "size": 1033,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1HARXDaaYKcvjTcOG38P2nJRoGziCGlkJ=w1000",
+    "typeName": "Type H3",
+    "size": 1033,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1sYZJ5yrDMMkbCb2tUKnawrYyDo9gWdLj=w1000",
+    "typeName": "Type I",
+    "size": 1840,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1LVLzw3wefQazjbs8QLyfYKPGwRigLA57=w1000",
+    "typeName": "Type IA",
+    "size": 2051,
+    "beds": "3",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.1715,
+  "longitude": 101.6663,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "arunya-residences-kl-north",
+  "name": "Arunya Residences KL North",
+  "developer": "KLN Land Sdn Bhd",
+  "location": "Residensi Arun Kepong, No 187, Pintasan Segambut, Segambut, 52000 Kuala Lumpur",
+  "area": "Segambut",
+  "startingPrice": 409800,
+  "startingPriceFormatted": "RM 409,800",
+  "priceRange": "RM 409,800 – RM 1,274,000",
+  "builtUpMin": 743,
+  "builtUpMax": 1399,
+  "bedroomsMin": 1,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2025",
+  "maintenanceFee": 0.33,
+  "maintenanceFeeStr": "RM0.33 per sqft + (10% sinking fund)",
+  "totalUnits": "631",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1Z-lRD0DLIpMAP2sb5V5vVUKPDym-o8IH=w1000",
+    "https://lh3.googleusercontent.com/d/14dONYmu3XIh81tS7YGbLevmVCEwMnkTL=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/11QDGJYM7EaavnwHRUBcOUDnhHtOZ9y-z=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/14mU-A4Sm_uNZ46fUoYvfZqivRDbqTNyL=w1000",
+    "https://lh3.googleusercontent.com/d/1puxWs4nhL0DSM0b2-YMAaMi25XqSIboG=w1000",
+    "https://lh3.googleusercontent.com/d/191Ecbvvsp0ad67_1tNAfruZ97sEDTRES=w1000",
+    "https://lh3.googleusercontent.com/d/15MTANwG6yhMfLnxlMPdWw-Zxt2OkyLAQ=w1000",
+    "https://lh3.googleusercontent.com/d/1hlN1w92CVx6-vnMOr-Tnw62azmiwPj3O=w1000",
+    "https://lh3.googleusercontent.com/d/19I3ai1rYi7QKlzXvUShvAgmnsfAgD69S=w1000",
+    "https://lh3.googleusercontent.com/d/1cCSJwIbNRox1VJT2yWHdxfZ9Fx1zqlXg=w1000",
+    "https://lh3.googleusercontent.com/d/1cJi4TySGLLUERHuSdQI5QRM8-C78u8bW=w1000",
+    "https://lh3.googleusercontent.com/d/1FXYe6znyPSYQKG-1hNUGlD3_BQnr0kVr=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1EtO2UabwKn7oXQVSp3PZOKHSHCxXrnUb=w1000",
+    "https://lh3.googleusercontent.com/d/1ymi33ed1j_2n6xB8Q4pSR_C_uDkTzI0e=w1000",
+    "https://lh3.googleusercontent.com/d/1LQVm2FvW42vZbacU5N_J2oSZ1tO3QeBE=w1000",
+    "https://lh3.googleusercontent.com/d/1nDFI111FenWIRPdt7h6_5oaIKjmle8fX=w1000",
+    "https://lh3.googleusercontent.com/d/1K2J_WFpb6QEPTGbsRwpNBcBuamg30wCY=w1000",
+    "https://lh3.googleusercontent.com/d/1cA_ieu7uPmWDiEsB8JTc_djaEGeB0_Eo=w1000",
+    "https://lh3.googleusercontent.com/d/14dexO5aaeJZDFohrypo-2Q1I2XFF9QSC=w1000",
+    "https://lh3.googleusercontent.com/d/1lAQDf9qufnCq0cxr07VhFwtCMRUqNJ6R=w1000",
+    "https://lh3.googleusercontent.com/d/1szzZBTcVJOv-po817LE0fCWF6JwK0Zgd=w1000",
+    "https://lh3.googleusercontent.com/d/1npSWzgri4CjIbcXxDSVGPg90puUIpM_I=w1000",
+    "https://lh3.googleusercontent.com/d/1Y_8-Hl_R6zK6DbyKH7WGnpCyMBOn4jZ3=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/14mU-A4Sm_uNZ46fUoYvfZqivRDbqTNyL=w1000",
+    "typeName": "Type A",
+    "size": 743,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1puxWs4nhL0DSM0b2-YMAaMi25XqSIboG=w1000",
+    "typeName": "Type B",
+    "size": 840,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/191Ecbvvsp0ad67_1tNAfruZ97sEDTRES=w1000",
+    "typeName": "Type C",
+    "size": 1044,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/15MTANwG6yhMfLnxlMPdWw-Zxt2OkyLAQ=w1000",
+    "typeName": "Type D",
+    "size": 1119,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1hlN1w92CVx6-vnMOr-Tnw62azmiwPj3O=w1000",
+    "typeName": "Type E",
+    "size": 1184,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/19I3ai1rYi7QKlzXvUShvAgmnsfAgD69S=w1000",
+    "typeName": "Type F",
+    "size": 1119,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1cCSJwIbNRox1VJT2yWHdxfZ9Fx1zqlXg=w1000",
+    "typeName": "Type G (1,399 / 1,345)",
+    "size": 1399,
+    "beds": "3",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.203472,
+  "longitude": 101.658,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "bayu-mori-park",
+  "name": "Bayu @ Mori Park",
+  "developer": "Mori Park Sdn. Bhd. (OSK Property)",
+  "location": "Seksyen 13, 40150, Shah Alam, Selangor, Malaysia",
+  "area": "Seksyen 13, Shah Alam",
+  "startingPrice": 250000,
+  "startingPriceFormatted": "RM 250,000",
+  "priceRange": "RM 250,000 – RM 672,500",
+  "builtUpMin": 549,
+  "builtUpMax": 958,
+  "bedroomsMin": 1,
+  "bedroomsMax": 4,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2029",
+  "maintenanceFee": 0.385,
+  "maintenanceFeeStr": "RM 0.385 psf (including sinking fund)",
+  "totalUnits": "1028 (841 Serviced Apartments + 187 Flexi Suites)",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1WeK-ur3jCKWQStRGytks42cBFS1Bj1fo=w1000",
+    "https://lh3.googleusercontent.com/d/174flblV3zBlkh1QNU1pee5JTX3Bq2p74=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1IuV0Au9vWFkzvuoYp_2FgZw0_Ns4tCW_=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1YjMNLERK6DpwGswgcO7NRWCGZHv87yF0=w1000",
+    "https://lh3.googleusercontent.com/d/1_osbhOzR2T4kIIyfCQtzoM4oe-Z8yOVH=w1000",
+    "https://lh3.googleusercontent.com/d/1zV3MJXguFErnx4rM7yw6wVkmtn9iiLH-=w1000",
+    "https://lh3.googleusercontent.com/d/1N2CVmrus1OYedUUNZopoqflag47e4add=w1000",
+    "https://lh3.googleusercontent.com/d/1YTOrGlfUSciJfNx0S9Y0w1XQu76EAthS=w1000",
+    "https://lh3.googleusercontent.com/d/1SN1nrBZshOp2sQPlxgvhOrc0MhwFxf6V=w1000",
+    "https://lh3.googleusercontent.com/d/1QDXNB_WGRFBluwmKRoA6CgJOQ6X8gBLL=w1000",
+    "https://lh3.googleusercontent.com/d/1QtSrIAA9kUzmCUd12hS5q96c1B3WopgA=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1Ngzcdl2xWHKIFu_Ib9a3-seQbaHZrwjm=w1000",
+    "https://lh3.googleusercontent.com/d/1mr6w3rW5E2fgw1ZuVMmX-D1_MoF_ZArs=w1000",
+    "https://lh3.googleusercontent.com/d/1EnxQfr9F2ylajA6BF8vMbwAgTW-oNkOp=w1000",
+    "https://lh3.googleusercontent.com/d/1CIfnH1y8olHNonZahY1-TmCG-lBfIqMR=w1000",
+    "https://lh3.googleusercontent.com/d/1oOwSpE0BQJaI9qlx78WM89G-G7uOJQrG=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1YTOrGlfUSciJfNx0S9Y0w1XQu76EAthS=w1000",
+    "typeName": "Type S1",
+    "size": 549,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1SN1nrBZshOp2sQPlxgvhOrc0MhwFxf6V=w1000",
+    "typeName": "Type S2",
+    "size": 732,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QDXNB_WGRFBluwmKRoA6CgJOQ6X8gBLL=w1000",
+    "typeName": "Type S3",
+    "size": 732,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1YjMNLERK6DpwGswgcO7NRWCGZHv87yF0=w1000",
+    "typeName": "Type A",
+    "size": 550,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1_osbhOzR2T4kIIyfCQtzoM4oe-Z8yOVH=w1000",
+    "typeName": "Type B",
+    "size": 829,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1zV3MJXguFErnx4rM7yw6wVkmtn9iiLH-=w1000",
+    "typeName": "Type C",
+    "size": 958,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1N2CVmrus1OYedUUNZopoqflag47e4add=w1000",
+    "typeName": "Type D",
+    "size": 958,
+    "beds": "4",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.08581,
+  "longitude": 101.55182,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "astrum-shah-alam",
+  "name": "Astrum Shah Alam",
+  "developer": "Astrum Shah Alam Sdn Bhd",
+  "location": "Seksyen 14, 40000 Shah Alam, Selangor",
+  "area": "Shah Alam",
+  "startingPrice": 456000,
+  "startingPriceFormatted": "RM 456,000",
+  "priceRange": "RM 456,000 – RM 793,000",
+  "builtUpMin": 570,
+  "builtUpMax": 1065,
+  "bedroomsMin": 2,
+  "bedroomsMax": 4,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "maintenanceFee": 0.35,
+  "maintenanceFeeStr": "RM 0.35 psf + 10% sinking fund",
+  "totalUnits": "1252",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1q2I7ivhyd6fnYMQoQ2uvTvhFl5Y4b4Sx=w1000",
+    "https://lh3.googleusercontent.com/d/1i0EXuw4A35L8zZXrzJpklJ7KXMZAUEMW=w1000",
+    "https://lh3.googleusercontent.com/d/1TLU7q4ekVpJwQYsGVIkqpJhHWPQyfloV=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1Zpq05YWwf2C5f3K8bnxYBQUm4NkQdlcM=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1jQF8A_io7gKBr7ZNgWDuok3_5IuhO-x8=w1000",
+    "https://lh3.googleusercontent.com/d/1h5quYqlOZQ1GoUMsIMWzHDZwYwYvewJn=w1000",
+    "https://lh3.googleusercontent.com/d/1Svd1klapAA32JFSd3HrdpcamefHorB18=w1000",
+    "https://lh3.googleusercontent.com/d/1MWshdwSNShdWYLE685JmXdQLUUcbw8Wv=w1000",
+    "https://lh3.googleusercontent.com/d/1LEw9B3Kw4yg9ZxmIO3IPTWPia-yAONlo=w1000",
+    "https://lh3.googleusercontent.com/d/1S-OkkNRcQKK0hLzmdEv-taVEuLVW0Ufn=w1000",
+    "https://lh3.googleusercontent.com/d/1t5sN09RbVcY2E8pY1yit7j6-bVCF1l68=w1000",
+    "https://lh3.googleusercontent.com/d/1YVJEeXQj5WjUwQEtfcJpxXLawiVTjk3d=w1000",
+    "https://lh3.googleusercontent.com/d/1GE_N4dyzFSDoKFvoZ3SeRXix0luLxwdq=w1000",
+    "https://lh3.googleusercontent.com/d/1zVuQQiiP-6oabmatEST909ZdnBSqMsgi=w1000",
+    "https://lh3.googleusercontent.com/d/1JYRp2q-vl3HCfI2TGDRVIIpXAu4by4T_=w1000",
+    "https://lh3.googleusercontent.com/d/18E_5RvExusPPCrBJfACuhcMIHw5TeCp1=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1jyzOKCvEvhqiF6QGdh-2MbImLqA0ia_N=w1000",
+    "https://lh3.googleusercontent.com/d/1doq3izT6aVhNEvO4ZJcjBMtxqj_DRb94=w1000",
+    "https://lh3.googleusercontent.com/d/1xB13YfrfUYyQqAJCiJDaaeqGwFsrVptu=w1000",
+    "https://lh3.googleusercontent.com/d/1as76_Ay6wUAhUy63c6dwAFFP11KQ_E9f=w1000",
+    "https://lh3.googleusercontent.com/d/1NJInrnSWRGocppDabMee2gsVLrZxjmgM=w1000",
+    "https://lh3.googleusercontent.com/d/1jRy8U3W2iIJthzgGonqC8NINZMyWHO_u=w1000",
+    "https://lh3.googleusercontent.com/d/1IjmACOu6bA72_Y999D_Dt4lJKNWA9xuz=w1000",
+    "https://lh3.googleusercontent.com/d/1V_nSXhS00tYYdOYM08LEDOR0W-yJeTAx=w1000",
+    "https://lh3.googleusercontent.com/d/1JIWESCnIyB6Ao_DhQZZwUNv0JUbVwHCd=w1000",
+    "https://lh3.googleusercontent.com/d/1IdNwTd0J3JtJbdtfQUKccF6dD3Hnlb6p=w1000",
+    "https://lh3.googleusercontent.com/d/1FYowOFFE9elv1lNZpzVW8xUwEpDATULe=w1000",
+    "https://lh3.googleusercontent.com/d/1LKbqeXuqhFOVs4wpYW8yqDUynN7GSfwV=w1000",
+    "https://lh3.googleusercontent.com/d/15lNEhtVyGp8W--Tyepze9ysNM0s9JZY8=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1jQF8A_io7gKBr7ZNgWDuok3_5IuhO-x8=w1000",
+    "typeName": "Type A",
+    "size": 1054,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1h5quYqlOZQ1GoUMsIMWzHDZwYwYvewJn=w1000",
+    "typeName": "Type B",
+    "size": 775,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1h5quYqlOZQ1GoUMsIMWzHDZwYwYvewJn=w1000",
+    "typeName": "Type B1",
+    "size": 796,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Svd1klapAA32JFSd3HrdpcamefHorB18=w1000",
+    "typeName": "Type B2",
+    "size": 1022,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1MWshdwSNShdWYLE685JmXdQLUUcbw8Wv=w1000",
+    "typeName": "Type B3",
+    "size": 1054,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1S-OkkNRcQKK0hLzmdEv-taVEuLVW0Ufn=w1000",
+    "typeName": "Type C",
+    "size": 1054,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1t5sN09RbVcY2E8pY1yit7j6-bVCF1l68=w1000",
+    "typeName": "Type D",
+    "size": 1065,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1YVJEeXQj5WjUwQEtfcJpxXLawiVTjk3d=w1000",
+    "typeName": "Type E",
+    "size": 570,
+    "beds": "2",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.0725,
+  "longitude": 101.5175,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "botanica-hills",
+  "name": "Botanica Hills",
+  "developer": "Stellar Trinity Sdn Bhd",
+  "location": "Off Jalan Pintas Rawang (next to Rawang Bypass)",
+  "area": "Templer, Rawang",
+  "startingPrice": 802000,
+  "startingPriceFormatted": "RM 802,000",
+  "priceRange": "RM 802,000 – RM 1,633,000",
+  "builtUpMin": 1658,
+  "builtUpMax": 2596,
+  "bedroomsMin": 4,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "Landed Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "totalUnits": "231",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1mhqeSKQmmMAnohUBR0gDlYtkydC1M_hT=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1ypbX1hRPNgjlK1sCUiEAiMBJmppxQzWj=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1LPxwVmbddTb8qkhvQy3iw0Rawhj3N3H_=w1000",
+    "https://lh3.googleusercontent.com/d/1V55rknRx2Ju7BO8RNqmoEdA330lzUPjO=w1000",
+    "https://lh3.googleusercontent.com/d/1nHi2VTwhjBu1GOuA-EULk-t2r0asiRIc=w1000",
+    "https://lh3.googleusercontent.com/d/182h22GE8VGR12Mh1V2WJRj8WCZGJR5WV=w1000",
+    "https://lh3.googleusercontent.com/d/1ReoO_uaJEtijGOO0kRf0AQOb0VqpnGDR=w1000",
+    "https://lh3.googleusercontent.com/d/1QZEWmmDSbm-GN2YY6fQh_f4qrSaG80bP=w1000",
+    "https://lh3.googleusercontent.com/d/1scsSDzpKSRwuPFkTjMSGtGGYRBz8ruF8=w1000",
+    "https://lh3.googleusercontent.com/d/1SN-aZBAO0JKnv3ZZu3Vzk7wlkrZ0mF16=w1000",
+    "https://lh3.googleusercontent.com/d/1Cfwh7NXHsLGFClKgB5oD5e1RjAq_SnL6=w1000",
+    "https://lh3.googleusercontent.com/d/1RXjKwyFJI7x7bZR8Xsy90fYk6NeA8sWW=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1Ncp3DJhCNcpQ_YJSZrQ7gUrN6fQCve3I=w1000",
+    "https://lh3.googleusercontent.com/d/1vfSyTNnmqQ8z46aPjF7YxQDIIzpk7LsW=w1000",
+    "https://lh3.googleusercontent.com/d/1jUFROUQEcRsBkh0WpthrA7N7N-sd1OCN=w1000",
+    "https://lh3.googleusercontent.com/d/1ZcsQnpYYfKHqig6Jj8jsY1r5i7_xv_Lu=w1000",
+    "https://lh3.googleusercontent.com/d/1a3jnaENMKQqYuJKcAfbljjNeBQAdlSHD=w1000",
+    "https://lh3.googleusercontent.com/d/1pwQCfQqcBLh0MZj0IWa94ivL28SzzXYo=w1000",
+    "https://lh3.googleusercontent.com/d/1FddZItUrWAoALV6pk5qAbRJWl9FM44Ye=w1000",
+    "https://lh3.googleusercontent.com/d/1enexlbZ8iWlKjqjeH-41-Ys-aGcdODdc=w1000",
+    "https://lh3.googleusercontent.com/d/1Blj0XdrrKDf7k5i3RJroXwfMws6E_fgt=w1000",
+    "https://lh3.googleusercontent.com/d/1RZT3kf1L0Nu9waGmEELmoR0_ylsmxt2b=w1000",
+    "https://lh3.googleusercontent.com/d/16riM08o56oqjCw5cAghH8CPBrVkJkrEV=w1000",
+    "https://lh3.googleusercontent.com/d/1PLOns-Q_9UXR40e_hLqRWbHIR5ZfCnIv=w1000",
+    "https://lh3.googleusercontent.com/d/1Nmg5xyT7ixyy1F79VzZVJzk1DflEgUGB=w1000",
+    "https://lh3.googleusercontent.com/d/13uJWwvPl3QqeXVwrm9_cf5CWOHTVBl_9=w1000",
+    "https://lh3.googleusercontent.com/d/1SER64HtdJyt3kRH_2JcKXa-JiytSbPJm=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QZEWmmDSbm-GN2YY6fQh_f4qrSaG80bP=w1000",
+    "typeName": "Type A (Intermediate Lot)",
+    "size": 1660,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/182h22GE8VGR12Mh1V2WJRj8WCZGJR5WV=w1000",
+    "typeName": "Type A (End Lot)",
+    "size": 1865,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/182h22GE8VGR12Mh1V2WJRj8WCZGJR5WV=w1000",
+    "typeName": "Type A (Corner Lot)",
+    "size": 1865,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1nHi2VTwhjBu1GOuA-EULk-t2r0asiRIc=w1000",
+    "typeName": "Type A1 (Intermediate Lot)",
+    "size": 2382,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1LPxwVmbddTb8qkhvQy3iw0Rawhj3N3H_=w1000",
+    "typeName": "Type A1 (End Lot)",
+    "size": 2596,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1LPxwVmbddTb8qkhvQy3iw0Rawhj3N3H_=w1000",
+    "typeName": "Type A1 (Corner Lot)",
+    "size": 2596,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Cfwh7NXHsLGFClKgB5oD5e1RjAq_SnL6=w1000",
+    "typeName": "Type B (Intermediate Lot)",
+    "size": 1658,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1scsSDzpKSRwuPFkTjMSGtGGYRBz8ruF8=w1000",
+    "typeName": "Type B (End Lot)",
+    "size": 1863,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1scsSDzpKSRwuPFkTjMSGtGGYRBz8ruF8=w1000",
+    "typeName": "Type B (Corner Lot)",
+    "size": 1863,
+    "beds": "4",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.34615,
+  "longitude": 101.59928,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "nara-at-shorea-park",
+  "name": "NARA at Shorea Park",
+  "developer": "Aspect Potential Sdn Bhd (OSK Property)",
+  "location": "Lot 13992, Jalan Meranti Permai, Taman Meranti Permai, 47100 Puchong, Selangor",
+  "area": "Puchong",
+  "startingPrice": 250000,
+  "startingPriceFormatted": "RM 250,000",
+  "priceRange": "RM 250,000 – RM 659,000",
+  "builtUpMin": 560,
+  "builtUpMax": 1055,
+  "bedroomsMin": 1,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "maintenanceFee": 3.28,
+  "maintenanceFeeStr": "RM3.28 per share unit (including 10% sinking fund)",
+  "totalUnits": "709",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1cU8Yjtunx9_BKFsfDNX80odIGUfjOC2h=w1000",
+    "https://lh3.googleusercontent.com/d/1p3F5e4sqHTWkG-G87okCbryBvnC0sTEO=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1frmdgMQqZwG3Y9ENocfv6aUDu5f6_oJD=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1RUMANc-iRkAAXeqO2I7WsJu_ix25sEBB=w1000",
+    "https://lh3.googleusercontent.com/d/1s7mdHdj5bqG9t3yMTOhblduej4SRsGMn=w1000",
+    "https://lh3.googleusercontent.com/d/17VJ1lVu1SM19goX1ZJkzfC02mYxHHnjz=w1000",
+    "https://lh3.googleusercontent.com/d/1q6mZd9Y8s2uxkJb-BTcr3Hgrg2Gm_v9j=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/14h_0us9ZXL5MHO8qYpZSqQUJMSReT_nm=w1000",
+    "https://lh3.googleusercontent.com/d/1OKzgalT6m2tBm-opBLiq41exsN5zIdtH=w1000",
+    "https://lh3.googleusercontent.com/d/1iRHMWh-e8tSk85gcSraIyjIJ08LYQ9lF=w1000",
+    "https://lh3.googleusercontent.com/d/10j8eUswtb2SDHB0q9KJWVGOm7_fNIEzY=w1000",
+    "https://lh3.googleusercontent.com/d/1ntrlFLc0FSNq1I2c1MEJ8P3cfWjV0zOX=w1000",
+    "https://lh3.googleusercontent.com/d/1rQP66kQYfciuOwNjWRJk3L7Jqar5okmN=w1000",
+    "https://lh3.googleusercontent.com/d/1GFVSvPKu3MaCw4gWF7ARr6e3frekuk7E=w1000",
+    "https://lh3.googleusercontent.com/d/1nFLYs7W83Qg9_YjanuoOyX-cf8CRSLIP=w1000",
+    "https://lh3.googleusercontent.com/d/1V5z3pZJiHbIDmKuutBDzxUo_hqs6OXLN=w1000",
+    "https://lh3.googleusercontent.com/d/1OCUzjwBhXvE0cC8hVNVz_wCUuGSgfnYR=w1000",
+    "https://lh3.googleusercontent.com/d/1yZfelcGj_NAcULh-Ecunt4wxCWLrjZhG=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1RUMANc-iRkAAXeqO2I7WsJu_ix25sEBB=w1000",
+    "typeName": "Type A",
+    "size": 560,
+    "beds": "1+1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1s7mdHdj5bqG9t3yMTOhblduej4SRsGMn=w1000",
+    "typeName": "Type B",
+    "size": 807,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/17VJ1lVu1SM19goX1ZJkzfC02mYxHHnjz=w1000",
+    "typeName": "Type C",
+    "size": 936,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1q6mZd9Y8s2uxkJb-BTcr3Hgrg2Gm_v9j=w1000",
+    "typeName": "Type D",
+    "size": 1055,
+    "beds": "4",
+    "baths": "2"
+   }
+  ],
+  "latitude": 2.9842,
+  "longitude": 101.6253,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "sanderling-2-lakefront-residence",
+  "name": "Sanderling 2 @ Lakefront Residence",
+  "developer": "Lakefront Residence Sdn Bhd (A Subsidiary of Avaland Bhd)",
+  "location": "Lakefront Residence, Persiaran Semarak Api, Cyber 11, 63000 Cyberjaya, Selangor.",
+  "area": "Cyberjaya",
+  "startingPrice": 0,
+  "startingPriceFormatted": "",
+  "priceRange": "",
+  "builtUpMin": 958,
+  "builtUpMax": 1711,
+  "bedroomsMin": 3,
+  "bedroomsMax": 5,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "maintenanceFee": 0.3,
+  "maintenanceFeeStr": "approx. RM0.30 PSF (RM2.81 per share unit + 10% sinking fund)",
+  "totalUnits": "606",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1mSsDp5y0KstADTfl4MsjwHlJ6LouxIsr=w1000",
+    "https://lh3.googleusercontent.com/d/1S3MNQePFqgwHFAAzJawE3SsKJiO4yWto=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1ADtHNbB-QrsrM3UDUq04vpHFtdkaHFft=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1WzoanHzvuCAnrYFUNr5J6NzTsQxuae-G=w1000",
+    "https://lh3.googleusercontent.com/d/1iqZdC9U-b-sAXselKVn6JfEWMC2m5ide=w1000",
+    "https://lh3.googleusercontent.com/d/1NFLiGEqFyFI1ldJChpIe5AV47hTjbrQ8=w1000",
+    "https://lh3.googleusercontent.com/d/1ALBjyNQNXRPnn2UWwmJ3zJWqILnsnb_z=w1000",
+    "https://lh3.googleusercontent.com/d/1XML-ZAWjrzlJDkm8baEs1Sfwuu7nVPax=w1000",
+    "https://lh3.googleusercontent.com/d/1yvN3J1OyR_ee0cYFQo3dllWOslzILVwa=w1000",
+    "https://lh3.googleusercontent.com/d/1PoOZElJ_CPeDO-f8Ix1GFnrTzc8fhHtN=w1000",
+    "https://lh3.googleusercontent.com/d/1PtC5jEUAV0yvGt2xaeugi6Dp4wRxJ6W3=w1000",
+    "https://lh3.googleusercontent.com/d/1EZr9OSQUmXtIZW8lQisykc2M6Waka0lp=w1000",
+    "https://lh3.googleusercontent.com/d/1shggWjEsCN_XuQp0rmKKcEUqlLcx6lU5=w1000",
+    "https://lh3.googleusercontent.com/d/10J0frHrH2AGJ7J8SjH_K5LOOaTfLUkr8=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1JSGTfAOxYqB0MHIBCtAurhYnY6LWp3m8=w1000",
+    "https://lh3.googleusercontent.com/d/1C-FDBFuHdfeK5gM0RQNvKUI2j5Ay9dPt=w1000",
+    "https://lh3.googleusercontent.com/d/1uvcDtU74vZPNIqku7y-H1cdOLw7L-WeY=w1000",
+    "https://lh3.googleusercontent.com/d/1tX3GfH0Q6IhWwGedKkMyVN4QS1G8hDTR=w1000",
+    "https://lh3.googleusercontent.com/d/1jVXoLGiPRNvh42BTrDjhlPvmvJQw-ySp=w1000",
+    "https://lh3.googleusercontent.com/d/1S9TrpyIBSTtzS4eS7UUyw8B7_1YojUyN=w1000",
+    "https://lh3.googleusercontent.com/d/1TmoZ7JxTg0FY23uFIg44flGd9YLPeSFb=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1WzoanHzvuCAnrYFUNr5J6NzTsQxuae-G=w1000",
+    "typeName": "Type D1-1",
+    "size": 958,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1NFLiGEqFyFI1ldJChpIe5AV47hTjbrQ8=w1000",
+    "typeName": "Type D2-1",
+    "size": 958,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ALBjyNQNXRPnn2UWwmJ3zJWqILnsnb_z=w1000",
+    "typeName": "Type D2-2/D2A-2",
+    "size": 969,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1iqZdC9U-b-sAXselKVn6JfEWMC2m5ide=w1000",
+    "typeName": "Type D1-3/D1A-3",
+    "size": 1022,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1XML-ZAWjrzlJDkm8baEs1Sfwuu7nVPax=w1000",
+    "typeName": "Type D3-3/D3A-3",
+    "size": 1044,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1PtC5jEUAV0yvGt2xaeugi6Dp4wRxJ6W3=w1000",
+    "typeName": "Type F1/F1A",
+    "size": 1324,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1EZr9OSQUmXtIZW8lQisykc2M6Waka0lp=w1000",
+    "typeName": "Type F2/F2A",
+    "size": 1324,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1yvN3J1OyR_ee0cYFQo3dllWOslzILVwa=w1000",
+    "typeName": "Type E1",
+    "size": 1485,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1PoOZElJ_CPeDO-f8Ix1GFnrTzc8fhHtN=w1000",
+    "typeName": "Type E2",
+    "size": 1485,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1shggWjEsCN_XuQp0rmKKcEUqlLcx6lU5=w1000",
+    "typeName": "Type G1",
+    "size": 1711,
+    "beds": "6",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/10J0frHrH2AGJ7J8SjH_K5LOOaTfLUkr8=w1000",
+    "typeName": "Type G2",
+    "size": 1711,
+    "beds": "6",
+    "baths": "4"
+   }
+  ],
+  "latitude": 2.9365,
+  "longitude": 101.6385,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "levia-residence",
+  "name": "Levia Residence",
+  "developer": "Matrix Concepts (Cheras) Sdn Bhd",
+  "location": "20, Jalan 5/91a, Taman Shamelin Perkasa, 56100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "area": "Cheras",
+  "startingPrice": 684000,
+  "startingPriceFormatted": "RM 684,000",
+  "priceRange": "RM 684,000 – RM 1,003,000",
+  "builtUpMin": 938,
+  "builtUpMax": 1364,
+  "bedroomsMin": 3,
+  "bedroomsMax": 4,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2027",
+  "maintenanceFee": 0.33,
+  "maintenanceFeeStr": "RM0.33psf including sinking fund",
+  "totalUnits": "778",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1dEOhupj88P96b6A-6XSO2q8jtYX_0WI5=w1000",
+    "https://lh3.googleusercontent.com/d/1wDFGOqHVFYJe75kQ6i37dz2CGkaZKNpl=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1gu7rhbAK7RP-b4kmr3LworB88qiuC6bc=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1bJN7_ZXgL_Fl3bEmsMtQZcvxEzsYJw4N=w1000",
+    "https://lh3.googleusercontent.com/d/1JO37mdkYNhnuj8wqiUGgtgTxghA_N5Z_=w1000",
+    "https://lh3.googleusercontent.com/d/1FGF_D7XDDIn6KR64bqeAjG6PmQyyjpMm=w1000",
+    "https://lh3.googleusercontent.com/d/15G-_1Y_J1GFo6uTvoTpk1F2NINyz9EC7=w1000",
+    "https://lh3.googleusercontent.com/d/1GVzDpUN9zIsInHXH7mxU6sK5Ur0HnTvk=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1OkOtBeNr-Byr-PjifFpupMwcwGCDU_b4=w1000",
+    "https://lh3.googleusercontent.com/d/13VukPhRvYwrLINUsnhgUwp3tU1olYy8C=w1000",
+    "https://lh3.googleusercontent.com/d/17eW4rqdG5oZYEuUP26j9F3ZoUqDqGRB_=w1000",
+    "https://lh3.googleusercontent.com/d/1v81YQrdb6O-C7_1VOEwuUMTbBhi-qVL3=w1000",
+    "https://lh3.googleusercontent.com/d/1CQDWEKBBHKJ5JtpurCZfs1MXcFid7M0J=w1000",
+    "https://lh3.googleusercontent.com/d/10ZZsg0agKTzB9Gxe207efOnYWwYjM2tf=w1000",
+    "https://lh3.googleusercontent.com/d/1nUO-aUPwyWfarO8Ak4MAyOPzjlapJjbc=w1000",
+    "https://lh3.googleusercontent.com/d/169HR863YEGhYG4Fo7ziqZEZYc4Nyqeal=w1000",
+    "https://lh3.googleusercontent.com/d/1K2uVnvHu5lJtMfS0ktRq1RDxDXoQB4lj=w1000",
+    "https://lh3.googleusercontent.com/d/1Af8JgHwYWWAhEdGPY5ngj4O3D_fgRpZT=w1000",
+    "https://lh3.googleusercontent.com/d/1VkppReiYVJDYzvKIHP94taL-lO6fljUU=w1000",
+    "https://lh3.googleusercontent.com/d/1S0P1fmxGbQtPjydyVCCAm8onkX52stRL=w1000",
+    "https://lh3.googleusercontent.com/d/1Ypk1TXIShHGZxQtSpjYoISX0OQLDq3ph=w1000",
+    "https://lh3.googleusercontent.com/d/1gr0dbNRx7k-Yy9HVE3KIvf7y4LTNkV1d=w1000",
+    "https://lh3.googleusercontent.com/d/1lEqyg2LxaqCc6qZVAJFhDDEiAZRaGioj=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1bJN7_ZXgL_Fl3bEmsMtQZcvxEzsYJw4N=w1000",
+    "typeName": "Type B",
+    "size": 938,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1JO37mdkYNhnuj8wqiUGgtgTxghA_N5Z_=w1000",
+    "typeName": "Type C",
+    "size": 1109,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1FGF_D7XDDIn6KR64bqeAjG6PmQyyjpMm=w1000",
+    "typeName": "Type D",
+    "size": 1364,
+    "beds": "5",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.1235,
+  "longitude": 101.7397,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "vox-residence-sentul",
+  "name": "Vox Residence @ Sentul",
+  "developer": "Kerjaya Property Sdn Bhd",
+  "location": "No.2, Jalan Kampung Bandar Dalam, Mukim Setapak, 51100 Kuala Lumpur",
+  "area": "Sentul",
+  "startingPrice": 680160,
+  "startingPriceFormatted": "RM 680,160",
+  "priceRange": "RM 680,160 – RM 1,016,990",
+  "builtUpMin": 667,
+  "builtUpMax": 947,
+  "bedroomsMin": 2,
+  "bedroomsMax": 3,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "maintenanceFee": 0.35,
+  "maintenanceFeeStr": "RM0.35 psf + 10% Sinking Fund",
+  "totalUnits": "587",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1D3gD1-vaPfUk5XufupACt8eiW6HTkO74=w1000",
+    "https://lh3.googleusercontent.com/d/1HwGEGiPq_fejx-6vTsQO2664OfByNHQv=w1000",
+    "https://lh3.googleusercontent.com/d/1HiNJ-i3_dTviyRoGY4xHAy96s1ITXyZl=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1yKp6sozgj4NDcUJNo-MRVaHrBqOCVqzG=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1QxETIP2DvF50rJ6rnb4TcSjUWBH4QqZK=w1000",
+    "https://lh3.googleusercontent.com/d/1srSFa9efoyNukIPV6ZcLyxsN7ku6UDGd=w1000",
+    "https://lh3.googleusercontent.com/d/1NeDqbsNxatiaai0mrgyr0cpBaox43xei=w1000",
+    "https://lh3.googleusercontent.com/d/1o5Raqx8D7lmX84IRrgJeLuHGov7cDamt=w1000",
+    "https://lh3.googleusercontent.com/d/1mAs-BDpNy92-z3_jgwN99bJTP8kWqhZ7=w1000",
+    "https://lh3.googleusercontent.com/d/1oZSm8PCjR0Irr26CCU8rXqoJS7DviJEi=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1Mb9SEsV6l0F-Ym3JuiagAix__WIrH2bQ=w1000",
+    "https://lh3.googleusercontent.com/d/11pRlcEUXUq8aNE0PQPU5r9u2yD1rAqYQ=w1000",
+    "https://lh3.googleusercontent.com/d/1PU4y9US9kXO9GeD4cZtPTuXQDO8uaoMj=w1000",
+    "https://lh3.googleusercontent.com/d/1KdgTvO45xm_tZm3jx764gklyduEHUmHX=w1000",
+    "https://lh3.googleusercontent.com/d/1bVlrjPdZxqrMZ8KtKRxPV-EWKqbQqqCL=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QxETIP2DvF50rJ6rnb4TcSjUWBH4QqZK=w1000",
+    "typeName": "Type A1",
+    "size": 667,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1srSFa9efoyNukIPV6ZcLyxsN7ku6UDGd=w1000",
+    "typeName": "Type A1a",
+    "size": 667,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1NeDqbsNxatiaai0mrgyr0cpBaox43xei=w1000",
+    "typeName": "Type B1",
+    "size": 839,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1o5Raqx8D7lmX84IRrgJeLuHGov7cDamt=w1000",
+    "typeName": "Type B2",
+    "size": 839,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1mAs-BDpNy92-z3_jgwN99bJTP8kWqhZ7=w1000",
+    "typeName": "Type C1",
+    "size": 947,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1oZSm8PCjR0Irr26CCU8rXqoJS7DviJEi=w1000",
+    "typeName": "Type C1a",
+    "size": 947,
+    "beds": "3",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.197368,
+  "longitude": 101.696147,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "trinity-nordic-residences",
+  "name": "Trinity Nordic Residences",
+  "developer": "Trinity Group (Olympic Builders Sdn. Bhd.)",
+  "location": "Along Jalan BS3/12 and Jalan BS3/1, Taman Bukit Serdang, 43300 Seri Kembangan, Selangor",
+  "area": "Seri Kembangan",
+  "startingPrice": 588888,
+  "startingPriceFormatted": "RM 588,888",
+  "priceRange": "RM 588,888 – RM 1,687,888",
+  "builtUpMin": 937,
+  "builtUpMax": 2014,
+  "bedroomsMin": 3,
+  "bedroomsMax": 5,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2029",
+  "maintenanceFee": 0.33,
+  "maintenanceFeeStr": "RM0.33 psf (including sinking fund)",
+  "totalUnits": "714",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/10jAuvxmAyhqkVNuSCWofMvXFCL3YJPeQ=w1000",
+    "https://lh3.googleusercontent.com/d/1gqPv4Q0pY1iyp-7Dr3rccGGE5mXlcObf=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1BN-KZfTIO5a1JFHVn3A6qUITp-HEugTJ=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1knK-xNsCBiYU8dl9hc0gllnbKSvnSV5S=w1000",
+    "https://lh3.googleusercontent.com/d/1MkpiKPBAkzuBpBk7D4p66WNgkmsa7fnm=w1000",
+    "https://lh3.googleusercontent.com/d/1mkf9hqaKVrwJ5-UTnzmAOHOHPGfyRitv=w1000",
+    "https://lh3.googleusercontent.com/d/1bMrXhrR414zfKCw8B3CHd9gd_YEHgEcZ=w1000",
+    "https://lh3.googleusercontent.com/d/1ORGhMDjzgUJ3k1Shn1ATWj8rXMmZWEmm=w1000",
+    "https://lh3.googleusercontent.com/d/1mySS_de1YGytHSaojgf8ggY3shhNT2dx=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1vfL2QMQpTS55icitrjsFXOuG1txcKe85=w1000",
+    "https://lh3.googleusercontent.com/d/1bNWbPZbo62FDmuV_CPULTYr9XNTpCDrZ=w1000",
+    "https://lh3.googleusercontent.com/d/1Rh0Tr7LgRQuvsv8rDxaOeTscHk13HQpR=w1000",
+    "https://lh3.googleusercontent.com/d/1nwvAKCNhLq9tbWLA9SExDB0v7F_iM_JY=w1000",
+    "https://lh3.googleusercontent.com/d/1kkaKqL6zMFU1BAQy_3CpdK9_BRAEXHz-=w1000",
+    "https://lh3.googleusercontent.com/d/1XaAKjW1332Sg0AhUUTDYgxpqB8fhSqf-=w1000",
+    "https://lh3.googleusercontent.com/d/1JUPlPnC1Qkd1aguLpGIGMOHQ-x-eGmLW=w1000",
+    "https://lh3.googleusercontent.com/d/1RoktkDHvYyLYZGCalhRRZQe7zM0LoIE0=w1000",
+    "https://lh3.googleusercontent.com/d/1VdBfqWOktXDuazdLszMAo4qHuJ8RCpFL=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1knK-xNsCBiYU8dl9hc0gllnbKSvnSV5S=w1000",
+    "typeName": "Type A",
+    "size": 937,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1MkpiKPBAkzuBpBk7D4p66WNgkmsa7fnm=w1000",
+    "typeName": "Type B",
+    "size": 1077,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1bMrXhrR414zfKCw8B3CHd9gd_YEHgEcZ=w1000",
+    "typeName": "Type C",
+    "size": 1228,
+    "beds": "3",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ORGhMDjzgUJ3k1Shn1ATWj8rXMmZWEmm=w1000",
+    "typeName": "Type D(M)",
+    "size": 2014,
+    "beds": "5",
+    "baths": "4"
+   }
+  ],
+  "latitude": 3.024,
+  "longitude": 101.7065,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "the-wyn-residences",
+  "name": "The Wyn Residences",
+  "developer": "Land & General Berhad",
+  "location": "Block C - GF - 51, IOI Boulevard, Jalan Kenari 5, Bandar Puchong Jaya, 47170 Puchong, Selangor Darul Ehsan.",
+  "area": "Puchong Jaya",
+  "startingPrice": 516700,
+  "startingPriceFormatted": "RM 516,700",
+  "priceRange": "RM 516,700 – RM 708,900",
+  "builtUpMin": 700,
+  "builtUpMax": 850,
+  "bedroomsMin": 2,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2027",
+  "maintenanceFee": 0.35,
+  "maintenanceFeeStr": "RM 0.35 psf (including sinking fund)",
+  "totalUnits": "1546",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/19dG4ZhkC9TDdAHAhSkfs_wpNY8fYB8n8=w1000",
+    "https://lh3.googleusercontent.com/d/1ME_rPsV21i5Tg9OaxiSZiYtx8fxnNnAV=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1KnAT9meL1RH3DsiBrNsIoJtVO-FwGj18=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1xO3VGpsVI1AOVzmH0EdU_4002VDoXDpm=w1000",
+    "https://lh3.googleusercontent.com/d/13j-zpKoWSQMjCk9l4WDYiOtJNhBXvW-E=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1bLX_FaABm4beswyM7l-cwAFryRqLkQNp=w1000",
+    "https://lh3.googleusercontent.com/d/1rp5bwF3TJ3n5nMG-g2JGGd5I-wctqedy=w1000",
+    "https://lh3.googleusercontent.com/d/14zqMQjkeDmsaKhIsu-w-Baamdyweo20z=w1000",
+    "https://lh3.googleusercontent.com/d/1AITq-LgtAVnPIRN68po6Db6XVAXmq47U=w1000",
+    "https://lh3.googleusercontent.com/d/1ACEBa0eZ0PXe89Jxrki5-aWulVHp3ctt=w1000",
+    "https://lh3.googleusercontent.com/d/1cmr9XP4EZLxCZIN7T9hdAvIQfTKh2nFh=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1xO3VGpsVI1AOVzmH0EdU_4002VDoXDpm=w1000",
+    "typeName": "Type 700 SQFT (Type B)",
+    "size": 700,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13j-zpKoWSQMjCk9l4WDYiOtJNhBXvW-E=w1000",
+    "typeName": "Type 850 SQFT (Type C)",
+    "size": 850,
+    "beds": "3",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.0456,
+  "longitude": 101.6215,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "senna-heights",
+  "name": "Senna Heights",
+  "developer": "Greencove Sdn Bhd (A Member of Kerjaya Prospek Property Berhad)",
+  "location": "Jalan PJU 10/1c, Damansara Damai, 47810 Petaling Jaya, Selangor",
+  "area": "Damansara Damai",
+  "startingPrice": 629970,
+  "startingPriceFormatted": "RM 629,970",
+  "priceRange": "RM 629,970 – RM 1,153,220",
+  "builtUpMin": 700,
+  "builtUpMax": 1464,
+  "bedroomsMin": 1,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2029",
+  "maintenanceFee": 0.29,
+  "maintenanceFeeStr": "RM0.29 psf + 10% sinking fund",
+  "totalUnits": "780",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1lIwfPN_eVj7cXyR8yRBqxmWcZwcVwPQO=w1000",
+    "https://lh3.googleusercontent.com/d/1PvtwO0jwdlwn76HdP6Xk_-Zp0atmYm0K=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/199liL_H_LO-JAndIysdUFp3M1fK8lFaa=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/11vga7WFAqvQLu33yh-bli6hDmJkIbWnA=w1000",
+    "https://lh3.googleusercontent.com/d/1FWrLm0LG37dVTS9RJczXTKEKFis2fyon=w1000",
+    "https://lh3.googleusercontent.com/d/1PSdbOEuHhEdexU1mGcDRZ1MBOld-sFKB=w1000",
+    "https://lh3.googleusercontent.com/d/13Gwm3jy0NGNy7ft3OoyIVm5SSRa1RVhr=w1000",
+    "https://lh3.googleusercontent.com/d/1OmoPOTecIJSlNqykzHooynt7Zqgq9XL6=w1000",
+    "https://lh3.googleusercontent.com/d/15-Uhb7WoOyyvUi5QzstNOmqIpCMMOXc6=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1dK6yXWAlOyBX-p58GdvqLixPDn9UwsqS=w1000",
+    "https://lh3.googleusercontent.com/d/139UKBtvhPrt1qLmSuS358bwGoH66VoCR=w1000",
+    "https://lh3.googleusercontent.com/d/1nz7xduflpOWDgB6yp_JNArL_f34fuXjC=w1000",
+    "https://lh3.googleusercontent.com/d/1epUrrkcK-OWfKcAJzgIPo06Aw6AccGwH=w1000",
+    "https://lh3.googleusercontent.com/d/19DBfyxrIrNR-dpGH7N-Mz5VydYDPgmeV=w1000",
+    "https://lh3.googleusercontent.com/d/1fIKB8TOIjPXHn_aSRpepIFti0kR8ezCz=w1000",
+    "https://lh3.googleusercontent.com/d/1ux-pcpouPA3pxOAcpHjxIsGn_9_ioPsC=w1000",
+    "https://lh3.googleusercontent.com/d/17IstTi5aYJ9kAgAczQrJTBxqilqr1iUd=w1000",
+    "https://lh3.googleusercontent.com/d/1fs02GePIsXly8Od4DKScQ_7qw02FC5gG=w1000",
+    "https://lh3.googleusercontent.com/d/1-El9XFZkFF4UBNP98vVRxy8iV3Ei2w0-=w1000",
+    "https://lh3.googleusercontent.com/d/19qOe8y6kJlAAK0FIeZ8BRy9FpjBrl5Qv=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/11vga7WFAqvQLu33yh-bli6hDmJkIbWnA=w1000",
+    "typeName": "Type A",
+    "size": 1464,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1FWrLm0LG37dVTS9RJczXTKEKFis2fyon=w1000",
+    "typeName": "Type B",
+    "size": 1023,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1PSdbOEuHhEdexU1mGcDRZ1MBOld-sFKB=w1000",
+    "typeName": "Type C",
+    "size": 1023,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13Gwm3jy0NGNy7ft3OoyIVm5SSRa1RVhr=w1000",
+    "typeName": "Type D1",
+    "size": 1023,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1OmoPOTecIJSlNqykzHooynt7Zqgq9XL6=w1000",
+    "typeName": "Type E",
+    "size": 700,
+    "beds": "1",
+    "baths": "1"
+   }
+  ],
+  "latitude": 3.195321,
+  "longitude": 101.595433,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "jimbaran-gaia-gardens-setia-eco-templer",
+  "name": "Jimbaran @ Gaia Gardens, Setia Eco Templer",
+  "developer": "Setia Eco Templer Sdn Bhd",
+  "location": "No.1, Jalan Ipoh-Rawang, KM-20, Taman Rekreasi Templer, 48000 Rawang, Selangor Darul Ehsan, Malaysia",
+  "area": "Rawang",
+  "startingPrice": 1509000,
+  "startingPriceFormatted": "RM 1,509,000",
+  "priceRange": "RM 1,509,000 – RM 2,125,000",
+  "builtUpMin": 2230,
+  "builtUpMax": 2780,
+  "bedroomsMin": 4,
+  "bedroomsMax": 4,
+  "tenure": "Leasehold",
+  "projectType": "Landed Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2026",
+  "maintenanceFee": 0.2,
+  "maintenanceFeeStr": "Estimate RM0.20psf based on land size",
+  "totalUnits": "70",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1_mnaKSd-xKzHZbfOnBRd8YKawG35anaD=w1000",
+    "https://lh3.googleusercontent.com/d/1Qk7U9AW8YqqVSOa3kPjM8b2k-D8UOd6q=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1l8RjFpgjuGF6ymERG3ugzzPB4wHdJT2o=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/12HEA3fezmW-I9mW4_IBOrK85yuxGFRxN=w1000",
+    "https://lh3.googleusercontent.com/d/1UOQZpa5ScBsjrBgGDRl8WVK3M4R78ig4=w1000",
+    "https://lh3.googleusercontent.com/d/1tPmzw-ryBz_kG00NcStthI3N9no1JgbI=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1tIdTZwopitLFR8VRKQ4-1Mh537GKe7RY=w1000",
+    "https://lh3.googleusercontent.com/d/1PDlN44cXoQcpmeOr_vQgLIcHzOaBB8y_=w1000",
+    "https://lh3.googleusercontent.com/d/17tnKBqX9WiNcCcLZ_befuoJ7raUFXKNv=w1000",
+    "https://lh3.googleusercontent.com/d/1WNFluL3G-P_eQpS-AEKSVkPcXCNw04Q_=w1000",
+    "https://lh3.googleusercontent.com/d/1lINe-2dNWv3-ofHc5Fypw8T-jwkGqF26=w1000",
+    "https://lh3.googleusercontent.com/d/1YYfWaEU7eXMwsdwsm0Np_-N4VpgQpoqK=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/12HEA3fezmW-I9mW4_IBOrK85yuxGFRxN=w1000",
+    "typeName": "Type 2-Storey Semi-D",
+    "size": 2780,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/12HEA3fezmW-I9mW4_IBOrK85yuxGFRxN=w1000",
+    "typeName": "Type 2-Storey Link Villa",
+    "size": 2230,
+    "beds": "4",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.2842,
+  "longitude": 101.6212,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "residensi-danau",
+  "name": "Residensi Danau",
+  "developer": "Pakatan Perakbina Sdn Bhd",
+  "location": "Jalan Perindustrian Puchong, Bandar Metro Puchong, 47100 Puchong, Selangor",
+  "area": "Puchong",
+  "startingPrice": 270000,
+  "startingPriceFormatted": "RM 270,000",
+  "priceRange": "RM 270,000 – RM 817,750",
+  "builtUpMin": 566,
+  "builtUpMax": 999,
+  "bedroomsMin": 1,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2027",
+  "maintenanceFee": 0.35,
+  "maintenanceFeeStr": "Est RM0.35 psf (main parcel, inclusive of sinking fund), Est RM0.18 psf (accessory parcel + carpark, inclusive of sinking fund)",
+  "totalUnits": "428",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1AbEFgtio99RMaQvRC9x5Hai8b9dnIFjW=w1000",
+    "https://lh3.googleusercontent.com/d/1F92JLFx4gxTywaZMwEhRssjB--t-KafZ=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1w3BGAZbgcaypNeSs8SDNTkPQGeUqJLXZ=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1AxH1m_WyTNoslqQBqYO9DQgU41XXNKkc=w1000",
+    "https://lh3.googleusercontent.com/d/1xTteEMG9AYxBw_vCsV-7FaLUHOpAQqHl=w1000",
+    "https://lh3.googleusercontent.com/d/17iyeEoMEVOGVwKDzIwWsOkMLGNZCtiow=w1000",
+    "https://lh3.googleusercontent.com/d/18sjmK43k-g5IcSod6fcf_vXOmIu7FmaG=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1eH1vDqpo394Y5JzkxxS_SmbftitMB4qk=w1000",
+    "https://lh3.googleusercontent.com/d/1uzh79ngA7DOsyr0H-ZPw6Lvuh-BAxoF0=w1000",
+    "https://lh3.googleusercontent.com/d/1-VCNnGq6LqpOaFL-yO7reHkk7QOFh6zx=w1000",
+    "https://lh3.googleusercontent.com/d/1igxIwoyM3_SV-uVUbSkvu5RcPx1M6Q2A=w1000",
+    "https://lh3.googleusercontent.com/d/14ZQkgFfV0q8sDPzkR8hW9SbilY55Hv3z=w1000",
+    "https://lh3.googleusercontent.com/d/1k7V3VxTF0j1wXB5ygRPGgFXjTzJ6Rdv0=w1000",
+    "https://lh3.googleusercontent.com/d/1AvWUGPdUUSqXz_4P_sdSpJoVMN5F23BA=w1000",
+    "https://lh3.googleusercontent.com/d/1qpLOjTvHkTfWhWvDYUGpwYW9Q0h1OHlJ=w1000",
+    "https://lh3.googleusercontent.com/d/1V05S1XMmUVaQpKitKDFQ9baGIguXgBfr=w1000",
+    "https://lh3.googleusercontent.com/d/1Y4iOEtriiLObyMyEm_mjPnKUIvDiojiZ=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1AxH1m_WyTNoslqQBqYO9DQgU41XXNKkc=w1000",
+    "typeName": "Type A",
+    "size": 566,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1xTteEMG9AYxBw_vCsV-7FaLUHOpAQqHl=w1000",
+    "typeName": "Type B",
+    "size": 855,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/17iyeEoMEVOGVwKDzIwWsOkMLGNZCtiow=w1000",
+    "typeName": "Type C",
+    "size": 999,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/18sjmK43k-g5IcSod6fcf_vXOmIu7FmaG=w1000",
+    "typeName": "Type D",
+    "size": 999,
+    "beds": "3",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.030115,
+  "longitude": 101.611183,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "akasa-cheras-south",
+  "name": "AKASA Cheras South",
+  "developer": "Hap Seng Land Development (Balakong) Sdn Bhd",
+  "location": "Jalan Balakong, Cheras South, 43300 Seri Kembangan, Selangor",
+  "area": "Cheras South",
+  "startingPrice": 555888,
+  "startingPriceFormatted": "RM 555,888",
+  "priceRange": "RM 555,888 – RM 1,207,888",
+  "builtUpMin": 850,
+  "builtUpMax": 2048,
+  "bedroomsMin": 2,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Completed",
+  "completionYear": "2021",
+  "maintenanceFee": 0.33,
+  "maintenanceFeeStr": "Approx RM0.33 per sqf + 10% sinking fund",
+  "totalUnits": "998",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1uU4T5xD2dxa2s63YRBVC5osaQZgUookV=w1000",
+    "https://lh3.googleusercontent.com/d/1h3Ix6y5SPmJJTSs7r2mcywqGgTMv5uSx=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1NhRpgmhWVJTyMxp1nfJlqZKT-PjnxI8L=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1Mfz87PcSYFoqo6MXfY6kjeE1oT5vyrWY=w1000",
+    "https://lh3.googleusercontent.com/d/1k4xJdHYcir9j8wf5UrCIIuddSrEkUND4=w1000",
+    "https://lh3.googleusercontent.com/d/1m-jvaHC_EBT0uPzSIlcqabdE8KvbUv35=w1000",
+    "https://lh3.googleusercontent.com/d/1K3pinQ0aNTqPZn4nUXFs8TuC3A02fpOI=w1000",
+    "https://lh3.googleusercontent.com/d/1bBOs1aTmrwZm6OWZXVW3YaSa-mmKOHDR=w1000",
+    "https://lh3.googleusercontent.com/d/19serNKBBDEZPLdS-RO3mpPbr_L32-R33=w1000",
+    "https://lh3.googleusercontent.com/d/1U5dNzDUudRPWrgTCkJVgZWEQq5Bym4kw=w1000",
+    "https://lh3.googleusercontent.com/d/1UgxovOY5flW3WRA2Kgv8SeaheSZly8sU=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/19F6UL5X5_n-ucn3nIHSpxhVGcxijnkO7=w1000",
+    "https://lh3.googleusercontent.com/d/1tRzhSP8Xs2dBySJC2zS1CMrfGjsvhj4W=w1000",
+    "https://lh3.googleusercontent.com/d/1As45hSkqerzDN132UNSG6hyHh-d0wii3=w1000",
+    "https://lh3.googleusercontent.com/d/11JNMgszHo3R1EV5-cf8DmgI2jlqGQJ9c=w1000",
+    "https://lh3.googleusercontent.com/d/1v8MRLtdm242fb3fQdgOdP7_I5QuwBprz=w1000",
+    "https://lh3.googleusercontent.com/d/1CSh-f6-us6PZVIrCyd8rJNKdzz8qqF0n=w1000",
+    "https://lh3.googleusercontent.com/d/1z5BK4-4Bh6ks66oCEIudl91GPA4g9OCT=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Mfz87PcSYFoqo6MXfY6kjeE1oT5vyrWY=w1000",
+    "typeName": "Type A",
+    "size": 850,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1k4xJdHYcir9j8wf5UrCIIuddSrEkUND4=w1000",
+    "typeName": "Type B",
+    "size": 1000,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1m-jvaHC_EBT0uPzSIlcqabdE8KvbUv35=w1000",
+    "typeName": "Type C",
+    "size": 1155,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1K3pinQ0aNTqPZn4nUXFs8TuC3A02fpOI=w1000",
+    "typeName": "Type D (Dual-key)",
+    "size": 1500,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1bBOs1aTmrwZm6OWZXVW3YaSa-mmKOHDR=w1000",
+    "typeName": "Type E",
+    "size": 2048,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/19serNKBBDEZPLdS-RO3mpPbr_L32-R33=w1000",
+    "typeName": "Type F",
+    "size": 1421,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1U5dNzDUudRPWrgTCkJVgZWEQq5Bym4kw=w1000",
+    "typeName": "Type G",
+    "size": 2000,
+    "beds": "4",
+    "baths": "5"
+   }
+  ],
+  "latitude": 2.983015,
+  "longitude": 101.760548,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "alamanda-heights",
+  "name": "Alamanda Heights",
+  "developer": "Multiplex Land Sdn Bhd",
+  "location": "PT 3400 Alamanda Heights, Taman Bukit Serdang, 43300 Seri Kembangan, Selangor",
+  "area": "Taman Bukit Serdang, Seri Kembangan",
+  "startingPrice": 565000,
+  "startingPriceFormatted": "RM 565,000",
+  "priceRange": "RM 565,000 – RM 695,800",
+  "builtUpMin": 900,
+  "builtUpMax": 1050,
+  "bedroomsMin": 3,
+  "bedroomsMax": 3,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2030",
+  "maintenanceFee": 0.25,
+  "maintenanceFeeStr": "RM0.25 - RM0.28 psf",
+  "totalUnits": "440",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1GV761e2cpZrphMr2o4X2a2O181jHUJPW=w1000",
+    "https://lh3.googleusercontent.com/d/1flLusMZCYpU6pMHSQx4EuBVepZ8f_f4j=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1Rz26--eQAI8T0rX1xix4YCmkZIBTUra1=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1OkDheeiNTkNORKiUBuNgM2KdodYPncUz=w1000",
+    "https://lh3.googleusercontent.com/d/1gNX8H6QAOqlKQxLZ8YJ7B2eAsR1bZwhw=w1000",
+    "https://lh3.googleusercontent.com/d/1WjSDNkiVSM08fku2BjqNnA-kmyev-Jw5=w1000",
+    "https://lh3.googleusercontent.com/d/18Lq0zwWP5r5zYtRaiLeBpbj2PtDrXTnu=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1a0qMgexica6Jxga4R5f5ybdI7OLCe0ZX=w1000",
+    "https://lh3.googleusercontent.com/d/1hSdAKQDE6EYDTjOpmce9T-MEmGvAnHcH=w1000",
+    "https://lh3.googleusercontent.com/d/1jKoOSGhgYwA_f-fwo5fbUhVk6Bm6CItq=w1000",
+    "https://lh3.googleusercontent.com/d/1Kv4z7-ZN3uCOMe8lo6eyyV-4hxBEnk-X=w1000",
+    "https://lh3.googleusercontent.com/d/1ecz-Gquk420pGFWdsHWRisoh9WbkPnel=w1000",
+    "https://lh3.googleusercontent.com/d/1xMCHd-0JM8LoVnqxCgoLtnQYOEHfu3w1=w1000",
+    "https://lh3.googleusercontent.com/d/1Qa5utaC-PovIGimYLDc26qdBU1Xc-do-=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1OkDheeiNTkNORKiUBuNgM2KdodYPncUz=w1000",
+    "typeName": "Type A (incl. AM)",
+    "size": 1050,
+    "beds": "3+1 + Study",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1gNX8H6QAOqlKQxLZ8YJ7B2eAsR1bZwhw=w1000",
+    "typeName": "Type B (incl. BM)",
+    "size": 971,
+    "beds": "3+1",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.035497,
+  "longitude": 101.692325,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "alstonia-hilltop-homes",
+  "name": "Alstonia Hilltop Homes",
+  "developer": "Pinnacle Paradise Sdn Bhd (a subsidiary of MRCB Land)",
+  "location": "Jalan BRP 4/1, Bukit Rahman Putra, 40160 Shah Alam, Selangor",
+  "area": "Bukit Rahman Putra",
+  "startingPrice": 722600,
+  "startingPriceFormatted": "RM 722,600",
+  "priceRange": "RM 722,600 – RM 2,160,800",
+  "builtUpMin": 1001,
+  "builtUpMax": 3600,
+  "bedroomsMin": 3,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2024",
+  "maintenanceFee": 0.35,
+  "maintenanceFeeStr": "RM0.35psf including sinking fund",
+  "totalUnits": "245",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/12M4mUpUm8VptYrJuFxmy2IwS4mvcwtK-=w1000",
+    "https://lh3.googleusercontent.com/d/1fQuJxySkU-0iXy1bAUCVT37r0vwyqWUy=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1XsgV96hSOB6qxFwV5xyfTH5FRCFV4X8h=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1TV_bKszGeZc-dkE4YyUYSOWd6ZYtjkqN=w1000",
+    "https://lh3.googleusercontent.com/d/1rglA51acZWCq1Ms-JleB3CWzbwt5b8As=w1000",
+    "https://lh3.googleusercontent.com/d/1feLJvFf7YhE1pj4ykglSvRBKNDBvAwVy=w1000",
+    "https://lh3.googleusercontent.com/d/1y2wxA54N9dcAplpkhrj1yfXqPFGszMe-=w1000",
+    "https://lh3.googleusercontent.com/d/1J-5jrZ57AMcVdk4u4w8YXhGpP4tgHvyH=w1000",
+    "https://lh3.googleusercontent.com/d/14nGMMq_nXzkPAAjvaRrHYmRetaCCJwqF=w1000",
+    "https://lh3.googleusercontent.com/d/1aUxDHxxatwBGK_ypDzYaJ3SeLUnQUTz8=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/15zGScgNEP018Qs5830b5wYf-0ibGLaUN=w1000",
+    "https://lh3.googleusercontent.com/d/11ieGlalysoS_D_EGotUiKpnWW-vSVOQS=w1000",
+    "https://lh3.googleusercontent.com/d/1i0cFHe1asEsipjzI5c5Hu7czxzb3RRox=w1000",
+    "https://lh3.googleusercontent.com/d/1gmAFcEx-Jyg8TabHK1VYxt1piJgPtRBr=w1000",
+    "https://lh3.googleusercontent.com/d/1iFaSFBR0GZktfMVL5IVK8Om3jV17NPF1=w1000",
+    "https://lh3.googleusercontent.com/d/1AJUj9pCsUU-Qtcs5soWNIheFCwctkJzF=w1000",
+    "https://lh3.googleusercontent.com/d/1MqHdpJF3WF2NMQIgqx0mrl27MMt-7U9I=w1000",
+    "https://lh3.googleusercontent.com/d/1nFReBCwvfR5mw1jkP5jBjvBcLYFX3bSC=w1000",
+    "https://lh3.googleusercontent.com/d/1-OiIN0mJBwdblOo9GUhnQOyX8gjPQFuo=w1000",
+    "https://lh3.googleusercontent.com/d/1rIstI3DXOiO9vZvgiEHk7nnVaKRgPQGg=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1TV_bKszGeZc-dkE4YyUYSOWd6ZYtjkqN=w1000",
+    "typeName": "Type A1",
+    "size": 1001,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1rglA51acZWCq1Ms-JleB3CWzbwt5b8As=w1000",
+    "typeName": "Type A2",
+    "size": 1022,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1feLJvFf7YhE1pj4ykglSvRBKNDBvAwVy=w1000",
+    "typeName": "Type B1",
+    "size": 1216,
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1y2wxA54N9dcAplpkhrj1yfXqPFGszMe-=w1000",
+    "typeName": "Type B2",
+    "size": 1227,
+    "beds": "3+1",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1J-5jrZ57AMcVdk4u4w8YXhGpP4tgHvyH=w1000",
+    "typeName": "Type C1",
+    "size": 1431,
+    "beds": "4+1",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1aUxDHxxatwBGK_ypDzYaJ3SeLUnQUTz8=w1000",
+    "typeName": "Type 3-Storey Villa (Intermediate)",
+    "size": 3500,
+    "beds": "4+2",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/14nGMMq_nXzkPAAjvaRrHYmRetaCCJwqF=w1000",
+    "typeName": "Type 3-Storey Villa (Corner)",
+    "size": 3600,
+    "beds": "4+2",
+    "baths": "5"
+   }
+  ],
+  "latitude": 3.210086,
+  "longitude": 101.562345,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "ambience-residence",
+  "name": "Ambience Residence",
+  "developer": "Faithview Group",
+  "location": "Sungai Besi, 57100 Kuala Lumpur",
+  "area": "Sungai Besi",
+  "startingPrice": 448230,
+  "startingPriceFormatted": "RM 448,230",
+  "priceRange": "RM 448,230 – RM 737,600",
+  "builtUpMin": 669,
+  "builtUpMax": 1080,
+  "bedroomsMin": 2,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2027",
+  "maintenanceFee": 0.3,
+  "maintenanceFeeStr": "Approximately RM0.30 psf (Excluding Sinking Fund)",
+  "totalUnits": "482",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1b_zl--d_itYkqvAMj22YiWCsWe9C0swK=w1000",
+    "https://lh3.googleusercontent.com/d/1KrotSe3_3aNYf9NWwBlyuhJh-J0fTuSO=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/18B8Q7v_E2EbZWBxBrMwsrPHC--b628hz=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1X-OjG0oJ6GbemWPnHo4fyIHJqRUNSSOR=w1000",
+    "https://lh3.googleusercontent.com/d/195UlfwoYHTEDPZXVnUl6wePawYrJVVHh=w1000",
+    "https://lh3.googleusercontent.com/d/1nhwNWpzpvDLoZg7gzjp4RjbsxUY5AE7q=w1000",
+    "https://lh3.googleusercontent.com/d/1ptThZ0YyKibGN5tWZkmX4VCCYpbAd0Ge=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1qqd_V1dmm38f3FaHC8WPC_YB-SJCi0yj=w1000",
+    "https://lh3.googleusercontent.com/d/1CETtRzDYkfauRrHe5qOcOrXxu_BIsKvK=w1000",
+    "https://lh3.googleusercontent.com/d/1YBr63ZR2cYrQoArwjbl76fTUdquBOFT3=w1000",
+    "https://lh3.googleusercontent.com/d/1b0QvpCtZ9uh7Snj3C9VgG_KxgYXJ-xB0=w1000",
+    "https://lh3.googleusercontent.com/d/1CSrSSrT8Rtv8mUqndCLNges7p-8UOnOD=w1000",
+    "https://lh3.googleusercontent.com/d/17UR5ovsyFVZRFx5Nz-P4t9PDfpkZP2Ew=w1000",
+    "https://lh3.googleusercontent.com/d/12g-E5e1NGsMX8om6rqj09bZ0qcSV50ko=w1000",
+    "https://lh3.googleusercontent.com/d/1Yl8opOxB2zJj8CQzWghW6uGCyYQoT6XE=w1000",
+    "https://lh3.googleusercontent.com/d/1Ceg-jglZIc7ybwGwd9-DY9ib8xBxg2wd=w1000",
+    "https://lh3.googleusercontent.com/d/1sNcRFLqVAzsbdb3Bw8ExkH19h-0OprgB=w1000",
+    "https://lh3.googleusercontent.com/d/1SvvVBSsUQEMZKreGnoxp6fLG-cFwK-8-=w1000",
+    "https://lh3.googleusercontent.com/d/1_M60Q9LEzwIz9_M8P3DqNudtKtKOd4FI=w1000",
+    "https://lh3.googleusercontent.com/d/1s4cstcnrRve6pOVrzi9x4QpDgrZ3yJ1_=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1X-OjG0oJ6GbemWPnHo4fyIHJqRUNSSOR=w1000",
+    "typeName": "Type A",
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/195UlfwoYHTEDPZXVnUl6wePawYrJVVHh=w1000",
+    "typeName": "Type B",
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1nhwNWpzpvDLoZg7gzjp4RjbsxUY5AE7q=w1000",
+    "typeName": "Type C",
+    "beds": "4",
+    "baths": "3"
+   }
+  ],
+  "latitude": 3.0906,
+  "longitude": 101.7011,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "arte-star",
+  "name": "Arte Star",
+  "developer": "Suriamega Development Sdn Bhd",
+  "location": "Sungai Besi, Kuala Lumpur",
+  "area": "Sungai Besi",
+  "startingPrice": 396000,
+  "startingPriceFormatted": "RM 396,000",
+  "priceRange": "RM 396,000 – RM 758,000",
+  "builtUpMin": 527,
+  "builtUpMax": 1185,
+  "bedroomsMin": 2,
+  "bedroomsMax": 3,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "maintenanceFee": 0.3,
+  "maintenanceFeeStr": "RM 0.30 psf + 10% sinking fund",
+  "totalUnits": "2705",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1lJv_OCoVejji0ix64EwoRuCcovNw3VER=w1000",
+    "https://lh3.googleusercontent.com/d/1fF0w2lNy1veVIsE8GqJa4pMziOJsPmve=w1000",
+    "https://lh3.googleusercontent.com/d/1cmKS8bPiPQjlSSVcCoNpG9zf6n6OGSEy=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1SHqNaUcj8PjS5OsUelPa1yWrilu7ywKK=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1fnMFAiOKAoTrDAi5wkpttIvZw5pqR65d=w1000",
+    "https://lh3.googleusercontent.com/d/1tXmrASINllz24lYUPdvWdvd-xTGZzym7=w1000",
+    "https://lh3.googleusercontent.com/d/1I5SuabrxTI6p6zlLi_3AjWdykJveWT7k=w1000",
+    "https://lh3.googleusercontent.com/d/1XHjoEVKhbJP-qnOz29pTGsCVrFJ1TFp6=w1000",
+    "https://lh3.googleusercontent.com/d/1umBaKEGbcfnZYXaLr01SuncIF_GQx5Ef=w1000",
+    "https://lh3.googleusercontent.com/d/1QLa2o2S5vvzCXLkGpwf1gxjk2XfI2Rv2=w1000",
+    "https://lh3.googleusercontent.com/d/1z6qFbg-VChQggUTDo5LesTWZOjBuIKvn=w1000",
+    "https://lh3.googleusercontent.com/d/14HBxZRoWh8Jivs1UI6xSIj6eV9FO4j1J=w1000",
+    "https://lh3.googleusercontent.com/d/1ZKUBVyBMlwL91oKiklIHhqrQ8TGo-DIe=w1000",
+    "https://lh3.googleusercontent.com/d/1F51R4Z1B5swgOaA0os31bkKrKZfcExOh=w1000",
+    "https://lh3.googleusercontent.com/d/1pguEVs6vf0WpkjvcbwamKdsSCxrbh7wI=w1000",
+    "https://lh3.googleusercontent.com/d/109J5fsX-jdvgT9KRhRYLmZx3JUYY3_NQ=w1000",
+    "https://lh3.googleusercontent.com/d/1n8PUPOm_Kr2ibILJ9Q0pyjSgb-aNlNR0=w1000",
+    "https://lh3.googleusercontent.com/d/1qMasX_dsgTB4_dwPrVGFgLfelgcOf0Aq=w1000",
+    "https://lh3.googleusercontent.com/d/1Sgc6UX98YJRXOpx3ruv1TQXnUdxVyp-Y=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1Xzhpq2KeP4-1YhIuPqX4GHYEMVeM5Lz2=w1000",
+    "https://lh3.googleusercontent.com/d/1g3JLCKchvuhzMWJUdHr2sEZuUV-79hu1=w1000",
+    "https://lh3.googleusercontent.com/d/1bg8lIGDcMpdGro3mQ0U9Az-lqEi9WtrM=w1000",
+    "https://lh3.googleusercontent.com/d/1gpPB34rvEdMGxC1M5dRMkMjYc1bb7KfV=w1000",
+    "https://lh3.googleusercontent.com/d/1pALGmdKadNv4mdbrCXrp7j6zhktfxx27=w1000",
+    "https://lh3.googleusercontent.com/d/1AX-7yCVzA5gkPPvooDcBGdZkXWsla9Uo=w1000",
+    "https://lh3.googleusercontent.com/d/1k5gbaHAslWKuEPDq61uK9CnBX1GVH5uq=w1000",
+    "https://lh3.googleusercontent.com/d/12bQwIUhtC9ghPkHNPYM0oBQ0Af6ZiC7C=w1000",
+    "https://lh3.googleusercontent.com/d/1snec-BzxznvOm-fSvCWpG7fhMGwOfU6g=w1000",
+    "https://lh3.googleusercontent.com/d/1mTgJURCZmPXBGqpj4VC6EiKt_0ke0dZ0=w1000",
+    "https://lh3.googleusercontent.com/d/1G3ULxsdID9N3cg-VVAkV6tVFB3X_Pp4f=w1000",
+    "https://lh3.googleusercontent.com/d/1YzJ0xf6u_tmnBgPS-_cQgse35PHwKBUc=w1000",
+    "https://lh3.googleusercontent.com/d/152iongXHUCZbFhm9ACtCvHw6EmDe06EL=w1000",
+    "https://lh3.googleusercontent.com/d/1aintrAUb-XzE-ofqIavI0WfX7JGRfqxy=w1000",
+    "https://lh3.googleusercontent.com/d/1NuSBcsvPUrCxt5fgex-UYYKF0zFndbyx=w1000",
+    "https://lh3.googleusercontent.com/d/1MOplVXEbRVv3z_7Pe5uRUOO6QpNGzNxD=w1000",
+    "https://lh3.googleusercontent.com/d/1XdZyxMxDVtYwL4ylwow5FA2VLGFufTzl=w1000",
+    "https://lh3.googleusercontent.com/d/19St8_V9B_smtJDAcgq9fqKlUB8oqnLMJ=w1000",
+    "https://lh3.googleusercontent.com/d/1-uMMGBIHIsF_Cryrf0SgBozvWwgHp0w7=w1000",
+    "https://lh3.googleusercontent.com/d/11BM24qUMLJDAmGI7V2HsNj1u9iNqPIWr=w1000",
+    "https://lh3.googleusercontent.com/d/1OAmahhtuXlVdrl59tBW6KDWaszF4LA1d=w1000",
+    "https://lh3.googleusercontent.com/d/1MhWXSlCeiHKygYZ-FiUgme4BZOBVUrkl=w1000",
+    "https://lh3.googleusercontent.com/d/1F6gpALv8zRtJHG74d52kN9b-Uf5WAGIz=w1000",
+    "https://lh3.googleusercontent.com/d/1zW114sO_Kcmb2sGox8NsAwmGvvm9ul84=w1000",
+    "https://lh3.googleusercontent.com/d/1bzvCbHExNzAjZFtptqDNKqFyc079yXl2=w1000",
+    "https://lh3.googleusercontent.com/d/1cih4kyTDg_QU_tNG7gCRx7rfb2XVq-l_=w1000",
+    "https://lh3.googleusercontent.com/d/1dBiAPx1IOU9I-dR6lyHJFIuMhSfsJAMa=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1fnMFAiOKAoTrDAi5wkpttIvZw5pqR65d=w1000",
+    "typeName": "Type A",
+    "size": 527,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1fnMFAiOKAoTrDAi5wkpttIvZw5pqR65d=w1000",
+    "typeName": "Type A1",
+    "size": 732,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1tXmrASINllz24lYUPdvWdvd-xTGZzym7=w1000",
+    "typeName": "Type A3",
+    "size": 549,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1XHjoEVKhbJP-qnOz29pTGsCVrFJ1TFp6=w1000",
+    "typeName": "Type B",
+    "size": 625,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1XHjoEVKhbJP-qnOz29pTGsCVrFJ1TFp6=w1000",
+    "typeName": "Type B1",
+    "size": 656,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1umBaKEGbcfnZYXaLr01SuncIF_GQx5Ef=w1000",
+    "typeName": "Type B2",
+    "size": 872,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QLa2o2S5vvzCXLkGpwf1gxjk2XfI2Rv2=w1000",
+    "typeName": "Type B5",
+    "size": 861,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1z6qFbg-VChQggUTDo5LesTWZOjBuIKvn=w1000",
+    "typeName": "Type B7",
+    "size": 656,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/14HBxZRoWh8Jivs1UI6xSIj6eV9FO4j1J=w1000",
+    "typeName": "Type B8",
+    "size": 872,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ZKUBVyBMlwL91oKiklIHhqrQ8TGo-DIe=w1000",
+    "typeName": "Type B9",
+    "size": 625,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1pguEVs6vf0WpkjvcbwamKdsSCxrbh7wI=w1000",
+    "typeName": "Type C2",
+    "size": 1185,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/109J5fsX-jdvgT9KRhRYLmZx3JUYY3_NQ=w1000",
+    "typeName": "Type C6",
+    "size": 840,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1n8PUPOm_Kr2ibILJ9Q0pyjSgb-aNlNR0=w1000",
+    "typeName": "Type C7",
+    "size": 840,
+    "beds": "3",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.104,
+  "longitude": 101.708,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "atwater-corporate-office-towers",
+  "name": "Atwater Corporate Office Towers",
+  "developer": "Paramount Property Development Sdn. Bhd.",
+  "location": "PT29, Jalan Prof Diraja Ungku Aziz, Seksyen 13, 46200 Petaling Jaya, Selangor",
+  "area": "Seksyen 13",
+  "startingPrice": 1236100,
+  "startingPriceFormatted": "RM 1,236,100",
+  "priceRange": "",
+  "builtUpMin": 1384,
+  "builtUpMax": 30077,
+  "bedroomsMin": 1,
+  "bedroomsMax": 1,
+  "tenure": "Leasehold",
+  "projectType": "Office",
+  "completionStatus": "Under Construction",
+  "completionYear": "2024",
+  "maintenanceFee": 0.72,
+  "maintenanceFeeStr": "RM0.72 psf (including sinking fund)",
+  "totalUnits": "",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1rk3yQXUmSczf2oOUiEcebAqauBU0CbC4=w1000",
+    "https://lh3.googleusercontent.com/d/1-kmNhnRV7x811d5MT8oDLi2go6zcKC_W=w1000",
+    "https://lh3.googleusercontent.com/d/1pjy1S7VaE999thpsRACLSyN9_6uCgwTq=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1c4LO2Xq_E2s7-2nqZNG8A-ivfrFKT3BO=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1y20gfNCCxZ6jyos4FkVQi5c7VKb8KDhk=w1000",
+    "https://lh3.googleusercontent.com/d/1SRuduQg2xRTJhl5LeakTdukW7SgPa3IO=w1000",
+    "https://lh3.googleusercontent.com/d/1fWfbprGEr4ks1JucQu-m0q89-MFIWLYT=w1000",
+    "https://lh3.googleusercontent.com/d/1slO1s3vTm-_IdxSGkwff6oxVMGE7Teqj=w1000",
+    "https://lh3.googleusercontent.com/d/1QjWqjteD1D0rRBE4Z57x5Rrt2YhqSKzq=w1000",
+    "https://lh3.googleusercontent.com/d/1O-Db_oyMx4N0Y_z4iwXlrGxs_oGuYhk0=w1000",
+    "https://lh3.googleusercontent.com/d/1NDzxsTQ2P3vjrMavpHD8S_M9tuJ7DUyQ=w1000",
+    "https://lh3.googleusercontent.com/d/1UUSErKgwdK8TvYbd5tX9uoFe4ZOzqvMu=w1000",
+    "https://lh3.googleusercontent.com/d/1U9puD3HstXPInRo7gJw12KLRiXszrwDR=w1000",
+    "https://lh3.googleusercontent.com/d/1emalts0hdGDDqIVI0A73ZkVlnlijVz-2=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/10ZsIW6RUzMtySwbAB7Ob8hV7vuObLvvA=w1000",
+    "https://lh3.googleusercontent.com/d/1zJ9uqSbPsoYWMlZ7j1j4QPweWgdzOUys=w1000",
+    "https://lh3.googleusercontent.com/d/1TPAoGqFe0KGJgRxUlXUcqdLE7vFYe_O_=w1000",
+    "https://lh3.googleusercontent.com/d/1_IHev6JKx9cCLBMlvd0-YkHxMmnwx8Ca=w1000",
+    "https://lh3.googleusercontent.com/d/1xohC-JjBYVeo0IU-DWfFOQqgOUWV52C_=w1000",
+    "https://lh3.googleusercontent.com/d/1zTIwypX82HvxN3YPgsZDRwy_1ECBJVAi=w1000",
+    "https://lh3.googleusercontent.com/d/1dDmT1CYAqFvYXoXTyXrqOW1HGAfFnsEu=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1y20gfNCCxZ6jyos4FkVQi5c7VKb8KDhk=w1000",
+    "typeName": "Type Tower_A_Level_2-5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1y20gfNCCxZ6jyos4FkVQi5c7VKb8KDhk=w1000",
+    "typeName": "Type Tower_A_Level_6"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1y20gfNCCxZ6jyos4FkVQi5c7VKb8KDhk=w1000",
+    "typeName": "Type Tower_A_Level_7-8"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1y20gfNCCxZ6jyos4FkVQi5c7VKb8KDhk=w1000",
+    "typeName": "Type Tower_B_Level_11-16"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1y20gfNCCxZ6jyos4FkVQi5c7VKb8KDhk=w1000",
+    "typeName": "Type Tower_B_Level_2-5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1y20gfNCCxZ6jyos4FkVQi5c7VKb8KDhk=w1000",
+    "typeName": "Type Tower_B_Level_6-10"
+   }
+  ],
+  "latitude": 3.1162,
+  "longitude": 101.6373,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "kamelia-1-p3a-caledonia",
+  "name": "Kamelia 1 (P3A) @ Caledonia",
+  "developer": "KLK Park Homes Sdn. Bhd. (KLK LAND)",
+  "location": "Persiaran Caledonia, Caledonia, 45600 Bestari Jaya, Selangor",
+  "area": "Bandar Seri Coalfields, Sungai Buloh",
+  "startingPrice": 597800,
+  "startingPriceFormatted": "RM 597,800",
+  "priceRange": "RM 597,800 – RM 1,077,800",
+  "builtUpMin": 1696,
+  "builtUpMax": 2254,
+  "bedroomsMin": 4,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "Landed Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2027",
+  "maintenanceFee": 100,
+  "maintenanceFeeStr": "RM100 per month (for security)",
+  "totalUnits": "238",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1RC7FmiatJw3dsJcCMJERep_lMuK6knMA=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1slaEQ2LrDds4wA2DHRPuVZ03abFknk31=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/19HGP_fOYfHY3Bmk-3eCqTIr1K8UiiGQT=w1000",
+    "https://lh3.googleusercontent.com/d/1H1C3FuqmrBHRGw7tanISNNHTx7LaDk2j=w1000",
+    "https://lh3.googleusercontent.com/d/1WB98G8TFgvMUtUZ7GP7aJytUAxqhC1nE=w1000",
+    "https://lh3.googleusercontent.com/d/1RYb68mSlkc_owhsxMuZmgdZXb6BbY4P3=w1000",
+    "https://lh3.googleusercontent.com/d/1dxbJLMNCeolCpiZVlyacCxMSE-4jHqeM=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1swbQ_VQq0HvaN81NWOywbeOtJc2YAonE=w1000",
+    "https://lh3.googleusercontent.com/d/1jiwLg27j94vMAuH98RFasOiUt-kcQzmX=w1000",
+    "https://lh3.googleusercontent.com/d/1CkYlzyKwGrTaQTB_Ntl6EMcO4FWxig9n=w1000",
+    "https://lh3.googleusercontent.com/d/1mo63KTwVfAxszt80VTVPxLGfmSUCA1XA=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/19HGP_fOYfHY3Bmk-3eCqTIr1K8UiiGQT=w1000",
+    "typeName": "Type C",
+    "size": 1997
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1RYb68mSlkc_owhsxMuZmgdZXb6BbY4P3=w1000",
+    "typeName": "Type T",
+    "size": 1696
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1H1C3FuqmrBHRGw7tanISNNHTx7LaDk2j=w1000",
+    "typeName": "Type E-E1",
+    "size": 1751
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1WB98G8TFgvMUtUZ7GP7aJytUAxqhC1nE=w1000",
+    "typeName": "Type E2",
+    "size": 2254
+   }
+  ],
+  "latitude": 3.298715,
+  "longitude": 101.450259,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "quinton-residences",
+  "name": "Quinton Residences",
+  "developer": "KLK LAND",
+  "location": "Jalan BSC 6B, Bandar Seri Coalfields, 47000 Sungai Buloh, Selangor",
+  "area": "Bandar Seri Coalfields, Sungai Buloh",
+  "startingPrice": 1137800,
+  "startingPriceFormatted": "RM 1,137,800",
+  "priceRange": "RM 1,137,800 – RM 1,562,800",
+  "builtUpMin": 2016,
+  "builtUpMax": 2418,
+  "bedroomsMin": 4,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "Landed Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2025",
+  "maintenanceFee": 250,
+  "maintenanceFeeStr": "RM250 per month (to be confirmed)",
+  "totalUnits": "128",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1kXs6b3ES-heWUfz3xMNn3Yxo63pgNKnf=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/166_6EvPI9X8QuDZgAMQJBEtB9aCYTgux=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1krutCS_KOyG4RQ1cS7jfr8YtC_mf8v6X=w1000",
+    "https://lh3.googleusercontent.com/d/1QLrq_NwC2z4vExgHSo6zcExIguyTalar=w1000",
+    "https://lh3.googleusercontent.com/d/1R0HoGoRwU-wr-KCt5kxIEW09-p2Pl3YJ=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/19y7-rqqInI9oEO80f2Vxpu6PvGVtUFfh=w1000",
+    "https://lh3.googleusercontent.com/d/1I1O-KB37Lk0RTNFwIjyLA6lblShBJbbt=w1000",
+    "https://lh3.googleusercontent.com/d/1MAkEH6vf97v3fVCE4zPiYezXiJzf55QT=w1000",
+    "https://lh3.googleusercontent.com/d/1I7yV9x271VFruZrC7o1jtw6wxdTU95if=w1000",
+    "https://lh3.googleusercontent.com/d/1uLZgSRSqjCJ9zAqMFWSXwhzogLt0P3RU=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1krutCS_KOyG4RQ1cS7jfr8YtC_mf8v6X=w1000",
+    "typeName": "Type A3 / A4",
+    "size": 2016,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1krutCS_KOyG4RQ1cS7jfr8YtC_mf8v6X=w1000",
+    "typeName": "Type A1 / A2",
+    "size": 2016,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QLrq_NwC2z4vExgHSo6zcExIguyTalar=w1000",
+    "typeName": "Type B1 / B2",
+    "size": 2418,
+    "beds": "4",
+    "baths": "4"
+   }
+  ],
+  "latitude": 3.238,
+  "longitude": 101.488,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "jardin-residences-2-precinct-6a1",
+  "name": "Jardin Residences 2 (Precinct 6A1)",
+  "developer": "KLK LAND",
+  "location": "Jalan BSC 6A, Bandar Seri Coalfields, 47000 Sungai Buloh, Selangor",
+  "area": "Bandar Seri Coalfields",
+  "startingPrice": 892800,
+  "startingPriceFormatted": "RM 892,800",
+  "priceRange": "RM 892,800 – RM 1,379,800",
+  "builtUpMin": 1961,
+  "builtUpMax": 2611,
+  "bedroomsMin": 4,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "Landed Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2025",
+  "maintenanceFee": 150,
+  "maintenanceFeeStr": "RM150 per month",
+  "totalUnits": "237",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1W7Vj5QeHxZ8XqsHa-kxIiHKwib0ILIGg=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1xgPFa7yfzUp77A8lzyLVnJ4mhFpFFQXT=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1avXdFcT_-xad3mPYa0IGCPQLH4QeRd8B=w1000",
+    "https://lh3.googleusercontent.com/d/1j5ooTTocNGApmxkhfhBL-fK5E2hsgfhE=w1000",
+    "https://lh3.googleusercontent.com/d/1V9zOJ8Xq4FAtVyglhxSJF-vYibq5OSwL=w1000",
+    "https://lh3.googleusercontent.com/d/1JYKTaUsQloHkeSr2ewp4s1Br_wcUlZJr=w1000",
+    "https://lh3.googleusercontent.com/d/11sTmU1vK00MTj2jkjvIX4WagSrY8un3l=w1000",
+    "https://lh3.googleusercontent.com/d/1ICkiDn2DhoxdxbbZrwfxH5eFpNm4H75y=w1000",
+    "https://lh3.googleusercontent.com/d/17br54kaQygS0EyLOdcKhgr57cPv0nTfd=w1000",
+    "https://lh3.googleusercontent.com/d/1a3FMuEPeLhwxkyvemJk8mlI_9rsHpNz_=w1000",
+    "https://lh3.googleusercontent.com/d/1xmAFkknwhcEVC9-5tH8A_8y9h2-KDBTZ=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1FsqSjkqCmELV1diyKj9ZyBC3hQC0v_GD=w1000",
+    "https://lh3.googleusercontent.com/d/1p4-kXRU1wOxfYvYlF4qu7uz-7dY0YmvJ=w1000",
+    "https://lh3.googleusercontent.com/d/1zPuP1_c1cliaLwAtmIKsqFKPcMDzYR2C=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1avXdFcT_-xad3mPYa0IGCPQLH4QeRd8B=w1000",
+    "typeName": "Type A1",
+    "size": 2611,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1j5ooTTocNGApmxkhfhBL-fK5E2hsgfhE=w1000",
+    "typeName": "Type A2",
+    "size": 2208,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1V9zOJ8Xq4FAtVyglhxSJF-vYibq5OSwL=w1000",
+    "typeName": "Type A3",
+    "size": 2611,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1JYKTaUsQloHkeSr2ewp4s1Br_wcUlZJr=w1000",
+    "typeName": "Type A4",
+    "size": 2483,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/11sTmU1vK00MTj2jkjvIX4WagSrY8un3l=w1000",
+    "typeName": "Type B1",
+    "size": 2455,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ICkiDn2DhoxdxbbZrwfxH5eFpNm4H75y=w1000",
+    "typeName": "Type B2",
+    "size": 1961,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/17br54kaQygS0EyLOdcKhgr57cPv0nTfd=w1000",
+    "typeName": "Type B3",
+    "size": 2455,
+    "beds": "4",
+    "baths": "4"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1a3FMuEPeLhwxkyvemJk8mlI_9rsHpNz_=w1000",
+    "typeName": "Type B4",
+    "size": 2266,
+    "beds": "4",
+    "baths": "4"
+   }
+  ],
+  "latitude": 3.238497,
+  "longitude": 101.488398,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "the-walden-2-p4c1",
+  "name": "The Walden 2 (P4C1)",
+  "developer": "KL-Kepong Country Homes Sdn. Bhd.",
+  "location": "Jalan BSC 4C/1, North Haven, Bandar Seri Coalfields, 47000 Sungai Buloh, Selangor",
+  "area": "Bandar Seri Coalfields",
+  "startingPrice": 2127800,
+  "startingPriceFormatted": "RM 2,127,800",
+  "priceRange": "RM 2,127,800 – RM 4,159,800",
+  "builtUpMin": 2938,
+  "builtUpMax": 4088,
+  "bedroomsMin": 4,
+  "bedroomsMax": 5,
+  "tenure": "Freehold",
+  "projectType": "Landed Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2027",
+  "maintenanceFee": 350,
+  "maintenanceFeeStr": "RM350 per month",
+  "totalUnits": "69",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1ArTBzLvBK6KOZNuiNFaRSaGsvH0fVbEJ=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1wLM5vhRjE2LQfTxgwekI7Q1hEXffFfHB=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/10fFiCGwy5TGnUnDsY_hSa0wNVBqwARGr=w1000",
+    "https://lh3.googleusercontent.com/d/1BoXtAvGegZQHPsVDO1SDDLtZ8ljN2r-2=w1000",
+    "https://lh3.googleusercontent.com/d/1-IfLEhTLzZzP41HNUVsqchJfOcomkbro=w1000",
+    "https://lh3.googleusercontent.com/d/1serg4HGEx2cS3FiVVMu29KYBsuz47ZZ7=w1000",
+    "https://lh3.googleusercontent.com/d/183woYoBD_ClJ1XjGgpuPltdfWD7clMS6=w1000",
+    "https://lh3.googleusercontent.com/d/1VniBSxIxucv4Vl8GsfL_nSfP5VNU9d20=w1000",
+    "https://lh3.googleusercontent.com/d/1bWC6xLsCCMpjjl53ZRbfDBFGoiun5acw=w1000",
+    "https://lh3.googleusercontent.com/d/1t7zhOCNtLdsxCmraofSXFB3T4HScSlG5=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/177OrAW9wcLPto-Hml3dG1t-3h8IqtG9S=w1000",
+    "https://lh3.googleusercontent.com/d/1fXfaA33VAl1N7cdnOUehJoQggdAKzV-t=w1000",
+    "https://lh3.googleusercontent.com/d/16l82tC3lAGfhXef2glisa9QyQ8y6cA6E=w1000",
+    "https://lh3.googleusercontent.com/d/1nqdMCjepfwNAnk9wGzJRTqnX9RQNckxC=w1000",
+    "https://lh3.googleusercontent.com/d/1I3PTnNXGizFzgrGyoZ0Y1IMYSS7GeiM8=w1000",
+    "https://lh3.googleusercontent.com/d/1VtmEl9-rCAS9QMYF0i3tBxV6y0-3d7Tg=w1000",
+    "https://lh3.googleusercontent.com/d/1tD605cPeUSfQPzK9ervJf5D2f8PoVFCn=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/10fFiCGwy5TGnUnDsY_hSa0wNVBqwARGr=w1000",
+    "typeName": "Type A",
+    "size": 2962,
+    "beds": "5",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1BoXtAvGegZQHPsVDO1SDDLtZ8ljN2r-2=w1000",
+    "typeName": "Type C",
+    "size": 2938,
+    "beds": "5",
+    "baths": "5"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1-IfLEhTLzZzP41HNUVsqchJfOcomkbro=w1000",
+    "typeName": "Type D"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1serg4HGEx2cS3FiVVMu29KYBsuz47ZZ7=w1000",
+    "typeName": "Type D1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/183woYoBD_ClJ1XjGgpuPltdfWD7clMS6=w1000",
+    "typeName": "Type E",
+    "size": 3730,
+    "beds": "6",
+    "baths": "6"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1VniBSxIxucv4Vl8GsfL_nSfP5VNU9d20=w1000",
+    "typeName": "Type F"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1bWC6xLsCCMpjjl53ZRbfDBFGoiun5acw=w1000",
+    "typeName": "Type G"
+   }
+  ],
+  "latitude": 3.240861,
+  "longitude": 101.480167,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "duo-tower-bangsar-south",
+  "name": "Duo Tower @ Bangsar South",
+  "developer": "UOA Group (Paramount Properties Sdn Bhd)",
+  "location": "Bangsar South City, No. 8, Jalan Kerinchi, 59200 Kuala Lumpur",
+  "area": "Bangsar South",
+  "startingPrice": 2088000,
+  "startingPriceFormatted": "RM 2,088,000",
+  "priceRange": "RM 2,088,000 – RM 4,602,000",
+  "builtUpMin": 1389,
+  "builtUpMax": 3025,
+  "bedroomsMin": 1,
+  "bedroomsMax": 1,
+  "tenure": "Leasehold",
+  "projectType": "Office",
+  "completionStatus": "New Launch",
+  "completionYear": "2027",
+  "maintenanceFee": 0.7,
+  "maintenanceFeeStr": "0.70",
+  "totalUnits": "239",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1Q099vOHKWMZzHrVFOWbUdHxxyETQMapJ=w1000",
+    "https://lh3.googleusercontent.com/d/1qXvInCIptHNCqXn6skGXl5dGCPVkaY0-=w1000",
+    "https://lh3.googleusercontent.com/d/1ImHtrpTlFG5r0ooJ_t41M7o_wYuFmPa4=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1uWXtRc6ZKhUsN7JVyk3rjXYaDmIEiBi4=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "https://lh3.googleusercontent.com/d/1FRym0m31eEviCqzF34kEVzPo7kve2lWF=w1000",
+    "https://lh3.googleusercontent.com/d/1IMMqP1DtMxV54Y7qkfJJ45QEH-FX2_B0=w1000",
+    "https://lh3.googleusercontent.com/d/1myi-Epcd2igs3kOyG1fHAu32i6HE6v4G=w1000",
+    "https://lh3.googleusercontent.com/d/1JqA-Be9LGuOv254_UyuJdZC5NFyqTQNy=w1000",
+    "https://lh3.googleusercontent.com/d/1_P9YWaj_ij30mHHh31FYIvarwm3vDDRG=w1000",
+    "https://lh3.googleusercontent.com/d/1mrXAwJpfbdr25fEhTCknJhlp1gqWIpdY=w1000",
+    "https://lh3.googleusercontent.com/d/1-mmAtSUkV74zqm04zJy6ykKHCd3yt7_Y=w1000",
+    "https://lh3.googleusercontent.com/d/1LqttBne_kd2cSSygJHTSJthhEb3cWELQ=w1000",
+    "https://lh3.googleusercontent.com/d/1CMa1F6WRAyfYw4rl1BUU_VdSZ4AoZCUH=w1000",
+    "https://lh3.googleusercontent.com/d/1D9iAB_iJRiUpzzJ8_S-FlpolAczJBrR7=w1000",
+    "https://lh3.googleusercontent.com/d/14yEFnH5XnmBDrXE2Ut29Zv7KYY0qZY7U=w1000",
+    "https://lh3.googleusercontent.com/d/1ukEKtvS1rLcMeIkMSW4LYIZJwU2emZwV=w1000",
+    "https://lh3.googleusercontent.com/d/1YVuolRSBKHxbObPLJ4222EEDmLJcD6PS=w1000",
+    "https://lh3.googleusercontent.com/d/1yrCFPx_8wDqaxiYR2YRkL1jWpAo98K9M=w1000",
+    "https://lh3.googleusercontent.com/d/1WIgX50o38sp5XhWpYLqV6Hn3T2O3xxLM=w1000",
+    "https://lh3.googleusercontent.com/d/1y1HP96TDFJPEJKl5YnFHDeP8-eW97tD7=w1000",
+    "https://lh3.googleusercontent.com/d/1aOiCpowz43m6YCI598mF0suHZ34uizwO=w1000",
+    "https://lh3.googleusercontent.com/d/1JLziWwNRyNOUfKMdvYJEtAhbU0WvetC7=w1000",
+    "https://lh3.googleusercontent.com/d/1H5CZJqvi8e-pWTImRVCESS5cGB2sRwkx=w1000",
+    "https://lh3.googleusercontent.com/d/1qtU10m4DpeIF9_CgMElUv_HHWPy7klXw=w1000",
+    "https://lh3.googleusercontent.com/d/1mefYwOvooA0anrcZw29xoRjtm5lTD_Sg=w1000",
+    "https://lh3.googleusercontent.com/d/1LoSDXSS-l1uHB_oklcWrjES_VF-LoH8y=w1000",
+    "https://lh3.googleusercontent.com/d/1mlUavAAxpntS16m2DxVoUJov3vKnzFCU=w1000",
+    "https://lh3.googleusercontent.com/d/1k9XIDKBj9g9sgpkES0IeJdTc7bK8gzWi=w1000",
+    "https://lh3.googleusercontent.com/d/1Z5d2QghT-3jr-yFrjLPjX8MHLLMBng4o=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1zWhdsOZX88B5wncjRm987uboc9T3Kdh-=w1000",
+    "https://lh3.googleusercontent.com/d/1-Hr_UIKO0RN9G7cYPJfyl3bsF1KtxySQ=w1000",
+    "https://lh3.googleusercontent.com/d/1qjuVPfMtD8JeRmxCB93wNXszjAJFKWPV=w1000",
+    "https://lh3.googleusercontent.com/d/1zVndNPSitMmzlB1TXEHBZyWtwrkNz7sl=w1000",
+    "https://lh3.googleusercontent.com/d/1N0vXqFr9j_GqGuaxvwXO2NCpKjOSZ93Y=w1000",
+    "https://lh3.googleusercontent.com/d/1iDDxCuH3_z1FQJLnWhIm6qrANr6qh3UP=w1000",
+    "https://lh3.googleusercontent.com/d/1uB0PAnH2VE7FwKwQVgyGSXvttZPobxyq=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_11"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_12"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_13-17-19-23"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_13A-16-20-22"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_15-21"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_18"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_23A"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_25"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_26"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_27-30-33"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_28-29-31-32"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1lDMIVZDHwMzyyVFqGs68gE1lKb0asDBj=w1000",
+    "typeName": "Type Level_33A"
+   }
+  ],
+  "latitude": 3.1095,
+  "longitude": 101.6655,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "bayu-timur-residences",
+  "name": "Bayu Timur Residences",
+  "developer": "Pakar Angsana Sdn. Bhd. (A subsidiary of Berjaya Land Berhad)",
+  "location": "Jalan Sungai Rasau C 32/C, Seksyen 32, 40460 Shah Alam, Selangor Darul Ehsan",
+  "area": "Shah Alam",
+  "startingPrice": 585200,
+  "startingPriceFormatted": "RM 585,200",
+  "priceRange": "RM 585,200 – RM 750,000",
+  "builtUpMin": 1000,
+  "builtUpMax": 1280,
+  "bedroomsMin": 3,
+  "bedroomsMax": 3,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2029",
+  "maintenanceFee": 0.3,
+  "maintenanceFeeStr": "Est. RM 0.30 psf (including sinking fund)",
+  "totalUnits": "518",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1QnUvhKtj2gX5vbbFlCni_dzZTQF_zXQR=w1000",
+    "https://lh3.googleusercontent.com/d/1NswcrTUT9UJCpIJnPWPwwHqGnxeKlZD_=w1000",
+    "https://lh3.googleusercontent.com/d/1hQ61kqiXITtYiIo6OLQ-c1Pg5lzMGmWl=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1HqZPqntU7xW_MCsXfe7536_i2TlxFMA4=w1000",
+    "https://lh3.googleusercontent.com/d/1ShbV2Fo3v83u7GTb3jK1UzG7xxukJWpt=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1WRMmNPkv5TY6B75bUPegzY_XioQ3YAhc=w1000",
+    "https://lh3.googleusercontent.com/d/13ob_4uH6voc0RYHeCKhwRXRTFggR2Uzk=w1000",
+    "https://lh3.googleusercontent.com/d/1tjAIapoWB5S9RhVSJtp_j9Lt8_ZcO4Vs=w1000",
+    "https://lh3.googleusercontent.com/d/17HA-KJb_LNS0gSTfuIrmyArTbjcX4pX2=w1000",
+    "https://lh3.googleusercontent.com/d/1A5A4u0Fzic-yfGEVNvt8tdyyancVI0-R=w1000",
+    "https://lh3.googleusercontent.com/d/1ekvJEGfs7IuqVEVk4djmGf02XMtC9gxQ=w1000",
+    "https://lh3.googleusercontent.com/d/1vF3aIF-FLa2ODreysDUzNC_fDHr3Pjv-=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1SVVdjaPN2pUroX3pt6PD2A9xzHnBFKqK=w1000",
+    "https://lh3.googleusercontent.com/d/12xEh7ifLJm4sJuwkp-c_xjG951ms_0Sg=w1000",
+    "https://lh3.googleusercontent.com/d/13Ps1OcJE_-edX8vHYLrPjiMQ1cdx3S9I=w1000",
+    "https://lh3.googleusercontent.com/d/1XP79L6otY62qCLYyHhKRf8myqFaUgKgp=w1000",
+    "https://lh3.googleusercontent.com/d/1YKZ6QtQNRAVJK00tdBawRVRC4vjhNyKb=w1000",
+    "https://lh3.googleusercontent.com/d/1DsDM5b_qwPNXi11qwXc0QRKabLjQlxh4=w1000",
+    "https://lh3.googleusercontent.com/d/1xM3ky9fDs9qU8StprEzL-r7dmede-oKV=w1000",
+    "https://lh3.googleusercontent.com/d/1uKHMM7MHzcQmGPNT1EUMvx5Pi4B74n4e=w1000",
+    "https://lh3.googleusercontent.com/d/1TPj6DIGF8ysCRLxMQyFz0BrBzye-SqM0=w1000",
+    "https://lh3.googleusercontent.com/d/1qKSE31LI75CPT-RGWNIYKtehLsm-k5QQ=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1WRMmNPkv5TY6B75bUPegzY_XioQ3YAhc=w1000",
+    "typeName": "Type A",
+    "size": 1000
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13ob_4uH6voc0RYHeCKhwRXRTFggR2Uzk=w1000",
+    "typeName": "Type B",
+    "size": 1100
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1tjAIapoWB5S9RhVSJtp_j9Lt8_ZcO4Vs=w1000",
+    "typeName": "Type C",
+    "size": 1200
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/17HA-KJb_LNS0gSTfuIrmyArTbjcX4pX2=w1000",
+    "typeName": "Type D",
+    "size": 1280
+   }
+  ],
+  "latitude": 3.0011,
+  "longitude": 101.5428,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "casa-darcadia",
+  "name": "Casa D'Arcadia",
+  "developer": "I&P Alam Impian Sdn Bhd (a member of S P Setia)",
+  "location": "Lakepoint Gallerie, 1, Jalan Panglima Hitam 35/26, Alam Impian, Seksyen 35, 40470 Shah Alam, Selangor, Malaysia",
+  "area": "Alam Impian, Seksyen 35",
+  "startingPrice": 2536444,
+  "startingPriceFormatted": "RM 2,536,444",
+  "priceRange": "RM 2,536,444 – RM 4,158,667",
+  "builtUpMin": 3345,
+  "builtUpMax": 4393,
+  "bedroomsMin": 4,
+  "bedroomsMax": 5,
+  "tenure": "Freehold",
+  "projectType": "Landed Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2027",
+  "totalUnits": "172",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1Wnbi7kb447HEt9vxy0pvUCiLD_nL7ip3=w1000",
+    "https://lh3.googleusercontent.com/d/1_pQgN_VSqwOHeGefORzF2G9EejW0rAhi=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1fVVyabmvUA6Q4_UA8kK4Cgayy0HdkAij=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1xd5Hp7TgHvb8QqmerAP7fWM3gH01SMZk=w1000",
+    "https://lh3.googleusercontent.com/d/19UCtwRmI08yV3TugHijruf6OEnDGufuK=w1000",
+    "https://lh3.googleusercontent.com/d/1-oprSHXuh0BcG463iMFMm9kS9TPilO64=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1HEsrNmnu8BtbeREkxfkxRrn6URaEl2UY=w1000",
+    "https://lh3.googleusercontent.com/d/1Y9oG-ny_Hcs2123nmw8LnPtf4W86qo9m=w1000",
+    "https://lh3.googleusercontent.com/d/1-V8JY4lYAqzwrug23uK28LqMB6nwyE32=w1000",
+    "https://lh3.googleusercontent.com/d/1Qf4ydJtF321Wlr2y9_YejJDE5mg6BXkV=w1000",
+    "https://lh3.googleusercontent.com/d/15cfBu3hpfOAYCuPzMMhZuaYUEKVCnhxT=w1000",
+    "https://lh3.googleusercontent.com/d/1xRS8i2pj_WprhgNa3gFN-0o7lhcVQeOT=w1000",
+    "https://lh3.googleusercontent.com/d/1gk2pSjIMZAUlr4VwXIAj0gJDkfeXrFbl=w1000",
+    "https://lh3.googleusercontent.com/d/1rffuxA9wfTxK-5hhLdd7iueRUfHHMx7B=w1000",
+    "https://lh3.googleusercontent.com/d/1FRLJokNwzy4eof3W26Y4XTp2CsKj6P6A=w1000",
+    "https://lh3.googleusercontent.com/d/1Wj51IAMW0NdRwCTgiU3GzuaN32NdRLeX=w1000",
+    "https://lh3.googleusercontent.com/d/1qDGKvVnDEXHyqM4Ixwsu3leYC3KMXe8s=w1000",
+    "https://lh3.googleusercontent.com/d/1xxe3t3Dp3kPOiCXnVeB_2LZCsDLfA9z-=w1000",
+    "https://lh3.googleusercontent.com/d/1_b1eEwIvKnHhvHdGGi-6ioB5zOigKpug=w1000",
+    "https://lh3.googleusercontent.com/d/1XYRKfh1izxt_GWWt9TdI--kDWEa-3W21=w1000",
+    "https://lh3.googleusercontent.com/d/1d5V6YiW2BZv3AkQcs62Qj4CXiY86pSdZ=w1000",
+    "https://lh3.googleusercontent.com/d/1UU5fT9JWHzdqOKzytb3ZXFj8jUibBfc0=w1000",
+    "https://lh3.googleusercontent.com/d/1OjitX4D3IjZA3WZi7ftTA5Upxx5f-OTR=w1000",
+    "https://lh3.googleusercontent.com/d/1zjN7d-NY873LdIcyBK3ImUdfqMpHPKFw=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1xd5Hp7TgHvb8QqmerAP7fWM3gH01SMZk=w1000",
+    "typeName": "Type A",
+    "size": 4280,
+    "beds": "6",
+    "baths": "7"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/19UCtwRmI08yV3TugHijruf6OEnDGufuK=w1000",
+    "typeName": "Type B",
+    "size": 4393,
+    "beds": "5",
+    "baths": "7"
+   }
+  ],
+  "latitude": 3.0333,
+  "longitude": 101.533,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "colonial-infinite-edumetro",
+  "name": "Colonial Infinite @ edumetro",
+  "developer": "HCK Builders Sdn Bhd",
+  "location": "Taman Subang Permai, 47500 Subang Jaya, Selangor",
+  "area": "USJ 1, Subang Jaya",
+  "startingPrice": 253000,
+  "startingPriceFormatted": "RM 253,000",
+  "priceRange": "RM 253,000 – RM 801,000",
+  "builtUpMin": 280,
+  "builtUpMax": 1001,
+  "bedroomsMin": 0,
+  "bedroomsMax": 0,
+  "tenure": "Leasehold",
+  "projectType": "Commercial",
+  "completionStatus": "New Launch",
+  "completionYear": "2028",
+  "maintenanceFee": 0.4,
+  "maintenanceFeeStr": "Estimated RM0.40 per sqft + 10% sinking fund",
+  "totalUnits": "260",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1gtTs6r9LTc7zdrUDhhl2v7m8p57R_add=w1000",
+    "https://lh3.googleusercontent.com/d/1R8olkOz59wi7Tq5z94skKhWl8s-QqEcu=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1mHV31vHXNI7sPmsxsDxjOOxeuFruLqo8=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1iVY6tqUIGpwg2cjXJ76mP8vO7xACV3II=w1000",
+    "https://lh3.googleusercontent.com/d/1l6p6789hCxsOwQao-zIqowLD3T89Cwfb=w1000",
+    "https://lh3.googleusercontent.com/d/1cegewU7loybXM2xS7nPl5B9aBfvrfi3U=w1000",
+    "https://lh3.googleusercontent.com/d/1UuDZtsuFjzaTy5mPSbHRFzs6xfTU57_6=w1000",
+    "https://lh3.googleusercontent.com/d/1I1yIlDzvGUHkUhPbrhpzZzT4d4nyuSlz=w1000",
+    "https://lh3.googleusercontent.com/d/1G1k0QCM9iyoOeuRRvB6uKjuUkbs_l2zD=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1kHlDmAE49YawqzAYkB-1bjJzzpHihZp7=w1000",
+    "https://lh3.googleusercontent.com/d/1Hea--LCVDi7kjTesCNzSfRSMexVXimya=w1000",
+    "https://lh3.googleusercontent.com/d/10cD6zACPFQ4RK3d8BHFOfY8KkkAqYh68=w1000",
+    "https://lh3.googleusercontent.com/d/1wp755dsUx_b3ytkuzOGkOYaUfZwY6t4R=w1000",
+    "https://lh3.googleusercontent.com/d/1_I57gtypJ-2r2Thnv-qgYZY-_73yIwRC=w1000",
+    "https://lh3.googleusercontent.com/d/1-5Xn7SGbljvKJgE17_CCTvn17Zl_mwNM=w1000",
+    "https://lh3.googleusercontent.com/d/1gRWnsv6haWIcuNZKfEvr2--lm0JOdTZl=w1000",
+    "https://lh3.googleusercontent.com/d/1siic1SiOcNUzx0CVypD89tY3UyiU0R7r=w1000",
+    "https://lh3.googleusercontent.com/d/19Pu_eWSKNCJggqoBQe6AhmzgVWA7uR7T=w1000",
+    "https://lh3.googleusercontent.com/d/17kola-WfUP6JWVkMwJrSgXTa8YMNJ5Zg=w1000",
+    "https://lh3.googleusercontent.com/d/1qPNp_gbXuZ47JBMYd12IJRqk4ZPR67cG=w1000",
+    "https://lh3.googleusercontent.com/d/12bsh-Ov10ygiIt9j2LoQ9PWYaY6V7w7v=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1l6p6789hCxsOwQao-zIqowLD3T89Cwfb=w1000",
+    "typeName": "Type SIMPLEX"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1iVY6tqUIGpwg2cjXJ76mP8vO7xACV3II=w1000",
+    "typeName": "Type DUPLEX"
+   }
+  ],
+  "latitude": 3.064,
+  "longitude": 101.5975,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "dawn-kl-city-centre",
+  "name": "DAWN KL City Centre",
+  "developer": "Dawn Land Sdn Bhd",
+  "location": "360, Jalan Tuanku Abdul Rahman, Chow Kit, 50350 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "area": "KL City Centre",
+  "startingPrice": 717000,
+  "startingPriceFormatted": "RM 717,000",
+  "priceRange": "RM 717,000 – RM 1,972,000",
+  "builtUpMin": 348,
+  "builtUpMax": 835,
+  "bedroomsMin": 1,
+  "bedroomsMax": 2,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "New Launch",
+  "completionYear": "2029",
+  "maintenanceFee": 0.7,
+  "maintenanceFeeStr": "RM0.70 psf (Including Sinking Fund)",
+  "totalUnits": "960",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1AtZr1RYg-VVr3Eik5QHXT_WVF5pqWUt2=w1000",
+    "https://lh3.googleusercontent.com/d/12EgGc3a776XbCg7rVmm4-s2GBzVh_DQU=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1iGe1L1Fcp2zm48erx3ZO-cHU6wsDwAXo=w1000",
+    "https://lh3.googleusercontent.com/d/1-Efheu0BlYXCABqkNpbhfewhPoO5rfka=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1cLek5A2XL_-9nj2zZQC6UoUm9wkTGpaR=w1000",
+    "https://lh3.googleusercontent.com/d/1AMaqBhr2LH-yCIW_TcvLXOD8o1jKlnuA=w1000",
+    "https://lh3.googleusercontent.com/d/1j-b4MyRsyFHBrMTngjl7j5tgpm1nPCDX=w1000",
+    "https://lh3.googleusercontent.com/d/1yK9nfa4xijF9IuxqiWmHavhHsPGFBPWR=w1000",
+    "https://lh3.googleusercontent.com/d/1OX6mWzpwsJ2Jz8NykIMzj3judWgu5g2E=w1000",
+    "https://lh3.googleusercontent.com/d/1-DYTrKMRREJI6uPdxE6vvfGYeBVcMMgw=w1000",
+    "https://lh3.googleusercontent.com/d/1RV2P1Mbq5c5zZ8821NFu9Vp_8j5mHnt3=w1000",
+    "https://lh3.googleusercontent.com/d/1__fSRIhVu6XE3B5_lUWvUSBGxRdsJW_r=w1000",
+    "https://lh3.googleusercontent.com/d/1AKMY3HbmTpzfCH8-hrEvBSxswnSeCudr=w1000",
+    "https://lh3.googleusercontent.com/d/13eQgACn_7sVO8aA6VJ3HUGI8pvE6ko9C=w1000",
+    "https://lh3.googleusercontent.com/d/1F3XkenbqLwkQKX6QhgCiT7WbbatjHOne=w1000",
+    "https://lh3.googleusercontent.com/d/1kfa7KJEk4qROdmZ30Gd6uSDr6uL8JaLZ=w1000",
+    "https://lh3.googleusercontent.com/d/11HaSRqoSmgdLzCuln24mq9W3FnkP2xrH=w1000",
+    "https://lh3.googleusercontent.com/d/1CQH1JOK2ISG5Ja6tY1CUIBLkKyY85Ail=w1000",
+    "https://lh3.googleusercontent.com/d/1ztfif8q5t2SWwI09fwwGUS04FVy4hNhV=w1000",
+    "https://lh3.googleusercontent.com/d/1z4HYl8vKoC1fechpUy_3utdYU40UG-jB=w1000",
+    "https://lh3.googleusercontent.com/d/1_V3KOH4YmZvF1sL19hU5U5N4AVs-giHr=w1000",
+    "https://lh3.googleusercontent.com/d/16lj64FfaT05Wm0FhLsQ4WQkqAJtLQq2W=w1000",
+    "https://lh3.googleusercontent.com/d/1z_FwOuO-33AZ_nFQ1CiAGaN7TQH5T-cb=w1000",
+    "https://lh3.googleusercontent.com/d/1knO46CgCNBlideY2vYgzXElfODopBehG=w1000",
+    "https://lh3.googleusercontent.com/d/1WI_jNj7IcBRsKYSaLvO32LyBvAqH-jyx=w1000",
+    "https://lh3.googleusercontent.com/d/1e2MjcDh57xgZomakKd1_VE2HgHtY75B-=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1T5eI1WQU5kiXkdWpht2R9Ot2jNkXnIE-=w1000",
+    "https://lh3.googleusercontent.com/d/1ihXLrAb-I29QCcek0UWqHL5aTPYbtWCt=w1000",
+    "https://lh3.googleusercontent.com/d/1H-GaaACnx3etwyd7BEoIjy5kk6cXN5Dm=w1000",
+    "https://lh3.googleusercontent.com/d/1Y04FScMyF71MFmX8W1CiDPT3Re2OZhd8=w1000",
+    "https://lh3.googleusercontent.com/d/1LcWeUpk_xGaqrUDEubnBWPIvSVrg_UYW=w1000",
+    "https://lh3.googleusercontent.com/d/1n8zvw19IIg7IEw2ih4WIm4tfHkOoY3so=w1000",
+    "https://lh3.googleusercontent.com/d/1NCh-T9F2QYubVZMj3CEtxd1TAAIqSEjC=w1000",
+    "https://lh3.googleusercontent.com/d/1QwPrJ2iWbWPChr5x1oIKD5LEvK5bMzVv=w1000",
+    "https://lh3.googleusercontent.com/d/1ZCWXch8Pz45k84hUb6NkkfRBLxcG-aRV=w1000",
+    "https://lh3.googleusercontent.com/d/1xy8ATV5spRuYxSwXISs3VLZgR-n8ZmNG=w1000",
+    "https://lh3.googleusercontent.com/d/1syrBYShk93UPUOkzlKrDqrRV98XM0HIf=w1000",
+    "https://lh3.googleusercontent.com/d/19ry8ixnvsoj4qt2a4x7tfQ4zIsLyPiWi=w1000",
+    "https://lh3.googleusercontent.com/d/1cwmfc9PYUcnloq2kOyvBpPmZ7UhXdlO5=w1000",
+    "https://lh3.googleusercontent.com/d/11lObZHXMDDnWYVXVKKRg1oTbXtJmYrKb=w1000",
+    "https://lh3.googleusercontent.com/d/1KA47aVSOBE_pXbDDHQrD4A0ugGFstmkZ=w1000",
+    "https://lh3.googleusercontent.com/d/1_3-yCEs7FZZwluSd2UhazBEk5Gw3Whu_=w1000",
+    "https://lh3.googleusercontent.com/d/1ddqbOxHMdsQzu85E9NTMBfp9yYqXEVon=w1000",
+    "https://lh3.googleusercontent.com/d/1L9H-nh_43bMlAFWTgUjzgZBGhA-34XcQ=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1AKMY3HbmTpzfCH8-hrEvBSxswnSeCudr=w1000",
+    "typeName": "Type B",
+    "size": 550,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1F3XkenbqLwkQKX6QhgCiT7WbbatjHOne=w1000",
+    "typeName": "Type C1",
+    "size": 739,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1AKMY3HbmTpzfCH8-hrEvBSxswnSeCudr=w1000",
+    "typeName": "Type B1",
+    "size": 550,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/11HaSRqoSmgdLzCuln24mq9W3FnkP2xrH=w1000",
+    "typeName": "Type C2",
+    "size": 785,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1z4HYl8vKoC1fechpUy_3utdYU40UG-jB=w1000",
+    "typeName": "Type C4",
+    "size": 804,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1cLek5A2XL_-9nj2zZQC6UoUm9wkTGpaR=w1000",
+    "typeName": "Type A",
+    "size": 350,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1cLek5A2XL_-9nj2zZQC6UoUm9wkTGpaR=w1000",
+    "typeName": "Type A1",
+    "size": 350,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1AMaqBhr2LH-yCIW_TcvLXOD8o1jKlnuA=w1000",
+    "typeName": "Type A2",
+    "size": 405,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1j-b4MyRsyFHBrMTngjl7j5tgpm1nPCDX=w1000",
+    "typeName": "Type A3",
+    "size": 416,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1yK9nfa4xijF9IuxqiWmHavhHsPGFBPWR=w1000",
+    "typeName": "Type A4",
+    "size": 350,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1OX6mWzpwsJ2Jz8NykIMzj3judWgu5g2E=w1000",
+    "typeName": "Type A5",
+    "size": 348,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1-DYTrKMRREJI6uPdxE6vvfGYeBVcMMgw=w1000",
+    "typeName": "Type A6",
+    "size": 402,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1RV2P1Mbq5c5zZ8821NFu9Vp_8j5mHnt3=w1000",
+    "typeName": "Type A7",
+    "size": 413,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1F3XkenbqLwkQKX6QhgCiT7WbbatjHOne=w1000",
+    "typeName": "Type C",
+    "size": 762,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1e2MjcDh57xgZomakKd1_VE2HgHtY75B-=w1000",
+    "typeName": "Type CA",
+    "size": 806,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1kfa7KJEk4qROdmZ30Gd6uSDr6uL8JaLZ=w1000",
+    "typeName": "Type C1A",
+    "size": 780,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1CQH1JOK2ISG5Ja6tY1CUIBLkKyY85Ail=w1000",
+    "typeName": "Type C2A",
+    "size": 835,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ztfif8q5t2SWwI09fwwGUS04FVy4hNhV=w1000",
+    "typeName": "Type C3",
+    "size": 760,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1_V3KOH4YmZvF1sL19hU5U5N4AVs-giHr=w1000",
+    "typeName": "Type C5",
+    "size": 737,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/16lj64FfaT05Wm0FhLsQ4WQkqAJtLQq2W=w1000",
+    "typeName": "Type C6",
+    "size": 778,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1z_FwOuO-33AZ_nFQ1CiAGaN7TQH5T-cb=w1000",
+    "typeName": "Type C7",
+    "size": 783,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1knO46CgCNBlideY2vYgzXElfODopBehG=w1000",
+    "typeName": "Type C8",
+    "size": 833,
+    "beds": "2",
+    "baths": "1"
+   }
+  ],
+  "latitude": 3.16013,
+  "longitude": 101.69744,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "erat-residence-alam-impian",
+  "name": "Erat Residence @ Alam Impian",
+  "developer": "Suntrack Development Sdn Bhd",
+  "location": "1, 35/45, Persiaran Hang Nadim, Alam Impian, Seksyen 35, 40470 Shah Alam, Selangor",
+  "area": "Alam Impian",
+  "startingPrice": 666000,
+  "startingPriceFormatted": "RM 666,000",
+  "priceRange": "RM 666,000 – RM 1,346,000",
+  "builtUpMin": 1098,
+  "builtUpMax": 2206,
+  "bedroomsMin": 3,
+  "bedroomsMax": 5,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "maintenanceFee": 0.35,
+  "maintenanceFeeStr": "RM0.35 + 10% sinking fund",
+  "totalUnits": "269",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1_JPc9Pvfj-lShhrH-1Q5NkGRYPFwAoLP=w1000",
+    "https://lh3.googleusercontent.com/d/1XvtAdlwgZUFmI7dF76r2wnvZszDVjZFb=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/137gRi0ZES_USDe3mNtesojyJrUYshJAA=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1_31Ld3SoHzD_oA7iK3EG8RbWtgYWHa4m=w1000",
+    "https://lh3.googleusercontent.com/d/1v9H6kTG-VE02NMQNxmCl3_ZIIJcvHgUw=w1000",
+    "https://lh3.googleusercontent.com/d/1nSiyM59U6x6tww5XkLtdlT8j7d8Q7MUo=w1000",
+    "https://lh3.googleusercontent.com/d/1C4scXH7ePyHbcA_sJPQsM_LvcGrMpYyR=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1vOqdLUvrS5fTbQPiTUGtdwv5m3e48eKy=w1000",
+    "https://lh3.googleusercontent.com/d/1iMcFZpnVSV0iIcSU0owegdwML-LrtJt-=w1000",
+    "https://lh3.googleusercontent.com/d/1sj02Y5QPURZ7T_wCgvQe43uRbOOpIy5V=w1000",
+    "https://lh3.googleusercontent.com/d/1m98lGyf6D0GYWmFCVs9Cc8566Ix7uE34=w1000",
+    "https://lh3.googleusercontent.com/d/1qLEAl1ZkUGcJucaX_ajrIYR4QEIaHfwG=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1_31Ld3SoHzD_oA7iK3EG8RbWtgYWHa4m=w1000",
+    "typeName": "Type A",
+    "size": 1098,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1v9H6kTG-VE02NMQNxmCl3_ZIIJcvHgUw=w1000",
+    "typeName": "Type B",
+    "size": 1216,
+    "beds": "4",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1nSiyM59U6x6tww5XkLtdlT8j7d8Q7MUo=w1000",
+    "typeName": "Type C",
+    "size": 2206,
+    "beds": "5",
+    "baths": "4"
+   }
+  ],
+  "latitude": 3.033321,
+  "longitude": 101.522438,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "erica-residence",
+  "name": "Erica Residence",
+  "developer": "AYER",
+  "location": "Bandar Bukit Puchong, 47120 Puchong, Selangor",
+  "area": "Bukit Puchong",
+  "startingPrice": 0,
+  "startingPriceFormatted": "",
+  "priceRange": "",
+  "builtUpMin": 3520,
+  "builtUpMax": 3399,
+  "bedroomsMin": 4,
+  "bedroomsMax": 4,
+  "tenure": "Freehold",
+  "projectType": "Commercial",
+  "completionStatus": "New Launch",
+  "completionYear": "2026",
+  "totalUnits": "",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/13YQH4kMgQipBfq0WZNIxamYa2HfngEHJ=w1000",
+    "https://lh3.googleusercontent.com/d/1i61iLztFwuzaZxcLywUCaft2xCxiY27o=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1Ym5XeBj6B_M7MUdBw4qqO0fctxIamGag=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1UZCJaa37DeWWUibyU5mcYI6PJKLjFKUy=w1000",
+    "https://lh3.googleusercontent.com/d/19ys0FoVZzfWx4r5Y5dHbk-DA53K4kIsb=w1000",
+    "https://lh3.googleusercontent.com/d/1cpSt8DfztrRhNqdkykvlFFfusDc4dAfD=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1b_xczEuGYK2WvcLhCqZ7kbgI2P7LRXfJ=w1000",
+    "https://lh3.googleusercontent.com/d/15Yaih6yn3agGTw-C3ytQUPG_RgB6K6t3=w1000",
+    "https://lh3.googleusercontent.com/d/1OUJvNg5dYIFNL6ICk-38J6UiqEM48G4P=w1000",
+    "https://lh3.googleusercontent.com/d/1bCuybR3pYTKEqzLBu1cX6HRrYRRytu5U=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1UZCJaa37DeWWUibyU5mcYI6PJKLjFKUy=w1000",
+    "typeName": "Type A",
+    "size": 3399,
+    "beds": "4",
+    "baths": "6"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/19ys0FoVZzfWx4r5Y5dHbk-DA53K4kIsb=w1000",
+    "typeName": "Type B",
+    "size": 3399,
+    "beds": "4",
+    "baths": "6"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1cpSt8DfztrRhNqdkykvlFFfusDc4dAfD=w1000",
+    "typeName": "Type C",
+    "size": 3399,
+    "beds": "4",
+    "baths": "6"
+   }
+  ],
+  "latitude": 2.9644,
+  "longitude": 101.6256,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "ekotitiwangsa",
+  "name": "EkoTitiwangsa",
+  "developer": "Ekovest Berhad (Ekovest Land Sdn Bhd)",
+  "location": "Jalan Pahang, Setapak, 53000 Kuala Lumpur",
+  "area": "Setapak",
+  "startingPrice": 434700,
+  "startingPriceFormatted": "RM 434,700",
+  "priceRange": "RM 434,700 – RM 740,600",
+  "builtUpMin": 690,
+  "builtUpMax": 7546,
+  "bedroomsMin": 1,
+  "bedroomsMax": 3,
+  "tenure": "Freehold",
+  "projectType": "Commercial",
+  "completionStatus": "Under Construction",
+  "completionYear": "2028",
+  "maintenanceFee": 0.25,
+  "maintenanceFeeStr": "Office: RM 0.25 PSF; Service Apartment: RM 0.30 PSF",
+  "totalUnits": "615",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1s4OMSRhdPFUqRVPl44a8d4Jvq9JGuprh=w1000",
+    "https://lh3.googleusercontent.com/d/1PAk6ciqt6RCga8KiOQj8FjwtL67Qj89z=w1000",
+    "https://lh3.googleusercontent.com/d/1yZ2yY3a5dVY-1zdpZna55dzBk6XfWGIB=w1000",
+    "https://lh3.googleusercontent.com/d/1QVPa4nuBn0fi5akZVYZlwtE44-KGa9eL=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/10goepNDrv-iJk4HWz45J8Oxei5dm_qTl=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1y_5199jfCInzDSgSXgT2b3U3UOoUQgBr=w1000",
+    "https://lh3.googleusercontent.com/d/11XJN8E3-wD2RI-7S6mZJRpdb8ENpCINV=w1000",
+    "https://lh3.googleusercontent.com/d/1Fzad3LuWF2ROSh_Ypf1YCiRAtByVYC0w=w1000",
+    "https://lh3.googleusercontent.com/d/1U764fTwLvYNFhklrMNgQIiEsKHFj3Nzc=w1000",
+    "https://lh3.googleusercontent.com/d/1Igr1NBkIg8wDCtIxoCMXJ_A_gfOepyiB=w1000",
+    "https://lh3.googleusercontent.com/d/1TNCEMkRTJgQvb46eoFR1S78pzgoCciOE=w1000",
+    "https://lh3.googleusercontent.com/d/1fAf2fjvp2tl53H-ZUX03BamMhsg__p0j=w1000",
+    "https://lh3.googleusercontent.com/d/1nxrnmrtrrkiK09qyeZRsCf7YSkYc9g-_=w1000",
+    "https://lh3.googleusercontent.com/d/1YWsmcF3PEYnXlN36NTntyiFil5RE6AnV=w1000",
+    "https://lh3.googleusercontent.com/d/1kJUseWy64xdfjcmbDcEvFu77SGOWFZlJ=w1000",
+    "https://lh3.googleusercontent.com/d/1uYZ9hKBsQWw0sYo72lw99GdwnokFOHlq=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/11Qg357j3WLgO9cx0MTzrAEawaiwB2BeK=w1000",
+    "https://lh3.googleusercontent.com/d/1ZKC3hNSau4myfRr2QLXcDwPDvimlFAWO=w1000",
+    "https://lh3.googleusercontent.com/d/12VpFMs7U1AEL7iYu71ZnS-GNZFVjpQVL=w1000",
+    "https://lh3.googleusercontent.com/d/13q9QhTKVRs4KkRU1X-QhYz2d4DEj6azc=w1000",
+    "https://lh3.googleusercontent.com/d/1luMs4nQao2aFSP709I9P6c4jLbqOSrYs=w1000",
+    "https://lh3.googleusercontent.com/d/1AD11lzGEqFWZYWqhKIlCrRRC6PwczXSU=w1000",
+    "https://lh3.googleusercontent.com/d/1iNElJ1Y2SzkQhnCVd1LR2DWtkW1GW7_q=w1000",
+    "https://lh3.googleusercontent.com/d/1c1hdJiD2HYDhcR97lLQPcsEQFd0H6Xy6=w1000",
+    "https://lh3.googleusercontent.com/d/1GEtPuuMf8m5hiU9QjAfnL6ze6tPAqYlf=w1000",
+    "https://lh3.googleusercontent.com/d/1IStYBOU9tGfImGzGcDNU_II8ZU6YMYYT=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/11XJN8E3-wD2RI-7S6mZJRpdb8ENpCINV=w1000",
+    "typeName": "Type B (BA)",
+    "size": 690,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Fzad3LuWF2ROSh_Ypf1YCiRAtByVYC0w=w1000",
+    "typeName": "Type B1",
+    "size": 690,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1U764fTwLvYNFhklrMNgQIiEsKHFj3Nzc=w1000",
+    "typeName": "Type C1",
+    "size": 809,
+    "beds": "1",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Igr1NBkIg8wDCtIxoCMXJ_A_gfOepyiB=w1000",
+    "typeName": "Type C2",
+    "size": 809,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1fAf2fjvp2tl53H-ZUX03BamMhsg__p0j=w1000",
+    "typeName": "Type E",
+    "size": 845,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1nxrnmrtrrkiK09qyeZRsCf7YSkYc9g-_=w1000",
+    "typeName": "Type F",
+    "size": 1120,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1y_5199jfCInzDSgSXgT2b3U3UOoUQgBr=w1000",
+    "typeName": "Type A",
+    "size": 806,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1TNCEMkRTJgQvb46eoFR1S78pzgoCciOE=w1000",
+    "typeName": "Type D",
+    "size": 854,
+    "beds": "2",
+    "baths": "2"
+   }
+  ],
+  "latitude": 3.184706,
+  "longitude": 101.701641,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "jewel-by-oxley-kl-city-centre",
+  "name": "Jewel by Oxley KL City Centre",
+  "developer": "Oxley Risings Sdn Bhd",
+  "location": "Lot 99, Jalan Ampang, Seksyen 58, 50450 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "area": "KL City Centre",
+  "startingPrice": 1572000,
+  "startingPriceFormatted": "RM 1,572,000",
+  "priceRange": "RM 1,572,000 – RM 3,400,000",
+  "builtUpMin": 678,
+  "builtUpMax": 2185,
+  "bedroomsMin": 1,
+  "bedroomsMax": 3,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2025",
+  "maintenanceFee": 0.66,
+  "maintenanceFeeStr": "0.66 psf (est., incl. sinking fund)",
+  "totalUnits": "267",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1JMnxKgPQs56eA53G1Y7_jLV3W8MJoK4P=w1000",
+    "https://lh3.googleusercontent.com/d/1XAebGa_rUAU25QdULCJwbebmPcBD8bL1=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1BCdMMKSGQS29pSRzZ49HvqTsmfyfdp_L=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/12BvHyUBQ9aaA3SjXcZJe8zBpRrxEcDw_=w1000",
+    "https://lh3.googleusercontent.com/d/1uuASMLBMLjyN8V-MjmPRB2vKFGIByhch=w1000",
+    "https://lh3.googleusercontent.com/d/1aDObA_-CTwpeEBHnS0FW8d5ha3h62Qhu=w1000",
+    "https://lh3.googleusercontent.com/d/1Jg0WaRyIIsTFjE36FBhrRHQQTL8-Ta3s=w1000",
+    "https://lh3.googleusercontent.com/d/1UpPP0LBLKQ2mgGQC0BPMBPPE5VWd-lzF=w1000",
+    "https://lh3.googleusercontent.com/d/1Yuieohzn9AMW7H6ClMvz3eTrfFkiGZWb=w1000",
+    "https://lh3.googleusercontent.com/d/1fvk8wTkvf0CnE7PPTovgfGp-0wXU6Xme=w1000",
+    "https://lh3.googleusercontent.com/d/1hWZRZFggZ5TDZPN-nzxaLY-7_yyGJtxf=w1000",
+    "https://lh3.googleusercontent.com/d/13wtrs7T3d1uDVsA9MesJucRUFbaflegQ=w1000",
+    "https://lh3.googleusercontent.com/d/1P896KybIqBIdU4hYHH76pAhvgzVvfqUs=w1000",
+    "https://lh3.googleusercontent.com/d/1gvYGVfW5zne1kpKRiu1izQ4hpU03LV7Z=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1uahGcFusSmlkU49hGYuNUbyfGpqg_gac=w1000",
+    "https://lh3.googleusercontent.com/d/1kSw59bKPt7OZpolbB4jnMbnM5RK0ZSim=w1000",
+    "https://lh3.googleusercontent.com/d/1yIKtIQlsLEf8MVoqndTLVcp7sUPM6ubp=w1000",
+    "https://lh3.googleusercontent.com/d/1oQkhn4CrdiFKPiQnwfMypaopAgLV0bVm=w1000",
+    "https://lh3.googleusercontent.com/d/1x-a06NkoMvRF8947-83EihkQ9IVIAubQ=w1000",
+    "https://lh3.googleusercontent.com/d/1LDJdCU3aToF2IEwuTkRSws3iyrxmmehC=w1000",
+    "https://lh3.googleusercontent.com/d/1sB8I8n5bkVZwKZRUBHvZS7bPW_RtnQVN=w1000",
+    "https://lh3.googleusercontent.com/d/1YdWN28stF59WGRrx8bbsio021QMzlpSh=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/12BvHyUBQ9aaA3SjXcZJe8zBpRrxEcDw_=w1000",
+    "typeName": "Type B1",
+    "size": 678
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1uuASMLBMLjyN8V-MjmPRB2vKFGIByhch=w1000",
+    "typeName": "Type B2",
+    "size": 775
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1aDObA_-CTwpeEBHnS0FW8d5ha3h62Qhu=w1000",
+    "typeName": "Type B3",
+    "size": 754
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Jg0WaRyIIsTFjE36FBhrRHQQTL8-Ta3s=w1000",
+    "typeName": "Type B4",
+    "size": 818
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1UpPP0LBLKQ2mgGQC0BPMBPPE5VWd-lzF=w1000",
+    "typeName": "Type B5",
+    "size": 1033
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1Yuieohzn9AMW7H6ClMvz3eTrfFkiGZWb=w1000",
+    "typeName": "Type C1",
+    "size": 958
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1fvk8wTkvf0CnE7PPTovgfGp-0wXU6Xme=w1000",
+    "typeName": "Type C2",
+    "size": 980
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1hWZRZFggZ5TDZPN-nzxaLY-7_yyGJtxf=w1000",
+    "typeName": "Type D1",
+    "size": 1227
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13wtrs7T3d1uDVsA9MesJucRUFbaflegQ=w1000",
+    "typeName": "Type D2",
+    "size": 1173
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1P896KybIqBIdU4hYHH76pAhvgzVvfqUs=w1000",
+    "typeName": "Type E1",
+    "size": 2185
+   }
+  ],
+  "latitude": 3.1593,
+  "longitude": 101.7165,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "so-kuala-lumpur-residences",
+  "name": "SO Kuala Lumpur Residences",
+  "developer": "Oxley Risings Sdn Bhd",
+  "location": "Lot 99, Jalan Ampang, Seksyen 58, 50450 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "area": "KL City Centre",
+  "startingPrice": 1378000,
+  "startingPriceFormatted": "RM 1,378,000",
+  "priceRange": "RM 1,378,000 – RM 18,571,589",
+  "builtUpMin": 566,
+  "builtUpMax": 995,
+  "bedroomsMin": 2,
+  "bedroomsMax": 2,
+  "tenure": "Freehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2025",
+  "maintenanceFee": 1.1,
+  "maintenanceFeeStr": "1.10 psf (est., incl. sinking fund)",
+  "totalUnits": "590",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1qpRFClMWz5nrlGqCa_c7YrFZ4H7BkomZ=w1000",
+    "https://lh3.googleusercontent.com/d/1purm3HCBr9emauptGLZeCEE_F1-yqudL=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/1p-rcoK6-Q2NJCfVpPq-cnosaXBiak5n4=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1X2SwcVN1mRt90CyQgWCH8vY2HKOCgJbH=w1000",
+    "https://lh3.googleusercontent.com/d/1FEE9FS2lkLYwdnzr61luDQz-r9ok4aD3=w1000",
+    "https://lh3.googleusercontent.com/d/1ngbgizyYaOzY8bIk2Qb8lVaXloAQgV53=w1000",
+    "https://lh3.googleusercontent.com/d/1JukCIaFT7YnNn-MvicQyCrZkVS80tDbW=w1000",
+    "https://lh3.googleusercontent.com/d/1SYamrjkMkWBWQE5Z5xfwlCm7PtWpNzjD=w1000",
+    "https://lh3.googleusercontent.com/d/1RtI1Ri5O0kx9ibiB16Z08E2eQRxZpdQG=w1000",
+    "https://lh3.googleusercontent.com/d/1xMjLN4MzO3Ipw01wxrIlYW80DS0kAt6U=w1000",
+    "https://lh3.googleusercontent.com/d/1bVS8uASC3zFzCKNNOvzmwZWfzc3x5WzR=w1000",
+    "https://lh3.googleusercontent.com/d/1tPi0pFqAu4D2PWdxEG9OtrQ2GlIqo2ww=w1000",
+    "https://lh3.googleusercontent.com/d/1-Ev13WK6mia1QYiESlUY-UV443Ud8ooY=w1000",
+    "https://lh3.googleusercontent.com/d/173yky_wvytKMWJ7Q1udk-6lWNQxN81ng=w1000",
+    "https://lh3.googleusercontent.com/d/13_lo5tRIZcDOMXDjlHAMaIpWUGr9IOTz=w1000",
+    "https://lh3.googleusercontent.com/d/1FQoTYFQFqKk8TsROQS91wS590VnBdelp=w1000",
+    "https://lh3.googleusercontent.com/d/1owajTsBdOGHw-7hF1MQZvDFv4qh3nXdC=w1000",
+    "https://lh3.googleusercontent.com/d/12usnensIwtJ_BBgc42aZbbrzbdV25Otw=w1000",
+    "https://lh3.googleusercontent.com/d/1qCcJRNVhG6eZ0tcUkBGz26R3Q1GjYvWt=w1000",
+    "https://lh3.googleusercontent.com/d/1pESa0P9VPB3OL4zk_Wh-1CJANGNbNoLf=w1000",
+    "https://lh3.googleusercontent.com/d/1m6SRi3_VkowWU4DY3PxJfJpYd6M2abOp=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1c9giog6YwilW-38xyVnKY6jbrXuXpz1f=w1000",
+    "https://lh3.googleusercontent.com/d/1jfxQG_AMCI_hfvX7gVjfUK4b71LA9vS9=w1000",
+    "https://lh3.googleusercontent.com/d/15vpuIAW07lQGBj4QnaPAF8F9AsLglwE7=w1000",
+    "https://lh3.googleusercontent.com/d/1lIkbpXkUnEQTSgXt8YZeiqxubbNIROHv=w1000",
+    "https://lh3.googleusercontent.com/d/1xD2diuD5dCt3WeaOthf4HQJEcTYLvEy4=w1000",
+    "https://lh3.googleusercontent.com/d/1cgOHBhfstGLCICwWLKGwN0obY9plFpH4=w1000",
+    "https://lh3.googleusercontent.com/d/1b4wZoi7DTl12WLaYKRxgOcn6xwRVUspx=w1000",
+    "https://lh3.googleusercontent.com/d/1tXprLTQnm4fn4-hsUgGIP9p4_Tt4pcnP=w1000",
+    "https://lh3.googleusercontent.com/d/1h_DqMewFrzsvw_uFPyTVSsIhW6iPJJbF=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1X2SwcVN1mRt90CyQgWCH8vY2HKOCgJbH=w1000",
+    "typeName": "Type A-1",
+    "size": 578
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1FEE9FS2lkLYwdnzr61luDQz-r9ok4aD3=w1000",
+    "typeName": "Type A-2",
+    "size": 566
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1ngbgizyYaOzY8bIk2Qb8lVaXloAQgV53=w1000",
+    "typeName": "Type C-1",
+    "size": 711
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1JukCIaFT7YnNn-MvicQyCrZkVS80tDbW=w1000",
+    "typeName": "Type C-2A",
+    "size": 815
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1SYamrjkMkWBWQE5Z5xfwlCm7PtWpNzjD=w1000",
+    "typeName": "Type D-1",
+    "size": 903
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1RtI1Ri5O0kx9ibiB16Z08E2eQRxZpdQG=w1000",
+    "typeName": "Type D-2",
+    "size": 956
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1xMjLN4MzO3Ipw01wxrIlYW80DS0kAt6U=w1000",
+    "typeName": "Type D-3",
+    "size": 956
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1bVS8uASC3zFzCKNNOvzmwZWfzc3x5WzR=w1000",
+    "typeName": "Type D-4A",
+    "size": 995
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1tPi0pFqAu4D2PWdxEG9OtrQ2GlIqo2ww=w1000",
+    "typeName": "Type D-5A",
+    "size": 894
+   }
+  ],
+  "latitude": 3.1593,
+  "longitude": 101.7165,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ },
+ {
+  "id": "est8-seputeh",
+  "name": "Est8 @ Seputeh",
+  "developer": "Titian Sama Sdn. Bhd. (Subsidiary of Eupe Corporation Berhad)",
+  "location": "Jalan Syed Putra, Seputeh, 58000 Kuala Lumpur",
+  "area": "Seputeh",
+  "startingPrice": 529000,
+  "startingPriceFormatted": "RM 529,000",
+  "priceRange": "RM 529,000 – RM 1,946,400",
+  "builtUpMin": 543,
+  "builtUpMax": 1947,
+  "bedroomsMin": 1,
+  "bedroomsMax": 4,
+  "tenure": "Leasehold",
+  "projectType": "High-Rise Residential",
+  "completionStatus": "Under Construction",
+  "completionYear": "2026",
+  "maintenanceFee": 0.44,
+  "maintenanceFeeStr": "RM 0.44 psf (Including sinking fund)",
+  "totalUnits": "821",
+  "images": {
+   "overview": [
+    "https://lh3.googleusercontent.com/d/1id1GAe2CVzoIlSJNQTHNpbNksZASlrOz=w1000",
+    "https://lh3.googleusercontent.com/d/1sdLDLzhSjUpsK90jzie8jV4jst0uGTCg=w1000",
+    "https://lh3.googleusercontent.com/d/1rLNhznS5mHM07chiwjwjGMdF0juQjqY2=w1000"
+   ],
+   "location": [
+    "https://lh3.googleusercontent.com/d/12m2YhWsvpLnmy7L4oT-I6d8xacSnUTKE=w1000"
+   ],
+   "layout": [
+    "https://lh3.googleusercontent.com/d/1bEYnYoxHdC6uijb0s58ctvShn_KH1ynr=w1000",
+    "https://lh3.googleusercontent.com/d/1NwNYK5q59zweD73HQ3OpQdgxrde76533=w1000",
+    "https://lh3.googleusercontent.com/d/1FQogh3ty5xcMMRGpKW-gHIyziKr2OJbq=w1000",
+    "https://lh3.googleusercontent.com/d/1CXpoV0iBs1CQ9Se5DInhvFymvOVvN85y=w1000",
+    "https://lh3.googleusercontent.com/d/1oFY5V0U3PyBkU4GCnT90wgyyUy7QHwA3=w1000",
+    "https://lh3.googleusercontent.com/d/1QkP-HYocwEaQl1F1FWDTjdKGOuyxi0Ss=w1000",
+    "https://lh3.googleusercontent.com/d/1G6DWsFq1UIbHDnxfqmoWACvfkjA-OsRF=w1000",
+    "https://lh3.googleusercontent.com/d/12q350FjnILcT17lgM_jToSLIgatAy3kT=w1000",
+    "https://lh3.googleusercontent.com/d/1GIk5ruhCJTqfwOXhA2yPxD1M6Lc9lrhF=w1000",
+    "https://lh3.googleusercontent.com/d/13ysjrk8dyjb4eBUX2Jx37J5GwJgw4oby=w1000",
+    "https://lh3.googleusercontent.com/d/1i1tkTC4F_j6kPOIKO47elQrJP3rz_16v=w1000",
+    "https://lh3.googleusercontent.com/d/1o8hhOlKw5FS2RXFiY-RIx7jZXyTs0D7W=w1000",
+    "https://lh3.googleusercontent.com/d/1XUAkxNTolnrSo7qqtUl6yjXcrmAFJgrK=w1000"
+   ],
+   "gallery": [
+    "https://lh3.googleusercontent.com/d/1K_pimYsSPZQHhQrD6YvqxEUv-XfINXSV=w1000",
+    "https://lh3.googleusercontent.com/d/1V4DDuLmvtzput0xi1Hm1NNxcCKBoWekI=w1000",
+    "https://lh3.googleusercontent.com/d/1iHCF3MLaxZPy6ElUF1N94FFA6jdp2Msg=w1000",
+    "https://lh3.googleusercontent.com/d/1A0vXSK8xk_JVbJr8zDPM4eQAAR5leQjo=w1000",
+    "https://lh3.googleusercontent.com/d/1yktdUeKZQY9QHhow_lFKzrwHjHLvgYVT=w1000",
+    "https://lh3.googleusercontent.com/d/1sMvzjHT-V9vWr0XIFdtyvVqy4uZfMuaT=w1000"
+   ]
+  },
+  "layouts": [
+   {
+    "image": "https://lh3.googleusercontent.com/d/1bEYnYoxHdC6uijb0s58ctvShn_KH1ynr=w1000",
+    "typeName": "Type 1",
+    "size": 753,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1NwNYK5q59zweD73HQ3OpQdgxrde76533=w1000",
+    "typeName": "Type 1A",
+    "size": 753,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1FQogh3ty5xcMMRGpKW-gHIyziKr2OJbq=w1000",
+    "typeName": "Type 2",
+    "size": 973,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1CXpoV0iBs1CQ9Se5DInhvFymvOVvN85y=w1000",
+    "typeName": "Type 3",
+    "size": 1084,
+    "beds": "3",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1oFY5V0U3PyBkU4GCnT90wgyyUy7QHwA3=w1000",
+    "typeName": "Type 4",
+    "size": 1213,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1QkP-HYocwEaQl1F1FWDTjdKGOuyxi0Ss=w1000",
+    "typeName": "Type 5",
+    "size": 1694,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1G6DWsFq1UIbHDnxfqmoWACvfkjA-OsRF=w1000",
+    "typeName": "Type 6",
+    "size": 1947,
+    "beds": "4",
+    "baths": "3"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13ysjrk8dyjb4eBUX2Jx37J5GwJgw4oby=w1000",
+    "typeName": "Type V1",
+    "size": 543,
+    "beds": "1",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/12q350FjnILcT17lgM_jToSLIgatAy3kT=w1000",
+    "typeName": "Type V2",
+    "size": 643,
+    "beds": "2",
+    "baths": "1"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/1GIk5ruhCJTqfwOXhA2yPxD1M6Lc9lrhF=w1000",
+    "typeName": "Type V3",
+    "size": 914,
+    "beds": "2",
+    "baths": "2"
+   },
+   {
+    "image": "https://lh3.googleusercontent.com/d/13ysjrk8dyjb4eBUX2Jx37J5GwJgw4oby=w1000",
+    "typeName": "Type VILLA V1",
+    "size": 543,
+    "beds": "1",
+    "baths": "1"
+   }
+  ],
+  "latitude": 3.1157321,
+  "longitude": 101.6802826,
+  "syncedAt": "2026-09-24",
+  "source": "project database"
+ }
+]

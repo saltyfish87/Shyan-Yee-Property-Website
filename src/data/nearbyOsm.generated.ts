@@ -547,14 +547,14 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "Open Badminton Court & Playground",
-   "km": 0.56
+   "name": "BK2 Park",
+   "km": 0.49
   },
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "Bandar Kinrara 5 Park",
-   "km": 0.58
+   "name": "Open Badminton Court & Playground",
+   "km": 0.56
   }
  ],
  "ayanna": [
@@ -639,14 +639,14 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "BK1 Park @ Hindu Temple",
+   "name": "BK1 Park",
    "km": 0.71
   },
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "Bandar Kinrara 3 Park",
-   "km": 1.35
+   "name": "BK2 Park",
+   "km": 0.76
   }
  ],
  "bangsar-hill-park-tower-b-and-c": [
@@ -2479,7 +2479,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
   {
    "category": "Parks",
    "categoryZh": "公园",
-   "name": "BK1 Park @ Hindu Temple",
+   "name": "BK1 Park",
    "km": 1.36
   },
   {
@@ -6002,7 +6002,7 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
    "category": "Supermarkets",
    "categoryZh": "超市",
    "name": "99 Speedmart",
-   "km": 0.59
+   "km": 0.63
   },
   {
    "category": "Schools and campuses",
@@ -7333,6 +7333,3598 @@ export const NEARBY_OSM: Record<string, OsmPlace[]> = {
    "categoryZh": "公园",
    "name": "Taman Desa Recreational Ground",
    "km": 1.64
+  }
+ ],
+ "royal-lexis-kuala-lumpur": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY22 Conlay",
+   "km": 0.45
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "MR7 Raja Chulan",
+   "km": 0.47
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY21 Persiaran KLCC",
+   "km": 0.66
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Pavilion Kuala Lumpur",
+   "km": 0.34
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Pavilion Elite",
+   "km": 0.44
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Starhill",
+   "km": 0.51
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Mercato",
+   "km": 0.29
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Eslite Spectrum",
+   "km": 0.49
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "YTL International College of Hotel Management",
+   "km": 0.58
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Eton House",
+   "km": 0.76
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Iraqi School in Kuala Lumpur",
+   "km": 1.01
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "THE KL SKY CLINIC",
+   "km": 0.51
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "FFIMT Clinic (Dr. Moo)",
+   "km": 0.59
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "KLCC Park",
+   "km": 0.4
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Laman Standard Chartered Kuala Lumpur",
+   "km": 0.67
+  }
+ ],
+ "lunar-seputeh": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KB01 Mid Valley",
+   "km": 0.31
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KB02 Seputeh",
+   "km": 0.46
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KD01 Abdullah Hukum",
+   "km": 0.61
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Mid Valley Megamall",
+   "km": 0.2
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Gardens Mall",
+   "km": 0.36
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "KL Eco City Mall",
+   "km": 0.55
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "AEON BiG",
+   "km": 0.16
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "AEON",
+   "km": 0.24
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Bangsar",
+   "km": 0.85
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sri Dasmesh International School",
+   "km": 0.98
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Rendah Agama Ar-Rahah",
+   "km": 1.08
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "The Suisse Clinic",
+   "km": 0.25
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Belle Sense Clinic",
+   "km": 0.26
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "The Central Park",
+   "km": 1.22
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Bangsar South Lakeside Park",
+   "km": 1.36
+  }
+ ],
+ "swnk-houze": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "MR4 Hang Tuah",
+   "km": 0.21
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "MR5 Imbi",
+   "km": 0.22
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "AG9 SP9 Hang Tuah",
+   "km": 0.25
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Mitsui Shopping Park LaLaport Bukit Bintang City Centre",
+   "km": 0.11
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "LaLaport Bukit Bintang City Centre",
+   "km": 0.12
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Berjaya Times Square",
+   "km": 0.3
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Jaya Grocer",
+   "km": 0.14
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.25
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sarang Cookery",
+   "km": 0.31
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Jalan Davidson",
+   "km": 0.51
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Stella Maris",
+   "km": 0.52
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Mediviron",
+   "km": 0.2
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Pudu Specialist Centre",
+   "km": 0.4
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Central Rooftop Garden",
+   "km": 0.15
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Forest in the City",
+   "km": 0.7
+  }
+ ],
+ "lucentia-residences-bukit-bintang-city-centre": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "MR4 Hang Tuah",
+   "km": 0.21
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "MR5 Imbi",
+   "km": 0.22
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "AG9 SP9 Hang Tuah",
+   "km": 0.25
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Mitsui Shopping Park LaLaport Bukit Bintang City Centre",
+   "km": 0.11
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "LaLaport Bukit Bintang City Centre",
+   "km": 0.12
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Berjaya Times Square",
+   "km": 0.3
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Jaya Grocer",
+   "km": 0.14
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.25
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sarang Cookery",
+   "km": 0.31
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Jalan Davidson",
+   "km": 0.51
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Stella Maris",
+   "km": 0.52
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Mediviron",
+   "km": 0.2
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Pudu Specialist Centre",
+   "km": 0.4
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Central Rooftop Garden",
+   "km": 0.15
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Forest in the City",
+   "km": 0.7
+  }
+ ],
+ "laurel-residence": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ19 Universiti",
+   "km": 0.57
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ18 Kerinchi",
+   "km": 0.74
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KD02 Angkasapuri",
+   "km": 1.03
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Nexus",
+   "km": 0.11
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Sphere",
+   "km": 0.34
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "KL Gateway Mall",
+   "km": 0.41
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "AEON MaxValu Prime",
+   "km": 0.38
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Village Grocer",
+   "km": 0.41
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Seri Pantai",
+   "km": 0.15
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Rendah Agama Ar-Rahah",
+   "km": 0.59
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Kafa Madrasah An-Nur",
+   "km": 0.59
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Central Dermatology Specialist Clinic",
+   "km": 0.11
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Poliklinik Aiman",
+   "km": 0.31
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Bangsar South Lakeside Park",
+   "km": 0.28
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "The Central Park",
+   "km": 0.42
+  }
+ ],
+ "eden-taman-duta": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG14 Semantan",
+   "km": 1.1
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Hentian Duta",
+   "km": 1.81
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG13 Pusat Bandar Damansara",
+   "km": 1.87
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Bangsar Shopping Centre",
+   "km": 1.54
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Pavilion Damansara Heights",
+   "km": 1.64
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Damansara City Mall",
+   "km": 1.74
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Qra",
+   "km": 1.08
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Ben's Independent Grocer",
+   "km": 1.52
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "HELP University",
+   "km": 0.49
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "HELP University London Semantan",
+   "km": 0.61
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Institut Pemikiran dan Tamadun Islam Antarabangsa",
+   "km": 1.25
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Kuala Lumpur Sports Medicine Centre",
+   "km": 1.04
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Clinic RX",
+   "km": 1.54
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Tugu Lawn",
+   "km": 1.09
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Kompleks Tugu Negara",
+   "km": 1.25
+  }
+ ],
+ "dnuri-residences-kwasa-damansara": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG05 Kwasa Sentral",
+   "km": 0.2
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG04 PY01 Kwasa Damansara",
+   "km": 1.19
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG06 Kota Damansara",
+   "km": 2.48
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Designer Stone Gallery",
+   "km": 0.44
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Tankquip Resources Sdn Bhd",
+   "km": 1.91
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Star Avenue Lifestyle Mall",
+   "km": 1.96
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.55
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Pasar Raya Borong & Runcit SURIA",
+   "km": 0.57
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Rendah Agama Kota Damansara",
+   "km": 0.98
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Seksyen 7",
+   "km": 1.04
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Seksyen 10 Kota Damansara",
+   "km": 1.56
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Primer Cherang Clinic Kota Damansara 24H",
+   "km": 1.39
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Raj",
+   "km": 1.4
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Bandar Kwasa Damansara",
+   "km": 1.04
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Kembara Khalifah Travel Sdn. Bhd.",
+   "km": 1.35
+  }
+ ],
+ "trinity-rainfora": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP22 Kinrara BK 5",
+   "km": 0.68
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP21 Alam Sutera",
+   "km": 1.51
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP20 Muhibbah",
+   "km": 2.56
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Aurora Place",
+   "km": 2.67
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Pavilion Bukit Jalil",
+   "km": 2.77
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Bloomsvale Shopping Gallery",
+   "km": 3.76
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Giant Hypermarket",
+   "km": 0.53
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.82
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SMK Seksyen 4 Bandar Kinrara",
+   "km": 0.04
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Agama Rakyat Bandar Kinrara 5",
+   "km": 0.12
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SMK Seksyen 1 Bandar Kinrara",
+   "km": 0.79
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Sri Kinrara Klinik",
+   "km": 0.38
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Mediviron",
+   "km": 0.47
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Open Badminton Court & Playground",
+   "km": 0.14
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Common Area Park",
+   "km": 0.17
+  }
+ ],
+ "arte-solaris": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Hentian Duta",
+   "km": 0.83
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KA05 Segambut",
+   "km": 1.68
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY16 Sentul Barat",
+   "km": 2.25
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Publika Shopping Gallery",
+   "km": 0.07
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "MET Galleria Mall",
+   "km": 0.63
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "AEON Mall KL Midtown",
+   "km": 1.14
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Ben's Independent Grocer",
+   "km": 0.16
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Bilabila Mart",
+   "km": 0.51
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Odyssey The Global Preschool Malaysia",
+   "km": 0.58
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Kiaramas",
+   "km": 0.68
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Akademi Pencegahan Rasuah Malaysia",
+   "km": 0.8
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Prima",
+   "km": 0.93
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "MRC Clinic Malaysia",
+   "km": 1.09
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "The Park",
+   "km": 0.16
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Duta Nusantara Park",
+   "km": 0.41
+  }
+ ],
+ "arunya-residences-kl-north": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY11 Jinjang",
+   "km": 0.72
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY12 Sri Delima",
+   "km": 0.94
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY10 Kepong Baru",
+   "km": 1.42
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Brem Mall",
+   "km": 1.04
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "United Point Mall",
+   "km": 1.49
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Sungai Mas Plaza",
+   "km": 1.54
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.4
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "NSK Trade City",
+   "km": 1.06
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Jinjang Selatan",
+   "km": 0.73
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Tamil) Segambut",
+   "km": 0.94
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Raja Abdullah",
+   "km": 0.97
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Lye",
+   "km": 0.52
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Famili dan Surgeri Lim",
+   "km": 0.54
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Pusat Rekreasi Bahagian Segambut",
+   "km": 0.65
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Sejahtera Park",
+   "km": 1.22
+  }
+ ],
+ "bayu-mori-park": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Stadium Shah Alam",
+   "km": 0.72
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Kerjaya",
+   "km": 1.19
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KD10 Batu Tiga",
+   "km": 1.4
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Plaza Tol Shah Alam",
+   "km": 1.52
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Space U8",
+   "km": 2.91
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Plaza Shah Alam",
+   "km": 3.16
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Giant Hypermarket",
+   "km": 0.35
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "HeroMarket",
+   "km": 0.54
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Integrasi As-Syakirin",
+   "km": 0.35
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Politeknik Sultan Salahuddin Abdul Aziz Shah",
+   "km": 0.6
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Montfort Boys Town",
+   "km": 0.8
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Dr Bazilah",
+   "km": 0.96
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "KLINIK SINAR HARAPAN EMMA",
+   "km": 0.97
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Reflexology Zone at The Central Park",
+   "km": 2
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Small Park",
+   "km": 2.34
+  }
+ ],
+ "astrum-shah-alam": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Hentian Bandar Shah Alam",
+   "km": 0.45
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Dato' Menteri",
+   "km": 0.5
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Hub Seksyen 2",
+   "km": 1.09
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Plaza Alam Sentral",
+   "km": 0.18
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Kompleks PKNS",
+   "km": 0.19
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Anggerik Mall",
+   "km": 0.27
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Halal2Go",
+   "km": 0.87
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 1.01
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SMK Sultan Salahuddin Abdul Aziz Shah",
+   "km": 0.89
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Raja Muda",
+   "km": 0.94
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SAMT Tengku Ampuan Jemaah",
+   "km": 1.1
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "AVISENA Women's & Children's Specialist Hospital",
+   "km": 0.4
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Avisena Dialysis Centre",
+   "km": 0.59
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Dataran Shah Alam Grand Stand",
+   "km": 0.21
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Warisan Melayu",
+   "km": 0.35
+  }
+ ],
+ "botanica-hills": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KA11 Serendah",
+   "km": 3.73
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "AEON Anggun Rawang",
+   "km": 7.75
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.82
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "NSK Trade City",
+   "km": 2.29
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Bukit Rawang Jaya",
+   "km": 2.22
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (C) Serendah",
+   "km": 2.25
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SMK Serendah",
+   "km": 2.96
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Kesihatan Serendah",
+   "km": 1.76
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Kesihatan Rawang",
+   "km": 3.47
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Rekreasi Perigi Tujuh",
+   "km": 2.52
+  }
+ ],
+ "nara-at-shorea-park": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP28 Puchong Perdana",
+   "km": 3.44
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP29 Puchong Prima",
+   "km": 3.63
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP27 Bandar Puteri",
+   "km": 3.89
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Kompleks Puchong Perdana",
+   "km": 3.42
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Arab Mall",
+   "km": 4.09
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "HeroMall",
+   "km": 4.74
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.46
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Hanis Mart",
+   "km": 0.76
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Bina Insan",
+   "km": 0.64
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Taylor's International School Puchong",
+   "km": 1.09
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Puchong",
+   "km": 1.28
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Poliklinik Care Medics",
+   "km": 0.75
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik May Fair",
+   "km": 0.8
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Puchong Utama Basketball Court",
+   "km": 1.59
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Central Park, 16 Sierra",
+   "km": 3.39
+  }
+ ],
+ "sanderling-2-lakefront-residence": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY39 Cyberjaya Utara",
+   "km": 2.54
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY40 Cyberjaya City Centre",
+   "km": 3.02
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Putrajaya Sentral",
+   "km": 3.59
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Gem In Mall",
+   "km": 1.64
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "DPulze Shopping Centre",
+   "km": 2.13
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Shaftsbury Square Shop & Retail",
+   "km": 2.99
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "A&C Grocery",
+   "km": 1.32
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 1.35
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "University of Cyberjaya",
+   "km": 0.64
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Universiti Multimedia",
+   "km": 1.05
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "elc International School Cyberjaya Campus",
+   "km": 1.44
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Orion Clinic",
+   "km": 1.72
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Ohana Mediclinic",
+   "km": 1.91
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Tasik Cyberjaya",
+   "km": 0.48
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Cyberjaya Mini Park",
+   "km": 1.94
+  }
+ ],
+ "levia-residence": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "AG14 Pandan Jaya",
+   "km": 0.75
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG22 Maluri",
+   "km": 1.39
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "AG13 Maluri",
+   "km": 1.42
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "1Shamelin Shopping Mall",
+   "km": 0.17
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "AEON Taman Maluri Shopping Centre",
+   "km": 1.3
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Pandan Kapital",
+   "km": 1.68
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Lulu Hypermarket",
+   "km": 0.1
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.39
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "YPC International College",
+   "km": 0.47
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Kompleks Seri Bintang",
+   "km": 0.71
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Cheras Indah",
+   "km": 0.77
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Utama",
+   "km": 0.93
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Mediviron",
+   "km": 1.2
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Pudu Ulu",
+   "km": 0.75
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Padang Perbandaran Ampang Jaya",
+   "km": 1.24
+  }
+ ],
+ "trinity-nordic-residences": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY33 Serdang Jaya",
+   "km": 0.38
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY32 Serdang Raya Selatan",
+   "km": 0.51
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KB05 Serdang",
+   "km": 1.05
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "South City Plaza",
+   "km": 0.6
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Mines",
+   "km": 1.38
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Endah Parade",
+   "km": 4.55
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Econsave",
+   "km": 0.61
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.82
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Serdang Baru (1)",
+   "km": 0.65
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Seri Kembangan",
+   "km": 1.02
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Serdang Baru (2)",
+   "km": 1.25
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Hong Lee & Yap Sdn. Bhd.",
+   "km": 0.09
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Y.F.Chew Klinik Sdn Bhd",
+   "km": 0.14
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Rekreasi Kawasan Seri Kembangan",
+   "km": 0.57
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Permainan Serdang Jaya",
+   "km": 0.82
+  }
+ ],
+ "senna-heights": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Terminal Bas Wan's Central",
+   "km": 0.44
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY05 Damansara Damai",
+   "km": 0.57
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY06 Sri Damansara Barat",
+   "km": 1.48
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "8trium",
+   "km": 1.6
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Hextar World at Empire City",
+   "km": 3.78
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "SB Mall",
+   "km": 3.84
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.24
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Jee-Mart",
+   "km": 0.26
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "KAFA Integrasi Al-Muhtadin",
+   "km": 0.11
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Damansara Damai",
+   "km": 0.4
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Damansara Damai",
+   "km": 0.54
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Siti",
+   "km": 0.27
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klink Aurora",
+   "km": 0.28
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Urban Park",
+   "km": 0.75
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Kejiranan Central Spine SD",
+   "km": 1.77
+  }
+ ],
+ "jimbaran-gaia-gardens-setia-eco-templer": [
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "168 Park Mall",
+   "km": 5.03
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Selayang Capitol",
+   "km": 5.72
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Selayang Mall",
+   "km": 5.8
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Lotus's",
+   "km": 3.25
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 3.35
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Institut Kraf Negara",
+   "km": 1.76
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SR Agama Al-Hidayah",
+   "km": 3.37
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Rawang",
+   "km": 3.65
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Kesihatan Rawang",
+   "km": 4.45
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Wong Singh",
+   "km": 4.73
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Rimba Templer",
+   "km": 2.28
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Rimba Bukit Lagong MPS",
+   "km": 2.7
+  }
+ ],
+ "residensi-danau": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP25 Pusat Bandar Puchong",
+   "km": 0.65
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP26 Taman Perindustrian Puchong",
+   "km": 0.86
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP27 Bandar Puteri",
+   "km": 1.48
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Setia Walk Mall",
+   "km": 0.51
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "HeroMall",
+   "km": 0.9
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The 19 USJ City Mall",
+   "km": 2.5
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.42
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "K-Market",
+   "km": 0.7
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SAM Singapore Maths Bandar Puteri Puchong",
+   "km": 1.12
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Poi Min",
+   "km": 1.14
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Pusat Bandar Puchong (1)",
+   "km": 1.24
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Lim & Eng",
+   "km": 0.5
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Careclinics",
+   "km": 0.76
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "TPP5 Park, Soccer Field & Badminton Court",
+   "km": 0.54
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Sri Puchong",
+   "km": 0.92
+  }
+ ],
+ "akasa-cheras-south": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG34 Stadium Kajang",
+   "km": 3.1
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG33 Sungai Jernih",
+   "km": 3.28
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG35 Kajang",
+   "km": 3.31
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Kompleks Evo Bangi",
+   "km": 2.33
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Plaza Metro Kajang",
+   "km": 3.27
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Bangi Utama",
+   "km": 3.3
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "TMG Mart",
+   "km": 1.11
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 1.3
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SMK Sungai Ramal",
+   "km": 0.14
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SMKA Maahad Hamidiah",
+   "km": 0.89
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Leftenan Adnan",
+   "km": 0.91
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Desa Sungai Ramal",
+   "km": 1.12
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Mediviron",
+   "km": 1.14
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Origami Park",
+   "km": 1.1
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Rekreasi Sungai Chua",
+   "km": 2.12
+  }
+ ],
+ "alamanda-heights": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY31 Serdang Raya Utara",
+   "km": 1.56
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY32 Serdang Raya Selatan",
+   "km": 1.86
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY33 Serdang Jaya",
+   "km": 2.41
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "South City Plaza",
+   "km": 2.05
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Pavilion Bukit Jalil",
+   "km": 2.91
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Mines",
+   "km": 3
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.66
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Econsave",
+   "km": 1.99
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Kingsgate International School",
+   "km": 0.96
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Seri Kembangan",
+   "km": 1.11
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Serdang Baru (1)",
+   "km": 1.48
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Pusat Hemodialisis Mawar (Cawangan Seri Kembangan)",
+   "km": 0.87
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "SJAM-KPS Pusat Hemodialisis Serdang Raya (Station 14)",
+   "km": 1.23
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Rekreasi Kawasan Perindustrian Bukit Serdang",
+   "km": 1.04
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Rekreasi Kawasan Seri Kembangan",
+   "km": 1.61
+  }
+ ],
+ "alstonia-hilltop-homes": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KA08 Sungai Buloh",
+   "km": 2.01
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY04 Sungai Buloh",
+   "km": 2.21
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY03 Kampung Selamat",
+   "km": 2.29
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "SB Mall",
+   "km": 0.18
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "SC Market",
+   "km": 1.78
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Designer Stone Gallery",
+   "km": 4.89
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.04
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Kompleks Bandar Baru Sungai Buloh",
+   "km": 0.21
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Bandar Baru Sungai Buloh",
+   "km": 0.22
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SMK Bandar Baru Sungai Buloh",
+   "km": 0.37
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "KAFA Integrasi Al-Ikhwan",
+   "km": 0.84
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Putra Medical Center",
+   "km": 0.08
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Medipulse",
+   "km": 0.16
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Rekreasi Bandar Baru Sungai Buluh",
+   "km": 0.68
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "BRP Park Sungai Buloh",
+   "km": 2.26
+  }
+ ],
+ "ambience-residence": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY27 Kuchai",
+   "km": 0.79
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KB03 Salak Selatan",
+   "km": 0.96
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP14 Bandar Tun Razak",
+   "km": 1.26
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Plaza Salak Park",
+   "km": 0.89
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Faber Towers",
+   "km": 2.21
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Scott Garden",
+   "km": 3.05
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.54
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Giant Hypermarket",
+   "km": 0.88
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Salak South",
+   "km": 0.49
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Salak South",
+   "km": 1.14
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Rendah Agama Al-Islamiah",
+   "km": 1.21
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Kesihatan Salak Selatan",
+   "km": 0.14
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Mediviron",
+   "km": 0.79
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Tasik Permaisuri",
+   "km": 2.12
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Sri petaling Recreational Park",
+   "km": 2.21
+  }
+ ],
+ "arte-star": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP13 Salak Selatan",
+   "km": 0.28
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KB03 Salak Selatan",
+   "km": 0.72
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP12 Cheras",
+   "km": 1.19
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Plaza Salak Park",
+   "km": 2.45
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Viva Mall",
+   "km": 2.46
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Faber Towers",
+   "km": 2.58
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "HeroMarket",
+   "km": 0.14
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.16
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Jenis Kebangsaan (Cina) Tai Thung",
+   "km": 0.34
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Asterisk Academy",
+   "km": 0.61
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK (C) Confucian",
+   "km": 0.76
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Promedik",
+   "km": 1.48
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Kesihatan Salak Selatan",
+   "km": 1.55
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Tasik Permaisuri",
+   "km": 1.58
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Desa Recreational Ground",
+   "km": 2.71
+  }
+ ],
+ "atwater-corporate-office-towers": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ21 Asia Jaya",
+   "km": 1.32
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KG12 Phileo Damansara",
+   "km": 1.58
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ20 Taman Jaya",
+   "km": 1.62
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The School by Jaya One",
+   "km": 0.3
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Jaya Shopping Centre",
+   "km": 0.81
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "3 Damansara Shopping Mall",
+   "km": 1.95
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Korean Grocer",
+   "km": 0.24
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "AEON BiG",
+   "km": 0.3
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Heritage International School",
+   "km": 0.32
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "KAFA Integrasi Al-Aziziah",
+   "km": 0.55
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Sri Damai",
+   "km": 0.69
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "ReGen Rehab Hospital",
+   "km": 0.35
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Poliklinik Pusrawi SMC",
+   "km": 0.63
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "The Park",
+   "km": 0.24
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Tasik Varsiti",
+   "km": 2.2
+  }
+ ],
+ "kamelia-1-p3a-caledonia": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SK Tasik Puteri 2",
+   "km": 3.32
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.74
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Saveway",
+   "km": 2.65
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK(C) Chap Khuan",
+   "km": 2.77
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK (T) Batu Arang",
+   "km": 2.83
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SMK Bandar Tasik Puteri",
+   "km": 2.87
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Tasik Puteri",
+   "km": 3.12
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Kesihatan Batu Arang",
+   "km": 3.39
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Puteri Central Park",
+   "km": 3.1
+  }
+ ],
+ "quinton-residences": [
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Elmina Lakeside Mall",
+   "km": 6.75
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Econsave",
+   "km": 0.28
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "KIPMall",
+   "km": 0.31
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Desa Aman",
+   "km": 0.55
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK (T) Ladang Coalfields",
+   "km": 1.12
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Wesley Methodist School Bandar Seri Coalfields",
+   "km": 1.18
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Poliklinik Desa Sentral",
+   "km": 0.43
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Afeeya",
+   "km": 0.45
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "BSC Central Park",
+   "km": 0.77
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Elmina Green One Park",
+   "km": 3.23
+  }
+ ],
+ "jardin-residences-2-precinct-6a1": [
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Elmina Lakeside Mall",
+   "km": 6.79
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Econsave",
+   "km": 0.31
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "KIPMall",
+   "km": 0.35
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Desa Aman",
+   "km": 0.62
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK (T) Ladang Coalfields",
+   "km": 1.12
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Wesley Methodist School Bandar Seri Coalfields",
+   "km": 1.16
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Poliklinik Desa Sentral",
+   "km": 0.46
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Afeeya",
+   "km": 0.47
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "BSC Central Park",
+   "km": 0.78
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Elmina Green One Park",
+   "km": 3.27
+  }
+ ],
+ "the-walden-2-p4c1": [
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Elmina Lakeside Mall",
+   "km": 7.4
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "TMG Mart",
+   "km": 0.55
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.87
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK (T) Ladang Coalfields",
+   "km": 0.43
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Wesley Methodist School Bandar Seri Coalfields",
+   "km": 0.7
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Desa Aman",
+   "km": 0.94
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Mediviron Bandar Seri Coalfields",
+   "km": 0.58
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Nefrocare",
+   "km": 0.84
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "BSC Central Park",
+   "km": 0.23
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Elmina Green One Park",
+   "km": 3.82
+  }
+ ],
+ "duo-tower-bangsar-south": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ19 Universiti",
+   "km": 0.7
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ18 Kerinchi",
+   "km": 0.74
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KD02 Angkasapuri",
+   "km": 0.95
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Nexus",
+   "km": 0.02
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Sphere",
+   "km": 0.25
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "KL Gateway Mall",
+   "km": 0.52
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "AEON MaxValu Prime",
+   "km": 0.3
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Syifa Market",
+   "km": 0.44
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Seri Pantai",
+   "km": 0.26
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Kafa Madrasah An-Nur",
+   "km": 0.48
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Rendah Agama Ar-Rahah",
+   "km": 0.57
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Central Dermatology Specialist Clinic",
+   "km": 0.03
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Pantai",
+   "km": 0.26
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Bangsar South Lakeside Park",
+   "km": 0.27
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "The Central Park",
+   "km": 0.38
+  }
+ ],
+ "bayu-timur-residences": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ36 Subang Alam",
+   "km": 3.39
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Bus Station",
+   "km": 3.6
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SP31 KJ37 Putra Heights",
+   "km": 3.68
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "LakePoint Central @ Setia AlamImpian",
+   "km": 4.13
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Place",
+   "km": 4.74
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Quayside Mall",
+   "km": 5.05
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "BMS Organics",
+   "km": 0.72
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "HeroMarket",
+   "km": 0.78
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Kota Kemuning",
+   "km": 0.74
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK (C) Chung Hua Klang",
+   "km": 1.73
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Chinese Taipei School (Kuala Lumpur)",
+   "km": 1.74
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Med Doc",
+   "km": 0.52
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Nayanika",
+   "km": 0.52
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Tasik Kota Kemuning",
+   "km": 0.55
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Canal Garden Basketball Park",
+   "km": 1.19
+  }
+ ],
+ "casa-darcadia": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Bus Station",
+   "km": 0.33
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Hentian Akhir Bandar Seksyen 19",
+   "km": 2.62
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KD11 Shah Alam",
+   "km": 2.7
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Ole Ole",
+   "km": 2.11
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "LakePoint Central @ Setia AlamImpian",
+   "km": 2.37
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Anggerik Mall",
+   "km": 4.49
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "GT Mart Pasar Mini",
+   "km": 0.27
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "DELUXE SPEEDMART SDN BHD",
+   "km": 0.34
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Taman Sri Muda",
+   "km": 0.43
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Taman Sri Muda 2",
+   "km": 0.46
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Kolej Vis Mechatronic",
+   "km": 0.49
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Kalai",
+   "km": 0.38
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "klinik berjaya medick",
+   "km": 0.48
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Pangsapuri Alora Playground and Field",
+   "km": 0.72
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Persatuan Komuniti Seksyen 23",
+   "km": 1.33
+  }
+ ],
+ "colonial-infinite-edumetro": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SB6 South Quay-USJ1",
+   "km": 0.28
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SB5 Sun-U Monash",
+   "km": 0.47
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "SB7 USJ7",
+   "km": 1.15
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Summit USJ",
+   "km": 0.63
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Easyhome Smart Home Life Experience Centre",
+   "km": 0.83
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Sunway Geo Avenue",
+   "km": 1.26
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "MeMiZoooZooo",
+   "km": 0.31
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Pandamart",
+   "km": 0.53
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Monash University Malaysia",
+   "km": 0.34
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sunway International School - Sunway City Kuala Lumpur Campus",
+   "km": 0.4
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "International Medical College",
+   "km": 0.59
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Sunway Medical Centre",
+   "km": 1.25
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Bright Clinic Sunway Geo",
+   "km": 1.36
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Laman Sukan MBSJ USJ1",
+   "km": 1.17
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Subang Indah Kid's Playground & Family Park",
+   "km": 1.22
+  }
+ ],
+ "dawn-kl-city-centre": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "MR9 Medan Tuanku",
+   "km": 0.19
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "AG5 SP5 Sultan Ismail",
+   "km": 0.39
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "AG6 SP6 Bandaraya",
+   "km": 0.61
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Quill City Mall",
+   "km": 0.29
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Kompleks Pertama",
+   "km": 0.39
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Sogo",
+   "km": 0.49
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "NSK Grocer",
+   "km": 0.35
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Kedai Buah Buahan Leong Sut Kee",
+   "km": 0.36
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan (Perempuan) Jalan Batu",
+   "km": 0.23
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Queen’s College",
+   "km": 0.24
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "President College",
+   "km": 0.29
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik TAR",
+   "km": 0.04
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Pemmi Dhillon",
+   "km": 0.13
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Laman Sultan Ismail",
+   "km": 0.03
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Laman Medan Tuanku",
+   "km": 0.14
+  }
+ ],
+ "erat-residence-alam-impian": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Bus Station",
+   "km": 1.5
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Hentian Akhir Bandar Seksyen 19",
+   "km": 2.54
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "Terminal 17 Shah Alam",
+   "km": 2.55
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Ole Ole",
+   "km": 1.28
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "LakePoint Central @ Setia AlamImpian",
+   "km": 1.4
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Suria Jaya",
+   "km": 4.19
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Pasar Raya Sinar Wawasan",
+   "km": 0.46
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Aman Saf",
+   "km": 0.49
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Rendah Agama Seksyen 24 Shah Alam",
+   "km": 0.53
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Seksyen 24 Shah Alam",
+   "km": 0.71
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Menengah Kebangsaan Seksyen 24 (2)",
+   "km": 0.71
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Poliklinik An-Nisa'",
+   "km": 0.45
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Akhi",
+   "km": 0.51
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Car Parking",
+   "km": 0.46
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Parking Kereta",
+   "km": 0.52
+  }
+ ],
+ "erica-residence": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY38 16 Sierra",
+   "km": 3.25
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY39 Cyberjaya Utara",
+   "km": 3.92
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Arab Mall",
+   "km": 4.46
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Gem In Mall",
+   "km": 4.8
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Kompleks Puchong Perdana",
+   "km": 5.29
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 1.71
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Lotus's",
+   "km": 2.19
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Pulau Meranti",
+   "km": 0.12
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Rendah Agama Bandar Bukit Puchong",
+   "km": 0.6
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK (C) Sin Ming Puchong",
+   "km": 1.27
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Desa Pulau Meranti",
+   "km": 1.03
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Klinik Amara",
+   "km": 2.04
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Puchong Utama Basketball Court",
+   "km": 2.49
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Central Park, 16 Sierra",
+   "km": 2.99
+  }
+ ],
+ "ekotitiwangsa": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "AG1 SP1 Sentul Timur",
+   "km": 0.72
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "AG2 SP2 Sentul",
+   "km": 0.97
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY18 Hospital Kuala Lumpur",
+   "km": 1.21
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Sunway Putra Mall",
+   "km": 2.28
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Kompleks Mutiara",
+   "km": 2.39
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Quill City Mall",
+   "km": 2.75
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "99 Speedmart",
+   "km": 0.52
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "OTK Pasaraya",
+   "km": 1.33
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SJK (C) Chong Hwa 文良港中华华小",
+   "km": 0.06
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "SK Bandar Baru Sentul",
+   "km": 0.31
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Seri Perak Sentul",
+   "km": 0.44
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Hospital Tawakal",
+   "km": 0.86
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "KPJ Tawakkal KL Specialist Hospital",
+   "km": 0.89
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Taman Tasik Titiwangsa",
+   "km": 0.96
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Sentul Park",
+   "km": 1.74
+  }
+ ],
+ "jewel-by-oxley-kl-city-centre": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ9 Ampang Park",
+   "km": 0.3
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY21 Persiaran KLCC",
+   "km": 0.31
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY20 Ampang Park",
+   "km": 0.32
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Shoppes at Four Seasons Place",
+   "km": 0.31
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Plaza Ombak KLCC",
+   "km": 0.33
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Intermark Mall",
+   "km": 0.47
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Village Grocer",
+   "km": 0.26
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Muji",
+   "km": 0.42
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "UniRazak",
+   "km": 0.37
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Advance Tertiary College",
+   "km": 0.6
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Erican College",
+   "km": 0.61
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Good Clinic",
+   "km": 0.25
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Health Hub Clinic",
+   "km": 0.29
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "KLCC Park",
+   "km": 0.45
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Laman Standard Chartered Kuala Lumpur",
+   "km": 0.74
+  }
+ ],
+ "so-kuala-lumpur-residences": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KJ9 Ampang Park",
+   "km": 0.3
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY21 Persiaran KLCC",
+   "km": 0.31
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "PY20 Ampang Park",
+   "km": 0.32
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Shoppes at Four Seasons Place",
+   "km": 0.31
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Plaza Ombak KLCC",
+   "km": 0.33
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Intermark Mall",
+   "km": 0.47
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Village Grocer",
+   "km": 0.26
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Muji",
+   "km": 0.42
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "UniRazak",
+   "km": 0.37
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Advance Tertiary College",
+   "km": 0.6
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Erican College",
+   "km": 0.61
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Good Clinic",
+   "km": 0.25
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Health Hub Clinic",
+   "km": 0.29
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "KLCC Park",
+   "km": 0.45
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Laman Standard Chartered Kuala Lumpur",
+   "km": 0.74
+  }
+ ],
+ "est8-seputeh": [
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KB02 Seputeh",
+   "km": 0.26
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KB01 Mid Valley",
+   "km": 0.36
+  },
+  {
+   "category": "Train stations",
+   "categoryZh": "轨道交通",
+   "name": "KD02 Angkasapuri",
+   "km": 0.83
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "Mid Valley Megamall",
+   "km": 0.39
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "The Gardens Mall",
+   "km": 0.57
+  },
+  {
+   "category": "Shopping malls",
+   "categoryZh": "商场",
+   "name": "KL Eco City Mall",
+   "km": 0.78
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "Bilabila Mart",
+   "km": 0.26
+  },
+  {
+   "category": "Supermarkets",
+   "categoryZh": "超市",
+   "name": "AEON",
+   "km": 0.38
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Kebangsaan Bangsar",
+   "km": 1.11
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Campus Rangers International School",
+   "km": 1.14
+  },
+  {
+   "category": "Schools and campuses",
+   "categoryZh": "学校与大学",
+   "name": "Sekolah Antarabangsa Vikas",
+   "km": 1.22
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Poliklinik & Surgeri Seputeh",
+   "km": 0.29
+  },
+  {
+   "category": "Hospitals and clinics",
+   "categoryZh": "医院与诊所",
+   "name": "Belle Sense Clinic",
+   "km": 0.5
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "Jalan Desa Bakti Public Playground",
+   "km": 1.36
+  },
+  {
+   "category": "Parks",
+   "categoryZh": "公园",
+   "name": "The Central Park",
+   "km": 1.45
   }
  ]
 };
