@@ -123,6 +123,18 @@ interface BuyerShortlist {
  * again as a small car loan, every month, for as long as you own it. No competitor computes it,
  * and it is the second-largest recurring cost after the mortgage.
  */
+/**
+ * When this project's figures were last checked against the developer's own document.
+ *
+ * Every page used to claim today's date in the sitemap, on every build, which is a signal Google
+ * learns to ignore. This is the real date from the project database, and the page says it out loud:
+ * a price list from three weeks ago is worth more to a buyer than one with no date at all.
+ */
+function checkedOn(p: any): string | null {
+  return PROJECT_FACTS[p.id]?.checked || null;
+}
+const prettyDate = (iso: string) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+
 function feePsf(p: any): number | null {
   // The sales kit wins over the website sheet: the sheet had Orion's 1.32 psf on Maple Residences,
   // whose own kit says 0.39, and five other rows disagreed the same way.
@@ -1184,6 +1196,8 @@ function renderSeoHtml(
         "numberOfRooms": `${targetProject.bedroomsMin} to ${targetProject.bedroomsMax} bedrooms`
       });
 
+      const checked = checkedOn(targetProject);
+      if (checked) jsonLdGraph.push({ "@type": "WebPage", "@id": `${canonical}#webpage`, "url": canonical, "dateModified": checked, "isPartOf": { "@id": `${baseUrl}/#website` } });
       const projVideo = projectVideoObject(targetProject.id, 'en');
       if (projVideo) jsonLdGraph.push(projVideo);
 
@@ -1288,6 +1302,7 @@ function renderSeoHtml(
                   <li><strong>Maintenance Fee:</strong> ${escapeXml(feeLabel(targetProject))}${(() => { const m = monthlyOn1000(targetProject); return m === null ? '' : ` &mdash; about <strong>RM ${m.toLocaleString()} a month</strong> on a 1,000 sq ft unit`; })()}</li>
                   <li><strong>Completion:</strong> ${targetProject.completionStatus || 'Under Construction'} ${targetProject.completionYear ? '(' + targetProject.completionYear + ')' : ''}</li>
                 </ul>
+                ${(() => { const c = checkedOn(targetProject); return c ? `<p style="font-size:13px;color:#64748b;margin:12px 0 0;">Checked against the developer's own document on ${prettyDate(c)}. Price lists change with each release — ask me for the current one.</p>` : ''; })()}
               </div>
 
               <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between;">
@@ -2179,7 +2194,7 @@ for (const p of projects) {
   if (p && p.id) {
     xml += `  <url>\n`;
     xml += `    <loc>https://shyanyee.com/projects/${p.id}</loc>\n`;
-    xml += `    <lastmod>${p.syncedAt ? p.syncedAt.substring(0, 10) : todayStr}</lastmod>\n`;
+    xml += `    <lastmod>${PROJECT_FACTS[p.id]?.checked || p.syncedAt?.substring(0, 10) || todayStr}</lastmod>\n`;
     xml += `    <changefreq>daily</changefreq>\n`;
     xml += `    <priority>0.90</priority>\n`;
     
@@ -2231,7 +2246,7 @@ for (const r of staticRoutes) {
   xml += `  <url><loc>https://shyanyee.com/zh/${r}</loc><lastmod>${todayStr}</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>\n`;
 }
 for (const p of projects) {
-  if (p && p.id) xml += `  <url><loc>https://shyanyee.com/zh/projects/${p.id}</loc><lastmod>${p.syncedAt ? p.syncedAt.substring(0, 10) : todayStr}</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>\n`;
+  if (p && p.id) xml += `  <url><loc>https://shyanyee.com/zh/projects/${p.id}</loc><lastmod>${PROJECT_FACTS[p.id]?.checked || p.syncedAt?.substring(0, 10) || todayStr}</lastmod><changefreq>daily</changefreq><priority>0.80</priority></url>\n`;
 }
 for (const sl of BUYER_SHORTLISTS) {
   xml += `  <url><loc>https://shyanyee.com/zh/best/${sl.slug}</loc><lastmod>${todayStr}</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>\n`;

@@ -8,6 +8,8 @@ export interface ProjectFacts {
   /** Maintenance fee exactly as the sales kit words it, plus the psf rate read out of it. */
   maintenanceFee?: string;
   maintenanceFeePsf?: number;
+  /** When this project's row was last touched in the database, as YYYY-MM-DD. */
+  checked?: string;
   /** The developer's own write-up, as published in the database. */
   description?: { en?: string; zh?: string };
   keyFeatures: string[];
@@ -19,6 +21,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "anya": {
   "source": "Developer sales kit (2026-09-03)",
   "developer": "Aspect Potential Sdn Bhd",
+  "checked": "2026-09-03",
   "maintenanceFee": "0.34",
   "description": {
    "en": "ANYA at Shorea Park is a 3.90-acre FREEHOLD vertical oasis that focuses on the nurturing of family living. A part of the 27.7-acre Shorea Park community and just a stone's throw away to the heart of Puchong, ANYA at Shorea Park stands tall with 2 towers and 750 units. Designed with the comfort of multigenerational living in mind, it offers flexible and spacious dual-key layouts that come with multiple living spaces to foster family bonding. The development is surrounded by a thriving matured township and provides a wide array of nature-inspired green landscaping and water features."
@@ -177,6 +180,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aricia": {
   "source": "Developer sales kit (2026-08-22)",
   "developer": "Aricia Sdn Bhd",
+  "checked": "2026-08-22",
   "maintenanceFee": "RM0.38 per sqft (including sinking fund)",
   "maintenanceFeePsf": 0.38,
   "description": {
@@ -350,6 +354,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aster-hill-sri-petaling": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "UOA Development Bhd",
+  "checked": "2026-08-10",
   "maintenanceFee": "RM0.30psf (including sinking fund)",
   "maintenanceFeePsf": 0.3,
   "description": {
@@ -459,6 +464,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "atera-phase-2": {
   "source": "Developer sales kit (2026-09-05)",
   "developer": "Paramount Property",
+  "checked": "2026-09-05",
   "maintenanceFee": "RM0.32 psf including sinking fund",
   "maintenanceFeePsf": 0.32,
   "description": {
@@ -640,6 +646,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aurum-business-centre-suites": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "HARTACOM PROPERTY SDN. BHD.",
+  "checked": "2026-08-10",
   "maintenanceFee": "Estimate RM0.50psf including sinking fund",
   "maintenanceFeePsf": 0.5,
   "description": {
@@ -804,6 +811,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "avantro-residences": {
   "source": "Developer sales kit (2026-08-03)",
   "developer": "Boon Koon Commercial Sdn Bhd (Chin Hin Group Property)",
+  "checked": "2026-08-03",
   "maintenanceFee": "RM 0.35 psf (including sinking fund)",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -905,6 +913,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "ayanna": {
   "source": "Developer sales kit (2026-07-29)",
   "developer": "Chin Hin Property Development (BKSP Autoworld Sdn Bhd)",
+  "checked": "2026-07-29",
   "maintenanceFee": "RM0.27 psf incl. sinking fund",
   "maintenanceFeePsf": 0.27,
   "description": {
@@ -1096,6 +1105,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "bangsar-hill-park-tower-b-and-c": {
   "source": "Developer sales kit (2026-08-11)",
   "developer": "Bangsar Hill Park Development Sdn. Bhd.",
+  "checked": "2026-08-11",
   "maintenanceFee": "RM 0.35 psf (excluding 10% sinking fund)",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -1275,6 +1285,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "bangsar-hill-park-verdura-tower-d-and-e": {
   "source": "Developer sales kit (2026-08-11)",
   "developer": "Bangsar Hill Park Development Sdn. Bhd.",
+  "checked": "2026-08-11",
   "maintenanceFee": "Estimated to be RM0.35 psf per month excluding sinking fund",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -1402,6 +1413,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "clouthaus": {
   "source": "Developer sales kit (2026-08-22)",
   "developer": "TA First Credit Sdn Bhd",
+  "checked": "2026-08-22",
   "maintenanceFee": "RM 0.80 psf (Including Sinking Fund)",
   "maintenanceFeePsf": 0.8,
   "description": {
@@ -1611,6 +1623,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "core-residence-trx": {
   "source": "Developer sales kit (2026-08-24)",
   "developer": "CORE Precious Development Sdn Bhd (A joint venture between CCCG & WCT Holdings Berhad)",
+  "checked": "2026-08-24",
   "maintenanceFee": "RM0.85 psf (inclusive of sinking fund)",
   "maintenanceFeePsf": 0.85,
   "description": {
@@ -1723,6 +1736,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "genstarz": {
   "source": "Developer sales kit (2026-08-20)",
   "developer": "Majestic Gen Sdn Bhd",
+  "checked": "2026-08-20",
   "maintenanceFee": "RM0.38psf (including sinking fund)",
   "maintenanceFeePsf": 0.38,
   "description": {
@@ -1814,6 +1828,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "luminar-residence-federal-avenue": {
   "source": "Developer sales kit (2026-09-01)",
   "developer": "Impiana Impresif Sdn Bhd (a subsidiary of BRDB Developments Sdn Bhd)",
+  "checked": "2026-09-01",
   "maintenanceFee": "Type A: RM206, Type B: RM286, Type C: RM335, Type D: RM405, Type E: RM530. Accessory parcels include car parks and aircon ledges. An additional car park costs RM23 per month.",
   "description": {
    "en": "Luminar Residence, the first residential phase of Federal Avenue, embodies vibrant and contemporary living. With direct access to the Federal Highway, it introduces a new level of convenience for its flourishing community. Residents' lives are enriched by seamless connections to nearby amenities. An exclusive home base that epitomises the synergy of live, work, and leisure - this stylish residence is designed for today's go-getters, opportunists, and jet-setters who always seize the moment."
@@ -1956,6 +1971,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "m-aspira": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "Mah Sing Properties Sdn Bhd",
+  "checked": "2026-08-10",
   "maintenanceFee": "RM0.36 psf",
   "maintenanceFeePsf": 0.36,
   "description": {
@@ -2146,6 +2162,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "maple-residences": {
   "source": "Developer sales kit (2026-08-07)",
   "developer": "WCT OUG Development Sdn Bhd",
+  "checked": "2026-08-07",
   "maintenanceFee": "RM0.39 psf (inclusive of sinking fund)",
   "maintenanceFeePsf": 0.39,
   "description": {
@@ -2310,6 +2327,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "oaka-residences": {
   "source": "Developer sales kit (2026-08-02)",
   "developer": "Berjaya Hartanah Berhad",
+  "checked": "2026-08-02",
   "maintenanceFee": "RM 0.51 psf (including sinking fund)",
   "maintenanceFeePsf": 0.51,
   "description": {
@@ -2484,6 +2502,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "orion-residence": {
   "source": "Developer sales kit (2026-08-12)",
   "developer": "Orion Tower Sdn. Bhd. (Welton Group of Companies)",
+  "checked": "2026-08-12",
   "maintenanceFee": "RM 1.32 psf (RM 1.20 psf + 10% sinking fund)",
   "maintenanceFeePsf": 1.32,
   "description": {
@@ -2620,6 +2639,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "park-green-pavilion-bukit-jalil": {
   "source": "Developer sales kit (2026-08-05)",
   "developer": "Regal Path Sdn Bhd (a subsidiary of Malton Berhad)",
+  "checked": "2026-08-05",
   "maintenanceFee": "RM 0.44psf (inclusive of sinking fund)",
   "maintenanceFeePsf": 0.44,
   "description": {
@@ -2804,6 +2824,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "quaver-residence": {
   "source": "Developer sales kit (2026-08-07)",
   "developer": "Chin Hin Group Property (Quaver Sdn Bhd)",
+  "checked": "2026-08-07",
   "maintenanceFee": "RM 0.33 psf (including sinking fund)",
   "maintenanceFeePsf": 0.33,
   "description": {
@@ -2898,6 +2919,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "tria-seputeh": {
   "source": "Developer sales kit (2026-08-18)",
   "developer": "MRCB Seputeh Land Sdn Bhd",
+  "checked": "2026-08-18",
   "maintenanceFee": "RM0.40 psf including sinking fund",
   "maintenanceFeePsf": 0.4,
   "description": {
@@ -3065,6 +3087,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "tujuh-residences": {
   "source": "Developer sales kit (2026-09-09)",
   "developer": "Kwasa Sentral Sdn Bhd (A joint venture between MRCB and Kwasa Land)",
+  "checked": "2026-09-09",
   "maintenanceFee": "RM0.35 psf (excluding sinking fund)",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -3182,6 +3205,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "vox": {
   "source": "Developer sales kit (2026-09-09)",
   "developer": "Kerjaya Property Sdn Bhd",
+  "checked": "2026-09-09",
   "maintenanceFee": "RM0.35 psf + 10% Sinking Fund",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -3322,6 +3346,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "wyn": {
   "source": "Developer sales kit (2026-09-10)",
   "developer": "Land & General Berhad",
+  "checked": "2026-09-10",
   "maintenanceFee": "RM 0.35 psf (including sinking fund)",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -3428,6 +3453,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "zenia-damansara": {
   "source": "Developer sales kit (2026-08-27)",
   "developer": "ParkCity",
+  "checked": "2026-08-27",
   "maintenanceFee": "RM 0.33 psf (Exclude sinking fund)",
   "maintenanceFeePsf": 0.33,
   "description": {
@@ -3608,6 +3634,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "ren-residence": {
   "source": "Developer sales kit (2026-08-04)",
   "developer": "Gaya Kuasa Sdn Bhd",
+  "checked": "2026-08-04",
   "maintenanceFee": "RM0.35 psf",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -3730,6 +3757,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aras-residence": {
   "source": "Developer sales kit (2026-08-07)",
   "developer": "WCT OUG Development Sdn Bhd",
+  "checked": "2026-08-07",
   "maintenanceFee": "RM0.39 psf (inclusive of Sinking Fund)",
   "maintenanceFeePsf": 0.39,
   "description": {
@@ -3888,6 +3916,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "vividz": {
   "source": "Developer sales kit (2026-08-04)",
   "developer": "EXSIM BUKIT JALIL CITY SDN. BHD.",
+  "checked": "2026-08-04",
   "maintenanceFee": "RM0.44psf (including sinking fund)",
   "maintenanceFeePsf": 0.44,
   "description": {
@@ -4041,6 +4070,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "khaya-residence": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "Bayu Mantap Sdn Bhd",
+  "checked": "2026-08-10",
   "maintenanceFee": "Approx. RM0.50 psf (including sinking fund)",
   "maintenanceFeePsf": 0.5,
   "description": {
@@ -4263,6 +4293,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "phoeniz-suites-kl-city-centre": {
   "source": "Developer sales kit (2026-08-31)",
   "developer": "Exsim YKS 54 Sdn Bhd (1361275-W) (a member of EXSIM Group)",
+  "checked": "2026-08-31",
   "maintenanceFee": "RM 1.21 psf including sinking fund. EXSIM will subsidize maintenance fees up to max RM0.33psf for 2 years.",
   "maintenanceFeePsf": 1.21,
   "description": {
@@ -4333,6 +4364,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "alora-residence": {
   "source": "Developer sales kit (2026-09-03)",
   "developer": "Avaland (USJ Citypoint Sdn. Bhd.)",
+  "checked": "2026-09-03",
   "maintenanceFee": "RM0.35 psf (including sinking fund)",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -4443,6 +4475,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "aldenz": {
   "source": "Developer sales kit (2026-08-30)",
   "developer": "Mightyprop Sdn Bhd (a member of EXSIM Group)",
+  "checked": "2026-08-30",
   "maintenanceFee": "RM0.42psf (including sinking fund)",
   "maintenanceFeePsf": 0.42,
   "description": {
@@ -4593,6 +4626,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "d-evia": {
   "source": "Developer sales kit (2026-08-30)",
   "developer": "EXSIM MX4 SDN. BHD. (1486857-W)",
+  "checked": "2026-08-30",
   "maintenanceFee": "RM0.46psf (including sinking fund)",
   "maintenanceFeePsf": 0.46,
   "description": {
@@ -4728,6 +4762,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "arra": {
   "source": "Developer sales kit (2026-09-12)",
   "developer": "Puncak Arra Sdn Bhd (a Puncakdana Group project)",
+  "checked": "2026-09-12",
   "maintenanceFee": "RM0.33 psf (inclusive of sinking fund)",
   "maintenanceFeePsf": 0.33,
   "description": {
@@ -4917,6 +4952,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "atera": {
   "source": "Developer sales kit (2026-09-05)",
   "developer": "Paramount Property",
+  "checked": "2026-09-05",
   "maintenanceFee": "RM0.32 psf including sinking fund",
   "maintenanceFeePsf": 0.32,
   "description": {
@@ -5098,6 +5134,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "amara": {
   "source": "Developer sales kit (2026-09-13)",
   "developer": "Puncakdana Group (Luster Ara Sdn Bhd)",
+  "checked": "2026-09-13",
   "maintenanceFee": "RM0.38 psf (RM0.35 psf + 10% sinking fund)",
   "maintenanceFeePsf": 0.38,
   "description": {
@@ -5207,6 +5244,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "parkside-residence": {
   "source": "Developer sales kit (2026-08-10)",
   "developer": "Setia MF SFH Development Sdn Bhd",
+  "checked": "2026-08-10",
   "maintenanceFee": "RM0.50 psf",
   "maintenanceFeePsf": 0.5,
   "description": {
@@ -5282,6 +5320,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "amaya": {
   "source": "Developer sales kit (2026-09-13)",
   "developer": "Indo Aman Bina Sdn Bhd",
+  "checked": "2026-09-13",
   "maintenanceFee": "RM0.45 psf (including sinking fund)",
   "maintenanceFeePsf": 0.45,
   "description": {
@@ -5429,6 +5468,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "forest-hill": {
   "source": "Developer sales kit (2026-09-22)",
   "developer": "Foresthill Damansara Land Sdn. Bhd.",
+  "checked": "2026-09-22",
   "maintenanceFee": "RM0.35psf (including sinking fund, estimated)",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -5642,6 +5682,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "daya-residence": {
   "source": "Developer sales kit (2026-09-18)",
   "developer": "TSR Development Sdn Bhd",
+  "checked": "2026-09-18",
   "maintenanceFee": "RM0.28 psf (Inclusive Sinking Fund)",
   "maintenanceFeePsf": 0.28,
   "description": {
@@ -5761,6 +5802,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "queenswoodz": {
   "source": "Developer sales kit (2026-07-29)",
   "developer": "EXSIM",
+  "checked": "2026-07-29",
   "maintenanceFee": "RM0.42 psf incl. sinking fund",
   "maintenanceFeePsf": 0.42,
   "description": {
@@ -5845,6 +5887,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "menerung": {
   "source": "Developer sales kit (2026-08-12)",
   "developer": "BRDB Developments Sdn Bhd (5521-A)",
+  "checked": "2026-08-12",
   "maintenanceFee": "RM 0.95 psf (including sinking fund)",
   "maintenanceFeePsf": 0.95,
   "description": {
@@ -5978,6 +6021,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "bamboohill": {
   "source": "Developer sales kit (2026-09-15)",
   "developer": "Concord Housing Development Sdn Bhd (UOA Group)",
+  "checked": "2026-09-15",
   "maintenanceFee": "RM0.40 psf inclusive of sinking fund",
   "maintenanceFeePsf": 0.4,
   "description": {
@@ -6093,6 +6137,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "stellaris-riana-dutamas": {
   "source": "Developer sales kit (2026-08-11)",
   "developer": "368 Segambut Sdn Bhd (IJM Land & FCW Holdings Berhad)",
+  "checked": "2026-08-11",
   "maintenanceFee": "RM0.35psf (Inclusive of Sinking Fund)",
   "maintenanceFeePsf": 0.35,
   "description": {
@@ -6226,6 +6271,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "pavilion-square-residences": {
   "source": "Developer sales kit (2026-09-06)",
   "developer": "Armani Hartajaya Sdn Bhd",
+  "checked": "2026-09-06",
   "maintenanceFee": "RM 0.90/sf",
   "maintenanceFeePsf": 0.9,
   "description": {
@@ -6401,6 +6447,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "pavilion-square-office": {
   "source": "Developer sales kit (2026-09-06)",
   "developer": "Armani Hartajaya Sdn Bhd",
+  "checked": "2026-09-06",
   "maintenanceFee": "RM 1.30/sf",
   "maintenanceFeePsf": 1.3,
   "description": {
@@ -6546,6 +6593,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "golden-crown": {
   "source": "Developer sales kit (2026-08-29)",
   "developer": "Multibay Development Sdn Bhd (A Subsidiary of Golden Eagle)",
+  "checked": "2026-08-29",
   "maintenanceFee": "Approx. RM0.80psf",
   "maintenanceFeePsf": 0.8,
   "description": {
@@ -6675,6 +6723,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "centrix": {
   "source": "Developer sales kit (2026-08-28)",
   "developer": "Intan Sekitar Sdn Bhd (Subsidiary of Crest Builder Berhad)",
+  "checked": "2026-08-28",
   "maintenanceFee": "RM0.40 psf (Maintenance Fee) + RM0.04 psf (Sinking Fund)",
   "maintenanceFeePsf": 0.4,
   "description": {
@@ -6800,6 +6849,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "kingswoodz-bukit-jalil": {
   "source": "Developer sales kit (2026-08-06)",
   "developer": "EXSIM JALIL LINK SDN BHD",
+  "checked": "2026-08-06",
   "maintenanceFee": "RM0.42 (inclusive of sinking fund)",
   "description": {
    "en": "Nestled amidst the urban canopy, The Kingswoodz @ Bukit Jalil stands tall as a verdant oasis within a sought-after Bukit Jalil locale. This magnificent multi-faceted development inspired by the intricate inlays of Kingwood furniture, unveils 1,558 signature homes and boasts panoramic vistas, sprawling communal spaces, and top-notch amenities. Designed by forward-thinking architects, this haven not only redefines high-rise living but also seamlessly integrates Malaysia's natural splendour into its modern aesthetic. Experience the epitome of urban comfort intertwined with the tranquillity of nature at The Kingswoodz @ Bukit Jalil."
@@ -6931,6 +6981,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "times-square-2": {
   "source": "Developer sales kit (2026-07-30)",
   "developer": "Berjaya Times Square Sdn Bhd",
+  "checked": "2026-07-30",
   "maintenanceFee": "RM0.66 psf + 10% sinking fund",
   "maintenanceFeePsf": 0.66,
   "description": {
@@ -7043,6 +7094,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "accent-residences": {
   "source": "Developer sales kit (2026-07-30)",
   "developer": "Leisure Event Sdn Bhd (Ayala Land)",
+  "checked": "2026-07-30",
   "maintenanceFee": "TBC",
   "description": {
    "en": "Accent Residences is a leasehold serviced apartment development by Ayala Land in Section 13, Petaling Jaya. The single-tower development spans 38 storeys with 231 service apartment units, 27 SAMM units and 14 retail lots, designed with a private lift lobby layout of just 8 units per floor. Note: this is based on an early-stage sales kit — detailed facilities plan, individual unit floor plans and pricing are not yet finalized in the available materials.",
@@ -7125,6 +7177,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "ascott-star-residence": {
   "source": "Developer sales kit (2026-07-30)",
   "developer": "Alpine Return Sdn Bhd",
+  "checked": "2026-07-30",
   "maintenanceFee": "RM0.65 psf including sinking fund",
   "maintenanceFeePsf": 0.65,
   "description": {
@@ -7289,6 +7342,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "eaton-residences": {
   "source": "Developer sales kit (2026-07-31)",
   "developer": "City View Ventures Sdn Bhd (A subsidiary of GSH Corporation Limited)",
+  "checked": "2026-07-31",
   "maintenanceFee": "RM0.65 psf",
   "maintenanceFeePsf": 0.65,
   "description": {
@@ -7476,6 +7530,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "pantai-sentral-park-enlace-suites-ii": {
   "source": "Developer sales kit (2026-08-12)",
   "developer": "IJM Land & Amona",
+  "checked": "2026-08-12",
   "description": {
    "en": "Enlace Suites II is the first serviced apartment within Pantai Sentral Park, a 58-acre integrated township embraced by a 200-acre forest reserve. Dubbed 'A New Forest City in the Heart of Kuala Lumpur', this development offers a harmonious blend of urban living and nature. It provides exceptional convenience and comfort, nestled amidst iconic landmarks and vibrant neighborhoods like Bangsar and Petaling Jaya, with seamless connectivity to major highways and public transportation."
   },
@@ -7626,6 +7681,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "conlay": {
   "source": "Developer sales kit (2026-08-13)",
   "developer": "Patsawan Properties Sdn. Bhd. (A joint venture between Eastern & Oriental Berhad and Mitsui Fudosan Group)",
+  "checked": "2026-08-13",
   "maintenanceFee": "RM0.80 psf (including sinking fund)",
   "maintenanceFeePsf": 0.8,
   "description": {
@@ -7710,6 +7766,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "atas-residences": {
   "source": "Developer sales kit (2026-08-20)",
   "developer": "Kaisar Maxim Sdn Bhd",
+  "checked": "2026-08-20",
   "maintenanceFee": "Estimate RM0.40psf including sinking fund",
   "maintenanceFeePsf": 0.4,
   "description": {
@@ -7917,6 +7974,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "divine-kl-city-centre": {
   "source": "Developer sales kit (2026-08-20)",
   "developer": "Chin Hin Group Property",
+  "checked": "2026-08-20",
   "maintenanceFee": "RM 0.68 psf",
   "maintenanceFeePsf": 0.68,
   "description": {
@@ -8099,6 +8157,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
  "m-aurora": {
   "source": "Developer sales kit (2026-08-21)",
   "developer": "Major Land Development Sdn Bhd (a wholly-owned subsidiary of Mah Sing Group Berhad)",
+  "checked": "2026-08-21",
   "maintenanceFee": "RM0.30 psf (indicative, excluding 10% sinking fund)",
   "maintenanceFeePsf": 0.3,
   "description": {
