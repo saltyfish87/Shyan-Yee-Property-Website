@@ -27,6 +27,12 @@
  */
 import fs from 'fs';
 import path from 'path';
+// @ts-ignore — no types shipped
+import * as OpenCC from 'opencc-js';
+// Traditional Chinese copies are produced from the Simplified ones at build time; OpenCC's twp
+// profile handles characters and everyday vocabulary (软件 → 軟體). ASCII, URLs and numbers pass through.
+const toHant: (t: string) => string = (OpenCC as any).Converter({ from: 'cn', to: 'twp' });
+const hantify = (v: any): any => typeof v === 'string' ? toHant(v) : Array.isArray(v) ? v.map(hantify) : v && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, hantify(x)])) : v;
 
 const ROOT = process.cwd();
 const SRC_DIR = path.join(ROOT, 'content', 'articles');
@@ -122,6 +128,9 @@ import type { BlogArticle } from '../types';
 export const GENERATED_ARTICLES: BlogArticle[] = ${JSON.stringify(en, null, 2)};
 
 export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = ${JSON.stringify(zh, null, 2)};
+
+/** Traditional Chinese, converted from the Simplified versions above at build time. */
+export const GENERATED_ZH_HANT_ARTICLES: Record<string, BlogArticle> = ${JSON.stringify(hantify(zh), null, 2)};
 `;
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, out, 'utf8');

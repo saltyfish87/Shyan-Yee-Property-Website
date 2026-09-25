@@ -2130,3 +2130,1069 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
     ]
   }
 };
+
+/** Traditional Chinese, converted from the Simplified versions above at build time. */
+export const GENERATED_ZH_HANT_ARTICLES: Record<string, BlogArticle> = {
+  "ayanna-bukit-jalil-review": {
+    "id": "ayanna-bukit-jalil-review",
+    "slug": "ayanna-bukit-jalil-review",
+    "title": "Ayanna 武吉加里爾評測：價格、戶型、優缺點",
+    "metaDescription": "Ayanna Resort Residences 評測：正鑫（Chin Hin）在武吉加里爾的永久地契住宅地契公寓，1,155 至 2,453 平方英尺，RM 753,000 起。戶型、管理費、優缺點。",
+    "summary": "Ayanna Resort Residences 位於武吉加里爾，4.9 英畝土地上兩座 42 層和 44 層大樓，共 824 個永久地契大戶型，最小 1,155 平方英尺。這篇評測講尺價、戶型、度假式設施、要接受的取捨，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Ayanna？\n\n**我的看法。** Ayanna 是我跟的武吉加里爾永久地契新盤裡，尺價最低的一個，大約 RM 639 一尺。最小單位 1,155 尺，沒有三房以下的，所以這棟是給要空間的家庭，不是給單身買小單位的人。永久地契、住宅地契，水電按住宅價算；1,000 尺的管理費大約每月 RM 270，是下面對比表裡最低的。代價是走不到車站：我量過，走到 Alam Sutera（斯里布特靈線）800 米，走到 Kinrara BK5 1.1 公里，以大馬的天氣，多數住戶還是會開車。824 個單位、每層 9 至 13 戶、每棟三部客梯，這是個足尺寸的大社群，不是安靜的小社群。決定之前，早上八點去電梯大堂站一下。\n\n- **適合：** 想在武吉加里爾用同樣的錢買到最大面積的家庭；要永久地契加住宅地契的買家；有兩輛或以上車的家庭。\n- **請三思：** 想步行到輕快鐵站的人；偏好小型低密度大樓的人。\n\n# Ayanna 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Chin Hin Group Property |\n| 地址 | Jalan Mas, Bukit Jalil, 58200 Kuala Lumpur |\n| 地契 | 永久地契，住宅地契 |\n| 土地面積 | 4.9 英畝 |\n| 樓數 / 樓層 | A 座 42 層，B 座 44 層 |\n| 總單位 | 824 戶（A 座 333；B 座 491） |\n| 每層單位 / 電梯 | A 座 9 戶，B 座 13 戶；3 部客梯 + 1 部服務電梯 |\n| 面積 | 1,155 至 2,453 平方英尺 |\n| 房間 | 3 房至 4 + 2 房 |\n| 車位 | 每單位 2 至 4 個，停車場共 9 層（LG 至 7 樓） |\n| 價格 | RM 753,000 起（尺價約 RM 639） |\n| 管理費 | 每平方英尺 RM 0.27（含儲備金） |\n| 預計完工 | 2027 年第二季（簽約後 48 個月） |\n\n# Ayanna 在哪裡？周邊有什麼？\n\n位於武吉加里爾 Jalan Mas，佔地 4.9 英畝。Alam Sutera 輕快鐵站約 1.5 公里，Kinrara BK5 約 2.5 公里，兩個都要開車或轉接駁，不能步行。開車可用武吉加里爾大道、KESAS、吉隆坡至芙蓉大道、MEX、LDP 和 NPE。\n\n周邊：Giant Kinrara（2.5 公里）、Pavilion Bukit Jalil（3.5 公里）、IOI Mall Puchong（6.3 公里）、Sunway Pyramid（7.5 公里）和 Mid Valley Megamall（8.9 公里）。學校院校有 SJK(C) 黎明華小（3.8 公里）、慈濟國際學校（3.9 公里）、國際醫藥大學 IMU（5.2 公里）、雙威大學（6.9 公里）、APU（8.2 公里）和泰萊大學（8.4 公里）。醫院：KPJ Kinrara（1.8 公里）、IMU Healthcare（5.2 公里）、雙威醫療中心（6 公里）和 Columbia Asia（6.9 公里）。武吉加里爾休閒公園約 4 公里。\n\n# 和武吉加里爾其他新盤比，Ayanna 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Ayanna** | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n| [Ren Residence](/projects/ren-residence) | 租賃 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | 租賃 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租賃 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n\nAyanna 的起價比 OAKA 低，但最小單位大很多，尺價差距就在這裡。和這一區另一個大戶型永久地契專案 Park Green 比，Ayanna 是省錢的選擇；Park Green 貴在樓小戶少，還有天橋直通 Pavilion Bukit Jalil。\n\n# Ayanna 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 | 佔全樓比例 |\n| :--- | :--- | :--- | :--- |\n| E | 1,155 至 1,189 平方英尺 | 3 房 2 浴 | 41% |\n| A | 1,365 至 1,400 平方英尺 | 4 房 2 浴 | 40% |\n| B | 1,679 至 1,697 平方英尺 | 4 + 1 房 2 浴 | 9% |\n| C | 1,859 至 1,879 平方英尺 | 4 + 2 房 3 + 1 浴 | 5% |\n| D | 2,316 至 2,453 平方英尺 | 4 + 2 房 3 + 1 浴 | 5% |\n\n**我會選哪個。** Type E 和 Type A 加起來佔全樓 81%，所以大部分買家其實是在這兩個之間選，而它們是兩種不同的家。1,155 至 1,189 平方英尺的 Type E 是入門：實實在在的三房，也是這裡進入永久地契加住宅地契最便宜的方式。1,365 至 1,400 平方英尺的 Type A 多一間房，價錢往上一檔，家庭人口會增加的我會推這個。B、C、D 三種加起來只佔 19%，最大到 2,453 平方英尺、4 + 2 房；如果你需要這麼大，記得問清楚它們在哪幾列——在一棟大樓裡，數量少的戶型通常最保值。\n\n# 設施\n\nAyanna 的核心是地面層 1.3 英畝的園林：互動水道、涼亭、健身區、體能訓練站、多代同樂遊樂區，以及專門的寵物區，內有狗狗敏捷訓練道和寵物沖洗區。1 樓有兩個羽球場和兒童活動室；4 樓健身房；5 樓遊戲室、共享辦公與閱讀室；6 樓宴會廳。9 樓是泳池層：泳道池、家庭池、帶戲水設施的兒童池、按摩池、疊水景觀、涼亭、開放草坪和花園。兩座樓頂都有空中燒烤平臺，分別在 40 樓和 42 樓。實用配置包括 EV 充電位、洗車區、包裹室和信件室、祈禱室，以及預留給幼兒園、洗衣店和便利店的空間。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 尺價約 RM 639，上面比較的永久地契新盤中最低 | 最近的輕快鐵站 1.5 公里，要開車或轉接駁 |\n| 永久地契加住宅地契：水電按家用費率 | 824 戶，每層 9 至 13 戶，每座 3 部客梯 |\n| 沒有三房以下的戶型；2 至 4 個車位 | 最小 1,155 平方英尺，入門就是家庭型大戶 |\n| 1.3 英畝園林，寵物友善，設狗狗敏捷訓練道 | 2027 年才完工 |\n\n# 怎樣預約看 Ayanna\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Ayanna 樓盤頁](/projects/ayanna)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Ayanna 資料頁](https://www.propertyportal.my/project/ayanna-res) 檢視。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1EdnmVYVGe4UQ_mAWSYppkiLkQClwbmT1=w1600",
+    "faqs": [
+      {
+        "question": "Ayanna 是永久地契還是租賃地契？",
+        "answer": "永久地契，住宅地契。Ayanna Resort Residences 由 Chin Hin Group Property 開發，位於武吉加里爾 Jalan Mas。"
+      },
+      {
+        "question": "Ayanna 起價多少？",
+        "answer": "RM 753,000 起，尺價約 RM 639。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Ayanna 有哪些面積？",
+        "answer": "從 1,155 平方英尺（3 房）到 2,453 平方英尺（4 + 2 房），按戶型配 2 至 4 個車位。"
+      },
+      {
+        "question": "Ayanna 一共有多少單位？",
+        "answer": "兩座共 824 戶。A 座 42 層，每層 9 戶；B 座 44 層，每層 13 戶。"
+      },
+      {
+        "question": "Ayanna 什麼時候完工？",
+        "answer": "2027 年第二季，建築期為買賣合約簽署後 48 個月。"
+      }
+    ],
+    "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "ayanna",
+      "oaka-residences",
+      "ren-residence",
+      "park-green-pavilion-bukit-jalil",
+      "queenswoodz"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "family",
+      "review"
+    ]
+  },
+  "branniganz-kl-city-centre-review": {
+    "id": "branniganz-kl-city-centre-review",
+    "slug": "branniganz-kl-city-centre-review",
+    "title": "Branniganz KL City Centre 評測：價格、戶型、優缺點",
+    "metaDescription": "Branniganz 評測：EXSIM 在 Lorong Yap Kwan Seng 的混合發展專案，490 個辦公套房加 269 個服務式套房，344 至 678 平方英尺，RM 803,500（毛價）起。",
+    "summary": "Branniganz 是 EXSIM 在吉隆坡市中心的雙翼專案，A 翼 490 個辦公套房，B 翼 269 個服務式套房，最小 344 平方英尺。這篇評測講價格、戶型、管理費、公開資料裡缺了什麼，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Branniganz？\n\n**我的看法。** Branniganz 是我手上進入吉隆坡市中心門檻最低的一個，總價 RM 803,500，但你要清楚這個價買到的是什麼。地點是真的：我量過，走到武吉免登單軌站 240 米、武吉免登 MRT 站 290 米，兩個都是走路，不用開車。不過這是雙翼樓——A 翼 490 個辦公套房，B 翼只有 269 個服務式套房，住宅其實是這個發展的少數。最小間隔 344 尺；這個尺寸買的是市區落腳點或者出租資產，不是可以住久的家。管理費 RM 1.21 一尺，1,000 尺大約每月 RM 1,210，發展商頭兩年補貼 RM 0.40 一尺，所以第三年起你的開銷會跳上去。問清楚單位在哪一翼，還有附不附停車位——我手上的資料沒有列明車位。\n\n- **適合：** 想用最低價拿到市中心地址的買家；想在 KL City Centre 附近持有小面積出租資產的業主；不需要車位的人。\n- **請三思：** 需要空間的人；一定要永久地契的人；想要純住宅大樓的人。\n\n# Branniganz 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Lembaran Beruntung Sdn Bhd（EXSIM） |\n| 地址 | Lorong Yap Kwan Seng, Bukit Kewangan, 50450 Kuala Lumpur |\n| 地契 | 租賃地契 |\n| 組成 | A 翼：490 個辦公套房；B 翼：269 個服務式套房 |\n| 總單位 | 759 |\n| 面積 | 344 至 678 平方英尺 |\n| 房間 | 1 至 2 房 |\n| 價格 | 毛價 RM 803,500 起 |\n| 管理費 | 每平方英尺 RM 1.21，發展商頭兩年補貼 RM 0.40 |\n| 車位 | 目前資料未列明，請向發展商確認 |\n| 預計完工 | 2028 年 |\n\n# Branniganz 在哪裡？周邊有什麼？\n\n位於吉隆坡市中心 Bukit Kewangan 的 Lorong Yap Kwan Seng。這和 EXSIM 的 Phoeniz Suites 是同一個地段範圍，開車到 KL City Centre、Suria Mall 和 Pavilion Kuala Lumpur 都很近，屬 CBD 和金三角。開車可用 AKLEH 大道；最近的軌道站視你往安邦路哪一邊走，是 Dang Wangi 或 Ampang Park。請向銷售團隊要這個地塊實測的步行距離——單位這麼小，這一點差別很實在。\n\n# 和 KL City Centre 周邊專案比，Branniganz 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Branniganz** | 租賃 | RM 803,500 | 344 至 678 平方英尺 | 759 | 每平方英尺 RM 1.21 | 2028 |\n| [Centrix The Station](/projects/centrix) | 租賃 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | 永久 | RM 1,016,400 | 484 至 678 平方英尺 | 394 | 每平方英尺 RM 1.21 | 2031 |\n| [Golden Crown](/projects/golden-crown) | 租賃 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n\n六個當中 Branniganz 入門價最低，單位也最小。我真正會拿給買家比的是 Centrix：多約 RM 10 萬，最小單位從 344 變成 571 平方英尺，月費從 RM 1.21 變成 RM 0.44，而且樓下就是輕快鐵站。如果預算真的只到 RM 80 萬，Branniganz 是市中心的選擇；如果還能加一點，先看 Centrix。\n\n# Branniganz 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A | 344 平方英尺 | 1 房 1 浴 |\n| B1 | 400 平方英尺 | 1 房 1 浴 |\n| B2 | 455 平方英尺 | 1 房 1 浴 |\n| C1 | 511 平方英尺 | 1 房 1 浴 |\n| C2 | 567 平方英尺 | 1 房 1 浴 |\n| C3 | 622 平方英尺 | 1 房 1 浴 |\n| D | 678 平方英尺 | 2 房 2 浴 |\n\n**我會選哪個。** 678 平方英尺的 Type D 是這裡唯一我會買來自住的戶型，因為它是唯一的兩房兩浴；在一棟以小套房為主的樓裡，稀少的那個戶型通常最保值。一房裡面，511 平方英尺的 C1 是\"開始像一間公寓而不是一個房間\"的分界線；再小的 A 和 B，比較適合當緊湊型出租單位來理解。不管選哪個，都要書面確認單位是在辦公套房那一翼還是服務式套房那一翼，因為這會影響整棟樓日常的使用狀況。\n\n# 設施\n\n我手上的資料裡，發展商還沒公佈完整的設施清單，所以我不猜著列。EXSIM 在附近那棟樓是把設施疊在高層，空中泳池和空中健身房靠近頂部，管理、禮賓和服務樓層在下面。請向銷售展廳索取 Branniganz 對應的圖，特別要問清楚：哪一翼可以用哪些設施。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 上面比較的 KL City Centre 專案中入門價最低 | 月費每平方英尺 RM 1.21，兩年補貼期過後會跳一級 |\n| CBD 和金三角內的市中心地址 | 最小 344 平方英尺；只有一個兩房戶型 |\n| 小面積單位在這一帶最容易出租 | 759 戶裡只有 269 戶是服務式套房，其餘是辦公套房 |\n| 2028 年完工，比附近的 Phoeniz Suites 早 | 目前資料未列車位配額；設施清單也未公佈 |\n\n# 怎樣預約看 Branniganz\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Branniganz 樓盤頁](/projects/branniganz)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Branniganz 資料頁](https://www.propertyportal.my/project/branniganz-exsim) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1QuDcLSm-vtaXzl_-XkHSY6I3haTxVy4U=w1600",
+    "faqs": [
+      {
+        "question": "Branniganz 是永久地契還是租賃地契？",
+        "answer": "租賃地契。由 EXSIM 旗下的 Lembaran Beruntung Sdn Bhd 開發，位於吉隆坡市中心 Lorong Yap Kwan Seng。"
+      },
+      {
+        "question": "Branniganz 起價多少？",
+        "answer": "毛價 RM 803,500 起。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Branniganz 由什麼組成？",
+        "answer": "兩翼共 759 個單位：A 翼 490 個辦公套房，B 翼 269 個服務式套房。"
+      },
+      {
+        "question": "Branniganz 有哪些面積？",
+        "answer": "344 至 678 平方英尺，最大的戶型是兩房。"
+      },
+      {
+        "question": "Branniganz 什麼時候完工？",
+        "answer": "按目前的專案資料是 2028 年。實際建築期請以買賣合約為準。"
+      }
+    ],
+    "relatedSlugs": [
+      "phoeniz-suites-kl-city-centre-review",
+      "centrix-the-station-kl-city-centre-review",
+      "clouthaus-kl-city-centre-review"
+    ],
+    "relatedProjectIds": [
+      "branniganz",
+      "phoeniz-suites-kl-city-centre",
+      "centrix",
+      "golden-crown",
+      "clouthaus"
+    ],
+    "tags": [
+      "kl city centre",
+      "leasehold",
+      "suites",
+      "review"
+    ]
+  },
+  "centrix-the-station-kl-city-centre-review": {
+    "id": "centrix-the-station-kl-city-centre-review",
+    "slug": "centrix-the-station-kl-city-centre-review",
+    "title": "Centrix The Station 評測：價格、戶型、優缺點",
+    "metaDescription": "Centrix The Station 評測：47 層 TOD 專案，直接建在 Dang Wangi 輕快鐵站之上，857 戶，571 至 1,187 平方英尺，RM 907,800 起。戶型、景觀、管理費、優缺點。",
+    "summary": "Centrix The Station 位於安邦路（Jalan Ampang），是一座直接建在 Dang Wangi 輕快鐵站上方的 47 層 TOD 專案。這篇評測講尺價、戶型、景觀、設施，以及誰該買、誰不該買。",
+    "content": "# 一句話結論：誰適合買 Centrix The Station？\n\n**我的看法。** Centrix 首先是一棟交通樓，其次才是景觀樓，而這兩樣都是真的。地庫直接連通 Dang Wangi 輕快鐵站，出電梯幾步就進站；再走一小段是 Bukit Nanas 單軌火車站，去 KL City Centre 兩站就到，開車去雙峰塔大約 5 分鐘。高樓層看出去就是我們行內講的四大天王：雙峰塔、吉隆坡塔、Merdeka 118 和 TRX 那一片；有些座向還看得到 KL Forest Eco Park 的綠。入場價也明顯低過隔幾條街的豪宅樓，這是我會拿出來講的主要原因。我在影片裡講它適合三種人：在市中心上班、想把通勤時間省掉的；想要一個好脫手的市區單位的投資者；還有 MM2H 的外國買家。去看之前有一件事要知道：這是這個專案第三次推出市場，之前停過兩次。直接問銷售施工進度，然後自己到工地對一對。\n\n- **適合：** 在 KL City Centre 上班、想把通勤時間壓到最短的專業人士；想在市中心買流動性高的資產的投資者；包括 MM2H 在內、需要一個符合州屬門檻的市中心地址的外國買家。\n- **請三思：** 一定要永久地契的人；想要每層戶數少的低密度大樓的人。\n\n# 看房影片\n\n{{youtube:KyYFl2cz4Vw}}\n\n# Centrix 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Intan Sekitar Sdn Bhd（Crest Builder Berhad） |\n| 地址 | Jalan Ampang, 50450 Kuala Lumpur |\n| 地契 | 租賃地契，商業地契 |\n| 土地面積 | 2.39 英畝 |\n| 樓層 | 47 |\n| 總單位 | 857 |\n| 每層單位 | 按樓層段 14 至 21 戶；43 和 44 樓各 11 戶 |\n| 電梯 | 共 11 部：低區 5 部，高區 5 部加 1 部服務電梯 |\n| 面積 | 571 至 1,187 平方英尺 |\n| 戶型 | 套間、大套間、1 房、1 房 + 書房、雙鑰匙 |\n| 價格 | RM 907,800 起（毛尺價約 RM 1,600 至 RM 1,850） |\n| 管理費 | 每平方英尺 RM 0.44（管理費 RM 0.40 + 儲備金 RM 0.04） |\n| 預計完工 | 2028 年 |\n\n# Centrix 在哪裡？步行可到什麼？\n\n位於安邦路（Jalan Ampang）與蘇丹依斯邁路（Jalan Sultan Ismail）交界，直接建在 Dang Wangi 輕快鐵站（KJ12）上方。Bukit Nanas 單軌火車站步行可到，等於一個地址接通兩條軌道線。\n\n周邊：KL Forest Eco Park 城市森林公園、Quill City Mall、Life Centre、Saloma 行人橋、Avenue K、Suria Mall 和國油雙子塔、吉隆坡塔、Pavilion Kuala Lumpur、Merdeka 118 和 The Exchange TRX。學校有 St John International、Primrose Hill International 和 Eton International。醫院：KPJ Sentosa、Prince Court 醫療中心和 HSC 醫療中心。\n\n# 和 KL City Centre 周邊專案比，Centrix 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Centrix The Station** | 租賃 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [Branniganz](/projects/branniganz) | 租賃 | RM 803,500 | 344 至 678 平方英尺 | 759 | 每平方英尺 RM 1.21 | 2028 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | 永久 | RM 1,016,400 | 484 至 678 平方英尺 | 394 | 每平方英尺 RM 1.21 | 2031 |\n| [Golden Crown](/projects/golden-crown) | 租賃 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n\n這一組裡 Centrix 的月費最低，而且低很多；入門價在偏低的一半，面積又比 Branniganz 和 Phoeniz 大。它比不過 CloutHaus 和 Orion 的地方是地契和稀缺性：857 戶、每層最多 21 戶，是一棟人多的樓。\n\n# Centrix 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| 套間 | 571 至 659 平方英尺 | 套間 |\n| 1 房 / 1 房 + 書房 | 578 至 871 平方英尺 | 1 房 |\n| 大套間 | 752 至 855 平方英尺 | 套間 |\n| 雙鑰匙 | 593 至 777 平方英尺 | 兩邊可獨立上鎖 |\n| 雙鑰匙（大） | 891 平方英尺以上 | 兩邊可獨立上鎖 |\n\n**我會選哪個。** 我拍的是 800 多平方英尺的雙鑰匙，也是我會選的那個。它分成兩邊，各約 400 平方英尺，共用一個玄關但各有自己的門、浴室和小廚房。東西全部附送：衣櫥、廚櫃、家電、床，地磚用的是 2 尺乘 4 尺的大片磚，看起來更大氣。可以自己住一邊、另一邊當工作室，或者留給家人。如果你只需要一個門口，578 至 871 平方英尺的一房加書房是自住最實際的選擇。選樓層之前，先問哪幾列朝雙子塔、哪幾列朝森林公園。\n\n# 設施\n\n設施在兩個平臺層，10 樓和 45 樓。泳池層有 Aqua Sonata 泳道池（16 米 x 4.5 米，深 1.2 米）和兒童池（5.5 米 x 4.5 米，深 600 毫米），配涼亭和日光平臺。工作與社交區有靈活會議室、全配套辦公位、專屬休息室、遊戲室、閱讀室和共享廚房。園林貫穿整個專案：疊水、霧境角落、步道、林冠走道、小草坪、鞦韆和遊樂區。頂層有空中健身房、空中休息室、燒烤花園和觀景平臺。底層是零售店和主大堂。\n\n銷售團隊另外提過有代管服務的選項。這一項不在我手上的書面規格里，所以在你把它算進預算之前，請要他們書面確認。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 直接建在 Dang Wangi 輕快鐵站上方，單軌站也在步行範圍 | 租賃地契加商業地契：水電費率請確認 |\n| 每平方英尺 RM 0.44，是上面比較的 KL City Centre 專案中最低 | 857 戶，每層最多 21 戶 |\n| 入門價低過附近的豪宅專案 | 專案三次推出市場，施工進度要問清楚 |\n| 可看雙子塔、吉隆坡塔、Merdeka 118 和森林公園 | 以套間和一房為主，適合家庭的選擇不多 |\n\n# 怎樣預約看 Centrix The Station\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Centrix 樓盤頁](/projects/centrix)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Centrix 資料頁](https://www.propertyportal.my/project/centrix) 檢視。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1MY5YTmBIm4WE2ge52ikODy_gKU1Xflcs=w1600",
+    "faqs": [
+      {
+        "question": "Centrix The Station 是永久地契還是租賃地契？",
+        "answer": "租賃地契，商業地契。由 Crest Builder Berhad 旗下的 Intan Sekitar Sdn Bhd 開發。"
+      },
+      {
+        "question": "Centrix 有連線輕快鐵嗎？",
+        "answer": "有。它是建在 Dang Wangi 輕快鐵站（KJ12）上方的 TOD 專案，Bukit Nanas 單軌火車站也在步行範圍內。"
+      },
+      {
+        "question": "Centrix 起價多少？",
+        "answer": "RM 907,800 起，毛尺價約 RM 1,600 至 RM 1,850。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Centrix 有哪些面積？",
+        "answer": "從 571 平方英尺的套間到 1,187 平方英尺，包括大套間、一房和雙鑰匙戶型。"
+      },
+      {
+        "question": "Centrix 什麼時候完工？",
+        "answer": "發展商目標是 2028 年。按最新進度，打樁已完成，上層結構做到 3 樓。"
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-kl-city-centre-review",
+      "golden-crown-trx-review",
+      "foreigner-buying-property-in-malaysia"
+    ],
+    "relatedProjectIds": [
+      "centrix",
+      "clouthaus",
+      "golden-crown",
+      "phoeniz-suites-kl-city-centre",
+      "branniganz"
+    ],
+    "tags": [
+      "kl city centre",
+      "tod",
+      "lrt",
+      "review"
+    ]
+  },
+  "clouthaus-kl-city-centre-review": {
+    "id": "clouthaus-kl-city-centre-review",
+    "slug": "clouthaus-kl-city-centre-review",
+    "title": "CloutHaus 格拉豪斯 KL City Centre 評測：價格、戶型、優缺點（持牌經紀實地看房）",
+    "metaDescription": "CloutHaus 格拉豪斯評測：吉隆坡雙子塔正對面的永久地契住宅，RM 150 萬起。戶型、設施、管理費、優缺點，以及適合什麼買家。",
+    "summary": "CloutHaus 格拉豪斯位於 Jalan P. Ramlee，是正對國油雙子塔的永久地契 66 層雙塔住宅。這篇評測講價格、18 種戶型、設施、要接受的取捨，以及誰該買、誰不該買。",
+    "content": "# 一句話結論：誰適合買 CloutHaus，誰不適合\n\n**我的看法。** 我跟買家講的和我在影片裡講的一樣：正對雙峰塔的地已經幾乎沒有了，CloutHaus 就坐在最後幾塊正對面的永久地契地上——從這裡走三十步就到 KL City Centre。我拍過的每一間樣板房都是落地窗，從地到頂，雙峰塔整個填滿那扇窗，晚上的夜景才是大家記得的那部分。整個專案 615 個單位、66 層、10 部高速電梯，旁邊那棟是 TA Global 自己的 Paradox 酒店。我會叫買家先看 1,098 尺的雙鑰匙間隔：兩邊各有自己的門、廚房和浴室，你可以住一邊、租一邊。尺價大約 RM 2,900，低過我看到 KL City Centre 一帶其他新盤開的 RM 3,000 到 RM 3,500，這就是為什麼我說這個地址這個價算好。如果你要的不是這個景和這個地址，同樣的預算在黃金三角以外可以買大很多的房子。\n\n- **適合：** 想要 KL City Centre 永久地契地址的買家；看重酒店式服務（Paradox Hotel Kuala Lumpur）的業主；需要超過 RM 100 萬門檻、又想買市中心資產的外國買家。\n- **請三思：** 預算有限、又需要三間大房的家庭；不喜歡每月管理費偏高的人。\n\n# 看房影片\n\n{{youtube:Xya5mG87R-Q}}\n\n# CloutHaus 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | TA First Credit Sdn Bhd（TA Global） |\n| 地址 | Jalan P. Ramlee, 50250 Kuala Lumpur |\n| 地契 | 永久地契，商業地契 |\n| 土地面積 | 2.259 英畝 |\n| 樓數 / 樓層 | 共用平臺上的兩座塔樓，66 層 |\n| 總單位 | 615 |\n| 每層單位 | 9 至 13 戶 |\n| 電梯 | 9 部 + 1 部服務電梯 |\n| 面積 | 549 至 1,216 平方英尺 |\n| 房間 | 1 至 3 房（有雙鑰匙和花園單位） |\n| 價格 | RM 150 萬起 |\n| 管理費 | 每平方英尺 RM 0.80（含儲備金） |\n| 預計完工 | 2029 年（簽約後 54 個月） |\n\n# CloutHaus 在哪裡？周邊有什麼？\n\nCloutHaus 位於 Jalan P. Ramlee，正對國油雙子塔。Saloma 行人橋、Avenue K、Suria Mall、The LINC KL 和 KL City Centre 公園都在旁邊；Pavilion KL 和武吉免登開車很近。Prince Court 醫療中心、Gleneagles 醫院和吉隆坡國際學校（ISKL）都在市中心常見的生活圈內。\n\n# 和市中心其他新盤比，價格如何？\n\n| 專案 | 區域 | 地契 | 起價 | 面積 | 單位數 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **CloutHaus** | KL City Centre | 永久 | RM 150 萬 | 549 至 1,216 平方英尺 | 615 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 武吉免登 | 永久 | RM 158 萬 | 491 至 1,329 平方英尺 | 298 | 已完工 |\n| [Pavilion Square](/projects/pavilion-square-residences) | 武吉免登 | 租賃 | RM 170 萬 | 504 至 1,272 平方英尺 | 960 | 2029 |\n| [Core Residence @ TRX](/projects/core-residence-trx) | TRX | 永久 | RM 150 萬 | 622 至 1,572 平方英尺 | 700 | 已完工 |\n\n四個專案的入門價差不多，差別在於同樣的錢買到什麼：CloutHaus 和 Orion 賣的是永久地契地址，單位較小；Core TRX 面積更大；Pavilion Square 用租賃地契換來直通 Pavilion KL 的天橋。\n\n# CloutHaus 哪個戶型最好？\n\n一共 18 種戶型，重點是這幾種：\n\n| 戶型 | 面積 | 房間 | 備註 |\n| :--- | :--- | :--- | :--- |\n| C / D / E / F | 549 平方英尺 | 1 房 | 入門單位 |\n| K | 635 平方英尺 | 1 房 | 較大的 1 房 |\n| N（雙鑰匙） | 893 平方英尺 | 1 房 + 套間 | 兩個入口 |\n| G / H | 904 平方英尺 | 2 房 | 有花園單位版本 |\n| L / L1 | 980 至 990 平方英尺 | 2 房 | |\n| J / B / M（雙鑰匙） | 1,001 至 1,173 平方英尺 | 雙鑰匙 | |\n| I | 1,119 平方英尺 | 3 房 | 有花園單位版本 |\n| A | 1,216 平方英尺 | 3 房 | 最大 |\n\n**我會選哪個。** 我選來拍的是雙鑰匙單位，這種設計近年在高階專案裡很受歡迎：兩邊各自獨立，各有小廚房和浴室。樣板間把一邊做成客廳，另一邊做成臥室套房；給父母、成年子女或需要獨立出入的客人住也一樣合適。夫妻自住的話，我會從 904 平方英尺的 2 房（Type G 或 H）看起；549 平方英尺的單位我當作市中心的落腳點，不當作長期的家。\n\n# 設施\n\n設施分三層：33 樓（遊樂區、閱讀與家庭休息室、空中休息室、空中酒吧、卡拉 OK）、33A 樓（健身房與器械普拉提室、瑜伽與普拉提、遊戲與餐飲休息室、麻將房、高爾夫模擬器、音樂室）和 63A 樓（空中泳池、空中按摩池、休閒泳池、桑拿與蒸汽房、空中宴客廳、燒烤區、Clout Bar 和 DJ 臺）。酒店服務由 Paradox Hotel Kuala Lumpur 提供。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 永久地契，位於正對雙子塔的最後幾塊地皮之一 | 管理費每平方英尺 RM 0.80，偏高 |\n| Paradox Hotel Kuala Lumpur 提供酒店服務 | 入門單位小（549 平方英尺） |\n| 三層設施，包括 63A 樓空中泳池 | 商業地契：水電費率和門牌稅請向發展商確認 |\n| 每層 9 至 13 戶，配 9 + 1 部電梯 | 2029 年才完工，要等比較久 |\n\n# 常見問題\n\n請看文章下方的問答。\n\n# 怎樣預約看 CloutHaus\n\n需要最新價單、平面圖和預約銷售展廳，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。每個單位的完整規格在 [CloutHaus 樓盤頁](/projects/clouthaus)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 CloutHaus 資料頁](https://www.propertyportal.my/project/clouthaus-res) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/10tZk8SpaCnd7kVmcS_ytsQX-a9WVu299=w1600",
+    "faqs": [
+      {
+        "question": "CloutHaus 是永久地契嗎？",
+        "answer": "是。CloutHaus 為永久地契、商業地契，由 TA First Credit Sdn Bhd（TA Global）開發，位於吉隆坡 Jalan P. Ramlee。"
+      },
+      {
+        "question": "CloutHaus 起價多少？",
+        "answer": "RM 150 萬起。發展商價單每一期都會調整，決定之前請先索取最新價單。"
+      },
+      {
+        "question": "CloutHaus 什麼時候完工？",
+        "answer": "發展商目標是 2029 年，建築期為簽署買賣合約後 54 個月。"
+      },
+      {
+        "question": "CloutHaus 有哪些面積？",
+        "answer": "共 18 種戶型，從 549 平方英尺（1 房）到 1,216 平方英尺（3 房），包括雙鑰匙和花園單位。"
+      },
+      {
+        "question": "外國人可以買 CloutHaus 嗎？",
+        "answer": "可以。單位價格高於吉隆坡外國買家 RM 1,000,000 的最低購買門檻。"
+      }
+    ],
+    "relatedSlugs": [
+      "centrix-the-station-kl-city-centre-review",
+      "core-residence-trx-review",
+      "orion-residence-bukit-bintang-review",
+      "pavilion-square-kl-review",
+      "freehold-vs-leasehold",
+      "foreigner-buying-property-in-malaysia"
+    ],
+    "relatedProjectIds": [
+      "clouthaus",
+      "orion-residence",
+      "pavilion-square-residences",
+      "core-residence-trx"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded residence",
+      "review"
+    ]
+  },
+  "conlay-kl-city-centre-review": {
+    "id": "conlay-kl-city-centre-review",
+    "slug": "conlay-kl-city-centre-review",
+    "title": "Conlay 吉隆坡市中心評測：價格、戶型、優缺點",
+    "metaDescription": "Conlay 評測：E&O 與三井不動產在 Jalan Conlay 的永久地契專案，Kerry Hill Architects 設計，51 層 491 個單位，743 至 1,335 平方英尺，RM 1,460,000 起。",
+    "summary": "Conlay 是 Eastern & Oriental 與三井不動產在 Jalan Conlay 的永久地契大樓，由 Kerry Hill Architects 設計，491 個單位，最小 743 平方英尺，捷運站約 250 米。這篇評測講價格、面積、禮賓服務、量出來的距離，以及適合什麼買家。",
+    "content": "# 快速結論：誰該買 Conlay？\n\n**我的看法。** Conlay 是這條街上比較安靜的那一個。E&O 和三井不動產請了 Kerry Hill Architects——就是做 Aman 度假村那家——所以你拿到的不是又一棟整片玻璃的樓，而是豎鰭式的外立面，把景框起來，而不是把熱氣灌進房間。地段把其餘的事做完了：我量過，直線到 Conlay 捷運站約 250 米，一站就到 KL City Centre 和 TRX；到 Pavilion Kuala Lumpur 約 370 米，整條購物街走路就到。它跟市中心多數專案最不同的地方是入場面積。這裡沒有低過 743 尺的單位，51 層只有 491 戶，佔地大約一英畝，所以這不是一棟做小出租單位的樓。另一件要搞清楚的是服務水平：24 小時禮賓服務，幫你安排車、外送、快遞收件，甚至請廚師上門做一頓晚餐；單位裡面的小事，換毛巾、補洗漱用品、基本傢俱維修，也包在裡面。這就是 RM 0.80/尺的管理費在付的東西，1,000 尺大約每月 RM 800。而且它是永久地契——在市中心這一帶，這句話值得講兩次。\n\n- **適合：** 要一間現成的、有服務的市中心永久地契房子的；需要真正面積不是緊湊套房的家庭；看重設計和私隱多過設施數量的。\n- **要想清楚：** 你的預算去不到 RM 146 萬，或者你要的是市中心最小的那種單位。\n\n# 影片看房\n\n{{youtube:C0EZN_aLaKQ}}\n\n# Conlay 基本資料\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Patsawan Properties Sdn Bhd（Eastern & Oriental Berhad 與三井不動產集團） |\n| 建築師 | Kerry Hill Architects |\n| 地址 | Jalan Conlay, 吉隆坡市中心 |\n| 地契 | 永久地契 |\n| 型別 | 服務式公寓 |\n| 地皮 | 約 1.14 英畝 |\n| 樓層 | 51 層 |\n| 總單位 | 491 |\n| 面積 | 743 至 1,335 平方英尺 |\n| 房數 | 2 至 4 房 |\n| 價格 | RM 1,460,000 至 RM 8,780,000 |\n| 管理費 | 每平方英尺 RM 0.80，含償債基金（1,000 尺約每月 RM 800） |\n| 狀態 | 興建中；專案資料列的是 2025 年，請向發展商確認目前的交樓日期 |\n\n# Conlay 在哪裡？周邊有什麼？\n\n在 Jalan Conlay，金融區、大使館區、武吉免登購物帶、醫院和國際學校都在同幾個街區內。以下是從專案座標在 OpenStreetMap 上量的直線距離，實際走路一定比這個數字長。\n\n| 地點 | 直線距離 |\n| :--- | :--- |\n| PY22 Conlay 捷運站 | 0.25 公里 |\n| Pavilion Kuala Lumpur | 0.37 公里 |\n| Mercato 超市 | 0.40 公里 |\n| The Starhill | 0.50 公里 |\n| Pavilion Elite | 0.50 公里 |\n| KL City Centre 公園 | 0.51 公里 |\n| MR7 Raja Chulan 單軌火車站 | 0.64 公里 |\n| Prince Court 醫療中心 | 0.62 公里 |\n\n從 Conlay 站一站就到 KL City Centre East 和 TRX 轉換站，同一條線往南通往 Bandar Malaysia。Fahrenheit 88、Lot 10、Starhill Gallery 都可以走路到；吉隆坡國際學校（ISKL）和雪蘭莪皇家高爾夫球俱樂部也在附近。\n\n# Conlay 和市中心其他專案比起來怎樣？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 管理費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Conlay** | 永久地契 | RM 1,460,000 | 743 至 1,335 尺 | 491 | RM 0.80/尺 | 見上方狀態 |\n| [CloutHaus](/projects/clouthaus) | 永久地契 | RM 1,548,800 | 549 至 1,216 尺 | 615 | RM 0.80/尺 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久地契 | RM 1,580,000 | 491 至 1,329 尺 | 298 | RM 1.32/尺 | 2025 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | 永久地契 | RM 1,016,400 | 484 至 678 尺 | 394 | RM 1.21/尺 | 2031 |\n| [Golden Crown](/projects/golden-crown) | 租賃地契 | RM 1,200,000 | 624 至 1,023 尺 | 490 | RM 0.80/尺 | 2026 |\n| [Centrix The Station](/projects/centrix) | 租賃地契 | RM 907,000 | 571 至 1,187 尺 | 857 | RM 0.40/尺 | 2029 |\n\n六個裡面只有 Conlay 沒有低過 743 尺的單位。其他幾個的入場單位都是緊湊套房，所以它們的起價看起來和 Conlay 接近，面積卻不是。跟 CloutHaus 比是景觀對面積：CloutHaus 從 549 尺起就正對雙峰塔，Conlay 給你的是更大的房子和更安靜的一棟樓。跟 Orion 比是管理費：RM 0.80/尺 對 RM 1.32/尺，1,000 尺一個月差大約 RM 500。\n\n# Conlay 哪個戶型好？\n\n七個戶型，743 尺到 1,335 尺。下面是銷售資料上的戶型；價錢按座向和樓層不同，請索取最新價單。\n\n| 戶型 | 建築面積 | 房 | 浴室 |\n| :--- | :--- | :--- | :--- |\n| A1 | 743 尺 | 1 | 2 |\n| A2 | 904 尺 | 1 | 1 |\n| B1 | 743 尺 | 1+1 | 2 |\n| B2 | 840 尺 | 1+1 | 2 |\n| B3 | 980 尺 | 1+1 | 2 |\n| C | 1,206 尺 | 2 | 2 |\n| D | 1,335 尺 | 2+1 | 2 |\n\n**我在樣板房看到的。** 我拍的是 1,335 尺，最大的那個，做成兩房加一房。廚房是開放式的，石臺面，家電全套包括在內——冰箱、烤箱、微波爐、電磁爐和抽油煙機。值得看的是多出來的那一間：它直接連著浴室，所以可以當真正的第三間睡房，不是把書房算成一間房。陽臺是我會為這個戶型買單的地方——它沿著主臥、次臥和客廳一路過去，不是縮在某個角落；望出去是雪蘭莪皇家高爾夫球場，那片綠沒有人會去蓋。主臥裡有衣帽間，走進去燈會自己亮；浴室有浴缸、雙人洗手檯，熱水器包在內，還有一個你一靠近就會開啟的智慧馬桶。\n\n# 設施\n\n三層。11 樓是空中花園、恆溫泳池、健身房、瑜伽室、桑拿、按摩池、多功能休息廳、兒童遊戲室、圖書閱覽室、音樂室、多媒體室、桌球室和會議室。36 樓在更高的位置再來一套基本的：健身中心、桑拿房、泳池平臺、酒吧和兒童池。50 樓留給生活和餐飲商業空間。\n\n圖則上看不出來的是服務那部分。禮賓服務 24 小時，包括安排車輛、外送、每日包裹和快遞收件，還可以安排廚師上門做晚餐。進到單位裡面，還延伸到換毛巾、補洗漱用品和基本傢俱維修。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 吉隆坡市中心的永久地契 | 入場價 RM 146 萬，高過附近做緊湊套房的樓 |\n| 沒有低過 743 尺的單位；51 層只有 491 戶 | 專案資料上的交樓年份和施工狀態對不上 |\n| 直線到 Conlay 捷運站約 250 米、Pavilion KL 約 370 米 | 服務式公寓地契：水電收費請向發展商確認 |\n| Kerry Hill Architects 設計，24 小時禮賓加單位內服務 | 這個服務水平是每個月在付的，用不用都要付 |\n\n# 怎樣看 Conlay\n\nWhatsApp 聯絡 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取價單、圖則和安排看房。完整規格在 [Conlay 專案頁](/projects/conlay)。\n\n完整的戶型表、設施清單和周邊距離，可以看 [PropertyPortal 的 Conlay 資料頁](https://www.propertyportal.my/project/conlay)。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-24",
+    "updatedOn": "2026-09-24",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1XvCDyGAANqrSIeUuwHS23-yWRg47LlxT=w1600",
+    "faqs": [
+      {
+        "question": "Conlay 是永久地契還是租賃地契？",
+        "answer": "永久地契。由 Eastern & Oriental Berhad 與三井不動產集團合資的 Patsawan Properties Sdn Bhd 開發，位於 Jalan Conlay。"
+      },
+      {
+        "question": "Conlay 是誰設計的？",
+        "answer": "Kerry Hill Architects，也就是設計 Aman 與 Amanpuri 度假村的那家事務所。所以這棟樓是豎鰭加畫框式的外觀，不是整片玻璃。"
+      },
+      {
+        "question": "Conlay 起價多少？",
+        "answer": "RM 1,460,000 起，公開的價格區間去到 RM 8,780,000。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Conlay 離捷運站多遠？",
+        "answer": "從專案座標在 OpenStreetMap 上量，直線到布城線 Conlay 捷運站約 250 米，到 Pavilion Kuala Lumpur 約 370 米。"
+      },
+      {
+        "question": "Conlay 有多少個單位？",
+        "answer": "51 層共 491 個單位，佔地約 1.14 英畝，最小的戶型是 743 平方英尺。"
+      },
+      {
+        "question": "Conlay 的管理費多少？",
+        "answer": "每平方英尺 RM 0.80，已含償債基金；1,000 平方英尺的單位大約每月 RM 800。"
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review",
+      "centrix-the-station-kl-city-centre-review"
+    ],
+    "relatedProjectIds": [
+      "conlay",
+      "clouthaus",
+      "orion-residence",
+      "golden-crown",
+      "centrix"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
+      "review"
+    ]
+  },
+  "core-residence-trx-review": {
+    "id": "core-residence-trx-review",
+    "slug": "core-residence-trx-review",
+    "title": "Core Residence @ TRX 評測：價格、戶型、優缺點",
+    "metaDescription": "Core Residence TRX 評測：敦拉薩國際貿易中心內的永久地契住宅，直通捷運轉換站，700 戶，622 至 1,572 平方英尺，約 RM 144 萬起。",
+    "summary": "Core Residence @ TRX 位於敦拉薩國際貿易中心（TRX）內，由中國交建（CCCG）與 WCT 合資開發，700 戶永久地契住宅，已完工。這篇評測講三座塔樓的分別、尺價、戶型、設施，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Core Residence @ TRX？\n\n**我的看法。** 這次對比裡，Core Residence 是你今天就可以走進去看的那一個。已經建好、永久地契，而且就在敦拉薩國際貿易中心（TRX）裡面：我量過，走到 TRX 轉換站 440 米，兩條 MRT 線在那裡交匯，10 英畝的公園和 The Exchange 商場是這個專案的一部分，不是「附近有」。它還拿了 GBI 和 LEED 雙綠色認證，市區住宅樓拿到雙認證的很少。700 個單位裡，大部分在第一、第二棟——580 個一房兩房的小間隔，RM 150 萬起；第三棟只有 120 個大間隔，最高去到 RM 466 萬。1,000 尺的持有成本大約每月 RM 850。看價格表之前先想清楚你買的是哪一種產品，因為這兩種其實等於是共用一個地址的兩個專案。\n\n- **適合：** 想要 TRX 永久地契地址、又想馬上入住的買家；在金融區上班的人；需要用現成資產跨過 RM 100 萬門檻的外國買家。\n- **請三思：** 想要新盤那種分期付款安排的人；不想周邊有辦公樓和酒店、只要純住宅的人。\n\n# Core Residence 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | CORE Precious Development Sdn Bhd（中國交建 CCCG 與 WCT Holdings Berhad） |\n| 地址 | Tun Razak Exchange, Jalan Tun Razak, 55188 Kuala Lumpur |\n| 地契 | 永久地契，HDA 下的商業地契 |\n| 土地面積 | 1.65 英畝 |\n| 樓數 / 樓層 | 3 座，50 層 |\n| 總單位 | 700（1 號與 2 號塔 580；3 號塔 120） |\n| 每層單位 / 電梯 | 1 號塔 7 戶，2 號塔 8 戶；3 部電梯 + 1 部服務電梯 |\n| 面積 | 622 至 1,572 平方英尺 |\n| 房間 | 1 至 3 房 |\n| 價格 | 約 RM 144 萬至 RM 466 萬（尺價約 RM 2,171） |\n| 管理費 | 每平方英尺 RM 0.85（含儲備金） |\n| 綠色認證 | GBI 與 LEED |\n| 狀態 | 已完工（1、2 號塔 2024 年，3 號塔 2025 年） |\n\n# Core Residence 在哪裡？周邊有什麼？\n\n在敦拉薩國際貿易中心（TRX）內。TRX 是馬來西亞的國際金融區，總值 RM 400 億的發展總規劃，辦公樓租戶包括滙豐（HSBC）和保誠（Prudential）。捷運 1 號線與 2 號線的 TRX 轉換站直接連通，10 英畝的 TRX 中央公園就在專案所在的地塊群內。\n\n商場：TRX 內的 The Exchange 商場、Pavilion Kuala Lumpur（800 米）、Starhill Gallery、Fahrenheit 88、Lot 10 和 IKEA Cheras。醫療：Prince Court 醫療中心（900 米）、HSC 醫療中心和 Gleneagles。學校：EtonHouse 國際學校和吉隆坡國際學校 ISKL。休閒：雪蘭莪皇家高爾夫俱樂部（850 米）。開車：MEX、SMART 隧道、Jalan Tun Razak 和 Jalan Sultan Ismail。The Exchange 106 就在同一片地，國油雙子塔 1.8 公里。\n\n# 和附近專案比，Core Residence 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Core Residence @ TRX** | 永久 | RM 1,442,207 | 622 至 1,572 平方英尺 | 700 | 每平方英尺 RM 0.85 | 已完工 |\n| [Golden Crown](/projects/golden-crown) | 租賃 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [Centrix The Station](/projects/centrix) | 租賃 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n| [Pavilion Square](/projects/pavilion-square-residences) | 租賃 | RM 1,700,000 | 504 至 1,272 平方英尺 | 960 | 每平方英尺 RM 0.90 | 2029 |\n\n這一組裡已完工的永久地契只有 Core 和 Orion。Orion 走精品路線，只有 298 戶、有酒店式服務，月費高很多；Core 規模大、頂端戶型更大、月費更低。和隔壁的 Golden Crown 比，Core 是永久地契而且現成，Golden Crown 是租賃地契但入門價較低。\n\n# Core Residence 哪個戶型最好？\n\n1 號和 2 號塔是緊湊型單位：\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A1 | 624 平方英尺 | 1 房 1 浴 |\n| A2 | 688 平方英尺 | 1 + 1 房 1 浴 |\n| B1 | 817 平方英尺 | 2 房 2 浴 |\n| B2 / B2a | 839 平方英尺 | 2 房 2 浴 |\n| B3 | 925 平方英尺 | 2 + 1 房 2 浴 |\n| B4 | 1,011 平方英尺 | 2 房 2 浴 |\n| C1 | 1,022 平方英尺 | 3 房 2 浴 |\n\n3 號塔是 120 戶大戶型，面積約 1,029 至 1,572 平方英尺，價錢約 RM 201 萬至 RM 466 萬。\n\n**我會選哪個。** 1、2 號塔裡，自住我會選 925 平方英尺的 B3：兩房加一個雜物房、兩個浴室，價錢還沒到 TRX 變貴的那條線。624 平方英尺的 A1 是入門票，也是全樓最好轉手的單位。如果你要的是家庭住宅而不是市區落腳點，就直接看 3 號塔的大戶型，並且拿它和 CloutHaus、Orion 比較——到了那個預算，那兩個才是真正的對手。\n\n# 設施\n\n7 樓是家庭與社群層：宴會廳、閱讀室、室內遊樂場、戶外休息區、休閒園林和托兒中心。50 樓是空中層：空中泳池、淺水池、泳池平臺和空中健身房。專案內的酒店頂樓另有空中酒吧。走出大樓，住戶還有同一片地塊上的 10 英畝 TRX 中央公園和 The Exchange 商場。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 永久地契而且已完工：可以直接看實際單位 | 尺價約 RM 2,171，是上面比較中最高 |\n| 直接連線 TRX 捷運轉換站 | 商業地契：水電費率和門牌稅請確認 |\n| GBI 與 LEED 雙綠色認證 | 1、2 號塔以緊湊型一房兩房為主 |\n| 同一片地有 10 英畝中央公園和商場 | 三座樓共 700 戶，與辦公樓和酒店共用同一片地 |\n\n# 怎樣預約看 Core Residence @ TRX\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Core Residence @ TRX 樓盤頁](/projects/core-residence-trx)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Core Residence @ TRX 資料頁](https://www.propertyportal.my/project/core-trx) 檢視。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/13XbMaagXXczrYR5zOxhRmYUIRV7fa-4w=w1600",
+    "faqs": [
+      {
+        "question": "Core Residence @ TRX 是永久地契嗎？",
+        "answer": "是。永久地契，屬房屋發展法令（HDA）下的商業地契，由 CORE Precious Development Sdn Bhd 開發，是中國交建（CCCG）與 WCT Holdings Berhad 的合資公司。"
+      },
+      {
+        "question": "Core Residence 完工了嗎？",
+        "answer": "完工了。1 號和 2 號塔目標 2024 年 9 月完工，3 號塔 2025 年第三季，所以這是現成的樓，不是新盤。"
+      },
+      {
+        "question": "Core Residence @ TRX 起價多少？",
+        "answer": "約 RM 144 萬起，尺價約 RM 2,171。3 號塔的單位更貴，最高約 RM 466 萬。"
+      },
+      {
+        "question": "Core Residence 的交通如何？",
+        "answer": "它位於敦拉薩國際貿易中心（TRX）內，直接連線 TRX 捷運轉換站，該站服務捷運 1 號線與 2 號線。"
+      },
+      {
+        "question": "外國人可以買 Core Residence @ TRX 嗎？",
+        "answer": "可以。價格高於吉隆坡外國買家 RM 1,000,000 的最低購買門檻。"
+      }
+    ],
+    "relatedSlugs": [
+      "golden-crown-trx-review",
+      "clouthaus-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "core-residence-trx",
+      "golden-crown",
+      "clouthaus",
+      "orion-residence",
+      "pavilion-square-residences"
+    ],
+    "tags": [
+      "trx",
+      "freehold",
+      "completed",
+      "review"
+    ]
+  },
+  "golden-crown-trx-review": {
+    "id": "golden-crown-trx-review",
+    "slug": "golden-crown-trx-review",
+    "title": "Golden Crown TRX 評測：價格、戶型、優缺點",
+    "metaDescription": "Golden Crown Residence 評測：TRX 隔壁的 60 層大樓，地庫隧道直通 TRX 捷運轉換站，490 戶，624 至 1,238 平方英尺，RM 1,280,000 起。",
+    "summary": "Golden Crown Residence 位於 Jalan Tun Razak，緊鄰敦拉薩國際貿易中心（TRX），地庫有隧道直通 TRX 捷運轉換站。這篇評測講價格、戶型、頂樓設施、要接受的取捨，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Golden Crown？\n\n**我的看法。** Golden Crown 最強的是那條隧道。從地庫走地下通道就進 TRX MRT 轉換站——我量過 110 米——也直通 The Exchange TRX 商場。在這個城市，下雨天最後那 200 米決定你到底會不會常坐地鐵，這件事比多數買家想的重要。490 個住宅單位在 Menara Golden Eagle 裡面，這棟混合發展還有酒店和辦公樓；這也是這次對比裡唯一 2026 年完工的新盤，所以你買的不是紙上的圖。價格反映了這些，大約 RM 2,051 一尺，1,000 尺的持有成本大約每月 RM 800，地契是租賃地契——這一帶一貫的取捨。如果你在意私隱，籤之前先問住宅電梯和大堂怎樣和酒店、辦公樓層分開。\n\n- **適合：** 在 TRX 或金三角上班、想有蓋走到捷運站的買家；想要現成大樓、不想等四年的人；想在市中心買 2 + 1 房或三房的買家。\n- **請三思：** 一定要永久地契的人；不想和酒店、辦公樓共用同一個地址的人。\n\n# Golden Crown 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Multibay Development Sdn Bhd（Golden Eagle） |\n| 地址 | Jalan Tun Razak，緊鄰 Tun Razak Exchange，吉隆坡 |\n| 地契 | 租賃地契，商業地契 |\n| 土地面積 | 2.033 英畝 |\n| 樓層 | 60 |\n| 總單位 | 490 |\n| 每層單位 / 電梯 | 10 至 11 戶；4 部客梯 + 1 部服務電梯 |\n| 面積 | 624 至 1,238 平方英尺 |\n| 房間 | 1 至 3 房 |\n| 價格 | RM 1,280,000 至 RM 3,031,000（尺價約 RM 2,051） |\n| 管理費 | 每平方英尺約 RM 0.80 |\n| 所屬專案 | Menara Golden Eagle：住宅、酒店與辦公樓 |\n| 預計完工 | 2026 年 8 月（簽約後 36 個月） |\n\n# Golden Crown 在哪裡？步行可到什麼？\n\n位於 Jalan Tun Razak，就在敦拉薩國際貿易中心（TRX）旁邊。捷運 1 號線與 2 號線的轉換站距離 50 米，有地庫隧道直通；10 英畝的 TRX 公園同樣 50 米。\n\n商場：The Exchange TRX（50 米）、IKEA 和 MyTown（800 米）、Berjaya Times Square（900 米）、Pavilion Kuala Lumpur、Starhill Gallery 和 Lot 10（1 公里）、Suria Mall（1.8 公里）。醫療：Prince Court 醫療中心（600 米）、同善醫院（800 米）、HSC 醫療中心（2 公里）。學校：EtonHouse 國際學校（1 公里）、循人中學（1.8 公里）、吉隆坡國際學校 ISKL（2.3 公里）。休閒：雪蘭莪皇家高爾夫俱樂部（550 米）和 KL City Centre 公園（1.3 公里）。開車：Jalan Tun Razak、SMART 隧道、MEX 和 SPE。\n\n# 和附近專案比，Golden Crown 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Golden Crown** | 租賃 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [Core Residence @ TRX](/projects/core-residence-trx) | 永久 | RM 1,442,207 | 622 至 1,572 平方英尺 | 700 | 每平方英尺 RM 0.85 | 已完工 |\n| [Centrix The Station](/projects/centrix) | 租賃 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Pavilion Square](/projects/pavilion-square-residences) | 租賃 | RM 1,700,000 | 504 至 1,272 平方英尺 | 960 | 每平方英尺 RM 0.90 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n\n最直接的對手是 Core Residence @ TRX：兩個都在 TRX，都接同一個捷運轉換站。Core 是永久地契、已完工，頂端戶型更大；Golden Crown 是租賃地契，起價較低，今年完工。和 Centrix 比，Golden Crown 更貴、地段更核心；Centrix 入門價更低，月費也低很多。\n\n# Golden Crown 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A1 | 624 平方英尺 | 1 房 1 浴 |\n| A2（陽臺） | 732 平方英尺 | 1 房 1 浴 |\n| B1 / B2 | 926 平方英尺 | 2 + 1 房 2 浴 |\n| B3 | 958 平方英尺 | 2 + 1 房 2 浴 |\n| C（雙鑰匙） | 1,023 平方英尺 | 2 + 1 房 2 浴 |\n| D | 1,238 平方英尺 | 3 房 2 浴 |\n\n**我會選哪個。** 自住的話，926 至 958 平方英尺的 B 系列是合理的中間選擇：兩房加一個可當書房的雜物房、兩個浴室，面積也夠，客飯廳不會像酒店套房。一房的話，732 平方英尺的 A2 值得比 A1 多付一點，因為那個陽臺就是\"市區公寓\"和\"一個盒子\"的分別。1,023 平方英尺的 Type C 雙鑰匙適合要給父母或成年子女一個獨立大門的業主；1,238 平方英尺的 Type D 是全樓唯一真正的三房。\n\n# 設施\n\n設施在樓頂和街面兩處。58 樓：祈禱室、圖書室、健身房、多功能室，以及遊戲與影音室。59 樓：無邊際泳池、淺水池、泳池平臺、燒烤露臺、兒童遊樂場和更衣室。地面層：禮賓臺、24 小時保安、大堂、零售店、幼兒園、管理處和信件室。地庫一層有更多零售店，以及通往 TRX 捷運轉換站的隧道。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 地庫隧道直通 TRX 捷運轉換站和 The Exchange TRX | 租賃地契加商業地契：水電費率請確認 |\n| 2026 年完工，是上面比較中最早的 | 尺價約 RM 2,051，高過 Centrix 和 Core TRX |\n| 490 戶，每層 10 至 11 戶 | 和酒店、辦公樓共用同一個發展專案 |\n| 10 英畝 TRX 公園就在 50 米外 | 真正的三房只有一個戶型 |\n\n# 怎樣預約看 Golden Crown\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Golden Crown 樓盤頁](/projects/golden-crown)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Golden Crown 資料頁](https://www.propertyportal.my/project/golden-crown) 檢視。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1yH8boDRs4uKXH35ZlmOdet_7Crovvvp_=w1600",
+    "faqs": [
+      {
+        "question": "Golden Crown 是永久地契還是租賃地契？",
+        "answer": "租賃地契，商業地契。由 Golden Eagle 旗下的 Multibay Development Sdn Bhd 開發。"
+      },
+      {
+        "question": "Golden Crown 有連線 TRX 捷運站嗎？",
+        "answer": "有。地庫層有隧道通往捷運 1 號線與 2 號線的 TRX 轉換站，以及 The Exchange TRX 商場。"
+      },
+      {
+        "question": "Golden Crown 起價多少？",
+        "answer": "RM 1,280,000 起，尺價約 RM 2,051。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Golden Crown 一共有多少單位？",
+        "answer": "60 層大樓共 490 戶，每層 10 至 11 戶，配 4 部客梯和 1 部服務電梯。"
+      },
+      {
+        "question": "Golden Crown 什麼時候完工？",
+        "answer": "發展商目標是 2026 年 8 月，建築期為買賣合約簽署後 36 個月。"
+      }
+    ],
+    "relatedSlugs": [
+      "core-residence-trx-review",
+      "centrix-the-station-kl-city-centre-review",
+      "clouthaus-kl-city-centre-review"
+    ],
+    "relatedProjectIds": [
+      "golden-crown",
+      "core-residence-trx",
+      "centrix",
+      "clouthaus",
+      "pavilion-square-residences"
+    ],
+    "tags": [
+      "trx",
+      "kl city centre",
+      "mrt",
+      "review"
+    ]
+  },
+  "jewel-by-oxley-kl-city-centre-review": {
+    "id": "jewel-by-oxley-kl-city-centre-review",
+    "slug": "jewel-by-oxley-kl-city-centre-review",
+    "title": "Jewel by Oxley 吉隆坡市中心評測：價格、戶型、優缺點",
+    "metaDescription": "Jewel by Oxley 評測：Oxley Towers 三棟之一，Jalan Ampang 上的 49 層永久地契住宅，267 個單位，678 至 2,185 平方英尺，尺價約 RM 2,295 起（毛價），同棟樓將進駐 The Langham 酒店。",
+    "summary": "Jewel by Oxley 是 Jalan Ampang 上 Oxley Towers 三棟裡密度最低的那一棟 —— 49 層 267 個永久地契單位，走路就到雙峰塔，同棟樓還會有酒店。這篇評測講價格、十個戶型、車位規則，以及適合什麼買家。",
+    "content": "# 快速結論：誰該買 Jewel by Oxley？\n\n**我的看法。** Oxley Towers 是同一塊地上的三棟樓，Jewel 是安靜的那一棟。Sofitel KL Residence 78 層；Alliance Tower 是甲級辦公樓；Jewel 49 層、只有 267 戶，是三棟裡密度最低的，這也是我會看它的原因。地段不用推銷 —— 我量過，直線到 Ampang Park 輕快鐵站約 300 米，到雙峰塔旁的車站約 350 米，Suria、Avenue K 和 50 英畝的 KL City Centre 公園都在同一段路上。永久地契，商業地契，在 HDA 之下。旁邊那棟辦公樓比買家想的重要：在裡面上班的人，就是會租「走得到公司」的房子的人，所以租客需求就在同一個發展專案裡。有兩件事要查。**公開的價格區間是整個 Oxley Towers 的，不是單算 Jewel**，所以要特別索取 Jewel 的價單。另外**專案資料上的交樓日期已經過了** —— 去工地看一趟，再向發展商拿書面的最新日期。\n\n- **適合：** 要市中心永久地契、又要低密度大樓的；想要一個緊鄰甲級辦公樓的出租資產的；喜歡樓下有酒店和商場的。\n- **要想清楚：** 你要的是進市中心最便宜的那一種，或者你現在就需要一個確定的交樓日期。\n\n# 影片看房\n\n{{youtube:XBp7M_uMoNw}}\n\n# Jewel by Oxley 基本資料\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Oxley Risings Sdn Bhd |\n| 建築設計 | VERITAS Design Group |\n| 地址 | Lot 99, Jalan Ampang, Seksyen 58, 50450 吉隆坡 |\n| 地契 | 永久地契；商業地契，在 HDA 之下 |\n| 地皮 | 3.11 英畝（整個 Oxley Towers） |\n| 樓層 | 49 層 |\n| 總單位 | 267 |\n| 每層戶數／電梯 | 32 樓 6 戶、15 樓 9 戶、31 樓 10 戶、10–14 及 16–30 樓每層 11 戶；6 部客梯 + 2 部服務梯 |\n| 面積 | 678 至 2,185 平方英尺 |\n| 房數 | 1 房至 3+1 房 |\n| 價格 | 尺價約 RM 2,295 起（毛價）。公開的 RM 1,572,000 至 RM 3,400,000 區間是整個 Oxley Towers 的，不是單算 Jewel |\n| 管理費 | 每平方英尺約 RM 0.66，含償債基金（1,000 尺約每月 RM 660） |\n| 車位 | 每單位一個；但名單上的一批 Type B1（27 樓以下）沒有車位 |\n| 綠色認證 | BCA Green Mark |\n| 狀態 | 興建中；資料列的是 2025 年，請確認目前的交樓日期 |\n\n# Jewel by Oxley 在哪裡？周邊有什麼？\n\n在 Jalan Ampang，雙峰塔旁邊。以下是從專案座標對 OpenStreetMap 的車站資料量出來的直線距離，實際走路一定比這個數字長。\n\n| 地點 | 直線距離 |\n| :--- | :--- |\n| KJ9 Ampang Park（格拉那再也線） | 0.30 公里 |\n| 雙峰塔旁的車站（布城線） | 0.31 公里 |\n| PY20 Ampang Park（布城線） | 0.32 公里 |\n| 雙峰塔旁的車站（格拉那再也線） | 0.35 公里 |\n| PY22 Conlay | 0.96 公里 |\n\nSuria KL City Centre 和 Avenue K 走路就到，Pavilion Kuala Lumpur 約 1.4 公里，吉隆坡會展中心約 800 米，50 英畝的 KL City Centre 公園就在對面。醫療方面：Twin Towers Medical Centre 在隔鄰，HSC 約 1 公里，Prince Court 約 1.8 公里。KL Sentral 約 5.2 公里；AKLEH、DUKE、MEX 高速都在這一帶進出。\n\n# Jewel by Oxley 和市中心其他專案比起來怎樣？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 管理費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Jewel by Oxley** | 永久地契 | 尺價約 RM 2,295 | 678 至 2,185 尺 | 267 | RM 0.66/尺 | 請向發展商確認 |\n| [CloutHaus](/projects/clouthaus) | 永久地契 | RM 1,548,800 | 549 至 1,216 尺 | 615 | RM 0.80/尺 | 2029 |\n| [Conlay](/projects/conlay) | 永久地契 | RM 1,460,000 | 743 至 1,335 尺 | 491 | RM 0.80/尺 | 請向發展商確認 |\n| [Orion Residence](/projects/orion-residence) | 永久地契 | RM 1,580,000 | 491 至 1,329 尺 | 298 | RM 1.32/尺 | 2025 |\n| [Golden Crown](/projects/golden-crown) | 租賃地契 | RM 1,200,000 | 624 至 1,023 尺 | 490 | RM 0.80/尺 | 2026 |\n\n有兩個數字突出。Jewel 的管理費是五個裡面最低的，每尺 RM 0.66；面積也做到最大的 2,185 尺 —— 其他幾個都沒有超過 1,335 尺。跟單位數最接近的 Orion 比，1,000 尺的月費大約是 RM 660 對 RM 1,320，一年差大約 RM 8,000。\n\n# Jewel by Oxley 哪個戶型好？\n\n十個戶型。下面是銷售資料上的戶型和麵積；價錢按座向和樓層不同，請索取最新價單。\n\n| 戶型 | 建築面積 |\n| :--- | :--- |\n| B1 | 678 尺 |\n| B3 | 754 尺 |\n| B2 | 775 尺 |\n| B4 | 818 尺 |\n| C1 | 958 尺 |\n| C2 | 980 尺 |\n| B5 | 1,033 尺 |\n| D2 | 1,173 尺 |\n| D1 | 1,227 尺 |\n| E1 | 2,185 尺 |\n\n**我在樣板房看到的。** 我拍了三間。**D1 1,227 尺是雙鑰匙**：一個玄關兩道門，一邊單間、一邊一房加一房，所以大的那一半房間對這個總面積來說特別大。**B5 1,033 尺是一房加一房**，有獨立洗衣間和一小塊多用途空間，單身或者小情侶我會先給他們看這一間。**D2 1,173 尺是兩房加一房**，飯廳放得下六人桌，主臥浴室有雙洗手檯和浴缸。三間都是精裝修 —— 廚房、家電、冷氣、傢俱都在配套裡 —— 而浴室是我會叫你親自去看的細節：比這個尺數該有的大很多，而且都是落地窗。\n\n選單位的時候記得車位這一條：每個單位一個車位，但名單上一批 27 樓以下的 Type B1 是沒有的。請索取那份名單。\n\n# 設施\n\n7 樓是 Jewel 自己的設施層：大堂與休息廳、多功能廳、健身房、祈禱室、更衣室、管理處、泳池與泳池平臺、兒童遊樂場與兒童池、燒烤區、禪意花園、迎賓平臺、共用工作區、健康與瑜伽平臺、閱讀室。住戶也可以上 SO/ 那棟的 45 和 46 樓，那裡有娛樂室、休息廳、閱讀室、多功能廳、健身房和瑜伽空間。整個專案官方稱擁有吉隆坡最高的住宅無邊際泳池。\n\n樓下是約 42,000 平方英尺的兩層零售商場；The Langham Kuala Lumpur 官方稱將進駐這棟樓，共 198 間客房。開幕時間在正式公佈之前，當作計劃看，不要當成既定事實。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 49 層只有 267 戶，三棟裡密度最低 | 專案資料上的交樓日期已經過了 |\n| 雙峰塔旁的永久地契，直線到 Ampang Park 輕快鐵站約 300 米 | 公開的價格區間是整個 Oxley Towers 的，不是單算 Jewel |\n| 管理費每尺 RM 0.66，是上面比較裡最低的 | 名單上一批 27 樓以下的 Type B1 沒有車位 |\n| 同一個專案裡有甲級辦公樓、商場和酒店 | 同一個專案有酒店和辦公樓，進出的人也多 |\n\n# 怎樣看 Jewel by Oxley\n\nWhatsApp 聯絡 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取價單、圖則和安排看房。\n\n完整規格在 [Jewel by Oxley 專案頁](/projects/jewel-by-oxley-kl-city-centre)。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-25",
+    "updatedOn": "2026-09-25",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1JMnxKgPQs56eA53G1Y7_jLV3W8MJoK4P=w1600",
+    "faqs": [
+      {
+        "question": "Jewel by Oxley 是永久地契還是租賃地契？",
+        "answer": "永久地契，商業地契，在《房屋發展法》（HDA）之下。由 Oxley Risings Sdn Bhd 開發，位於 Lot 99, Jalan Ampang。"
+      },
+      {
+        "question": "Jewel by Oxley 和 Oxley Towers 是什麼關係？",
+        "answer": "Oxley Towers KL City Centre 是同一塊 3.11 英畝地上的三棟樓：78 層的 Sofitel KL Residence、49 層的 Jewel by Oxley，和甲級辦公樓 Alliance Tower，下面是約 42,000 平方英尺的兩層零售商場。Jewel 就是那棟 267 個單位的住宅樓。"
+      },
+      {
+        "question": "Jewel by Oxley 離輕快鐵多遠？",
+        "answer": "從專案座標量，直線到格拉那再也線 Ampang Park 站約 300 米、布城線 Ampang Park 站約 320 米；雙峰塔旁的車站約 350 米。"
+      },
+      {
+        "question": "Jewel by Oxley 有車位嗎？",
+        "answer": "每個單位一個車位，但有一批名單上的 Type B1 單位（27 樓以下）沒有車位。選單位之前，請索取那份書面名單。"
+      },
+      {
+        "question": "Jewel by Oxley 的管理費多少？",
+        "answer": "每平方英尺約 RM 0.66，已含償債基金；1,000 平方英尺的單位大約每月 RM 660。"
+      },
+      {
+        "question": "Jewel by Oxley 什麼時候完工？",
+        "answer": "專案資料列的是 2025 年、預計 2025 年第三季交樓，這個時間已經過了。請向發展商拿目前的交樓日期，並自己到工地看一看。"
+      }
+    ],
+    "relatedSlugs": [
+      "clouthaus-kl-city-centre-review",
+      "conlay-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "jewel-by-oxley-kl-city-centre",
+      "clouthaus",
+      "conlay",
+      "orion-residence",
+      "golden-crown"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
+      "review"
+    ]
+  },
+  "khaya-residence-bangsar-review": {
+    "id": "khaya-residence-bangsar-review",
+    "slug": "khaya-residence-bangsar-review",
+    "title": "Khaya Residences 孟沙評測：價格、戶型、優缺點",
+    "metaDescription": "Khaya Residences 孟沙（Bangsar）評測：Melati Ehsan 與國能 TNB 合作的 61 層大樓，步行 5 分鐘到 LRT Abdullah Hukum，RM 785,000 起。戶型、管理費、優缺點。",
+    "summary": "Khaya Residences 位於 Jalan Bangsar，在吉隆坡和八打靈再也之間，是一座 61 層、795 戶的大樓，步行 5 分鐘到 LRT Abdullah Hukum。這篇評測講價格、19 種戶型、40 多項設施、要接受的取捨，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Khaya Residences？\n\n**我的看法。** Khaya 對我來說最強的兩張牌是地址和背後的人。它在孟沙和 Kerinchi 的交界，走去 Abdullah Hukum 輕快鐵站大約 400 米、5 分鐘，兩站到 KL Sentral；往北 5 分鐘到 Mid Valley，往西是 KL Eco City 和孟沙南。孟沙的地越來越少，新盤很難得。發展商是 Melati Ehsan 旗下的，合作伙伴是國家能源公司 TNB，這個組合讓我對交樓比較有信心。我在影片裡的講法是：你用孟沙南的價錢，買孟沙的地址。拍那三間樣板房的時候，做工和質感超出我的預期，不過我當時也講了——建好之後是不是跟樣板房一樣，要交樓才知道。整棟有 40 多項設施，包括一個 50 米的標準泳池和頂樓的空中平臺，地面還有大約 15,000 尺的零售區和超市。取捨是租賃地契（還剩 93 年以上）和這棟 61 層、795 個單位、偏密的高樓。\n\n- **適合：** 在 KL Sentral、Bangsar South 或 Mid Valley 上班的專業人士；想要孟沙地址、又不想付孟沙有地房產價錢的買家；搭 LRT 通勤的人。\n- **請三思：** 一定要永久地契的人；偏好低密度大樓的人。\n\n# 看房影片\n\n{{youtube:QHD2awCy3a4}}\n\n# Khaya Residences 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Bayu Mantap Sdn Bhd（Melati Ehsan 集團，與 TNB 合作） |\n| 地址 | Jalan Bangsar, 59200 Kuala Lumpur |\n| 地契 | 租賃地契，商業地契 |\n| 土地面積 | 3.88 英畝 |\n| 樓層 | 61 |\n| 總單位 | 795 戶，另有約 15,000 平方英尺零售空間 |\n| 電梯 | 8 + 2 部 |\n| 面積 | 630 至 1,321 平方英尺 |\n| 房間 | 1 房至 3 + 1 房 |\n| 價格 | RM 785,000 起 |\n| 管理費 | 每平方英尺約 RM 0.50（含儲備金） |\n| 預計完工 | 2029 年第二季（簽約後 52 個月） |\n\n# Khaya 在哪裡？交通如何？\n\n位於 Jalan Bangsar，在市中心和八打靈再也之間。步行 5 分鐘到 LRT Abdullah Hukum；LRT Kerinchi、LRT Universiti、LRT Bangsar、KTM Mid Valley 和 KTM Angkasapuri 都在周邊。開車的話，聯邦大道、NPE、Sprint 和 Salak 大道都很近。附近商場有 Mid Valley Megamall 和 The Gardens、KL Eco City、Bangsar Shopping Centre、Bangsar Village、Nu Sentral 和 Nexus Bangsar South；最近的醫院是 Pantai 醫院和馬大專科醫院（UMSC）。\n\n# 和孟沙其他新盤比，Khaya 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Khaya Residences** | 租賃 | RM 785,000 | 630 至 1,321 平方英尺 | 795 | 每平方英尺約 RM 0.50 |\n| [Bangsar Hill Park, Tower B and C](/projects/bangsar-hill-park-tower-b-and-c) | 租賃 | RM 1,123,000 | 917 至 1,478 平方英尺 | 802 | 每平方英尺 RM 0.80 |\n| [Bangsar Hill Park, Verdura](/projects/bangsar-hill-park-verdura-tower-d-and-e) | 租賃 | RM 1,120,000 | 917 至 1,478 平方英尺 | 812 | 每平方英尺 RM 0.85 |\n\n三個都是租賃地契。Khaya 入門價較低，是因為它有 630 平方英尺起的 1 房單位；Bangsar Hill Park 最小是 917 平方英尺。Khaya 報的月費也較低。\n\n# Khaya 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| B | 630 平方英尺 | 1 房 1 浴 |\n| C | 683 平方英尺 | 1 + 1 房 |\n| A / A1 / A2 / A3 | 717 至 772 平方英尺 | 1 + 1 房 |\n| D | 869 平方英尺 | 2 房 2 浴 |\n| E / F | 998 至 1,032 平方英尺 | 2 + 1 房 2 浴 |\n| H | 1,028 平方英尺 | 2 + 2 房 |\n| I / J | 1,070 至 1,096 平方英尺 | 2 房 2 浴 |\n| G | 1,086 平方英尺 | 3 房 3 浴 |\n| K | 1,164 平方英尺 | 3 + 1 房 3 浴 |\n| L | 1,321 平方英尺 | 3 房 3 浴 |\n\n**我會選哪個。** 現場開放三個樣板間，每一個我喜歡的地方不一樣。1 + 1 房（Type A，772 平方英尺）客廳約 13 尺寬，玻璃陽臺深 4 尺，主人房四四方方；單身、夫妻或小家庭都住得下，所以以後要轉手，這個戶型最容易找到買家。1,164 平方英尺的 Type K（3 + 1 房）格局方正，廚房大，第二間房幾乎和主人房一樣大。1,321 平方英尺的 Type L 住起來最像有地房產：廚房、飯廳、客廳全開放式，有兩個陽臺（其中一個在次臥，很少見），主浴室有浴缸，孟沙很少專案有這個配置。\n\n# 設施\n\n40 多項設施：50 米標準泳池、淺水池和戲水區、匹克球場和多用途禮堂、空中健身房、瑜伽與舞蹈室、桑拿、家庭影院、音樂室、遊戲室、私人派對室、共享辦公休息室、兒童遊戲室、高爾夫推杆練習區、兩個附燒烤和按摩池的宴客亭、香草與感官花園，以及帶空中草坪的綠色頂樓平臺。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 步行 5 分鐘到 LRT Abdullah Hukum；緊鄰 Mid Valley 和 KL Eco City | 租賃地契 |\n| RM 785,000 起就有孟沙地址 | 61 層、795 戶：密度高 |\n| 3.88 英畝土地上有 40 多項設施 | 商業地契：水電費率請向發展商確認 |\n| 發展商與 TNB 合作 | Jalan Bangsar 高峰時段塞車 |\n\n# 怎樣預約看 Khaya Residences\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Khaya Residence 樓盤頁](/projects/khaya-residence)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Khaya Residences 資料頁](https://www.propertyportal.my/project/khaya-bangsar) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1TeAPAENh3tizWv_htFR-63O5wOV-KqPk=w1600",
+    "faqs": [
+      {
+        "question": "Khaya Residences 是永久地契還是租賃地契？",
+        "answer": "租賃地契、商業地契。發展商是 Melati Ehsan 集團旗下的 Bayu Mantap Sdn Bhd，與國家能源公司（TNB）合作開發。"
+      },
+      {
+        "question": "Khaya Residences 起價多少？",
+        "answer": "RM 785,000 起。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "離 LRT 多遠？",
+        "answer": "根據發展商資料，步行約 5 分鐘到 LRT Abdullah Hukum。KTM Mid Valley 和 LRT Kerinchi 也在附近。"
+      },
+      {
+        "question": "有哪些面積？",
+        "answer": "共 19 種戶型，從 630 平方英尺（1 房）到 1,321 平方英尺（3 房 3 浴）。"
+      },
+      {
+        "question": "Khaya Residences 什麼時候完工？",
+        "answer": "預計 2029 年第二季，買賣合約內的建築期為 52 個月。"
+      }
+    ],
+    "relatedSlugs": [
+      "freehold-vs-leasehold",
+      "understanding-maintenance-fees-sinking-funds"
+    ],
+    "relatedProjectIds": [
+      "khaya-residence",
+      "bangsar-hill-park-tower-b-and-c",
+      "bangsar-hill-park-verdura-tower-d-and-e"
+    ],
+    "tags": [
+      "bangsar",
+      "leasehold",
+      "transit",
+      "review"
+    ]
+  },
+  "kingswoodz-bukit-jalil-review": {
+    "id": "kingswoodz-bukit-jalil-review",
+    "slug": "kingswoodz-bukit-jalil-review",
+    "title": "The Kingswoodz 武吉加里爾評測：價格、戶型、優缺點",
+    "metaDescription": "The Kingswoodz 武吉加里爾評測：EXSIM 的 1,558 戶租賃地契新盤，RM 422,500 起，474 至 904 平方英尺，距 LRT Awan Besar 900 米。戶型、管理費、優缺點。",
+    "summary": "The Kingswoodz 是 EXSIM 在武吉加里爾 3.45 英畝地段上的三座大樓，共 1,558 戶，也是這一區入門價最低的新盤。這篇評測講價格、戶型、設施、要接受的取捨，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 The Kingswoodz？\n\n**我的看法。** The Kingswoodz 是我現在能拿給買家的、進入武吉加里爾最便宜的一個：RM 422,500 買 474 尺，而這一區多數新盤起價都在 RM 70 萬以上。車站是真的走得到——我量過，走到 Awan Besar 站 430 米——單位附部分傢俱。這個價買到的是大樓裡的小單位，這句話前後兩半都要看。三棟樓、1,558 個單位，是這一區最大的社群，每層 14 至 17 戶、每棟三到四部客梯，1,000 尺的持有成本大約每月 RM 420。如果你買第一間房、卡在頭期，這個取捨通常值得。如果你是買未來十年的家庭住宅，先在高峰時段走一趟走廊，再去看附近密度低的選擇。\n\n- **適合：** 在武吉加里爾、斯里白沙羅（Sri Petaling）或古晉路一帶上班的首購族；想要本區最低入門價的買家；搭輕快鐵和巴士的人。\n- **請三思：** 需要三房加超過一個車位的人；不喜歡大型高密度大樓的人。\n\n# The Kingswoodz 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | EXSIM Jalil Link Sdn Bhd |\n| 地址 | Lot 38628, Jalan Jalil Perkasa 1, Bukit Jalil, Kuala Lumpur |\n| 地契 | 租賃地契，HDA 下的商業地契 |\n| 土地面積 | 3.45 英畝 |\n| 樓數 / 樓層 | A 座 46 層，B 座 45 層，C 座 46 層 |\n| 總單位 | 1,558 |\n| 每層單位 | A 座約 14 戶，B 座約 15 戶，C 座約 17 戶 |\n| 電梯 | A、B 座各 4 部客梯 + 1 部服務電梯；C 座 3 部客梯 + 1 部服務電梯 |\n| 面積 | 474 至 904 平方英尺 |\n| 房間 | 1 至 3 房 |\n| 價格 | RM 422,500 至 RM 766,800（尺價約 RM 809） |\n| 管理費 | 每平方英尺 RM 0.42（含儲備金） |\n| 裝修 | 標準配置為半裝修 |\n| 預計完工 | 2028 年（52 個月） |\n\n# The Kingswoodz 在哪裡？周邊有什麼？\n\n位於武吉加里爾 Jalan Jalil Perkasa 1。LRT Awan Besar 約 900 米，Rapid KL 巴士站距專案約 230 米，公共交通比這一區大部分新盤都近。開車可用 KESAS、NPE（古晉路支線）、MEX、Sprint、ELITE、新街場大道和 SUKE。\n\n周邊：Aurora Place Bukit Jalil（1 公里）、Pavilion Bukit Jalil（2.8 公里）、The Food Merchant（3.4 公里）、Giant Bukit Kinrara（5.2 公里）、NSK 古晉路（6.6 公里）和 Mid Valley Megamall（7.5 公里）。學校院校有 SJK(C) 黎明華小（1 公里）、SJK(T) Ladang Bukit Jalil（1.5 公里）和國際醫藥大學 IMU（4.4 公里）。\n\n# 和武吉加里爾其他新盤比，The Kingswoodz 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **The Kingswoodz** | 租賃 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n| [Ren Residence](/projects/ren-residence) | 租賃 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | 租賃 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [Ayanna](/projects/ayanna) | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n\nKingswoodz 是這裡唯一起價低於 RM 50 萬的專案，也是唯一有 500 平方英尺以下單位的專案。同一個發展商在武吉加里爾的 Queenswoodz 是它的\"大戶型版本\"：從 807 平方英尺、RM 723,000 起。\n\n# The Kingswoodz 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A | 474 平方英尺 | 1 房 1 浴 |\n| B | 678 平方英尺 | 2 房 2 浴 |\n| C | 904 平方英尺 | 3 房 2 浴 |\n\n樓盤頁另外列出 617 平方英尺和 761 平方英尺的版本，所以定面積之前，請先向銷售團隊要最新的戶型表。\n\n**我會選哪個。** 買第一間房的話，我會選 678 平方英尺的 Type B：兩房兩浴是最小的、出租和轉手都還容易的格局，而且和 474 平方英尺的差價不大。904 平方英尺的 Type C 是唯一的三房，如果這間房要住得下一個小家庭，就看它。Type A 可以做出租單位或單身首購，但要明白它在同一座樓裡要和另外 1,557 戶競爭。\n\n# 設施\n\n設施集中在 8 樓和每座樓的頂層。8 樓：泳池、按摩池、淺水池、戶外健身區和室內健身房、足底按摩步道、遊戲室、閱讀休息室、宴會廳、涼亭、生態池、兒童遊樂場、籃球場、花園廣場、草坪、社群農圃、戶外餐區和健身步道。頂層（B 座 45 樓，A、C 座 46 樓）有空中休息室、空中燒烤區、空中餐區和空中花園。地面層有主入口、三個大堂、零售店、信件室，A 座還有幼兒園。外立面由 WDA Design 設計。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 上面比較的武吉加里爾新盤中入門價最低 | 三座樓 1,558 戶，是這裡密度最高的 |\n| 距 LRT Awan Besar 約 900 米，巴士站 230 米 | 每層 14 至 17 戶，配 3 至 4 部客梯 |\n| 標準配置已含半裝修 | 租賃地契加商業地契：水電費率請確認 |\n| 一整層平臺設施再加三個頂樓 | 最大隻有 904 平方英尺，將來換房空間有限 |\n\n# 怎樣預約看 The Kingswoodz\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Kingswoodz 樓盤頁](/projects/kingswoodz-bukit-jalil)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 The Kingswoodz 資料頁](https://www.propertyportal.my/project/kingswoodz) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1b2w3wss5365AM_l66TWcXOjRnDSFLXzc=w1600",
+    "faqs": [
+      {
+        "question": "The Kingswoodz 是永久地契還是租賃地契？",
+        "answer": "租賃地契，屬房屋發展法令（HDA）下的商業地契。由 EXSIM Jalil Link Sdn Bhd 開發，位於武吉加里爾 Jalan Jalil Perkasa 1。"
+      },
+      {
+        "question": "The Kingswoodz 起價多少？",
+        "answer": "RM 422,500 起，尺價約 RM 809。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "離輕快鐵站多遠？",
+        "answer": "LRT Awan Besar 約 900 米，另有 Rapid KL 巴士站距專案約 230 米。"
+      },
+      {
+        "question": "一共有多少單位？",
+        "answer": "三座 45 至 46 層大樓共 1,558 戶，每層約 14 至 17 戶。"
+      },
+      {
+        "question": "The Kingswoodz 什麼時候完工？",
+        "answer": "2028 年，建築期 52 個月。"
+      }
+    ],
+    "relatedSlugs": [
+      "ren-residence-bukit-jalil-review",
+      "oaka-residences-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "kingswoodz-bukit-jalil",
+      "queenswoodz",
+      "ren-residence",
+      "oaka-residences",
+      "ayanna"
+    ],
+    "tags": [
+      "bukit jalil",
+      "leasehold",
+      "first home",
+      "review"
+    ]
+  },
+  "oaka-residences-bukit-jalil-review": {
+    "id": "oaka-residences-bukit-jalil-review",
+    "slug": "oaka-residences-bukit-jalil-review",
+    "title": "OAKA Residences 武吉加里爾評測：價格、戶型、優缺點",
+    "metaDescription": "OAKA Residences 評測：成功集團（Berjaya）在武吉加里爾的永久地契住宅地契公寓，350 戶、每層 7 戶，RM 836,000 起。戶型、管理費、優缺點。",
+    "summary": "OAKA Residences 位於武吉加里爾，2.2 英畝土地上兩座 30 層大樓，共 350 戶，由 Berjaya Hartanah 開發，永久地契。這篇評測講價格、戶型、低密度設計、設施、要接受的取捨，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 OAKA Residences？\n\n**我的看法。** OAKA 是武吉加里爾的低密度選擇。這一區其他新盤動輒 800、1,000、1,500 個單位，OAKA 兩棟一共 350 個，每層 7 戶、3 部電梯。這個比例是我會為它買單的唯一一個數字：交樓之後住戶最常投訴的就是等電梯和走廊人多，這個設計就是衝著這兩件事去的。永久地契、住宅地契，水電按住宅價不是商業價。低密度的代價在三個地方——起價 RM 836,000 高過附近的租賃地契新盤；1,000 尺管理費大約每月 RM 510；最近的車站要走 900 米到斯里布特靈，手上拎著東西的時候，這段路比聽起來遠。你自己算一算，安靜值不值這個價。\n\n- **適合：** 想在武吉加里爾要永久地契和住宅地契的買家；不喜歡擠電梯和大社群的人；需要兩三個車位的家庭。\n- **請三思：** 想要本區最低入門價的人；想要最低月費的人。\n\n# OAKA Residences 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Berjaya Hartanah Berhad |\n| 地址 | Lot 36471, Jalan Jalil Perkasa 7, Bukit Jalil, 57000 Kuala Lumpur |\n| 地契 | 永久地契，住宅地契 |\n| 土地面積 | 2.2 英畝 |\n| 樓數 / 樓層 | 2 座，30 層 |\n| 總單位 | 350 戶（每座 175 戶） |\n| 每層單位 / 電梯 | 7 戶，3 部電梯 |\n| 面積 | 882 至 1,509 平方英尺 |\n| 房間 | 2 至 3 房 |\n| 車位 | 每單位 2 至 3 個 |\n| 價格 | RM 836,000 至 RM 1,503,000（尺價約 RM 820 至 RM 1,056） |\n| 管理費 | 每平方英尺 RM 0.51（含儲備金） |\n| 綠色認證 | GreenRE 金級 |\n| 預計完工 | 2028 年第一季（首份買賣合約後 48 個月） |\n\n# OAKA 在哪裡？周邊有什麼？\n\n位於 Jalan Jalil Perkasa 7，在武吉加里爾發展成熟的那一帶。附近有 Awan Besar、Bukit Jalil 和 Sri Petaling 三個輕快鐵站；開車可用武吉加里爾大道、MEX、KESAS、MRR2、SUKE 和吉隆坡至芙蓉大道。\n\n周邊配套：Pavilion Bukit Jalil、Pearl Point 商場、The Tropika 和 The Link 2；Columbia Asia 武吉加里爾醫院；SJKC 黎明華小、武吉加里爾國中、慈濟國際學校和 Kingsgate 國際學校；國際醫藥大學（IMU）、APIIT 和 APU。80 英畝的武吉加里爾休閒公園、武吉加里爾高爾夫球鄉村俱樂部、國家體育館和 KL Sports City 都在同一個區域。\n\n# 和武吉加里爾其他新盤比，OAKA 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **OAKA Residences** | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Ayanna](/projects/ayanna) | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n| [Ren Residence](/projects/ren-residence) | 租賃 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | 租賃 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租賃 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n\n六個當中 OAKA 的戶數最少，而且少很多。Ayanna 是另一個永久地契加住宅地契的選擇，同樣的錢買到的面積更大，但整座樓有 824 戶。Park Green 是這一區的高階永久地契選擇，入門價明顯更高。\n\n# OAKA 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A | 882 平方英尺 | 2 房 2 浴 |\n| A1a | 915 平方英尺 | 2 房，加大陽臺 |\n| B3（Lanai） | 1,175 平方英尺 | 2 + 1 房 2 浴 |\n| B1 / B2 | 1,182 平方英尺 | 2 + 1 房 2 浴 |\n| B3a | 1,240 平方英尺 | 2 + 1 房，加大陽臺 |\n| B1a / B2a | 1,262 平方英尺 | 2 + 1 房，加大陽臺 |\n| C | 1,423 平方英尺 | 3 房 3 浴 |\n| C1a | 1,509 平方英尺 | 3 房，加大陽臺 |\n\n**我會選哪個。** 1,175 至 1,262 平方英尺的 B 系列是最實用的中間選擇：2 房加一個雜物房（可做書房或幫傭房），客飯廳的面寬也夠。Lanai 和加大陽臺的版本值得問一問，因為在武吉加里爾，這個面積還帶戶外空間很少見。1,423 平方英尺的 Type C 三間房各有自己的浴室。選樓層之前，先問清楚哪一列朝高爾夫球場、哪一列朝吉隆坡市景。\n\n# 設施\n\n一樓和平臺層有無邊際泳池、淺水池、按摩池、泳池平臺和涼亭、戶外淋浴、半場籃球場、草坪和兒童遊樂場、健身房、瑜伽與舞蹈室、遊戲室、影音室、住戶休息室、兒童活動室、多功能廳，以及桑拿和更衣室。頂樓另有空中戶外休息區、空中花園、空中涼亭、空中觀景亭和燒烤平臺。實用配置：EV 充電位、洗車區、包裹室和信件室、外賣取餐區、祈禱室，以及預留給幼兒園、零售店和洗衣店的空間。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 永久地契加住宅地契：水電按家用費率 | 每平方英尺 RM 0.51，是上面比較的武吉加里爾新盤中最高 |\n| 只有 350 戶，每層 7 戶配 3 部電梯 | 入門價高過附近的租賃地契專案 |\n| 每單位 2 至 3 個車位 | 最近的輕快鐵站要開車或轉接駁，不能步行 |\n| GreenRE 金級、寵物友善、每戶都有陽臺或 Lanai | 2028 年才完工 |\n\n# 怎樣預約看 OAKA Residences\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [OAKA Residences 樓盤頁](/projects/oaka-residences)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 OAKA Residences 資料頁](https://www.propertyportal.my/project/oaka-res) 檢視。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1dWgmVqgZk6bFD9Pn5Ndd6i1-tq2_tdLH=w1600",
+    "faqs": [
+      {
+        "question": "OAKA Residences 是永久地契還是租賃地契？",
+        "answer": "永久地契，住宅地契。由 Berjaya Hartanah Berhad 開發，位於武吉加里爾 Jalan Jalil Perkasa 7。"
+      },
+      {
+        "question": "OAKA Residences 起價多少？",
+        "answer": "RM 836,000 起，尺價約 RM 820 至 RM 1,056。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "OAKA Residences 一共有多少單位？",
+        "answer": "兩座 30 層大樓共 350 戶，每層 7 戶，配 3 部電梯。"
+      },
+      {
+        "question": "每個單位有幾個車位？",
+        "answer": "根據發展商資料，每個單位有 2 至 3 個車位。"
+      },
+      {
+        "question": "OAKA Residences 什麼時候完工？",
+        "answer": "發展商目標是 2028 年第一季，即第一份買賣合約簽署後 48 個月。"
+      }
+    ],
+    "relatedSlugs": [
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold",
+      "understanding-maintenance-fees-sinking-funds"
+    ],
+    "relatedProjectIds": [
+      "oaka-residences",
+      "ren-residence",
+      "park-green-pavilion-bukit-jalil",
+      "ayanna",
+      "kingswoodz-bukit-jalil"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "low density",
+      "review"
+    ]
+  },
+  "orion-residence-bukit-bintang-review": {
+    "id": "orion-residence-bukit-bintang-review",
+    "slug": "orion-residence-bukit-bintang-review",
+    "title": "Orion Residence 星悅閣武吉免登評測：價格、戶型、優缺點",
+    "metaDescription": "Orion Residence 星悅閣評測：距離武吉免登 350 米的永久地契品牌住宅，只有 298 戶，RM 158 萬起。戶型、管理費、優缺點，以及適合什麼買家。",
+    "summary": "Orion Residence 星悅閣位於 Jalan Bukit Bintang 旁的 Jalan Gading，是一座 46 層、只有 298 戶的永久地契大樓。這篇評測講價格、從套間到雙鑰匙的戶型、少見的高服務水平、隨之而來的費用，以及誰該買。",
+    "content": "# 一句話結論：誰適合買 Orion Residence？\n\n**我的看法。** Orion 是我在武吉免登走過最精品的一個：46 層只有 298 個單位，走去 Pavilion KL 大約 3 分鐘、去 TRX 8 分鐘，鄰居是 JW 萬豪和威斯汀。整個專案是照酒店式生活做的——勞斯萊斯專車服務、住戶專用保險庫、訂製珠寶服務，還有一部戶外玻璃觀景電梯，這個我在這一帶沒看過第二個。交樓是拎包入住；我拍的樣板房裡，大理石地板、Gaggenau 和 Bosch 家電、傢俱、窗簾、燈，全部在配套裡，拿鑰匙進來看到的就是這樣。最大的間隔是 1,329 尺的雙鑰匙，兩房加一個有獨立門的 studio；要更大的話，銷售可以把兩個單位打通。這些東西你是用每個月的管理費在付，所以它適合要一間現成的、有服務的市區永久地契房子的人，不適合要壓低持有成本的人。\n\n- **適合：** 想要現成、附傢俱的永久地契單位，步行可到 Pavilion KL 和武吉免登 MRT 的買家；看重戶數少和私密性的業主。\n- **請三思：** 介意每平方英尺 RM 1.32 月費的人；需要大戶型家庭格局的人。\n\n# 看房影片\n\n{{youtube:US1SR88AwhQ}}\n\n# Orion Residence 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Orion Tower Sdn Bhd（Welton 集團） |\n| 地址 | Jalan Gading, Bukit Bintang, 55100 Kuala Lumpur |\n| 地契 | 永久地契，HDA 下的商業地契 |\n| 土地面積 | 0.56 英畝 |\n| 樓層 | 46 |\n| 總單位 | 298 |\n| 每層單位 | 10 戶（11 至 31 樓），9 戶（32 至 39 樓） |\n| 電梯 | 6 部住戶電梯 + 1 部服務電梯，另有玻璃電梯 |\n| 面積 | 491 至 1,329 平方英尺 |\n| 戶型 | 套間、2 房、帶露臺 2 房、3 房雙鑰匙 |\n| 價格 | RM 158 萬起 |\n| 管理費 | 每平方英尺 RM 1.32（RM 1.20 + 10% 儲備金） |\n| 裝修 | 全裝修附傢俱（Gaggenau、Miele、Bosch、Kohler） |\n\n# Orion Residence 在哪裡？步行可到什麼？\n\nOrion 位於 Jalan Bukit Bintang 旁的 Jalan Gading。最近的商場是 The Starhill、Pavilion KL 和 Lot 10，武吉免登 MRT 和單軌火車站都很近。Suria Mall 約 2.9 公里，Prince Court 醫療中心 1.2 公里，隔壁就是 TRX。\n\n# 和附近專案比，Orion 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Orion Residence** | 永久 | RM 158 萬 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 150 萬 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 |\n| [Pavilion Square](/projects/pavilion-square-residences) | 租賃 | RM 170 萬 | 504 至 1,272 平方英尺 | 960 | 每平方英尺 RM 0.90 |\n| [Core Residence @ TRX](/projects/core-residence-trx) | 永久 | RM 150 萬 | 622 至 1,572 平方英尺 | 700 | 請詢問 |\n\nOrion 的戶數遠少於其他專案，月費也最高。取捨就在這裡：大樓更安靜、服務更多，持有成本也更高。\n\n# Orion 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A1 至 A4 | 491 至 497 平方英尺 | 套間 |\n| A4-T | 588 平方英尺 | 帶露臺套間 |\n| B1 至 B4 | 680 至 746 平方英尺 | 2 房 2 浴 |\n| C1 至 C5 | 838 至 992 平方英尺 | 2 房 2 浴 |\n| C3-T / C4-T / C5-T | 1,077 至 1,186 平方英尺 | 帶露臺 2 房 |\n| D1 至 D4 | 1,180 至 1,329 平方英尺 | 3 房 3 浴，雙鑰匙 |\n\n**我會選哪個。** 992 平方英尺的 2 房 2 浴 C 系列是我自己會住的單位：客飯廳鋪天然大理石，臥室是實木地板，主浴室有浴缸，不需要再裝修。最大的戶型是 1,329 平方英尺的雙鑰匙（2 房加一個有獨立入口、小廚房和浴室的套間），適合想給父母或成年子女留一個獨立空間的家庭。如果還覺得不夠大，可以買相鄰兩個單位打通成一個家。\n\n# 服務與設施\n\n五個主題設施區（The Galactic、The Aquarius、The Cosmos、The Aurora、The Constellation）、頂樓空中休息室、Moon Bar 和可看市景的餐飲空間。有兩項少見的配置：自動化代客泊車系統，以及由瑞士保安公司管理的私人保險庫服務。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 武吉免登的永久地契，步行可到 Pavilion KL 和 MRT | 月費每平方英尺 RM 1.32，同類項目中最高 |\n| 整塊地只有 298 戶 | 地皮小（0.56 英畝），地面園林有限 |\n| 全裝修附高階品牌傢俱電器 | 不到 500 平方英尺的套間比較緊湊 |\n| 有露臺和雙鑰匙選擇 | 武吉免登高峰時段塞車 |\n\n# 怎樣預約看 Orion Residence\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Orion Residence 樓盤頁](/projects/orion-residence)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Orion Residence 資料頁](https://www.propertyportal.my/project/orion-bid) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1roffnx2x4ACpJOXhinTiAgB8LMJB7xXz=w1600",
+    "faqs": [
+      {
+        "question": "Orion Residence 是永久地契嗎？",
+        "answer": "是。Orion Residence 為永久地契，屬房屋發展法令（HDA）下的商業地契，由 Orion Tower Sdn Bhd（Welton 集團）開發。"
+      },
+      {
+        "question": "Orion Residence 一共有多少單位？",
+        "answer": "46 層共 298 戶，每層 9 至 10 戶，配 6 部住戶電梯加 1 部服務電梯。"
+      },
+      {
+        "question": "Orion Residence 起價多少？",
+        "answer": "RM 158 萬起。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Orion Residence 的管理費是多少？",
+        "answer": "發展商報價為每平方英尺 RM 1.20，另加 10% 儲備金，合計每平方英尺 RM 1.32。"
+      },
+      {
+        "question": "單位有附傢俱嗎？",
+        "answer": "根據發展商規格，單位全裝修附傢俱，採用 Gaggenau、Miele、Bosch、Kohler 等品牌。"
+      }
+    ],
+    "relatedSlugs": [
+      "core-residence-trx-review",
+      "golden-crown-trx-review",
+      "clouthaus-kl-city-centre-review",
+      "pavilion-square-kl-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "orion-residence",
+      "clouthaus",
+      "pavilion-square-residences",
+      "core-residence-trx"
+    ],
+    "tags": [
+      "bukit bintang",
+      "freehold",
+      "branded residence",
+      "review"
+    ]
+  },
+  "park-green-bukit-jalil-review": {
+    "id": "park-green-bukit-jalil-review",
+    "slug": "park-green-bukit-jalil-review",
+    "title": "Park Green Pavilion 武吉加里爾評測：價格、戶型、優缺點",
+    "metaDescription": "Park Green 武吉加里爾評測：Malton 的永久地契大樓，連線橋直通 Pavilion Bukit Jalil，453 戶，1,201 至 1,905 平方英尺，RM 1,209,100 起。戶型與結論。",
+    "summary": "Park Green 是 Malton 在 Pavilion Bukit Jalil 的第三期、也是最後一期，47 層永久地契大樓共 453 個大戶型，有自己的天橋直通商場。這篇評測講價格、六種戶型、公園景、設施，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Park Green？\n\n**我的看法。** Park Green 賣的是兩樣東西，我在影片裡講的也是這兩樣：天橋和景觀。天橋從大樓二樓接進 Pavilion 武吉加里爾的五樓，那層就是戲院和餐廳，所以商場是真的過日子用得上，不是開車去的。景觀是 80 英畝的武吉加里爾休閒公園；在這麼密的新鎮裡，一個不會被擋的景是值得付錢的。這是 Malton 在這裡的第三期、也是最後一期，第一期四棟、第二期兩棟，第三期最小也最貴：0.92 英畝、450 個單位、47 層，A 翼每層 6 戶、B 翼每層 7 戶。裡面全部是大房——最小 1,201 尺，全部永久地契——廚房分乾溼，我接觸的家庭買家都想要，但這個尺寸的專案多數沒有。要注意的是，對著公園那幾個座向的價錢高過對著商場的，所以比價錢之前先決定你買哪一邊。\n\n- **適合：** 想要大面積永久地契、又能走路去商場的買家；看重不會被擋的公園景的家庭；想要 Pavilion Bukit Jalil 這個地址的人。\n- **請三思：** 預算到不了 RM 120 萬的人；想步行到輕快鐵站的人。\n\n# 看房影片\n\n{{youtube:_EelMcIcXaI}}\n\n# Park Green 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Regal Path Sdn Bhd（Malton Berhad） |\n| 地址 | Persiaran Jalil Utama, Bukit Jalil, 57000 Kuala Lumpur |\n| 地契 | 永久地契，商業地契 |\n| 土地面積 | 0.92 英畝 |\n| 樓層 | 47 |\n| 總單位 | 453 |\n| 每層單位 / 電梯 | A 翼 6 戶，B 翼 7 戶；每翼 4 部電梯 |\n| 停車場 | 至 10 樓 |\n| 面積 | 1,201 至 1,905 平方英尺 |\n| 房間 | 3 至 4 房 |\n| 價格 | RM 1,209,100 至 RM 2,029,100（尺價約 RM 1,007） |\n| 管理費 | 每平方英尺 RM 0.44（含儲備金） |\n| 綠色認證 | GreenRE（臨時） |\n| 預計完工 | 2029 年第一 / 第二季（簽約後 54 個月） |\n\n# Park Green 在哪裡？周邊有什麼？\n\n在 Pavilion Bukit Jalil 城鎮裡面，Persiaran Jalil Utama。Pavilion Bukit Jalil 距離 50 米，有天橋直通。武吉加里爾大道從專案旁邊經過：往西去蒲種、Kinrara，再上去是梳邦；接 NPE 可到蕉賴，往北進市區，往南去芙蓉。OUG、舊巴生路和 Mid Valley 都在這條動線上。\n\n公共交通要開車，不能步行：LRT Awan Besar 約 2 公里，Alam Sutera 2.2 公里，Muhibbah 2.7 公里，Sri Petaling 3.8 公里，南湖鎮終站（TBS）約 8 公里。隔壁是馬來西亞科技園（Technology Park Malaysia），同一帶還在興建 KL Wellness City，發展商稱是東南亞最大的醫療城。其他商場：The Food Merchant OUG（2.4 公里）、Pearl Point（4.8 公里）、Giant Kinrara（5 公里）、IOI Mall Puchong、Sunway Pyramid 和 Mid Valley（都約 10 公里）。\n\n# 和武吉加里爾其他新盤比，Park Green 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Park Green Pavilion** | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Ayanna](/projects/ayanna) | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [Ren Residence](/projects/ren-residence) | 租賃 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Queenswoodz](/projects/queenswoodz) | 租賃 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租賃 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n\n六個當中 Park Green 的尺價最高，約 RM 1,007，而面積相近的 Ayanna 是 RM 639。貴的部分買到的是 Pavilion 城鎮這個地址和直通商場的天橋。如果商場連線對你不重要，Ayanna 同樣的錢買到的面積更大，OAKA 的戶數更少。\n\n# Park Green 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A / A1 | 1,201 平方英尺 | 3 房 2 浴 |\n| B / B1 | 1,408 平方英尺 | 3 房 2 浴 |\n| C | 1,485 平方英尺 | 3 房 2 浴 |\n| D | 1,501 平方英尺 | 3 房 2 浴 |\n| F | 1,627 平方英尺 | 3 房 2 浴 |\n| E | 1,905 平方英尺 | 4 房 3 浴 |\n\n**我會選哪個。** 我拍的那個三房，就是大部分買家最後會選的。1,200 到 1,500 平方英尺做三房，代表每個空間都是寬的，不是擠出來的：客廳面寬約 16 尺，陽臺約 16 尺寬、4 尺深，次臥幾乎和主臥一樣大。廚房分乾溼兩個，廚櫃、抽油煙機、爐具和冰箱都包括在內，幹廚房留空給你自己設計。主人浴室有很大的獨立淋浴區，含花灑。第三個房間可以當書房，它的浴室位置也做成客人可用的客廁。需要真正第四間房的，就看 1,905 平方英尺的 Type E。\n\n# 設施\n\n分兩層。11 樓在停車場之上，有無邊際泳池、淺水池、按摩池、燒烤平臺、社交花園、戶外休息區和兒童遊樂區，還有健身房、瑜伽室、遊戲室、多功能廳、共享辦公休息室、蒸汽房和更衣室、管理處，以及預留給幼兒園的空間。47 樓頂樓有戶外瑜伽平臺、空中休息室、空中露臺座位區，以及帶行政餐廳的私人休息室。地面層：禮賓臺、等候區、外賣取餐區、包裹室和信件室，以及 EV 充電位。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 專屬天橋從 2 樓直通 Pavilion Bukit Jalil 5 樓 | 尺價是上面比較的武吉加里爾新盤中最高 |\n| 可望 80 英畝武吉加里爾休閒公園 | 最近的輕快鐵站約 2 公里，要開車 |\n| 453 戶，每層 6 至 7 戶，每翼 4 部電梯 | 商業地契：水電費率請向發展商確認 |\n| 沒有低過 1,201 平方英尺的戶型；標配乾溼廚房 | 2029 年才完工 |\n\n# 怎樣預約看 Park Green\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Park Green 樓盤頁](/projects/park-green-pavilion-bukit-jalil)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Park Green 資料頁](https://www.propertyportal.my/project/park-green) 檢視。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1O6nOxQMa5cFDLbt1GJ6rZEuGRWLLSDYz=w1600",
+    "faqs": [
+      {
+        "question": "Park Green 是永久地契還是租賃地契？",
+        "answer": "永久地契，商業地契。由 Malton Berhad 旗下的 Regal Path Sdn Bhd 開發，Malton 也是 Bukit Jalil City 的總髮展商。"
+      },
+      {
+        "question": "Park Green 有連線 Pavilion Bukit Jalil 嗎？",
+        "answer": "有。專屬行人天橋從專案 2 樓直通 Pavilion Bukit Jalil 的 5 樓，也就是戲院、餐飲和娛樂那一層。"
+      },
+      {
+        "question": "Park Green 起價多少？",
+        "answer": "RM 1,209,100 起，尺價約 RM 1,007。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Park Green 一共有多少單位？",
+        "answer": "47 層大樓共 453 戶，A 翼每層 6 戶，B 翼每層 7 戶。"
+      },
+      {
+        "question": "Park Green 什麼時候完工？",
+        "answer": "2029 年第一或第二季，建築期為買賣合約簽署後 54 個月。"
+      }
+    ],
+    "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ayanna-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "park-green-pavilion-bukit-jalil",
+      "oaka-residences",
+      "ayanna",
+      "ren-residence",
+      "queenswoodz"
+    ],
+    "tags": [
+      "bukit jalil",
+      "freehold",
+      "pavilion",
+      "review"
+    ]
+  },
+  "parkside-residence-bangsar-review": {
+    "id": "parkside-residence-bangsar-review",
+    "slug": "parkside-residence-bangsar-review",
+    "title": "Parkside Residence 孟沙評測：價格、戶型、優缺點",
+    "metaDescription": "Parkside Residence 評測：SP Setia 與三井不動產在 Setia Federal Hill 的首個住宅，62 層 693 個單位，485 至 1,300 平方英尺，RM 600,000 起，樓下就是 5 英畝中央公園。",
+    "summary": "Parkside Residence 是 Setia Federal Hill 的第一棟住宅樓，62 層、693 個單位、租賃地契，樓下是 5 英畝中央公園，走去 Bangsar 輕快鐵站約 500 米。這篇評測講價格、面積、設施、量出來的距離，以及適合什麼買家。",
+    "content": "# 快速結論：誰該買 Parkside Residence？\n\n**我的看法。** Parkside 不是我們印象中那種孟沙公寓。它是 Setia Federal Hill 裡的第一棟住宅樓，而 Setia Federal Hill 是一整個區一起規劃出來的——住宅、辦公樓、商業、酒店，圍著一個 5 英畝的中央公園——公園就是我會看這個專案的原因。這麼靠近吉隆坡中心，還有一片沒人能蓋的空地，很少見；而且這裡不是站在陽臺看公園，是搭電梯下樓走進去。第二個原因是交通：我量過，直線到 Bangsar 輕快鐵站大約 510 米、到 KL Sentral 大約 680 米，整個鐵路網走路就到。入場價 RM 600,000 買 485 尺，是我下面比較的孟沙專案裡最低的；1,000 尺的持有成本大約每月 RM 500。取捨是租賃地契，還有等——2029 年完工，而這麼大一個總體規劃，周邊要好幾年才填得滿。\n\n- **適合：** 要市中心地址又要一片公園在門口的；每天搭鐵路上下班的；願意等這個新區慢慢建起來的。\n- **要想清楚：** 你一定要永久地契、想快點入住，或者你要的是老孟沙那種低樓層感覺。\n\n# 影片看房\n\n{{youtube:fZzT_sV0VKU}}\n\n# Parkside Residence 基本資料\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Setia MF SFH Development Sdn Bhd（SP Setia 與三井不動產） |\n| 地址 | Setia Federal Hill, Jalan Bangsar, 吉隆坡 |\n| 地契 | 租賃地契 |\n| 型別 | 服務式公寓 |\n| 樓層 | 62 層 |\n| 總單位 | 693 |\n| 面積 | 485 至 1,325 平方英尺（銷售資料） |\n| 房數 | 1 至 3 房 |\n| 價格 | RM 600,000 起 |\n| 管理費 | 每平方英尺 RM 0.50，含 10% 償債基金（1,000 尺約每月 RM 500） |\n| 總體規劃 | Setia Federal Hill：住宅、辦公樓、商業、酒店，圍繞 5 英畝中央公園 |\n| 狀態 | 興建中，預計 2029 年完工 |\n\n# Parkside Residence 在哪裡？周邊有什麼？\n\n在 Setia Federal Hill，位於 Jalan Bangsar 這條走廊上，介於孟沙和 KL Sentral 之間。以下是從專案座標在 OpenStreetMap 上量的直線距離，實際走路一定比這個數字長。\n\n| 地點 | 直線距離 |\n| :--- | :--- |\n| KJ16 Bangsar 輕快鐵站 | 0.51 公里 |\n| KL Sentral（電動火車、機場快鐵、捷運） | 0.68 公里 |\n| KJ15 KL Sentral 輕快鐵站 | 0.68 公里 |\n| Nu Sentral | 0.71 公里 |\n| Bangsar Village 2 | 1.06 公里 |\n| Telawi Square（孟沙） | 1.10 公里 |\n| 最近的診所 | 0.24 公里 |\n| Valley International School | 0.33 公里 |\n| Taman Botani Perdana | 1.40 公里 |\n\n從 KL Sentral 搭機場快鐵可直達吉隆坡國際機場；Mid Valley、班臺醫院、馬來亞大學和孟沙南都在同一條走廊上，開車一下就到。反方向是 Bangsar Shopping Centre 和 Telawi 那一帶的餐廳。\n\n# Parkside Residence 和孟沙其他新盤比起來怎樣？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 管理費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Parkside Residence** | 租賃地契 | RM 600,000 | 485 至 1,300 尺 | 693 | RM 0.50/尺 | 2029 |\n| [Khaya Residence](/projects/khaya-residence) | 租賃地契 | RM 785,000 | 630 至 1,321 尺 | 795 | RM 0.50/尺 | 2029 |\n| [River Park（孟沙南）](/projects/river-park) | 租賃地契 | RM 604,000 | 812 至 1,180 尺 | 1,332 | RM 0.38/尺 | 2026 |\n| [Bangsar Hill Park B、C 座](/projects/bangsar-hill-park-tower-b-and-c) | 租賃地契 | RM 1,123,000 | 917 至 1,478 尺 | 802 | RM 0.35/尺 | 2028 |\n| [Menerung](/projects/menerung) | 永久地契 | RM 1,700,000 | 1,001 至 3,714 尺 | 111 | RM 0.95/尺 | 2027 |\n\n五個裡面 Parkside 入場價最低，因為它的入場面積也最小，485 尺。先拿它跟 Khaya 比：兩個都是租賃地契、都是 2029 年完工、管理費都是 RM 0.50/尺，差別在地址和景觀——Khaya 在孟沙和 Kerinchi 交界，走 5 分鐘到輕快鐵；Parkside 就坐在公園上。如果你要的是面積不是公園景，River Park 和 Bangsar Hill Park 的入場面積都比較大。\n\n# Parkside Residence 哪個戶型好？\n\n面積從 485 尺到 1,325 尺，一房到三房，所以這棟樓不是隻做給某一種買家。下面是銷售資料上的戶型；價錢按座向和樓層不同，請索取最新價單。\n\n| 戶型 | 建築面積 | 房 | 浴室 |\n| :--- | :--- | :--- | :--- |\n| A | 485 尺 | 1 | 1 |\n| B（可做雙鑰匙） | 689 尺 | 1 | 2 |\n| C1 | 646 尺 | 2 | 1 |\n| C2 | 732 尺 | 2 | 2 |\n| D1 | 872 尺 | 2+1 | 2 |\n| D2 | 926 尺 | 2+1 | 2 |\n| D3 | 1,012 尺 | 2+1 | 2 |\n| E1 | 1,260 尺 | 3 | 2 |\n| E2 | 1,325 尺 | 3 | 2 |\n\n**我在樣板房看到的。** 我會叫大部分買家先看 646 尺的兩房。它是四四方方的，不是長條形；客廳闊度大約 12 尺，而這個尺寸的單位通常只有 10 尺左右——紙上看差一點點，實際上就是沙發放得下和放不下的分別。廚房的櫥櫃和家電都在配套裡。多出來的那個小房間有自己的窗，所以當小睡房或者工作室都行，不會像儲藏室。落地窗是我會叫你親自去看的細節：它的窗臺做得比一般的一到兩尺更低，光可以照進房間更深的位置。另一間樣板房是 2+1 帶陽臺的，廚房、飯廳、客廳的安排一樣，多了戶外空間和孟沙那一面的景。\n\n# 設施\n\n銷售資料把設施分成四區——Parkside Boulevard、Parkside Retreat、Parkside Collective 和 Parkside Sky——而且分散在四個樓層，不是全部堆在一層平臺上。最低那層直接接進 5 英畝的中央公園，這層最重要：你走下去就在公園裡，散步、跑步、帶小孩都行。上面一層是日常那層，泳池、健身房、瑜伽空間。再上去是家庭和社交那層，兒童區、燒烤、週末聚會的空間。最頂是空中那層：空中休息室和共用工作區，比其他樓層安靜，視野也是全棟最好的。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 5 英畝中央公園就在樓下，不是隔一條馬路 | 租賃地契 |\n| 直線到 Bangsar 輕快鐵站約 510 米、KL Sentral 約 680 米 | 2029 年完工，整個新區還在建 |\n| 入場價是上面比較的孟沙專案裡最低的 | 一棟 62 層樓 693 個單位 |\n| SP Setia 加三井不動產，做的是總體規劃不是單一地塊 | 入場單位 485 尺，對家庭來說偏小 |\n\n# 怎樣看 Parkside Residence\n\nWhatsApp 聯絡 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取價單、圖則和安排看房。完整規格在 [Parkside Residence 專案頁](/projects/parkside-residence)。\n\n完整的戶型表、設施清單和周邊距離，可以看 [PropertyPortal 上的 Parkside Residence 資料頁](https://www.propertyportal.my/project/parkside-residence)。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-24",
+    "updatedOn": "2026-09-24",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1Oz8qQLsSHzA-fdNGILMwYKswHIXxwN6B=w1600",
+    "faqs": [
+      {
+        "question": "Parkside Residence 是永久地契還是租賃地契？",
+        "answer": "租賃地契。由 SP Setia 與三井不動產合資的 Setia MF SFH Development Sdn Bhd 開發，位於 Jalan Bangsar 旁的 Setia Federal Hill。"
+      },
+      {
+        "question": "Parkside Residence 起價多少？",
+        "answer": "RM 600,000 起。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Parkside Residence 離輕快鐵站多遠？",
+        "answer": "從專案座標在 OpenStreetMap 上量，直線到 Bangsar 輕快鐵站約 510 米，到 KL Sentral 約 680 米。實際走路會比直線長。"
+      },
+      {
+        "question": "Parkside Residence 有多少個單位？",
+        "answer": "62 層共 693 個單位，是 Setia Federal Hill 總體規劃裡的第一期住宅。"
+      },
+      {
+        "question": "Parkside Residence 的管理費多少？",
+        "answer": "每平方英尺 RM 0.50，已含 10% 償債基金；1,000 平方英尺的單位大約每月 RM 500。"
+      },
+      {
+        "question": "Parkside Residence 什麼時候完工？",
+        "answer": "根據目前的專案資料是 2029 年。請以買賣合約上的施工期為準。"
+      }
+    ],
+    "relatedSlugs": [
+      "khaya-residence-bangsar-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "parkside-residence",
+      "khaya-residence",
+      "river-park",
+      "bangsar-hill-park-tower-b-and-c",
+      "menerung"
+    ],
+    "tags": [
+      "bangsar",
+      "leasehold",
+      "sp setia",
+      "review"
+    ]
+  },
+  "pavilion-square-kl-review": {
+    "id": "pavilion-square-kl-review",
+    "slug": "pavilion-square-kl-review",
+    "title": "Pavilion Square 吉隆坡評測：價格、戶型、優缺點",
+    "metaDescription": "Pavilion Square 評測：67 層住宅，專屬天橋直通柏威年 Pavilion KL，RM 170 萬起。戶型、設施、管理費、優缺點。",
+    "summary": "Pavilion Square 位於 Jalan Raja Chulan，是一座 67 層、960 戶的住宅大樓，有自己的天橋直通柏威年廣場（Pavilion Kuala Lumpur）。這篇評測講價格、八種戶型、頂樓泳池和空中運動區、租賃地契的問題，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Pavilion Square？\n\n**我的看法。** Pavilion Square 你買的是 Pavilion 這個名字和那條天橋。樓在皇家朱蘭酒店後面，位置在 KL City Centre、TRX 和吉隆坡塔中間，一條專屬的冷氣天橋幾分鐘走進 Pavilion KL 商場；走去武吉免登 MRT 站大約 6 分鐘。柏威年集團至今推過的專案全部完工交樓，一棟樓 960 個單位、67 層、每層 10 戶，這一點對我來說重要。拍樣板房的時候有兩樣我特別記得：每一間都是全裝修交樓——大理石地板、名牌家電、傢俱、窗簾都在配套裡；大一點的間隔有陽臺，吉隆坡市中心很多專案是沒有陽臺的。向北的單位看雙峰塔，向南看武吉免登。設施層也是賣點：118 米的空中無邊際泳池，還有 5,000 尺的空中健身區。取捨是租賃地契和這個密度；如果你一定要永久地契，去比 CloutHaus 或者 Orion。\n\n- **適合：** 想直通商場、認柏威年品牌的買家；想在套間到 3 房之間有多種選擇的業主。\n- **請三思：** 一定要永久地契的人；偏好低密度大樓的人。\n\n# 看房影片\n\n{{youtube:Ip9wDev_pF4}}\n\n# Pavilion Square 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Armani Hartajaya Sdn Bhd（柏威年集團） |\n| 地址 | Lot 297, Jalan Raja Chulan, 50200 Kuala Lumpur |\n| 地契 | 租賃地契 |\n| 土地面積 | 2.023 英畝 |\n| 住宅大樓 | 67 層，960 戶 |\n| 每層單位 / 電梯 | 20 戶，12 部電梯 |\n| 其他組成 | 25 層大樓（106 個企業套房）、零售店鋪 |\n| 面積 | 504 至 1,272 平方英尺 |\n| 戶型 | 套間至 3 房 |\n| 價格 | RM 170 萬起 |\n| 管理費 | 每平方英尺 RM 0.90 |\n| 預計完工 | 2029 年（58 個月） |\n\n# Pavilion Square 在哪裡？周邊有什麼？\n\n位於金三角的 Jalan Raja Chulan。天橋通往 Pavilion Kuala Lumpur，再過去就是 The Starhill、Fahrenheit88 和 Lot 10。這一帶有武吉免登 MRT、Conlay MRT，以及 Raja Chulan 和武吉免登單軌火車站；有蓋的武吉免登至 KL City Centre 行人天橋可以走到 Suria Mall。最近的醫院是 Prince Court 醫療中心和同善醫院。\n\n# 和附近專案比，Pavilion Square 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Pavilion Square** | 租賃 | RM 170 萬 | 504 至 1,272 平方英尺 | 960 | 每平方英尺 RM 0.90 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 150 萬 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 158 萬 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 |\n| [Core Residence @ TRX](/projects/core-residence-trx) | 永久 | RM 150 萬 | 622 至 1,572 平方英尺 | 700 | 請詢問 |\n\n# Pavilion Square 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A | 504 平方英尺 | 套間，1 浴 |\n| B1 / B2 | 770 至 772 平方英尺 | 1 + 1 房 |\n| C1 | 966 平方英尺 | 2 房 2 浴 |\n| C2 | 978 平方英尺 | 2 + 1 房 |\n| C3 | 1,100 平方英尺 | 2 + 1 房 |\n| C4 | 1,272 平方英尺 | 2 + 1 房 |\n| D | 1,255 平方英尺 | 3 房 3 浴 |\n\n**我會選哪個。** 1,272 平方英尺的 2 + 1 房（Type C4）是我拍的單位，也是我會推薦給家庭的：飯廳坐得下 8 到 10 個人，書房大到可以改成第三間睡房，主人房有步入式衣帽間和浴缸。一個人或夫妻住，1 + 1 房（Type B）是合理的中間選擇，多出來的房間當書房；Type D 是唯一真正的 3 房。504 平方英尺的套間附裝好的廚房和隱藏式冰箱，適合當市中心的落腳點。\n\n# 設施\n\n12 樓有會所休息室、閱讀室、KTV、商務中心、兒童室、燒烤廣場和庭院花園。63A 樓是 15,000 平方英尺的空中健康區，有健身房、戶外健身區、蒸汽房和桑拿，發展商稱是吉隆坡市中心最高、最大的空中運動區。67 樓是 118 米長的頂樓無邊際泳池，發展商稱是市中心最高、最長的泳池，另有兒童池、淺水池和按摩池。66 樓是空中花園。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 專屬天橋直通 Pavilion KL | 租賃地契 |\n| 柏威年集團的品牌和在本區的往績 | 960 戶、每層 20 戶：大樓人多 |\n| 118 米頂樓泳池和 15,000 平方英尺空中健康區 | 月費每平方英尺 RM 0.90 |\n| 從套間到 3 房選擇齊全 | 2029 年才完工 |\n\n# 怎樣預約看 Pavilion Square\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Pavilion Square 樓盤頁](/projects/pavilion-square-residences)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Pavilion Square 資料頁](https://www.propertyportal.my/project/pavilion-square-residences) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1J2eYufPL6bh3ARXBh279ZntAWYQv8HhN=w1600",
+    "faqs": [
+      {
+        "question": "Pavilion Square 是永久地契還是租賃地契？",
+        "answer": "租賃地契。發展商是柏威年集團（Pavilion Group）旗下的 Armani Hartajaya Sdn Bhd。"
+      },
+      {
+        "question": "Pavilion Square 有連線 Pavilion KL 嗎？",
+        "answer": "有。專案設有專屬天橋直通 Pavilion Kuala Lumpur。"
+      },
+      {
+        "question": "Pavilion Square 起價多少？",
+        "answer": "RM 170 萬起。決定之前請先索取最新價單。"
+      },
+      {
+        "question": "一共有多少單位？",
+        "answer": "67 層住宅大樓共 960 戶，每層 20 戶、12 部電梯。另有一座 25 層大樓，內有 106 個企業套房。"
+      },
+      {
+        "question": "Pavilion Square 什麼時候完工？",
+        "answer": "發展商目標是 2029 年，建築期 58 個月。"
+      }
+    ],
+    "relatedSlugs": [
+      "golden-crown-trx-review",
+      "core-residence-trx-review",
+      "clouthaus-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "pavilion-square-residences",
+      "clouthaus",
+      "orion-residence",
+      "core-residence-trx"
+    ],
+    "tags": [
+      "bukit bintang",
+      "pavilion",
+      "leasehold",
+      "review"
+    ]
+  },
+  "phoeniz-suites-kl-city-centre-review": {
+    "id": "phoeniz-suites-kl-city-centre-review",
+    "slug": "phoeniz-suites-kl-city-centre-review",
+    "title": "Phoeniz Suites @ KL City Centre 評測：價格、戶型、優缺點",
+    "metaDescription": "Phoeniz Suites @ KL City Centre 評測：EXSIM 的永久地契 53 層大樓，394 個套房單位，484 至 678 平方英尺，RM 1,016,400 起。戶型、管理費、優缺點。",
+    "summary": "Phoeniz Suites 是 EXSIM 在吉隆坡市中心 0.56 英畝地段上的永久地契 53 層大樓，共 394 個服務式套房。這篇評測講尺價、三種戶型、管理費、要接受的取捨，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Phoeniz Suites？\n\n**我的看法。** Phoeniz Suites 是黃金三角一塊小地皮上的小型永久地契樓：0.56 英畝、53 層、394 個套房。交通是這個城市裡最近的了——我量過，走到安邦公園站（布城線）90 米、同名的格拉那再也線站 190 米——去吉隆坡市中心和 Pavilion 都是很短的車程。市中心永久地契、一百萬出頭，這是它的賣點；對於要在吉隆坡過 RM 100 萬門檻的外國買家，入門單位剛好達標，沒有多花。籤之前有兩個數字要看。管理費 RM 1.21 一尺，1,000 尺大約每月 RM 1,210，發展商的補貼只補兩年、而且只補一部分。另外施工期是執照日起 60 個月，是這次對比裡等最久的一個。\n\n- **適合：** 需要市中心永久地契、又不想為了跨門檻而買太大的外國買家；想在市中心有個緊湊落腳點的專業人士；偏好小型大樓的買家。\n- **請三思：** 需要家庭型大戶的人；想早點拿鑰匙的人；每平方英尺 RM 1.21 月費超出預算的人。\n\n# Phoeniz Suites 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Exsim YKS 54 Sdn Bhd（EXSIM 集團） |\n| 地址 | Jalan Liew Weng Chee, KL City Centre, 50450 Kuala Lumpur |\n| 地契 | 永久地契，HDA 下的商業地契 |\n| 土地面積 | 0.56 英畝（24,394 平方英尺） |\n| 樓層 | 53 |\n| 總單位 | 394 個服務式套房 |\n| 每層單位 | 6 至 18 樓每層 6 戶；水箱層每層 8 戶；19 至 50 樓每層 10 戶 |\n| 電梯 | 6 部客梯 + 1 部服務電梯 |\n| 面積 | 484 至 678 平方英尺 |\n| 房間 | 1 房至 1 + 1 房 |\n| 價格 | RM 1,016,400 至 RM 1,421,600（尺價約 RM 2,100） |\n| 管理費 | 每平方英尺 RM 1.21（含儲備金），發展商頭兩年補貼最高 RM 0.33 |\n| 綠色認證 | GreenRE 銅級 |\n| 建築期 | 取得 APDL 後 60 個月 |\n\n# Phoeniz Suites 在哪裡？周邊有什麼？\n\n位於吉隆坡市中心 Jalan Liew Weng Chee，屬 CBD 和金三角範圍。開車到 KL City Centre 和 Pavilion Kuala Lumpur 都約五分鐘，巴士站和捷運站在步行範圍內。開車可用 AKLEH 大道；TRX 和 Merdeka 118 也在同一個半徑內。\n\n# 和 KL City Centre 周邊專案比，Phoeniz Suites 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Phoeniz Suites** | 永久 | RM 1,016,400 | 484 至 678 平方英尺 | 394 | 每平方英尺 RM 1.21 | 2031 |\n| [Branniganz](/projects/branniganz) | 租賃 | RM 803,500 | 344 至 678 平方英尺 | 759 | 每平方英尺 RM 1.21 | 2028 |\n| [Centrix The Station](/projects/centrix) | 租賃 | RM 907,800 | 571 至 1,187 平方英尺 | 857 | 每平方英尺 RM 0.44 | 2028 |\n| [Golden Crown](/projects/golden-crown) | 租賃 | RM 1,280,000 | 624 至 1,238 平方英尺 | 490 | 每平方英尺 RM 0.80 | 2026 |\n| [CloutHaus](/projects/clouthaus) | 永久 | RM 1,548,800 | 549 至 1,216 平方英尺 | 615 | 每平方英尺 RM 0.80 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久 | RM 1,580,000 | 491 至 1,329 平方英尺 | 298 | 每平方英尺 RM 1.32 | 已完工 |\n\nPhoeniz 是這一組裡最便宜的永久地契入門價，這是它最強的一點；除了 Orion，它也是戶數最少的，只有 394 戶。和 Centrix 比很直接：Phoeniz 給你永久地契，Centrix 給你低很多的月費、更大的面積，還有樓下就是輕快鐵站。\n\n# Phoeniz Suites 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A / A (M) | 484 平方英尺 | 1 + 1 房 1 浴 |\n| B1 / B1 (M)（雙鑰匙） | 657 平方英尺 | 1 房 2 浴 |\n| B2（雙鑰匙） | 678 平方英尺 | 1 房 2 浴 |\n\n樓盤頁另外列出 581 平方英尺版本的 B1，選之前請先要最新的戶型表。\n\n**我會選哪個。** 678 平方英尺的雙鑰匙 B2 最對得起它的價錢。678 平方英尺裡做出兩邊可獨立上鎖、各帶浴室，是小地塊上很高效的用法：自己住一邊，另一邊當書房或客房，或者兩邊完全分開。484 平方英尺、帶書房角落的 Type A 是入門單位，也是跨過外國買家門檻最便宜的那一個。單位按發展商現行規格附傢俱交房，所以請要他們提供那份規格書面版，對清楚到底包含什麼。\n\n# 設施\n\n因為地塊小，設施是往上疊而不是攤開。51 樓有空中健身房和空中音樂休息室。52 樓有空中泳池、泳池平臺和花園休息區。下面幾層：3A 樓是禮賓與接待大堂，附會議室和托兒 / 育嬰室；5 樓是管理處、祈禱室、洗衣房和小販空間。1 樓有包裹室、信件室和摩托車停車位，汽車停車場是機械式的。保安為 24 小時，配門禁卡系統和閉路電視。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 上面比較的 KL City Centre 新盤中，永久地契入門價最低 | 月費每平方英尺 RM 1.21，屬這一組裡偏高 |\n| 剛好跨過外國買家 RM 100 萬門檻，不用多買面積 | 建築期 60 個月，是這裡等最久的 |\n| 只有 394 戶，每層 6 至 10 戶，6 部客梯 | 最大隻有 678 平方英尺，沒有家庭型選擇 |\n| 按發展商規格附傢俱交房；GreenRE 銅級 | 0.56 英畝地塊，停車場是機械式 |\n\n# 怎樣預約看 Phoeniz Suites\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Phoeniz Suites 樓盤頁](/projects/phoeniz-suites-kl-city-centre)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Phoeniz Suites 資料頁](https://www.propertyportal.my/project/phoeniz-suites) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1dLw1oPBrkEiaryehf5xICc9mJ6iNcbXi=w1600",
+    "faqs": [
+      {
+        "question": "Phoeniz Suites 是永久地契還是租賃地契？",
+        "answer": "永久地契，屬房屋發展法令（HDA）下的商業地契。由 EXSIM 集團成員 Exsim YKS 54 Sdn Bhd 開發。"
+      },
+      {
+        "question": "Phoeniz Suites 起價多少？",
+        "answer": "RM 1,016,400 起，尺價約 RM 2,100。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Phoeniz Suites 的管理費是多少？",
+        "answer": "每平方英尺 RM 1.21（含儲備金）。發展商表示頭兩年會補貼最高每平方英尺 RM 0.33，實際數額和期限請要書面確認。"
+      },
+      {
+        "question": "Phoeniz Suites 有哪些面積？",
+        "answer": "三個戶型系列，從 484 平方英尺（1 + 1 房）到 678 平方英尺（雙鑰匙），全樓共 394 個套房。"
+      },
+      {
+        "question": "Phoeniz Suites 什麼時候完工？",
+        "answer": "建築期為取得廣告準證與發展商執照（APDL）後 60 個月，完工約在 2031 年。"
+      }
+    ],
+    "relatedSlugs": [
+      "branniganz-kl-city-centre-review",
+      "centrix-the-station-kl-city-centre-review",
+      "clouthaus-kl-city-centre-review"
+    ],
+    "relatedProjectIds": [
+      "phoeniz-suites-kl-city-centre",
+      "branniganz",
+      "centrix",
+      "clouthaus",
+      "golden-crown"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "suites",
+      "review"
+    ]
+  },
+  "queenswoodz-bukit-jalil-review": {
+    "id": "queenswoodz-bukit-jalil-review",
+    "slug": "queenswoodz-bukit-jalil-review",
+    "title": "Queenswoodz 武吉加里爾評測：價格、戶型、優缺點",
+    "metaDescription": "The Queenswoodz 武吉加里爾評測：EXSIM 的 1,004 戶租賃地契新盤，807 至 1,410 平方英尺，RM 723,000 起。戶型、高層遞減設計、管理費、優缺點。",
+    "summary": "The Queenswoodz 是 EXSIM 在武吉加里爾 3.44 英畝地段上的兩座大樓，共 1,004 戶，最小的戶型也是 2 + 1 房。這篇評測講尺價、戶型、少見的高層遞減設計、要接受的取捨，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 The Queenswoodz？\n\n**我的看法。** Queenswoodz 是 Exsim 在隔壁做的 The Kingswoodz 的成人版。這裡沒有單間也沒有一房：最小 807 尺、兩房加工人房，最大到 1,410 尺。光是這個決定就改變了住進來的是什麼人，照我的經驗，也改變了這棟樓往後會怎麼變舊。車站是真的走得到——我量過，走到 Awan Besar 站 550 米——兩棟 GreenRE 認證的樓蓋在 3.44 英畝地上，1,000 尺的持有成本大約每月 RM 420。我會叫買家看的細節是樓層堆疊：高樓層從大約 14 戶遞減到 8 戶，最上面那幾層只有 4 戶。跟銷售要 stacking plan，不要只看單位間隔圖——在那幾層，你買到的是 1,004 個單位的大樓裡安靜很多的一塊。\n\n- **適合：** 想在武吉加里爾要 2 + 1 房或更大的家庭和夫妻；想要高層低戶數那幾層的買家；看過 Kingswoodz 但覺得不夠大的人。\n- **請三思：** 想要本區最便宜入門價的人；一定要永久地契的人。\n\n# The Queenswoodz 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | EXSIM |\n| 位置 | 吉隆坡武吉加里爾 |\n| 地契 | 租賃地契，HDA 下的商業地契 |\n| 土地面積 | 3.44 英畝 |\n| 樓數 / 樓層 | A 座 50 層（494 戶），B 座 51 層（510 戶） |\n| 總單位 | 1,004 |\n| 每層單位 | 主要樓層約 14 戶，高層 8 戶，頂層 4 戶 |\n| 電梯 | 5 部客梯 + 1 部服務電梯 |\n| 面積 | 807 至 1,410 平方英尺 |\n| 房間 | 2 + 1 房至 4 房 |\n| 價格 | RM 723,300 至 RM 1,241,300（尺價約 RM 853） |\n| 管理費 | 每平方英尺 RM 0.42（含儲備金） |\n| 建築期 | 取得 APDL 後 52 個月（完工約 2029 年） |\n\n# The Queenswoodz 在哪裡？周邊有什麼？\n\n位於武吉加里爾，就是圍繞國家體育館和 KL Sports City 發展起來的那一區。這一帶有 Awan Besar、Alam Sutera、Muhibbah 和 Sri Petaling 四個輕快鐵站，開車可用武吉加里爾大道、KESAS、MEX、NPE 和新街場大道。\n\n區內的商場、學校和醫療配套，和這一區其他新盤共用同一套：購物有 Pavilion Bukit Jalil 和 Aurora Place；學校有 SJK(C) 黎明華小、慈濟國際學校和 Kingsgate 國際學校；院校有國際醫藥大學 IMU 和 APU；休閒有 80 英畝的武吉加里爾休閒公園和武吉加里爾高爾夫球鄉村俱樂部。這個地段到各處的實際步行和車程，請向銷售團隊索取，數字和 Kingswoodz 不一樣。\n\n# 和武吉加里爾其他新盤比，Queenswoodz 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **The Queenswoodz** | 租賃 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租賃 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n| [Ren Residence](/projects/ren-residence) | 租賃 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [Ayanna](/projects/ayanna) | 永久 | RM 753,000 | 1,155 至 2,453 平方英尺 | 824 | 每平方英尺 RM 0.27 | 2027 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n\n尺價約 RM 853，Queenswoodz 高過 Ren Residence，低過幾個永久地契專案。最接近的對手是 Ren：兩個都是面向家庭的大型租賃地契專案，但 Ren 完工更早、月費更低、而且是住宅地契；Queenswoodz 的入門單位較小（807 平方英尺），並且有高層遞減的設計。\n\n# Queenswoodz 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A1 / A2 | 807 平方英尺 | 2 + 1 房 2 浴 |\n| B1 / B2 | 936 平方英尺 | 3 房 2 浴 |\n| C1 / C2 | 1,206 平方英尺 | 3 + 1 房 3 浴 |\n| D1（雙鑰匙） | 1,410 平方英尺 | 4 房 3 浴 |\n| D2 | 1,410 平方英尺 | 3 + 1 房 3 浴 |\n\n樓盤頁另外列出 1,008 平方英尺和 1,209 平方英尺的版本，選之前請先要最新的戶型表。\n\n**我會選哪個。** 年輕家庭我會帶他們看 936 平方英尺的 B1 或 B2：三間實實在在的房、兩個浴室，價錢還低過附近的永久地契專案。807 平方英尺的 A1 適合夫妻，多出來的房間當書房。家裡有父母或成年子女同住，就看 1,410 平方英尺的 D1 雙鑰匙，他們可以有自己的大門。不管選哪個戶型，都記得問清楚哪幾層屬於 8 戶和 4 戶那兩段。\n\n# 設施\n\n我手上的資料裡，發展商還沒公佈完整的設施清單，所以我不在這裡猜著列。EXSIM 在武吉加里爾的隔壁專案，是把設施放在一整層平臺加上每座樓的頂層平臺；銷售展廳應該可以給你看 Queenswoodz 對應的圖。記得特別問：泳池在哪一層、健身房在哪裡、每座樓頂層有什麼。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 沒有套間和一房，最小也是 807 平方英尺的 2 + 1 房 | 租賃地契加商業地契：水電費率請確認 |\n| 高層戶數遞減到每層 8 戶，頂層 4 戶 | 兩座樓共 1,004 戶 |\n| 發展商列明 5 部客梯加 1 部服務電梯 | 我手上的資料還沒有設施清單 |\n| 價錢低過同一區的永久地契新盤 | 完工約 2029 年，是這一組裡最遲的 |\n\n# 怎樣預約看 The Queenswoodz\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Queenswoodz 樓盤頁](/projects/queenswoodz)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 The Queenswoodz 資料頁](https://www.propertyportal.my/project/queenswoodz) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1nTRaBrO1obirsbyinGftgvoh--_ULir7=w1600",
+    "faqs": [
+      {
+        "question": "The Queenswoodz 是永久地契還是租賃地契？",
+        "answer": "租賃地契，屬房屋發展法令（HDA）下的商業地契，由 EXSIM 在武吉加里爾開發。"
+      },
+      {
+        "question": "The Queenswoodz 起價多少？",
+        "answer": "RM 723,300 起，尺價約 RM 853。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "The Queenswoodz 有哪些面積？",
+        "answer": "從 807 平方英尺（2 + 1 房）到 1,410 平方英尺（4 房，或 3 + 1 房雙鑰匙），沒有套間和一房。"
+      },
+      {
+        "question": "一共有多少單位？",
+        "answer": "共 1,004 戶。A 座 50 層 494 戶，B 座 51 層 510 戶。"
+      },
+      {
+        "question": "The Queenswoodz 什麼時候完工？",
+        "answer": "建築期為取得廣告準證與發展商執照（APDL）後 52 個月，完工約在 2029 年。"
+      }
+    ],
+    "relatedSlugs": [
+      "kingswoodz-bukit-jalil-review",
+      "ren-residence-bukit-jalil-review",
+      "freehold-vs-leasehold"
+    ],
+    "relatedProjectIds": [
+      "queenswoodz",
+      "kingswoodz-bukit-jalil",
+      "ren-residence",
+      "oaka-residences",
+      "ayanna"
+    ],
+    "tags": [
+      "bukit jalil",
+      "leasehold",
+      "family",
+      "review"
+    ]
+  },
+  "ren-residence-bukit-jalil-review": {
+    "id": "ren-residence-bukit-jalil-review",
+    "slug": "ren-residence-bukit-jalil-review",
+    "title": "Ren Residence 武吉加里爾評測：價格、戶型、優缺點",
+    "metaDescription": "Ren Residence 評測：武吉加里爾（Bukit Jalil）住宅地契的家庭型公寓，920 至 1,680 平方英尺，RM 537,000 起。戶型、管理費、優缺點，以及適合什麼買家。",
+    "summary": "Ren Residence 位於武吉加里爾，5.6 英畝土地上兩座 52 層大樓，共 1,260 個家庭型單位，最小 920 平方英尺。這篇評測講價格、六種戶型、住宅地契、設施、要接受的取捨，以及適合什麼買家。",
+    "content": "# 一句話結論：誰適合買 Ren Residence？\n\n**我的看法。** Ren 我是拿給買來自住的人看的，不是給買市區小單位的人。比較大的間隔還在 RM 100 萬以內，在武吉加里爾要這個空間又這個價不容易，尺價也是我下面對比的武吉加里爾新盤裡最低的。大樓是 GDP Architects 設計的，平面做成「人」字形，讓更多單位拿到直接採光，不會互相對望。每個單位至少三房、兩個車位，住宅地契，1,000 尺管理費大約每月 RM 350，我量過走到 Alam Sutera 站 670 米。預計 2026 年完工，等交鑰匙的時間短。取捨是租賃地契和規模——兩棟一共 1,260 個單位——所以決定之前，去看房時記得走一趟停車場斜坡和電梯大堂。\n\n- **適合：** 從小公寓換大的家庭；想要住宅地契水電費率和 2 至 3 個車位的買家。\n- **請三思：** 一定要永久地契的人；想步行直通 Pavilion Bukit Jalil 的人。\n\n# Ren Residence 資料一覽\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Gaya Kuasa Sdn Bhd |\n| 建築師 | GDP Architects |\n| 地址 | No. 2, Jalan Bukit Jalil Indah 4, Taman LTAT, 57000 Kuala Lumpur |\n| 地契 | 租賃地契，住宅地契 |\n| 土地面積 | 5.6 英畝 |\n| 樓數 / 樓層 | 2 座，52 層 |\n| 總單位 | 1,260 戶（每座 630 戶） |\n| 每層單位 / 電梯 | 16 戶，每座 5 + 1 部電梯 |\n| 面積 | 920 至 1,680 平方英尺 |\n| 房間 | 3 房至 4 + 1 房 |\n| 車位 | 每單位 2 至 3 個 |\n| 價格 | RM 537,000 起 |\n| 管理費 | 每平方英尺 RM 0.35 |\n| 預計完工 | 2026 年 |\n\n# Ren Residence 在哪裡？周邊有什麼？\n\n位於武吉加里爾 Taman LTAT 的一塊高地上，靠近慈濟國際學校。最近的輕快鐵站是 Alam Sutera LRT。Pavilion Bukit Jalil、國際醫藥大學（IMU）、Kingsgate 國際學校、馬來西亞科技園和國家體育館都在同一區；開車可用 KESAS、武吉加里爾大道、吉隆坡至芙蓉大道和新街場大道。\n\n# 和武吉加里爾其他新盤比，Ren 如何？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 月費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Ren Residence** | 租賃 | RM 537,000 | 920 至 1,680 平方英尺 | 1,260 | 每平方英尺 RM 0.35 | 2026 |\n| [The Kingswoodz](/projects/kingswoodz-bukit-jalil) | 租賃 | RM 422,500 | 474 至 904 平方英尺 | 1,558 | 每平方英尺 RM 0.42 | 2028 |\n| [Queenswoodz](/projects/queenswoodz) | 租賃 | RM 723,000 | 807 至 1,410 平方英尺 | 1,004 | 每平方英尺 RM 0.42 | 2029 |\n| [OAKA Residences](/projects/oaka-residences) | 永久 | RM 836,000 | 882 至 1,509 平方英尺 | 350 | 每平方英尺 RM 0.51 | 2028 |\n| [Park Green Pavilion](/projects/park-green-pavilion-bukit-jalil) | 永久 | RM 1,209,100 | 1,201 至 1,905 平方英尺 | 453 | 每平方英尺 RM 0.44 | 2029 |\n\n在這一組裡，Ren 的 920 平方英尺 3 房入門價最低，完工也最早。永久地契的選擇（OAKA、Park Green）起價明顯更高。\n\n# Ren 哪個戶型最好？\n\n| 戶型 | 面積 | 格局 |\n| :--- | :--- | :--- |\n| A | 920 平方英尺 | 3 房 2 浴 |\n| B1 | 1,050 平方英尺 | 3 + 1 房 2 浴 |\n| B2 | 1,110 平方英尺 | 3 + 1 房 2 浴 |\n| B3 | 1,120 平方英尺 | 3 + 1 房 2 浴 |\n| C | 1,270 平方英尺 | 4 + 1 房 3 浴 |\n| D | 1,680 平方英尺 | 4 + 1 房 3 浴 |\n\n**我會選哪個。** 自住的話，我會帶家庭看較大的戶型，因為 Ren 的價值就在這裡。Type B（1,050 至 1,120 平方英尺）是 3 房加一個雜物房，可以當書房或幫傭房。Type C（1,270 平方英尺，4 + 1 房）適合三代同堂，這種面積在武吉加里爾其他專案通常要遠超過 RM 100 萬。\n\n# 設施\n\n超過一英畝的設施：無邊際泳池、多個兒童泳池、籃球場、網球 / 五人足球場、羽球場、健身房、瑜伽室、桑拿和蒸汽房、共享辦公室、多功能廳、幼兒園和托兒中心、跑步道和花園。保安為三層系統，配人臉識別和車牌識別。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 住宅地契，月費低（每平方英尺 RM 0.35） | 租賃地契 |\n| 每個單位都是 3 房或以上，配 2 至 3 個車位 | 1,260 戶：社群大 |\n| 在上面比較的新盤中，3 房入門價最低 | 每層 16 戶，配 5 + 1 部電梯 |\n| 2026 年完工，比同區專案早 | 沒有直接連線 Pavilion Bukit Jalil |\n\n# 怎樣預約看 Ren Residence\n\n需要價單、平面圖和預約看房，請 WhatsApp Shyan Yee（REN 46305，IQI Realty）+60 10-827 8932。完整規格在 [Ren Residence 樓盤頁](/projects/ren-residence)。\n\n戶型表、設施清單和周邊距離的完整資料，可以到 [PropertyPortal 的 Ren Residence 資料頁](https://www.propertyportal.my/project/ren-bukit-jalil) 檢視。",
+    "readTime": "5 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-21",
+    "updatedOn": "2026-09-21",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1SzU_RC5uFKLIp_jmvk576_APCBUfRUPd=w1600",
+    "faqs": [
+      {
+        "question": "Ren Residence 是住宅地契還是商業地契？",
+        "answer": "住宅地契。水電按家用費率計算。"
+      },
+      {
+        "question": "Ren Residence 是永久地契還是租賃地契？",
+        "answer": "租賃地契，位於武吉加里爾一塊 5.6 英畝的高地上，由 Gaya Kuasa Sdn Bhd 開發，GDP Architects 設計。"
+      },
+      {
+        "question": "Ren Residence 起價多少？",
+        "answer": "RM 537,000 起。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "有哪些面積？",
+        "answer": "共六種戶型，從 920 平方英尺（3 房）到 1,680 平方英尺（4 + 1 房 3 浴）。"
+      },
+      {
+        "question": "每個單位有幾個車位？",
+        "answer": "根據發展商資料，每個單位有 2 至 3 個車位。"
+      }
+    ],
+    "relatedSlugs": [
+      "oaka-residences-bukit-jalil-review",
+      "ayanna-bukit-jalil-review",
+      "freehold-vs-leasehold",
+      "understanding-maintenance-fees-sinking-funds"
+    ],
+    "relatedProjectIds": [
+      "ren-residence",
+      "oaka-residences",
+      "queenswoodz",
+      "kingswoodz-bukit-jalil",
+      "park-green-pavilion-bukit-jalil"
+    ],
+    "tags": [
+      "bukit jalil",
+      "family",
+      "residential title",
+      "review"
+    ]
+  },
+  "royal-lexis-kl-city-centre-review": {
+    "id": "royal-lexis-kl-city-centre-review",
+    "slug": "royal-lexis-kl-city-centre-review",
+    "title": "Royal Lexis 吉隆坡評測：價格、戶型、優缺點",
+    "metaDescription": "Royal Lexis 評測：KL Metro 在 Jalan Kia Peng 的永久地契專案，每個單位都有私人泳池，66 層 371 個住宅單位，573 至 1,155 平方英尺，RM 1,897,000 起。",
+    "summary": "Royal Lexis 是 Jalan Kia Peng 上一棟永久地契、由酒店集團管理的大樓，每個單位的陽臺都有私人泳池。這篇評測講價格、四個戶型、管理費、車位問題，以及適合什麼買家。",
+    "content": "# 快速結論：誰該買 Royal Lexis？\n\n**我的看法。** Royal Lexis 賣的是一樣市中心別的專案賣不了的東西：泳池在你自己的單位裡。不是公用的空中泳池，是陽臺上的私人泳池，落地玻璃外面，371 個住宅單位全部都有。Lexis 酒店集團是靠度假村的私人泳池別墅做出名的，這個專案就是把那套東西搬進 Jalan Kia Peng 一棟 66 層的樓裡，位置在吉隆坡塔和雙峰塔之間。永久地契，在這一帶很少見；交通是走得到的：我量過，直線到 Conlay 捷運站約 450 米、到 Raja Chulan 單軌站約 470 米。有兩件事要先搞清楚。**地契是 Serviced Residence，不在《房屋發展法》之下**，所以你買一般新房該有的那些保障，在這裡不是同一回事 —— 這一條拿去問你的律師。另外銷售資料寫得很清楚：**不分配車位給業主**，平臺車位是給酒店客人的，地下室是摩托車位。在市中心正中間，這件事可能對你沒差；但如果你開車，這一條就決定了一切。\n\n- **適合：** 要在市區擁有一間度假式單位、會用酒店服務的；要市中心永久地契的外國買家；不需要車位的人。\n- **要想清楚：** 你需要車位、你要 HDA 的保障，或者你要的是一棟沒有酒店在裡面的純住宅樓。\n\n# 影片看房\n\n{{youtube:puFoi9JRDpc}}\n\n# Royal Lexis 基本資料\n\n| 專案 | 內容 |\n| :--- | :--- |\n| 發展商 | Kuala Lumpur Metro Group |\n| 酒店營運方 | Lexis Hotel Group |\n| 地址 | 15, Jalan Kia Peng, 50450 吉隆坡 |\n| 地契 | 永久地契；Serviced Residence（不在 HDA 之下） |\n| 地皮 | 0.71 英畝 |\n| 樓層 | 66 層 |\n| 總單位 | 518：371 個住宅 + 147 間酒店客房 |\n| 每層戶數／電梯 | 11–38 樓每層 11 戶，39–45 樓每層 9 戶；6 部客梯 |\n| 面積 | 573 至 1,155 平方英尺 |\n| 房數 | 1 至 2 房 |\n| 價格 | RM 1,897,000 至 RM 4,418,000，尺價約 RM 2,950 起（毛價） |\n| 管理費 | 每平方英尺 RM 0.80，另加 10% 償債基金（1,000 尺約每月 RM 800） |\n| 車位 | 不分配給業主；2–8 樓平臺車位供酒店客人；地下室為摩托車位 |\n| 狀態 | 興建中，Stage 2A，預計 2029 年完工 |\n\n# Royal Lexis 在哪裡？周邊有什麼？\n\n在 Jalan Kia Peng，位於吉隆坡塔和雙峰塔之間，大使館區、會展中心和購物帶都在同幾個街區內。以下是從專案座標對 OpenStreetMap 的車站資料量出來的直線距離，實際走路一定比這個數字長。\n\n| 地點 | 直線距離 |\n| :--- | :--- |\n| PY22 Conlay 捷運站 | 0.45 公里 |\n| MR7 Raja Chulan 單軌火車站 | 0.47 公里 |\n| 雙峰塔旁的車站（布城線） | 0.66 公里 |\n| MR6／KG18A 武吉免登（單軌與捷運） | 0.74 公里 |\n| 雙峰塔旁的車站（格拉那再也線） | 0.82 公里 |\n\nSuria KL City Centre、Pavilion Kuala Lumpur、Avenue K、Starhill、Lot 10 都在走路範圍或一站之內；吉隆坡會展中心和 KL City Centre 公園就在旁邊，鄰居是 W、EQ、洲際和 Sheraton Imperial 這些酒店。\n\n# Royal Lexis 和市中心其他專案比起來怎樣？\n\n| 專案 | 地契 | 起價 | 面積 | 單位數 | 管理費 | 完工 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Royal Lexis** | 永久地契 | RM 1,897,000 | 573 至 1,155 尺 | 371 個住宅 | RM 0.80/尺 + 10% | 2029 |\n| [Conlay](/projects/conlay) | 永久地契 | RM 1,460,000 | 743 至 1,335 尺 | 491 | RM 0.80/尺 | 請向發展商確認 |\n| [CloutHaus](/projects/clouthaus) | 永久地契 | RM 1,548,800 | 549 至 1,216 尺 | 615 | RM 0.80/尺 | 2029 |\n| [Orion Residence](/projects/orion-residence) | 永久地契 | RM 1,580,000 | 491 至 1,329 尺 | 298 | RM 1.32/尺 | 2025 |\n| [Phoeniz Suites](/projects/phoeniz-suites-kl-city-centre) | 永久地契 | RM 1,016,400 | 484 至 678 尺 | 394 | RM 1.21/尺 | 2031 |\n\n尺價約 RM 2,950（毛價），Royal Lexis 是五個裡面最貴的。你付的是單位裡那個泳池，和圍著它的酒店營運。跟 Conlay 比最乾淨：管理費差不多、同樣是市中心永久地契，Conlay 給你更多面積、更低總價，還有車位；Royal Lexis 給你泳池和服務，但完全沒有車位。\n\n# Royal Lexis 哪個戶型好？\n\n四個戶型。下面是銷售資料上的戶型；價錢按座向和樓層不同，請索取最新價單。\n\n| 戶型 | 建築面積 | 棟內數量 |\n| :--- | :--- | :--- |\n| A | 573 尺 | 112 |\n| B | 802 尺 | 70 |\n| C | 1,085 尺 | 175 |\n| D | 1,155 尺 | 14 |\n\n**我在樣板房看到的。** 我拍了 802 尺的 Type B，還有一間大的雙鑰匙戶型。Type B 是多數買家會看的那個：酒店規格的裝修，傢俱家電都在配套裡，有衣帽間，浴室用大理石、配浴缸，陽臺直接連到私人泳池，泳池旁邊還有一塊可以坐的地方。雙鑰匙那間是一個玄關兩道門 —— 一邊是單間，一邊是一房一廳 —— 泳池在中間，所以一家人可以一起用，兩邊又各自獨立。如果你想自己住一半、出租一半，或者讓父母住另一半，就看這個戶型。\n\n# 設施\n\n酒店與空中設施在 9 至 10 樓和 55 至 66 樓：禮賓服務、Roselle 咖啡廳、健身房、大堂與迎賓區、空中宴會廳（附新娘房）、咖啡廳與戶外咖啡區、空中無邊際泳池、日本餐廳、行政酒廊、特色餐廳、高空酒吧和空中觀景臺。\n\n因為同一棟樓裡有酒店在營運，這個單位是按酒店標準在管，不是一般公寓的標準。**請向發展商索取書面說明**：管理安排包括什麼、收費多少、年期多長。你買進去的是那份檔案，不是宣傳冊。\n\n# 優缺點\n\n| 優點 | 缺點 |\n| :--- | :--- |\n| 每個單位都有私人泳池，不是公用的 | 不分配車位給業主 |\n| 市中心永久地契 | Serviced Residence 地契，不在 HDA 之下 |\n| 直線到 Conlay 捷運站 450 米、Raja Chulan 單軌站 470 米 | 上面比較的幾棟樓裡尺價最高 |\n| 酒店營運，設施分佈在四個樓層 | 2029 年才完工，而且同棟樓有酒店 |\n\n# 怎樣看 Royal Lexis\n\nWhatsApp 聯絡 Shyan Yee（REN 46305，IQI Realty），+60 10-827 8932，索取價單、圖則和安排看房。\n\n完整規格在 [Royal Lexis 專案頁](/projects/royal-lexis-kuala-lumpur)。",
+    "readTime": "6 min read",
+    "publishDate": "2026 年 9 月",
+    "publishedOn": "2026-09-25",
+    "updatedOn": "2026-09-25",
+    "author": "Shyan Yee",
+    "category": "Reviews",
+    "image": "https://lh3.googleusercontent.com/d/1WPvCnCMGxylUnmsYyChlIqKXnIsc0apd=w1600",
+    "faqs": [
+      {
+        "question": "Royal Lexis 是永久地契還是租賃地契？",
+        "answer": "永久地契，地契類別是 Serviced Residence，不在《房屋發展法》（HDA）之下。籤之前請讓律師告訴你這對你有什麼影響。"
+      },
+      {
+        "question": "Royal Lexis 每個單位真的都有泳池？",
+        "answer": "是。銷售資料寫明每個單位都配備私人泳池，位置在陽臺，外面是落地玻璃。"
+      },
+      {
+        "question": "Royal Lexis 起價多少？",
+        "answer": "RM 1,897,000 起，公開區間去到 RM 4,418,000，尺價大約每平方英尺 RM 2,950 起（毛價）。價單每一期都會調整，請索取最新價單。"
+      },
+      {
+        "question": "Royal Lexis 有車位嗎？",
+        "answer": "沒有。銷售資料寫明不分配車位給業主 —— 二樓到八樓的平臺車位是給酒店客人的，地下室是摩托車位。這是要向發展商確認的第一件事。"
+      },
+      {
+        "question": "Royal Lexis 有多少個單位？",
+        "answer": "66 層共 518 個單位：371 個住宅 + 147 間酒店客房。11 至 38 樓每層 11 戶，39 至 45 樓每層 9 戶。"
+      },
+      {
+        "question": "Royal Lexis 什麼時候完工？",
+        "answer": "根據目前的專案資料是 2029 年，工程在 Stage 2A。請以買賣合約上的施工期為準。"
+      }
+    ],
+    "relatedSlugs": [
+      "conlay-kl-city-centre-review",
+      "clouthaus-kl-city-centre-review",
+      "orion-residence-bukit-bintang-review"
+    ],
+    "relatedProjectIds": [
+      "royal-lexis-kuala-lumpur",
+      "conlay",
+      "clouthaus",
+      "orion-residence",
+      "phoeniz-suites-kl-city-centre"
+    ],
+    "tags": [
+      "kl city centre",
+      "freehold",
+      "branded",
+      "review"
+    ]
+  }
+};

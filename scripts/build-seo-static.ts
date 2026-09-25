@@ -1,5 +1,7 @@
 import fs from 'fs';
 import path from 'path';
+// @ts-ignore — no types shipped
+import * as OpenCC from 'opencc-js';
 import { BLOG_DATA, FAQ_DATA } from '../src/data';
 import { NEARBY_OSM } from '../src/data/nearbyOsm.generated';
 import { PROJECT_FACTS } from '../src/data/projectFacts.generated';
@@ -1576,8 +1578,10 @@ function enUrlFor(reqUrl: string): string {
 function hreflangBlock(reqUrl: string): string {
   const en = enUrlFor(reqUrl);
   const zh = zhUrlFor(reqUrl);
+  const hant = zh.replace('https://shyanyee.com/zh', 'https://shyanyee.com/zh-hant');
   return `    <link rel="alternate" hreflang="en" href="${en}" />\n` +
          `    <link rel="alternate" hreflang="zh-CN" href="${zh}" />\n` +
+         `    <link rel="alternate" hreflang="zh-Hant" href="${hant}" />\n` +
          `    <link rel="alternate" hreflang="x-default" href="${en}" />\n`;
 }
 function withHreflang(html: string, reqUrl: string): string {
@@ -2136,6 +2140,34 @@ for (const y of COMPLETION_YEARS) writeZh(path.join('completion', y.year), `/com
 for (const sl of BUYER_SHORTLISTS) writeZh(path.join('best', sl.slug), `/best/${sl.slug}`);
 console.log(`[SEO Static Build] Chinese (/zh) twins: home, ${staticRoutes.length} static pages, ${zhProjectCount} projects, ${zhBlogCount} articles.`);
 
+// 8c. Traditional Chinese twins under dist/zh-hant/..., converted from the Simplified pages.
+// OpenCC's "twp" profile converts characters and the everyday vocabulary (软件 → 軟體); it leaves
+// ASCII — URLs, prices, the JS bundle path — alone. Only the language tag, the canonical, the
+// og:url and the internal links change to point at the Traditional copy.
+const toHant: (t: string) => string = (OpenCC as any).Converter({ from: 'cn', to: 'twp' });
+const hantRoot = path.join(distPath, 'zh-hant');
+let hantCount = 0;
+const walk = (dir: string): string[] => fs.readdirSync(dir, { withFileTypes: true })
+  .flatMap(e => e.isDirectory() ? walk(path.join(dir, e.name)) : (e.name === 'index.html' ? [path.join(dir, e.name)] : []));
+for (const file of walk(zhRoot)) {
+  const rel = path.relative(zhRoot, file);
+  let out = toHant(fs.readFileSync(file, 'utf-8'));
+  out = out.replace(/<html lang="zh-CN">/, '<html lang="zh-Hant">')
+    .replace(/(<link rel="canonical" href="https:\/\/shyanyee\.com\/)zh(\/|")/, '$1zh-hant$2')
+    .replace(/(<meta property="og:url" content="https:\/\/shyanyee\.com\/)zh(\/|")/, '$1zh-hant$2')
+    .replace(/(hreflang="zh-Hant" href="https:\/\/shyanyee\.com\/)zh(\/|")/g, '$1zh-hant$2')
+    .replace(/href="https:\/\/shyanyee\.com\/zh(\/|")/g, (m, tail) => m.includes('hreflang') ? m : `href="https://shyanyee.com/zh-hant${tail}`)
+    .replace(/"url":"https:\/\/shyanyee\.com\/zh(\/|")/g, '"url":"https://shyanyee.com/zh-hant$1')
+    .replace(/"url": "https:\/\/shyanyee\.com\/zh(\/|")/g, '"url": "https://shyanyee.com/zh-hant$1');
+  // the zh-CN alternate must keep pointing at the Simplified page
+  out = out.replace(/(hreflang="zh-CN" href="https:\/\/shyanyee\.com\/)zh-hant(\/|")/g, '$1zh$2');
+  const dest = path.join(hantRoot, rel);
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  fs.writeFileSync(dest, out, 'utf-8');
+  hantCount++;
+}
+console.log(`[SEO Static Build] Traditional Chinese (/zh-hant) twins: ${hantCount} pages.`);
+
 // 9. Generate legacy 301/refresh redirect files for outdated slugs
 function createRedirectHtml(targetUrl: string): string {
   return `<!DOCTYPE html>
@@ -2274,6 +2306,10 @@ for (const b of BLOG_DATA) {
   if (b && b.slug) xml += `  <url><loc>https://shyanyee.com/zh/blog/${b.slug}</loc><lastmod>${articleDates(b).updated}</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>\n`;
 }
 xml += `</urlset>\n`;
+
+// Traditional Chinese URLs mirror the Simplified ones.
+
+xml = xml.replace(/  <url><loc>https:\/\/shyanyee\.com\/zh(\/[^<]*)?<\/loc>[^\n]*\n/g, m => m + m.replace('https://shyanyee.com/zh', 'https://shyanyee.com/zh-hant').replace(/<priority>0\.(\d)0<\/priority>/, (_: string, d: string) => `<priority>0.${Math.max(1, Number(d) - 1)}0</priority>`));
 
 fs.writeFileSync(path.join(distPath, 'sitemap.xml'), xml, 'utf-8');
 const publicDir = path.join(cwd, 'public');

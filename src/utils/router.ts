@@ -17,23 +17,24 @@ export interface RouteState {
   };
 }
 
-/** Chinese (Simplified) pages live under /zh/... ; English pages keep their original URLs. */
+/** Chinese pages live under /zh/... (Simplified) and /zh-hant/... (Traditional); English keeps its URLs. */
 export const ZH_PREFIX = 'zh';
 
 /** True when the path is the Chinese version of the site (/zh or /zh/...). */
 export function isZhPath(pathname: string): boolean {
-  return /^\/zh(\/|$)/i.test(pathname || '');
+  return /^\/zh(-hant)?(\/|$)/i.test(pathname || '');
 }
 
 /** Removes a leading "zh" segment from an already-trimmed, lower-cased path string. */
 export function stripZhPrefix(trimmedPath: string): string {
-  return trimmedPath.replace(/^zh(\/|$)/, '');
+  return trimmedPath.replace(/^zh(-hant)?(\/|$)/, '');
 }
 
 /** Adds or removes the /zh prefix on an app URL such as "/projects/abc". */
 export function localizeUrl(url: string, language: string): string {
-  const bare = url.replace(/^\/zh(?=\/|$)/i, '') || '/';
+  const bare = url.replace(/^\/zh(-hant)?(?=\/|$)/i, '') || '/';
   if (language === 'zh-CN') return bare === '/' ? '/zh' : `/zh${bare}`;
+  if (language === 'zh-TW') return bare === '/' ? '/zh-hant' : `/zh-hant${bare}`;
   return bare;
 }
 

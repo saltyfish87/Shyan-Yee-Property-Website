@@ -14,6 +14,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<SupportedLanguage>(() => {
     // A /zh URL always opens in Simplified Chinese; otherwise use the visitor's saved choice.
+    if (typeof window !== 'undefined' && /^\/zh-hant(\/|$)/i.test(window.location.pathname)) return 'zh-TW';
     if (typeof window !== 'undefined' && /^\/zh(\/|$)/i.test(window.location.pathname)) return 'zh-CN';
     const saved = localStorage.getItem('portal_lang');
     return (saved as SupportedLanguage) || 'en';

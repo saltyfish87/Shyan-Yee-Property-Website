@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { BlogArticle } from '../types';
 import { BLOG_DATA } from '../data';
-import { GENERATED_ZH_ARTICLES } from '../data/articles.generated';
+import { GENERATED_ZH_ARTICLES, GENERATED_ZH_HANT_ARTICLES } from '../data/articles.generated';
 import projectsFallback from '../projectsFallback.json';
 import { renderMarkdown, articleDates, dateLabel, youtubeEmbed, DEFAULT_AUTO_LINKS } from '../lib/markdown';
 import { useLanguage } from '../LanguageContext';
@@ -55,8 +55,10 @@ export const BlogView: React.FC<BlogViewProps> = ({
   const [articles, setArticles] = useState<BlogArticle[]>(() => {
     // 1. First preference: pre-translated static compile
     if (language !== "en") {
-      const staticPreTranslated = language === 'zh-CN' && PRE_TRANSLATED_BLOGS[language]
-        ? [...Object.values(GENERATED_ZH_ARTICLES), ...PRE_TRANSLATED_BLOGS[language].filter(b => !GENERATED_ZH_ARTICLES[b.slug])]
+      // The review articles are written in Simplified Chinese and converted to Traditional at build time.
+      const generated = language === 'zh-CN' ? GENERATED_ZH_ARTICLES : language === 'zh-TW' ? GENERATED_ZH_HANT_ARTICLES : null;
+      const staticPreTranslated = generated && PRE_TRANSLATED_BLOGS[language]
+        ? [...Object.values(generated), ...PRE_TRANSLATED_BLOGS[language].filter(b => !generated[b.slug])]
         : PRE_TRANSLATED_BLOGS[language];
       if (staticPreTranslated && staticPreTranslated.length > 0) {
         return staticPreTranslated;
@@ -133,7 +135,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
     let hasLoadedFromCache = false;
 
     // 1. Check static pre-translated compile details first
-    const staticDetail = PRE_TRANSLATED_BLOG_DETAILS[language]?.[activeBlogSlug] || (language === 'zh-CN' ? GENERATED_ZH_ARTICLES[activeBlogSlug] : undefined);
+    const staticDetail = PRE_TRANSLATED_BLOG_DETAILS[language]?.[activeBlogSlug] || (language === 'zh-CN' ? GENERATED_ZH_ARTICLES[activeBlogSlug] : language === 'zh-TW' ? GENERATED_ZH_HANT_ARTICLES[activeBlogSlug] : undefined);
     if (staticDetail) {
       setActiveFullArticle(staticDetail);
       hasLoadedFromCache = true;

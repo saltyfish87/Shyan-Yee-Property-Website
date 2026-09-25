@@ -11,7 +11,7 @@ export interface ProjectFacts {
   /** When this project's row was last touched in the database, as YYYY-MM-DD. */
   checked?: string;
   /** The developer's own write-up, as published in the database. */
-  description?: { en?: string; zh?: string };
+  description?: { en?: string; zh?: string; zhHant?: string };
   keyFeatures: string[];
   facilities: string[];
   nearby: { category: string; name: string; distance?: string }[];
@@ -952,7 +952,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.35,
   "description": {
    "en": "Avantro Residences is a transit-oriented, pet-friendly freehold serviced apartment development by Chin Hin Group Property in Bandar Kinrara, Puchong. Located just 180m from BK5 LRT station, it features 842 units with a 21-lot Lifestyle Retail Hub and over 30 community facilities.",
-   "zh": "Avantro Residences 是由 Chin Hin Group 打造的位于 Bandar Kinrara 的永久地契公共交通导向型（TOD）兼宠物友好高尚服务式公寓。项目距离 Kinrara BK5 轻快铁站仅 180 米，包含 842 户住宅及 21 个楼下零售商铺，配备全套智能家居系统和丰富设施。"
+   "zh": "Avantro Residences 是由 Chin Hin Group 打造的位于 Bandar Kinrara 的永久地契公共交通导向型（TOD）兼宠物友好高尚服务式公寓。项目距离 Kinrara BK5 轻快铁站仅 180 米，包含 842 户住宅及 21 个楼下零售商铺，配备全套智能家居系统和丰富设施。",
+   "zhHant": "Avantro Residences 是由 Chin Hin Group 打造的位於 Bandar Kinrara 的永久地契公共交通導向型（TOD）兼寵物友好高尚服務式公寓。專案距離 Kinrara BK5 輕快鐵站僅 180 米，包含 842 戶住宅及 21 個樓下零售商鋪，配備全套智慧家居系統和豐富設施。"
   },
   "keyFeatures": [],
   "facilities": [
@@ -1110,7 +1111,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.27,
   "description": {
    "en": "Ayanna Resort Residences is a freehold resort-style development in Bukit Jalil, Kuala Lumpur, spanning 4.9 acres across two towers with a total of 824 units. Centred around a 1.3-acre recreational park with an interactive stream, the development offers extensive multigenerational facilities including a lap pool, family pool, gymnasium, games room, function hall and sky BBQ decks. Unit types range from a compact 1,155 sqft 3-bedroom layout to a spacious 2,316 sqft dual-key 4+2-bedroom unit, catering to young professionals, growing families and multigenerational households alike.",
-   "zh": "Ayanna Resort Residences坐落于吉隆坡Bukit Jalil，为永久地契度假风格发展项目，占地4.9英亩，由两栋塔楼组成，共824个单位。项目核心是1.3英亩会所公园及互动溪流景观，配备丰富多代同堂设施，包括泳池、健身房、游戏室、多功能厅及天空烧烤台。户型从紧凑的1155尺3房到宽敞的2316尺双钥匙4+2房一应俱全，适合首购族、成长中的家庭到多代同堂家庭。"
+   "zh": "Ayanna Resort Residences坐落于吉隆坡Bukit Jalil，为永久地契度假风格发展项目，占地4.9英亩，由两栋塔楼组成，共824个单位。项目核心是1.3英亩会所公园及互动溪流景观，配备丰富多代同堂设施，包括泳池、健身房、游戏室、多功能厅及天空烧烤台。户型从紧凑的1155尺3房到宽敞的2316尺双钥匙4+2房一应俱全，适合首购族、成长中的家庭到多代同堂家庭。",
+   "zhHant": "Ayanna Resort Residences坐落於吉隆坡Bukit Jalil，為永久地契度假風格發展專案，佔地4.9英畝，由兩棟塔樓組成，共824個單位。專案核心是1.3英畝會所公園及互動溪流景觀，配備豐富多代同堂設施，包括泳池、健身房、遊戲室、多功能廳及天空燒烤臺。戶型從緊湊的1155尺3房到寬敞的2316尺雙鑰匙4+2房一應俱全，適合首購族、成長中的家庭到多代同堂家庭。"
   },
   "keyFeatures": [
    "824 units across 2 freehold towers (42 & 44 storeys)",
@@ -2192,7 +2194,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.85,
   "description": {
    "en": "CORE Residence @ TRX offers freehold business suites for the ultimate global urbanite experience. A joint venture between Fortune 500's CCCG and WCT Holdings, it is set to transform TRX into a world-class financial centre. The development comprises two 50-storey towers of serviced residences and one tower of hotel apartments, with built-up sizes ranging from 624 sq.ft. to 1,022 sq.ft.",
-   "zh": "CORE Residence @ TRX (中央公馆@TRX) 是位于马来西亚首个国际金融中心TRX的永久产权商务住宅项目。该项目由财富500强企业中国交通建设集团（CCCG）与WCT控股联手打造，旨在将TRX提升为世界级金融中心。项目包含两栋50层高的服务式公寓和一栋酒店公寓，户型面积从624平方英尺至1,022平方英尺不等，为全球精英提供极致的都市生活体验。"
+   "zh": "CORE Residence @ TRX (中央公馆@TRX) 是位于马来西亚首个国际金融中心TRX的永久产权商务住宅项目。该项目由财富500强企业中国交通建设集团（CCCG）与WCT控股联手打造，旨在将TRX提升为世界级金融中心。项目包含两栋50层高的服务式公寓和一栋酒店公寓，户型面积从624平方英尺至1,022平方英尺不等，为全球精英提供极致的都市生活体验。",
+   "zhHant": "CORE Residence @ TRX (中央公館@TRX) 是位於馬來西亞首個國際金融中心TRX的永久產權商務住宅專案。該專案由財富500強企業中國交通建設集團（CCCG）與WCT控股聯手打造，旨在將TRX提升為世界級金融中心。專案包含兩棟50層高的服務式公寓和一棟酒店公寓，戶型面積從624平方英尺至1,022平方英尺不等，為全球精英提供極致的都市生活體驗。"
   },
   "keyFeatures": [],
   "facilities": [
@@ -3068,7 +3071,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.51,
   "description": {
    "en": "Oaka Residences is a low-density freehold residential development located in Bukit Jalil, Kuala Lumpur. Developed by Berjaya Hartanah Berhad, it features two 30-storey towers with a total of 350 units (7 units per floor). Units range from 882 to 1,509 sq ft, offering 2 to 3 bedrooms with balconies, utility space, 2-3 parking bays, and Gold Rated GreenRE certification.",
-   "zh": "Oaka Residences 是位于吉隆坡武吉加里尔（Bukit Jalil）的低密度永久地契住宅项目。由 Berjaya Hartanah Berhad 打造，项目包含两座30层的住宅大楼，仅有 350 个单位（每层仅 7 户）。提供 882 至 1,509 平方英尺的多款实用户型，每户配有 2 至 3 个车位及阳台/露台，并荣获 GreenRE 金级认证。"
+   "zh": "Oaka Residences 是位于吉隆坡武吉加里尔（Bukit Jalil）的低密度永久地契住宅项目。由 Berjaya Hartanah Berhad 打造，项目包含两座30层的住宅大楼，仅有 350 个单位（每层仅 7 户）。提供 882 至 1,509 平方英尺的多款实用户型，每户配有 2 至 3 个车位及阳台/露台，并荣获 GreenRE 金级认证。",
+   "zhHant": "Oaka Residences 是位於吉隆坡武吉加里爾（Bukit Jalil）的低密度永久地契住宅專案。由 Berjaya Hartanah Berhad 打造，專案包含兩座30層的住宅大樓，僅有 350 個單位（每層僅 7 戶）。提供 882 至 1,509 平方英尺的多款實使用者型，每戶配有 2 至 3 個車位及陽臺/露臺，並榮獲 GreenRE 金級認證。"
   },
   "keyFeatures": [],
   "facilities": [
@@ -7586,7 +7590,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.42,
   "description": {
    "en": "The Queenswoodz rises in the heart of Bukit Jalil, Kuala Lumpur, spanning 3.44 acres across two towers of 50 and 51 storeys with a total of 1,004 units on a leasehold commercial (HDA) title. Just a short walk from LRT Awan Besar station and close to Novel Park, Bukit Jalil Golf & Country Resort and Pavilion Bukit Jalil, it offers a rare balance of urban convenience and green tranquility. Residents enjoy an extensive suite of facilities including a leisure pool, gym, kids' play area, BBQ decks and sky lounges. Unit types range from a compact 807 sqft 2+1-bedroom layout to a spacious 1,410 sqft 4-bedroom dual-key unit, catering to young professionals, growing families and multigenerational households alike.",
-   "zh": "The Queenswoodz坐落于吉隆坡Bukit Jalil核心地段，占地3.44英亩，由两栋分别50层（494户）与51层（510户）的高塔组成，共1,004个单位，产权为租赁地契（商业HDA）。项目步行可达LRT Awan Besar站，邻近Novel Park绿地、Bukit Jalil高尔夫乡村俱乐部及Pavilion Bukit Jalil商场，生活机能与自然环境兼备。会所设施丰富，涵盖泳池、健身房、儿童游乐区、烧烤区、天空酒廊等，满足不同生活方式需求。户型从807尺的2+1房到1410尺的4房双钥匙单位一应俱全，适合首购族、小家庭到多代同堂家庭。"
+   "zh": "The Queenswoodz坐落于吉隆坡Bukit Jalil核心地段，占地3.44英亩，由两栋分别50层（494户）与51层（510户）的高塔组成，共1,004个单位，产权为租赁地契（商业HDA）。项目步行可达LRT Awan Besar站，邻近Novel Park绿地、Bukit Jalil高尔夫乡村俱乐部及Pavilion Bukit Jalil商场，生活机能与自然环境兼备。会所设施丰富，涵盖泳池、健身房、儿童游乐区、烧烤区、天空酒廊等，满足不同生活方式需求。户型从807尺的2+1房到1410尺的4房双钥匙单位一应俱全，适合首购族、小家庭到多代同堂家庭。",
+   "zhHant": "The Queenswoodz坐落於吉隆坡Bukit Jalil核心地段，佔地3.44英畝，由兩棟分別50層（494戶）與51層（510戶）的高塔組成，共1,004個單位，產權為租賃地契（商業HDA）。專案步行可達LRT Awan Besar站，鄰近Novel Park綠地、Bukit Jalil高爾夫鄉村俱樂部及Pavilion Bukit Jalil商場，生活機能與自然環境兼備。會所設施豐富，涵蓋泳池、健身房、兒童遊樂區、燒烤區、天空酒廊等，滿足不同生活方式需求。戶型從807尺的2+1房到1410尺的4房雙鑰匙單位一應俱全，適合首購族、小家庭到多代同堂家庭。"
   },
   "keyFeatures": [
    "1,004 units across 2 towers (50 & 51 storeys)",
@@ -8280,7 +8285,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.9,
   "description": {
    "en": "Pavilion Square is another Pavilion lifestyle development in Kuala Lumpur, located in the Golden Triangle of the KL City Centre. The development consists of a 67-storey tower with 960 luxury residences and a 25-storey tower with 106 corporate suites, along with retail lots. It features a dedicated link-bridge to the Pavilion Kuala Lumpur mall.",
-   "zh": "柏威年旗下新的标杆发展项目, 位于首都资源密集的黄金三角区,吉隆坡的新地标。项目包括一座67层豪华住宅楼（960户）和一座25层企业套房楼（106个单位）及零售商店，并设有衔接柏威年商场的天桥。"
+   "zh": "柏威年旗下新的标杆发展项目, 位于首都资源密集的黄金三角区,吉隆坡的新地标。项目包括一座67层豪华住宅楼（960户）和一座25层企业套房楼（106个单位）及零售商店，并设有衔接柏威年商场的天桥。",
+   "zhHant": "柏威年旗下新的標杆發展專案, 位於首都資源密集的黃金三角區,吉隆坡的新地標。專案包括一座67層豪華住宅樓（960戶）和一座25層企業套房樓（106個單位）及零售商店，並設有銜接柏威年商場的天橋。"
   },
   "keyFeatures": [
    "Exclusive location with dedicated linked-bridge connected to Pavilion Kuala Lumpur",
@@ -8684,7 +8690,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.8,
   "description": {
    "en": "Golden Crown Residence is a 60-storey luxury residential tower within the Menara Golden Eagle, a prestigious mixed-use development comprising a hotel, office, and residence. Located along Jalan Tun Razak and adjacent to the Tun Razak Exchange (TRX), it boasts unparalleled connectivity as a Transit Oriented Development (TOD) with a direct underground link to the TRX MRT interchange and The Exchange TRX mall. The development offers 490 units with layouts ranging from 1 to 3 bedrooms, complemented by a host of premium facilities and amenities in the vicinity of Kuala Lumpur's city center.",
-   "zh": "金悦公寓（Golden Crown Residence）是一座60层高的豪华住宅楼，坐落于著名的综合发展项目——金鹰汇（Menara Golden Eagle）之内，该项目包含酒店、办公室和住宅。项目位于敦拉萨路，毗邻敦拉萨国际贸易中心（TRX），作为公共交通导向开发项目（TOD），拥有无与伦比的连通性，通过地下通道直达TRX捷运换乘站和The Exchange TRX购物中心。该项目共提供490个单位，户型从1房到3房不等，并配备了吉隆坡市中心区域内一系列高端设施和便利设施。"
+   "zh": "金悦公寓（Golden Crown Residence）是一座60层高的豪华住宅楼，坐落于著名的综合发展项目——金鹰汇（Menara Golden Eagle）之内，该项目包含酒店、办公室和住宅。项目位于敦拉萨路，毗邻敦拉萨国际贸易中心（TRX），作为公共交通导向开发项目（TOD），拥有无与伦比的连通性，通过地下通道直达TRX捷运换乘站和The Exchange TRX购物中心。该项目共提供490个单位，户型从1房到3房不等，并配备了吉隆坡市中心区域内一系列高端设施和便利设施。",
+   "zhHant": "金悅公寓（Golden Crown Residence）是一座60層高的豪華住宅樓，坐落於著名的綜合發展專案——金鷹匯（Menara Golden Eagle）之內，該專案包含酒店、辦公室和住宅。專案位於敦拉薩路，毗鄰敦拉薩國際貿易中心（TRX），作為公共交通導向開發專案（TOD），擁有無與倫比的連通性，通過地下通道直達TRX捷運換乘站和The Exchange TRX購物中心。該專案共提供490個單位，戶型從1房到3房不等，並配備了吉隆坡市中心區域內一系列高階設施和便利設施。"
   },
   "keyFeatures": [
    "Transit Oriented Development (TOD) with direct underground connection to TRX MRT station & mall",
@@ -8858,7 +8865,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.4,
   "description": {
    "en": "A single 47-storey integrated mixed development tower, built above Kuala Lumpur's Dang Wangi LRT (KJ12) underground station. This Transit Oriented Development (TOD) features a SOHO Tower and a 10-storey podium with retail, office, and carpark levels. Nestled in the heart of the KL City Centre district, it blends luxury, sophistication, and cutting-edge lifestyle, offering a premier address at the prestigious junction of Jalan Ampang and Jalan Sultan Ismail with exceptional accessibility and panoramic views of Kuala Lumpur's iconic skyline.",
-   "zh": "直接高于轻轨站并连接至单轨列车站。一个47层楼的综合混合发展高楼，建在吉隆坡金三角Dang Wangi地铁站（KJ12）之上。这项以公共交通为导向的发展项目（TOD）包括SOHO大楼和一个10层高的裙楼，内设零售、办公室和停车场。坐落在吉隆坡市中心的心脏地带，融合了奢华、精致和前沿的生活方式，在安邦路和苏丹依斯迈路的著名交界处提供了一个优越的地址，拥有卓越的通达性和吉隆坡标志性天际线的全景。"
+   "zh": "直接高于轻轨站并连接至单轨列车站。一个47层楼的综合混合发展高楼，建在吉隆坡金三角Dang Wangi地铁站（KJ12）之上。这项以公共交通为导向的发展项目（TOD）包括SOHO大楼和一个10层高的裙楼，内设零售、办公室和停车场。坐落在吉隆坡市中心的心脏地带，融合了奢华、精致和前沿的生活方式，在安邦路和苏丹依斯迈路的著名交界处提供了一个优越的地址，拥有卓越的通达性和吉隆坡标志性天际线的全景。",
+   "zhHant": "直接高於輕軌站並連線至單軌列車站。一個47層樓的綜合混合發展高樓，建在吉隆坡金三角Dang Wangi地鐵站（KJ12）之上。這項以公共交通為導向的發展專案（TOD）包括SOHO大樓和一個10層高的裙樓，內設零售、辦公室和停車場。坐落在吉隆坡市中心的心臟地帶，融合了奢華、精緻和前沿的生活方式，在安邦路和蘇丹依斯邁路的著名交界處提供了一個優越的地址，擁有卓越的通達性和吉隆坡標誌性天際線的全景。"
   },
   "keyFeatures": [
    "A 47-storey TOD (Transit-Oriented Development) rising above Dang Wangi LRT Station",
@@ -9166,7 +9174,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.66,
   "description": {
    "en": "Times Square 2 is a freehold high-rise residential development integrated with the existing Berjaya Times Square complex in Imbi, Kuala Lumpur. Rising as a single tower with 629 residential units and 17 commercial units, it offers resort-style facilities spread across Level 7, Level 41 and Level 41A, including an infinity pool, sky whirlpool, sky gym and sky restaurant. Strategically located within the Golden Triangle, it enjoys direct connectivity to 3 major trainlines (Monorail, LRT, MRT) and is within walking distance of KL City Centre, Pavilion, Lot 10 and LaLaport BBCC.",
-   "zh": "Times Square 2坐落于吉隆坡黄金三角区Imbi，与现有的Berjaya Times Square商场综合体无缝连接，为永久地契高层住宅项目。项目为单栋大楼，共629个住宅单位及17个商业单位，会所设施横跨Level 7、Level 41及Level 41A三层，涵盖无边际泳池、空中按摩浴池、摩天健身房及空中餐厅。项目步行可达3条地铁线（单轨/轻快铁/捷运），邻近KL City Centre、Pavilion、Lot 10及LaLaport BBCC等地标。"
+   "zh": "Times Square 2坐落于吉隆坡黄金三角区Imbi，与现有的Berjaya Times Square商场综合体无缝连接，为永久地契高层住宅项目。项目为单栋大楼，共629个住宅单位及17个商业单位，会所设施横跨Level 7、Level 41及Level 41A三层，涵盖无边际泳池、空中按摩浴池、摩天健身房及空中餐厅。项目步行可达3条地铁线（单轨/轻快铁/捷运），邻近KL City Centre、Pavilion、Lot 10及LaLaport BBCC等地标。",
+   "zhHant": "Times Square 2坐落於吉隆坡黃金三角區Imbi，與現有的Berjaya Times Square商場綜合體無縫連線，為永久地契高層住宅專案。專案為單棟大樓，共629個住宅單位及17個商業單位，會所設施橫跨Level 7、Level 41及Level 41A三層，涵蓋無邊際泳池、空中按摩浴池、摩天健身房及空中餐廳。專案步行可達3條地鐵線（單軌/輕快鐵/捷運），鄰近KL City Centre、Pavilion、Lot 10及LaLaport BBCC等地標。"
   },
   "keyFeatures": [
    "Freehold",
@@ -9312,7 +9321,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFee": "TBC",
   "description": {
    "en": "Accent Residences is a leasehold serviced apartment development by Ayala Land in Section 13, Petaling Jaya. The single-tower development spans 38 storeys with 231 service apartment units, 27 SAMM units and 14 retail lots, designed with a private lift lobby layout of just 8 units per floor. Note: this is based on an early-stage sales kit — detailed facilities plan, individual unit floor plans and pricing are not yet finalized in the available materials.",
-   "zh": "Accent Residences是Ayala Land旗下位于八打灵再也13区的租赁地契服务式公寓项目。单栋大楼共38层，包含231个服务式公寓单位、27个SAMM单位及14个商铺单位，采用私人电梯大堂设计，每层仅8户。注：目前资料来自早期销售资料包，详细会所平面图、户型平面图及价格尚未最终确定。"
+   "zh": "Accent Residences是Ayala Land旗下位于八打灵再也13区的租赁地契服务式公寓项目。单栋大楼共38层，包含231个服务式公寓单位、27个SAMM单位及14个商铺单位，采用私人电梯大堂设计，每层仅8户。注：目前资料来自早期销售资料包，详细会所平面图、户型平面图及价格尚未最终确定。",
+   "zhHant": "Accent Residences是Ayala Land旗下位於八打靈再也13區的租賃地契服務式公寓專案。單棟大樓共38層，包含231個服務式公寓單位、27個SAMM單位及14個商鋪單位，採用私人電梯大堂設計，每層僅8戶。注：目前資料來自早期銷售資料包，詳細會所平面圖、戶型平面圖及價格尚未最終確定。"
   },
   "keyFeatures": [
    "Developed by Ayala Land Group",
@@ -9467,7 +9477,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.65,
   "description": {
    "en": "Ascott Star KL City Centre is an international award-winning luxury mixed development managed by The Ascott Limited, offering 5-star hospitality services, high-end residential towers, and lifestyle retail right in the heart of Kuala Lumpur City Centre.",
-   "zh": "Ascott Star KL City Centre（雅诗阁 Star KL City Centre）是位于吉隆坡市中心的五星级奢华服务式公寓，由凯德旗下的雅诗阁（The Ascott Limited）统一管理。项目紧邻双峰塔，结合星光大道商业街与大型会所设施，打造都市奢华生活体验。"
+   "zh": "Ascott Star KL City Centre（雅诗阁 Star KL City Centre）是位于吉隆坡市中心的五星级奢华服务式公寓，由凯德旗下的雅诗阁（The Ascott Limited）统一管理。项目紧邻双峰塔，结合星光大道商业街与大型会所设施，打造都市奢华生活体验。",
+   "zhHant": "Ascott Star KL City Centre（雅詩閣 Star KL City Centre）是位於吉隆坡市中心的五星級奢華服務式公寓，由凱德旗下的雅詩閣（The Ascott Limited）統一管理。專案緊鄰雙峰塔，結合星光大道商業街與大型會所設施，打造都市奢華生活體驗。"
   },
   "keyFeatures": [
    "Located next to Petronas Twin Towers in KL City Centre",
@@ -9712,7 +9723,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.65,
   "description": {
    "en": "Eaton Residences is an award-winning 52-storey luxury serviced residence offering 632 units located at Jalan Kia Peng in Kuala Lumpur's Golden Triangle. Features include a full glass curtain facade, KL's highest and longest cantilevered sky pool, premium finishes, and walking distance to MRT Conlay and Prince Court Medical Centre.",
-   "zh": "Eaton Residences（豪景园）位于吉隆坡金三角核心地段 JALAN KIA PENG，楼高52层，共632单位。项目拥有吉隆坡最高及最长的悬挑空中无边际泳池、全玻璃幕墙设计，可俯瞰皇家雪兰莪高尔夫球场及国油双峰塔壮丽天际线，离 MRT Conlay 站仅130米。"
+   "zh": "Eaton Residences（豪景园）位于吉隆坡金三角核心地段 JALAN KIA PENG，楼高52层，共632单位。项目拥有吉隆坡最高及最长的悬挑空中无边际泳池、全玻璃幕墙设计，可俯瞰皇家雪兰莪高尔夫球场及国油双峰塔壮丽天际线，离 MRT Conlay 站仅130米。",
+   "zhHant": "Eaton Residences（豪景園）位於吉隆坡金三角核心地段 JALAN KIA PENG，樓高52層，共632單位。專案擁有吉隆坡最高及最長的懸挑空中無邊際泳池、全玻璃幕牆設計，可俯瞰皇家雪蘭莪高爾夫球場及國油雙峰塔壯麗天際線，離 MRT Conlay 站僅130米。"
   },
   "keyFeatures": [
    "51-storey iconic luxury service residence",
@@ -10981,7 +10993,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFee": "RM 0.80 + (10% Sinking Fund)",
   "description": {
    "en": "Kuala Lumpur's Beacons of Opulence & Exclusivity. KL Metro Group, an esteemed and award-winning developer, continues to shape the Kuala Lumpur skyline with its latest prestigious project, Royal Lexis, strategically located in the heart of Kuala Lumpur city. Tasteful in every detail and appointed with contemporary interiors, each unit features a spacious bedroom, living room and a full bathroom. Its bright tone and sleek furnishing enriches and dignifies its aesthetic quality and effect.",
-   "zh": "吉隆坡丽昇皇廷套房:奢华与尊贵象征。吉隆坡都市集团是一家备受赞誉且屡获殊荣的开发商,其最新和卓越的项目丽昇皇廷套房战略性地坐落在市中心,持续塑造着吉隆坡的天际线。各单位卧室与客厅宽敞豪气,内设浴室、一丝不苟的设计,处处洋溢独家品味;时尚内部装潢,明亮抢眼,更显优质气派。"
+   "zh": "吉隆坡丽昇皇廷套房:奢华与尊贵象征。吉隆坡都市集团是一家备受赞誉且屡获殊荣的开发商,其最新和卓越的项目丽昇皇廷套房战略性地坐落在市中心,持续塑造着吉隆坡的天际线。各单位卧室与客厅宽敞豪气,内设浴室、一丝不苟的设计,处处洋溢独家品味;时尚内部装潢,明亮抢眼,更显优质气派。",
+   "zhHant": "吉隆坡麗昇皇廷套房:奢華與尊貴象徵。吉隆坡都市集團是一家備受讚譽且屢獲殊榮的開發商,其最新和卓越的專案麗昇皇廷套房戰略性地坐落在市中心,持續塑造著吉隆坡的天際線。各單位臥室與客廳寬敞豪氣,內設浴室、一絲不苟的設計,處處洋溢獨家品味;時尚內部裝潢,明亮搶眼,更顯優質氣派。"
   },
   "keyFeatures": [
    "Strategically located in the heart of Kuala Lumpur city",
@@ -11251,7 +11264,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.6,
   "description": {
    "en": "Well-placed at the heart of Kuala Lumpur City Centre, this riveting residential tower will boldly stamp its mark on the skyline. Contemporary and chic, SWNK Houze is poised to set a new precedent of style and convenience for urbanites.",
-   "zh": "位于吉隆坡市中心。这座引人注目的大楼将在市中心的天际线烙下印记。别致现代, SWNK HOUZE为都市人开创的最新首选,时尚及便捷。"
+   "zh": "位于吉隆坡市中心。这座引人注目的大楼将在市中心的天际线烙下印记。别致现代, SWNK HOUZE为都市人开创的最新首选,时尚及便捷。",
+   "zhHant": "位於吉隆坡市中心。這座引人注目的大樓將在市中心的天際線烙下印記。別緻現代, SWNK HOUZE為都市人開創的最新首選,時尚及便捷。"
   },
   "keyFeatures": [
    "Located in the Golden Triangle of Kuala Lumpur City Centre",
@@ -11381,7 +11395,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.6,
   "description": {
    "en": "Lucentia is the first residential offering in BBCC. This high-rise residential development features two conjoined towers, soaring 47 and 35 floors respectively. Drawing inspiration from traditional Japanese paper lanterns, Lucentia is designed to infuse your world with light and a lightness of spirit. By day, the interior is flooded with natural light, and by night, it is softly illuminated, a welcoming beacon to guide you home.",
-   "zh": "LUCENTIA是武吉免登城中城(BBCC) 计划下的第一项住宅项目,由两栋分别楼高47层及35层可相连互通的楼体组成。这项豪华公寓策划从日式纸灯笼中汲取设计灵感,将光的艺术融入家居生活,让日常每一天都沉浸在光的诗性美学中。日间,室内充沛着热带自然光线;落日后,细腻柔和的光线微微透入,将像盏温柔的灯指引回家的路。"
+   "zh": "LUCENTIA是武吉免登城中城(BBCC) 计划下的第一项住宅项目,由两栋分别楼高47层及35层可相连互通的楼体组成。这项豪华公寓策划从日式纸灯笼中汲取设计灵感,将光的艺术融入家居生活,让日常每一天都沉浸在光的诗性美学中。日间,室内充沛着热带自然光线;落日后,细腻柔和的光线微微透入,将像盏温柔的灯指引回家的路。",
+   "zhHant": "LUCENTIA是武吉免登城中城(BBCC) 計劃下的第一項住宅專案,由兩棟分別樓高47層及35層可相連互通的樓體組成。這項豪華公寓策劃從日式紙燈籠中汲取設計靈感,將光的藝術融入家居生活,讓日常每一天都沉浸在光的詩性美學中。日間,室內充沛著熱帶自然光線;落日後,細膩柔和的光線微微透入,將像盞溫柔的燈指引回家的路。"
   },
   "keyFeatures": [],
   "facilities": [
@@ -16870,7 +16885,8 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
   "maintenanceFeePsf": 0.4,
   "description": {
    "en": "Enjoy direct access to major highways. Benefit from the proximity to Segi College. Create lasting memories in a community designed for shared spaces and urban professionals. Live safely and securely with smart door locks and CCTV surveillance. Located at the heart of USJ, Subang Jaya, this integrated development is surrounded by abundant amenities and transport services. Take advantage of the free shuttle service to simplify and enhance your daily commute. Customise your space to fit your lifestyle with our versatile and flexible layouts, featuring duplex units, high ceilings and mezzanine floors.",
-   "zh": "便捷畅达，连接无忧。坐落于众多学府之间。在专为共享空间和城市专业人士设计的社区中创造持久的回忆。位于首邦再也USJ的中心地带，被丰富的设施和交通服务所环绕。利用免费班车服务，简化和改善您的日常通勤。通过我们多功能和灵活的布局，定制您的空间，设有复式单元、高天花板和夹层楼。"
+   "zh": "便捷畅达，连接无忧。坐落于众多学府之间。在专为共享空间和城市专业人士设计的社区中创造持久的回忆。位于首邦再也USJ的中心地带，被丰富的设施和交通服务所环绕。利用免费班车服务，简化和改善您的日常通勤。通过我们多功能和灵活的布局，定制您的空间，设有复式单元、高天花板和夹层楼。",
+   "zhHant": "便捷暢達，連線無憂。坐落於眾多學府之間。在專為共享空間和城市專業人士設計的社群中創造持久的回憶。位於首邦再也USJ的中心地帶，被豐富的設施和交通服務所環繞。利用免費班車服務，簡化和改善您的日常通勤。通過我們多功能和靈活的佈局，定製您的空間，設有複式單元、高天花板和夾層樓。"
   },
   "keyFeatures": [],
   "facilities": [

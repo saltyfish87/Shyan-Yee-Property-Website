@@ -765,7 +765,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
               {realFacts?.description?.en || realFacts?.description?.zh ? (
                 <>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    {(language.startsWith('zh') && realFacts.description.zh) || realFacts.description.en || realFacts.description.zh}
+                    {(language === 'zh-TW' && (realFacts.description as any).zhHant) || (language.startsWith('zh') && realFacts.description.zh) || realFacts.description.en || realFacts.description.zh}
                   </p>
                   {realFacts.source ? (
                     <p className="text-[12px] text-slate-400">{realFacts.source}</p>

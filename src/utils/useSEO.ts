@@ -51,7 +51,7 @@ export function calculateCanonicalUrl({
   language?: string;
 }): string {
   // Simplified Chinese pages live under /zh; every other language shares the English URLs.
-  const cleanBase = (baseUrl || 'https://shyanyee.com').replace(/\/+$/, '') + (language === 'zh-CN' ? '/zh' : '');
+  const cleanBase = (baseUrl || 'https://shyanyee.com').replace(/\/+$/, '') + (language === 'zh-CN' ? '/zh' : language === 'zh-TW' ? '/zh-hant' : '');
   
   if (selectedProject?.id) {
     return `${cleanBase}/projects/${selectedProject.id}`;
@@ -334,7 +334,8 @@ export function useSEO({
     }
 
     // Apply document title
-    document.title = title;
+    // /zh-hant pages keep the Traditional title the build wrote; the app's strings are Simplified.
+    if (language !== 'zh-TW') document.title = title;
 
     // Helper function to update or create a meta tag
     const updateMetaTag = (attrName: string, attrVal: string, contentVal: string) => {

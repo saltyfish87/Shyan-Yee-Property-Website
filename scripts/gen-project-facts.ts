@@ -17,6 +17,9 @@
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
+// @ts-ignore — no types shipped
+import * as OpenCC from 'opencc-js';
+const toHant: (x: string) => string = (OpenCC as any).Converter({ from: 'cn', to: 'twp' });
 
 const SHEET_CSV = process.env.FACTS_SHEET_CSV
   || 'https://docs.google.com/spreadsheets/d/1fa-DbbFmkN1QUdVZ6-D4Sd6350pS5irYpPtH5ldgeuM/export?format=csv&gid=0';
@@ -34,7 +37,7 @@ export interface ProjectFacts {
   /** When this project's row was last touched in the database, as YYYY-MM-DD. */
   checked?: string;
   /** The developer's own write-up, as published in the database. */
-  description?: { en?: string; zh?: string };
+  description?: { en?: string; zh?: string; zhHant?: string };
   keyFeatures: string[];
   facilities: string[];
   nearby: { category: string; name: string; distance?: string }[];
@@ -281,7 +284,7 @@ export interface ProjectFacts {
   /** When this project's row was last touched in the database, as YYYY-MM-DD. */
   checked?: string;
   /** The developer's own write-up, as published in the database. */
-  description?: { en?: string; zh?: string };
+  description?: { en?: string; zh?: string; zhHant?: string };
   keyFeatures: string[];
   facilities: string[];
   nearby: { category: string; name: string; distance?: string }[];
@@ -369,7 +372,7 @@ async function main() {
       description: (() => {
         const en = parseDescription(row.description_en || row.project_description);
         const zh = parseDescription(row.description_zh);
-        return en || zh ? { ...(en ? { en } : {}), ...(zh ? { zh } : {}) } : undefined;
+        return en || zh ? { ...(en ? { en } : {}), ...(zh ? { zh, zhHant: toHant(zh) } : {}) } : undefined;
       })(),
       keyFeatures: parseKeyFeatures(row.key_features),
       facilities: parseFacilities(row.facilities || ''),
