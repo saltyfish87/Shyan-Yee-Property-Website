@@ -779,7 +779,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Exclusive Lift Lobby Experience with 5 lifts serving only 10 suites per floor",
    "Light-filled Interiors with 2.6m height windows",
    "Natural Ventilation in all rooms and bathrooms",
-   "Multi-tier Security."
+   "Multi-tier Security"
   ],
   "facilities": [
    "Podium Lobby",
@@ -1880,9 +1880,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Hotel Services by Paradox Hotel KL City Centre",
    "Timeless, Luxury Interior Design",
    "Elevated Facilities for the High Life",
-   "Branded Fittings and Appliances.",
-   "Set the starting price at MYR 1.5 million",
-   "Refrain from mentioning Airbnb, short-term stays, or high rental returns"
+   "Branded Fittings and Appliances"
   ],
   "facilities": [
    "Explorer Playland",
@@ -3306,7 +3304,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Branded residence with 5-star hospitality services",
    "Dual key units available for flexible living arrangements",
    "Fully furnished with high-end designer brands like Gaggenau, Miele, Bosch, and Kohler",
-   "Rooftop facilities include a Sky Lounge, Moon Bar, and fine dining with panoramic city views."
+   "Rooftop facilities include a Sky Lounge, Moon Bar, and fine dining with panoramic city views"
   ],
   "facilities": [
    "Grand Lobby / Reception & Coffee House",
@@ -3929,7 +3927,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Exclusivity: Low density (as low as 7 units per floor), private clubhouse, up to 6 carparks per unit",
    "Privacy: Purely residential title, individual tower drop-off lobbies, enhanced corridor design",
    "Green: Over 52 facilities across 3 acres of green space, including a riverside Promenade Boulevard, treehouses, and water brooks",
-   "Security: Gated & guarded with 3-tier security, perimeter electrical fencing, and anti-climb fence."
+   "Security: Gated & guarded with 3-tier security, perimeter electrical fencing, and anti-climb fence"
   ],
   "facilities": [
    "Greeting Cards",
@@ -4430,7 +4428,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "5 Elements of Landscaping & Facilities including a 50m Lap Pool",
    "Practical and conducive interior layouts",
    "EV charging stations",
-   "Multi-tier security."
+   "Multi-tier security"
   ],
   "facilities": [
    "swimming pool",
@@ -4809,7 +4807,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "3-tier security with face recognition and license plate recognition access",
    "2 to 3 parking bays per unit",
    "Co-working spaces available",
-   "Each tower served by 5+1 lifts."
+   "Each tower served by 5+1 lifts"
   ],
   "facilities": [
    "Infinity Swimming Pool",
@@ -4973,7 +4971,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "50m Olympic-length lap pool",
    "EV charging bays",
    "Automated waste collection system",
-   "Destination lift control system."
+   "Destination lift control system"
   ],
   "facilities": [
    "Delivery waiting area",
@@ -5324,7 +5322,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Seamless Accessibility via major expressways",
    "Unmatched Connectivity with a 5-min walk to LRT",
    "Surrounded by Established Amenities",
-   "Over 40 lifestyle-facilities."
+   "Over 40 lifestyle-facilities"
   ],
   "facilities": [
    "Pickleball Court / Multipurpose Hall",
@@ -5664,7 +5662,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Free upgrade to premier fully furnished by MMH",
    "Up to 90% loan margin for HDA units",
    "Proven developer track record",
-   "GreenRE Bronze certified Green Building."
+   "GreenRE Bronze certified Green Building"
   ],
   "facilities": [
    "Concierge Lobby",
@@ -5932,7 +5930,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Diverse layouts from 775 sqft (2R2B) to 926 sqft (3R2B)",
    "Maximum 18 units per floor served by 6+1 lifts",
    "Proximity to Trader's Market, China-inspired retail street, and major highways (LDP, DASH, Penchala Link)",
-   "Comprehensive facilities across Ground, Podium, and Rooftop levels."
+   "Comprehensive facilities across Ground, Podium, and Rooftop levels"
   ],
   "facilities": [
    "Play Area",
@@ -6325,7 +6323,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Tallest building in Ara Damansara with unblocked views",
    "Podium and Rooftop facilities including a rooftop pickleball court",
    "Commercial retail park (approx. 120,000 sqft)",
-   "GreenRE Gold Certified Project."
+   "GreenRE Gold Certified Project"
   ],
   "facilities": [
    "The Cocoon Retreat",
@@ -6711,7 +6709,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Tallest building in Ara Damansara (120 metres tall)",
    "Rooftop facilities with unblock views",
    "Commercial components at Ground floor and BIG Grocer",
-   "GreenRe Gold Certified Green Project."
+   "GreenRe Gold Certified Green Project"
   ],
   "facilities": [
    "Multipurpose Hall",
@@ -7218,7 +7216,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Fully residential title",
    "Multi-tier security and EV charging pods",
    "Flexible unit sizes from 678 to 1,527 sq. ft",
-   "Dual-key options available."
+   "Dual-key options available"
   ],
   "facilities": [
    "6",
@@ -8293,7 +8291,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Unit types ranging from studio to 3BR, flexible for own-stay and investment",
    "Highest & Longest Swimming pool (118 metre) in KL City Centre",
    "Highest & Largest Sky sports zone (15,000sf) in KL City Centre",
-   "Established neighbourhood surrounded by Hotels, Hospitals, International Schools, Embassies, Shopping malls, Restaurants & Entertainment."
+   "Established neighbourhood surrounded by Hotels, Hospitals, International Schools, Embassies, Shopping malls, Restaurants & Entertainment"
   ],
   "facilities": [
    "Concierge Lobby",
@@ -8519,7 +8517,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Toilet and pantry provisions in strata offices (1,400 sq.ft. and above)",
    "Double-volume grand lobby creating a corporate impact",
    "Advanced lift destination control system for secure and efficient access",
-   "Carpark policy: Entitlement to rent minimum 1 carpark for every 1000sf purchased."
+   "Carpark policy: Entitlement to rent minimum 1 carpark for every 1000sf purchased"
   ],
   "facilities": [
    "Concierge Lobby",
@@ -8697,7 +8695,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Transit Oriented Development (TOD) with direct underground connection to TRX MRT station & mall",
    "Located in the heart of Kuala Lumpur, adjacent to Tun Razak Exchange (TRX)",
    "Part of Menara Golden Eagle, a mixed-use development with residence, hotel, and office",
-   "Modern luxury residence with comprehensive rooftop facilities."
+   "Modern luxury residence with comprehensive rooftop facilities"
   ],
   "facilities": [
    "Prayer Room",
@@ -8872,7 +8870,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "A 47-storey TOD (Transit-Oriented Development) rising above Dang Wangi LRT Station",
    "Strategically located at the intersection of Jalan Ampang and Jalan Sultan Ismail",
    "Exclusive, modern cityscape facilities on the 10th and 45th podium levels",
-   "Smart investment options for short-term and long-term rental."
+   "Smart investment options for short-term and long-term rental"
   ],
   "facilities": [
    "Birds Chirping Playground",
@@ -9028,7 +9026,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Full facilities with mixed concepts (Dynamic, Leisure, Relaxing Zone)",
    "Hassle-free home ownership with low down payment, all units come standard partially furnished",
    "Modern facade design by WDA Design",
-   "Multi-generational layouts for first home buyers and downsizers."
+   "Multi-generational layouts for first home buyers and downsizers"
   ],
   "facilities": [
    "Skyline Sip (Sky Lounge)",
@@ -9485,7 +9483,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Branded luxury residence managed by The Ascott Limited",
    "Features Southeast Asia's first Star Walk of Fame",
    "O3 Sky Park on Level 99 with lap pool and city views",
-   "H2O lifestyle facility deck on Level 6."
+   "H2O lifestyle facility deck on Level 6"
   ],
   "facilities": [
    "Outdoor Playground",
@@ -9732,7 +9730,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Highest and longest cantilevered sky pool in KL",
    "Full floor-to-ceiling glass curtain facade",
    "Unblocked views of Royal Selangor Golf Club and Petronas Twin Towers skyline",
-   "Quality Volakas white marble flooring and designer fittings."
+   "Quality Volakas white marble flooring and designer fittings"
   ],
   "facilities": [
    "Drop Off Point",
@@ -10559,7 +10557,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Malaysia's First and Tallest 360° Proposed Rooftop Bar",
    "Luxury living with concierge services",
    "GreenRE GOLD Provision",
-   "Smart home features."
+   "Smart home features"
   ],
   "facilities": [],
   "nearby": [
@@ -10840,7 +10838,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Equipped with EV charging stations, automated waste collection system, and speed ramp design",
    "GreenRE Silver certified",
    "QLASSIC assessment for quality workmanship",
-   "Mah Sing Smart Community app and M Concierge services."
+   "Mah Sing Smart Community app and M Concierge services"
   ],
   "facilities": [
    "Level 1",
@@ -11127,7 +11125,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Green-certified building with features like solar PV panels and rainwater harvesting",
    "Multi-tier security with access card system and CCTV surveillance",
    "Strategic location with direct access to the OKR-NPE link bridge, just 700m from Mid Valley City",
-   "Partly furnished units including kitchen cabinets, air-conditioners, and water heaters."
+   "Partly furnished units including kitchen cabinets, air-conditioners, and water heaters"
   ],
   "facilities": [
    "Level 12",
@@ -11273,11 +11271,11 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "The closest residential tower to the BBCC Transit Hub",
    "Direct link to LaLaport Mall",
    "Partially furnished units with items like kitchen cabinets, air-conditioners, and wardrobe",
-   "Transit Oriented Integrated Development.",
-   "Do comply with it to protect the End Financing and avoid from slash loan margins",
-   "This also applicable to Whatsapp blasting and any other marketing method that will affect the end financing loan margin",
+   "Transit Oriented Integrated Development",
    "建筑师 Architect: GDP Architects",
-   "Gross Floor Area 313,520 sq.ft. / Nett Floor Area 311,866 sq.ft"
+   "Gross Floor Area 313,520 sq.ft. / Nett Floor Area 311,866 sq.ft",
+   "车位 Car Park: AP 249 + Visitor 22 + OKU 2 + Floating 94",
+   "保安 Security: Multi-tiers"
   ],
   "facilities": [
    "1. Swimming Pool 泳池",
@@ -11614,7 +11612,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Located in the self-sustaining township of Bangsar South",
    "Surrounded by Grade A offices, retail hubs, and healthcare facilities",
    "Easy access to major highways (Federal, NPE, SPRINT)",
-   "Partially furnished units."
+   "Partially furnished units"
   ],
   "facilities": [
    "Grand Entrance",
@@ -12343,7 +12341,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Directly attached to Solaris Retail Centre",
    "Mix of office suites and serviced apartments",
    "Multi-tier security system",
-   "Semi-furnished units."
+   "Semi-furnished units"
   ],
   "facilities": [
    "Ground Floor",
@@ -12551,7 +12549,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Up to 40% green space",
    "600m walking distance to MRT Jinjang",
    "Semi-furnished units included",
-   "Strategic location in KL North near mature neighborhoods."
+   "Strategic location in KL North near mature neighborhoods"
   ],
   "facilities": [
    "Reading Nook",
@@ -12712,7 +12710,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Located in the high-growth corridor of Seksyen 13, Shah Alam",
    "Versatile layouts including Flexi Suites for home offices and dual-key options",
    "Comprehensive wellness-focused facilities across two levels",
-   "Retail conveniences at the doorstep."
+   "Retail conveniences at the doorstep"
   ],
   "facilities": [
    "Parcourse Station",
@@ -13238,7 +13236,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Wonderland-themed facilities for all ages",
    "Functional unit layouts with additional storage space",
    "GreenRE certified development",
-   "Vibrant mix of commercial convenience & essential amenities."
+   "Vibrant mix of commercial convenience & essential amenities"
   ],
   "facilities": [
    "Landscape area",
@@ -13912,7 +13910,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Exclusive dual entrances and seamless direct carpark access",
    "Over 40 lifestyle facilities including a 50m pool, grand gym, and indoor badminton courts",
    "Versatile layouts from 937 to 2,014 sq.ft",
-   "Innovative Balcony+ concept for selected units."
+   "Innovative Balcony+ concept for selected units"
   ],
   "facilities": [
    "Community Farm",
@@ -14937,7 +14935,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "en": "'Alstonia' definition. A widespread genus of evergreen trees and shrubs. BE HERE FOR THE GATEWAYS. The perfect retreat stepping into the comfort of nature or immersing in cool water and relaxing in cosy lounges. Come home to resort-like living. BE HERE FOR THE MEMORIES. Create everlasting memories with your loved ones, let your children grow up in an environment to remember. Have carefree playtime in a protected vicinity."
   },
   "keyFeatures": [
-   "Hilltop Homes with resort-like living concept in a protected vicinity. Villas feature double volume living rooms and wide driveways."
+   "Hilltop Homes with resort-like living concept in a protected vicinity. Villas feature double volume living rooms and wide driveways"
   ],
   "facilities": [
    "Kids Play Area",
@@ -15139,7 +15137,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "800m to Taman Naga Mas MRT Station",
    "Low density with 482 units",
    "Comprehensive facilities across three levels",
-   "Direct access from Sungai Besi Highway."
+   "Direct access from Sungai Besi Highway"
   ],
   "facilities": [
    "Nursery (room only)",
@@ -15526,7 +15524,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Dual and direct lobby drop-offs",
    "Multi-layered security with destination controlled lift system",
    "Integrated development with retail and residential components",
-   "Flexible layouts from 1,384sf to 30,077sf."
+   "Flexible layouts from 1,384sf to 30,077sf"
   ],
   "facilities": [
    "Dual & Direct Lobby Drop-off",
@@ -15753,7 +15751,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Unifi Ready (1 year free)",
    "Free 2 years security",
    "Laminated Timber Flooring (SPC) for staircase and first floor",
-   "RG6 cable ready for Astro installation."
+   "RG6 cable ready for Astro installation"
   ],
   "facilities": [
    "Guardhouse",
@@ -16039,7 +16037,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Open concept layout for a spacious environment",
    "Proximity to 50-acre Central Park, BSC Club, and KIP Mall",
    "Includes solar water heater, booster pump, basic alarm system, and auto gate",
-   "Fiber optic ready for internet connectivity."
+   "Fiber optic ready for internet connectivity"
   ],
   "facilities": [
    "Five Stones Playground",
@@ -16225,7 +16223,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Gated and guarded community with 3-tier security (Guardpost with RFID, Anti-climb perimeter fencing, Individual house alarm system)",
    "Low-density enclave (69 units) with Individual Title",
    "Unifi Ready (1 year free)",
-   "2 years free security fees."
+   "2 years free security fees"
   ],
   "facilities": [
    "24 hours Guard Post with RFID (carplate recogition)",
@@ -16770,7 +16768,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Modern contemporary tropical architecture",
    "Located in the exclusive Cinematic Arts Precinct",
    "eGreenLiving features (Solar Panel, EV Port, Smart Lock etc.)",
-   "Private lift for 3-storey units."
+   "Private lift for 3-storey units"
   ],
   "facilities": [
    "Lighthouse View Tower",
@@ -17941,7 +17939,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Designed by award-winning VERITAS Design Group",
    "Certified BCA Green Mark Gold for sustainable design",
    "Fully furnished and interior-designed units available",
-   "Exclusive access to 24-hour concierge and à la carte hotel services."
+   "Exclusive access to 24-hour concierge and à la carte hotel services"
   ],
   "facilities": [
    "Level 7 (Jewel)",
@@ -18055,7 +18053,7 @@ export const PROJECT_FACTS: Record<string, ProjectFacts> = {
    "Designed by award-winning VERITAS Design Group",
    "Certified BCA Green Mark Gold for sustainable design",
    "Fully furnished and interior-designed units available",
-   "Exclusive access to 24-hour concierge and à la carte hotel services."
+   "Exclusive access to 24-hour concierge and à la carte hotel services"
   ],
   "facilities": [
    "Level 7 (Jewel)",

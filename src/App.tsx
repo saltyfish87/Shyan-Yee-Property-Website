@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { LanguageProvider, useLanguage } from './LanguageContext';
+import HantText from './components/HantText';
 import { CurrencyProvider, useCurrency } from './CurrencyContext';
 import { Project, FAQItem } from './types';
 import { BLOG_DATA, FAQ_DATA } from './data';
@@ -1903,6 +1904,7 @@ function ClientPortalsOrchestrator() {
 export default function App() {
   return (
     <LanguageProvider>
+      <HantText />
       <CurrencyProvider>
         <ClientPortalsOrchestrator />
       </CurrencyProvider>

@@ -2,6 +2,17 @@ import React, { useState, useMemo, useCallback } from 'react';
 import { BlogArticle } from '../types';
 import { BLOG_DATA } from '../data';
 import { GENERATED_ZH_ARTICLES, GENERATED_ZH_HANT_ARTICLES } from '../data/articles.generated';
+
+/**
+ * The Chinese article list = the review articles written in markdown (Simplified, converted to
+ * Traditional at build time) + the translated guide set. The list used to be rebuilt from the guide
+ * set alone once the language effect ran, which silently dropped the 19 reviews on /zh and /zh-hant.
+ */
+function withGeneratedArticles(language: string, list: BlogArticle[] | undefined): BlogArticle[] | undefined {
+  const generated = language === 'zh-CN' ? GENERATED_ZH_ARTICLES : language === 'zh-TW' ? GENERATED_ZH_HANT_ARTICLES : null;
+  if (!generated || !list) return list;
+  return [...Object.values(generated), ...list.filter(b => !generated[b.slug])];
+}
 import projectsFallback from '../projectsFallback.json';
 import { renderMarkdown, articleDates, dateLabel, youtubeEmbed, DEFAULT_AUTO_LINKS } from '../lib/markdown';
 import { useLanguage } from '../LanguageContext';
@@ -56,10 +67,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
     // 1. First preference: pre-translated static compile
     if (language !== "en") {
       // The review articles are written in Simplified Chinese and converted to Traditional at build time.
-      const generated = language === 'zh-CN' ? GENERATED_ZH_ARTICLES : language === 'zh-TW' ? GENERATED_ZH_HANT_ARTICLES : null;
-      const staticPreTranslated = generated && PRE_TRANSLATED_BLOGS[language]
-        ? [...Object.values(generated), ...PRE_TRANSLATED_BLOGS[language].filter(b => !generated[b.slug])]
-        : PRE_TRANSLATED_BLOGS[language];
+      const staticPreTranslated = withGeneratedArticles(language, PRE_TRANSLATED_BLOGS[language]);
       if (staticPreTranslated && staticPreTranslated.length > 0) {
         return staticPreTranslated;
       }
@@ -88,7 +96,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
     }
 
     // 1. Check static pre-translated compile first
-    const staticPre = PRE_TRANSLATED_BLOGS[language];
+    const staticPre = withGeneratedArticles(language, PRE_TRANSLATED_BLOGS[language]);
     if (staticPre && staticPre.length > 0) {
       setArticles(staticPre);
     } else {
@@ -184,14 +192,57 @@ export const BlogView: React.FC<BlogViewProps> = ({
       });
   }, [activeBlogSlug, language]);
 
-  // Categories list
-  const categories = ['all', 'Reviews', 'Guides', 'Investment', 'Market Outlook', 'Financials', 'Financing'];
+  // Categories. The tabs used to compare the English tab name with the article's category field,
+  // which the translated article sets hold in their own language ("指南", "Investissement"), so in
+  // every language but English the tabs matched nothing and only "All" showed articles — and three
+  // English categories (Financials as "Ownership", Geography, Visas) had no tab at all. Every label
+  // is folded to one English key first, and the tabs come from the articles actually present.
+  const CATEGORY_KEY: Record<string, string> = {
+    'Reviews': 'Reviews', 'Guides': 'Guides', 'Investment': 'Investment', 'Market Outlook': 'Market Outlook',
+    'Financials': 'Financials', 'Financing': 'Financing', 'Ownership': 'Ownership', 'Geography': 'Geography', 'Visas & Entry': 'Visas & Entry',
+    '楼盘评测': 'Reviews', '樓盤評測': 'Reviews', '指南': 'Guides', '置业指南智库': 'Guides', '置業指南智庫': 'Guides', '置业指南': 'Guides', '置業指南': 'Guides', '投资': 'Investment', '投資': 'Investment', '市场展望': 'Market Outlook', '市場展望': 'Market Outlook',
+    '财务': 'Financials', '財務': 'Financials', '財務資訊': 'Financials', '融资': 'Financing', '融資': 'Financing', '所有权': 'Ownership', '所有權': 'Ownership',
+    '地理': 'Geography', '签证和入境': 'Visas & Entry', '簽證和入境': 'Visas & Entry',
+    'ガイド': 'Guides', '市場の見通し': 'Market Outlook', '所有': 'Ownership', 'ビザと入国': 'Visas & Entry',
+    '가이드': 'Guides', '투자': 'Investment', '시장 전망': 'Market Outlook', '금융': 'Financials', '자금조달': 'Financing', '소유권': 'Ownership', '지리학': 'Geography', '비자 및 입국': 'Visas & Entry',
+    'أدلة': 'Guides', 'استثمار': 'Investment', 'توقعات السوق': 'Market Outlook', 'المالية': 'Financials', 'التمويل': 'Financing', 'ملكية': 'Ownership', 'الجغرافيا': 'Geography', 'التأشيرات والدخول': 'Visas & Entry',
+    'Investissement': 'Investment', 'Perspectives du marché': 'Market Outlook', 'Données financières': 'Financials', 'Financement': 'Financing', 'Possession': 'Ownership', 'Géographie': 'Geography', 'Visas et entrée': 'Visas & Entry'
+  };
+  // Lists translated by the old API and cached in the browser carry labels of their own
+  // ("置业指南智库"), so anything unknown is folded by its key word before it can become a tab.
+  const categoryKey = (c?: string) => {
+    const v = (c || '').trim();
+    if (CATEGORY_KEY[v]) return CATEGORY_KEY[v];
+    if (/评测|評測|review/i.test(v)) return 'Reviews';
+    if (/融资|融資|贷款|貸款|financ(ing|ement)|loan/i.test(v)) return 'Financing';
+    if (/财务|財務|税|稅|tax|financ/i.test(v)) return 'Financials';
+    if (/市场|市場|market|marché/i.test(v)) return 'Market Outlook';
+    if (/投资|投資|invest/i.test(v)) return 'Investment';
+    if (/产权|產權|owner|possession/i.test(v)) return 'Ownership';
+    if (/签证|簽證|visa/i.test(v)) return 'Visas & Entry';
+    if (/区域|區域|geograph|地理/i.test(v)) return 'Geography';
+    return 'Guides';
+  };
+  const CATEGORY_LABEL: Record<string, Record<string, string>> = {
+    'zh-CN': { 'Reviews': '楼盘评测', 'Guides': '置业指南', 'Investment': '投资前瞻', 'Market Outlook': '市场展望', 'Financials': '税务财务', 'Financing': '贷款融资', 'Ownership': '产权', 'Geography': '区域', 'Visas & Entry': '签证与居留' },
+    'zh-TW': { 'Reviews': '樓盤評測', 'Guides': '置業指南', 'Investment': '投資前瞻', 'Market Outlook': '市場展望', 'Financials': '稅務財務', 'Financing': '貸款融資', 'Ownership': '產權', 'Geography': '區域', 'Visas & Entry': '簽證與居留' },
+    'ja': { 'Reviews': '物件レビュー', 'Guides': '購入ガイド', 'Investment': '投資アドバイス', 'Market Outlook': 'マーケット洞察', 'Financials': '税務・財務', 'Financing': '融資', 'Ownership': '所有権', 'Geography': 'エリア', 'Visas & Entry': 'ビザと居住' },
+    'ko': { 'Reviews': '단지 리뷰', 'Guides': '구매 가이드', 'Investment': '투자', 'Market Outlook': '시장 전망', 'Financials': '세무·재무', 'Financing': '대출', 'Ownership': '소유권', 'Geography': '지역', 'Visas & Entry': '비자와 거주' },
+    'ar': { 'Reviews': 'مراجعات المشاريع', 'Guides': 'أدلة الشراء', 'Investment': 'استثمار', 'Market Outlook': 'توقعات السوق', 'Financials': 'الضرائب والمالية', 'Financing': 'التمويل', 'Ownership': 'الملكية', 'Geography': 'المناطق', 'Visas & Entry': 'التأشيرات والإقامة' },
+    'fr': { 'Reviews': 'Avis sur les projets', 'Guides': "Guides d'achat", 'Investment': 'Investissement', 'Market Outlook': 'Perspectives du marché', 'Financials': 'Fiscalité et finances', 'Financing': 'Financement', 'Ownership': 'Propriété', 'Geography': 'Zones', 'Visas & Entry': 'Visas et séjour' }
+  };
+  const categoryLabel = (key: string) => key === 'all' ? (language.startsWith('zh') ? (language === 'zh-TW' ? '全部' : '全部') : language === 'ja' ? 'すべて' : language === 'ko' ? '전체' : language === 'ar' ? 'الكل' : language === 'fr' ? 'Tout' : 'All') : (CATEGORY_LABEL[language]?.[key] || key);
+  const CATEGORY_ORDER = ['Reviews', 'Guides', 'Investment', 'Market Outlook', 'Financials', 'Financing', 'Ownership', 'Geography', 'Visas & Entry'];
+  const categories = useMemo(() => {
+    const present = new Set<string>(articles.map((a: BlogArticle) => categoryKey(a.category)));
+    return ['all', ...CATEGORY_ORDER.filter(k => present.has(k)), ...[...present].filter(k => !CATEGORY_ORDER.includes(k))];
+  }, [articles]);
 
   // Filter regular lists
   const filteredArticles = useMemo(() => {
     return articles.filter((art) => {
       // Category matched
-      if (selectedCategory !== 'all' && art.category !== selectedCategory) {
+      if (selectedCategory !== 'all' && categoryKey(art.category) !== selectedCategory) {
         return false;
       }
       // Query matched
@@ -476,12 +527,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                     ? 'ig-gradient text-white shadow-md shadow-purple-500/10'
                     : 'bg-slate-50 text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-100/50'
                 }`}
-              >
-                {cat === 'all' ? t('all') : (
-                  language.startsWith('zh') ? (cat === 'Reviews' ? '楼盘评测' : cat === 'Financing' ? '贷款融资' : cat === 'Guides' ? '置业指南' : cat === 'Investment' ? '投资前瞻' : cat === 'Market Outlook' ? '市场分析' : cat === 'Financials' ? '资金税务' : cat) :
-                  language === 'ja' ? (cat === 'Guides' ? '購入ガイド' : cat === 'Investment' ? '投資アドバイス' : cat === 'Market Outlook' ? 'マーケット洞察' : cat === 'Financials' ? '資金・税金' : cat) : cat
-                )}
-              </button>
+              >{categoryLabel(cat)}</button>
             ))}
           </div>
 
@@ -516,8 +562,7 @@ export const BlogView: React.FC<BlogViewProps> = ({
                   />
                   {/* Category tag */}
                   <span className="absolute top-4 left-4 bg-slate-950/85 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded">
-                    {language.startsWith('zh') ? (art.category === 'Reviews' ? '楼盘评测' : art.category === 'Financing' ? '贷款融资' : art.category === 'Guides' ? '置业指南' : art.category === 'Investment' ? '投资前瞻' : art.category === 'Market Outlook' ? '市场分析' : art.category === 'Financials' ? '资金税务' : art.category) :
-                    language === 'ja' ? (art.category === 'Guides' ? '購入ガイド' : art.category === 'Investment' ? '投資アドバイス' : art.category === 'Market Outlook' ? 'マーケット洞察' : art.category === 'Financials' ? '資金・税金' : art.category) : art.category}
+                    {categoryLabel(categoryKey(art.category))}
                   </span>
                 </div>
 
