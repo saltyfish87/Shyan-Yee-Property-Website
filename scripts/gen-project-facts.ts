@@ -310,7 +310,7 @@ async function main() {
     // A deploy without network access must not wipe the data the site is serving.
     if (fs.existsSync(OUT)) { console.log('[gen-project-facts] keeping the committed file.'); return; }
     fs.mkdirSync(path.dirname(OUT), { recursive: true });
-    fs.writeFileSync(OUT, moduleText({}).replace(/KLCC/g, 'KL City Centre'), 'utf8');
+    fs.writeFileSync(OUT, moduleText({}), 'utf8');
     return;
   }
 
@@ -399,7 +399,7 @@ async function main() {
   for (const [id, old] of Object.entries(previous)) if (!out[id]) out[id] = old;
 
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
-  fs.writeFileSync(OUT, moduleText(out).replace(/KLCC/g, 'KL City Centre'), 'utf8');
+  fs.writeFileSync(OUT, moduleText(out), 'utf8');
   const withFacilities = Object.values(out).filter(x => x.facilities.length).length;
   console.log(`[gen-project-facts] ${Object.keys(out).length}/${projects.length} projects matched (${withFacilities} with a facilities list) -> ${path.relative(ROOT, OUT)}`);
   if (missing.length) console.log(`[gen-project-facts] not in the database: ${missing.join(' | ')}`);

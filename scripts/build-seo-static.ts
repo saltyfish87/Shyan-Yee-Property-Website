@@ -1,12 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-
-// The agency does not use the name "KLCC" in anything it publishes. It reaches the site only inside
-// proper names pulled from data — the Persiaran KLCC and KLCC stations, Suria KLCC, KLCC Park — so
-// every page is rewritten on the way out. URL slugs are lower-case and untouched.
-const _write = fs.writeFileSync.bind(fs);
-(fs as any).writeFileSync = (file: any, data: any, ...rest: any[]) =>
-  _write(file, typeof data === 'string' && String(file).endsWith('.html') ? data.replace(/KLCC/g, 'KL City Centre') : data, ...rest);
 import { BLOG_DATA, FAQ_DATA } from '../src/data';
 import { NEARBY_OSM } from '../src/data/nearbyOsm.generated';
 import { PROJECT_FACTS } from '../src/data/projectFacts.generated';
