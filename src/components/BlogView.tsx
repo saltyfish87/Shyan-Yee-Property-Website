@@ -331,6 +331,13 @@ export const BlogView: React.FC<BlogViewProps> = ({
                 src={activeFullArticle.image}
                 alt={activeFullArticle.title}
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  const fallback = 'https://lh3.googleusercontent.com/d/12kDlxnts2gQefjQi0FIHierCVz2catK_=w1600';
+                  if (target.src !== fallback) {
+                    target.src = fallback;
+                  }
+                }}
               />
             </div>
 
@@ -559,6 +566,13 @@ export const BlogView: React.FC<BlogViewProps> = ({
                     src={art.image}
                     alt={art.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      const fallback = 'https://lh3.googleusercontent.com/d/12kDlxnts2gQefjQi0FIHierCVz2catK_=w1000';
+                      if (target.src !== fallback) {
+                        target.src = fallback;
+                      }
+                    }}
                   />
                   {/* Category tag */}
                   <span className="absolute top-4 left-4 bg-slate-950/85 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded">

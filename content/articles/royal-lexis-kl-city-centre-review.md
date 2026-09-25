@@ -3,7 +3,7 @@ title: Royal Lexis Kuala Lumpur Review: Price, Layouts, Pros & Cons
 metaDescription: Royal Lexis review: KL Metro's freehold tower on Jalan Kia Peng where every unit has its own pool, 371 residences over 66 floors, 573 to 1,155 sq ft, from RM 1,897,000.
 summary: Royal Lexis is a freehold, hotel-managed tower on Jalan Kia Peng where every unit has a private pool on its balcony. This review covers price, the four layouts, the maintenance charge, the car park situation and who it suits.
 category: Reviews
-image: https://lh3.googleusercontent.com/d/1WPvCnCMGxylUnmsYyChlIqKXnIsc0apd=w1600
+image: https://lh3.googleusercontent.com/d/12kDlxnts2gQefjQi0FIHierCVz2catK_=w1600
 publishedOn: 2026-09-25
 updatedOn: 2026-09-25
 relatedProjectIds: royal-lexis-kuala-lumpur, conlay, clouthaus, orion-residence, phoeniz-suites-kl-city-centre

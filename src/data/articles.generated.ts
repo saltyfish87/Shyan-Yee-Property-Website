@@ -74,7 +74,7 @@ export const GENERATED_ARTICLES: BlogArticle[] = [
     "updatedOn": "2026-09-25",
     "author": "Shyan Yee",
     "category": "Reviews",
-    "image": "https://lh3.googleusercontent.com/d/1WPvCnCMGxylUnmsYyChlIqKXnIsc0apd=w1600",
+    "image": "https://lh3.googleusercontent.com/d/12kDlxnts2gQefjQi0FIHierCVz2catK_=w1600",
     "faqs": [
       {
         "question": "Is Royal Lexis freehold or leasehold?",
@@ -2083,7 +2083,7 @@ export const GENERATED_ZH_ARTICLES: Record<string, BlogArticle> = {
     "updatedOn": "2026-09-25",
     "author": "Shyan Yee",
     "category": "Reviews",
-    "image": "https://lh3.googleusercontent.com/d/1WPvCnCMGxylUnmsYyChlIqKXnIsc0apd=w1600",
+    "image": "https://lh3.googleusercontent.com/d/12kDlxnts2gQefjQi0FIHierCVz2catK_=w1600",
     "faqs": [
       {
         "question": "Royal Lexis 是永久地契还是租赁地契？",
@@ -3149,7 +3149,7 @@ export const GENERATED_ZH_HANT_ARTICLES: Record<string, BlogArticle> = {
     "updatedOn": "2026-09-25",
     "author": "Shyan Yee",
     "category": "Reviews",
-    "image": "https://lh3.googleusercontent.com/d/1WPvCnCMGxylUnmsYyChlIqKXnIsc0apd=w1600",
+    "image": "https://lh3.googleusercontent.com/d/12kDlxnts2gQefjQi0FIHierCVz2catK_=w1600",
     "faqs": [
       {
         "question": "Royal Lexis 是永久地契還是租賃地契？",
