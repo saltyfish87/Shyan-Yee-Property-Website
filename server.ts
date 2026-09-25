@@ -403,7 +403,30 @@ interface ImageSyncResult {
   driveLayoutsMap: Record<string, { id: string; name: string }[]>;
 }
 
-async function fetchWithRetry(url: string, options: RequestInit = {}, maxRetries = 3, baseTimeout = 12000): Promise<Response> {
+const DRIVE_CACHE_FILE = path.join(process.cwd(), "drive_images_cache.json");
+let driveImagesDiskCache: ImageSyncResult | null = null;
+try {
+  if (fs.existsSync(DRIVE_CACHE_FILE)) {
+    const raw = fs.readFileSync(DRIVE_CACHE_FILE, "utf-8");
+    driveImagesDiskCache = JSON.parse(raw);
+    if (driveImagesDiskCache?.imagesMap && Object.keys(driveImagesDiskCache.imagesMap).length > 0) {
+      cache.driveImagesMap = driveImagesDiskCache.imagesMap;
+      console.log(`Drive Cache: Restored ${Object.keys(driveImagesDiskCache.imagesMap).length} project images from disk.`);
+    }
+  }
+} catch (e) {
+  console.log("Drive Cache: Note - starting with empty cache:", e);
+}
+
+function saveDriveCache(data: ImageSyncResult) {
+  try {
+    fs.writeFileSync(DRIVE_CACHE_FILE, JSON.stringify(data, null, 2), "utf-8");
+  } catch (err) {
+    console.warn("Could not save persistent drive cache:", err);
+  }
+}
+
+async function fetchWithRetry(url: string, options: RequestInit = {}, maxRetries = 3, baseTimeout = 18000): Promise<Response> {
   let attempt = 0;
   while (attempt < maxRetries) {
     attempt++;
@@ -427,8 +450,8 @@ async function fetchWithRetry(url: string, options: RequestInit = {}, maxRetries
       if (attempt >= maxRetries) {
         throw err;
       }
-      console.warn(`Drive Sync: Fetch attempt ${attempt} failed for ${url}. Error: ${err.message || err}. Retrying in ${1000 * attempt}ms...`);
-      await new Promise((resolve) => setTimeout(resolve, 1000 * attempt));
+      console.log(`Drive Sync: Notice - retrying fetch for ${url.substring(0, 75)} (attempt ${attempt}/${maxRetries})...`);
+      await new Promise((resolve) => setTimeout(resolve, 800 * attempt));
     }
   }
   throw new Error(`Fetch failed after ${maxRetries} attempts`);
@@ -551,29 +574,51 @@ async function fetchGoogleDriveStructuredImages(): Promise<ImageSyncResult> {
     console.log(`Drive Sync: Discovered ${folders.length} project folders in Google Drive.`);
 
     // Read files inside all project folders in throttled batches
-    const batchSize = 8;
+    const batchSize = 6;
     for (let i = 0; i < folders.length; i += batchSize) {
       const chunk = folders.slice(i, i + batchSize);
       await Promise.all(
         chunk.map(async (folder) => {
           try {
-            const sfRes = await fetchWithRetry(`https://drive.google.com/drive/folders/${folder.id}`, {
-              headers: {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-              },
-            }, 3, 12000);
-            const sfHtml = await sfRes.text();
+            let sfHtml = "";
+            try {
+              // Try lightweight embeddedfolderview first (30KB vs 650KB, much faster and avoids timeouts)
+              const embRes = await fetchWithRetry(`https://drive.google.com/embeddedfolderview?id=${folder.id}#list`, {
+                headers: {
+                  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                },
+              }, 2, 12000);
+              sfHtml = await embRes.text();
+            } catch {
+              // Fall back to standard folder view if embedded fails
+              const sfRes = await fetchWithRetry(`https://drive.google.com/drive/folders/${folder.id}`, {
+                headers: {
+                  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                },
+              }, 2, 16000);
+              sfHtml = await sfRes.text();
+            }
 
             // Extract both IDs and names from DOM attributes in HTML (highly stable and reliable)
             const filesInFolder: { id: string; name: string }[] = [];
             const fileMap = new Map<string, string>();
             let m: RegExpExecArray | null;
 
+            // Regex 0: embeddedfolderview entries
+            const embRegex = /id="entry-([a-zA-Z0-9_-]{20,50})"[\s\S]*?<div class="flip-entry-title">([^<]+)<\/div>/g;
+            while ((m = embRegex.exec(sfHtml)) !== null) {
+              const id = m[1];
+              if (id !== folder.id) {
+                const name = m[2].trim();
+                fileMap.set(id, name);
+              }
+            }
+
             // Regex 1: data-id followed by data-tooltip
             const regex1 = /data-id="(1[a-zA-Z0-9_-]{32})"[^>]*?data-tooltip="([^"]+?)"/gi;
             while ((m = regex1.exec(sfHtml)) !== null) {
               const id = m[1];
-              if (id !== folder.id) {
+              if (id !== folder.id && !fileMap.has(id)) {
                 const name = m[2].replace(/\s+(?:Image|Video|Shared|File|Document|Audio|PDF)$/gi, "").trim();
                 fileMap.set(id, name);
               }
@@ -583,7 +628,7 @@ async function fetchGoogleDriveStructuredImages(): Promise<ImageSyncResult> {
             const regex2 = /data-tooltip="([^"]+?)"[^>]*?data-id="(1[a-zA-Z0-9_-]{32})"/gi;
             while ((m = regex2.exec(sfHtml)) !== null) {
               const id = m[2];
-              if (id !== folder.id) {
+              if (id !== folder.id && !fileMap.has(id)) {
                 const name = m[1].replace(/\s+(?:Image|Video|Shared|File|Document|Audio|PDF)$/gi, "").trim();
                 fileMap.set(id, name);
               }
@@ -730,15 +775,21 @@ async function fetchGoogleDriveStructuredImages(): Promise<ImageSyncResult> {
               driveLayoutsMap[slug] = finalLayoutFiles;
             }
           } catch (err: any) {
-            console.error(`Drive Sync: Failed to sync images for Google Drive folder "${folder.name}":`, err.message || err);
+            console.log(`Drive Sync: Note - could not retrieve images for "${folder.name}":`, err.message || err);
           }
         })
       );
     }
 
     console.log(`Drive Sync: Fully cached images and layouts for ${Object.keys(imagesMap).length} folders.`);
-  } catch (e) {
-    console.error("Drive Sync: Master drive fetch failed, using fallbacks:", e);
+    if (Object.keys(imagesMap).length > 0) {
+      saveDriveCache({ imagesMap, flatPool, driveLayoutsMap });
+    }
+  } catch (e: any) {
+    console.log("Drive Sync: Master drive fetch completed with fallbacks:", e.message || e);
+    if (driveImagesDiskCache && driveImagesDiskCache.imagesMap && Object.keys(driveImagesDiskCache.imagesMap).length > 0) {
+      return driveImagesDiskCache;
+    }
   }
 
   // Populate flatPool with fallbacks if completely empty
@@ -1686,8 +1737,14 @@ async function fetchGoogleSheetsProjects(forceRefresh = false): Promise<any[]> {
 
     const projectRows = rows.slice(headerIndex + 1);
 
-    // Sync all subfolder images concurrently in real time
-    const { imagesMap, flatPool, driveLayoutsMap } = await fetchGoogleDriveStructuredImages();
+    // Sync all subfolder images concurrently in real time or leverage disk cache
+    let driveImagesData: ImageSyncResult;
+    if (!forceRefresh && driveImagesDiskCache && driveImagesDiskCache.imagesMap && Object.keys(driveImagesDiskCache.imagesMap).length > 0) {
+      driveImagesData = driveImagesDiskCache;
+    } else {
+      driveImagesData = await fetchGoogleDriveStructuredImages();
+    }
+    const { imagesMap, flatPool, driveLayoutsMap } = driveImagesData;
 
     // Fetch coordinates mapping
     const coordsMap = await fetchGoogleSheetsLocations();
