@@ -41,7 +41,7 @@ function personNode() {
     "jobTitle": "Real Estate Negotiator (REN 46305)", "image": AGENT_PHOTO, "url": "https://shyanyee.com",
     "worksFor": { "@type": "Organization", "name": "IQI Realty Sdn Bhd" }, "telephone": "+60108278932",
     "knowsAbout": ["Malaysia new launch property", "Kuala Lumpur condominiums", "Johor Bahru property", "MM2H property purchase"],
-    "sameAs": ["https://shyanyee.com", "https://wa.me/60108278932", ...SOCIAL]
+    "sameAs": ["https://maps.google.com/?cid=3195643739952877602", "https://shyanyee.com", "https://wa.me/60108278932", ...SOCIAL]
   };
 }
 function authorBoxHtml(lang: 'en' | 'zh'): string {
@@ -688,7 +688,7 @@ function renderSeoHtml(
           "addressCountry": "MY"
         },
         "sameAs": [
-          "https://www.youtube.com/@shyanyee",
+          "https://maps.google.com/?cid=3195643739952877602", "https://www.youtube.com/@shyanyee",
           "https://www.instagram.com/shyanyee/",
           "https://www.facebook.com/shyanyeeconsultant/",
           "https://wa.me/60108278932"
@@ -1636,7 +1636,7 @@ function renderZhHtml(html: string, reqUrl: string, targetProject: Project | nul
         "telephone": "+60108278932", "email": "shyanyeews@gmail.com",
         "parentOrganization": { "@type": "Organization", "name": "IQI Realty Sdn Bhd" },
         "address": { "@type": "PostalAddress", "addressLocality": "Kuala Lumpur", "addressRegion": "Wilayah Persekutuan", "addressCountry": "MY" },
-        "sameAs": ["https://www.youtube.com/@shyanyee", "https://www.instagram.com/shyanyee/", "https://www.facebook.com/shyanyeeconsultant/", "https://wa.me/60108278932"], "priceRange": "$$$$"
+        "sameAs": ["https://maps.google.com/?cid=3195643739952877602", "https://www.youtube.com/@shyanyee", "https://www.instagram.com/shyanyee/", "https://www.facebook.com/shyanyeeconsultant/", "https://wa.me/60108278932"], "priceRange": "$$$$"
       },
       { "@type": "WebSite", "@id": `${SITE}/#website`, "url": SITE, "name": "Shyan Yee 马来西亚房产平台", "inLanguage": ["en", "zh-CN"], "publisher": { "@id": `${SITE}/#agent` } },
       { "@type": "WebPage", "@id": canonical, "url": canonical, "inLanguage": "zh-CN", "isPartOf": { "@id": `${SITE}/#website` } }

@@ -3122,7 +3122,7 @@ function injectDynamicSeoToHtml(html: string, reqUrl: string, projects: any[], b
           "addressCountry": "MY"
         },
         "sameAs": [
-          "https://www.youtube.com/@shyanyee",
+          "https://maps.google.com/?cid=3195643739952877602", "https://www.youtube.com/@shyanyee",
           "https://www.instagram.com/shyanyee/",
           "https://www.facebook.com/shyanyeeconsultant/",
           "https://wa.me/60108278932"
